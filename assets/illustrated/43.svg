@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="Sói Bắn Tỉa">
+  <defs>
+    <radialGradient id="bg43" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#461c1d"/>
+      <stop offset="100%" stop-color="#15090e"/>
+    </radialGradient>
+    <radialGradient id="halo43" cx="50%" cy="46%" r="44%">
+      <stop offset="0%" stop-color="#fb726e" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#fb726e" stop-opacity="0"/>
+    </radialGradient>
+    
+  </defs>
+  <rect width="240" height="240" rx="26" fill="url(#bg43)"/>
+  <path d="M20 226 V96 Q20 20 120 16 Q220 20 220 96 V226 Z" fill="none" stroke="#fb726e" stroke-opacity="0.45" stroke-width="1.8"/>
+  <circle cx="120" cy="112" r="88" fill="url(#halo43)"/>
+  <g class="chibi-sparkle" fill="#fb726e">
+    <path d="M44 48 L46 42 L48 48 L54 50 L48 52 L46 58 L44 52 L38 50 Z"/>
+    <path d="M192 56 L193.5 51 L195 56 L200 57.5 L195 59 L193.5 64 L192 59 L187 57.5 Z"/>
+  </g>
+  
+    <g class="chibi-body">
+      <path d="M84 176 Q52 178 58 156 Q68 164 84 164 Z" fill="#281a1f" stroke="#1d1424" stroke-width="2.6"/>
+      <path d="M90 132 Q84 178 96 190 L108 190 L114 178 L126 178 L132 190 L144 190 Q156 178 150 132 Z" fill="#51251c" stroke="#1d1424" stroke-width="2.8" stroke-linejoin="round"/>
+      <line x1="120" y1="138" x2="120" y2="176" stroke="#1d1424" stroke-width="1.8" stroke-dasharray="3 3"/>
+      <path d="M115 148 H125 M115 158 H125 M115 168 H125" stroke="#1d1424" stroke-width="1.6"/>
+      <path d="M90 138 Q68 148 74 160 Q84 162 94 152 Z" fill="#281a1f" stroke="#1d1424" stroke-width="2.6"/>
+      <path d="M150 138 Q172 148 166 160 Q156 162 146 152 Z" fill="#281a1f" stroke="#1d1424" stroke-width="2.6"/>
+      
+      <path d="M108 134 L120 140 L108 146 Z M132 134 L120 140 L132 146 Z" fill="#a82436" stroke="#1d1424" stroke-width="2"/>
+      <circle cx="120" cy="140" r="3.8" fill="#fb726e" stroke="#1d1424" stroke-width="1.6"/>
+      <g class="chibi-ears">
+        <path d="M82 82 L72 40 L106 66 Z" fill="#281a1f" stroke="#1d1424" stroke-width="2.8" stroke-linejoin="round"/>
+        <path d="M158 82 L168 40 L134 66 Z" fill="#281a1f" stroke="#1d1424" stroke-width="2.8" stroke-linejoin="round"/>
+      </g>
+      <path d="M76 96 Q74 62 120 60 Q166 62 164 96 Q164 134 120 136 Q76 134 76 96 Z" fill="#261b24" stroke="#1d1424" stroke-width="2.8"/>
+      <path d="M120 60 Q166 62 164 96 Q164 134 120 136 Z" fill="#1b1322" opacity="0.88"/>
+      
+      <line x1="120" y1="62" x2="120" y2="86" stroke="#1d1424" stroke-width="1.8" opacity="0.65"/>
+      
+        
+        <g class="chibi-eyes">
+          <path d="M90 96 Q100 88 110 96 Q100 106 90 96 Z" fill="#fa9e59" stroke="#1d1424" stroke-width="2.2"/>
+          <circle cx="101" cy="96" r="3.4" fill="#1d1424"/><circle cx="99" cy="94" r="1.4" fill="#fff"/>
+          <path d="M130 96 Q140 88 150 96 Q140 106 130 96 Z" fill="#fa9e59" stroke="#1d1424" stroke-width="2.2"/>
+          <circle cx="139" cy="96" r="3.4" fill="#1d1424"/><circle cx="137" cy="94" r="1.4" fill="#fff"/>
+        </g>
+        <path d="M104 118 Q120 128 136 116" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><polygon points="110,119 113,126 116,120" fill="#fff"/><polygon points="124,120 127,126 130,119" fill="#fff"/>
+      <g><line x1="86" y1="90" x2="154" y2="108" stroke="#1d1424" stroke-width="2.6"/><path d="M92 92 H112 V104 Q102 112 92 104 Z" fill="#1b1524" stroke="#fb726e" stroke-width="1.6"/></g>
+      <g><path d="M82 68 Q120 58 158 68" fill="none" stroke="#6b4a33" stroke-width="6" stroke-linecap="round"/><circle cx="102" cy="64" r="11" fill="#3a2c24" stroke="#fb726e" stroke-width="3"/><circle cx="102" cy="64" r="6" fill="#9ae6ff" opacity="0.75"/><circle cx="138" cy="64" r="11" fill="#3a2c24" stroke="#fb726e" stroke-width="3"/><circle cx="138" cy="64" r="6" fill="#9ae6ff" opacity="0.75"/></g>
+      <g class="chibi-prop"><rect x="162" y="138" width="32" height="9" rx="2" fill="#8f9aa8" stroke="#1d1424" stroke-width="2.2"/><rect x="162" y="145" width="9" height="15" rx="2" fill="#5e3c2c" stroke="#1d1424" stroke-width="2.2"/><circle cx="198" cy="142" r="4" fill="#fb726e" opacity="0.8"/></g>
+    </g>
+  <rect x="86" y="208" width="68" height="20" rx="10" fill="#120d1f" fill-opacity="0.82" stroke="#fb726e" stroke-opacity="0.55" stroke-width="1.2"/>
+  
+</svg>

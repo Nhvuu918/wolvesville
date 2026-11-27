@@ -1,0 +1,41 @@
+/* Sprint 03 Codex 97: presentation-only refinements over the approved Dark Fantasy design. */
+.codex-toolbar {display:flex;flex-direction:column;gap:12px;margin-bottom:14px}
+.codex-search-label{display:block;color:var(--gold);font-family:var(--card-serif-font);font-weight:700;margin-bottom:7px;font-size:15px}
+.codex-toolbar .role-toolbar-top{display:flex;flex-wrap:wrap;gap:14px;align-items:end;justify-content:space-between}
+.codex-toolbar .role-search-wrap{min-width:min(100%,300px);flex:1}
+.codex-toolbar .role-search-wrap .search{width:100%;max-width:600px}
+.codex-toolbar .role-toolbar-filters{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.codex-toolbar .filter-chips{display:flex;flex-wrap:wrap;gap:7px}
+.codex-toolbar .chip{white-space:nowrap}
+.codex-toolbar .codex-clear{border-color:var(--border-gold-soft);color:var(--gold)}
+.codex-sort-label{display:flex;align-items:center;gap:8px;color:var(--text-dim,var(--text));font-size:13px;white-space:nowrap}
+.codex-sort-label select{min-height:35px;max-width:180px}
+.codex-count{margin:2px 0 0;color:var(--gold);font-size:14px;font-weight:600}
+.codex-status{min-height:240px;padding:36px;text-align:center;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px}
+.codex-grid-stage{border:1px solid var(--border-gold-soft);border-radius:var(--radius-card);background:radial-gradient(ellipse at 50% 0%,rgba(108,52,98,.24),transparent 65%),rgba(11,9,24,.85);padding:20px;box-shadow:var(--shadow-card);margin-bottom:16px}
+.codex-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;max-height:min(66vh,800px);overflow-y:auto;overscroll-behavior:contain;padding:4px 8px 12px 4px;scrollbar-color:rgba(243,211,139,.35) transparent}
+.codex-grid-card{appearance:none;min-width:0;display:flex;flex-direction:column;align-items:stretch;overflow:hidden;text-align:left;gap:10px;border-radius:15px;border:1px solid rgba(209,175,126,.29);background:linear-gradient(155deg,rgba(54,39,75,.92),rgba(19,15,32,.95));color:var(--text);padding:10px;cursor:pointer;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.codex-grid-card:hover,.codex-grid-card:focus-visible{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 12px 24px rgba(0,0,0,.4)}
+.codex-grid-card.is-selected{border-color:var(--gold);box-shadow:inset 0 0 0 1px rgba(243,211,139,.48),0 7px 24px rgba(0,0,0,.36)}
+.codex-grid-card img{display:block;width:100%;height:clamp(125px,16vw,205px);object-fit:contain;object-position:center;background:radial-gradient(ellipse at center,rgba(148,83,137,.25),transparent 76%);border-radius:10px}
+.codex-card-copy{display:flex;flex-direction:column;gap:5px;min-height:58px;justify-content:center}
+.codex-card-copy strong{font-family:var(--card-serif-font);font-size:clamp(14px,1.2vw,18px);line-height:1.3;overflow-wrap:anywhere}
+.codex-card-copy small{font-size:12px;color:var(--gold);opacity:.82}
+.codex-detail{margin-top:16px;padding:20px}
+.codex-detail .role-hero-portrait{object-fit:contain}
+.codex-ability p{white-space:pre-line;overflow-wrap:anywhere;line-height:1.75}
+.codex-empty{grid-column:1/-1;min-height:120px;display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;color:var(--text);opacity:.85}
+.codex-wheel-arena .w-id{display:none!important}
+.codex-wheel-bottom{z-index:18}
+@media(max-width:1000px){.codex-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:720px){.codex-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.codex-grid-stage{padding:12px}.codex-grid-card{padding:8px}.codex-grid-card img{height:145px}.codex-wheel-stage{padding:10px}.codex-toolbar .role-toolbar-top{align-items:stretch}}
+@media(max-width:460px){.codex-grid-card img{height:114px}.codex-card-copy strong{font-size:14px}.codex-detail{padding:12px}.codex-wheel-stage{min-height:490px}.codex-sort-label{max-width:100%}}
+@media(prefers-reduced-motion:reduce){.codex-grid-card{transition:none!important}.codex-grid-card:hover,.codex-grid-card:focus-visible{transform:none!important}.codex-wheel-stage .wheel-tarot-card{transition:none!important}}
+/* Original approved portrait SVGs include a decorative numeric footer.
+   Fade only that footer in the Codex presentation; the source SVGs remain byte-identical. */
+.codex-grid-card img,
+.codex-wheel-stage .wheel-card-art,
+.codex-detail .role-hero-portrait {
+  -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 79%,transparent 87%);
+  mask-image:linear-gradient(to bottom,#000 0%,#000 79%,transparent 87%);
+}

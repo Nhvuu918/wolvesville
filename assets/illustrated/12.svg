@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="Búp Bê Nguyền Rủa">
+  <defs>
+    <radialGradient id="bg12" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#2b2336"/>
+      <stop offset="100%" stop-color="#100c1b"/>
+    </radialGradient>
+    <radialGradient id="halo12" cx="50%" cy="46%" r="44%">
+      <stop offset="0%" stop-color="#e7c284" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#e7c284" stop-opacity="0"/>
+    </radialGradient>
+    
+  </defs>
+  <rect width="240" height="240" rx="26" fill="url(#bg12)"/>
+  <path d="M20 226 V96 Q20 20 120 16 Q220 20 220 96 V226 Z" fill="none" stroke="#e7c284" stroke-opacity="0.45" stroke-width="1.8"/>
+  <circle cx="120" cy="112" r="88" fill="url(#halo12)"/>
+  <g class="chibi-sparkle" fill="#e7c284">
+    <path d="M44 48 L46 42 L48 48 L54 50 L48 52 L46 58 L44 52 L38 50 Z"/>
+    <path d="M192 56 L193.5 51 L195 56 L200 57.5 L195 59 L193.5 64 L192 59 L187 57.5 Z"/>
+  </g>
+  
+    <g class="chibi-body">
+      
+      
+        <path d="M70 92 Q62 124 82 134 Q120 140 158 134 Q178 124 170 92 Q162 56 120 54 Q78 56 70 92 Z" fill="#ebe3d8" stroke="#1d1424" stroke-width="2.8"/>
+      <rect x="103" y="176" width="11" height="22" rx="4" fill="#efe7df" stroke="#1d1424" stroke-width="2.2"/>
+      <rect x="126" y="176" width="11" height="22" rx="4" fill="#efe7df" stroke="#1d1424" stroke-width="2.2"/>
+      <ellipse cx="108" cy="198" rx="8" ry="4.5" fill="#1d1424"/>
+      <ellipse cx="132" cy="198" rx="8" ry="4.5" fill="#1d1424"/>
+      <path d="M100 132 L140 132 L156 178 Q120 186 84 178 Z" fill="#201b2b" stroke="#1d1424" stroke-width="2.8" stroke-linejoin="round"/>
+      <path d="M84 176 Q93 184 102 177 Q111 185 120 178 Q129 185 138 177 Q147 184 156 176" fill="none" stroke="#f7efe6" stroke-width="3" stroke-linecap="round"/>
+      <path d="M111 134 L129 134 L134 174 L106 174 Z" fill="#493958" stroke="#1d1424" stroke-width="2"/>
+      <path d="M100 136 L76 154 L84 162 L102 148 Z" fill="#201b2b" stroke="#1d1424" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M140 136 L164 154 L156 162 L138 148 Z" fill="#201b2b" stroke="#1d1424" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M104 132 Q120 144 136 132 Z" fill="#f7efe6" stroke="#1d1424" stroke-width="2"/>
+      <path d="M112 135 L120 140 L112 145 Z M128 135 L120 140 L128 145 Z" fill="#e7c284" stroke="#1d1424" stroke-width="1.6"/>
+      <ellipse cx="120" cy="96" rx="40" ry="37" fill="#e5dcd4" stroke="#1d1424" stroke-width="2.8"/>
+      <ellipse cx="95" cy="108" rx="6.5" ry="3.5" fill="#e88d9c" opacity="0.45"/>
+      <ellipse cx="145" cy="108" rx="6.5" ry="3.5" fill="#e88d9c" opacity="0.45"/>
+      
+        <path d="M93 88 L110 84 M147 88 L130 84" stroke="#1d1424" stroke-width="2.2" stroke-linecap="round"/>
+        <g class="chibi-eyes">
+          <ellipse cx="102" cy="101" rx="8.8" ry="10.2" fill="#1b1424"/>
+          <ellipse cx="102" cy="102" rx="6.800000000000001" ry="7.699999999999999" fill="#ebae64"/>
+          <circle cx="102" cy="101" r="3" fill="#171022"/><circle cx="99" cy="97" r="2.4" fill="#fff"/>
+          <circle cx="105" cy="106" r="1.8" fill="#dff6ff"/>
+          <ellipse cx="138" cy="101" rx="8.8" ry="10.2" fill="#1b1424"/>
+          <ellipse cx="138" cy="102" rx="6.800000000000001" ry="7.699999999999999" fill="#ebae64"/>
+          <circle cx="138" cy="101" r="3" fill="#171022"/><circle cx="135" cy="97" r="2.4" fill="#fff"/>
+          <circle cx="141" cy="106" r="1.8" fill="#dff6ff"/>
+        </g><path d="M114 118 Q120 113 126 118" fill="none" stroke="#6e4b56" stroke-width="2" stroke-linecap="round"/>
+      <path d="M94 110 Q91 116 94 118 Q97 116 94 110 Z" fill="#8be9fd" stroke="#4f8fa8" stroke-width="1"/>
+      <path d="M80 92 Q86 60 120 58 Q154 60 160 92 Q148 78 136 86 Q128 74 120 86 Q112 74 104 86 Q92 78 80 92 Z" fill="#ebe3d8" stroke="#1d1424" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M76 96 Q78 44 120 42 Q162 44 164 96 Q150 66 120 62 Q90 66 76 96 Z" fill="#201b2b" stroke="#e7c284" stroke-width="2.2" opacity="0.92"/>
+      <g class="chibi-prop"><rect x="166" y="136" width="22" height="24" rx="6" fill="#493958" stroke="#e7c284" stroke-width="2.2"/><circle cx="177" cy="148" r="5" fill="#e7c284"/></g>
+    </g>
+  <rect x="86" y="208" width="68" height="20" rx="10" fill="#120d1f" fill-opacity="0.82" stroke="#e7c284" stroke-opacity="0.55" stroke-width="1.2"/>
+  
+</svg>

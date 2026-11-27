@@ -1,0 +1,99 @@
+/* Sprint03 only: additive feedback panel, no changes to approved CSS. */
+.wv-feedback-panel{position:absolute;z-index:5;left:18px;bottom:125px;width:min(430px,calc(100% - 36px));max-height:260px;overflow:auto;background:rgba(17,13,34,.94);border:1px solid var(--border-gold-hover,#ad9470);border-radius:12px;padding:14px;color:var(--text,#f4e8de);box-shadow:0 8px 34px #0006;}
+.wv-feedback-panel h3{margin:0 0 8px;color:var(--gold,#f3d38b);font-size:15px;}
+.wv-feedback-item{padding:6px 8px;margin:6px 0;background:rgba(255,255,255,.035);border-left:2px solid var(--gold,#f3d38b);border-radius:4px;}
+.wv-feedback-item p{margin:5px 0 3px;font-size:14px;white-space:pre-wrap;overflow-wrap:anywhere;}
+.wv-feedback-item small{color:#d8c5ae;overflow-wrap:anywhere;}
+.wv-game-events{font-size:11px;max-height:76px;overflow:auto;opacity:.75;}
+.wv-feedback-panel[hidden]{display:none!important;}
+@media(max-width:780px){.wv-feedback-panel{bottom:125px;max-height:180px;width:min(340px,calc(100% - 24px));left:12px;}}
+
+.wv-vote-result{font-size:.9rem;color:inherit;text-align:center;margin:.4rem;padding:.3rem;}
+.wv-eliminated-seat{opacity:.65;}
+
+/* Sprint14 additive controls, using existing Dark Fantasy theme. */
+.wv-public-chat{display:grid;gap:8px;margin-top:12px;min-width:0}.wv-chat-history{max-height:9rem;overflow:auto;overflow-wrap:anywhere}.wv-public-chat form{display:grid;gap:6px}.wv-public-chat .input-field,#wv-second-target{width:100%;min-width:0}.wv-chat-history p{margin:4px 0}
+/* S15 UX: live stage only. Normal-flow panels instead of an absolute overlay. */
+.ingame-stage-wrap:has(.wv-match-side){overflow:auto;justify-content:flex-start;overscroll-behavior:contain;}
+.ingame-stage-wrap:has(.wv-match-side) .ingame-hud-top{flex-shrink:0;flex-wrap:wrap;}
+.ingame-stage-wrap:has(.wv-match-side) .ingame-arena{flex:1 0 auto;align-items:start;min-height:0;}
+.ingame-stage-wrap:has(.wv-match-side) .arena-players-grid{align-self:start;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));}
+.wv-match-side.day-discussion-panel{padding:12px;gap:10px;max-height:none;min-height:0;overflow:visible;min-width:0;}
+.wv-match-side .wv-feedback-panel{position:relative;inset:auto;width:100%;max-height:240px;z-index:auto;margin:0;box-sizing:border-box;}
+.wv-match-side .wv-public-chat{margin:0;}.wv-match-side h3{font-size:15px;color:var(--gold);margin:0;}
+.wv-chat-history{max-height:160px;min-height:48px;overflow:auto;}
+.wv-role-composition,.wv-role-wheel{border:1px solid var(--line);border-radius:10px;padding:10px;color:var(--text);background:#171329;}
+.wv-role-composition summary,.wv-role-wheel summary{cursor:pointer;font-weight:600;color:var(--gold);line-height:1.4;}
+.wv-composition-list{max-height:180px;overflow:auto;}.wv-composition-role{padding:4px 0;}.wv-composition-role summary{display:flex;align-items:center;gap:8px;font-size:13px;color:inherit;}.wv-composition-role img{width:34px;height:34px;object-fit:contain;border-radius:5px;}.wv-composition-role p{white-space:pre-wrap;line-height:1.5;font-size:13px;margin:6px 0;}
+.wv-wheel-visual{position:relative;width:128px;height:128px;margin:12px auto;}.wv-wheel-disc{width:100%;height:100%;border:3px solid var(--gold);border-radius:50%;position:relative;transform:rotate(var(--wv-wheel-turn));}.wv-wheel-disc img{position:absolute;left:calc(50% - 13px);top:calc(50% - 13px);width:26px;height:26px;border-radius:50%;transform:rotate(var(--wv-segment)) translateY(-42px) rotate(calc(-1 * var(--wv-segment)));}.wv-wheel-pointer{position:absolute;z-index:2;top:-10px;left:calc(50% - 9px);color:var(--gold);}.wv-wheel-center{position:absolute;top:35%;left:35%;width:30%;height:30%;border-radius:50%;background:#171329;border:2px solid var(--gold);}.wv-wheel-result{text-align:center;font-size:13px;}.wv-spin{animation:wv-role-spin 1.4s cubic-bezier(.12,.8,.2,1) both;}@keyframes wv-role-spin{from{transform:rotate(0deg)}to{transform:rotate(var(--wv-wheel-turn))}}
+.ingame-stage-wrap:has(.wv-match-side) .ingame-dialogue-bar{position:sticky;bottom:0;flex-shrink:0;z-index:6;margin:10px 12px;padding:12px;}
+.ingame-stage-wrap button:disabled{opacity:.55;cursor:not-allowed;}.arena-seat[role=button]:focus-visible,.wv-match-side summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}.wv-inspection-target{color:#d8c5ae;font-size:12px!important;}
+@media(max-width:780px){.ingame-stage-wrap:has(.wv-match-side) .ingame-arena{grid-template-columns:minmax(0,1fr);padding:8px 12px;}.ingame-stage-wrap:has(.wv-match-side) .ingame-dialogue-bar{position:relative;grid-template-columns:1fr;gap:8px;}.ingame-stage-wrap:has(.wv-match-side) .arena-players-grid{grid-template-columns:repeat(auto-fit,minmax(105px,1fr));gap:8px;}.wv-match-side button,.wv-match-side input{min-height:44px;}.wv-match-side .wv-feedback-panel{max-height:240px;}}
+@media(prefers-reduced-motion:reduce){.wv-spin{animation:none;}}
+/* Preserve the legacy semantic day panel: at night and after the match the
+   auxiliary column is not a discussion panel; chat is explicitly read-only. */
+.wv-match-side:not(.day-discussion-panel){display:flex;flex-direction:column;min-width:0;gap:10px;padding:12px;border:1px solid var(--border-gold-hover);border-radius:16px;background:rgba(16,14,32,.94);color:var(--text);}
+.wv-chat-unread[hidden]{display:none!important}.wv-wheel-motion{font-size:12px;text-align:center;color:var(--gold);min-height:1.1em;margin:4px 0;}
+@media(max-width:780px){.ingame-stage-wrap:has(.wv-match-side) .ingame-arena{display:contents;}.ingame-stage-wrap:has(.wv-match-side) .ingame-hud-top{order:0;}.ingame-stage-wrap:has(.wv-match-side) .arena-players-grid{order:1;width:calc(100% - 24px);align-self:center;}.ingame-stage-wrap:has(.wv-match-side) .ingame-dialogue-bar{order:2;}.ingame-stage-wrap:has(.wv-match-side) .wv-match-side{order:3;margin:0 12px 16px;position:relative;z-index:4;}}
+
+/* v1.7.35 — visual system. Inherits the approved 16 theme token sets and artwork.
+   No selectors encode hidden roles or factions. Layout uses authorized existing DOM. */
+body {--wv-surface:var(--panel);--wv-raised:var(--panel2);--wv-ink:var(--text);--wv-edge:var(--line);--wv-radius:12px;--wv-gap:12px;--wv-focus:var(--accent);}
+body[data-theme] :is(.village-drawer,.wv-match-side,.wv-feedback-panel,.wv-role-composition,.wv-role-wheel,.hud-left-cluster,.hud-right-cluster,.ingame-dialogue-bar,.arena-seat,.day-discussion-panel,.auth-form-pane,.room-item-card,.codex-grid-card,.codex-detail-hero,.detail-block) {color:var(--wv-ink);background:var(--wv-surface);border:1px solid var(--wv-edge);border-radius:var(--wv-radius);box-shadow:0 8px 22px #0003;}
+body[data-theme] :is(.village-drawer-header,.day-chat-header,.wv-match-result,.wv-public-chat,.wv-role-composition,.wv-role-wheel) {background:var(--wv-raised);color:var(--wv-ink);}
+.wv-public-chat,.wv-match-result{border:1px solid var(--wv-edge);border-radius:var(--wv-radius);padding:var(--wv-gap);min-width:0;}
+body[data-theme] :is(.btn-gold,.btn-secondary,.input-field,.auth-field input,.auth-tabs button,.theme-studio select){border-radius:8px;min-height:40px;line-height:1.35;}
+body[data-theme] :is(.btn-secondary,.input-field,.auth-field input,.theme-studio select){color:var(--wv-ink);background:var(--wv-raised);border:1px solid var(--wv-edge);}
+body[data-theme] .btn-gold{color:#251b16;background:#e6c47d;border:1px solid #f5dba0;box-shadow:none;font-weight:700;}
+body[data-theme] :is(button,input,select,summary,[role=button]):focus-visible{outline:2px solid var(--wv-focus);outline-offset:3px;}
+body[data-theme] button:disabled{opacity:.55;cursor:not-allowed;}
+body[data-theme] .wv-feedback-panel h3,body[data-theme] .wv-match-side h3,body[data-theme] .wv-match-side summary{color:var(--wv-ink);}
+body[data-theme] .wv-feedback-item small,body[data-theme] .wv-game-events,body[data-theme] .muted{color:var(--muted);}
+body[data-theme] .wv-feedback-item{background:var(--wv-raised);border-left:3px solid var(--accent);}
+body[data-theme] .ingame-stage-wrap.night-phase{background:linear-gradient(155deg,var(--bg),var(--bg-moon) 75%,var(--bg));}
+body[data-theme] .ingame-stage-wrap.day-phase{background:linear-gradient(155deg,#4d7492,#b9a587 65%,var(--bg-moon));}
+body[data-theme] .arena-seat{padding:14px;min-height:116px;justify-content:center;}
+body[data-theme] .arena-seat.targeted,body[data-theme] .arena-seat[aria-pressed=true]{border:2px solid var(--accent);box-shadow:0 0 0 2px var(--glow);}
+body[data-theme] .arena-seat.wv-eliminated-seat{opacity:.72;filter:grayscale(.75);border-style:dashed;}
+body[data-theme] .wv-self-card{background:var(--wv-raised);color:var(--wv-ink);border:1px solid var(--wv-edge);padding:8px;}
+.wv-self-card img{width:56px;height:56px;object-fit:contain;}
+.wv-live-indicator{font-size:12px;color:var(--muted);white-space:nowrap;}
+.wv-phase-label{font-size:13px;font-weight:700;color:var(--wv-ink);}
+.wv-match-result h3{margin:0 0 5px;font-size:18px;}
+.wv-match-result .row{flex-wrap:wrap;}
+.wv-motion-setting{display:flex;align-items:center;gap:10px;margin:12px 0;}
+.wv-visual-toast{position:fixed;top:max(12px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);z-index:1301;width:max-content;max-width:calc(100vw - 24px);padding:10px 16px;background:var(--panel);color:var(--text);border:1px solid var(--accent);border-radius:10px;box-shadow:0 8px 28px #0006;pointer-events:none;text-align:center;font-size:14px;font-weight:600;animation:wv-visual-enter .22s ease-out;}
+@keyframes wv-visual-enter{from{opacity:0;transform:translate(-50%,-8px)}to{opacity:1;transform:translate(-50%,0)}}
+.wv-visual-no-motion,.wv-visual-reduced .wv-visual-toast{animation:none;}
+.wv-visual-reduced .wv-spin,.wv-visual-reduced .village-fx *,.wv-visual-reduced .scene-transition{animation:none!important;transition:none!important;}
+body[data-theme] .wv-match-side{gap:12px;padding:12px;}
+body[data-theme] .wv-role-composition,body[data-theme] .wv-role-wheel{padding:10px;}
+body[data-theme] .ingame-stage-wrap:has(.wv-match-side) .ingame-dialogue-bar{padding:12px;gap:12px;}
+body[data-theme] .ingame-stage-wrap:has(.wv-match-side) .ingame-arena{width:min(1420px,100%);grid-template-columns:minmax(0,1fr) minmax(300px,440px);gap:16px;padding:12px 24px;}
+body[data-theme] .ingame-stage-wrap:has(.wv-match-side) .arena-players-grid{grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:12px;}
+@media(max-width:1000px){body[data-theme] .ingame-stage-wrap:has(.wv-match-side) .ingame-arena{grid-template-columns:minmax(0,1fr) minmax(260px,36%);padding:10px 16px;gap:12px;}}
+@media(max-width:780px){body[data-theme] .ingame-stage-wrap:has(.wv-match-side) .ingame-arena{display:contents;}body[data-theme] .ingame-stage-wrap:has(.wv-match-side) .arena-players-grid{grid-template-columns:repeat(auto-fit,minmax(105px,1fr));gap:8px;}body[data-theme] .arena-seat{padding:8px;min-height:104px;}body[data-theme] .hud-left-cluster,body[data-theme] .hud-right-cluster{max-width:100%;width:100%;padding:8px;}body[data-theme] .ingame-hud-top{padding:8px 12px;gap:8px;}body[data-theme] .ingame-stage-wrap:has(.wv-match-side) .ingame-dialogue-bar{margin:8px 12px;}body[data-theme] .wv-self-card img{width:40px;height:40px;}body[data-theme] :is(button,input,select){min-height:40px;} .wv-visual-toast{font-size:13px;}}
+@media(prefers-reduced-motion:reduce){.wv-visual-toast,.wv-spin,.village-fx *{animation:none!important;transition:none!important;}}
+
+/* Match the theme surfaces of the persistent navigation and codex. */
+body[data-theme] :is(.sidebar,.topbar,.codex-grid-stage,.codex-toolbar,.codex-view-switch,.codex-view-toggle){background:var(--wv-surface);color:var(--wv-ink);border-color:var(--wv-edge);}
+body[data-theme] :is(.nav-btn,.nav-group-label,.sidebar-brand-text small,.topbar-left,.codex-view-btn){color:var(--wv-ink);}
+body[data-theme] .nav-btn.active{color:var(--wv-ink);background:var(--wv-raised);border-color:var(--accent);}
+body[data-theme] .wv-visual-toast{top:auto;bottom:calc(128px + env(safe-area-inset-bottom,0px));}
+@media(max-width:780px){body[data-theme] .wv-visual-toast{bottom:12px;}}
+/* v1.7.36: readable phase banner and opaque light-theme seat surfaces. */
+body[data-theme] .phase-sky-banner {box-sizing:border-box;max-width:calc(100% - 24px);white-space:normal;overflow-wrap:anywhere;text-align:center;justify-content:center;line-height:1.4;min-width:0;}
+@media(max-width:780px){body[data-theme] .phase-sky-banner{padding:8px 12px;font-size:13px;flex-wrap:wrap;}}
+body[data-theme=basiclight]{--wv-seat-surface:#f3f6fc;--wv-seat-ink:#222b38;--wv-seat-active:#dce8f5;}
+body[data-theme=cream]{--wv-seat-surface:#fbf1df;--wv-seat-ink:#3b332b;--wv-seat-active:#ead9b9;}
+body[data-theme=sage]{--wv-seat-surface:#e5efe3;--wv-seat-ink:#283830;--wv-seat-active:#c8dfc5;}
+body:is([data-theme=basiclight],[data-theme=cream],[data-theme=sage]) .arena-seat{background:var(--wv-seat-surface);color:var(--wv-seat-ink);opacity:1;filter:none;}
+body:is([data-theme=basiclight],[data-theme=cream],[data-theme=sage]) .arena-seat:is(.targeted,[aria-pressed=true]){background:var(--wv-seat-active);color:var(--wv-seat-ink);border:2px solid var(--wv-seat-ink);}
+body:is([data-theme=basiclight],[data-theme=cream],[data-theme=sage]) .arena-seat :is(.arena-seat-name,.seat-badge,.role-id-badge){color:var(--wv-seat-ink);}
+body:is([data-theme=basiclight],[data-theme=cream],[data-theme=sage]) .arena-seat.wv-eliminated-seat{opacity:1;filter:none;border-style:dashed;}
+body:is([data-theme=basiclight],[data-theme=cream],[data-theme=sage]) .arena-seat .seat-badge{background:var(--wv-seat-surface);border-color:var(--wv-seat-ink);}
+/* Theme switches are immediate for the text/surface pair, not interpolated
+   through unreadable dark/light combinations. Inline demo accent is scoped. */
+body:is([data-theme=basiclight],[data-theme=cream],[data-theme=sage]) .arena-seat{transition-property:transform,border-color,box-shadow;}
+body:is([data-theme=basiclight],[data-theme=cream],[data-theme=sage]) .arena-seat .seat-badge{color:var(--wv-seat-ink)!important;}
+@media(prefers-reduced-motion:reduce){.arena-seat,.phase-sky-banner{transition:none!important;}}
