@@ -6,7 +6,7 @@ import vm from 'node:vm';
 import {readFileSync} from 'node:fs';
 const source=readFileSync(new URL('../frontend/integration.js',import.meta.url),'utf8');
 function adapter(){
- const ctx={window:{WolvesPlayerUX:{errorMessage:e=>e.message}},sessionStorage:{getItem:()=>null,setItem(){}},document:{addEventListener(){}},titleScreenOpen:false,page:'rooms',render(){},go(where){ctx.page=where;},enterGamePage(where){ctx.page=where;},console};
+ const ctx={window:{WolvesPlayerUX:{errorMessage:e=>e.message}},sessionStorage:{getItem:()=>null,setItem(){}},document:{addEventListener(){},getElementById:()=>null},titleScreenOpen:false,page:'rooms',render(){},go(where){ctx.page=where;},enterGamePage(where){ctx.page=where;},console};
  vm.runInNewContext(source,ctx);const live=ctx.window.WolvesLive;live.profile={id:'seer'};live.refreshUI=()=>{};live.renderGame=()=>{};return {ctx,live};
 }
 const view=(phase,revision)=>({gameId:'game',revision,phase,round:1,players:[{playerId:'seer'},{playerId:'knight'}]});
