@@ -1,0 +1,266 @@
+{
+  "scope": "Finite obligations for exact two 1.3.3 Normal Gameplay decks. Evidence names checked in current backend/browser reports. Remaining classes are not passed merely because two routes completed.",
+  "contracts": [
+    {
+      "deck": [
+        9,
+        25,
+        48,
+        74,
+        87
+      ],
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "certified": false,
+      "sourceRefs": [
+        "character.json#9",
+        "character.json#87",
+        "character.json#48",
+        "QD-01",
+        "PH-01",
+        "VH57",
+        "V02/V03"
+      ],
+      "tests": [
+        "Growth normal five-human snow and pharmacist: protected and rescued bite, both victory routes, restart and replay",
+        "Stability five-player #9/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay",
+        "browser_s15_normal_rescue_e2e.py"
+      ],
+      "evidenceScope": [
+        {
+          "id": "FP1",
+          "class": "Initial attack/protection, protected vs unprotected, no rescue vs rescue; two preliminary victims vs one",
+          "evidence": "Growth normal five-human snow and pharmacist: protected and rescued bite, both victory routes, restart and replay"
+        },
+        {
+          "id": "FP2",
+          "class": "Self rescue, independent sedative and rescue consumption, invalid protected target",
+          "evidence": "Stability five-player #9/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay"
+        },
+        {
+          "id": "FP3",
+          "class": "Status expires next day, vote/chat suppression, resource reuse denied, dead pharmacist no future window",
+          "evidence": "Stability five-player #9/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay"
+        },
+        {
+          "id": "FP4",
+          "class": "Both victories, privacy, server role assignment, restart while pending and completed, replay",
+          "evidence": [
+            "Growth normal five-human snow and pharmacist: protected and rescued bite, both victory routes, restart and replay",
+            "Stability five-player #9/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay",
+            "browser_s15_normal_rescue_e2e.py"
+          ]
+        }
+      ],
+      "remainingAcceptance": [
+        {
+          "id": "FP5",
+          "class": "Attack/protection/rescue reachable branches by reduced alive set, cause of removal (night/hanging)",
+          "cases": "For each nonterminal alive mask, test 0/1/2 distinct valid attack targets, protector absent/present/skip/eligible previous target, healer absent/present/spent; test rescue none or each available preliminary wolf victim, including self. Reject dead targets, invalid/duplicate target. Derive actual branch equivalence from current runtime; do not count unrealizable states.",
+          "status": "BACKEND_PASS_BROWSER_GATE_NOT_CLOSED"
+        },
+        {
+          "id": "FP6",
+          "class": "Resource/cooldown histories",
+          "cases": "Protection after protector dies, one-time absorb, expiry after 2 nights, distinct target limit 3; potion remaining/spent independently, sedative valid/invalid target, pending rescue after death under PH-01 where applicable.",
+          "status": "BACKEND_PASS_BROWSER_GATE_NOT_CLOSED"
+        },
+        {
+          "id": "FP7",
+          "class": "Finite voting and victory",
+          "cases": "Enumerate alive masks and legal vote/blank/no submission sets with sedated voter excluded; verify adjudicator, unique max/tie/zero and actual commits on each outcome class, QD-01 including dead members; prevent terminal transitions while rescue pending.",
+          "status": "BACKEND_PASS_BROWSER_GATE_NOT_CLOSED"
+        },
+        {
+          "id": "FP8",
+          "class": "Runtime parity and synchronization",
+          "cases": "Submit allowed simultaneous actions in alternate order, duplicate/revision rejection; host handoff and reconnect during actual pending rescue, after protection and after end; private projection across every role and outsider; Replay comparison.",
+          "status": "BACKEND_PASS_BROWSER_GATE_NOT_CLOSED"
+        }
+      ],
+      "unverifiedDoNotCertify": true,
+      "status": "NOT_CERTIFIED",
+      "closureEvidence": {
+        "FP5": [
+          "Five-player snow/pharmacist finite kernel: all living masks, both removal paths, fresh/spent rescue, 0/1/2 attacks and every legal rescue target",
+          "Five-player snow/pharmacist persistent protection: distinct history, double layers, expiry, death of protector and resources"
+        ],
+        "FP6": [
+          "Five-player snow/pharmacist persistent protection: distinct history, double layers, expiry, death of protector and resources",
+          "Stability five-player #9/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay"
+        ],
+        "FP7": [
+          "Five-player snow/pharmacist finite kernel: voting commit classes",
+          "Five-player snow/pharmacist finite adjudicator: every legal ballot assignment by reachable living mask and active sedative"
+        ],
+        "FP8": [
+          "Five-player snow/pharmacist actual pending rescue: coordinator handoff, stale revision, retry, privacy, restart and replay",
+          "Five-player snow/pharmacist finite kernel: all living masks, both removal paths, fresh/spent rescue, 0/1/2 attacks and every legal rescue target",
+          "Growth normal five-human snow and pharmacist: protected and rescued bite, both victory routes, restart and replay",
+          "browser_s15_normal_rescue_e2e.py"
+        ]
+      },
+      "finiteKernel": {
+        "prefixes": 42,
+        "branches": 1102,
+        "windows": 536,
+        "actualKernel": true,
+        "normalRuleVersion": "wolvesville-official-v1.3.3"
+      },
+      "voteCommits": 173,
+      "ballotAdjudications": {
+        "states": 30,
+        "count": 34439
+      },
+      "persistentProtectionBranches": 531,
+      "requiredTests": [
+        "Growth normal five-human snow and pharmacist: protected and rescued bite, both victory routes, restart and replay",
+        "Stability five-player #9/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay",
+        "Five-player snow/pharmacist actual pending rescue: coordinator handoff, stale revision, retry, privacy, restart and replay",
+        "Five-player snow/pharmacist finite kernel: all living masks, both removal paths, fresh/spent rescue, 0/1/2 attacks and every legal rescue target",
+        "Five-player snow/pharmacist finite kernel: voting commit classes",
+        "Five-player snow/pharmacist finite adjudicator: every legal ballot assignment by reachable living mask and active sedative",
+        "Five-player snow/pharmacist persistent protection: distinct history, double layers, expiry, death of protector and resources"
+      ],
+      "missingTests": [],
+      "browserPass": false,
+      "isolatedBrowserDiagnostic": [
+        {
+          "suite": "browser_s15_normal_rescue_e2e.py",
+          "version": "1.3.3",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/s15-gameplay-closure/diagnostic-isolated-five/matrix/1.3.3-browser_s15_normal_rescue_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_normal_rescue_e2e.py",
+          "durationMs": 37089
+        }
+      ],
+      "closureExplanation": "Factorized finite domain: actual alive masks and both removal causes with fresh/spent rescue; previous-night shield vs new distinct shield across all targets and all legal bites with rescue; expiry, consumed shield, dead owner, dead target, three distinct uses and resource rejection. At most one layer per recipient; previous use history affects availability only, not independent attack outcome. Dead actors/targets remove choices, spent rescue removes optional branch. Read-only ballot matrix is not HTTP; real REST/WS handoff, restart/retry, privacy, both browser winners and replay bind the same official kernel. No claim of every unbounded game history."
+    },
+    {
+      "deck": [
+        25,
+        31,
+        48,
+        74,
+        87
+      ],
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "certified": true,
+      "sourceRefs": [
+        "character.json#31",
+        "character.json#87",
+        "character.json#48",
+        "QD-01",
+        "PH-01",
+        "VH57",
+        "V02/V03"
+      ],
+      "tests": [
+        "Growth normal five-human guard and pharmacist: protected and rescued bite, both victory routes, restart and replay",
+        "Stability five-player #31/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay",
+        "browser_s15_normal_guard_rescue_e2e.py"
+      ],
+      "evidenceScope": [
+        {
+          "id": "FP1",
+          "class": "Initial attack/protection, protected vs unprotected, no rescue vs rescue; two preliminary victims vs one",
+          "evidence": "Growth normal five-human guard and pharmacist: protected and rescued bite, both victory routes, restart and replay"
+        },
+        {
+          "id": "FP2",
+          "class": "Self rescue, independent sedative and rescue consumption, invalid protected target",
+          "evidence": "Stability five-player #31/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay"
+        },
+        {
+          "id": "FP3",
+          "class": "Status expires next day, vote/chat suppression, resource reuse denied, dead pharmacist no future window",
+          "evidence": "Stability five-player #31/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay"
+        },
+        {
+          "id": "FP4",
+          "class": "Both victories, privacy, server role assignment, restart while pending and completed, replay",
+          "evidence": [
+            "Growth normal five-human guard and pharmacist: protected and rescued bite, both victory routes, restart and replay",
+            "Stability five-player #31/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay",
+            "browser_s15_normal_guard_rescue_e2e.py"
+          ]
+        }
+      ],
+      "remainingAcceptance": [
+        {
+          "id": "FP5",
+          "class": "Attack/protection/rescue reachable branches by reduced alive set, cause of removal (night/hanging)",
+          "cases": "For each nonterminal alive mask, test 0/1/2 distinct valid attack targets, protector absent/present/skip/eligible previous target, healer absent/present/spent; test rescue none or each available preliminary wolf victim, including self. Reject dead targets, invalid/duplicate target. Derive actual branch equivalence from current runtime; do not count unrealizable states.",
+          "status": "PASS_SCOPED"
+        },
+        {
+          "id": "FP6",
+          "class": "Resource/cooldown histories",
+          "cases": "Consecutive-target rejection, intervening skip/alternate, target death and protection expiry; potion remaining/spent independently, sedative valid/invalid target, pending rescue after death under PH-01 where applicable.",
+          "status": "PASS_SCOPED"
+        },
+        {
+          "id": "FP7",
+          "class": "Finite voting and victory",
+          "cases": "Enumerate alive masks and legal vote/blank/no submission sets with sedated voter excluded; verify adjudicator, unique max/tie/zero and actual commits on each outcome class, QD-01 including dead members; prevent terminal transitions while rescue pending.",
+          "status": "PASS_SCOPED"
+        },
+        {
+          "id": "FP8",
+          "class": "Runtime parity and synchronization",
+          "cases": "Submit allowed simultaneous actions in alternate order, duplicate/revision rejection; host handoff and reconnect during actual pending rescue, after protection and after end; private projection across every role and outsider; Replay comparison.",
+          "status": "PASS_SCOPED"
+        }
+      ],
+      "unverifiedDoNotCertify": true,
+      "closureEvidence": {
+        "FP5": "Five-player guard/pharmacist finite kernel: all living masks, both removal paths, fresh/spent rescue, 0/1/2 attacks and every legal rescue target",
+        "FP6": [
+          "Five-player guard/pharmacist finite kernel: every cooldown target, invalid target/resource and voting commit classes",
+          "Five-player guard/pharmacist reduced history: dead prior guard target, invalid actions and once-only resources",
+          "Stability five-player #31/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay"
+        ],
+        "FP7": [
+          "Five-player guard/pharmacist finite kernel: every cooldown target, invalid target/resource and voting commit classes",
+          "Five-player guard/pharmacist finite adjudicator: every legal ballot assignment by reachable living mask and active sedative"
+        ],
+        "FP8": [
+          "Five-player guard/pharmacist actual pending rescue: coordinator handoff, stale revision, retry, privacy, restart and replay",
+          "Five-player guard/pharmacist finite kernel: all living masks, both removal paths, fresh/spent rescue, 0/1/2 attacks and every legal rescue target",
+          "Growth normal five-human guard and pharmacist: protected and rescued bite, both victory routes, restart and replay",
+          "browser_s15_normal_guard_rescue_e2e.py"
+        ]
+      },
+      "finiteKernel": {
+        "prefixes": 42,
+        "branches": 1102,
+        "windows": 536,
+        "actualKernel": true,
+        "normalRuleVersion": "wolvesville-official-v1.3.3"
+      },
+      "voteCommits": 198,
+      "ballotAdjudications": {
+        "states": 30,
+        "count": 34439
+      },
+      "requiredTests": [
+        "Growth normal five-human guard and pharmacist: protected and rescued bite, both victory routes, restart and replay",
+        "Stability five-player #31/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay",
+        "Five-player guard/pharmacist actual pending rescue: coordinator handoff, stale revision, retry, privacy, restart and replay",
+        "Five-player guard/pharmacist finite kernel: all living masks, both removal paths, fresh/spent rescue, 0/1/2 attacks and every legal rescue target",
+        "Five-player guard/pharmacist finite kernel: every cooldown target, invalid target/resource and voting commit classes",
+        "Five-player guard/pharmacist finite adjudicator: every legal ballot assignment by reachable living mask and active sedative",
+        "Five-player guard/pharmacist reduced history: dead prior guard target, invalid actions and once-only resources"
+      ],
+      "missingTests": [],
+      "browserPass": true,
+      "status": "PLAYABLE_BRANCH_COMPLETE",
+      "closureExplanation": "Actual kernel prefixes and commits exercise independent finite classes. Guard cooldown is a last-target inequality independent of other roles; representative reduced-history checks, invalid actions, actual resource state and both removal causes. Read-only ballot enumeration is not HTTP. Actual REST/WS handoff while pending, both winners and reconnect/replay bind runtime and browser. No claim of all possible unbounded game histories.",
+      "currentRevalidated": false
+    }
+  ],
+  "build": "1.7.24-s15-gameplay-closure-wip",
+  "sourceFingerprint": "611eda16bbcf0f48530cc6174c03912206578aefd857f236fe255bf4bd066d52"
+}

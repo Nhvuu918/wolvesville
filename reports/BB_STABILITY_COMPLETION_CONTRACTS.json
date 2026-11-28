@@ -1,0 +1,261 @@
+{
+  "version": "1.7.22-s15-stability-completion-wip",
+  "baseRuleset": "wolvesville-official-v1.3.3",
+  "profile": "owner-bb-candidate-v2",
+  "sourceContract": "reports/OWNER_BB_COMPLETION_CONTRACTS.json",
+  "officialFullCertificatesAdded": [],
+  "candidateContracts": [
+    {
+      "characterId": 10,
+      "scope": "Unpublished, bounded; candidate PASS is not official FULL or S",
+      "obligations": [
+        {
+          "id": "TRAP-LIFETIME",
+          "status": "PASS",
+          "sources": [
+            "DEC-BT-02",
+            "VH10",
+            "VH41"
+          ],
+          "evidence": [
+            "BBv2 14",
+            "BBv2 12"
+          ],
+          "scope": "Across-night journal/group reducer; not live multi-night route"
+        },
+        {
+          "id": "TRAP-AURA",
+          "status": "PASS",
+          "sources": [
+            "character.json#10",
+            "character.json#25"
+          ],
+          "evidence": [
+            "BBv2 07",
+            "BBv2 real accepted engineer queue: trap on 25"
+          ],
+          "scope": "Actual accepted queue + grouped candidate"
+        },
+        {
+          "id": "TRAP-ROLE",
+          "status": "PASS",
+          "sources": [
+            "SK-05",
+            "Q13-06"
+          ],
+          "evidence": [
+            "BBv2 12",
+            "BBv2 real accepted engineer queue: trap on 74"
+          ],
+          "scope": "Actual accepted queue + typed RNG"
+        },
+        {
+          "id": "TRAP-JUDGMENT",
+          "status": "PASS",
+          "sources": [
+            "VH84"
+          ],
+          "evidence": [
+            "BBv2 real accepted engineer queue: trap on 5"
+          ],
+          "scope": "Actual accepted queue and official usage charge"
+        },
+        {
+          "id": "TRAP-GUARD",
+          "status": "PASS",
+          "sources": [
+            "BB-04=B",
+            "BB-05=B"
+          ],
+          "evidence": [
+            "BBv2 08"
+          ],
+          "scope": "Bounded trusted effect group, direct death bypasses shield"
+        },
+        {
+          "id": "TRAP-POISON-RESCUE",
+          "status": "PASS",
+          "sources": [
+            "BB-04=B",
+            "BB-05=B"
+          ],
+          "evidence": [
+            "BBv2 09"
+          ],
+          "scope": "Bounded trusted effect group, poison suppressed and preliminary death closed"
+        },
+        {
+          "id": "TRAP-GROUP",
+          "status": "PASS",
+          "sources": [
+            "BB-05=B"
+          ],
+          "evidence": [
+            "BBv2 07",
+            "BBv2 10",
+            "BBv2 16"
+          ],
+          "scope": "One actor/round/phase sealed group, rollback on unknown interaction"
+        },
+        {
+          "id": "TRAP-REPLAY",
+          "status": "PASS",
+          "sources": [
+            "DEC-BT-02"
+          ],
+          "evidence": [
+            "BBv2 12",
+            "BBv2 15"
+          ],
+          "scope": "Separate journal v1/v2"
+        },
+        {
+          "id": "TRAP-LIVE",
+          "status": "NOT_IMPLEMENTED",
+          "reason": "Live multi-night Game Session transaction, authorized public API/WS/UI and browser evidence"
+        },
+        {
+          "id": "TRAP-RESOURCES",
+          "status": "NOT_IMPLEMENTED",
+          "reason": "Guard/witch cost, cooldown and resource accounting in live engine"
+        },
+        {
+          "id": "TRAP-REACTIONS",
+          "status": "NOT_IMPLEMENTED",
+          "reason": "Unknown death-chain and multi-layer interactions outside bounded adapter"
+        },
+        {
+          "id": "TRAP-MULTIWINDOW",
+          "status": "NOT_IMPLEMENTED",
+          "reason": "Precise cross-phase group boundary and unsupported mapping"
+        }
+      ]
+    }
+  ],
+  "packContract": {
+    "scope": "unpublished candidate only",
+    "policyEvidence": [
+      "BBv2 01",
+      "BBv2 02",
+      "BBv2 03",
+      "BBv2 04",
+      "BBv2 05",
+      "BBv2 06",
+      "BBv2 11",
+      "BBv2 13"
+    ],
+    "remaining": [
+      "indefinite response timeout/AFK policy",
+      "general authorized entitlement allocator and fixed order source",
+      "official transaction and mixed rescue/death-chain",
+      "public API/WS/UI and browser evidence"
+    ],
+    "officialMetricCredit": 0
+  },
+  "liveEvidence": {
+    "scope": "Unpublished QA profiles, no official FULL",
+    "TRAP-LIFETIME": "Retested",
+    "TRAP-AURA": "Retested",
+    "TRAP-ROLE": "PASS (HTTP)",
+    "TRAP-JUDGMENT": "PASS (HTTP)",
+    "TRAP-GUARD": "Retested",
+    "TRAP-POISON-RESCUE": "Bounded #29 WITCH_WINDOW live; HTTP and browser evidence, no #87 cross-window",
+    "TRAP-REVIVAL": "NOT_INTEGRATED_LIVE",
+    "TRAP-GROUP": "Bounded #29 separate rescue and poison windows, persistent group, dawn publication; no universal cross-phase mapping",
+    "PACK": "Retested one target, protection and parity victory",
+    "PACK-MULTI-TARGET": "Sole living #48 two targets live; multiple living wolves with additional entitlement not integrated",
+    "PACK-RETALIATION": "Bounded sole #48 two targets with #77; live HTTP and browser evidence",
+    "source": [
+      "tests/sprint15-bb-live.test.mjs",
+      "reports/BB_OFFICIAL_BROWSER_RESULTS.json"
+    ],
+    "officialFullCertificatesAdded": []
+  },
+  "liveQAObligations": [
+    {
+      "id": "TRAP-WITCH-SAME-WINDOW",
+      "status": "PASS",
+      "rules": [
+        "character.json#29",
+        "BB-04=B",
+        "BB-05=B",
+        "PH-01"
+      ],
+      "scope": "[8,10,25,29], staged nights, two accepted potions, one trap consumption, resource ledger, SQLite and replay",
+      "test": "tests/sprint15-bb-live.test.mjs",
+      "browser": "browser_s15_bb_live_witch_e2e.py"
+    },
+    {
+      "id": "PACK-SOLE-LEADER-RETALIATION",
+      "status": "PASS",
+      "rules": [
+        "character.json#48",
+        "VH51",
+        "VH54",
+        "QD-01",
+        "SAME",
+        "RESOLVE"
+      ],
+      "scope": "[25,48,74,77], sole wolf only, two legally committed attacks, first retaliation, second still resolves",
+      "test": "tests/sprint15-bb-live.test.mjs",
+      "browser": "browser_s15_bb_live_retaliation_e2e.py"
+    },
+    {
+      "id": "TRAP-REVIVAL",
+      "status": "NOT_IMPLEMENTED",
+      "scope": "No live combined resurrection/mark domain"
+    },
+    {
+      "id": "TRAP-CROSS-WINDOW",
+      "status": "PASS_BOUNDED_LIVE_QA",
+      "scope": "WV-RD-BB-2026-01, #29 WITCH_RESCUE and WITCH_POISON, SQLite restart and PH-01; other mappings not proven"
+    },
+    {
+      "id": "PACK-MULTIPLE-WOLVES-MULTIPLE-TARGETS",
+      "status": "NOT_IMPLEMENTED",
+      "scope": "Require source-backed extra bite entitlement, never derive from #48 when multiple wolves alive"
+    },
+    {
+      "id": "OFFICIAL-RELEASE",
+      "status": "INCOMPLETE",
+      "scope": "1.3.4 candidate; all 13 owner choices approved, broader runtime and acceptance pending"
+    }
+  ],
+  "stabilityEvidence": {
+    "emptyWindows": "PASS",
+    "fivePlayer": [
+      {
+        "deck": [
+          25,
+          31,
+          48,
+          74,
+          87
+        ],
+        "test": "Stability five-player #31/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay",
+        "status": "PASS",
+        "remaining": [
+          "Reduced-roster rescue/protection combinations and repeated night coverage",
+          "Finite ballot classes and real room vote/reconnect/phase paths",
+          "No FULL role or new deck certificate inferred"
+        ]
+      },
+      {
+        "deck": [
+          9,
+          25,
+          48,
+          74,
+          87
+        ],
+        "test": "Stability five-player #9/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay",
+        "status": "PASS",
+        "remaining": [
+          "Reduced-roster rescue/protection combinations and repeated night coverage",
+          "Finite ballot classes and real room vote/reconnect/phase paths",
+          "No FULL role or new deck certificate inferred"
+        ]
+      }
+    ]
+  }
+}

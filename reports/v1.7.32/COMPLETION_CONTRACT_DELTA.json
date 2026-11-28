@@ -1,0 +1,471 @@
+{
+  "version": "1.7.32",
+  "policy": "Supplemental bounded QA evidence; inherited original obligations unchanged. No FULL or atomic certificate promotion.",
+  "roles": [
+    {
+      "characterId": 74,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": "1+S22-supplement",
+      "certification": "PARTIAL",
+      "originalContractPreserved": true,
+      "originalObligations": [
+        {
+          "id": "WV-A74-EXACT",
+          "ruleSources": [
+            "character.json#74",
+            "S15-OWNER-SEER-01",
+            "SK-05",
+            "Q13-06"
+          ],
+          "condition": "private exact role",
+          "trigger": "night action",
+          "preconditions": "alive",
+          "targets": "one other living",
+          "resource": "once per night",
+          "duration": "resolved result",
+          "exceptions": "SK05/Q13-06 false-role trap; aura effects separate",
+          "interactions": [
+            "investigation",
+            "privacy",
+            "lock"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [
+            "S15 UX: seer aura and mystical seer exact role privately, public composition has no mapping, restart/replay",
+            "S15 accelerated #3 passive aura concealment does not distort exact-role #74"
+          ],
+          "browser": null
+        },
+        {
+          "id": "BT-74-1",
+          "condition": "exact identity, not aura",
+          "ruleSources": [
+            "character.json#74 / Q13-06"
+          ],
+          "status": "PASS",
+          "scope": "Existing tested decks",
+          "testPath": "tests/sprint15-breakthrough-medium.test.mjs"
+        },
+        {
+          "id": "BT-74-2",
+          "condition": "false-role trap and disguise interactions",
+          "ruleSources": [
+            "Q13-06 / character.json#57"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "First-night #10 tested; other disguise composition missing",
+          "testPath": null
+        },
+        {
+          "id": "BT-74-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#74"
+          ]
+        },
+        {
+          "id": "BT-74-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#74"
+          ]
+        },
+        {
+          "id": "BT-74-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#74"
+          ]
+        }
+      ],
+      "scopeAcceptance": [
+        {
+          "id": "S22-74-QA",
+          "scope": "Approved v1.3.3 QA [25,28,37,74]: typed private inspection through one transposition; expiry, no public result, later actual hanging; SQLite and replay",
+          "code": "backend/src/official/inspection-rules.ts; inspection-effects.ts; swap-rules.ts",
+          "ruleSources": "character.json#74/#37; Q13-06; VH14; S15-OWNER-SEER-01",
+          "backendTest": "S22 #25/#74/#37: shared transposition preserves typed private inspection, expiry, restart and actual hanging",
+          "backendStatus": "PASS",
+          "focusedEvidence": "reports/v1.7.32/focused.log",
+          "browser": [
+            {
+              "suite": "browser_s22_dual_swap_e2e.py",
+              "version": "1.3.3",
+              "status": "PASS",
+              "exitCode": 0,
+              "log": "reports/v1.7.32/browser-candidate/1.3.3-browser_s22_dual_swap_e2e.log",
+              "command": "node scripts/run-browser-s06.mjs browser_s22_dual_swap_e2e.py",
+              "durationMs": 19155
+            }
+          ],
+          "sourceFingerprint": "4ba194c57aa4a0e46739b06c503eaadadc1f858fe2fa193b6ce41b138e150183",
+          "fullCredit": false
+        }
+      ],
+      "remaining": "BT-74-2: chưa nghiệm thu miền giả danh #57, biến đổi #18 và chuyển vai theo đúng từng nguồn; Q13-06 false-role khi phối hợp các nguồn nhiễu; BT-74-GLOBAL-0/1/2.",
+      "globalObligationsRetained": true,
+      "officialNormalGameplayPromotion": false
+    },
+    {
+      "characterId": 25,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": "1+S22-supplement",
+      "certification": "PARTIAL",
+      "originalContractPreserved": true,
+      "originalObligations": [
+        {
+          "id": "WV-A25-AURA",
+          "ruleSources": [
+            "character.json#25",
+            "S15-OWNER-SEER-01",
+            "VH39",
+            "VH25",
+            "Q13-11"
+          ],
+          "condition": "private aura (not role)",
+          "trigger": "night action",
+          "preconditions": "alive",
+          "targets": "one other living",
+          "resource": "once per night",
+          "duration": "resolved result",
+          "exceptions": "owner correction supersedes old #25; lawful distortion and lock",
+          "interactions": [
+            "investigation",
+            "privacy",
+            "lock"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [
+            "S15 UX: seer aura and mystical seer exact role privately, public composition has no mapping, restart/replay",
+            "S15 aura expansion #49 private distortion, expiry, duplicate and restart",
+            "S15 aura expansion #72 private distortion, expiry, duplicate and restart"
+          ],
+          "browser": null
+        },
+        {
+          "id": "BT-25-1",
+          "condition": "aura only, never role",
+          "ruleSources": [
+            "character.json#25 / SK-05"
+          ],
+          "status": "PASS",
+          "scope": "Existing tested decks",
+          "testPath": "tests/sprint15-deep-engineer.test.mjs"
+        },
+        {
+          "id": "BT-25-2",
+          "condition": "trap on unknown aura; reflection and concealment",
+          "ruleSources": [
+            "SYS-25 / character.json#35 / #3"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "All referenced interference not integrated",
+          "testPath": null
+        },
+        {
+          "id": "BT-25-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#25"
+          ]
+        },
+        {
+          "id": "BT-25-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#25"
+          ]
+        },
+        {
+          "id": "BT-25-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#25"
+          ]
+        }
+      ],
+      "scopeAcceptance": [
+        {
+          "id": "S22-25-QA",
+          "scope": "Approved v1.3.3 QA [25,28,37,74]: typed private inspection through one transposition; expiry, no public result, later actual hanging; SQLite and replay",
+          "code": "backend/src/official/inspection-rules.ts; inspection-effects.ts",
+          "ruleSources": "S15-OWNER-SEER-01; VH11/VH25/VH39; character.json#3/#35",
+          "backendTest": "S22 #25/#74/#37: shared transposition preserves typed private inspection, expiry, restart and actual hanging",
+          "backendStatus": "PASS",
+          "focusedEvidence": "reports/v1.7.32/focused.log",
+          "browser": [
+            {
+              "suite": "browser_s22_dual_swap_e2e.py",
+              "version": "1.3.3",
+              "status": "PASS",
+              "exitCode": 0,
+              "log": "reports/v1.7.32/browser-candidate/1.3.3-browser_s22_dual_swap_e2e.log",
+              "command": "node scripts/run-browser-s06.mjs browser_s22_dual_swap_e2e.py",
+              "durationMs": 19155
+            }
+          ],
+          "sourceFingerprint": "4ba194c57aa4a0e46739b06c503eaadadc1f858fe2fa193b6ce41b138e150183",
+          "fullCredit": false
+        }
+      ],
+      "remaining": "BT-25-2: #35 phản chiếu lần soi thứ 2, #3 chuyển sói thường, #10 đảo aura Không xác định và các phối hợp che giấu; BT-25-GLOBAL-0/1/2.",
+      "globalObligationsRetained": true,
+      "officialNormalGameplayPromotion": false
+    },
+    {
+      "characterId": 26,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": "1+S22-supplement",
+      "certification": "PARTIAL",
+      "originalContractPreserved": true,
+      "originalObligations": [
+        {
+          "id": "WV-A26-REVIVE",
+          "ruleSources": [
+            "character.json#26",
+            "VH73",
+            "VH76",
+            "PH-01",
+            "VH03"
+          ],
+          "condition": "restore original life identity, faction, resources; public minimal PLAYER_REVIVED",
+          "trigger": "night collection; commit at NIGHT_FINALIZE",
+          "preconditions": "alive when submitting; one charge",
+          "targets": "previously eliminated participant, excluding IDs 46/47/53",
+          "resource": "1 per game",
+          "duration": "same-night finalize",
+          "exceptions": "VH73 any faction/time; VH76 exclusions; PH-01 accepted actor death",
+          "interactions": [
+            "REVIVAL",
+            "DEATH",
+            "VICTORY",
+            "REPLAY"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": "backend/src/official/revival.ts",
+          "requiredTests": [
+            "Deep medium #26: closed death, revival, repeated elimination, PH-01 false",
+            "Deep medium #26: closed death, revival, repeated elimination, PH-01 true"
+          ],
+          "browser": "browser_s15_deep_medium_e2e"
+        },
+        {
+          "id": "WV-A26-ANONYMOUS-CHAT",
+          "ruleSources": [
+            "character.json#26",
+            "VH77"
+          ],
+          "condition": "anonymous 1–1 chat",
+          "trigger": "night",
+          "preconditions": "living medium",
+          "targets": "dead participant",
+          "resource": "per source",
+          "duration": "night",
+          "exceptions": "medium knows identity, dead player does not",
+          "interactions": [
+            "CH",
+            "PRIVACY"
+          ],
+          "status": "PASS",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": "backend/src/official/medium-chat.ts",
+          "requiredTests": [
+            "Breakthrough VH77 medium private chat: authorization, anonymous projections, retry, SQLite restart, phase close and replay"
+          ],
+          "browser": "tests/browser_s15_breakthrough_medium_e2e.py"
+        },
+        {
+          "id": "BT-26-1",
+          "condition": "one revival, closed ledger, PH-01, repeated death",
+          "ruleSources": [
+            "VH73 / PH-01"
+          ],
+          "status": "PASS",
+          "scope": "Bounded [8,25,26] and [8,26,74]",
+          "testPath": "tests/sprint15-breakthrough-medium.test.mjs"
+        },
+        {
+          "id": "BT-26-2",
+          "condition": "any dead faction and exclusion #46/#47/#53",
+          "ruleSources": [
+            "VH73 / VH76"
+          ],
+          "status": "NOT_IMPLEMENTED",
+          "scope": "Bounded capability does not accept these role compositions",
+          "testPath": null
+        },
+        {
+          "id": "BT-26-3",
+          "condition": "night asymmetric chat, privacy, restart, UI",
+          "ruleSources": [
+            "VH77"
+          ],
+          "status": "PASS",
+          "scope": "Bounded domain; no identity metadata",
+          "testPath": "tests/sprint15-breakthrough-medium.test.mjs"
+        },
+        {
+          "id": "BT-26-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#26"
+          ]
+        },
+        {
+          "id": "BT-26-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#26"
+          ]
+        },
+        {
+          "id": "BT-26-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#26"
+          ]
+        }
+      ],
+      "scopeAcceptance": [
+        {
+          "id": "S22-26-QA",
+          "scope": "Approved v1.3.3 QA [8,25,26,28]: third-faction night death, revival with original identity and faction, actual hanging; minimal public event and replay",
+          "code": "backend/src/official/revival.ts; revival-capability.ts; medium-chat.ts",
+          "ruleSources": "VH73/VH76/VH77; VH03; DC-TRAP-02",
+          "backendTest": "S22 VH73 #26: third faction #28 night death, revival, real hanging victory and closed death ledger",
+          "backendStatus": "PASS",
+          "focusedEvidence": "reports/v1.7.32/focused.log",
+          "browser": [
+            {
+              "suite": "browser_s22_jester_revival_e2e.py",
+              "version": "1.3.3",
+              "status": "PASS",
+              "exitCode": 0,
+              "log": "reports/v1.7.32/browser-candidate/1.3.3-browser_s22_jester_revival_e2e.log",
+              "command": "node scripts/run-browser-s06.mjs browser_s22_jester_revival_e2e.py",
+              "durationMs": 20482
+            }
+          ],
+          "sourceFingerprint": "4ba194c57aa4a0e46739b06c503eaadadc1f858fe2fa193b6ce41b138e150183",
+          "fullCredit": false
+        }
+      ],
+      "remaining": "BT-26-2: loại trừ #46/#47/#53 thực sự trong live domain, không tiết lộ vai qua target list; mọi tương tác link/death/phase và chat ẩn danh ngoài miền đã có; BT-26-GLOBAL-0/1/2.",
+      "globalObligationsRetained": true,
+      "officialNormalGameplayPromotion": false
+    },
+    {
+      "characterId": 37,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": "1+S22-supplement",
+      "certification": "PARTIAL",
+      "originalContractPreserved": true,
+      "originalObligations": [
+        {
+          "id": "WV-A37-SWAP",
+          "condition": "exchange status/target positions",
+          "scope": "Exact-role and attacks not enabled; overlapping redirects",
+          "ruleSources": [
+            "character.json#37",
+            "VH14",
+            "VH15"
+          ],
+          "status": "HISTORICAL_ATOMIC_PASS",
+          "requiredTests": [
+            "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28"
+          ]
+        },
+        {
+          "id": "WV-A37-ATTACK",
+          "condition": "exchange each attack; both lethal attacks kill both",
+          "scope": "Night attack exchange unimplemented",
+          "ruleSources": [
+            "character.json#37",
+            "VH15",
+            "VH56"
+          ],
+          "status": "UNCERTIFIED",
+          "requiredTests": []
+        },
+        {
+          "id": "WV-A37-INSPECT",
+          "condition": "result uses other member identity/aura",
+          "scope": "Exact-role not certified",
+          "ruleSources": [
+            "character.json#37",
+            "VH14",
+            "S15-OWNER-SEER-01"
+          ],
+          "status": "HISTORICAL_ATOMIC_PASS",
+          "requiredTests": [
+            "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28"
+          ]
+        },
+        {
+          "id": "WV-A37-HANG",
+          "condition": "actual victim substituted; raw votes unchanged",
+          "scope": "Multiple modifiers/defense and other deck effects",
+          "ruleSources": [
+            "character.json#37",
+            "VH14",
+            "S11-V03"
+          ],
+          "status": "HISTORICAL_ATOMIC_PASS",
+          "requiredTests": [
+            "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28"
+          ]
+        }
+      ],
+      "scopeAcceptance": [
+        {
+          "id": "S22-37-QA",
+          "scope": "Approved v1.3.3 QA [25,28,37,74]: typed private inspection through one transposition; expiry, no public result, later actual hanging; SQLite and replay",
+          "code": "backend/src/official/swap-rules.ts; inspection-rules.ts",
+          "ruleSources": "character.json#37; VH14/VH15",
+          "backendTest": "S22 #25/#74/#37: shared transposition preserves typed private inspection, expiry, restart and actual hanging",
+          "backendStatus": "PASS",
+          "focusedEvidence": "reports/v1.7.32/focused.log",
+          "browser": [
+            {
+              "suite": "browser_s22_dual_swap_e2e.py",
+              "version": "1.3.3",
+              "status": "PASS",
+              "exitCode": 0,
+              "log": "reports/v1.7.32/browser-candidate/1.3.3-browser_s22_dual_swap_e2e.log",
+              "command": "node scripts/run-browser-s06.mjs browser_s22_dual_swap_e2e.py",
+              "durationMs": 19155
+            }
+          ],
+          "sourceFingerprint": "4ba194c57aa4a0e46739b06c503eaadadc1f858fe2fa193b6ce41b138e150183",
+          "fullCredit": false
+        }
+      ],
+      "remaining": "WV-A37-ATTACK: tráo từng đòn VH15, hai người cùng chịu đòn, chuyển hướng cạnh tranh, khiên, death-chain; điều kiện thắng riêng còn audit flag.",
+      "globalObligationsRetained": true,
+      "officialNormalGameplayPromotion": false
+    }
+  ]
+}

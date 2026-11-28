@@ -1,0 +1,136 @@
+TAP version 13
+# (node:49527) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: BB01 pack: all choose same target, fixed representative and candidate-only attack attribution
+ok 1 - BB01 pack: all choose same target, fixed representative and candidate-only attack attribution
+  ---
+  duration_ms: 2.875427
+  type: 'test'
+  ...
+# Subtest: BB02 pack: dissent is not consensus; no implied phase policy
+ok 2 - BB02 pack: dissent is not consensus; no implied phase policy
+  ---
+  duration_ms: 0.283255
+  type: 'test'
+  ...
+# Subtest: BB03 pack: empty vs missing recorded distinctly, both pending and no attack
+ok 3 - BB03 pack: empty vs missing recorded distinctly, both pending and no attack
+  ---
+  duration_ms: 0.30167
+  type: 'test'
+  ...
+# Subtest: BB04 pack: changed vote, invalid retry, stale revision, target cap, own-only projection
+ok 4 - BB04 pack: changed vote, invalid retry, stale revision, target cap, own-only projection
+  ---
+  duration_ms: 1.251996
+  type: 'test'
+  ...
+# Subtest: BB05 pack: death, role block, faction change and revival membership rechecked; revocation fails closed
+ok 5 - BB05 pack: death, role block, faction change and revival membership rechecked; revocation fails closed
+  ---
+  duration_ms: 0.677203
+  type: 'test'
+  ...
+# Subtest: BB06 pack: equal unordered pairs, partial disagreement, no guessing two-attack attribution
+ok 6 - BB06 pack: equal unordered pairs, partial disagreement, no guessing two-attack attribution
+  ---
+  duration_ms: 0.638411
+  type: 'test'
+  ...
+# Subtest: BB07 pack: private journal, independent clients, restart, replay, retry and transaction rollback
+not ok 7 - BB07 pack: private journal, independent clients, restart, replay, retry and transaction rollback
+  ---
+  duration_ms: 42.005434
+  type: 'test'
+  location: '/tmp/wv-owner/tests/sprint15-owner-bb-candidate.test.mjs:31:1'
+  failureType: 'testCodeFailure'
+  error: 'database is not open'
+  code: 'ERR_INVALID_STATE'
+  stack: |-
+    OwnerBBJournal.close (file:///tmp/wv-owner/dist/backend/src/experimental/owner-bb/journal.js:47:23)
+    withJournal (file:///tmp/wv-owner/tests/sprint15-owner-bb-candidate.test.mjs:23:333)
+    TestContext.<anonymous> (file:///tmp/wv-owner/tests/sprint15-owner-bb-candidate.test.mjs:31:109)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: BB08 trap: no valid skill through multiple nights, invalid and blocked attempts do not consume; one successful aura inversion only
+ok 8 - BB08 trap: no valid skill through multiple nights, invalid and blocked attempts do not consume; one successful aura inversion only
+  ---
+  duration_ms: 3.358749
+  type: 'test'
+  ...
+# Subtest: BB09 trap: two lifetime placements, no repeat target, no double placement, same action retry
+ok 9 - BB09 trap: two lifetime placements, no repeat target, no double placement, same action retry
+  ---
+  duration_ms: 0.723233
+  type: 'test'
+  ...
+# Subtest: BB10 trap: exact-role inversion RNG bound to locked composition and private result, never changes real role
+ok 10 - BB10 trap: exact-role inversion RNG bound to locked composition and private result, never changes real role
+  ---
+  duration_ms: 1.618909
+  type: 'test'
+  ...
+# Subtest: BB11 trap: VH84 remains true; immunity consumes next valid use but never changes verdict
+ok 11 - BB11 trap: VH84 remains true; immunity consumes next valid use but never changes verdict
+  ---
+  duration_ms: 0.522762
+  type: 'test'
+  ...
+# Subtest: BB12 trap: actual skill block cannot pass executed validation; death/revival keeps mark until a legal use
+ok 12 - BB12 trap: actual skill block cannot pass executed validation; death/revival keeps mark until a legal use
+  ---
+  duration_ms: 0.490951
+  type: 'test'
+  ...
+# Subtest: BB13 trap: witch poison is suppressed; guard and rescue inversion withheld until damage semantics confirmed
+ok 13 - BB13 trap: witch poison is suppressed; guard and rescue inversion withheld until damage semantics confirmed
+  ---
+  duration_ms: 0.70526
+  type: 'test'
+  ...
+# Subtest: BB14 trap: unsupported multi-effect cannot silently consume; cross-rule and phase requests rejected
+ok 14 - BB14 trap: unsupported multi-effect cannot silently consume; cross-rule and phase requests rejected
+  ---
+  duration_ms: 0.464125
+  type: 'test'
+  ...
+# Subtest: BB15 trap: SQLite journal replay across rounds, candidate RNG and privacy, tamper detection
+not ok 15 - BB15 trap: SQLite journal replay across rounds, candidate RNG and privacy, tamper detection
+  ---
+  duration_ms: 20.866902
+  type: 'test'
+  location: '/tmp/wv-owner/tests/sprint15-owner-bb-candidate.test.mjs:39:1'
+  failureType: 'testCodeFailure'
+  error: 'database is not open'
+  code: 'ERR_INVALID_STATE'
+  stack: |-
+    OwnerBBJournal.close (file:///tmp/wv-owner/dist/backend/src/experimental/owner-bb/journal.js:47:23)
+    withJournal (file:///tmp/wv-owner/tests/sprint15-owner-bb-candidate.test.mjs:23:333)
+    TestContext.<anonymous> (file:///tmp/wv-owner/tests/sprint15-owner-bb-candidate.test.mjs:39:104)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: BB16 feature flag: candidate journal defaults closed; ruleset remains unchanged
+ok 16 - BB16 feature flag: candidate journal defaults closed; ruleset remains unchanged
+  ---
+  duration_ms: 0.282412
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 14
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 191.487853

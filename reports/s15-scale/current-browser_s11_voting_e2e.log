@@ -1,0 +1,3 @@
+S11_BROWSER_PASS: 3 rounds, zero, tie, blank, vote update, hanging, co-winners, reconnect
+S06_BROWSER_PASS browser_s11_voting_e2e.py
+S06_BROWSER_ALL_1_PASS

@@ -1,0 +1,4 @@
+# RC-01 (development checkpoint, no FULL certification)
+- Implemented bounded, explicit opt-in candidate LIFE-02 and Cupid pairing for the #64 dependency. Hibernation is a distinct state, never a final-death trigger. Actual linked deaths are settled in one batch, and #64 observes the committed death ledger only.
+- Integrated request authorization, registered skill dispatch, capability projection, group chat ACL, hibernation restrictions, vote resolution, victory, replay proof and UI. No new Normal deck or active ruleset switch. No fixture membership, role forcing, or modified authoritative character registry.
+- Added two Game Session tests and one five-client browser suite; existing #64 normal suite retained unchanged. Candidate timing and chat phase documented, not official rule decisions.

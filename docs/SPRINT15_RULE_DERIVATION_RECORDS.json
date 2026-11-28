@@ -1,0 +1,239 @@
+{
+  "version": "1.7.4-s15-accelerated-wip",
+  "scope": "Additive technical and rule-provenance record; no amendment of historical official sources.",
+  "records": [
+    {
+      "characterId": 3,
+      "branchId": "passive.3.seer-aura",
+      "classification": "VERIFIED",
+      "premises": [
+        "character.json#3",
+        "S15-OWNER-SEER-01"
+      ],
+      "conclusion": "Explicit false aura while #3 has not transformed; #74 exact remains unchanged.",
+      "conflictCheck": "Last wolf conversion or voluntary renunciation unresolved in current engine.",
+      "implementation": "Restricted authoritative Game Session, no competitive promotion",
+      "tests": [
+        "passive.false-aura"
+      ],
+      "evidence": [
+        {
+          "id": 3,
+          "branch": "passive.false-aura",
+          "skill": "passive.3.seer-aura",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ],
+      "fullRoleCertified": false
+    },
+    {
+      "characterId": 15,
+      "branchId": "official.15.single-kill",
+      "classification": "VERIFIED_AND_DERIVED",
+      "premises": [
+        "character.json#15",
+        "VH03",
+        "WIN-01"
+      ],
+      "conclusion": "Single target death; explicit sole-survivor predicate after stable closure.",
+      "conflictCheck": "Two-target link, immunity, cross-deck victory not certified.",
+      "implementation": "Restricted authoritative Game Session, no competitive promotion",
+      "tests": [
+        "single.target.lethal"
+      ],
+      "evidence": [
+        {
+          "id": 15,
+          "branch": "single.target.lethal",
+          "skill": "official.15.single-kill",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ],
+      "fullRoleCertified": false
+    },
+    {
+      "characterId": 29,
+      "branchId": "official.29.poison",
+      "classification": "VERIFIED_AND_ENGINEERING",
+      "premises": [
+        "character.json#29",
+        "VH60",
+        "PH-01",
+        "PH-02"
+      ],
+      "conclusion": "One use, valid shield consumes poison (VH60); WITCH_WINDOW for poison-only QA scope.",
+      "conflictCheck": "No general preliminary-death rescue or simultaneous potions.",
+      "implementation": "Restricted authoritative Game Session, no competitive promotion",
+      "tests": [
+        "poison.lethal-once",
+        "poison.valid-shield-consumes"
+      ],
+      "evidence": [
+        {
+          "id": 29,
+          "branch": "poison.lethal-once",
+          "skill": "official.29.poison",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 29,
+          "branch": "poison.valid-shield-consumes",
+          "skill": "official.29.poison",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ],
+      "fullRoleCertified": false
+    },
+    {
+      "characterId": 58,
+      "branchId": "official.58.compare",
+      "classification": "VERIFIED_AND_DERIVED",
+      "premises": [
+        "character.json#58",
+        "VH03",
+        "WIN-01"
+      ],
+      "conclusion": "Same faction private; self + other different faction only other dies; last survivor after chain.",
+      "conflictCheck": "Two other differing factions, wolf immunity and broader protections not certified.",
+      "implementation": "Restricted authoritative Game Session, no competitive promotion",
+      "tests": [
+        "same.faction.private",
+        "different.faction.self-exception"
+      ],
+      "evidence": [
+        {
+          "id": 58,
+          "branch": "same.faction.private",
+          "skill": "official.58.compare",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 58,
+          "branch": "different.faction.self-exception",
+          "skill": "official.58.compare",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ],
+      "fullRoleCertified": false
+    },
+    {
+      "characterId": 71,
+      "branchId": "official.71.disguise",
+      "classification": "VERIFIED_AND_DERIVED",
+      "premises": [
+        "character.json#71",
+        "VH38",
+        "INV-01"
+      ],
+      "conclusion": "VH38 and INV-01 support persistent false aura Không xác định with owner #25 aura-only rule.",
+      "conflictCheck": "No exact role distortion, daytime mass kill or removal certification.",
+      "implementation": "Restricted authoritative Game Session, no competitive promotion",
+      "tests": [
+        "persistent.aura-disguise"
+      ],
+      "evidence": [
+        {
+          "id": 71,
+          "branch": "persistent.aura-disguise",
+          "skill": "official.71.disguise",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ],
+      "fullRoleCertified": false
+    },
+    {
+      "characterId": 77,
+      "branchId": "official.77.trap",
+      "classification": "VERIFIED",
+      "premises": [
+        "character.json#77",
+        "VH51",
+        "VH54"
+      ],
+      "conclusion": "VH51: one lethal strike blocked, attacker dies, target survives.",
+      "conflictCheck": "No wolf pack representative, multiple layers, or team victory.",
+      "implementation": "Restricted authoritative Game Session, no competitive promotion",
+      "tests": [
+        "trap.lethal-block-counter"
+      ],
+      "evidence": [
+        {
+          "id": 77,
+          "branch": "trap.lethal-block-counter",
+          "skill": "official.77.trap",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ],
+      "fullRoleCertified": false
+    },
+    {
+      "characterId": 93,
+      "branchId": "official.93.seal",
+      "classification": "VERIFIED",
+      "premises": [
+        "character.json#93",
+        "VH10",
+        "VH57"
+      ],
+      "conclusion": "Current-night lock; day chat and vote lock separate.",
+      "conflictCheck": "Partner death/transformation and interaction with #94 passive not certified.",
+      "implementation": "Restricted authoritative Game Session, no competitive promotion",
+      "tests": [
+        "seal.night-chat-vote"
+      ],
+      "evidence": [
+        {
+          "id": 93,
+          "branch": "seal.night-chat-vote",
+          "skill": "official.93.seal",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ],
+      "fullRoleCertified": false
+    },
+    {
+      "characterId": 94,
+      "branchId": "passive.94.conceal-aura",
+      "classification": "VERIFIED",
+      "premises": [
+        "character.json#94",
+        "S15-OWNER-SEER-01"
+      ],
+      "conclusion": "Living partner hides #93 aura from #25.",
+      "conflictCheck": "No doll redirection or complete partner death chain.",
+      "implementation": "Restricted authoritative Game Session, no competitive promotion",
+      "tests": [
+        "passive.conceal-living"
+      ],
+      "evidence": [
+        {
+          "id": 94,
+          "branch": "passive.conceal-living",
+          "skill": "passive.94.conceal-aura",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ],
+      "fullRoleCertified": false
+    }
+  ]
+}

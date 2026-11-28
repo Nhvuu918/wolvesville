@@ -1,0 +1,5 @@
+(node:100115) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+S08 GAMEPLAY METRIC A: two DISTINCT real backend finished matches + restart + replay + ACL PASS
+S08 METRIC B GATE: vote inputs do not count as elimination PASS
+S08_GAMEPLAY_ACCEPTANCE_PASS metric_A=2 metric_B=0 configurations=6

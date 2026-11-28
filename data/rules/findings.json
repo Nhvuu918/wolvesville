@@ -1,0 +1,200 @@
+[
+  {
+    "id": "F01",
+    "priority": "P0",
+    "status": "BLOCKED_BY_RULE",
+    "issue": "#51 Người Lái Đò có chat ẩn danh người chết trong JSON, nhưng VH57 và tài liệu chỉ ghi ngoại lệ VH77/#26, VH79/#24.",
+    "evidence": "character.json#51; VH57/VH77/VH79",
+    "containment": "Không tự tạo DM người lái đò; role chat branch blocked, các nhánh không phụ thuộc có thể làm sau.",
+    "group": "GAME_CHAT"
+  },
+  {
+    "id": "F02",
+    "priority": "P1",
+    "status": "BLOCKED_BY_RULE",
+    "issue": "#10 bẫy role giả cần chọn khác role thật trong bộ vai khóa; khi only 1 unique role, domain trống.",
+    "evidence": "SK-05;Q13-06",
+    "containment": "Fail closed ROLE_FALSE_RESULT_EMPTY; không random ngoài deck; có thể chặn cấu hình role gây nhánh này nếu không đủ vai.",
+    "group": "INVESTIGATION"
+  },
+  {
+    "id": "F03",
+    "priority": "P0",
+    "status": "BLOCKED_BY_RULE",
+    "issue": "Phù Thủy cứu người có hạt #97 trước phát tác: hạt chưa có chính sách giữ/tiêu hao cho lần chết đã cứu.",
+    "evidence": "Q13-12;Q13-07;VH63",
+    "containment": "Không tự tiêu hay giữ; block riêng event tiêu hạt trong branch, vẫn giải quyết cứu và sống.",
+    "group": "REVIVAL"
+  },
+  {
+    "id": "F04",
+    "priority": "P1",
+    "status": "BLOCKED_BY_RULE",
+    "issue": "Kẻ Vu Khống nhận nhiệm vụ vote đầu tiên nhưng Sói Hòa Bình hủy vote; Q13-09 chỉ quy định Kẻ Chết Thay.",
+    "evidence": "Q13-09;PH-02;character.json#6",
+    "containment": "Không gộp Kẻ Vu Khống với Kẻ Chết Thay; các ván không có tổ hợp này không bị chặn.",
+    "group": "VOTING"
+  },
+  {
+    "id": "F05",
+    "priority": "P0",
+    "status": "BLOCKED_BY_RULE",
+    "issue": "Sói Kỹ Sư đảo ngược tác dụng bảo vệ/phù độc/soi; chưa có phép phủ định hợp lệ cho mọi loại kỹ năng và kỹ năng đa tác dụng.",
+    "evidence": "character.json#10;Q13-11;P05",
+    "containment": "Khai báo mỗi pairing đã xác minh; không dùng hàm negate(generic-effect).",
+    "group": "SKILL_INVERSION"
+  },
+  {
+    "id": "F06",
+    "priority": "P0",
+    "status": "BLOCKED_BY_RULE",
+    "issue": "Nhiều liên kết thắng/chết xếp chồng khác loại (Cupid, ngoại tình, xúi giục, giáo phái), có quan hệ ưu tiên mới/cũ nhưng bảng full predicate từng loại chưa đủ.",
+    "evidence": "REL-01/02/03;VH04;Q13-03;Q13-08",
+    "containment": "Build typed link registry; những entry thiếu predicate không được commit thắng/chết.",
+    "group": "LINKS"
+  },
+  {
+    "id": "F07",
+    "priority": "P0",
+    "status": "BLOCKED_BY_RULE",
+    "issue": "Danh sách điều kiện thắng riêng cho các phe Ba nhiều nhân vật chưa được chuẩn hóa thành predicate có trigger và trạng thái.",
+    "evidence": "VH03;VH58;WIN-01;character.json",
+    "containment": "VictoryResolver chỉ chạy predicates đã khai báo; role pack cạnh tranh chưa đủ phải gated.",
+    "group": "VICTORY"
+  },
+  {
+    "id": "F08",
+    "priority": "P1",
+    "status": "RESOLVED_SCOPED",
+    "issue": "Cấm trùng role ban đầu vs trùng currentRole do biến đổi.",
+    "evidence": "ROOM-02;Q13-04",
+    "containment": "Chỉ unique ở role assignment; runtime role mutations hợp lệ không bị veto.",
+    "group": "ROLE_STATE"
+  },
+  {
+    "id": "F09",
+    "priority": "P1",
+    "status": "RESOLVED_SCOPED",
+    "issue": "JSON #17 nói +1 nhưng Q13-01 và VH85 quyết định x2.",
+    "evidence": "character.json#17;VH85;Q13-01",
+    "containment": "Ưu tiên quyết định mới, giữ source raw không sửa.",
+    "group": "RESOURCE"
+  },
+  {
+    "id": "F10",
+    "priority": "P1",
+    "status": "RESOLVED_SCOPED",
+    "issue": "JSON #49 ghi hai lần trong đêm, VH25 ghi hai lần cả ván.",
+    "evidence": "character.json#49;VH25",
+    "containment": "TotalUses=2/ván, không hai lần mỗi đêm.",
+    "group": "RESOURCE"
+  },
+  {
+    "id": "F11",
+    "priority": "P1",
+    "status": "RESOLVED_SCOPED",
+    "issue": "JSON #76 chọn ngày, VH41 quyết định chọn ban đêm và khóa cùng đêm.",
+    "evidence": "character.json#76;VH41",
+    "containment": "Dùng timing VH41, không lấy mô tả ngày cũ.",
+    "group": "TIMING"
+  },
+  {
+    "id": "F12",
+    "priority": "P1",
+    "status": "RESOLVED_SCOPED",
+    "issue": "JSON #26 hồi sinh dân chết đêm nhưng VH73 mở rộng mọi phe, VH76 ba ngoại lệ.",
+    "evidence": "character.json#26;VH73;VH76",
+    "containment": "Tách target validator áp ngoại lệ chính xác.",
+    "group": "REVIVAL"
+  },
+  {
+    "id": "F13",
+    "priority": "P0",
+    "status": "CONFLICTING",
+    "issue": "Test v1.3 mô tả Tiên Tri #25 chỉ soi hào quang, nhưng character.json và lịch sử xác nhận riêng Wolvesville 21/11 ghi xem vai trò.",
+    "evidence": "character.json#25; T-MC-04;T-MC-33;T-COV-03;T-COV-35",
+    "containment": "Giữ xem vai trò theo nguồn chính thức; gắn cờ 4 test + 4 scenario kế thừa, không dùng expected aura-only; P05 vẫn áp đúng loại observation.",
+    "group": "INVESTIGATION"
+  },
+  {
+    "id": "F14",
+    "priority": "P1",
+    "status": "BLOCKED_BY_RULE",
+    "issue": "Câm VH57 chặn chat công khai; JSON #93 mô tả cấm chat toàn bộ, chưa rõ là hiệu ứng câm hay khóa toàn kênh đặc thù.",
+    "evidence": "character.json#93;VH57",
+    "containment": "Giữ hai loại trạng thái khác nhau; không mở rộng cấm chat tổng quát hoặc thu hẹp #93 mà không có căn cứ.",
+    "group": "VISIBILITY"
+  },
+  {
+    "id": "F15",
+    "priority": "P0",
+    "status": "BLOCKED_BY_RULE",
+    "issue": "Sự kiện phản sát, chết thay, cứu, chờ hồi sinh, khóa và role chuyển trong cùng chuỗi có thể tạo hiệu ứng không giao hoán nếu chưa phân giải đủ priority cạnh cụ thể.",
+    "evidence": "VH08;PH-01;VH03;Q13-07",
+    "containment": "Causal dependency DAG + commit atomic; unknown priority -> RULE_UNRESOLVED, không dùng timestamp mạng.",
+    "group": "ORDERING"
+  },
+  {
+    "id": "F16",
+    "priority": "P1",
+    "status": "SOURCE_METADATA_INCONSISTENCY",
+    "issue": "ID 12/13 mang team=phe3 nhưng teamName=Không rõ.",
+    "evidence": "character.json#12,#13",
+    "containment": "Giữ nguyên metadata, UI hiển thị theo raw/field rõ, không tự đổi teamName.",
+    "group": "METADATA"
+  },
+  {
+    "id": "F17",
+    "priority": "P1",
+    "status": "DERIVED_SCOPE",
+    "issue": "SMU “100%” được ghi ở phân loại nhóm, không được ép thành xác suất sát thương 100% (#92 Huyết Cảm có RNG 25%).",
+    "evidence": "SMU58;character.json#92",
+    "containment": "Tách khả năng thuộc nhóm / xác suất kết quả cụ thể; không coi 100% là tỉ lệ thành công skill.",
+    "group": "RNG"
+  },
+  {
+    "id": "F18",
+    "priority": "P1",
+    "status": "TECHNICAL_GATE",
+    "issue": "207 test chỉ là text spec; nhiều test còn expected conditional/unresolved, chưa có fixture RNG, event snapshot, expected exact state chuẩn.",
+    "evidence": "test_specs_155;test_delta_52",
+    "containment": "Chuyển test sang runnable golden vectors sau khi role pack được khoá; không tuyên bố test pass.",
+    "group": "TEST"
+  },
+  {
+    "id": "F19",
+    "priority": "P0",
+    "status": "BLOCKED_BY_RULE",
+    "issue": "Cho phép phòng chỉ một người + bot, đồng thời 97 vai duy nhất: bộ vai phải tương thích số slot, mục tiêu hợp lệ và điều kiện kết thúc.",
+    "evidence": "ROOM-01;ROOM-02;Q13-04",
+    "containment": "Khóa deck đúng bằng số slot và uniqueness; reject start nếu không đủ vai; không hard-code min 4/6.",
+    "group": "ROOM"
+  },
+  {
+    "id": "F20",
+    "priority": "P1",
+    "status": "BLOCKED_BY_RULE",
+    "issue": "Quy tắc phản đòn no-loop trong v1.3 được ghi là xác nhận nhưng không tìm được mã VH/Q13 cụ thể ở sổ 118.",
+    "evidence": "spec v1.3 §G.5; historical reference incomplete",
+    "containment": "Gắn nhãn kiến trúc an toàn chống vòng lặp; không biến phản đòn mới thành sự kiện được phép.",
+    "group": "COUNTERATTACK"
+  },
+  {
+    "id": "F21",
+    "priority": "P0",
+    "status": "BLOCKED_BY_SOURCE",
+    "issue": "4 test kế thừa dùng alias QA NVxx, trong khi tài liệu Wolvesville Q/A nhắc workbook Ma_Soi không được xác minh là nguồn Wolvesville độc lập.",
+    "evidence": "T-COV-03/T-COV-08/T-COV-16/T-COV-20; Wolvesville Q/A nguồn trộn",
+    "containment": "Chỉ dùng test như giả thuyết cần kiểm tra với character.json/VH/Q13; không nâng QA alias thành luật; không đọc file Ma_Soi/LPTV.",
+    "group": "TEST_PROVENANCE"
+  },
+  {
+    "id": "F22",
+    "priority": "P1",
+    "status": "BLOCKED_BY_SOURCE",
+    "issue": "19 test v1.3 dẫn mã SYS-xx nhưng chưa xác định ánh xạ 1:1 sang 118 quyết định đã chốt; có nguy cơ đồng bộ sai expected.",
+    "evidence": "tests_v1_3.json: sources SYS-xx",
+    "containment": "Đánh dấu ALIAS_UNVERIFIED; chỉ công nhận assertion khi đối chiếu rule ID xác nhận hoặc trích đúng JSON.",
+    "group": "TEST_PROVENANCE"
+  }
+]

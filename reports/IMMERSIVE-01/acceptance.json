@@ -1,0 +1,54 @@
+{
+  "checkpoint": "IMMERSIVE-01",
+  "sourceFingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a",
+  "baseFingerprint": "6ac302d005a47c067350a47139d21ac0391addcfcea6ff354bda8ffa490181c2",
+  "historicalF": 1,
+  "newFull": 0,
+  "freshFull": null,
+  "completionMetricsFrozen": true,
+  "characterRegistry": 97,
+  "historicalDecisions": 118,
+  "legacySpecifications": 207,
+  "baselineBackend": {
+    "pass": 514,
+    "fail": 0,
+    "skipped": 11
+  },
+  "focusedBackend": {
+    "tests": 45,
+    "pass": 45,
+    "fail": 0,
+    "skipped": 0,
+    "log": "reports/IMMERSIVE-01/backend-focused.log"
+  },
+  "monolithic": "NOT RUN",
+  "browser": {
+    "pass": 2,
+    "transport": "repository HTTP/WS bridge; real Chromium and actual local backend; native direct blocked",
+    "suites": [
+      "browser_immersive_e2e.py",
+      "browser_full50_universal_normal_e2e.py"
+    ],
+    "nativeDirect": "FAIL: ERR_BLOCKED_BY_ADMINISTRATOR"
+  },
+  "productAcceptance": "docs/immersive-handover/PRODUCT_ACCEPTANCE.md",
+  "baselineChangedFiles": [
+    ".env.example",
+    "README.md",
+    "backend/src/multiplayer/pg-store.ts",
+    "backend/src/multiplayer/server.ts",
+    "backend/src/multiplayer/sqlite-store.ts",
+    "backend/src/multiplayer/types.ts",
+    "frontend/app.js",
+    "frontend/index.html",
+    "frontend/integration.js",
+    "package.json",
+    "scripts/copy-schema.mjs",
+    "scripts/migrate-pg-02b.mjs",
+    "tests/browser_e2e.py"
+  ],
+  "baselinePreservedPaths": 5149,
+  "livePostgresql": "NOT VERIFIED",
+  "liveAI": "NOT VERIFIED",
+  "macNative": "NOT VERIFIED"
+}

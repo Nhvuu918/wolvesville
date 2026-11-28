@@ -1,0 +1,3 @@
+SCENARIO_READY s15-final-pack-rescue
+Error: E2E timeout browser_s15_final_pack_e2e.py: cleanup did not finish; not counted PASS
+    at file:///tmp/wv16/scripts/run-browser-s06.mjs:42:10

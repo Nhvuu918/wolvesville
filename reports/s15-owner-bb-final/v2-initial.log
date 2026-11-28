@@ -1,0 +1,128 @@
+TAP version 13
+# (node:57669) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: BBv2 01 wait for all responses, no random target, KEEP previous valid selection
+ok 1 - BBv2 01 wait for all responses, no random target, KEEP previous valid selection
+  ---
+  duration_ms: 12.993753
+  type: 'test'
+  ...
+# Subtest: BBv2 02 all respond but first blank or divergent sets, no bite even common target
+ok 2 - BBv2 02 all respond but first blank or divergent sets, no bite even common target
+  ---
+  duration_ms: 2.299471
+  type: 'test'
+  ...
+# Subtest: BBv2 03 canonical set agreement and same representative for two bites; retry and privacy
+ok 3 - BBv2 03 canonical set agreement and same representative for two bites; retry and privacy
+  ---
+  duration_ms: 1.154583
+  type: 'test'
+  ...
+# Subtest: BBv2 04 membership at lock: revoked wolf ignored, new wolf must respond, fixed order cannot change
+not ok 4 - BBv2 04 membership at lock: revoked wolf ignored, new wolf must respond, fixed order cannot change
+  ---
+  duration_ms: 0.902994
+  type: 'test'
+  location: '/tmp/wvbb18/tests/sprint15-owner-bb-v2.test.mjs:25:1'
+  failureType: 'testCodeFailure'
+  error: 'INVALID_KEY'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    check (file:///tmp/wvbb18/dist/backend/src/experimental/owner-bb-v2/pack.js:7:11)
+    submitPack (file:///tmp/wvbb18/dist/backend/src/experimental/owner-bb-v2/pack.js:35:5)
+    submit (file:///tmp/wvbb18/tests/sprint15-owner-bb-v2.test.mjs:14:62)
+    TestContext.<anonymous> (file:///tmp/wvbb18/tests/sprint15-owner-bb-v2.test.mjs:25:505)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: BBv2 05 two attacks: first counter kills representative, second still executes, no duplicate deaths
+ok 5 - BBv2 05 two attacks: first counter kills representative, second still executes, no duplicate deaths
+  ---
+  duration_ms: 1.905857
+  type: 'test'
+  ...
+# Subtest: BBv2 06 pack protection shared consumption; unsupported stack fails closed
+not ok 6 - BBv2 06 pack protection shared consumption; unsupported stack fails closed
+  ---
+  duration_ms: 0.923187
+  type: 'test'
+  location: '/tmp/wvbb18/tests/sprint15-owner-bb-v2.test.mjs:27:1'
+  failureType: 'testCodeFailure'
+  error: 'PENDING_ATTACK_INTERACTION'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    check (file:///tmp/wvbb18/dist/backend/src/experimental/owner-bb-v2/runtime.js:10:11)
+    commitCandidatePack (file:///tmp/wvbb18/dist/backend/src/experimental/owner-bb-v2/runtime.js:49:9)
+    TestContext.<anonymous> (file:///tmp/wvbb18/tests/sprint15-owner-bb-v2.test.mjs:27:453)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: BBv2 07 group BB05=B all executed inspections inverted once; blocked action not trigger; RNG/private
+ok 7 - BBv2 07 group BB05=B all executed inspections inverted once; blocked action not trigger; RNG/private
+  ---
+  duration_ms: 3.49069
+  type: 'test'
+  ...
+# Subtest: BBv2 08 BB04=B guard inverse bypasses shield, no protection consumption, direct death once
+not ok 8 - BBv2 08 BB04=B guard inverse bypasses shield, no protection consumption, direct death once
+  ---
+  duration_ms: 1.029774
+  type: 'test'
+  location: '/tmp/wvbb18/tests/sprint15-owner-bb-v2.test.mjs:29:1'
+  failureType: 'testCodeFailure'
+  error: 'PENDING_DEATH_INTERACTION'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    check (file:///tmp/wvbb18/dist/backend/src/experimental/owner-bb-v2/runtime.js:10:11)
+    eliminate (file:///tmp/wvbb18/dist/backend/src/experimental/owner-bb-v2/runtime.js:20:5)
+    commitCandidateTrapGroup (file:///tmp/wvbb18/dist/backend/src/experimental/owner-bb-v2/runtime.js:86:17)
+    TestContext.<anonymous> (file:///tmp/wvbb18/tests/sprint15-owner-bb-v2.test.mjs:29:464)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: BBv2 09 inverse rescue finalizes preliminary death exactly once, ignores other shield; poison suppressed
+ok 9 - BBv2 09 inverse rescue finalizes preliminary death exactly once, ignores other shield; poison suppressed
+  ---
+  duration_ms: 1.878278
+  type: 'test'
+  ...
+# Subtest: BBv2 10 unknown effect or death reaction aborts whole group with waiting mark, no partial mutation
+ok 10 - BBv2 10 unknown effect or death reaction aborts whole group with waiting mark, no partial mutation
+  ---
+  duration_ms: 1.574177
+  type: 'test'
+  ...
+# Subtest: BBv2 11 journal commits candidate pack atomically, persists waiting then lock, restart and replay, v1 isolation
+ok 11 - BBv2 11 journal commits candidate pack atomically, persists waiting then lock, restart and replay, v1 isolation
+  ---
+  duration_ms: 56.758962
+  type: 'test'
+  ...
+# Subtest: BBv2 12 journal trap commit and group replay, private RNG, failed group has no effect
+ok 12 - BBv2 12 journal trap commit and group replay, private RNG, failed group has no effect
+  ---
+  duration_ms: 27.566279
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 9
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 211.593275

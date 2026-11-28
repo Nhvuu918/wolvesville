@@ -1,0 +1,40 @@
+TAP version 13
+# (node:14625) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Owner group-time policy: recruited cult member sends day and night; frozen ACL, WS, restart, replay
+ok 1 - Owner group-time policy: recruited cult member sends day and night; frozen ACL, WS, restart, replay
+  ---
+  duration_ms: 1377.268334
+  type: 'test'
+  ...
+# file:///tmp/wv04/tests/immersive04-progression.test.mjs:26
+# import {levelFor,progressionPlan} from '../dist/backend/src/social/progression.js';
+#        ^
+# SyntaxError: Unexpected token '{'
+#     at compileSourceTextModule (node:internal/modules/esm/utils:344:16)
+#     at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:105:18)
+#     at \#translate (node:internal/modules/esm/loader:534:12)
+#     at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:581:27)
+#     at async ModuleJob._link (node:internal/modules/esm/module_job:116:19)
+# Node.js v22.16.0
+# Subtest: tests/immersive04-progression.test.mjs
+not ok 2 - tests/immersive04-progression.test.mjs
+  ---
+  duration_ms: 63.668284
+  type: 'test'
+  location: '/tmp/wv04/tests/immersive04-progression.test.mjs:1:1'
+  failureType: 'testCodeFailure'
+  exitCode: 1
+  signal: ~
+  error: 'test failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 1
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1581.132944

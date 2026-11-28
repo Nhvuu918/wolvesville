@@ -1,0 +1,36 @@
+E2E_SCHEDULER_WAIT exclusive 79132
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 41386
+E2E_RESOURCE start cpu "usage_usec 12939144677\nuser_usec 10702186840\nsystem_usec 2236957836\nnice_usec 6729605\nnr_periods 54140\nnr_throttled 25155\nthrottled_usec 1747463683\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 63868\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s15_normal_rescue_e2e.py village port 40853 db /tmp/wolvesville-s06-browser-EgPOjm/test.sqlite
+E2E_STAGE village setup
+E2E_STAGE village night
+E2E_STAGE village rescue
+E2E_STAGE village day-vote
+GROWTH_NORMAL_RESCUE_BROWSER_PASS village
+E2E_STAGE village cleanup
+E2E_CONTEXT_CLOSED 0 0.021
+E2E_CONTEXT_CLOSED 1 0.057
+E2E_CONTEXT_CLOSED 2 0.037
+E2E_CONTEXT_CLOSED 3 0.038
+E2E_CONTEXT_CLOSED 4 0.036
+E2E_STAGE village cleanup-complete
+S06_BROWSER_CASE_PASS browser_s15_normal_rescue_e2e.py village
+E2E_ISOLATION browser_s15_normal_rescue_e2e.py wolf port 36939 db /tmp/wolvesville-s06-browser-UTUTEf/test.sqlite
+E2E_STAGE wolf setup
+E2E_STAGE wolf night
+E2E_STAGE wolf rescue
+E2E_STAGE wolf day-vote
+GROWTH_NORMAL_RESCUE_BROWSER_PASS wolf
+E2E_STAGE wolf cleanup
+E2E_CONTEXT_CLOSED 0 0.034
+E2E_CONTEXT_CLOSED 1 0.046
+E2E_CONTEXT_CLOSED 2 0.028
+E2E_CONTEXT_CLOSED 3 0.031
+E2E_CONTEXT_CLOSED 4 0.028
+E2E_STAGE wolf cleanup-complete
+S06_BROWSER_CASE_PASS browser_s15_normal_rescue_e2e.py wolf
+S06_BROWSER_PASS browser_s15_normal_rescue_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 13046247729\nuser_usec 10790413941\nsystem_usec 2255833788\nnice_usec 6822580\nnr_periods 54533\nnr_throttled 25215\nthrottled_usec 1749450864\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 63868\noom 0\noom_kill 0\noom_group_kill 0"

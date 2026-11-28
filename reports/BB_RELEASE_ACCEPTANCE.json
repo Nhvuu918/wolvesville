@@ -1,0 +1,75 @@
+{
+  "version": "1.7.20-s15-release-readiness-wip",
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "sourceFingerprint": "915dea3aca87d175357ae5f6097630291a6825ae2b3ae6e5605ca749b8ec20ba",
+  "officialActivation": false,
+  "decisionRecord": "data/rules/owner_bb_candidate_v2_decisions.json",
+  "backendGate": "PASS_MONOLITHIC",
+  "backend": {
+    "tests": 426,
+    "pass": 415,
+    "fail": 0,
+    "skipped": 11,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "candidateRetest": true,
+  "liveBackendTests": 8,
+  "liveBrowser": {
+    "pack": "PASS",
+    "trap": "PASS",
+    "guard": "PASS",
+    "witch": "PASS",
+    "retaliation": "PASS"
+  },
+  "liveScope": "Actual Game Session archive and transaction in explicit bounded local QA profiles, no official activation.",
+  "browser": {
+    "total": 68,
+    "PASS": 17,
+    "FAIL": 2,
+    "INCOMPLETE": 49
+  },
+  "matrix": {
+    "total": 103,
+    "PASS": 20,
+    "FAIL": 2,
+    "INCOMPLETE": 81
+  },
+  "officialBrowser": {
+    "total": 63,
+    "PASS": 12,
+    "FAIL": 2,
+    "INCOMPLETE": 49
+  },
+  "officialMatrix": {
+    "total": 98,
+    "PASS": 15,
+    "FAIL": 2,
+    "INCOMPLETE": 81
+  },
+  "freshCertificates": {
+    "F": 1,
+    "qaC": 2,
+    "playableC": 4,
+    "S_pass": 75
+  },
+  "fullManifestAccepted": false,
+  "postgreSQLLive": "PENDING",
+  "competitiveProduction": "NO_GO",
+  "legacySourceChecksumChanged": [
+    "README.md",
+    "backend/src/engine/service.ts",
+    "backend/src/experimental/owner-bb-v2/live-profile.ts",
+    "backend/src/official/engineer-trap.ts",
+    "backend/src/official/preliminary-death.ts",
+    "backend/src/official/s13-mechanics.ts",
+    "data/rule-intelligence/source_inventory.json",
+    "frontend/integration.js",
+    "package.json",
+    "tests/sprint15-bb-live.test.mjs"
+  ],
+  "legacyReportsUnchanged": 2189,
+  "ownerQA": "PENDING",
+  "newFull": [],
+  "newPlayable": []
+}

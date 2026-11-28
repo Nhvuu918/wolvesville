@@ -1,0 +1,79 @@
+{
+  "version": "1.7.26",
+  "sourceFingerprint": "1415b2aa3e9579830a12fc82878506527c3519ea32ed1c1bc688ec52cafb9e4d",
+  "scope": "Mixed QA [48,74,77,84,93,94]; no official v1.3.4 activation",
+  "status": "PARTIAL",
+  "releaseReady": false,
+  "surfaces": [
+    {
+      "surface": "target list",
+      "status": "PASS_BOUNDED_BACKEND",
+      "evidence": "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt"
+    },
+    {
+      "surface": "disabled state",
+      "status": "INCOMPLETE_BROWSER",
+      "evidence": "Existing maxTargets and target list; no fresh browser PASS"
+    },
+    {
+      "surface": "REST payload",
+      "status": "PASS_BOUNDED_BACKEND",
+      "evidence": "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events; v1.7.26 mixed privacy: authorized event ordinals, replay counts, resolution receipts and restart"
+    },
+    {
+      "surface": "WebSocket projection",
+      "status": "PASS_BOUNDED_BACKEND",
+      "evidence": "Existing live WS receipt test; shared projectEvents projection; no dedicated fresh duplicate-frame/timing test"
+    },
+    {
+      "surface": "errors",
+      "status": "PASS_BOUNDED_BACKEND",
+      "evidence": "Existing real REST invalid public targets and secret-ineligible blind receipts; post-lock revoked-target policy incomplete"
+    },
+    {
+      "surface": "submission acknowledgement",
+      "status": "PASS_BOUNDED_BACKEND",
+      "evidence": "Paired secret-faction worlds; KEEP and idempotent retry verified"
+    },
+    {
+      "surface": "timing differences",
+      "status": "INCOMPLETE",
+      "evidence": "Duplicate refresh suppression is implemented, but timing and shared game revision are observable; no timing-equivalence proof"
+    },
+    {
+      "surface": "reconnect",
+      "status": "PASS_BOUNDED_BACKEND",
+      "evidence": "New live REST persistence test and existing mixed WS test; fresh browser pending"
+    },
+    {
+      "surface": "retry/idempotency",
+      "status": "PASS_BOUNDED_BACKEND",
+      "evidence": "Existing duplicate-key tests and new live replay equality test; no redundant WS refresh on duplicate"
+    },
+    {
+      "surface": "event log",
+      "status": "PASS_BOUNDED_BACKEND",
+      "evidence": "New live test proves observer event stream identical across three private submissions, contiguous authorized ordinals and no internal event IDs; raw ledger unchanged"
+    },
+    {
+      "surface": "replay visibility",
+      "status": "PASS_BOUNDED_BACKEND",
+      "evidence": "New live test proves observer replay receipt unchanged across private submissions and restart; internal draw count omitted. Full postgame authorized history policy outside proof."
+    },
+    {
+      "surface": "post-resolution events",
+      "status": "PARTIAL",
+      "evidence": "New live test checks only public death and no internal provenance, phase receipt omits raw execution counters. Legal outcome inference, third-party redirects, target revocation and other roles remain unclosed."
+    }
+  ],
+  "tests": "reports/v1.7.26/focused.log",
+  "decisionCards": "reports/v1.7.26/DECISION_CARDS.md",
+  "remaining": [
+    "global revision and timing side channels",
+    "live mid-window membership changes beyond supported state transitions",
+    "post-resolution disclosure boundary for revoked targets",
+    "remaining browser privacy obligations on current source",
+    "full authorized postgame history per VH62"
+  ],
+  "browserEvidence": "Mixed Wolf browser PASS through bridge, exit 0; direct native browser blocked; other obligations incomplete"
+}

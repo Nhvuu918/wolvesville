@@ -1,0 +1,251 @@
+[
+  {
+    "ordinal": 1,
+    "code": "Q13-01",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "choice": "A",
+    "answer_exact": "Mỗi lượt phải đủ tài nguyên riêng; giữ ngoại lệ VH05.",
+    "user_note_exact": "khi được x2 kỹ năng, nếu đêm đó ssử dụng kỹ năng gì mới được x2 toàn bộ kỹ năng đó, nếu không còn kỹ năng hoặc không sử dụng trong đêm đó thì x2 vô tác dụng",
+    "area": "Kỹ năng và tài nguyên",
+    "area_key": "SKILL",
+    "effective_rule": "Mỗi hành động phát sinh do x2 cần đủ charge riêng; buff không sinh charge. Chỉ nhân đôi những kỹ năng thực sự sử dụng đêm đó; kỹ năng không dùng hoặc hết charge không nhận lợi ích. VH05 Phù Thủy là ngoại lệ một bình cứu cho tối đa hai lượt trong đêm.",
+    "references": [
+      "VH05",
+      "VH85",
+      "SK-01",
+      "SK-02",
+      "P04"
+    ],
+    "relation_to_prior": "REPLACES_UNRESOLVED_Q13-01",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "implementation_status": "SPEC_ONLY_NOT_EXECUTED"
+  },
+  {
+    "ordinal": 2,
+    "code": "Q13-02",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "choice": "B",
+    "answer_exact": "Random mọi người sống hợp lệ theo kỹ năng, không phân phe; không có ứng viên thì bỏ hành động.",
+    "user_note_exact": "Không có",
+    "area": "AFK và mục tiêu",
+    "area_key": "AFK",
+    "effective_rule": "Ở lần AFK cần random, tập mục tiêu là mọi người đang sống và hợp lệ cho kỹ năng, không phân biệt phe. Tập rỗng thì hành động bắt buộc không phát sinh và không cộng lần AFK đó.",
+    "references": [
+      "PH-04",
+      "PH-03",
+      "SK-07"
+    ],
+    "relation_to_prior": "REFINES_PH-04",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "implementation_status": "SPEC_ONLY_NOT_EXECUTED"
+  },
+  {
+    "ordinal": 3,
+    "code": "Q13-03",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "choice": "A",
+    "answer_exact": "Khôi phục liên kết hợp lệ gần nhất, sau khi xét ưu tiên đã chốt.",
+    "user_note_exact": "Không có",
+    "area": "Liên kết và nhóm thắng",
+    "area_key": "LINK",
+    "effective_rule": "Khi nhiều liên kết cũ hợp lệ có thể phục hồi, trước tiên áp dụng ưu tiên loại liên kết đã chốt; trong tập ứng viên cùng mức còn lại, phục hồi liên kết gần nhất trong lịch sử. Không thay thế nguyên tắc tạo mới VH04.",
+    "references": [
+      "REL-01",
+      "REL-03",
+      "VH04"
+    ],
+    "relation_to_prior": "RESOLVES_MULTI_RESTORE",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "implementation_status": "SPEC_ONLY_NOT_EXECUTED"
+  },
+  {
+    "ordinal": 4,
+    "code": "Q13-04",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "choice": "A",
+    "answer_exact": "Chỉ unique lúc phân vai gốc; biến đổi hợp lệ có thể làm vai hiện tại trùng.",
+    "user_note_exact": "Không có",
+    "area": "Phân vai và biến đổi",
+    "area_key": "ROLE",
+    "effective_rule": "Cấm trùng Character ID trong danh sách phân vai ban đầu. Sau khi bắt đầu, biến đổi hợp lệ có thể tạo currentRoleId trùng mà không phải hủy biến đổi; sao chép kỹ năng theo VH71 không đồng nghĩa đổi phe.",
+    "references": [
+      "ROOM-02",
+      "VH71",
+      "VH32"
+    ],
+    "relation_to_prior": "LIMITS_ROOM-02_TO_INITIAL",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "implementation_status": "SPEC_ONLY_NOT_EXECUTED"
+  },
+  {
+    "ordinal": 5,
+    "code": "Q13-05",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "choice": "A",
+    "answer_exact": "Vẫn tính quân số, tạm ngưng chat/vote/kỹ năng đến khi hồi sinh.",
+    "user_note_exact": "Không có",
+    "area": "Sinh tử và hồi sinh",
+    "area_key": "LIFE",
+    "effective_rule": "Người ở trạng thái HIBERNATING do hạt Thần Thảo vẫn được tính vào quân số phe lúc đang ngủ đông; tạm ngưng chat, phiếu bầu và mọi kỹ năng đến khi tỉnh/hồi sinh theo điều kiện hợp lệ. Không phát sinh chết thật từ riêng trạng thái giả chết.",
+    "references": [
+      "LIFE-02",
+      "VH06",
+      "VH63"
+    ],
+    "relation_to_prior": "RESOLVES_HIBERNATION_RIGHTS",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "implementation_status": "SPEC_ONLY_NOT_EXECUTED"
+  },
+  {
+    "ordinal": 6,
+    "code": "Q13-06",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "choice": "B",
+    "answer_exact": "Random từ bộ vai đã khóa của trận, trừ vai thật.",
+    "user_note_exact": "Không có",
+    "area": "Điều tra và bẫy",
+    "area_key": "INVESTIGATION",
+    "effective_rule": "Bẫy Sói Kỹ Sư đối với kỹ năng soi vai chính xác chọn ngẫu nhiên một roleId khác roleId thật từ bộ vai đã khóa trước trận; không chọn từ toàn bộ 97 vai. RNG trên server, lưu snapshot tập hợp và lần rút.",
+    "references": [
+      "SK-05",
+      "VH08",
+      "JSON#10",
+      "JSON#74"
+    ],
+    "relation_to_prior": "RESOLVES_FAKE_ROLE_POOL",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "implementation_status": "SPEC_ONLY_NOT_EXECUTED"
+  },
+  {
+    "ordinal": 7,
+    "code": "Q13-07",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "choice": "B",
+    "answer_exact": "Ưu tiên kéo dài sống; khi hết hạn mới xét hạt ngủ đông.",
+    "user_note_exact": "Không có",
+    "area": "Sinh tử và hồi sinh",
+    "area_key": "LIFE",
+    "effective_rule": "Khi có hiệu ứng kéo dài sự sống hợp lệ và hạt Thần Thảo, áp dụng trạng thái sống kéo dài trước; tại mốc kết thúc trạng thái kéo dài mới xét điều kiện kích hoạt hạt ngủ đông, sau khi xử lý những cứu hợp lệ khác theo thứ tự tương ứng.",
+    "references": [
+      "VH26",
+      "VH67",
+      "LIFE-02",
+      "Q13-05",
+      "JSON#51",
+      "JSON#95",
+      "JSON#97"
+    ],
+    "relation_to_prior": "RESOLVES_DELAY_PRIORITY",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "implementation_status": "SPEC_ONLY_NOT_EXECUTED"
+  },
+  {
+    "ordinal": 8,
+    "code": "Q13-08",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "choice": "A",
+    "answer_exact": "Kết nạp thất bại nếu đang thuộc liên kết thắng độc lập.",
+    "user_note_exact": "Không có",
+    "area": "Liên kết và nhóm thắng",
+    "area_key": "LINK",
+    "effective_rule": "Giáo Chủ không thể kết nạp một người đã thuộc nhóm/liên kết thắng độc lập; yêu cầu kết nạp không thành công, không đổi nhóm thắng, không cấp quyền chat giáo phái mới. Đây là ngoại lệ cụ thể so với cơ chế ghi đè quan hệ chưa có ưu tiên.",
+    "references": [
+      "REL-01",
+      "VH50",
+      "VH59",
+      "VH78",
+      "JSON#62",
+      "JSON#90"
+    ],
+    "relation_to_prior": "SPECIFIC_EXCEPTION_TO_REL-01",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "implementation_status": "SPEC_ONLY_NOT_EXECUTED"
+  },
+  {
+    "ordinal": 9,
+    "code": "Q13-09",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "choice": "B",
+    "answer_exact": "Vẫn tính diễn sai và trao Oscar.",
+    "user_note_exact": "Không có",
+    "area": "Phiếu bầu / Oscar",
+    "area_key": "VOTE",
+    "effective_rule": "Sói Hòa Bình chặn và hủy vote hợp lệ trong ngày mà Kẻ Chết Thay đã có nhiệm vụ: nhiệm vụ thất bại, Đạo Diễn Tử Thần nhận 1 Oscar theo mỗi trường hợp diễn sai hợp lệ. Không tự áp sang vai diễn khác nếu không được quy định.",
+    "references": [
+      "VH01",
+      "PH-02",
+      "JSON#6",
+      "JSON#79"
+    ],
+    "relation_to_prior": "RESOLVES_CANCELLED_VOTE_OSCAR",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "implementation_status": "SPEC_ONLY_NOT_EXECUTED"
+  },
+  {
+    "ordinal": 10,
+    "code": "Q13-10",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "choice": "A",
+    "answer_exact": "Tính mọi người cấp/tạo bảo vệ là người bảo vệ bị giết theo.",
+    "user_note_exact": "Không có",
+    "area": "Sát thương và bảo vệ",
+    "area_key": "COMBAT",
+    "effective_rule": "Khi Sói Điên Cuồng #75 kích hoạt đòn trúng mục tiêu có bảo vệ hợp lệ, những người cấp/tạo lớp bảo vệ đều thuộc tập người bảo vệ có thể bị chết theo, bao gồm chủ chó hoặc người cấp trang bị; phân giải đúng cơ chế tấn công/bảo vệ và tránh chuyển chết trùng.",
+    "references": [
+      "VH42",
+      "VH27",
+      "VH51",
+      "SK-06",
+      "JSON#52",
+      "JSON#67",
+      "JSON#77"
+    ],
+    "relation_to_prior": "RESOLVES_PROVIDER_ATTRIBUTION",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "implementation_status": "SPEC_ONLY_NOT_EXECUTED"
+  },
+  {
+    "ordinal": 11,
+    "code": "Q13-11",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "choice": "A",
+    "answer_exact": "Random một kết quả khác kết quả thật trong tập giá trị hợp lệ.",
+    "user_note_exact": "Không có",
+    "area": "Điều tra và bẫy",
+    "area_key": "INVESTIGATION",
+    "effective_rule": "Bẫy Sói Kỹ Sư lên chức năng soi PHÂN LOẠI tạo ngẫu nhiên một kết quả cùng kiểu dữ liệu nhưng khác giá trị thật trong danh sách các giá trị phân loại hợp lệ; không tự thay bằng tên vai hay hào quang. Kết quả soi miễn nhiễu theo VH84 là ngoại lệ.",
+    "references": [
+      "SK-05",
+      "VH84",
+      "P05",
+      "JSON#10",
+      "JSON#81"
+    ],
+    "relation_to_prior": "RESOLVES_TYPED_CLASSIFICATION_TRAP",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "implementation_status": "SPEC_ONLY_NOT_EXECUTED"
+  },
+  {
+    "ordinal": 12,
+    "code": "Q13-12",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "choice": "B",
+    "answer_exact": "Vẫn xuất hiện; Phù Thủy có thể cứu trước khi hạt phát tác.",
+    "user_note_exact": "Không có",
+    "area": "Sinh tử và hồi sinh",
+    "area_key": "LIFE",
+    "effective_rule": "Nếu người mang hạt Thần Thảo thuộc danh sách chết sơ bộ ban đêm, tên vẫn hiện trong prompt Phù Thủy và có thể được cứu hợp lệ trước khi kích hoạt hạt. Nếu chết được ngăn thì không kích hoạt giả chết do hạt tại sự kiện chết đó. Nếu không được cứu, tiếp tục xét kéo dài sống và hạt theo Q13-07.",
+    "references": [
+      "LIFE-02",
+      "Q13-07",
+      "VH05",
+      "VH63",
+      "PH-01",
+      "JSON#29",
+      "JSON#97"
+    ],
+    "relation_to_prior": "RESOLVES_WITCH_PRESEED",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "implementation_status": "SPEC_ONLY_NOT_EXECUTED"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "sourceVersion": "1.7.31",
+  "sha256": "00079cf9f889b285ad419acfe4f66657992b972c167427b0cdadc2131836fdda",
+  "zipCRC": "PASS",
+  "inputPayloadHashes": 4014,
+  "inheritedPaths": 4015,
+  "historicalReportsUnchanged": 3147,
+  "rulesAndCharacterRegistryUnchanged": true,
+  "changedInheritedPaths": [
+    "README.md",
+    "backend/src/engine/elimination-chain.ts",
+    "backend/src/engine/service.ts",
+    "backend/src/official/inspection-effects.ts",
+    "backend/src/official/inspection-rules.ts",
+    "backend/src/official/revival-capability.ts",
+    "backend/src/official/s13-mechanics.ts",
+    "backend/src/official/swap-rules.ts",
+    "data/rule-intelligence/source_inventory.json",
+    "frontend/integration.js",
+    "package.json"
+  ],
+  "sourceInventoryNote": "Generated source_inventory.json only updates hashes of changed implementation files; no rule source change."
+}

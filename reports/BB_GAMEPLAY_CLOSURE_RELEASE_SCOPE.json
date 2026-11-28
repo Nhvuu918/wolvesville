@@ -1,0 +1,260 @@
+{
+  "contractVersion": 1,
+  "build": "1.7.24-s15-gameplay-closure-wip",
+  "proposedRuleVersion": "wolvesville-official-v1.3.4",
+  "activeRuleVersion": "wolvesville-official-v1.3.3",
+  "state": "CANDIDATE",
+  "policyApproved": true,
+  "activationAuthorized": false,
+  "decisionRecord": "data/rules/owner_bb_final_decisions_20261125.json",
+  "ruleSource": "WV-RD-BB-2026-01 Articles 1–8",
+  "releaseBoundary": "Supported B/B interaction domains, not all 97 roles; required in-domain obligations cannot be silently removed. QA profiles are evidence fixtures, not official availability.",
+  "obligations": [
+    {
+      "id": "PACK-01",
+      "policy": "unanimity, full target set, KEEP, eligible-at-lock, no deadline",
+      "scope": [
+        9,
+        25,
+        48,
+        74,
+        76
+      ],
+      "implementation": "backend/src/experimental/owner-bb-v2/pack.ts",
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_pack_e2e.py"
+      ],
+      "status": "IMPLEMENTED_BOUNDED_LIVE_QA",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": null,
+      "evidenceFiles": [
+        "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json",
+        "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+      ]
+    },
+    {
+      "id": "PACK-02",
+      "policy": "SAME/RESOLVE, #48 only sole living wolf entitlement",
+      "scope": [
+        25,
+        48,
+        74,
+        77
+      ],
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_retaliation_e2e.py"
+      ],
+      "status": "IMPLEMENTED_BOUNDED_LIVE_QA",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": null,
+      "evidenceFiles": [
+        "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json",
+        "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+      ]
+    },
+    {
+      "id": "PACK-03",
+      "policy": "BB-REP-NEW-01=B: one server RNG all-player permutation, immutable per-game archive, filter lawful current participants, no initial priority",
+      "implementation": "backend/src/experimental/owner-bb-v2/representative-order.ts",
+      "tests": [
+        "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+        "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+        "B/B owner final: representative RNG is server-bound and waiting survives restart"
+      ],
+      "status": "IMPLEMENTED_BOUNDED_LIVE_QA",
+      "note": "Old QA archives keep old policy; replay checks stored tape. No migration or retroactive change.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": null,
+      "evidenceFiles": [
+        "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json",
+        "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+      ]
+    },
+    {
+      "id": "TRAP-01",
+      "policy": "#25 aura, #74 role, #5 exact judgment; two placements, persistent, valid action only",
+      "scope": [
+        5,
+        10,
+        25,
+        74
+      ],
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_trap_e2e.py"
+      ],
+      "status": "IMPLEMENTED_BOUNDED_LIVE_QA",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": null,
+      "evidenceFiles": [
+        "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json",
+        "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+      ]
+    },
+    {
+      "id": "TRAP-02",
+      "policy": "BB-04=B direct death, guard cooldown",
+      "scope": [
+        5,
+        10,
+        25,
+        31,
+        74
+      ],
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_guard_e2e.py"
+      ],
+      "status": "IMPLEMENTED_STAGED_QA_ONLY",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "IMPLEMENTED_STAGED_QA_ONLY",
+      "evidenceFiles": [
+        "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json",
+        "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+      ]
+    },
+    {
+      "id": "TRAP-03",
+      "policy": "BB-05=B cross-window #29, PH-01, resource consumption, delayed public death, once-only mark",
+      "scope": [
+        8,
+        10,
+        25,
+        29
+      ],
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_witch_e2e.py",
+        "browser_s15_bb_cross_window_e2e.py"
+      ],
+      "status": "IMPLEMENTED_STAGED_QA_ONLY",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "IMPLEMENTED_STAGED_QA_ONLY",
+      "evidenceFiles": [
+        "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json",
+        "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+      ]
+    },
+    {
+      "id": "TRAP-04",
+      "policy": "same-night placement/activation, resource/cooldown and real phase dependencies",
+      "implementation": "live-profile.ts: staged night1 placement and later execution for guard/witch",
+      "status": "BLOCKED_IMPLEMENTATION_AND_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "BLOCKED_IMPLEMENTATION_AND_ACCEPTANCE",
+      "evidenceFiles": [
+        "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json",
+        "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+      ]
+    },
+    {
+      "id": "TRAP-05",
+      "policy": "persistent marks after death/revival, VH73/VH76 and death-chain, PH-01",
+      "implementation": "no supported combined #10/#26 revival deck; verify mark state and mapping under legal execution",
+      "status": "BLOCKED_IMPLEMENTATION_AND_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "BLOCKED_IMPLEMENTATION_AND_ACCEPTANCE",
+      "evidenceFiles": [
+        "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json",
+        "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+      ]
+    },
+    {
+      "id": "TRAP-06",
+      "policy": "additional source-authorized mappings, BB-PENDING-03=B, including actual eligible cross-window actors",
+      "status": "BLOCKED_IMPLEMENTATION_AND_ACCEPTANCE",
+      "note": "Do not invent inversion for sedative or other unlisted skill. Inventory source-backed mapping before opening domain.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "Do not invent inversion for sedative or other unlisted skill. Inventory source-backed mapping before opening domain.",
+      "evidenceFiles": [
+        "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json",
+        "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+      ]
+    },
+    {
+      "id": "PACK-04",
+      "policy": "Extra attack grants from source #93 (verified bounded mixed), #17/#21/#86 still unverified; VH74 cap two",
+      "status": "PARTIAL_LIVE_QA",
+      "note": "Do not grant a second target merely because #48 remains with another living wolf. #93 conversion grant and both targets verified on exact mixed profile; other grants need source-bound runtime and branch acceptance.",
+      "tests": [
+        "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+        "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative",
+        "browser_s15_bb_mixed_e2e.py"
+      ],
+      "exitCriteria": "Verify each applicable source grant with alive/eligible changes, full-set consensus, max two, SAME/RESOLVE, restart, replay and authorized target projection; verify denial without a grant.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "blocker": "Do not grant a second target merely because #48 remains with another living wolf. #93 conversion grant and both targets verified on exact mixed profile; other grants need source-bound runtime and branch acceptance.",
+      "evidenceFiles": [
+        "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json",
+        "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+      ]
+    },
+    {
+      "id": "PACK-05",
+      "policy": "Converted eligible wolf retains original all-player rank. BB-REP-NEW-01=B approved; #93 conversion after #94 dies.",
+      "status": "PARTIAL_LIVE_QA",
+      "note": "Mixed live [48,74,77,84,93,94] verified if both backend and browser pass. #93 conversion at day resolution, no artificial transition. Same-night mid-window eligibility change and final victory after representative death remain unclosed; fail closed if set changes after lock. Pre-conversion attack target list in the bounded mixed profile excludes third-party faction seats; known composition may permit faction inference. General targeting/projection and death redirection are not certified for release.",
+      "tests": [
+        "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+        "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+        "browser_s15_bb_conversion_e2e.py",
+        "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+        "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative",
+        "browser_s15_bb_mixed_e2e.py"
+      ],
+      "mixedLiveVerified": true,
+      "exitCriteria": "Mixed #93 and initial wolf actual lawful conversion; both rank cases; lawful membership changes while collecting and locked; final winner closure after retaliation; target projection must not expose unauthorized faction; SQLite restart, replay and browser acceptance.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "blocker": "Mixed live [48,74,77,84,93,94] verified if both backend and browser pass. #93 conversion at day resolution, no artificial transition. Same-night mid-window eligibility change and final victory after representative death remain unclosed; fail closed if set changes after lock. Pre-conversion attack target list in the bounded mixed profile excludes third-party faction seats; known composition may permit faction inference. General targeting/projection and death redirection are not certified for release.",
+      "evidenceFiles": [
+        "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json",
+        "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+      ]
+    },
+    {
+      "id": "RELEASE-01",
+      "policy": "immutable 1.3.2/1.3.3 archive bindings, separate effective rule registry, migration and replay checks",
+      "status": "BLOCKED_OFFICIAL_ACTIVATION_PATH_AND_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "BLOCKED_OFFICIAL_ACTIVATION_PATH_AND_ACCEPTANCE",
+      "evidenceFiles": [
+        "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json",
+        "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+      ]
+    },
+    {
+      "id": "RELEASE-02",
+      "policy": "authorization, REST/WS, SQLite restart, current critical browser suite and human QA evidence",
+      "status": "PENDING_FINAL_ACCEPTANCE",
+      "exitCriteria": "All mandatory current release browser obligations without unresolved failure, bounded privacy/ACL and persistence evidence, actual owner QA feedback, no implicit production activation.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "blocker": "PENDING_FINAL_ACCEPTANCE",
+      "evidenceFiles": [
+        "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json",
+        "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+      ]
+    }
+  ],
+  "outsideReleaseDomain": [
+    "Unrelated character mechanics without B/B interaction; no requirement to complete all 97 for B/B.",
+    "Future AFK policy (explicit separate decision; never replace indefinite wait).",
+    "Competitive production including live PostgreSQL and full browser matrix, separate gates."
+  ],
+  "releaseGateRule": "All mandatory obligations for release domain must be resolved and evidenced, no open blocking regression, owner release authorization separate; do not move READY_FOR_APPROVAL from policy approval alone.",
+  "historicalReplay": "Retain all stored ruleset/profile bindings; never migrate old matches to 1.3.4. No schema migration this build.",
+  "humanQA": "PENDING; only actual owner evidence, not auto-pass.",
+  "supplementalDecisionRecord": "data/rules/owner_bb_rep_new_01_20261125.json",
+  "effectiveRegistryPreview": "data/rules/owner_bb_v1_3_4_effective_registry_preview_rep_new_01.json"
+}

@@ -1,0 +1,22 @@
+E2E_SCHEDULER_WAIT exclusive 65697
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 671
+E2E_RESOURCE start cpu "usage_usec 14666020284\nuser_usec 11784533282\nsystem_usec 2881487002\nnice_usec 5281427\nnr_periods 76992\nnr_throttled 6630\nthrottled_usec 246141510\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s22_jester_revival_e2e.py default port 45549 db /tmp/wolvesville-s06-browser-3fkwEt/test.sqlite
+SCENARIO_READY s22-jester-revival
+E2E_STAGE action 8 official.8.night-kill 28
+E2E_STAGE resolve DAY_DISCUSS
+E2E_STAGE action 26 official.26.revive 28
+E2E_STAGE resolve DAY_DISCUSS
+SCENARIO_ACTIONS_PASS s22-jester-revival
+E2E_STAGE cleanup
+E2E_CONTEXT_CLOSED 0 0.026
+E2E_CONTEXT_CLOSED 1 0.047
+E2E_CONTEXT_CLOSED 2 0.044
+E2E_CONTEXT_CLOSED 3 0.037
+E2E_STAGE cleanup-complete
+S22_JESTER_REVIVAL_BROWSER_PASS
+S06_BROWSER_PASS browser_s22_jester_revival_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 14722494413\nuser_usec 11828031822\nsystem_usec 2894462591\nnice_usec 5327060\nnr_periods 77188\nnr_throttled 6671\nthrottled_usec 247871306\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

@@ -1,0 +1,47 @@
+E2E_SCHEDULER_WAIT exclusive 7072
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 68196
+E2E_RESOURCE start cpu "usage_usec 1985816338\nuser_usec 1663963915\nsystem_usec 321852423\nnice_usec 502168\nnr_periods 11821\nnr_throttled 3374\nthrottled_usec 211398488\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s15_approved_revenge_e2e.py default port 46177 db /tmp/wolvesville-s06-browser-WV0W4b/test.sqlite
+Traceback (most recent call last):
+  File "/tmp/wv2/tests/browser_s15_approved_revenge_e2e.py", line 60, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/tmp/wv2/tests/browser_s15_approved_revenge_e2e.py", line 57, in run
+    scenario('s15-approved-revenge',[25,28,33,74],case)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/wv2/tests/browser_s15_approved_revenge_e2e.py", line 24, in scenario
+    for p in pages:p.wait_for_function('WolvesLive.game?.phase==="NIGHT_COLLECT" && page==="ingame"',timeout=18000)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 11595, in wait_for_function
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.wait_for_function(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_page.py", line 1110, in wait_for_function
+    return await self._main_frame.wait_for_function(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 878, in wait_for_function
+    await self._channel.send("waitForFunction", self._timeout, params)
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_function: Timeout 18000ms exceeded.
+Error: E2E failed browser_s15_approved_revenge_e2e.py, exit=1, signal=null
+    at file:///tmp/wv2/scripts/run-browser-s06.mjs:70:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+E2E_RESOURCE end cpu "usage_usec 2146246092\nuser_usec 1797529958\nsystem_usec 348716133\nnice_usec 539377\nnr_periods 12223\nnr_throttled 3751\nthrottled_usec 231689350\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

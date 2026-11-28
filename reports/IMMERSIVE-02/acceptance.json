@@ -1,0 +1,58 @@
+{
+  "checkpoint": "IMMERSIVE-02 development checkpoint",
+  "sourceFingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+  "baseFingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a",
+  "historicalF": 1,
+  "newFull": 0,
+  "freshFull": null,
+  "completionMetricsFrozen": true,
+  "characterRegistry": 97,
+  "historicalDecisions": 118,
+  "legacySpecifications": 207,
+  "focusedBackend": {
+    "tests": 6,
+    "pass": 6,
+    "fail": 0,
+    "skipped": 0,
+    "log": "focused.log"
+  },
+  "monolithic": {
+    "exit": 124,
+    "status": "INCOMPLETE",
+    "summary": {
+      "observedPass": 370,
+      "observedFail": 0,
+      "observedSkipped": 11
+    },
+    "log": "regression.log"
+  },
+  "browser": {
+    "game": "PASS",
+    "social": "PASS",
+    "transport": "repository HTTP/WS bridge to actual backend/SQLite, Chromium; not native direct",
+    "gameLog": "browser-final.log",
+    "socialLog": "social-browser.log"
+  },
+  "baselinePathsPreserved": 5187,
+  "baselineChangedFiles": [
+    "README.md",
+    "backend/src/game/coordinator.ts",
+    "backend/src/multiplayer/pg-store.ts",
+    "backend/src/multiplayer/server.ts",
+    "backend/src/social/repository.ts",
+    "docs/immersive-handover/PRODUCT_ACCEPTANCE.md",
+    "docs/immersive-handover/PROJECT_STATE.md",
+    "frontend/app.js",
+    "frontend/immersive.css",
+    "frontend/immersive.js",
+    "frontend/integration.js"
+  ],
+  "historicalReportsUnchanged": 4139,
+  "livePostgresql": "PENDING",
+  "liveProvider": "PENDING",
+  "macNative": "PENDING",
+  "performance": "NOT BENCHMARKED",
+  "databaseUpgrade": "NOT VERIFIED on existing user database",
+  "newSchema": false,
+  "productAcceptance": "docs/immersive-handover/PRODUCT_ACCEPTANCE.md"
+}

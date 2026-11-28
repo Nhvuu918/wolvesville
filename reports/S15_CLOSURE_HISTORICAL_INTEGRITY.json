@@ -1,0 +1,34 @@
+{
+  "data/character.json": {
+    "sha256": "7a9fc87f979198004260115f512cac9b171322a98b264e59dae9fa3b4d29a9c3",
+    "byteIdentical": true
+  },
+  "data/rules/official_merged_118.json": {
+    "sha256": "3bd590000aedbe46f5a5a62e43e18c5d247cb3d401ba60f980a050512e8376f3",
+    "byteIdentical": true
+  },
+  "data/rules/tests_207.json": {
+    "sha256": "0a6edd6b086ebe270519493c83a48d73113a80ffff3528aada51282d8f4a1860",
+    "byteIdentical": true
+  },
+  "data/rules/vh01_vh85_UNCHANGED.json": {
+    "sha256": "b7cc91af9a5406d415b5b3a72b56df023b4ce71338d45ad69d615ff9ce4d95a2",
+    "byteIdentical": true
+  },
+  "data/rules/decisions_21_v1_2_UNCHANGED.json": {
+    "sha256": "42bf24218e3b6c3777c0a315d82d48e93bd0c0184587968b248be52fbd2a5d56",
+    "byteIdentical": true
+  },
+  "data/rules/q13_12_user_confirmed.json": {
+    "sha256": "e8814132695962a9644bcbb56576c3ee77d1f4ba2ad98f95df87b8f2062ece65",
+    "byteIdentical": true
+  },
+  "data/rules/sprint11_official_voting_decisions.json": {
+    "sha256": "78ed3a40f6b67a5e87c061e9e7ef91314d3af424c367e2991dd9c4fc5f9299ac",
+    "byteIdentical": true
+  },
+  "data/rules/sprint15_owner_seer_correction.json": {
+    "sha256": "a2151e3e5447d5519a5ad212dfd8f9e5cc837c5f65b3fd4da794b737824de032",
+    "byteIdentical": true
+  }
+}

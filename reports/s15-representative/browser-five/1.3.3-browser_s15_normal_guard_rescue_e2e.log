@@ -1,0 +1,68 @@
+E2E_STAGE village setup
+E2E_STAGE village night
+E2E_STAGE village rescue
+E2E_STAGE village day-vote
+GROWTH_NORMAL_GUARD_RESCUE_BROWSER_PASS village
+E2E_STAGE village cleanup
+E2E_CONTEXT_CLOSED 0 0.113
+E2E_CONTEXT_CLOSED 1 0.135
+E2E_CONTEXT_CLOSED 2 0.149
+Timeout (0:01:00)!
+Thread 0x00007f537a7fc6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f537affd6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f537b7fe6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f537bfff6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f539cff96c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f539d7fa6c0 (most recent call first):
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 99 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 127 in recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 581 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 418 in recv_strict
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 329 in recv_header
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 375 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 485 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 444 in recv_data_frame
+  File "E2E_CONTEXT_CLOSED 3 0.114
+E2E_CONTEXT_CLOSED 4 0.401
+E2E_STAGE village cleanup-complete
+S06_BROWSER_CASE_PASS browser_s15_normal_guard_rescue_e2e.py village
+E2E_STAGE wolf setup
+E2E_STAGE wolf night
+E2E_STAGE wolf rescue
+E2E_STAGE wolf day-vote
+GROWTH_NORMAL_GUARD_RESCUE_BROWSER_PASS wolf
+E2E_STAGE wolf cleanup
+E2E_CONTEXT_CLOSED 0 0.084
+E2E_CONTEXT_CLOSED 1 0.152
+E2E_CONTEXT_CLOSED 2 0.042
+E2E_CONTEXT_CLOSED 3 0.119
+E2E_CONTEXT_CLOSED 4 0.102
+E2E_STAGE wolf cleanup-complete
+S06_BROWSER_CASE_PASS browser_s15_normal_guard_rescue_e2e.py wolf
+S06_BROWSER_PASS browser_s15_normal_guard_rescue_e2e.py
+S06_BROWSER_ALL_1_PASS

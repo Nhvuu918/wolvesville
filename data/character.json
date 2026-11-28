@@ -1,0 +1,778 @@
+[
+  {
+    "id": 1,
+    "name": "Sói Đạo Tặc",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Mỗi đêm bạn có thể chọn một người chơi. Nếu người chơi này được bảo vệ, bạn sẽ cướp đi lớp bảo vệ đó và sống sót qua một đòn tấn công lên bản thân mình. Bạn chỉ có thể cướp đi một lớp bảo vệ duy nhất."
+  },
+  {
+    "id": 2,
+    "name": "Dorothy",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Mỗi đêm, Dorothy đến thăm một người chơi để thu thập một trong ba đặc điểm: trí tuệ từ người chơi có khả năng thu thập thông tin (vd: Tri, Vĩ Cầm), trái tim từ người chơi có khả năng bảo vệ, hoặc lòng dũng cảm từ người chơi có khả năng giết chóc. \n\n Khi Dorothy đã có đủ cả ba, họ có thể ném một xô nước vào bất kỳ người chơi nào bất cứ lúc nào. Nếu người chơi đó là kẻ xấu, họ sẽ bị giết, nếu không thì nước sẽ bị lãng phí. Trong khi đến thăm, Dorothy không thể bị giết trực tiếp, nhưng nếu mục tiêu của họ chết, họ cũng sẽ chết theo.\n\n Lưu ý: Khi Dorothy ghé thăm char thuần giết/ soi/ vệ mới được tính thành công, nghĩa là char chỉ có một chức năng giết/ soi/ vệ không trộn lẫn chức năng khác. \n Ví dụ Tri thuần soi, Phù thuần giết dù có 2 bình vừa giết vừa cứu, nhưng bình cứu không tính là bảo vệ"
+  },
+  {
+    "id": 3,
+    "name": "Sói Tiên Tri",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Mỗi đêm, bạn có thể chọn một người chơi để xem vai trò thuộc chức năng soi/ giết người/ bảo vệ,... Nếu bạn là ma sói cuối cùng hoặc bạn từ bỏ khả năng của mình, bạn sẽ trở thành ma sói thường.\n\n Tiên Tri soi Sói Tiên Tri ra hào quang 'Thiện'"
+  },
+  {
+    "id": 4,
+    "name": "Người Buôn Bí",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Mỗi đêm, bạn có thể đưa ra một thỏa thuận cho một người chơi khác. Họ có thể chấp nhận hoặc từ chối đề nghị của bạn vào ngày hôm sau. Nếu họ chấp nhận, một trong các kết quả ngẫu nhiên sau sẽ xảy ra: 10% chết ngay lập tức, 30% được bảo vệ khỏi các cuộc tấn công trong đêm tiếp theo, 20% nhận được một viên đạn để giết một người chơi khác, 20% bị chặn kỹ năng trong đêm tiếp theo hoặc 20% không có gì xảy ra."
+  },
+  {
+    "id": 5,
+    "name": "Thẩm Phán Linh Hồn",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Cân Phán Quyết: Hai lần trong trò chơi, mỗi đêm TPLH có thể chọn một người chơi và đặt linh hồn của họ lên bàn cân đã có sẵn Lông Vũ Phán Quyết. Nếu linh hồn người đó nhẹ hơn lông vũ → thiện, nếu nặng hơn → ác/không xác định. Kỹ năng này không bị nhiễu bởi bất kì char nào, soi đúng 100%. \n\n Công Lý Tuyệt Đối: Với mỗi người soi ra thiện, TPLH có khả năng bảo vệ họ khỏi mọi tác động khiến người đó bị đổi sang phe ác/không xác định. Tuy nhiên, TPLH có thể bị kéo sang phe khác, khi đó TPLH có quyền quyết định muốn bảo vệ người soi ra thiện không bị đổi phe hay không."
+  },
+  {
+    "id": 6,
+    "name": "Đạo Diễn Tử Thần",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Đi chung với Diễn Viên Sát Nhân.\n\nKỹ năng Đạo Diễn Sân Khấu:\n- Mỗi đêm, ĐDTT được chọn 2 người chơi khác nhau và gán cho mỗi người một vai diễn. Người được chọn sẽ được thông báo riêng rằng mình đang có một vai diễn nhưng không biết bản thân được giao vai gì.\n- Một người chơi không được nhận vai diễn trong 2 đêm liên tiếp.\n\nCác vai diễn:\n- Vai Kẻ Vu Khống: Người được giao vai bắt buộc phải là người đầu tiên thực hiện hành động vote hợp lệ vào sáng hôm sau.\n- Vai Kẻ Chết Thay: Người được giao vai phải nhận >= 2 lượt vote trong buổi bỏ phiếu sáng hôm sau\n\nCơ chế Oscar:\n- Nếu một người diễn sai vai được giao, ĐDTT nhận 1 giải Oscar từ người đó.\n- Nếu cả hai người đều diễn sai, ĐDTT nhận tổng cộng 2 giải Oscar.\n- Nếu một trong hai người được gán vai chết trong đêm, ĐDTT nhận 1 giải Oscar từ người còn lại.\n- Hai người được giao vai có thể công khai trao đổi và bàn bạc với nhau trong group chung.\n\nGhi chú:\n- Nếu ĐDTT chết, các giải Oscar đã tích lũy vẫn được giữ nguyên để Diễn Viên Sát Nhân có thể tiếp tục sử dụng.\n"
+  },
+  {
+    "id": 7,
+    "name": "Diễn Viên Sát Nhân",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Đi chung với Đạo Diễn Tử Thần.\n\nKỹ năng Đóng Thế:\n- 1 lần sử dụng trong trò chơi, Diễn Viên có thể kích hoạt kỹ năng để bảo vệ ĐDTT khỏi một lần tấn công trong đêm, đòn tấn công sẽ bị vô hiệu hóa và người thực hiện hành động tấn công sẽ chết do phản đòn\n - Kỹ năng không có tác dụng đối với việc ĐDTT bị treo cổ thông qua bỏ phiếu.\n\nKỹ năng Huyết Tế Sân Khấu:\n- Khi ĐDTT có ít nhất 1 giải Oscar, mỗi đêm Diễn Viên có thể sử dụng 1 giải Oscar để ám sát một người chơi đã từng diễn sai vai do ĐDTT giao.\n- Mỗi lần sử dụng sẽ tiêu hao 1 giải Oscar, bất kể mục tiêu có bị giết thành công hay không.\n\nĐiều kiện thắng:\n- Thắng khi toàn bộ người chơi thuộc phe Dân Làng bị loại bỏ\n- Nếu ĐDTT chết trước khi điều kiện thắng trên xảy ra, Diễn Viên Sát Nhân vẫn có thể giành chiến thắng bằng cách hoàn thành đủ 3 phân cảnh sau:\n  + Cảnh 1: Có ít nhất một người chơi chết do kỹ năng Huyết Tế Sân Khấu của Diễn Viên Sát Nhân.\n  + Cảnh 2: Có ít nhất một người chơi chết do bị phản đòn từ kỹ năng Đóng Thế khi thực hiện tấn công ĐDTT.\n  + Cảnh 3: Có ít nhất một người từng được giao vai Kẻ Chết Thay chết vào ban ngày, bao gồm cả trường hợp bị treo cổ thông qua bỏ phiếu.\n- Các phân cảnh được ghi nhận ngay từ đầu trò chơi, kể cả khi ĐDTT chưa chết. Tuy nhiên, điều kiện chiến thắng bằng 3 phân cảnh chỉ được kích hoạt và xét sau khi ĐDTT chết.\n"
+  },
+  {
+    "id": 8,
+    "name": "Kỵ Sĩ Không Đầu",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Mỗi đêm, bạn có thể lấy mạng một người chơi. Vì bạn không có đầu nên bạn không thể bị treo cổ cho đến khi tất cả ma sói đều bị giết. Ma sói có thể giết bạn. Bạn thắng nếu bạn là người chơi cuối cùng."
+  },
+  {
+    "id": 9,
+    "name": "Thiên Sứ Tuyết",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Mỗi đêm, bạn có thể chọn một người chơi để bảo vệ khỏi một lần tấn công trong hai đêm liên tiếp. Hiệu lực bảo vệ vẫn tiếp tục ngay cả khi bạn bị giết. Bạn có thể bảo vệ tối đa 3 người chơi khác nhau trong một ván, và không thể bảo vệ cùng một người hai lần."
+  },
+  {
+    "id": 10,
+    "name": "Sói Kỹ Sư",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Chức năng: Hai lần trong trò chơi, sói có quyền chọn một người chơi để \"Đặt bẫy\". Lưu ý chỉ được bẫy mỗi người một lần trong cả ván. \n\n Cơ chế: Nếu sói đặt bẫy lên char nào, char đó sẽ bị lỗi và phản tác dụng lên chính người sử dụng\n\n Vd: Sói bẫy Tiên tri nhận kết quả ngược, nhưng bẫy người bị Tri soi không ảnh hưởng kết quả soi nhưng sẽ ảnh hưởng chức năng của chính người đó\n Sói bẫy Vệ nếu vệ ai sẽ làm mục tiêu chết\n Phù thủy dính bẫy ném độc không chết nhưng cứu lại khiến người đó chết"
+  },
+  {
+    "id": 11,
+    "name": "Thợ Rèn Cơ Khí",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Chức năng: Mỗi đêm, chọn 1 người chơi để \"Nâng cấp\" hoặc \"Bảo trì\". \n Cơ chế: \n - Nâng cấp: Có 2 lần giúp chức năng của người được chọn x2 lần \n - Bảo trì: Giúp mục tiêu miễn nhiễm với mọi hiệu ứng làm nhiễu hoặc chặn chức năng trong đêm đó. \n Ghi chú: Không thể nâng cấp cho chính mình."
+  },
+  {
+    "id": 12,
+    "name": "Búp Bê Nguyền Rủa",
+    "team": "phe3",
+    "teamName": "Không rõ",
+    "aura": "Không xác định",
+    "desc": "Chức năng: Búp bê bắt đầu ở một người chơi ngẫu nhiên được random. Người bị nguyền rủa sẽ được thông báo đang giữ Búp Bê\n Mỗi đêm, người giữ búp bê phải chuyển nó cho người khác. Đồng thời Búp Bê Nguyền Rủa cũng được thông báo riêng bản thân đã được chuyền cho những ai\n\n Cơ chế: Nếu người đang giữ búp bê bị chết, búp bê sẽ \"ám\" người đó (tính vào mục tiêu thắng). Búp Bê có thể được chuyền lại cho người đã từng bị nguyền rủa. \n\n Khi tất cả người từng bị nguyền rủa đều chết hoặc chỉ duy nhất người bị nguyền gần nhất còn sống, Búp Bê Nguyền Rủa thắng"
+  },
+  {
+    "id": 13,
+    "name": "Fan Cuồng",
+    "team": "phe3",
+    "teamName": "Không rõ",
+    "aura": "Không xác định",
+    "desc": "Mục tiêu: Vào đêm đầu tiên, Fan Cuồng phải chọn một người chơi làm \"Thần Tượng\". Mục tiêu của Fan Cuồng là cùng Thần Tượng sinh tồn đến cuối ván đấu, trở thành hai người chơi cuối cùng còn sống.\n\nChức năng: Mỗi đêm, Fan Cuồng có thể lựa chọn một trong hai hành động sau:\n- Khiên bảo vệ: có 2 lần bảo vệ Thần Tượng khỏi tấn công trong đêm đó. Khiên chỉ có tác dụng bảo vệ Thần Tượng, không thể bảo vệ bản thân Fan Cuồng và không có tác dụng vào ban ngày.\n- Súng trừng phạt: Không giới hạn số lần sử dụng, nhưng mỗi lần sử dụng chỉ có 50% tỷ lệ thành công, hệ thống sẽ random và đưa ra kết quả có thành công hay không.\n\nGhi chú:\n- Mỗi đêm, Fan Cuồng chỉ được lựa chọn một trong hai hành động Khiên bảo vệ hoặc Súng trừng phạt\n- Vào đêm đầu tiên, Fan Cuồng và Thần Tượng sẽ được đưa vào chung một group để có thể trao đổi và hợp tác với nhau.\n- Thần Tượng được giữ nguyên toàn bộ chức năng, phe và hào quang ban đầu trong thời gian Fan Cuồng còn sống.\n- Nếu Fan Cuồng chết, Thần Tượng lập tức trở về phe ban đầu, đồng thời giữ nguyên toàn bộ chức năng và hào quang. Fan Cuồng chết không kéo theo Thần Tượng và ngược lại.\n- Nếu Thần Tượng chết, Fan Cuồng lập tức mất toàn bộ chức năng ban đầu và chuyển thành Chán Đời, thắng khi bị treo cổ vào ban ngày.\n\nĐiều kiện thắng:\n- Phe Fan Cuồng: Chiến thắng khi Fan Cuồng và Thần Tượng là hai người chơi cuối cùng còn sống.\n- Chán Đời: Nếu Thần Tượng chết, Fan Cuồng chuyển thành Chán Đời và chiến thắng khi bị treo cổ vào ban ngày."
+  },
+  {
+    "id": 14,
+    "name": "Ông Kệ Noel",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Vào ban ngày, bạn có thể chọn hai người chơi để tham gia trao quà vào ban đêm. Họ sẽ bí mật quyết định có gửi cho nhau một món quà chí tử hay không\n\n Kết quả: \n - Cả hai gửi quà, cả hai chết. \n - Chỉ một người gửi quà, người nhận chết. \n - Không ai gửi quà, một người sẽ bị random giết ngẫu nhiên. \n\n Nếu một trong hai mục tiêu bị giết bằng bất kỳ cách nào khác trong đêm, người còn lại sẽ tự động chết. Bạn có thể chọn bản thân làm một trong hai mục tiêu để đảm bảo người còn lại sẽ chết. Hai người chơi được chọn ngẫu nhiên cho đêm đầu tiên.\nBạn không thể bị giết bởi ma sói.\n\nBạn thắng nếu bạn là người chơi cuối cùng."
+  },
+  {
+    "id": 15,
+    "name": "Thần Tình Yêu Hắc Ám",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Mỗi đêm, bạn có thể chọn lên đến hai người chơi để kết tơ hồng. \n\n - Nếu bạn chọn một người chơi, họ sẽ chết. \n - Nếu bạn chọn hai người, họ sẽ bị ràng buộc với nhau, nếu một người chết, người kia cũng sẽ chết theo. \n\n Những người chơi được kết tơ hồng sẽ không biết rằng họ bị ràng buộc. Bạn chỉ có thể kết tơ hồng với mỗi người một lần.\nBạn không thể bị giết bởi ma sói.\n\nBạn thắng nếu bạn là người chơi cuối cùng."
+  },
+  {
+    "id": 16,
+    "name": "Phù Thủy Cấm Kỵ",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Kỹ năng Đài Phun Thuốc Độc:\n- Có 2 lần sử dụng trong trò chơi. Vào ban đêm, PTCK có thể kích hoạt kỹ năng và chọn tối đa 2 người chơi để gieo độc.\n- Người được chọn sẽ nhận trạng thái Nhiễm Độc, nhưng không chết ngay lập tức và bản thân họ cũng không biết mình đã bị nhiễm độc.\n- Vào đêm kế tiếp, nếu người nhiễm độc thuộc phe Sói hoặc phe thứ ba, họ sẽ bị vô hiệu hóa toàn bộ kỹ năng trong đêm đó\n- Nếu người nhiễm độc thuộc phe Dân, họ sẽ không bị ảnh hưởng.\n- Sau khi hiệu ứng phát tác, trạng thái Nhiễm Độc sẽ tự động biến mất.\n\nKỹ năng Bình Thuốc Giải:\n- Có 2 lần sử dụng trong trò chơi. Vào ban đêm, PTCK có thể sử dụng thuốc giải lên một người chơi bất kỳ, bao gồm cả bản thân.\n- Người được sử dụng thuốc giải sẽ được bảo vệ khỏi một lần tấn công gây chết trong đêm đó.\n- Thuốc giải chỉ có hiệu lực trong đêm sử dụng và sẽ tự động biến mất vào sáng hôm sau.\n- Người nhận thuốc giải sẽ không biết bản thân đã được sử dụng thuốc."
+  },
+  {
+    "id": 17,
+    "name": "Nữ Tu Huyết Thệ",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Kỹ năng Ánh Sao Báo Thù: mỗi đêm NTHT có thể chọn một người để ban phước cho họ, sau khi được ban phước, người đó được +1 lần giết/vệ/soi trong đêm đó. Lưu ý những ai đã được ban phước sẽ không ban phước lần nữa\nVí dụ: Bình thường Vệ mỗi đêm vệ 1 người, nếu được ban phước sẽ vệ 2 người. Nhưng nếu ban phước trúng phe 3 hoặc sói thì đêm đó họ có thể cắn/giết/ảo ảnh nhiều hơn 1 người so với bình thường\n\nKỹ năng Thiêng Khí Phán Xét: một lần duy nhất vào ban ngày NTHT có thể công khai danh tính bản thân để phán xét một người. Nếu người đó là sói/phe 3 sẽ bị mất chức năng vĩnh viễn, nếu là dân NTHT sẽ bị câm suốt ván"
+  },
+  {
+    "id": 18,
+    "name": "Sói Biến Hình",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Mỗi đêm chọn một người để sao chép vai trò – sáng hôm sau nếu người đó chết, SBH sẽ nhận vai trò của họ đến hết ván. Nếu biến hình thành công thì không được sao chép nữa."
+  },
+  {
+    "id": 19,
+    "name": "Kẻ Mặc Cả Bóng Tối",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Kỹ năng 'GIAO DỊCH ẨN DANH': Mỗi đêm chọn một người và gửi một trong các giao kèo cụ thể sau (mỗi loại tối đa 1 lần):\n- Giao kèo Im Lặng: Nếu bạn KHÔNG dùng kỹ năng đêm nay, bạn sẽ được bất tử trong đêm nay.\n- Giao kèo Lá Phiếu: Nếu ngày mai bạn bỏ phiếu theo chỉ định của tôi, bạn sẽ được miễn nhiễm treo cổ vào ngày mai.\n- Giao kèo Che Giấu: Nếu bạn KHÔNG phát biểu hoặc nhắc tên tôi vào ngày mai, đêm sau bạn sẽ biết được phe của 1 người bất kỳ.\n- Giao kèo Thao Túng: Nếu bạn chấp nhận bị tôi đổi hướng mục tiêu kỹ năng vào đêm nay, đêm sau bạn sẽ được chọn xem vai trò chính xác của 1 người chết.\nNếu có 3 giao kèo thành công, KMCBT thắng.\n\nKỹ năng 'TRỪNG PHẠT NGẦM': Khi có người đồng ý nhưng lại phá giao kèo, có thể chọn trừng phạt bằng cách khiến người đó không thể dùng kỹ năng 2 đêm tiếp theo và mất quyền vote trong 2 ngày đó.\n\nKỹ năng 'GIAO DỊCH BẢN THÂN': Kích hoạt khi 2 đêm liên tiếp không có giao dịch thành công, KMCBT có thể chọn:\n1. Gia nhập một phe khác và thắng cùng họ.\n2. Chọn 1 trong 3 nhiệm vụ đơn độc (nếu hoàn thành, KMCBT thắng một mình):\n   - Nhiệm vụ 1: Sống sót cho đến khi trò chơi còn đúng 3 người tính cả KMCBT.\n   - Nhiệm vụ 2: Khiến 1 người chơi do quản trò chỉ định bị treo cổ vào Ban Ngày.\n   - Nhiệm vụ 3: Bảo vệ 1 người chơi cụ thể sống sót từ đầu đến hết game."
+  },
+  {
+    "id": 20,
+    "name": "Sói Gai Độc",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Nếu bị bắn hoặc soi, người thực hiện hành động bị thương, mất khả năng 1 đêm tiếp theo."
+  },
+  {
+    "id": 21,
+    "name": "Sói Khát Máu",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Nếu trong một buổi sáng có 2 người trở lên chết đi, vào đêm kế tiếp bầy sói có thể cắn 2 mạng."
+  },
+  {
+    "id": 22,
+    "name": "Người Giao Dịch",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Một lần duy nhất, NGD có thể trao đổi chức năng của mình cho người khác. NGD sẽ không biết chức năng của người đó cho tới khi trao đổi thành công\n\n Nếu người đó nhận sẽ trở thành NGD nhưng không còn chức năng trao đổi mà được cấp 2 viên đạn chỉ bắn được vào ban đêm. Bản thân NGD sẽ lấy char của người vừa đồng ý trao đổi, sử dụng hết số tài nguyên còn lại. \n\n Nếu NGD chọn trúng sói hoặc phe 3, giao dịch thành công sẽ -1 viên đạn. Nếu sau 2 lần đều chọn trúng sói hoặc phe 3, NGD mất quyền trao đổi."
+  },
+  {
+    "id": 23,
+    "name": "Xạ Thủ Linh Hồn",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Khi còn sống, XTLH có 1 lần dùng khiên để bảo vệ chính mình hoặc người khác\n\nNếu chết, quản thông báo với toàn dân, đồng thời vào đêm tiếp theo XTLH được cấp 2 viên đạn và bí mật hồi sinh để cùng dân giết sói và phe 3, không ai biết XTLH là ai và đã hồi sinh hay chưa\n\n XTLH có thể bị giết lần 2 nếu dân làng nghi ngờ là BBMA hoặc bị sói/ phe 3 giết\nXTLH không thể vote sau khi đã chết\nNếu chết lần 2 mới chết thật sự"
+  },
+  {
+    "id": 24,
+    "name": "Quản Ngục",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Vào ban đêm, bạn có thể chọn một người chơi để giam vào ngục. Bạn có thể nói chuyện ẩn danh với người chơi bị giam vào ban đêm. Người đó không thể sử dụng khả năng của họ và sẽ không bị tấn công. Bạn có một viên đạn để giết người chơi bị giam vào ngục trong đêm."
+  },
+  {
+    "id": 25,
+    "name": "Tiên Tri",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Mỗi đêm bạn có thể xem vai trò của người chơi khác."
+  },
+  {
+    "id": 26,
+    "name": "Thầy Đồng",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Vào buổi đêm bạn có thể trò chuyện ẩn danh với người chết. Bạn có khả năng chọn một dân làng đã chết trong đêm và hồi sinh họ khi đêm kết thúc một lần trong ván đấu."
+  },
+  {
+    "id": 27,
+    "name": "Cupid",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Vào đêm đầu tiên, Cupid sẽ chọn ra hai người ghép cặp với nhau, họ sẽ biết được mặt và vai trò của nhau, đồng thời giữ nguyên hào quang cũ của họ. \n Nếu một người chết, người kia cũng chết theo. Bất kể phe cũ của họ là gì thì hiện tại họ phải loại tất cả những người chơi còn lại để thắng cùng Cupid, hoặc nếu cặp này chết, Cupid thành dân thường\n Cupid có thể tự ghép chính mình."
+  },
+  {
+    "id": 28,
+    "name": "Thằng Ngố",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Bạn phải lừa dân làng treo cổ bạn. Nếu họ treo cổ bạn, bạn thắng."
+  },
+  {
+    "id": 29,
+    "name": "Phù Thủy",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Sở hữu hai bình thuốc, một bình để cứu một người, một bình để giết một người. Phù thuỷ chỉ được sử dụng mỗi bình một lần trong cả ván chơi và có thể sử dụng cả hai bình trong một đêm. \n Mỗi đêm, quản trò gọi Phù thuỷ dậy và cho Phù thuỷ biết hôm qua ai đã bị giết vào đêm đó và Phù thuỷ có quyền quyết định có cứu người đó hay không. Sau đó, quản trò sẽ hỏi Phù thuỷ có muốn dùng bình \"giết\" giết ai đó không."
+  },
+  {
+    "id": 30,
+    "name": "Sói Trắng",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Sói trắng cũng thức dậy chung với Sói thường. Nhưng cứ hai đêm một lần hắn có quyền giết một con Sói thường khác. Nhiệm vụ của Sói trắng là trở thành Sói duy nhất còn sống."
+  },
+  {
+    "id": 31,
+    "name": "Bảo Vệ",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Mỗi đêm, Bảo Vệ có quyền chọn một người để bảo vệ nhưng không được vệ một người hai đêm liên tiếp, có thể vệ cùng một người nhưng cách ngày."
+  },
+  {
+    "id": 32,
+    "name": "Xạ Thủ",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Xạ Thủ có 3 viên đạn, có quyền bắn cả ngày hoặc đêm với điều kiện chỉ chọn bắn ngày hoặc đêm trong hôm đó."
+  },
+  {
+    "id": 33,
+    "name": "Sói Lừa Gạt",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Ảo ảnh: Một lần trong ván có thể hiện lên là dân làng khi bị tiên tri soi\n\nThao túng: Một lần trong ván có khả năng ép buộc một người bỏ phiếu theo mình vào ban ngày (quản vẫn cho người bị thao túng tự vote nhưng sẽ hỏi ý Sói Lừa Gạt muốn vote ai.\nVd. A bị thao túng, A vote B. Sói Lừa Gạt vote C thì phiếu bầu của A theo SLG)\n\nBáo thù: Nếu bị treo cổ, được chọn một dân làng để kéo chết theo."
+  },
+  {
+    "id": 34,
+    "name": "Sói Mộng Du",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Mỗi đêm sẽ đi lang thang và chọn một người, nếu chọn trúng dân làng sẽ làm mất chức năng trong đêm của người đó"
+  },
+  {
+    "id": 35,
+    "name": "Sói Gương",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Mỗi đêm có thể phản chiếu hào quang của người cuối cùng bị bầy sói giết (nghĩa là Tri soi Sói Gương ra hào quang người bị bầy sói giết từ đêm trước). Nếu bị soi 2 lần sẽ lộ nguyên hình Sói"
+  },
+  {
+    "id": 36,
+    "name": "Pháp Sư",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Có hai quả cầu lửa và một khiên hộ vệ, mỗi đêm Pháp Sư sẽ ném một quả cầu vào một người\nMột lần duy nhất, Pháp Sư có thể nâng khiên hộ vệ bảo vệ một người, khi bảo vệ thành công, vai trò của người đó sẽ được quản tiết lộ cho bạn\n\n Lượt bảo vệ bị trừ kể cả khi người được bảo vệ không bị tấn công, Pháp Sư không thể tự bảo vệ mình"
+  },
+  {
+    "id": 37,
+    "name": "Ảo Thuật Gia",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Khả năng: Mỗi đêm có thể chọn hai người chơi và tráo đổi trạng thái của họ. Các hiệu ứng có thể bao gồm:\n\nNếu một trong hai người bị giết, người kia sẽ chết thay.\n\nNếu một trong hai người bị soi, người kia sẽ bị nhận nhầm danh tính.\n\nNếu một trong hai người bị bỏ phiếu chết vào ban ngày, người kia sẽ bị treo cổ thay thế."
+  },
+  {
+    "id": 38,
+    "name": "Nhà Sưu Tầm Linh Hồn",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Khả năng: Mỗi khi một người chơi chết, Nhà Sưu Tầm Linh Hồn có thể chọn hút linh hồn của họ để tích lũy. Tùy thuộc vào loại linh hồn đã hút, nhận được kỹ năng sử dụng một lần:\n- Linh hồn Sói: Đêm tiếp theo, có thể chọn một người để cắn.\n- Linh hồn Tiên Tri: Đêm tiếp theo, có thể soi chính xác vai trò của một người.\n- Linh hồn Bảo Vệ: Đêm tiếp theo, tự bảo vệ bản thân khỏi 1 lần tấn công\n- Linh hồn Dân Khác: Trong ngày tiếp theo, được quyền đổi phiếu bầu của mình thành 2 phiếu trong một lần treo cổ.\n- Linh hồn Phe Thứ Ba: Đêm tiếp theo, khóa kỹ năng của một người bất kỳ khiến họ không thể dùng chức năng.\n\nMiễn nhiễm với hiệu ứng cắn của Sói. Hào quang của Nhà Sưu Tầm Linh Hồn sẽ hiển thị giống với vai trò của linh hồn gần nhất mà nhân vật đang lưu trữ."
+  },
+  {
+    "id": 39,
+    "name": "Kẻ Trộm Chó",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Nếu còn Exciter, mỗi đêm Kẻ Trộm Chó có thể dùng Exciter để bắt 1 người. Nếu người đó là sói, sói đó chết. Nếu người đó là dân, Kẻ Trộm Chó bị dân đập túi bụi và bị tịch thu xe vào đêm tiếp theo. Nếu Kẻ Trộm Chó bị đập 3 lần, Kẻ Trộm Chó chết ngay trong đêm. Kẻ Trộm Chó thắng sau khi có nhiều hơn một nửa số sói trong đàn bị Kẻ Trộm Chó giết, hoặc thắng cùng các phe ba khác nếu điều kiện đầu tiên không được đáp ứng"
+  },
+  {
+    "id": 40,
+    "name": "Hoàng Hậu",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Mỗi đêm chọn 1 người và hỏi câu hỏi với đáp án A/B. Người bị chọn sẽ được quản trò gọi dậy riêng, và đưa ra câu trả lời, khác với đáp án của Hoàng Hậu người bị chọn sẽ chết. Hoàng Hậu phe 3, thắng vòng 3 người. Sói không cắn được."
+  },
+  {
+    "id": 41,
+    "name": "Cupid Hắc Ám",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Cupid sau khi ghép đôi, Cupid hắc ám sẽ thức dậy và chọn 1 người trong cặp đôi để ghép đôi với người khác để trở thành Cặp Đôi Ngoại Tình"
+  },
+  {
+    "id": 42,
+    "name": "Cặp Đôi Ngoại Tình",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Cặp Đôi Ngoại Tình sẽ trở thành phe thứ ba bất kể trước đó từng là phe nào. Cặp Đôi ngoại tình sẽ chết nếu một trong hai chết. Nếu người còn lại trong Cặp Đôi cũ phát hiện có Cặp Đôi Ngoại Tình, họ có thể nhắn riêng với quản để xác nhận. Nếu xác nhận sai, người đó chết 1 mình. Nếu xác nhận đúng, Cặp Đôi Ngoại Tình cùng chết."
+  },
+  {
+    "id": 43,
+    "name": "Sói Bắn Tỉa",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Sói bắn tỉa có 2 viên đạn, vào ban đêm hoặc ban ngày có thể bắn một viên vào người chơi bất kì, lưu ý chỉ chọn bắn ngày hoặc đêm, không được bắn 2 viên vào cùng một ngày"
+  },
+  {
+    "id": 44,
+    "name": "Sói Cuồng Yêu",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Ma sói không biết bạn. Ban đêm, bạn có thể làm bánh hoặc tặng bánh cho người chơi khác. Sau khi làm bánh, bạn có thể đưa bánh cho người chơi khác. Người chơi nhận bánh có thể lựa chọn đáp lại tình yêu hoặc không! Khi được đáp lại tình cảm, bạn và họ sẽ trở thành một phe mới (giống couple) và tiết lộ vai trò cho nhau. Bạn có thể tối đa tặng bánh cho ba người chơi. Nếu quá ba người chơi không một ai đáp lại tình cảm của bạn, bạn sẽ từ bỏ chức năng của mình trở thành một Ma sói thường (khi đó quản add sói cuồng yêu vào box sói)\n\nLưu ý:\nMỗi đêm sói cuồng yêu báo quản sẽ tặng bánh cho ai, quản sẽ chuyển thay bánh tới người đó và thông báo người kia có đáp lại tình cảm không\nKhi trở thành một phe với ai đó, sói cuồng yêu có thể cắn một người khác vào mỗi đêm như bầy sói (có thể cắn cả sói nhưng không thể cắn solo)\nNgười cùng phe với sói cuồng yêu giữ nguyên chức năng"
+  },
+  {
+    "id": 45,
+    "name": "Người Cầu Nguyện",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Vào ban đêm, bạn có thể chọn một người chơi để cầu nguyện. Nếu họ chết, khả năng cầu nguyện của bạn sẽ được thay thế bằng một khả năng mới dựa trên hào quang của họ:\n\nHào quang tốt: Cứu một người chơi đó vào ban đêm\n\nHào quang tà ác: Bạn có thể giết bất kỳ người chơi nào ở bất kỳ giai đoạn nào của trò chơi.\n\nHào quang không xác định: Có thể sử dụng vào ban ngày để khám phá vai trò thực sự của một ai đó."
+  },
+  {
+    "id": 46,
+    "name": "Hắc Tinh",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Là 1 phần của Hắc Bạch Sát Tinh.\nKhi Hắc Tinh chết, tất cả phe sói sẽ mất hết chức năng và Bạch Sát được quyền chọn 1 người để giết mỗi đêm\nThầy Đồng không thể hồi sinh.\nKhi Bạch Sát chết, Hắc Tinh được quyền chọn 1 người để giết mỗi đêm"
+  },
+  {
+    "id": 47,
+    "name": "Bạch Sát",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Là 1 phần của Hắc Bạch Sát Tinh.\nKhi Bạch Sát chết tất cả phe dân sẽ mất hết chức năng trừ Tiên tri, Bảo vệ/Hộ vệ và Hắc Tinh được quyền chọn 1 người để giết mỗi đêm \n Thầy Đồng không thể hồi sinh bạn\nKhi Hắc Tinh chết, Bạch Sát được quyền chọn 1 người để giết mỗi đêm"
+  },
+  {
+    "id": 48,
+    "name": "Sói Thủ Lĩnh",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Khi chỉ còn mình sói thủ lĩnh còn sống, vào mỗi đêm nó có thể cắn hai mạng"
+  },
+  {
+    "id": 49,
+    "name": "Sói Ảo Ảnh",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Hai lần trong đêm được phép bật chức năng ảo ảnh, khi đó Tiên Tri soi một người bất kì đều cho ra phe sói"
+  },
+  {
+    "id": 50,
+    "name": "Sói Gây Tê",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Ban đêm bạn có thể sử dụng kỹ năng của mình để khiến 1 người chơi không thể dùng chức năng vào ban đêm và bị câm vào sáng hôm sau.\n\nLưu ý: sau khi sử dụng chức năng phải nghỉ ngơi 1 đêm mới dùng lại được"
+  },
+  {
+    "id": 51,
+    "name": "Người Lái Đò",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Người lái đò có thể nói chuyện ẩn danh với người chết vào ban đêm . Họ có thể chở một hoặc hai người chơi vào ban đêm . Nếu một trong những người chơi này bị giết vào đêm đó , người chơi đó sẽ vẫn hoạt động trong suốt giai đoạn Thảo luận và Biểu quyết tiếp theo , sau đó các mục tiêu sẽ chết và trở lại nghĩa địa. Người lái đò có thể kéo dài tuổi thọ của tối đa hai người chơi bằng khả năng này."
+  },
+  {
+    "id": 52,
+    "name": "Chó Canh Gác",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Mỗi đêm, bạn có thể chỉ định hai chú chó bảo vệ của mình để bảo vệ những người chơi khác. Một chú chó chặn các cuộc tấn công của người sói, trong khi chú chó kia chặn các cuộc tấn công của kẻ giết người solo. Bạn có thể bảo vệ tối đa hai đêm"
+  },
+  {
+    "id": 53,
+    "name": "Thiên Thần",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Chọn 1 người để bảo vệ mỗi đêm, bạn chết người đó sẽ chết theo\n\nNếu bảo vệ thành công 1 người, vào sáng hôm sau bạn có quyền chọn để giết 1 người nhưng sẽ bị lộ chức năng\n\nThầy đồng không thể hồi sinh bạn"
+  },
+  {
+    "id": 54,
+    "name": "Người Canh Gác",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Kể từ sau giai đoạn bỏ phiếu ngày thứ nhất, Người Canh Gác có thể bắn hoặc tiết lộ người chơi khác. Cả hai hành động có thể được thực hiện một lần, nhưng không thể làm cả hai một ngày."
+  },
+  {
+    "id": 55,
+    "name": "Sói Thạch",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Vào ban đêm, Sói Thạch có thể lựa chọn một người chơi sẽ được bảo vệ một lần khỏi dân làng vào ngày và đêm tiếp theo, bao gồm cả chức năng giết người và treo cổ. Chức năng giết người đó sẽ bị tiêu hao. Khi Sói Thạch cứu thành công một người chơi, Sói Thạch sẽ mất đi chức năng và trở thành một ma sói bình thường."
+  },
+  {
+    "id": 56,
+    "name": "Kỹ Nữ",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Vào ban đêm bạn có thể ghé thăm người chơi khác. Nếu bạn bị tấn công vào lúc đó, bạn sẽ không chết. Tuy nhiên, nếu bạn ghé thăm một người chơi bị tấn công hoặc ghé thăm ma sói hay kẻ giết người solo, bạn chắc chắn sẽ chết!"
+  },
+  {
+    "id": 57,
+    "name": "Kẻ Biến Hình",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Mỗi đêm bạn có thể giết một người chơi và biến thành vai trò của họ. Người chơi kiểm tra thông tin khi kiểm tra bạn sẽ thấy vai trò của bạn là người chơi cuối cùng mà bạn giết."
+  },
+  {
+    "id": 58,
+    "name": "Thám Tử Ác Ma",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Mỗi đêm bạn có thể lựa chọn hai người chơi, bao gồm bản thân bạn. Nếu hai người chơi đó ở hai phe khác nhau, cả hai bọn họ sẽ chết, còn không thì phe của họ sẽ bị tiết lộ với bạn. Nếu bạn lựa chọn bản thân thì chỉ người còn lại sẽ chết.\nBạn không thể bị giết bởi ma sói.\n\nBạn thắng nếu bạn là người chơi cuối cùng."
+  },
+  {
+    "id": 59,
+    "name": "Ná Thủ",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Vào ban ngày, bạn có thể ném viên đá vào một người chơi khác, khiến họ chấn thương và ngăn chặn họ hành động trong phiên hiện tại và kế tiếp. Ném viên đá vào một người chơi đã bị chấn thương trước đó sẽ giết chết họ và tiết lộ vai trò của bạn cho ngôi làng. Bạn chỉ có thể giết hai người chơi trong một game."
+  },
+  {
+    "id": 60,
+    "name": "Người Gọi Hồn",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Trong giai đoạn thảo luận, lựa chọn một dân làng đã chết để biến đổi thành vai trò của họ khi giai đoạn bỏ phiếu bắt đầu. Bạn sẽ quay trở về Người Gọi Hồn khi đến giai đoạn bỏ phiếu kế tiếp. Bạn có thể nói chuyện với người chết vào ban đêm khi còn là Người Gọi Hồn."
+  },
+  {
+    "id": 61,
+    "name": "Thiện Xạ",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Vào ban đêm, bạn có thể đánh dấu một người chơi là mục tiêu của bạn. Sau ngày hôm sau, bạn có thể giết hoặc thay đổi mục tiêu của mình. Nếu bạn cố gắng giết một dân làng, phát bắn của bạn sẽ gây tác dụng ngược và giết chết bạn. Bạn có hai mũi tên."
+  },
+  {
+    "id": 62,
+    "name": "Kẻ Xúi Giục",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Khi bắt đầu trò chơi, hai người chơi sẽ gia nhập đội của bạn với vai trò là hội viên: một người là dân làng và một người là sói hoặc vai trò solo giết người. Các hội viên trong phe của bạn chỉ có thể thắng cùng nhau và không thể thắng với phe ban đầu của họ nữa. Với vai trò là Kẻ Xúi Giục bạn có thể gửi các tin nhắn riêng tư đến họ. Hai hội viên sẽ bị liên kết với nhau, điều đó có nghĩa nếu một trong hai người chết, người còn lại cũng sẽ chết. Nếu cả hai hội viên của bạn chết, bạn có thể giết một người mỗi đêm."
+  },
+  {
+    "id": 63,
+    "name": "Người Gắn Cờ",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Vào đêm thứ hai, Người Gắn Cờ có thể chọn một người chơi để bảo vệ khỏi một cuộc tấn công và người chơi khác sẽ chuyển hướng cuộc tấn công. Người Gắn Cờ có thể chuyển hướng tấn công 2 lần. Sau khi thành công chuyển hướng, Người Gắn Cờ sẽ không thể sử dụng khả năng vào đêm tiếp theo."
+  },
+  {
+    "id": 64,
+    "name": "Người Rung Chuông",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Vào ban đêm, Người Rung Chuông có thể chọn hai người chơi. Sự lựa chọn có thể thay đổi miễn là một trong hai người chơi được lựa chọn không chết. Nếu một trong hai người chơi chết, vai trò của người chơi còn lại sẽ bị tiết lộ cho Người Rung Chuông."
+  },
+  {
+    "id": 65,
+    "name": "Sói Độc Tố",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Sau đêm đầu tiên, hai lần mỗi trò chơi, bạn có thể hạ độc một người chơi vào ban đêm. Vào đêm hôm sau, đòn tấn công của sói lên người chơi này sẽ xuyên qua lớp bảo vệ."
+  },
+  {
+    "id": 66,
+    "name": "Người Gác Đêm",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Ba lần trong một trò chơi, người gác đêm có thể bảo vệ một người chơi khỏi sự tấn công vào ban đêm. Lượt bảo vệ sẽ bị tiêu hao kể cả khi họ không bị tấn công. Thêm vào đó, người gác đêm có thể quan sát ai đang được bảo vệ bởi người khác vào ban đêm."
+  },
+  {
+    "id": 67,
+    "name": "Thợ Rèn",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Thợ rèn có thể rèn hai chiếc khiên và một thanh kiếm. Chiếc khiên sẽ bảo vệ người chơi khỏi bị tấn công vào ban đêm. Thanh kiếm có thể dùng để giết một người chơi khác."
+  },
+  {
+    "id": 68,
+    "name": "Sói Trẻ",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Chọn một người chơi để kéo theo khi bạn chết"
+  },
+  {
+    "id": 69,
+    "name": "Sói Mèo",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Có thể biến đổi một dân làng sang đội ma sói. Người chơi không phải là dân làng sẽ ở nguyên phe của họ"
+  },
+  {
+    "id": 70,
+    "name": "Sói Lừa Đảo",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Bạn có thể chọn một người chơi vào ban ngày. Khi người chơi đó chết bởi bất cứ tác động nào ngoài Ma sói, bạn sẽ giả danh là vai trò người đó, họ sẽ bị xem như là Sói Lừa Đảo và bạn sẽ được xem như vai trò của người đó khi bị kiểm tra."
+  },
+  {
+    "id": 71,
+    "name": "Sát Nhân Ảnh Thuật",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Mỗi đêm bạn có thể ngụy trang một người chơi và người chơi này sẽ bị Tiên Tri soi thành Sát Nhân Ảnh Thuật. Bạn có thể giết tất cả người chơi bị dính ảo ảnh trong giai đoạn thảo luận. Bạn không thể bị giết bởi Ma Sói."
+  },
+  {
+    "id": 72,
+    "name": "Sói Pháp Sư",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Vào ban đêm, Sói Pháp Sư chọn một người để yểm, người đấy sẽ bị coi là Ma Sói (Ác) bởi Tiên Tri vào ban đêm."
+  },
+  {
+    "id": 73,
+    "name": "Sói Lửa",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Khi có ít nhất 1 sói chết, vào Đêm tiếp theo, Sói lửa có thể chọn một người. Người được chọn sẽ bị mất năng lực vĩnh viễn.\n\nKhi có ít nhất 2 sói chết, có thể thực hiện chức năng này thêm 1 lần nữa."
+  },
+  {
+    "id": 74,
+    "name": "Tiên Tri Huyền Bí",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Thuộc phe Dân làng. Mỗi đêm, Tiên tri Huyền bí sẽ tỉnh dậy và chỉ định một người. Quản trò sẽ cho Tiên tri Huyền bí biết chính xác người chơi này là Chức năng gì. Đây là một lá bài cực kì mạnh, đem đến lợi thế lớn cho Phe dân làng."
+  },
+  {
+    "id": 75,
+    "name": "Sói Điên Cuồng",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Một lần trong trò chơi, bạn có thể kích hoạt trạng thái \"điên cuồng\". Nếu trong đêm nạn nhân được chọn của bạn đang được bảo vệ, nạn nhân của bạn và tất cả những người bảo vệ nạn nhân đó sẽ chết."
+  },
+  {
+    "id": 76,
+    "name": "Sói Ác Mộng",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Hai lần trong trò chơi, bạn có thể khiến một người chơi trong ngày \"chìm vào cơn ác mộng\" trong một đêm. Người chơi đó sẽ không thể sử dụng bất kỳ khả năng nào trong một đêm."
+  },
+  {
+    "id": 77,
+    "name": "Thợ Săn Quái Thú",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Vào ban đêm, bạn có thể đặt bẫy lên một người chơi, người này không thể bị giết vào ban đêm. Nếu người chơi bị giết, người đã giết đó sẽ chết.\n Có thể tự đặt bẫy để tự vệ."
+  },
+  {
+    "id": 78,
+    "name": "Nhà Thiên Văn Học",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Bạn có quyền năng triệu hồi trăng non để ngăn chặn lũ ma sói giết chóc vào ban đêm, và triệu hồi cơn mưa sao băng để giết một người chơi khác. Cả hai quyền năng này chỉ có thể sử dụng một lần duy nhất."
+  },
+  {
+    "id": 79,
+    "name": "Sói Hòa Bình",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Một lần trong mỗi trận đấu, bạn có thể tiết lộ vai trò của người chơi và ngăn chặn cuộc bỏ phiếu trong ngày đó. Chỉ có bạn và những ma sói khác mới có thể nhìn thấy vai trò của người chơi đã được tiết lộ."
+  },
+  {
+    "id": 80,
+    "name": "Nghệ Sĩ Vĩ Cầm",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Mỗi đêm, người sở hữu kỹ năng có thể chọn 1 người chơi còn sống để kiểm tra, đối chiếu với 1 người chơi đã chết vào đêm trước đó.\n\n - Nếu cả hai người thuộc cùng một phe, kết quả sẽ là Tiếc Thương.\n- Nếu cả hai người thuộc hai phe khác nhau, kết quả sẽ là Không Tiếc Thương.\n\nKết quả chỉ phản ánh mối quan hệ cùng phe hoặc khác phe giữa hai người, không tiết lộ cụ thể phe phái của họ.\nKết quả Tiếc Thương không đồng nghĩa với việc người được kiểm tra thuộc phe Dân; chỉ cần hai người cùng phe là có kết quả Tiếc Thương."
+  },
+  {
+    "id": 81,
+    "name": "Sói Mù",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Mỗi đêm, bạn có thể chọn ngẫu nhiên hai người chơi để khám phá vai trò của họ. Các khả năng bao gồm: dân làng thường, dân làng mạnh, vai trò bỏ phiếu, solo giết người hoặc vai trò khác."
+  },
+  {
+    "id": 82,
+    "name": "Nhà Giả Kim",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Bạn có hai lọ thuốc, đỏ và đen. Mỗi đêm, bạn có thể đưa chúng cho hai người chơi khác nhau. Cả hai sẽ được cảnh báo rằng họ có thể chết vào cuối ngày, nhưng chỉ người nhận lọ thuốc đen mới thực sự chết. \n Người chơi không biết họ đã nhận lọ thuốc nào."
+  },
+  {
+    "id": 83,
+    "name": "Sói Chiêu Hồn",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Vào ban đêm, bạn có thể ngay lập tức hồi sinh một con sói đã chết trở lại với vai trò là Ma Sói thường."
+  },
+  {
+    "id": 84,
+    "name": "Phù Thủy Câm",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Mỗi đêm, Phù Thủy Câm sẽ được phép chỉ định 1 người bị câm vào hôm sau. Người này vào ngày hôm sau sẽ không được nói."
+  },
+  {
+    "id": 85,
+    "name": "Thầy Thôi Miên",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Mỗi đêm, Thầy Thôi Miên có thể chọn một người chơi để thôi miên. Nếu Thầy Thôi Miên bị giết trong đêm đó, người bị thôi miên cũng sẽ chết thay. Thầy Thôi Miên không được chọn cùng một người chơi để thôi miên hai đêm liên tiếp"
+  },
+  {
+    "id": 86,
+    "name": "Sói Con",
+    "team": "soi",
+    "teamName": "Phe Sói",
+    "aura": "Ác",
+    "desc": "Giống Sói thường, nhưng khi Sói con chết, đêm hôm sau Sói sẽ được cắn hai người liên tục."
+  },
+  {
+    "id": 87,
+    "name": "Dược Sĩ",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Dược sĩ có 2 Bình: Bình thuốc mê và Bình hồi phục. \n- Bình Thuốc mê: dùng để làm cho một người chơi mất quyền biểu quyết và không được nói chuyện gì vào ngày hôm sau. \n - Bình Hồi phục: Dược sĩ biết ai bị Sói cắn và có thể chọn dùng thuốc cứu người đó.\n\nMỗi chức năng chỉ được sử dụng một lần duy nhất."
+  },
+  {
+    "id": 88,
+    "name": "Thợ Săn",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Mỗi đêm, Thợ Săn có quyền ghim một người. Nếu Thợ Săn bị giết hay bị treo cổ, người này chết theo."
+  },
+  {
+    "id": 89,
+    "name": "Người Khai Mệnh",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Bạn có hai thẻ bài mà có thể đưa cho người chơi khác vào ban đêm. Họ có thể sử dụng thẻ bài của họ để tiết lộ vai trò của mình. Những người chơi không thuộc phe dân làng có thể lựa chọn tiết lộ vai trò của mình thành một vai trò khác. Khi bạn bị giết, những người chơi với những thẻ bài chưa được sử dụng sẽ bị tiết lộ vai trò thật sự của họ."
+  },
+  {
+    "id": 90,
+    "name": "Giáo Chủ",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Mỗi đêm, bạn có thể chọn một người chơi để họ gia nhập giáo phái của bạn. Họ vẫn giữ nguyên vai trò ban đầu của mình. Ngoài ra, bạn có thể hiến tế một thành viên trong giáo phái để giết một người chơi khác. Bạn chỉ có thể có tối đa 5 thành viên giáo phái còn sống cùng lúc, và bạn không thể biến đổi ma sói hoặc những kẻ giết người. Vào ban ngày, bạn có thể gửi tin nhắn riêng cho các thành viên trong giáo phái của mình. Nếu Giáo chủ chết, tất cả thành viên giáo phái sẽ chết theo."
+  },
+  {
+    "id": 91,
+    "name": "Huyết Chủ",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Đi chung với Huyết Bộc.\n\nKỹ năng Huyết Ấn: Mỗi đêm, Huyết Chủ thức dậy và chọn 1 người chơi để khắc Huyết Ấn. Người bị đánh dấu hoàn toàn không biết bản thân mang Huyết Ấn và vẫn chơi bình thường. Tuy nhiên, vào ban ngày, phiếu vote của họ sẽ bí mật bị điều khiển theo phiếu vote của Huyết Chủ. Quản trò âm thầm cộng phiếu, không công khai.\n\nNếu Huyết Bộc chết:\n- Những người đang mang Huyết Ấn vẫn giữ dấu ấn nhưng không còn bị điều khiển phiếu vote.\n- Huyết Chủ vẫn có thể tiếp tục sử dụng Huyết Ấn.\n\nĐiều kiện thắng: Phe Huyết Tộc chiến thắng khi trở thành phe duy nhất còn người chơi sống sót."
+  },
+  {
+    "id": 92,
+    "name": "Huyết Bộc",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Đi chung với Huyết Chủ.\n\nMỗi đêm, Huyết Bộc chọn một trong hai kỹ năng:\n\n- Kỹ năng Huyết Thuẫn: 2 lần trong trò chơi, Huyết Bộc có thể kích hoạt Huyết Thuẫn để bảo vệ Huyết Chủ khỏi 1 đòn tấn công gây chết trong đêm đó\n\n- Kỹ năng Huyết Cảm: Mỗi đêm, Huyết Bộc có thể chọn 1 người đang mang Huyết Ấn để kiểm tra, kết quả chỉ trả về Dân hoặc Không phải Dân, không tiết lộ vai trò cụ thể. Sau khi kiểm tra, người bị chọn có 25% khả năng tử vong. Quản trò ngẫu nhiên quyết định kết quả theo tỷ lệ 1 chết, 3 sống. \n\nNếu Huyết Chủ chết:\n- Kể từ đêm tiếp theo, Huyết Bộc biến thành Kẻ Đồ Sát, mỗi đêm, Kẻ Đồ Sát được quyền chọn 1 người chơi để giết.\n- Kẻ Đồ Sát chiến thắng độc lập khi trở thành người chơi sống sót cuối cùng."
+  },
+  {
+    "id": 93,
+    "name": "Sói Lưu Đày",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Đi chung với Kẻ Giải Nguyền\n\n Sói Lưu Đày không thức dậy cùng bầy sói. \nMỗi đêm, Sói Lưu Đày chọn một người, người này sẽ mất toàn bộ chức năng trong đêm đó và hoàn toàn bị cấm chat, cấm bỏ phiếu vào ban ngày. \n\n Nếu Kẻ Giải Nguyền chết, phong ấn vỡ, Sói Lưu Đày hóa điên, gia nhập bầy sói cũ và bầy sói được cắn 2 người mỗi đêm."
+  },
+  {
+    "id": 94,
+    "name": "Kẻ Giải Nguyền",
+    "team": "phe3",
+    "teamName": "Phe Ba",
+    "aura": "Không xác định",
+    "desc": "Đi chung với Sói Lưu Đày\n\n Kỹ năng Hình Nhân Thế Mạng: Mỗi đêm, bạn chọn một người chơi bất kỳ để làm \"Hình Nhân\". Nếu trong đêm đó Sói Lưu Đày bị giết, toàn bộ sát thương sẽ bí mật chuyển hướng sang Hình Nhân.\n\n Kỹ năng Che Giấu Khí Tức: Khi Kẻ Giải Nguyền còn sống, nếu Tiên Tri soi trúng Sói Lưu Đày, kết quả luôn bị bóp méo và trả về là \"Thiện\"."
+  },
+  {
+    "id": 95,
+    "name": "Người Hái Thuốc",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Đi chung với Thầy Thuốc nhưng không biết đối phương là ai\n\n Mỗi đêm thức dậy chọn 1 người. Nếu người đó thuộc phe Dân, thu được 1 'Thảo dược'. Nếu là Sói hoặc phe 3, thu được 1 'Nọc độc'. \n\n Nếu Thầy Thuốc chết, mỗi đêm Người Hái Thuốc chọn 1 người để 'Đắp thuốc'. Nếu người đó bị tấn công trong đêm, họ sẽ không chết ngay mà thoi thóp sống thêm được 1 ban ngày (vẫn được phát biểu và bỏ phiếu), sau đó sẽ đột tử chết ngay khi cuộc bỏ phiếu ban ngày kết thúc."
+  },
+  {
+    "id": 96,
+    "name": "Thầy Thuốc",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Đi chung với Người Hái Thuốc nhưng không biết đối phương là ai\n\n Quản trò cho biết số nguyên liệu hiện có. Thầy Thuốc có quyền quyết định dùng 2 'Thảo dược' để chế thành Bình Giải, hoặc 2 'Nọc độc' để chế thành Bình Độc. Mỗi loại bình chỉ được chế 2 lần, Thầy Thuốc có thể tặng các bình này cho những người chơi khác hoặc tự giữ. \n\n Nếu Người Hái Thuốc chết khi chưa đủ nguyên liệu tạo bình, Thầy Thuốc sẽ vét sạch đồ nghề dự phòng để tạo ra 1 'Bình Khói' duy nhất với điều kiện chưa chế đủ 2 bình độc và 2 bình giải. Thầy Thuốc có quyền ném Bình Khói này vào 1 người bất kỳ để bảo vệ mục tiêu đó khỏi sát thương trong 1 đêm duy nhất."
+  },
+  {
+    "id": 97,
+    "name": "Thần Thảo Hồi Sinh",
+    "team": "dan",
+    "teamName": "Phe Dân Làng",
+    "aura": "Thiện",
+    "desc": "Hai lần trong trò chơi, Thần Thảo có thể trồng mỗi lần 1 hạt giống lên người còn sống nhưng không thể trồng lên chính mình, người này sẽ không biết mình được trồng hạt giống\n\n Khi người mang hạt giống chết, quản sẽ thông báo người này chết như bình thường nhưng thực tế người này chỉ rơi vào trạng thái ngủ đông và sẽ hồi sinh lại vào sáng hôm sau."
+  }
+]

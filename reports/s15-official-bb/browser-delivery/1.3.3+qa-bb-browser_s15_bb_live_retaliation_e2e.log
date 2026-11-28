@@ -1,0 +1,5 @@
+SCENARIO_READY bb-live-retaliation
+SCENARIO_ACTIONS_PASS bb-live-retaliation
+BB_LIVE_RETALIATION_BROWSER_PASS
+S06_BROWSER_PASS browser_s15_bb_live_retaliation_e2e.py
+S06_BROWSER_ALL_1_PASS

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "GD-LIFE-GUARD-01",
+    "authorityLevel": 2,
+    "kind": "LOGICAL_INFERENCE",
+    "rule": "Within the seven-role LIFE-02 candidate, a valid #31 guard persists for the night and witch window, prevents eligible direct lethal attacks and night Cupid death-follow before seed activation, and does not prevent day hanging. Guard prevention is internal, not a new public notification.",
+    "sources": [
+      "character.json#31",
+      "VH65",
+      "WV-GUARD-MULTIHIT-01",
+      "WV-LIFE02-LINK-01",
+      "F03"
+    ],
+    "reason": "Resolve protection before seed, avoid false stable deaths and preserve round boundaries; no new attack immunity or global scope inferred.",
+    "roles": [
+      8,
+      25,
+      27,
+      29,
+      31,
+      64,
+      97
+    ],
+    "scope": "INTEGRATION_TEST / WV-FULL50-LIFE02-V3 / roster 8,25,27,29,31,64,97",
+    "tests": [
+      "tests/full50-cupid-candidate.test.mjs (two M1-02 tests)",
+      "tests/browser_full50_guard_e2e.py"
+    ],
+    "implementation": [
+      "backend/src/official/life02.ts",
+      "backend/src/official/support-rules.ts",
+      "frontend/integration.js"
+    ],
+    "rollback": "Do not admit new roster: disable WV_FULL50_QA or WV_RC01_LIFE02_QA; preserve existing persisted policy and histories. Revert only new guard roster/handler in source if necessary.",
+    "active": false,
+    "certificate": null
+  }
+]

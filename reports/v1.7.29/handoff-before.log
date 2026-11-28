@@ -1,0 +1,23 @@
+E2E_SCHEDULER_WAIT exclusive 23473
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 1749
+E2E_RESOURCE start cpu "usage_usec 5857198774\nuser_usec 4766381885\nsystem_usec 1090816889\nnice_usec 149411\nnr_periods 32224\nnr_throttled 2614\nthrottled_usec 95781568\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s15_normal_e2e.py aura-village port 42355 db /tmp/wolvesville-s06-browser-KNEQ7b/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS aura-village
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py aura-village
+E2E_ISOLATION browser_s15_normal_e2e.py aura-knight port 39483 db /tmp/wolvesville-s06-browser-7IWU7M/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS aura-knight
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py aura-knight
+E2E_ISOLATION browser_s15_normal_e2e.py role-village port 45241 db /tmp/wolvesville-s06-browser-nxg4WH/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS role-village
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py role-village
+E2E_ISOLATION browser_s15_normal_e2e.py role-knight port 40667 db /tmp/wolvesville-s06-browser-B91Yj1/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS role-knight
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py role-knight
+E2E_ISOLATION browser_s15_normal_e2e.py aura-handoff-village port 35691 db /tmp/wolvesville-s06-browser-6y0MUU/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS aura-handoff-village
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py aura-handoff-village
+S06_BROWSER_PASS browser_s15_normal_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 6026366115\nuser_usec 4894804012\nsystem_usec 1131562103\nnice_usec 247585\nnr_periods 32907\nnr_throttled 2673\nthrottled_usec 97543016\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

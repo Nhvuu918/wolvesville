@@ -1,0 +1,54 @@
+TAP version 13
+# (node:106189) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S09-01 certified \#33 server-side directive transforms a ballot with private audit but never hangs a player
+ok 1 - S09-01 certified \#33 server-side directive transforms a ballot with private audit but never hangs a player
+  ---
+  duration_ms: 555.794138
+  type: 'test'
+  ...
+# Subtest: S09-02 coercion is once-per-match and all retries preserve idempotency and revision
+ok 2 - S09-02 coercion is once-per-match and all retries preserve idempotency and revision
+  ---
+  duration_ms: 330.72518
+  type: 'test'
+  ...
+# Subtest: S09-03 never fabricate an effective ballot if controller or target has not voted
+ok 3 - S09-03 never fabricate an effective ballot if controller or target has not voted
+  ---
+  duration_ms: 324.123927
+  type: 'test'
+  ...
+# Subtest: S09-04 replay and frozen ACL remain valid after SQLite restart
+ok 4 - S09-04 replay and frozen ACL remain valid after SQLite restart
+  ---
+  duration_ms: 463.87941
+  type: 'test'
+  ...
+# Subtest: S09-05 private audit never authorizes hanging, including tied votes and transformed unique leader
+ok 5 - S09-05 private audit never authorizes hanging, including tied votes and transformed unique leader
+  ---
+  duration_ms: 0.537139
+  type: 'test'
+  ...
+# Subtest: S09-06 character.json\#23 forbids voting AFTER death, never while alive; denied vote is atomic
+ok 6 - S09-06 character.json\#23 forbids voting AFTER death, never while alive; denied vote is atomic
+  ---
+  duration_ms: 6.223204
+  type: 'test'
+  ...
+# Subtest: S09-07 inherited QA-only day advance cannot fabricate vote, hanging or victory
+ok 7 - S09-07 inherited QA-only day advance cannot fabricate vote, hanging or victory
+  ---
+  duration_ms: 295.189985
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2121.310846

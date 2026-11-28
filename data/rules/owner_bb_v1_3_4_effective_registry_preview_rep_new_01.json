@@ -1,0 +1,29 @@
+{
+  "ruleVersion": "wolvesville-official-v1.3.4",
+  "baseRuleset": "wolvesville-official-v1.3.3",
+  "status": "CANDIDATE",
+  "effective": false,
+  "effectiveAt": null,
+  "decisionRecord": "owner_bb_final_decisions_20261125.json",
+  "decisionIds": [
+    "DEC-BT-01",
+    "DEC-BT-02",
+    "BB-01",
+    "BB-01-BLANK",
+    "BB-02",
+    "BB-03",
+    "BB-03-REPRESENTATIVE",
+    "BB-03-SECOND-ATTACK",
+    "BB-04",
+    "BB-05",
+    "BB-PENDING-01",
+    "BB-PENDING-02",
+    "BB-PENDING-03",
+    "BB-REP-NEW-01"
+  ],
+  "activation": "not registered in runtime official rule registry",
+  "binding": "New Live Pack QA archives bind all-player permutation; legacy QA archives retain original initial-wolf policy. No change to official 1.3.3.",
+  "historicalMigration": "none; no retroactive archive mutation",
+  "supplementalDecisionRecord": "owner_bb_rep_new_01_20261125.json",
+  "representativePolicy": "BB-REP-NEW-01-B"
+}

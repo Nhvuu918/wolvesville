@@ -1,0 +1,6 @@
+# Product design decisions (not gameplay Owner approvals)
+- PD-03-01: `DECLARED_ORDINARY_V1` admission uses current roster IDs 8,9,25,31,64,74; opt-in on newly created Normal. No hidden/effective ballot leakage. Rollback: WV_PUBLIC_ORDINARY_VOTE=0 for new games, keep persisted historical policy. Tests: immersive03-experience/multiclient, browser game. This scope is deliberately conservative, not a universal vote projection.
+- PD-03-02: timing from committed phase timestamps; no deadline for manual phases. Dynamic clock scoped to compatible new Normal to preserve historic deterministic projection. Tests: experience + legacy regression repair; browser game.
+- PD-03-03: only authorized coordinator receives committed phase transition notice (dedup keyed by game/phase), not a list/count of mandatory actors. Not atomic with game event commit on crash. Tests: multiclient/browser game.
+- PD-03-04: post image in DB, ACL checked on each load; resize bounded WebP; on-demand fetch; comment UUID retry and dedup notification; no user assets in source. Tests: social-media, browser social, upgrade.
+- PD-03-05: staging profile requires PG, no local/demo/test fallback, one replica until distributed orchestration exists; migration additive and serialized. Tests: production config and readiness SQLite; PG/Docker/CI/cloud unverified.

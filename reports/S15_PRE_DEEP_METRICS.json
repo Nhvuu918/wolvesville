@@ -1,0 +1,442 @@
+{
+  "acceleration": {
+    "priorVersion": "1.7.3-s15-expansion-wip",
+    "priorR": 34,
+    "addedIds": [
+      3,
+      15,
+      29,
+      58,
+      71,
+      77,
+      93,
+      94
+    ],
+    "removedIds": [],
+    "priorA": 10,
+    "priorB": 8
+  },
+  "historicalCorrection": {
+    "reportedR31": 31,
+    "correctedR31": 32,
+    "omissionIds": [
+      28
+    ],
+    "source": "S12 durable metric tests assert #28 winner upon hanging; not an implementation delta"
+  },
+  "continuation": {
+    "priorVersion": "1.7.2-s15-ux-wip",
+    "priorR": 31,
+    "priorF": 0,
+    "priorA": 8,
+    "priorB": 6,
+    "priorC": 0,
+    "addedIds": [
+      3,
+      15,
+      28,
+      29,
+      49,
+      58,
+      71,
+      72,
+      77,
+      93,
+      94
+    ],
+    "priorMetricSource": "Archived v1.7.2 report (reference only); current evidence reexecuted"
+  },
+  "version": "1.7.4-s15-accelerated-wip",
+  "scope": "Restricted QA sessions; competitive NO-GO",
+  "metricR": {
+    "baseline": 27,
+    "executableCharacters": 42,
+    "totalCharacters": 97,
+    "ids": [
+      3,
+      5,
+      8,
+      9,
+      11,
+      15,
+      16,
+      17,
+      20,
+      23,
+      24,
+      25,
+      28,
+      29,
+      31,
+      32,
+      33,
+      34,
+      36,
+      43,
+      49,
+      50,
+      52,
+      54,
+      58,
+      59,
+      66,
+      67,
+      68,
+      71,
+      72,
+      74,
+      76,
+      77,
+      78,
+      79,
+      80,
+      84,
+      87,
+      88,
+      93,
+      94
+    ],
+    "newCharacters": [
+      3,
+      15,
+      28,
+      29,
+      43,
+      49,
+      54,
+      58,
+      71,
+      72,
+      77,
+      80,
+      87,
+      93,
+      94
+    ]
+  },
+  "metricF": {
+    "fullyImplemented": 0,
+    "certified": false
+  },
+  "metricS": {
+    "newVerifiedBranches": 18,
+    "exactRatio": null,
+    "verifiedOutcomeVariants": 21,
+    "reason": "Inherited composite rows not an atomic denominator; source-mapped verified adapter/passive IDs and outcome scenarios only; no overall ratio certified"
+  },
+  "metricA": 17,
+  "completedDecks": [
+    "8,25",
+    "8,28",
+    "8,9,25",
+    "8,9,28",
+    "8,25,28",
+    "8,9,25,28",
+    "8,74",
+    "8,9,74",
+    "8,25,28,74",
+    "8,9,25,74",
+    "8,9,28,74",
+    "15,25",
+    "25,58,74",
+    "8,28,74",
+    "8,25,74",
+    "8,25,68",
+    "8,25,88"
+  ],
+  "metricB": 13,
+  "metricC": 0,
+  "evidence": [
+    {
+      "id": 3,
+      "branch": "passive.false-aura",
+      "skill": "passive.3.seer-aura",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 29,
+      "branch": "poison.lethal-once",
+      "skill": "official.29.poison",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 93,
+      "branch": "seal.night-chat-vote",
+      "skill": "official.93.seal",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 94,
+      "branch": "passive.conceal-living",
+      "skill": "passive.94.conceal-aura",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 29,
+      "branch": "poison.valid-shield-consumes",
+      "skill": "official.29.poison",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 71,
+      "branch": "persistent.aura-disguise",
+      "skill": "official.71.disguise",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 15,
+      "branch": "single.target.lethal",
+      "skill": "official.15.single-kill",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 58,
+      "branch": "same.faction.private",
+      "skill": "official.58.compare",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 58,
+      "branch": "different.faction.self-exception",
+      "skill": "official.58.compare",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 77,
+      "branch": "trap.lethal-block-counter",
+      "skill": "official.77.trap",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 49,
+      "branch": "illusion.global-aura",
+      "skill": "official.49.aura-illusion",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 72,
+      "branch": "curse.single-aura",
+      "skill": "official.72.aura-curse",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 54,
+      "branch": "shoot.day-before-vote",
+      "skill": "official.54.shoot",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 28,
+      "branch": "passive.hanged-victory",
+      "skill": "passive.28.hanged-victory",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 36,
+      "branch": "shield.success-private",
+      "skill": "official.36.shield",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 66,
+      "branch": "observe.other-protected",
+      "skill": "passive.66.observe-protected",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 43,
+      "branch": "shoot.day-night",
+      "skill": "official.43.shoot",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 87,
+      "branch": "sedative.chat-and-vote",
+      "skill": "official.87.sedative",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 54,
+      "branch": "reveal.public-after-first-vote",
+      "skill": "official.54.reveal",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 80,
+      "branch": "compare.different-faction",
+      "skill": "official.80.compare",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 80,
+      "branch": "compare.same-faction",
+      "skill": "official.80.compare",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    }
+  ],
+  "matchEvidence": [
+    {
+      "ids": [
+        8,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        9,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        25,
+        28,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        9,
+        25,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        9,
+        28,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        15,
+        25
+      ],
+      "completed": true,
+      "voteChain": false,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        25,
+        58,
+        74
+      ],
+      "completed": true,
+      "voteChain": false,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        28,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        25,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    }
+  ],
+  "qa": {
+    "exit": 0
+  }
+}

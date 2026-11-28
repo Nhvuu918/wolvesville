@@ -1,0 +1,13 @@
+-- Additive migration; no changes to accounts or game history.
+CREATE TABLE IF NOT EXISTS social_profiles(user_id UUID PRIMARY KEY REFERENCES wv_accounts(id) ON DELETE CASCADE,bio TEXT NOT NULL DEFAULT '',status TEXT NOT NULL DEFAULT '',avatar INTEGER NOT NULL DEFAULT 2,visibility TEXT NOT NULL DEFAULT 'friends' CHECK(visibility IN ('public','friends','private')));
+CREATE TABLE IF NOT EXISTS social_friends(a UUID NOT NULL REFERENCES wv_accounts(id) ON DELETE CASCADE,b UUID NOT NULL REFERENCES wv_accounts(id) ON DELETE CASCADE,requester UUID NOT NULL REFERENCES wv_accounts(id) ON DELETE CASCADE,state TEXT NOT NULL CHECK(state IN ('pending','accepted')),created_at BIGINT NOT NULL,PRIMARY KEY(a,b),CHECK(a<b),CHECK(requester=a OR requester=b));
+CREATE TABLE IF NOT EXISTS social_blocks(owner UUID NOT NULL REFERENCES wv_accounts(id) ON DELETE CASCADE,target UUID NOT NULL REFERENCES wv_accounts(id) ON DELETE CASCADE,PRIMARY KEY(owner,target),CHECK(owner<>target));
+CREATE TABLE IF NOT EXISTS social_posts(id TEXT PRIMARY KEY,author UUID NOT NULL REFERENCES wv_accounts(id) ON DELETE CASCADE,body TEXT NOT NULL,visibility TEXT NOT NULL CHECK(visibility IN ('public','friends','private')),created_at BIGINT NOT NULL);
+CREATE INDEX IF NOT EXISTS social_posts_time ON social_posts(created_at DESC);
+CREATE TABLE IF NOT EXISTS social_likes(post_id TEXT NOT NULL REFERENCES social_posts(id) ON DELETE CASCADE,user_id UUID NOT NULL REFERENCES wv_accounts(id) ON DELETE CASCADE,PRIMARY KEY(post_id,user_id));
+CREATE TABLE IF NOT EXISTS social_comments(id TEXT PRIMARY KEY,post_id TEXT NOT NULL REFERENCES social_posts(id) ON DELETE CASCADE,author UUID NOT NULL REFERENCES wv_accounts(id) ON DELETE CASCADE,body TEXT NOT NULL,created_at BIGINT NOT NULL);
+CREATE INDEX IF NOT EXISTS social_comments_post ON social_comments(post_id,created_at);
+CREATE TABLE IF NOT EXISTS social_notifications(id TEXT PRIMARY KEY,recipient UUID NOT NULL REFERENCES wv_accounts(id) ON DELETE CASCADE,actor UUID REFERENCES wv_accounts(id) ON DELETE SET NULL,kind TEXT NOT NULL,room_id TEXT,created_at BIGINT NOT NULL,read_at BIGINT);
+CREATE INDEX IF NOT EXISTS social_notifications_recipient ON social_notifications(recipient,created_at DESC);
+CREATE TABLE IF NOT EXISTS social_media(user_id UUID NOT NULL REFERENCES wv_accounts(id) ON DELETE CASCADE,slot TEXT NOT NULL CHECK(slot IN ('avatar','cover')),webp TEXT NOT NULL,PRIMARY KEY(user_id,slot));
+CREATE TABLE IF NOT EXISTS social_notice_keys(recipient UUID NOT NULL REFERENCES wv_accounts(id) ON DELETE CASCADE,event_key TEXT NOT NULL,PRIMARY KEY(recipient,event_key));

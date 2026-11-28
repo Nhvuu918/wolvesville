@@ -1,0 +1,73 @@
+{
+  "checkpoint": "IMMERSIVE-05",
+  "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+  "baseFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+  "baseSha256": "0d2a586d67edfbe2eaa221c1776712ae4b69c94b5fff2b4f16791376ffded0fc",
+  "basePayloadHashesVerified": 5447,
+  "focusedBackend": {
+    "tests": 29,
+    "pass": 29,
+    "fail": 0,
+    "skipped": 0,
+    "exit": 0
+  },
+  "knowledgeBackend": {
+    "tests": 9,
+    "pass": 9,
+    "fail": 0,
+    "skipped": 0
+  },
+  "browser": {
+    "workspaceOfficial": "PASS",
+    "wheel": "PASS",
+    "transport": "real HTTP/WS bridge",
+    "screenshots": 25
+  },
+  "migration": {
+    "sqliteUpgradeFixtures": 2,
+    "oldTablesPreservedEach": 29,
+    "rowsPreserved": [
+      78,
+      134
+    ],
+    "foreignKeyCheck": "PASS"
+  },
+  "fullRegression": "NOT RUN",
+  "historicalFull": 1,
+  "newFull": 0,
+  "freshFull": "NOT RUN",
+  "fullProgramsFrozen": true,
+  "characterRegistry": 97,
+  "historicalDecisions": 118,
+  "legacySpecifications": 207,
+  "normalDecksOfficial": 16,
+  "normalDecksDev": 6,
+  "wheelUnchanged": true,
+  "postgresqlLive": "PENDING",
+  "cloudLive": "NOT RUN",
+  "baseChangedPaths": [
+    "CLOUD_ACCEPTANCE_REPORT.md",
+    "DATABASE_MIGRATION_GUIDE.md",
+    "DEPLOYMENT_GUIDE.md",
+    "HUMAN_QA.md",
+    "RAILWAY_DEPLOYMENT.md",
+    "README.md",
+    "backend/src/game/normal-decks.ts",
+    "backend/src/multiplayer/pg-store.ts",
+    "backend/src/multiplayer/server.ts",
+    "backend/src/multiplayer/sqlite-store.ts",
+    "backend/src/multiplayer/types.ts",
+    "backend/src/social/repository.ts",
+    "docs/immersive-handover/HUMAN_QA.md",
+    "docs/immersive-handover/PRODUCT_ACCEPTANCE.md",
+    "docs/immersive-handover/PROJECT_STATE.md",
+    "docs/immersive-handover/SESSION_HANDOVER.md",
+    "frontend/app.js",
+    "frontend/immersive.js",
+    "frontend/index.html",
+    "frontend/integration.js",
+    "scripts/copy-schema.mjs",
+    "scripts/migrate-pg-02b.mjs",
+    "tests/browser_e2e.py"
+  ]
+}

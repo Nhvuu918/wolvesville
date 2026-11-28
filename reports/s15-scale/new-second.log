@@ -1,0 +1,77 @@
+TAP version 13
+# (node:34410) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_SCALE_MATCH {"ids":[25,48,64,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_SCALE_EVIDENCE {"id":64,"skill":"official.64.pair","restart":true,"replay":true,"privacy":true}
+# Subtest: Scale \#64 pair replacement, no premature disclosure, day hanging and private role result
+ok 1 - Scale \#64 pair replacement, no premature disclosure, day hanging and private role result
+  ---
+  duration_ms: 1028.67775
+  type: 'test'
+  ...
+# S15_SCALE_MATCH {"ids":[25,48,64,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_SCALE_EVIDENCE {"id":64,"skill":"official.64.pair","restart":true,"replay":true,"privacy":true}
+# Subtest: Scale \#64 two simultaneous pack deaths reveal both once before victory
+ok 2 - Scale \#64 two simultaneous pack deaths reveal both once before victory
+  ---
+  duration_ms: 545.961774
+  type: 'test'
+  ...
+# Subtest: Scale \#64 first marked death freezes pair; no second information or selection
+ok 3 - Scale \#64 first marked death freezes pair; no second information or selection
+  ---
+  duration_ms: 723.39238
+  type: 'test'
+  ...
+# S15_SCALE_MATCH {"ids":[9,25,48,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: Scale leader double bite respects Snow Angel, independent victims, then Village co-wins
+ok 4 - Scale leader double bite respects Snow Angel, independent victims, then Village co-wins
+  ---
+  duration_ms: 550.585211
+  type: 'test'
+  ...
+# S15_SCALE_MATCH {"ids":[9,25,48,74,87],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: Scale leader protection precedes preliminary death and rescue; no protected victim in private list
+ok 5 - Scale leader protection precedes preliminary death and rescue; no protected victim in private list
+  ---
+  duration_ms: 927.898847
+  type: 'test'
+  ...
+# Subtest: Scale QA [8,74] sixteen final ballots and valid terminal or next-round results
+ok 6 - Scale QA [8,74] sixteen final ballots and valid terminal or next-round results
+  ---
+  duration_ms: 4363.683777
+  type: 'test'
+  ...
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: Scale QA [8,74] inspection, abstain, retry, vote change, restart and Village victory
+ok 7 - Scale QA [8,74] inspection, abstain, retry, vote change, restart and Village victory
+  ---
+  duration_ms: 469.386797
+  type: 'test'
+  ...
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: Scale QA [8,74] independent optional inspection on fatal night, both orders, exact-role privacy
+ok 8 - Scale QA [8,74] independent optional inspection on fatal night, both orders, exact-role privacy
+  ---
+  duration_ms: 1318.653508
+  type: 'test'
+  ...
+# Subtest: Scale production room cannot start an official QA composition without test mode
+ok 9 - Scale production room cannot start an official QA composition without test mode
+  ---
+  duration_ms: 97.597231
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 10185.453201

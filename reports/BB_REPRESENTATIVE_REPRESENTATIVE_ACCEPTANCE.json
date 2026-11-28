@@ -1,0 +1,79 @@
+{
+  "version": "1.7.23-s15-representative-order-wip",
+  "decision": "BB-REP-NEW-01=B",
+  "policy": "OWNER_APPROVED",
+  "officialActivation": false,
+  "scope": "Live QA [74,84,93,94] and existing B/B pack/retaliation; only #93 sole wolf after #94 death. No mixed conversion/extra grant generalization.",
+  "cases": [
+    {
+      "id": "REP-01",
+      "status": "PASS_LIVE",
+      "evidence": "Two initial wolves; five-player permutation, fixed order, restart, live browser"
+    },
+    {
+      "id": "REP-02",
+      "status": "PASS_SELECTOR_ONLY",
+      "evidence": "Synthetic eligible-set change; mixed initial + converted live domain remains blocked"
+    },
+    {
+      "id": "REP-03",
+      "status": "PASS_LIVE",
+      "evidence": "#93 before #94 death denied; after legal transition eligible"
+    },
+    {
+      "id": "REP-04",
+      "status": "PASS_STATE_FILTER_ONLY",
+      "evidence": "Real archived state cloned for skill lock; no mixed live revocation certified"
+    },
+    {
+      "id": "REP-05",
+      "status": "PASS_LIVE",
+      "evidence": "Sole leader entitled two bites, same dead representative; second still resolves"
+    },
+    {
+      "id": "REP-06",
+      "status": "PASS_LIVE",
+      "evidence": "Client forged order ignored at actual match start"
+    },
+    {
+      "id": "REP-07",
+      "status": "PASS_LIVE",
+      "evidence": "SQLite restart, identical order"
+    },
+    {
+      "id": "REP-08",
+      "status": "PASS_LIVE",
+      "evidence": "Verify stored tape and archive; old v1.7.22 QA archive opened and resolved by v1.7.23"
+    },
+    {
+      "id": "REP-09",
+      "status": "PASS_LIVE",
+      "evidence": "Reconnect #93 preserves pending targets and terminal result"
+    },
+    {
+      "id": "REP-10",
+      "status": "PASS_REGRESSION",
+      "evidence": "Official unchanged paths; cross-build QA archive compatibility"
+    },
+    {
+      "id": "REP-11",
+      "status": "PASS_CANDIDATE_ONLY",
+      "evidence": "Selector and candidate membership-at-lock test require new member response; live mid-window conversion not supported"
+    },
+    {
+      "id": "REP-12",
+      "status": "PASS_LIVE",
+      "evidence": "Retry reordered targets, stale revision denied, exactly three deaths incl. hanging"
+    }
+  ],
+  "liveTest": "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+  "selectorTest": "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+  "legacyArchiveCompatibility": true,
+  "legacyLog": "reports/s15-representative/legacy-qa-archive-compatibility.log",
+  "remaining": [
+    "Mixed initial/converted wolf competition",
+    "Live revocation and mid-window change of eligible members",
+    "General extra-bite grants",
+    "Trap revival and same-night mapping"
+  ]
+}

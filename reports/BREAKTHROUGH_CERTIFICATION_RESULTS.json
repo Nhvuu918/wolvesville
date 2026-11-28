@@ -1,0 +1,39 @@
+{
+  "version": "1.7.16-s15-breakthrough-wip",
+  "fullCurrentRevalidated": true,
+  "newFull": [],
+  "newPlayable": [
+    [
+      8,
+      9
+    ]
+  ],
+  "qaFresh": 2,
+  "playableFresh": 4,
+  "fullManifestAccepted": false,
+  "contracts": "reports/BREAKTHROUGH_COMPLETION_CONTRACTS.json",
+  "ownerQA": "NOT_TESTED_BY_OWNER",
+  "newVH77Branch": true,
+  "newMatch": true,
+  "backendGate": "PASS_SPLIT",
+  "backend": {
+    "total": 377,
+    "PASS": 366,
+    "FAIL": 0,
+    "SKIP": 11
+  },
+  "browser": {
+    "total": 63,
+    "PASS": 14,
+    "FAIL": 0,
+    "INCOMPLETE": 49
+  },
+  "matrix": {
+    "total": 98,
+    "PASS": 14,
+    "FAIL": 0,
+    "INCOMPLETE": 84
+  },
+  "competitiveProduction": "NO_GO",
+  "postgreSQLLive": "PENDING"
+}

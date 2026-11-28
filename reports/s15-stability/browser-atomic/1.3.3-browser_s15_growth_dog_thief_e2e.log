@@ -1,0 +1,5 @@
+SCENARIO_READY s15-growth-dog-thief
+SCENARIO_ACTIONS_PASS s15-growth-dog-thief
+S15_GROWTH_DOG_THIEF_BROWSER_PASS
+S06_BROWSER_PASS browser_s15_growth_dog_thief_e2e.py
+S06_BROWSER_ALL_1_PASS

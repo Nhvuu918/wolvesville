@@ -1,0 +1,8 @@
+Original RC-01 SHA-256: 3ee17a5bfc6dd57c9c4e4f8ab69ca7076a740b45662bc84a8f65b32e04d900df
+Fingerprint: 1f5046bf9d7187957af2b48f550bd088f79711c8dbf315d66bc3ad2a2d2b53a3
+CRC: PASS; payload verify 4915/4915; 4916 ZIP entries.
+Prior reports hash matches: 3881/3881; prior manifest present.
+Character SHA-256: 7a9fc87f979198004260115f512cac9b171322a98b264e59dae9fa3b4d29a9c3 (project, data, frontend identical).
+25 unique Owner IDs, 97 unique tracker IDs, 16 normal decks, 34 unique open question IDs.
+No source changes. No new build/backend/browser/Human QA performed in audit. Historical evidence verification script PASS.
+No new certification. No activation.

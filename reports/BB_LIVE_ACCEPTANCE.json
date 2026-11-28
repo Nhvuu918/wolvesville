@@ -1,0 +1,81 @@
+{
+  "version": "1.7.19-s15-live-integration-wip",
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "sourceFingerprint": "9f8e4021098933fe265ee29e149f3fb412f03c374cca306a3226952cb03b656d",
+  "officialActivation": false,
+  "decisionRecord": "data/rules/owner_bb_candidate_v2_decisions.json",
+  "backendGate": "PASS_MONOLITHIC",
+  "backend": {
+    "tests": 422,
+    "pass": 411,
+    "fail": 0,
+    "skipped": 11,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "candidateRetest": true,
+  "liveBackendTests": 4,
+  "liveBrowser": {
+    "pack": "PASS",
+    "trap": "PASS",
+    "guard": "PASS"
+  },
+  "liveScope": "Actual Game Session archive and transaction in explicit bounded local QA profiles, no official activation.",
+  "browser": {
+    "total": 66,
+    "PASS": 18,
+    "FAIL": 0,
+    "INCOMPLETE": 48
+  },
+  "matrix": {
+    "total": 101,
+    "PASS": 22,
+    "FAIL": 0,
+    "INCOMPLETE": 79
+  },
+  "officialBrowser": {
+    "total": 63,
+    "PASS": 15,
+    "FAIL": 0,
+    "INCOMPLETE": 48
+  },
+  "officialMatrix": {
+    "total": 98,
+    "PASS": 19,
+    "FAIL": 0,
+    "INCOMPLETE": 79
+  },
+  "freshCertificates": {
+    "F": 1,
+    "qaC": 2,
+    "playableC": 4,
+    "S_pass": 75
+  },
+  "fullManifestAccepted": false,
+  "postgreSQLLive": "PENDING",
+  "competitiveProduction": "NO_GO",
+  "legacySourceChecksumChanged": [
+    ".env.example",
+    "README.md",
+    "backend/src/engine/replay.ts",
+    "backend/src/engine/service.ts",
+    "backend/src/engine/visibility.ts",
+    "backend/src/experimental/owner-bb-v2/runtime.ts",
+    "backend/src/game/archive.ts",
+    "backend/src/game/coordinator.ts",
+    "backend/src/multiplayer/server.ts",
+    "backend/src/official/capabilities.ts",
+    "backend/src/official/engineer-trap.ts",
+    "backend/src/official/inspection-rules.ts",
+    "backend/src/official/victory-resolver.ts",
+    "data/rule-intelligence/source_inventory.json",
+    "frontend/integration.js",
+    "package.json",
+    "scripts/serve-03.mjs",
+    "shared/contracts/index.ts"
+  ],
+  "legacyReportsUnchanged": 2120,
+  "ownerQA": "PENDING",
+  "newFull": [],
+  "newPlayable": []
+}

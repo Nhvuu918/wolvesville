@@ -1,0 +1,511 @@
+{
+  "version": "1.7.8-s15-closure-wip",
+  "certifiedDecks": [],
+  "scope": "Prior completed configurations screened from archived baseline; ranking is engineering triage, not certification.",
+  "candidates": [
+    {
+      "deck": [
+        8,
+        25
+      ],
+      "completedEvidence": true,
+      "priorityScore": 7,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        28
+      ],
+      "completedEvidence": true,
+      "priorityScore": 7,
+      "blockers": [
+        "Jester remains alive after Knight is hanged: no certified terminal predicate"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        74
+      ],
+      "completedEvidence": true,
+      "priorityScore": 7,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        15,
+        25
+      ],
+      "completedEvidence": true,
+      "priorityScore": 7,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        9
+      ],
+      "completedEvidence": true,
+      "priorityScore": 7,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        9,
+        25
+      ],
+      "completedEvidence": true,
+      "priorityScore": 6,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        9,
+        74
+      ],
+      "completedEvidence": true,
+      "priorityScore": 6,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        25,
+        58,
+        74
+      ],
+      "completedEvidence": true,
+      "priorityScore": 6,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        25,
+        74
+      ],
+      "completedEvidence": true,
+      "priorityScore": 6,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        15,
+        25,
+        28
+      ],
+      "completedEvidence": true,
+      "priorityScore": 6,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        19,
+        25,
+        28
+      ],
+      "completedEvidence": true,
+      "priorityScore": 6,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        25,
+        28,
+        37
+      ],
+      "completedEvidence": true,
+      "priorityScore": 6,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        25,
+        29
+      ],
+      "completedEvidence": true,
+      "priorityScore": 6,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        25,
+        85
+      ],
+      "completedEvidence": true,
+      "priorityScore": 6,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        15,
+        25,
+        74
+      ],
+      "completedEvidence": true,
+      "priorityScore": 6,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        25,
+        28,
+        58
+      ],
+      "completedEvidence": true,
+      "priorityScore": 6,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        25,
+        68
+      ],
+      "completedEvidence": true,
+      "priorityScore": 6,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        9,
+        28
+      ],
+      "completedEvidence": true,
+      "priorityScore": 5,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Jester remains alive after Knight is hanged: no certified terminal predicate"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        25,
+        28
+      ],
+      "completedEvidence": true,
+      "priorityScore": 5,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Jester remains alive after Knight is hanged: no certified terminal predicate"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        9,
+        25,
+        74
+      ],
+      "completedEvidence": true,
+      "priorityScore": 5,
+      "blockers": [
+        "E02-VILLAGE (village endgame)"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        28,
+        74
+      ],
+      "completedEvidence": true,
+      "priorityScore": 5,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Jester remains alive after Knight is hanged: no certified terminal predicate"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        25,
+        28,
+        55
+      ],
+      "completedEvidence": true,
+      "priorityScore": 5,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Wolf actions / current-faction win membership not fully certified"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        25,
+        55
+      ],
+      "completedEvidence": true,
+      "priorityScore": 5,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Wolf actions / current-faction win membership not fully certified"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        25,
+        28,
+        79
+      ],
+      "completedEvidence": true,
+      "priorityScore": 5,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Wolf actions / current-faction win membership not fully certified"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        25,
+        28,
+        88
+      ],
+      "completedEvidence": true,
+      "priorityScore": 5,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "H88-MARK-LIFETIME"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        25,
+        88
+      ],
+      "completedEvidence": true,
+      "priorityScore": 5,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "H88-MARK-LIFETIME"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        9,
+        25,
+        28
+      ],
+      "completedEvidence": true,
+      "priorityScore": 4,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Jester remains alive after Knight is hanged: no certified terminal predicate"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        25,
+        28,
+        74
+      ],
+      "completedEvidence": true,
+      "priorityScore": 4,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Jester remains alive after Knight is hanged: no certified terminal predicate"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        9,
+        28,
+        74
+      ],
+      "completedEvidence": true,
+      "priorityScore": 4,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Jester remains alive after Knight is hanged: no certified terminal predicate"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        28,
+        88
+      ],
+      "completedEvidence": true,
+      "priorityScore": 4,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Jester remains alive after Knight is hanged: no certified terminal predicate",
+        "H88-MARK-LIFETIME"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        74,
+        84,
+        93,
+        94
+      ],
+      "completedEvidence": true,
+      "priorityScore": 4,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Wolf actions / current-faction win membership not fully certified"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        25,
+        28,
+        55
+      ],
+      "completedEvidence": true,
+      "priorityScore": 3,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Jester remains alive after Knight is hanged: no certified terminal predicate",
+        "Wolf actions / current-faction win membership not fully certified"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        9,
+        25,
+        28,
+        74
+      ],
+      "completedEvidence": true,
+      "priorityScore": 3,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Jester remains alive after Knight is hanged: no certified terminal predicate"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        25,
+        28,
+        88
+      ],
+      "completedEvidence": true,
+      "priorityScore": 3,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Jester remains alive after Knight is hanged: no certified terminal predicate",
+        "H88-MARK-LIFETIME"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        74,
+        84,
+        87,
+        93,
+        94
+      ],
+      "completedEvidence": true,
+      "priorityScore": 3,
+      "blockers": [
+        "E02-VILLAGE (village endgame)",
+        "Wolf actions / current-faction win membership not fully certified"
+      ],
+      "branchComplete": false
+    },
+    {
+      "deck": [
+        8,
+        9,
+        28,
+        88
+      ],
+      "completedEvidence": true,
+      "priorityScore": 3,
+      "blockers": [
+        "E02-VILLAGE",
+        "H88-MARK-LIFETIME"
+      ],
+      "branchComplete": false,
+      "passed": [
+        "night follow blocked",
+        "night follow after expiry",
+        "day follow not blocked",
+        "direct Jester win",
+        "secondary Jester no win",
+        "replay/privacy"
+      ]
+    }
+  ]
+}

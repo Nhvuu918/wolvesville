@@ -1,0 +1,10 @@
+/tmp/wv35/reports/v1.7.35/capture_supplemental.py:35: SyntaxWarning: invalid escape sequence '\('
+  info=host.evaluate('''()=>{const rgb=v=>{const m=v.match(/rgba?\(([^)]+)\)/);if(!m)return null;const a=m[1].split(/[, ]+/).map(Number);return a.length===3||a[3]===1?a.slice(0,3):null};const luminance=a=>a.map(v=>v/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0);return {theme:document.body.dataset.theme,samples:['.wv-match-side','.arena-seat','.hud-left-cluster','.ingame-dialogue-bar','.btn-secondary','.wv-public-chat'].map(sel=>{const e=document.querySelector(sel);if(!e)return {selector:sel,available:false};const s=getComputedStyle(e),fg=rgb(s.color),bg=rgb(s.backgroundColor);let contrast=null;if(fg&&bg&&s.backgroundImage==='none'){const a=luminance(fg),b=luminance(bg);contrast=Math.round((Math.max(a,b)+.05)/(Math.min(a,b)+.05)*100)/100}return {selector:sel,available:true,foreground:s.color,background:s.backgroundColor,backgroundImage:s.backgroundImage,contrast}})}}''')
+SUPPLEMENTAL profile
+SUPPLEMENTAL codex-detail
+SUPPLEMENTAL room-directory
+SUPPLEMENTAL role-wheel-private
+SUPPLEMENTAL elimination-committed
+SUPPLEMENTAL_CAPTURE_PASS
+E2E_CONTEXT_CLOSED 0 0.024
+E2E_CONTEXT_CLOSED 1 0.046

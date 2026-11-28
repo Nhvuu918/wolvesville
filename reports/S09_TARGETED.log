@@ -1,0 +1,110 @@
+TAP version 13
+# (node:100224) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S06-01 night→dawn→vote intake→close is committed; no invented elimination/endgame
+ok 1 - S06-01 night→dawn→vote intake→close is committed; no invented elimination/endgame
+  ---
+  duration_ms: 426.810842
+  type: 'test'
+  ...
+# Subtest: S06-02 authorized audience sees own ballot only, outsider denied, no server seed
+ok 2 - S06-02 authorized audience sees own ballot only, outsider denied, no server seed
+  ---
+  duration_ms: 373.758422
+  type: 'test'
+  ...
+# Subtest: S06-03 duplicate vote exactly once, changes fail closed, stale revision not accepted
+ok 3 - S06-03 duplicate vote exactly once, changes fail closed, stale revision not accepted
+  ---
+  duration_ms: 369.907449
+  type: 'test'
+  ...
+# Subtest: S06-04 vote intake denies phase errors, self-forged actor ignored, voting closes once
+ok 4 - S06-04 vote intake denies phase errors, self-forged actor ignored, voting closes once
+  ---
+  duration_ms: 365.10027
+  type: 'test'
+  ...
+# Subtest: S06-05 vote state survives SQLite restart, event chain and ACL remain intact
+ok 5 - S06-05 vote state survives SQLite restart, event chain and ACL remain intact
+  ---
+  duration_ms: 353.303833
+  type: 'test'
+  ...
+# Subtest: S06-06 \#8 sole survivor fact is partial; \#8 hanging immunity while wolves counted alive
+ok 6 - S06-06 \#8 sole survivor fact is partial; \#8 hanging immunity while wolves counted alive
+  ---
+  duration_ms: 0.366391
+  type: 'test'
+  ...
+# Subtest: S06-07 \#79 cancels ongoing day vote, reveals target only to wolf, phase returns to next night (PH-02)
+ok 7 - S06-07 \#79 cancels ongoing day vote, reveals target only to wolf, phase returns to next night (PH-02)
+  ---
+  duration_ms: 431.041891
+  type: 'test'
+  ...
+# Subtest: S06-08 no PH-02 skill: attempting generic vote resolution rolls back phase and event ledger
+ok 8 - S06-08 no PH-02 skill: attempting generic vote resolution rolls back phase and event ledger
+  ---
+  duration_ms: 294.793557
+  type: 'test'
+  ...
+# Subtest: S06-09 vote submissions from two independent authenticated clients are serialized without dropping a ballot
+ok 9 - S06-09 vote submissions from two independent authenticated clients are serialized without dropping a ballot
+  ---
+  duration_ms: 356.637645
+  type: 'test'
+  ...
+# (node:100225) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S09-01 certified \#33 server-side directive transforms a ballot with private audit but never hangs a player
+ok 10 - S09-01 certified \#33 server-side directive transforms a ballot with private audit but never hangs a player
+  ---
+  duration_ms: 623.766362
+  type: 'test'
+  ...
+# Subtest: S09-02 coercion is once-per-match and all retries preserve idempotency and revision
+ok 11 - S09-02 coercion is once-per-match and all retries preserve idempotency and revision
+  ---
+  duration_ms: 429.513708
+  type: 'test'
+  ...
+# Subtest: S09-03 never fabricate an effective ballot if controller or target has not voted
+ok 12 - S09-03 never fabricate an effective ballot if controller or target has not voted
+  ---
+  duration_ms: 356.431108
+  type: 'test'
+  ...
+# Subtest: S09-04 replay and frozen ACL remain valid after SQLite restart
+ok 13 - S09-04 replay and frozen ACL remain valid after SQLite restart
+  ---
+  duration_ms: 523.550776
+  type: 'test'
+  ...
+# Subtest: S09-05 private audit never authorizes hanging, including tied votes and transformed unique leader
+ok 14 - S09-05 private audit never authorizes hanging, including tied votes and transformed unique leader
+  ---
+  duration_ms: 0.366461
+  type: 'test'
+  ...
+# Subtest: S09-06 character.json\#23 explicitly disables the Soul Gunner ballot; no event/revision changes
+ok 15 - S09-06 character.json\#23 explicitly disables the Soul Gunner ballot; no event/revision changes
+  ---
+  duration_ms: 5.770462
+  type: 'test'
+  ...
+# Subtest: S09-07 official host cannot bypass voting from DAY_DISCUSS to an invented next night
+ok 16 - S09-07 official host cannot bypass voting from DAY_DISCUSS to an invented next night
+  ---
+  duration_ms: 262.62307
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3154.178266

@@ -1,0 +1,9 @@
+Input ZIP SHA-256 9c768231834280c7956cdee829af10b22d419babe2eb965733e71824f5bca8f5
+Input CRC None
+Payload 3723/3723 validated
+Historical reports 2873/2873 preserved byte-for-byte
+
+> wolvesville-sprint15-role-completeness@1.7.27 verify:source
+> node scripts/verify-sources.mjs
+
+OK: 97 official characters, 118 decisions, 207 inherited test specs, 105/107 unchanged approved frontend files, 2 technical entrypoints adapted with original verified backups.

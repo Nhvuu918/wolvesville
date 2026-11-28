@@ -1,0 +1,46 @@
+{
+  "version": "0.8.0",
+  "rulesVersion": "wolvesville-official-v1.3.1",
+  "characterHash": "7a9fc87f979198004260115f512cac9b171322a98b264e59dae9fa3b4d29a9c3",
+  "officialCharacters": 97,
+  "decisions": 118,
+  "legacyTestSpecifications": 207,
+  "auditedSkillBranches": 145,
+  "charactersWithExecutedBranches": 7,
+  "activeSkillAdapters": 6,
+  "passiveReactions": 1,
+  "fullyCompetitiveReadyCharacters": 0,
+  "fullyAdjudicatedVotingModes": 0,
+  "verifiedAutoEndgamePredicates": 0,
+  "votingIntentsRestricted": true,
+  "peaceWolfCancelValidated": true,
+  "victoryFacts": [
+    "WV_CHAR_28_HANGED_WIN",
+    "WV_CHAR_8_SOLE_SURVIVOR"
+  ],
+  "supportedDecks": [
+    [
+      25,
+      74
+    ],
+    [
+      20,
+      25,
+      74
+    ],
+    [
+      9,
+      25,
+      31,
+      34,
+      74
+    ],
+    [
+      25,
+      74,
+      79
+    ]
+  ],
+  "postgresVerifiedHere": false,
+  "fullCompetitive": false
+}

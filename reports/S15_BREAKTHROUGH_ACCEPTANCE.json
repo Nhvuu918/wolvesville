@@ -1,0 +1,437 @@
+{
+  "version": "1.7.6-s15-breakthrough-wip",
+  "status": "WIP",
+  "competitiveProduction": "NO_GO",
+  "baseline": {
+    "version": "1.7.5-s15-deep-wip",
+    "fileCount": 1458,
+    "sha256": "71e4f1e95318407e9a9411435e952c373f19b3486e0bcaa38ae6a8d48ce3490a"
+  },
+  "candidate": {
+    "fileCount": 1521,
+    "sha256": "3553b4b02c399ad92a494551349a423f9aad4840ed352c0be54194a619935009",
+    "cleanExtraction": true,
+    "crc": true
+  },
+  "gates": {
+    "verify-source": {
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-verify-source.log"
+    },
+    "build": {
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-build.log"
+    },
+    "rules-build": {
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-rules-build.log"
+    },
+    "backend": {
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-backend.log"
+    },
+    "metrics": {
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-metrics.log"
+    },
+    "readiness": {
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-readiness.log"
+    }
+  },
+  "backendTotals": {
+    "tests": 287,
+    "pass": 276,
+    "fail": 0,
+    "skipped": 11
+  },
+  "metricsTestTotals": {
+    "tests": 112,
+    "pass": 112,
+    "fail": 0,
+    "skipped": 0
+  },
+  "browserManifestCount": 33,
+  "browserCounts": {
+    "PASS": 33
+  },
+  "browserSuites": [
+    {
+      "suite": "browser_s12_attack_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s12_attack_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s11_voting_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s11_voting_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s11_seer_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s11_seer_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s10_gameplay_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s10_gameplay_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s09_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s09_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s08_gameplay_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s08_gameplay_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s07_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s07_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s06_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s06_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s05_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s05_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_lobby_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_lobby_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_codex_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_codex_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_demo_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_demo_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_ux_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_ux_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s13_skills_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s13_skills_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s14_gameplay_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s14_gameplay_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s14_transport_regression.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s14_transport_regression.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_protection_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_protection_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_voting_information_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_voting_information_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_gameplay_ux_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_gameplay_ux_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_aura_expansion_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_aura_expansion_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_guard_shot_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_guard_shot_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_accelerated_witch_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_accelerated_witch_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_accelerated_exile_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_accelerated_exile_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_accelerated_combat_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_accelerated_combat_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_deep_rescue_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_deep_rescue_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_deep_redirect_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_deep_redirect_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_deep_pair_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_deep_pair_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_deep_jester_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_deep_jester_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_break_stone_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_break_stone_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_break_exile_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_break_exile_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_break_contract_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_break_contract_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    },
+    {
+      "suite": "browser_s15_break_swap_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-breakthrough/clean-browser_s15_break_swap_e2e.py.log",
+      "successMarker": true,
+      "cleanupErrors": []
+    }
+  ],
+  "postgresqlLive": "PENDING (11 skipped)",
+  "metrics": {
+    "R": 47,
+    "F": 0,
+    "A": 30,
+    "B": 24,
+    "C": 0,
+    "SAtomicSubset": {
+      "auditedRoles": 16,
+      "verifiedDenominator": 45,
+      "executedTested": 32,
+      "restrictedCoverage": 0.7111111111111111,
+      "unresolvedRoleIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        56,
+        57,
+        59,
+        60,
+        61,
+        62,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        75,
+        76,
+        77,
+        78,
+        80,
+        81,
+        82,
+        83,
+        84,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        95,
+        96,
+        97
+      ],
+      "globalDenominatorCertified": false
+    }
+  },
+  "testedPayload": {
+    "count": 353,
+    "checksumFile": "reports/S15_BREAKTHROUGH_TESTED_PAYLOAD_SHA256.txt",
+    "candidateDifferences": [
+      "data/rule-intelligence/source_inventory.json"
+    ],
+    "differenceExplanation": "source_inventory is regenerated by rules:build before backend and browser runs; application code/test payload unchanged"
+  },
+  "scope": "Restricted QA decks, Chromium + QA transport bridge, SQLite isolated. Native macOS networking and live PostgreSQL not tested. No FULL or C certificate."
+}

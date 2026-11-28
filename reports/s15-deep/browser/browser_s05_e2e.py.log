@@ -1,0 +1,6 @@
+PASS Browser S05: 5 unique real identities, room membership synchronized
+PASS Browser S05: exactly five locked roles assigned, private role projection
+PASS Browser S05: official skills submitted in two contexts, resolved/possibly cancelled with actor-specific feedback
+PASS Browser S05: replay/reconnect, Codex 97 preserved, no internal support events leaked
+S06_BROWSER_PASS browser_s05_e2e.py
+S06_BROWSER_ALL_1_PASS

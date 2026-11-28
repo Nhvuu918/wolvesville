@@ -1,0 +1,1352 @@
+{
+  "version": "1.7.16-s15-breakthrough-wip",
+  "policy": "Mandatory PASS in entire sourced domain required; NOT_APPLICABLE needs explicit justification. PASS scoped runtime is not global FULL. Change Record required for newly discovered source obligation.",
+  "roles": [
+    {
+      "characterId": 9,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": 1,
+      "certification": "PARTIAL",
+      "obligations": [
+        {
+          "id": "WV-A09-SHIELD",
+          "ruleSources": [
+            "character.json#9",
+            "PH-01"
+          ],
+          "condition": "one attack absorbed",
+          "trigger": "night action",
+          "preconditions": "alive",
+          "targets": "one eligible distinct unused person",
+          "resource": "three unique targets per match",
+          "duration": "two consecutive nights",
+          "exceptions": "persists after actor death; not repeated target",
+          "interactions": [
+            "protection",
+            "expiry"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [
+            "S12 shield survives creator death and absorbs in following night; knight wins after hanging",
+            "S12 shield expires after two nights without attack",
+            "S05-04 #9 snow protection lasts two nights and cannot repeat any of three targets",
+            "S15 deep two-seat snow protects self, blank vote, knight wins by hanging",
+            "S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester",
+            "S15 closure snow shield persists after owner dies and is consumed once",
+            "S15 closure snow protection expires before the third night Hunter follow",
+            "S15 closure night-only snow protection cannot block daytime Hunter follow"
+          ],
+          "browser": null
+        },
+        {
+          "id": "BT-9-1",
+          "condition": "two-night shield and exhaustion",
+          "ruleSources": [
+            "character.json#9"
+          ],
+          "status": "PASS",
+          "scope": "[8,9] only; three-target inventory separately in S05-04",
+          "testPath": "tests/sprint15-breakthrough-snow.test.mjs"
+        },
+        {
+          "id": "BT-9-2",
+          "condition": "shield against piercing and theft",
+          "ruleSources": [
+            "VH42 / VH72"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Cross-composition interaction not certified",
+          "testPath": null
+        },
+        {
+          "id": "BT-9-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#9"
+          ]
+        },
+        {
+          "id": "BT-9-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#9"
+          ]
+        },
+        {
+          "id": "BT-9-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#9"
+          ]
+        }
+      ],
+      "changeRecord": [
+        {
+          "source": "BREAKTHROUGH_DEPENDENCY_GRAPH.json",
+          "reason": "Initial finite contract from atomic registry and explicitly sourced dependencies; scoped evidence is not FULL"
+        }
+      ]
+    },
+    {
+      "characterId": 10,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": 1,
+      "certification": "PARTIAL",
+      "obligations": [
+        {
+          "id": "WV-A10-TRAP-AURA",
+          "ruleSources": [
+            "character.json#10",
+            "SK-05",
+            "Q13-06",
+            "VH84",
+            "VH08"
+          ],
+          "condition": "Invert #25 true aura Thiện/Ác",
+          "trigger": "NIGHT_COLLECT",
+          "preconditions": "living engineer, first night only, no duplicate target",
+          "targets": "one other living seer",
+          "resource": "2 per game per source; first-night only proven",
+          "duration": "first-night resolution; lifetime unresolved",
+          "exceptions": "VH84 #5 immune; no actual role mutation",
+          "interactions": [
+            "IN",
+            "BL",
+            "RNG"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": "backend/src/official/engineer-trap.ts",
+          "requiredTests": [
+            "Deep engineer #10: first-night trap on 25, typed inspection, private RNG and durable replay",
+            "Deep engineer #10: first-night trap on 5, typed inspection, private RNG and durable replay"
+          ],
+          "browser": "browser_s15_deep_engineer_e2e"
+        },
+        {
+          "id": "WV-A10-TRAP-ROLE",
+          "ruleSources": [
+            "character.json#10",
+            "SK-05",
+            "Q13-06",
+            "VH84",
+            "VH08"
+          ],
+          "condition": "Server RNG draws false exact role from locked deck excluding true",
+          "trigger": "NIGHT_COLLECT",
+          "preconditions": "living engineer, first night only, no duplicate target",
+          "targets": "one other living seer",
+          "resource": "2 per game per source; first-night only proven",
+          "duration": "first-night resolution; lifetime unresolved",
+          "exceptions": "VH84 #5 immune; no actual role mutation",
+          "interactions": [
+            "IN",
+            "BL",
+            "RNG"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": "backend/src/official/engineer-trap.ts",
+          "requiredTests": [
+            "Deep engineer #10: first-night trap on 74, typed inspection, private RNG and durable replay",
+            "Deep engineer #10: first-night trap on 5, typed inspection, private RNG and durable replay"
+          ],
+          "browser": "browser_s15_deep_engineer_e2e"
+        },
+        {
+          "id": "WV-A10-TRAP-PROTECTION",
+          "ruleSources": [
+            "character.json#10"
+          ],
+          "condition": "Protection reverses into death",
+          "trigger": "night skill resolution",
+          "preconditions": "valid trap on skill user",
+          "targets": "source-specific actor and target",
+          "resource": "2 per game; unique targets",
+          "duration": "not certified",
+          "exceptions": "Preserve source damage/chain dependencies",
+          "interactions": [
+            "AT",
+            "DF",
+            "RESCUE",
+            "DEATH"
+          ],
+          "status": "NOT_IMPLEMENTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [],
+          "browser": null
+        },
+        {
+          "id": "WV-A10-TRAP-POISON",
+          "ruleSources": [
+            "character.json#10"
+          ],
+          "condition": "Poison reverses into no death",
+          "trigger": "night skill resolution",
+          "preconditions": "valid trap on skill user",
+          "targets": "source-specific actor and target",
+          "resource": "2 per game; unique targets",
+          "duration": "not certified",
+          "exceptions": "Preserve source damage/chain dependencies",
+          "interactions": [
+            "AT",
+            "DF",
+            "RESCUE",
+            "DEATH"
+          ],
+          "status": "NOT_IMPLEMENTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [],
+          "browser": null
+        },
+        {
+          "id": "WV-A10-TRAP-RESCUE",
+          "ruleSources": [
+            "character.json#10"
+          ],
+          "condition": "Rescue reverses into death",
+          "trigger": "night skill resolution",
+          "preconditions": "valid trap on skill user",
+          "targets": "source-specific actor and target",
+          "resource": "2 per game; unique targets",
+          "duration": "not certified",
+          "exceptions": "Preserve source damage/chain dependencies",
+          "interactions": [
+            "AT",
+            "DF",
+            "RESCUE",
+            "DEATH"
+          ],
+          "status": "NOT_IMPLEMENTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [],
+          "browser": null
+        },
+        {
+          "id": "BT-10-1",
+          "condition": "two unique trap uses and duration",
+          "ruleSources": [
+            "character.json#10"
+          ],
+          "status": "RULE_DECISION_REQUIRED",
+          "scope": "Lifetime when target does not act; owner card DEC-BT-02",
+          "testPath": null
+        },
+        {
+          "id": "BT-10-2",
+          "condition": "inverted protection and poison/rescue",
+          "ruleSources": [
+            "character.json#10"
+          ],
+          "status": "NOT_IMPLEMENTED",
+          "scope": "Adapters missing",
+          "testPath": null
+        },
+        {
+          "id": "BT-10-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#10"
+          ]
+        },
+        {
+          "id": "BT-10-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#10"
+          ]
+        },
+        {
+          "id": "BT-10-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#10"
+          ]
+        }
+      ],
+      "changeRecord": [
+        {
+          "source": "BREAKTHROUGH_DEPENDENCY_GRAPH.json",
+          "reason": "Initial finite contract from atomic registry and explicitly sourced dependencies; scoped evidence is not FULL"
+        }
+      ]
+    },
+    {
+      "characterId": 25,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": 1,
+      "certification": "PARTIAL",
+      "obligations": [
+        {
+          "id": "WV-A25-AURA",
+          "ruleSources": [
+            "character.json#25",
+            "S15-OWNER-SEER-01",
+            "VH39",
+            "VH25",
+            "Q13-11"
+          ],
+          "condition": "private aura (not role)",
+          "trigger": "night action",
+          "preconditions": "alive",
+          "targets": "one other living",
+          "resource": "once per night",
+          "duration": "resolved result",
+          "exceptions": "owner correction supersedes old #25; lawful distortion and lock",
+          "interactions": [
+            "investigation",
+            "privacy",
+            "lock"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [
+            "S15 UX: seer aura and mystical seer exact role privately, public composition has no mapping, restart/replay",
+            "S15 aura expansion #49 private distortion, expiry, duplicate and restart",
+            "S15 aura expansion #72 private distortion, expiry, duplicate and restart"
+          ],
+          "browser": null
+        },
+        {
+          "id": "BT-25-1",
+          "condition": "aura only, never role",
+          "ruleSources": [
+            "character.json#25 / SK-05"
+          ],
+          "status": "PASS",
+          "scope": "Existing tested decks",
+          "testPath": "tests/sprint15-deep-engineer.test.mjs"
+        },
+        {
+          "id": "BT-25-2",
+          "condition": "trap on unknown aura; reflection and concealment",
+          "ruleSources": [
+            "SYS-25 / character.json#35 / #3"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "All referenced interference not integrated",
+          "testPath": null
+        },
+        {
+          "id": "BT-25-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#25"
+          ]
+        },
+        {
+          "id": "BT-25-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#25"
+          ]
+        },
+        {
+          "id": "BT-25-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#25"
+          ]
+        }
+      ],
+      "changeRecord": [
+        {
+          "source": "BREAKTHROUGH_DEPENDENCY_GRAPH.json",
+          "reason": "Initial finite contract from atomic registry and explicitly sourced dependencies; scoped evidence is not FULL"
+        }
+      ]
+    },
+    {
+      "characterId": 74,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": 1,
+      "certification": "PARTIAL",
+      "obligations": [
+        {
+          "id": "WV-A74-EXACT",
+          "ruleSources": [
+            "character.json#74",
+            "S15-OWNER-SEER-01",
+            "SK-05",
+            "Q13-06"
+          ],
+          "condition": "private exact role",
+          "trigger": "night action",
+          "preconditions": "alive",
+          "targets": "one other living",
+          "resource": "once per night",
+          "duration": "resolved result",
+          "exceptions": "SK05/Q13-06 false-role trap; aura effects separate",
+          "interactions": [
+            "investigation",
+            "privacy",
+            "lock"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [
+            "S15 UX: seer aura and mystical seer exact role privately, public composition has no mapping, restart/replay",
+            "S15 accelerated #3 passive aura concealment does not distort exact-role #74"
+          ],
+          "browser": null
+        },
+        {
+          "id": "BT-74-1",
+          "condition": "exact identity, not aura",
+          "ruleSources": [
+            "character.json#74 / Q13-06"
+          ],
+          "status": "PASS",
+          "scope": "Existing tested decks",
+          "testPath": "tests/sprint15-breakthrough-medium.test.mjs"
+        },
+        {
+          "id": "BT-74-2",
+          "condition": "false-role trap and disguise interactions",
+          "ruleSources": [
+            "Q13-06 / character.json#57"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "First-night #10 tested; other disguise composition missing",
+          "testPath": null
+        },
+        {
+          "id": "BT-74-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#74"
+          ]
+        },
+        {
+          "id": "BT-74-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#74"
+          ]
+        },
+        {
+          "id": "BT-74-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#74"
+          ]
+        }
+      ],
+      "changeRecord": [
+        {
+          "source": "BREAKTHROUGH_DEPENDENCY_GRAPH.json",
+          "reason": "Initial finite contract from atomic registry and explicitly sourced dependencies; scoped evidence is not FULL"
+        }
+      ]
+    },
+    {
+      "characterId": 5,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": 1,
+      "certification": "PARTIAL",
+      "obligations": [
+        {
+          "id": "WV-A05-WEIGH-SOUL",
+          "ruleSources": [
+            "character.json#5",
+            "VH84",
+            "NV05"
+          ],
+          "condition": "actual faction verdict Thiện/Ác/Không xác định, private",
+          "trigger": "night choice",
+          "preconditions": "actor alive, authorized, correct night phase",
+          "targets": "living eligible target",
+          "resource": "2/game",
+          "duration": "result",
+          "exceptions": "immune to distortion; changed faction outside current domain",
+          "interactions": [
+            "authorization",
+            "phase",
+            "privacy",
+            "persistence",
+            "replay",
+            "faction",
+            "investigation"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [
+            "S10-01 #5 source VH84 returns private unmodified verdict; #20 injures investigator in following night",
+            "S10-02 #5 two match-wide uses, deterministic replay and SQLite restart; cannot infer hanging"
+          ],
+          "browser": null
+        },
+        {
+          "id": "WV-A05-JUSTICE",
+          "ruleSources": [
+            "character.json#5",
+            "NV05",
+            "VH84"
+          ],
+          "condition": "protect against hostile faction changes",
+          "trigger": "successful good verdict",
+          "preconditions": "valid #5 protection choice",
+          "targets": "player judged good",
+          "resource": "per eligible verdict",
+          "duration": "source-defined",
+          "exceptions": "source permits choice after #5 changes faction",
+          "interactions": [
+            "authorization",
+            "phase",
+            "privacy",
+            "persistence",
+            "replay",
+            "alignment transition",
+            "choice lifecycle"
+          ],
+          "status": "NOT_IMPLEMENTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [],
+          "browser": null
+        },
+        {
+          "id": "BT-5-1",
+          "condition": "immune three-way verdict",
+          "ruleSources": [
+            "VH84"
+          ],
+          "status": "PASS",
+          "scope": "Existing tested domains",
+          "testPath": "tests/sprint15-deep-engineer.test.mjs"
+        },
+        {
+          "id": "BT-5-2",
+          "condition": "justice against faction change",
+          "ruleSources": [
+            "character.json#5"
+          ],
+          "status": "NOT_IMPLEMENTED",
+          "scope": "Full protection against alignment transitions absent",
+          "testPath": null
+        },
+        {
+          "id": "BT-5-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#5"
+          ]
+        },
+        {
+          "id": "BT-5-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#5"
+          ]
+        },
+        {
+          "id": "BT-5-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#5"
+          ]
+        }
+      ],
+      "changeRecord": [
+        {
+          "source": "BREAKTHROUGH_DEPENDENCY_GRAPH.json",
+          "reason": "Initial finite contract from atomic registry and explicitly sourced dependencies; scoped evidence is not FULL"
+        }
+      ]
+    },
+    {
+      "characterId": 26,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": 1,
+      "certification": "PARTIAL",
+      "obligations": [
+        {
+          "id": "WV-A26-REVIVE",
+          "ruleSources": [
+            "character.json#26",
+            "VH73",
+            "VH76",
+            "PH-01",
+            "VH03"
+          ],
+          "condition": "restore original life identity, faction, resources; public minimal PLAYER_REVIVED",
+          "trigger": "night collection; commit at NIGHT_FINALIZE",
+          "preconditions": "alive when submitting; one charge",
+          "targets": "previously eliminated participant, excluding IDs 46/47/53",
+          "resource": "1 per game",
+          "duration": "same-night finalize",
+          "exceptions": "VH73 any faction/time; VH76 exclusions; PH-01 accepted actor death",
+          "interactions": [
+            "REVIVAL",
+            "DEATH",
+            "VICTORY",
+            "REPLAY"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": "backend/src/official/revival.ts",
+          "requiredTests": [
+            "Deep medium #26: closed death, revival, repeated elimination, PH-01 false",
+            "Deep medium #26: closed death, revival, repeated elimination, PH-01 true"
+          ],
+          "browser": "browser_s15_deep_medium_e2e"
+        },
+        {
+          "id": "WV-A26-ANONYMOUS-CHAT",
+          "ruleSources": [
+            "character.json#26",
+            "VH77"
+          ],
+          "condition": "anonymous 1–1 chat",
+          "trigger": "night",
+          "preconditions": "living medium",
+          "targets": "dead participant",
+          "resource": "per source",
+          "duration": "night",
+          "exceptions": "medium knows identity, dead player does not",
+          "interactions": [
+            "CH",
+            "PRIVACY"
+          ],
+          "status": "PASS",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": "backend/src/official/medium-chat.ts",
+          "requiredTests": [
+            "Breakthrough VH77 medium private chat: authorization, anonymous projections, retry, SQLite restart, phase close and replay"
+          ],
+          "browser": "tests/browser_s15_breakthrough_medium_e2e.py"
+        },
+        {
+          "id": "BT-26-1",
+          "condition": "one revival, closed ledger, PH-01, repeated death",
+          "ruleSources": [
+            "VH73 / PH-01"
+          ],
+          "status": "PASS",
+          "scope": "Bounded [8,25,26] and [8,26,74]",
+          "testPath": "tests/sprint15-breakthrough-medium.test.mjs"
+        },
+        {
+          "id": "BT-26-2",
+          "condition": "any dead faction and exclusion #46/#47/#53",
+          "ruleSources": [
+            "VH73 / VH76"
+          ],
+          "status": "NOT_IMPLEMENTED",
+          "scope": "Bounded capability does not accept these role compositions",
+          "testPath": null
+        },
+        {
+          "id": "BT-26-3",
+          "condition": "night asymmetric chat, privacy, restart, UI",
+          "ruleSources": [
+            "VH77"
+          ],
+          "status": "PASS",
+          "scope": "Bounded domain; no identity metadata",
+          "testPath": "tests/sprint15-breakthrough-medium.test.mjs"
+        },
+        {
+          "id": "BT-26-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#26"
+          ]
+        },
+        {
+          "id": "BT-26-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#26"
+          ]
+        },
+        {
+          "id": "BT-26-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#26"
+          ]
+        }
+      ],
+      "changeRecord": [
+        {
+          "source": "BREAKTHROUGH_DEPENDENCY_GRAPH.json",
+          "reason": "Initial finite contract from atomic registry and explicitly sourced dependencies; scoped evidence is not FULL"
+        }
+      ]
+    },
+    {
+      "characterId": 31,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": 1,
+      "certification": "PARTIAL",
+      "obligations": [
+        {
+          "id": "WV-A31-GUARD",
+          "ruleSources": [
+            "character.json#31",
+            "NV34",
+            "VH24",
+            "character.json#48",
+            "Ma_Soi_Quy_Tac_Da_Chot_Va_De_Xuat.xlsx / 04 Char nguon row32"
+          ],
+          "condition": "protection per source",
+          "trigger": "night choice",
+          "preconditions": "actor authorized, correct phase and resource in admitted domain",
+          "targets": "living eligible player; no same target consecutive nights",
+          "resource": "one choice/night",
+          "duration": "night",
+          "exceptions": "self protection in Excel answer; protection bypass and multiple hits need proof",
+          "interactions": [
+            "phase",
+            "authorization",
+            "role-specific effect",
+            "persistence"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [
+            "Play #31 regular wolf bite actually blocked, cooldown, different recipient, Village victory and durable privacy"
+          ],
+          "browser": "browser_s15_play_guard_e2e"
+        },
+        {
+          "id": "BT-31-1",
+          "condition": "cooldown and authorized target list",
+          "ruleSources": [
+            "character.json#31"
+          ],
+          "status": "PASS",
+          "scope": "Actor-local contract tested",
+          "testPath": "tests/sprint15-breakthrough-capability.test.mjs"
+        },
+        {
+          "id": "BT-31-2",
+          "condition": "trap and piercing interactions",
+          "ruleSources": [
+            "character.json#10 / VH42"
+          ],
+          "status": "NOT_IMPLEMENTED",
+          "scope": "Trap inverse protection missing; piercing unverified",
+          "testPath": null
+        },
+        {
+          "id": "BT-31-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#31"
+          ]
+        },
+        {
+          "id": "BT-31-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#31"
+          ]
+        },
+        {
+          "id": "BT-31-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#31"
+          ]
+        }
+      ],
+      "changeRecord": [
+        {
+          "source": "BREAKTHROUGH_DEPENDENCY_GRAPH.json",
+          "reason": "Initial finite contract from atomic registry and explicitly sourced dependencies; scoped evidence is not FULL"
+        }
+      ]
+    },
+    {
+      "characterId": 36,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": 1,
+      "certification": "PARTIAL",
+      "obligations": [
+        {
+          "id": "WV-A36-FIREBALL",
+          "ruleSources": [
+            "character.json#36",
+            "VH12",
+            "VH13"
+          ],
+          "condition": "lethal attack subject to defense",
+          "trigger": "night choice",
+          "preconditions": "actor alive, authorized, correct night phase",
+          "targets": "other living player",
+          "resource": "2/game",
+          "duration": "night",
+          "exceptions": "no bypass valid protection; may coexist with shield",
+          "interactions": [
+            "authorization",
+            "phase",
+            "privacy",
+            "persistence",
+            "replay",
+            "attack",
+            "protection"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [
+            "S14 #36 authoritative attack, retry, privacy and restart",
+            "S15 #36 fire and unused shield may both be spent in one night, no false reveal"
+          ],
+          "browser": null
+        },
+        {
+          "id": "WV-A36-SHIELD",
+          "ruleSources": [
+            "character.json#36",
+            "VH12"
+          ],
+          "condition": "one valid protection; consume even if untriggered",
+          "trigger": "night choice",
+          "preconditions": "actor alive, authorized, correct night phase",
+          "targets": "other living player",
+          "resource": "1/game",
+          "duration": "night",
+          "exceptions": "no self; independent fireball resource",
+          "interactions": [
+            "authorization",
+            "phase",
+            "privacy",
+            "persistence",
+            "replay",
+            "protection",
+            "resource"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [
+            "S15 #36 shield absorbs knight attack, role feedback private, once per match",
+            "S15 #36 fire and unused shield may both be spent in one night, no false reveal"
+          ],
+          "browser": null
+        },
+        {
+          "id": "WV-A36-SHIELD-REVEAL",
+          "ruleSources": [
+            "character.json#36"
+          ],
+          "condition": "private exact-role feedback to mage",
+          "trigger": "successful shield absorption",
+          "preconditions": "valid #36 shield actually blocks an attack",
+          "targets": "protected player",
+          "resource": "conditional",
+          "duration": "result",
+          "exceptions": "no reveal when shield unused",
+          "interactions": [
+            "authorization",
+            "phase",
+            "privacy",
+            "persistence",
+            "replay",
+            "protection",
+            "investigation"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [
+            "S15 #36 shield absorbs knight attack, role feedback private, once per match",
+            "S15 #36 fire and unused shield may both be spent in one night, no false reveal"
+          ],
+          "browser": null
+        },
+        {
+          "id": "BT-36-1",
+          "condition": "same-night fireball and shield, fireball not piercing",
+          "ruleSources": [
+            "VH12 / VH13"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Existing branches historically evidenced; cross-attack combinations not certified",
+          "testPath": null
+        },
+        {
+          "id": "BT-36-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#36"
+          ]
+        },
+        {
+          "id": "BT-36-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#36"
+          ]
+        },
+        {
+          "id": "BT-36-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#36"
+          ]
+        }
+      ],
+      "changeRecord": [
+        {
+          "source": "BREAKTHROUGH_DEPENDENCY_GRAPH.json",
+          "reason": "Initial finite contract from atomic registry and explicitly sourced dependencies; scoped evidence is not FULL"
+        }
+      ]
+    },
+    {
+      "characterId": 39,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": 1,
+      "certification": "PARTIAL",
+      "obligations": [
+        {
+          "id": "WV-A39-CAPTURE",
+          "ruleSources": [
+            "character.json#39",
+            "VH17",
+            "VH18"
+          ],
+          "condition": "Wolf killed and attributed to #39",
+          "trigger": "night capture or victory evaluation",
+          "preconditions": "alive, valid phase, Exciter ready; for victory stable ledger",
+          "targets": "one other living in supported deck",
+          "resource": "one capture/night, one-night penalty",
+          "duration": "one night; counters persist",
+          "exceptions": "No skill if blocked, cannot target self; other third-party combinations not supported",
+          "interactions": [
+            "attack",
+            "lock",
+            "victory",
+            "death-ledger"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": "backend/src/official/dog-thief.ts",
+          "requiredTests": [
+            "Growth #39 real QA capture: wolf death, fixed initial majority, private role data, restart and replay",
+            "Growth #39 nightmare cancels queued capture without consuming a miss"
+          ],
+          "browser": "browser_s15_growth_dog_thief_e2e"
+        },
+        {
+          "id": "WV-A39-MISS",
+          "ruleSources": [
+            "character.json#39",
+            "VH17",
+            "VH18"
+          ],
+          "condition": "Village target unharmed; miss count +1 and vehicle unavailable next night",
+          "trigger": "night capture or victory evaluation",
+          "preconditions": "alive, valid phase, Exciter ready; for victory stable ledger",
+          "targets": "one other living in supported deck",
+          "resource": "one capture/night, one-night penalty",
+          "duration": "one night; counters persist",
+          "exceptions": "No skill if blocked, cannot target self; other third-party combinations not supported",
+          "interactions": [
+            "attack",
+            "lock",
+            "victory",
+            "death-ledger"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": "backend/src/official/dog-thief.ts",
+          "requiredTests": [
+            "Growth #39 real QA miss, exact one-night loss, restart, third miss death, wolf victory",
+            "Growth #39 nightmare cancels queued capture without consuming a miss"
+          ],
+          "browser": null
+        },
+        {
+          "id": "WV-A39-THIRD-MISS",
+          "ruleSources": [
+            "character.json#39",
+            "VH17",
+            "VH18"
+          ],
+          "condition": "Third miss kills actor",
+          "trigger": "night capture or victory evaluation",
+          "preconditions": "alive, valid phase, Exciter ready; for victory stable ledger",
+          "targets": "one other living in supported deck",
+          "resource": "one capture/night, one-night penalty",
+          "duration": "one night; counters persist",
+          "exceptions": "No skill if blocked, cannot target self; other third-party combinations not supported",
+          "interactions": [
+            "attack",
+            "lock",
+            "victory",
+            "death-ledger"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": "backend/src/official/dog-thief.ts",
+          "requiredTests": [
+            "Growth #39 real QA miss, exact one-night loss, restart, third miss death, wolf victory"
+          ],
+          "browser": null
+        },
+        {
+          "id": "WV-A39-MAJORITY-WIN",
+          "ruleSources": [
+            "character.json#39",
+            "VH17",
+            "VH18"
+          ],
+          "condition": "More than half of initial wolves killed by this actor; after closed night ledger",
+          "trigger": "night capture or victory evaluation",
+          "preconditions": "alive, valid phase, Exciter ready; for victory stable ledger",
+          "targets": "one other living in supported deck",
+          "resource": "one capture/night, one-night penalty",
+          "duration": "one night; counters persist",
+          "exceptions": "No skill if blocked, cannot target self; other third-party combinations not supported",
+          "interactions": [
+            "attack",
+            "lock",
+            "victory",
+            "death-ledger"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": "backend/src/official/dog-thief.ts",
+          "requiredTests": [
+            "Growth #39 real QA capture: wolf death, fixed initial majority, private role data, restart and replay"
+          ],
+          "browser": "browser_s15_growth_dog_thief_e2e"
+        },
+        {
+          "id": "WV-A39-THIRD-PARTY-COWIN",
+          "ruleSources": [
+            "character.json#39",
+            "VH17",
+            "VH18"
+          ],
+          "condition": "Win with other third-party winners if own goal unmet",
+          "trigger": "night capture or victory evaluation",
+          "preconditions": "alive, valid phase, Exciter ready; for victory stable ledger",
+          "targets": "one other living in supported deck",
+          "resource": "one capture/night, one-night penalty",
+          "duration": "one night; counters persist",
+          "exceptions": "No skill if blocked, cannot target self; other third-party combinations not supported",
+          "interactions": [
+            "attack",
+            "lock",
+            "victory",
+            "death-ledger"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": "backend/src/official/dog-thief.ts",
+          "requiredTests": [],
+          "browser": null
+        },
+        {
+          "id": "BT-39-1",
+          "condition": "initial wolf majority; exactly one night vehicle loss",
+          "ruleSources": [
+            "VH17 / VH18"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Historical restricted scope; current browser obligation required",
+          "testPath": null
+        },
+        {
+          "id": "BT-39-2",
+          "condition": "third-party co-win",
+          "ruleSources": [
+            "character.json#39 / VH03"
+          ],
+          "status": "NOT_IMPLEMENTED",
+          "scope": "Current deck has no competing third-party role",
+          "testPath": null
+        },
+        {
+          "id": "BT-39-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#39"
+          ]
+        },
+        {
+          "id": "BT-39-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#39"
+          ]
+        },
+        {
+          "id": "BT-39-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#39"
+          ]
+        }
+      ],
+      "changeRecord": [
+        {
+          "source": "BREAKTHROUGH_DEPENDENCY_GRAPH.json",
+          "reason": "Initial finite contract from atomic registry and explicitly sourced dependencies; scoped evidence is not FULL"
+        }
+      ]
+    },
+    {
+      "characterId": 64,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": 1,
+      "certification": "PARTIAL",
+      "obligations": [
+        {
+          "id": "WV-A64-PAIR-DEATH-OBSERVATION",
+          "ruleSources": [
+            "character.json#64",
+            "Ma_Soi_Quy_Tac_Da_Chot_Va_De_Xuat.xlsx / 04 Char nguon row 65 (answer present, not marked chốt)"
+          ],
+          "condition": "private role of surviving paired player; if both die in same batch, reveal both",
+          "trigger": "night pair choice; first actual death of either marked player",
+          "preconditions": "Bell Ringer alive, first observation not spent",
+          "targets": "two different living other players in admitted deck",
+          "resource": "one resolved observation",
+          "duration": "until first pair death; replace both choices before observation",
+          "exceptions": "simultaneous death; no observation after owner death in current scope",
+          "interactions": [
+            "death-chain",
+            "pack",
+            "private projection"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [
+            "Scale #64 pair replacement, no premature disclosure, day hanging and private role result",
+            "Scale #64 two simultaneous pack deaths reveal both once before victory",
+            "Scale #64 first marked death freezes pair; no second information or selection"
+          ],
+          "browser": null
+        },
+        {
+          "id": "BT-64-1",
+          "condition": "marked pair death observations across linked/revival events",
+          "ruleSources": [
+            "character.json#64"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Existing pair and direct deaths tested historically, linked and revived death missing",
+          "testPath": null
+        },
+        {
+          "id": "BT-64-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#64"
+          ]
+        },
+        {
+          "id": "BT-64-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#64"
+          ]
+        },
+        {
+          "id": "BT-64-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#64"
+          ]
+        }
+      ],
+      "changeRecord": [
+        {
+          "source": "BREAKTHROUGH_DEPENDENCY_GRAPH.json",
+          "reason": "Initial finite contract from atomic registry and explicitly sourced dependencies; scoped evidence is not FULL"
+        }
+      ]
+    },
+    {
+      "characterId": 87,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "contractVersion": 1,
+      "certification": "PARTIAL",
+      "obligations": [
+        {
+          "id": "WV-A87-RESCUE",
+          "ruleSources": [
+            "character.json#87",
+            "VH64"
+          ],
+          "condition": "restore living state",
+          "trigger": "wolf bite preliminary death",
+          "preconditions": "alive or pending, rescue window",
+          "targets": "one bite victim",
+          "resource": "one flask",
+          "duration": "current night",
+          "exceptions": "not final death",
+          "interactions": [
+            "preliminary-death",
+            "pack",
+            "victory"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [
+            "S15 final #87 privately receives both bite victims and rescues only one before wolf parity",
+            "S15 final #87 may use its single rescue on itself while preliminarily bitten"
+          ],
+          "browser": null
+        },
+        {
+          "id": "WV-A87-SEDATIVE",
+          "ruleSources": [
+            "character.json#87",
+            "VH57"
+          ],
+          "condition": "deny day chat and ballot",
+          "trigger": "night action",
+          "preconditions": "alive, resource available",
+          "targets": "one living player",
+          "resource": "one flask",
+          "duration": "next day",
+          "exceptions": "expires",
+          "interactions": [
+            "status",
+            "voting",
+            "chat"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Full branch interactions not certified unless explicitly scoped below",
+          "implementationPath": null,
+          "requiredTests": [
+            "S15 #87 sedative denies chat and ballot intake, expires next day, blank tally is official"
+          ],
+          "browser": null
+        },
+        {
+          "id": "BT-87-1",
+          "condition": "wolf victim list and single rescue, self rescue",
+          "ruleSources": [
+            "VH64"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Existing backend evidence in restricted decks, current browser retest required",
+          "testPath": null
+        },
+        {
+          "id": "BT-87-2",
+          "condition": "sedative and other authorized chat interactions",
+          "ruleSources": [
+            "character.json#87"
+          ],
+          "status": "NOT_TESTED",
+          "scope": "Generalized combinations not certified",
+          "testPath": null
+        },
+        {
+          "id": "BT-87-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#87"
+          ]
+        },
+        {
+          "id": "BT-87-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#87"
+          ]
+        },
+        {
+          "id": "BT-87-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "status": "NOT_TESTED",
+          "scope": "Global role obligation; restricted evidence alone cannot close it",
+          "ruleSources": [
+            "character.json#87"
+          ]
+        }
+      ],
+      "changeRecord": [
+        {
+          "source": "BREAKTHROUGH_DEPENDENCY_GRAPH.json",
+          "reason": "Initial finite contract from atomic registry and explicitly sourced dependencies; scoped evidence is not FULL"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+E2E_STAGE village setup
+E2E_STAGE village night
+E2E_STAGE village rescue
+E2E_STAGE village day-vote
+Timeout (0:01:00)!
+Thread 0x00007f6cae7fc6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f6caeffd6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f6caf7fe6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f6caffff6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f6cd0ff96c0 (most recent call first):
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 99 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 127 in recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 581 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 418 in recv_strict
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 329 in recv_header
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 375 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 485 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 444 in recv_data_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 423 in recv_data
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 395 in recv
+  File "/tmp/wv24/tests/browser_e2e.py", line 28 in reader
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f6cd17fa6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f6cd1ffb6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f6cd27fc6c0 (most recent call first):
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 99 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 127 in recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 581 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 418 in recv_strict
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 329 in recv_header
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 375 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 485 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 444 in recv_data_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 423 in recv_data
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 395 in recv
+  File "/tmp/wv24/tests/browser_e2e.py", line 28 in reader
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f6cd2ffd6c0 (most recent call first):
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 99 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 127 in recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 581 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 418 in recv_strict
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 329 in recv_header
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 375 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 485 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 444 in recv_data_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 423 in recv_data
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 395 in recv
+  File "/tmp/wv24/tests/browser_e2e.py", line 28 in reader
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f6cd37fe6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f6cd3fff6c0 (most recent call first):
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 99 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 127 in recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 581 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 418 in recv_strict
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 329 in recv_header
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 375 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 485 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 444 in recv_data_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 423 in recv_data
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 395 in recv
+  File "/tmp/wv24/tests/browser_e2e.py", line 28 in reader
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f6ce0fed6c0 (most recent call first):
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 99 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f6ce1fef6c0 (most recent call first):
+  File "/usr/lib/python3.13/socket.py", line 719 in readinto
+  File "/usr/lib/python3.13/http/client.py", line 292 in _read_status
+  File "/usr/lib/python3.13/http/client.py", line 331 in begin
+  File "/usr/lib/python3.13/http/client.py", line 1430 in getresponse
+  File "/opt/pyvenv/lib/python3.13/site-packages/urllib3/connection.py", line 571 in getresponse
+  File "/opt/pyvenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534 in _make_request
+  File "/opt/pyvenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 788 in urlopen
+  File "/opt/pyvenv/lib/python3.13/site-packages/requests/adapters.py", line 644 in send
+  File "/opt/pyvenv/lib/python3.13/site-packages/requests/sessions.py", line 703 in send
+  File "/opt/pyvenv/lib/python3.13/site-packages/requests/sessions.py", line 589 in request
+  File "/opt/pyvenv/lib/python3.13/site-packages/requests/api.py", line 59 in request
+  File "/tmp/wv24/tests/browser_e2e.py", line 66 in fetch_bridge
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59 in run
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 93 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f6cfa3ef780 (most recent call first):
+  File "/usr/lib/python3.13/selectors.py", line 452 in select
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 2004 in _run_once
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 683 in run_forever
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 712 in run_until_complete
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/sync_api/_context_manager.py", line 56 in greenlet_main
+Error: E2E timeout browser_s15_normal_guard_rescue_e2e.py / village: last reported stage E2E_STAGE village day-vote; scenario did not finish; not counted PASS
+    at file:///tmp/wv24/scripts/run-browser-s06.mjs:43:10

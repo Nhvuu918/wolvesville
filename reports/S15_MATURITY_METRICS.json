@@ -1,0 +1,36 @@
+{
+  "baseline": {
+    "R": 49,
+    "F": 1,
+    "A": 44,
+    "B": 36,
+    "qaC": 2,
+    "playableC": 2,
+    "S_auditedRoles": 30,
+    "S_pass": 49,
+    "S_total": 63,
+    "normalDecks": 3,
+    "newNormalDecksWithBrowserAndBackend": 1
+  },
+  "historicalCertificatesRetained": {
+    "R": 49,
+    "F": 1,
+    "qaC": 2,
+    "playableC": 2
+  },
+  "fresh": {
+    "R": 48,
+    "F": 0,
+    "A": 44,
+    "B": 36,
+    "qaC": 0,
+    "playableC": 0,
+    "S_auditedRoles": 40,
+    "S_pass": 64,
+    "S_total": 87,
+    "normalDecks": 4,
+    "newNormalDecksWithBrowserAndBackend": 1
+  },
+  "newInventoriedBranchesPass": 14,
+  "note": "Historical certificates remain intact; lack of fresh browser evidence not a revocation. A/B unique decks, no duplicate normal deck. S inventory increase does not imply new roles or full coverage."
+}

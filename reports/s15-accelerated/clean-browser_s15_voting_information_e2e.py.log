@@ -1,0 +1,75 @@
+VOTING_INFO_READY s15-sedative
+VOTING_INFO_ASSERTIONS_PASS s15-sedative
+VOTING_INFO_CLEANUP_PASS s15-sedative
+S15_BROWSER_PASS
+S06_BROWSER_CASE_PASS browser_s15_voting_information_e2e.py sedative
+VOTING_INFO_READY s15-reveal
+VOTING_INFO_ASSERTIONS_PASS s15-reveal
+VOTING_INFO_CLEANUP_PASS s15-reveal
+S15_BROWSER_PASS
+S06_BROWSER_CASE_PASS browser_s15_voting_information_e2e.py reveal
+Timeout (0:00:52)!
+Thread 0x00007faea2ffd6c0 (most recent call first):
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 99 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 127 in recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 581 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 418 in recv_strict
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 329 in recv_header
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 375 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 485 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 444 in recv_data_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 423 in recv_data
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 395 in recv
+  File "/mnt/data/s15accelerated-clean/tests/browser_e2e.py", line 26 in reader
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007faea37fe6c0 (most recent call first):
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 99 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 127 in recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 581 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 418 in recv_strict
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 329 in recv_header
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 375 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 485 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 444 in recv_data_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 423 in recv_data
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 395 in recv
+  File "/mnt/data/s15accelerated-clean/tests/browser_e2e.py", line 26 in reader
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007faea3fff6c0 (most recent call first):
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 99 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 127 in recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 581 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 418 in recv_strict
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 329 in recv_header
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 375 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 485 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 444 in recv_data_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 423 in recv_data
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 395 in recv
+  File "/mnt/data/s15accelerated-clean/tests/browser_e2e.py", line 26 in reader
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007faec0857780 (most recent call first):
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 459 in create_future
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 224 in __init__
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 365 in _send_message_to_server
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 120 in _inner_send
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 557 in wrap_api_call
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69 in send
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_page.py", line 1547 in call
+  File "/usr/lib/python3.13/asyncio/events.py", line 89 in _run
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 2042 in _run_once
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 683 in run_forever
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 712 in run_until_complete
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/sync_api/_context_manager.py", line 56 in greenlet_main
+VOTING_INFO_READY s15-violin-knight
+Error: E2E timeout browser_s15_voting_information_e2e.py: cleanup did not finish; not counted PASS
+    at file:///mnt/data/s15accelerated-clean/scripts/run-browser-s06.mjs:39:10

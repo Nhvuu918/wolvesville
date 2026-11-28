@@ -1,0 +1,13 @@
+
+> wolvesville-sprint09-voting-multiround@1.1.0-s09 test:browser:09
+> npm run build && node scripts/run-browser-s06.mjs browser_s09_e2e.py
+
+
+> wolvesville-sprint09-voting-multiround@1.1.0-s09 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+S09_BROWSER_PASS: approved three-player closed deck, server assigned roles and ACL
+S09_BROWSER_PASS: wolf UI submitted official coercion; no early public result
+S09_BROWSER_PASS: 3 real ballots, server locks votes, ACL and reconnect; no fabricated hanging/winner
+S06_BROWSER_PASS browser_s09_e2e.py
+S06_BROWSER_ALL_1_PASS

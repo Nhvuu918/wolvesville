@@ -1,0 +1,118 @@
+TAP version 13
+# (node:13146) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S14_EVIDENCE {"id":32,"skill":"official.32.shoot","restart":true,"replay":true}
+# Subtest: S14 \#32 authoritative attack, retry, privacy and restart
+ok 1 - S14 \#32 authoritative attack, retry, privacy and restart
+  ---
+  duration_ms: 559.881587
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":36,"skill":"official.36.fireball","restart":true,"replay":true}
+# Subtest: S14 \#36 authoritative attack, retry, privacy and restart
+ok 2 - S14 \#36 authoritative attack, retry, privacy and restart
+  ---
+  duration_ms: 441.533149
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":67,"skill":"official.67.sword","restart":true,"replay":true}
+# Subtest: S14 \#67 authoritative attack, retry, privacy and restart
+ok 3 - S14 \#67 authoritative attack, retry, privacy and restart
+  ---
+  duration_ms: 394.032033
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":78,"skill":"official.78.meteor","restart":true,"replay":true}
+# Subtest: S14 \#78 authoritative attack, retry, privacy and restart
+ok 4 - S14 \#78 authoritative attack, retry, privacy and restart
+  ---
+  duration_ms: 424.898415
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":52,"skill":"official.52.solo-dog","restart":true,"replay":true}
+# Subtest: S14 \#52 solo dog consumes protection and expires
+ok 5 - S14 \#52 solo dog consumes protection and expires
+  ---
+  duration_ms: 631.587965
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":23,"skill":"official.23.shield","restart":true,"replay":true}
+# Subtest: S14 \#23 one shield absorbs \#36 fireball, then expires; persistence and private events
+ok 6 - S14 \#23 one shield absorbs \#36 fireball, then expires; persistence and private events
+  ---
+  duration_ms: 685.771378
+  type: 'test'
+  ...
+# Subtest: S14 \#16 two poison targets consume one use, faction-specific next-night effect
+ok 7 - S14 \#16 two poison targets consume one use, faction-specific next-night effect
+  ---
+  duration_ms: 567.120829
+  type: 'test'
+  ...
+# Subtest: S14 \#32 day shot permitted, night shot in same round denied after shielded shot
+ok 8 - S14 \#32 day shot permitted, night shot in same round denied after shielded shot
+  ---
+  duration_ms: 577.726749
+  type: 'test'
+  ...
+# Subtest: S14 \#67 shield and sword both accepted in same night, valid shield blocks sword
+ok 9 - S14 \#67 shield and sword both accepted in same night, valid shield blocks sword
+  ---
+  duration_ms: 406.841207
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":84,"skill":"official.84.silence","restart":true,"replay":true}
+# Subtest: S14 \#84 public chat mute, WS/HTTP ACL, restart, expiry
+ok 10 - S14 \#84 public chat mute, WS/HTTP ACL, restart, expiry
+  ---
+  duration_ms: 817.696325
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":50,"skill":"official.50.numb","restart":true,"replay":true}
+# Subtest: S14 \#50 public chat mute, WS/HTTP ACL, restart, expiry
+ok 11 - S14 \#50 public chat mute, WS/HTTP ACL, restart, expiry
+  ---
+  duration_ms: 769.127184
+  type: 'test'
+  ...
+# Subtest: S14 \#17 judgment on villager causes persistent public-chat mute but no vote denial
+ok 12 - S14 \#17 judgment on villager causes persistent public-chat mute but no vote denial
+  ---
+  duration_ms: 605.993286
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":68,"skill":"official.68.mark","restart":true,"replay":true,"completedDeck":[8,25,68]}
+# Subtest: S14 \#68 death-follow chain commits before certified knight victory
+ok 13 - S14 \#68 death-follow chain commits before certified knight victory
+  ---
+  duration_ms: 578.2786
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":88,"skill":"official.88.pin","restart":true,"replay":true,"completedDeck":[8,25,88]}
+# Subtest: S14 \#88 death-follow chain commits before certified knight victory
+ok 14 - S14 \#88 death-follow chain commits before certified knight victory
+  ---
+  duration_ms: 600.093419
+  type: 'test'
+  ...
+# Subtest: S14 \#68 no preselected target means no secondary death (VH36)
+ok 15 - S14 \#68 no preselected target means no secondary death (VH36)
+  ---
+  duration_ms: 437.465603
+  type: 'test'
+  ...
+# Subtest: S14 \#59 second stone kills and reveals Ná Thủ only after second hit
+ok 16 - S14 \#59 second stone kills and reveals Ná Thủ only after second hit
+  ---
+  duration_ms: 414.153826
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 9166.48538

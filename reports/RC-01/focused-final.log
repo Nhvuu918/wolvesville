@@ -1,0 +1,61 @@
+TAP version 13
+# (node:2287) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S28_NORMAL_BELL_EVIDENCE {"deck":[25,48,64,74],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: real double bite and one private observation batch before victory
+ok 1 - S28 normal bell: real double bite and one private observation batch before victory
+  ---
+  duration_ms: 838.097043
+  type: 'test'
+  ...
+# S28_NORMAL_BELL_EVIDENCE {"deck":[15,25,64,74],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: linked simultaneous death, actual vote, spent observation and village victory
+ok 2 - S28 normal bell: linked simultaneous death, actual vote, spent observation and village victory
+  ---
+  duration_ms: 1808.429451
+  type: 'test'
+  ...
+# S28_NORMAL_BELL_EVIDENCE {"deck":[8,25,26,64],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: previously revived target can be paired, repeated final death, privacy and village victory
+ok 3 - S28 normal bell: previously revived target can be paired, repeated final death, privacy and village victory
+  ---
+  duration_ms: 1396.184832
+  type: 'test'
+  ...
+# S28_NORMAL_BELL_EVIDENCE {"deck":[25,48,64,74],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: owner dies in the same batch, no private observation or resource reuse
+ok 4 - S28 normal bell: owner dies in the same batch, no private observation or resource reuse
+  ---
+  duration_ms: 775.540287
+  type: 'test'
+  ...
+# S28_NORMAL_BELL_EVIDENCE {"deck":[8,25,26,64],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: replace pair across nights, dead target invalid, first observation only
+ok 5 - S28 normal bell: replace pair across nights, dead target invalid, first observation only
+  ---
+  duration_ms: 1938.617104
+  type: 'test'
+  ...
+# (node:2288) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: RC01 T-COV-64: public pseudo-death neither kills Cupid partner nor spends bell; wake then real linked deaths
+ok 6 - RC01 T-COV-64: public pseudo-death neither kills Cupid partner nor spends bell; wake then real linked deaths
+  ---
+  duration_ms: 2093.973971
+  type: 'test'
+  ...
+# Subtest: RC01 LIFE-02: seed limits, self-target rejection, hanging sleep, second seed and true death
+ok 7 - RC01 LIFE-02: seed limits, self-target rejection, hanging sleep, second seed and true death
+  ---
+  duration_ms: 4677.805339
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6963.41861

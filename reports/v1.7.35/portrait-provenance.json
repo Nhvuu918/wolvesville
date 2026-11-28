@@ -1,0 +1,681 @@
+[
+  {
+    "id": 1,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/1.svg",
+    "sourceSha256": "fe1ecf953536b1b7eb854a5a828829ceb48c6fc920ee1986717ef6fcbe5486cd",
+    "output": "frontend/assets/illustrated/1.svg",
+    "sha256": "6ca38f40b93d962403c31b5b8a980fe5dd7ca12cb03cc87e490e36e41340c1af"
+  },
+  {
+    "id": 2,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/2.svg",
+    "sourceSha256": "ebac3158c1398602ae0f58c69e0bc0f4227a9382112959f5ec86c6b86e093e9f",
+    "output": "frontend/assets/illustrated/2.svg",
+    "sha256": "50f9fcc2bf54b78bc2696d54b77d243926c44b3da6313c68721e5be6e0be0415"
+  },
+  {
+    "id": 3,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/3.svg",
+    "sourceSha256": "9cadb78d92faefb0373f7a90b2ffd197d38495c02962878b3a6f04a1c37b29d4",
+    "output": "frontend/assets/illustrated/3.svg",
+    "sha256": "a8c75a8b60eba832d8deb2d19c703c425a0a50f4415b6634be5ecaa2c9a3d97f"
+  },
+  {
+    "id": 4,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/4.svg",
+    "sourceSha256": "75e967fc13e513e98be277c8a9b03e60dfe61c9511e138e749cc1edd8ce515e5",
+    "output": "frontend/assets/illustrated/4.svg",
+    "sha256": "b63a68067b877de9b2ff475c2ee13a6abe7c049db96a8ced54b4b4666956f41d"
+  },
+  {
+    "id": 5,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/5.svg",
+    "sourceSha256": "b81cb3532b0de2dc78870dfa8a9355c0c9e605a79cec5ce77e0f5e1c46a012e5",
+    "output": "frontend/assets/illustrated/5.svg",
+    "sha256": "f90f479aae512a77fde2c1d4c85f22e85348ae6e90943f13f81f1d09735121aa"
+  },
+  {
+    "id": 6,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/6.svg",
+    "sourceSha256": "004cf9e7d4305bf287ec51fb577d8c111c69acb543d59bbbca8303fcb82715ac",
+    "output": "frontend/assets/illustrated/6.svg",
+    "sha256": "e81cd359503adfe7cde15e3948fb82f372688afbbe45351bbdc20b94c5e0c9f3"
+  },
+  {
+    "id": 7,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/7.svg",
+    "sourceSha256": "c810fd37861b028a5e859271391cc14ebcef7bc6fdbf8600418744a0304dd16d",
+    "output": "frontend/assets/illustrated/7.svg",
+    "sha256": "092ed652e0f436ea9d77f60ca366f6dec6bb50a83ee3304681d206c6884f86e0"
+  },
+  {
+    "id": 8,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/8.svg",
+    "sourceSha256": "1757a4a631c388ae10592c89da89ffe027a5135b39d345dce47101ae5f9ca359",
+    "output": "frontend/assets/illustrated/8.svg",
+    "sha256": "ff2689e10a9b4b0753ed998d3d14e42938ed33a15af9303d2a464fe1a66270d8"
+  },
+  {
+    "id": 9,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/9.svg",
+    "sourceSha256": "1ce1155ac94f96dd5dc4ed7bca67cf47977379ca431f9292491db6ffd770daa5",
+    "output": "frontend/assets/illustrated/9.svg",
+    "sha256": "ba26b2e6debefa1fa2eb53abec21505a2a499ecce12d759e5c785cdfadd636e3"
+  },
+  {
+    "id": 10,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/10.svg",
+    "sourceSha256": "19b03849fb8f3f026ba15cc434c50d81b60f30c908936a744a570e4898313cf3",
+    "output": "frontend/assets/illustrated/10.svg",
+    "sha256": "9d4c86b1a889f11e0da4e1b81c752e102a405960fe3dd890948d098fca28a18e"
+  },
+  {
+    "id": 11,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/11.svg",
+    "sourceSha256": "aa3060c20594b1108537c645a903e5f29a763e80be777527a33b095d897d14c3",
+    "output": "frontend/assets/illustrated/11.svg",
+    "sha256": "0c0d02b32a0815e2d2c996f5eb4d7875e882c7b37596f765bef581cdbe674948"
+  },
+  {
+    "id": 12,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/12.svg",
+    "sourceSha256": "c945f8116090001788e83b1fa9277aef7810a2c0e6621b59f0b368d927f1ab6d",
+    "output": "frontend/assets/illustrated/12.svg",
+    "sha256": "14e3ac6b84fb3bf5af319b564c3eec33a29994a79c5c65468e3872126640cb8f"
+  },
+  {
+    "id": 13,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/13.svg",
+    "sourceSha256": "edaf066470bee5cf524156b55922c8e6a20b3df585e6e96b898889b291992bda",
+    "output": "frontend/assets/illustrated/13.svg",
+    "sha256": "35335fd469910c20c3cec461fa3d227517849045e2a33925dacfbb9c3875da9c"
+  },
+  {
+    "id": 14,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/14.svg",
+    "sourceSha256": "daf5a8dbe17068d1cc22abb9e4275a1494b3fcfe995676c87e471639694999a5",
+    "output": "frontend/assets/illustrated/14.svg",
+    "sha256": "86ab98b132031910b11271fb5b1424797d673b1699a4fe10edb9575516e884e5"
+  },
+  {
+    "id": 15,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/15.svg",
+    "sourceSha256": "85efd2d607a04a5533ad417d65f152d6cf3dddc76f17ab68557745656da93951",
+    "output": "frontend/assets/illustrated/15.svg",
+    "sha256": "052fe86c74c52c4710ef24a1f0412161381b2f62282912cb3bc22a7be26cf32c"
+  },
+  {
+    "id": 16,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/16.svg",
+    "sourceSha256": "422b1c5fa6dbfbc9e2c2d70a8b1642a101d184c256564c6d4dbbcfaa5fd490f5",
+    "output": "frontend/assets/illustrated/16.svg",
+    "sha256": "978601145f866764e3271ba5864e1936e4cd734e9f94a8cc18770662a5de5533"
+  },
+  {
+    "id": 17,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/17.svg",
+    "sourceSha256": "9af83ab6548ac87dbf2e639a337a84537c85cf891d4e113120cf0ba96239f399",
+    "output": "frontend/assets/illustrated/17.svg",
+    "sha256": "d9aec1337979329fae419bc74af683b20f0982c6ea309aac55138eaf51656d8d"
+  },
+  {
+    "id": 18,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/18.svg",
+    "sourceSha256": "929c4d7ee75c224e1ef6d060004f9bebeeedecebeaec00ad6846e4e768dc59d0",
+    "output": "frontend/assets/illustrated/18.svg",
+    "sha256": "5e569c6e71f2ed91cb3647a07430751a8f62dc78239a8c9075f75ec2399d74eb"
+  },
+  {
+    "id": 19,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/19.svg",
+    "sourceSha256": "d261c93b3d30642fa59c25bac0b7865d1a0cd2af8b4b4c9dfdab7ebd102f0402",
+    "output": "frontend/assets/illustrated/19.svg",
+    "sha256": "2407f1e6020a3ea14b950eabd236a718295ea95f3815a4499e2533f1499f34f7"
+  },
+  {
+    "id": 20,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/20.svg",
+    "sourceSha256": "9e2173d5c815ba70cee3a4cb8837c2d74291ea77ed1218da7a372771e15fd362",
+    "output": "frontend/assets/illustrated/20.svg",
+    "sha256": "a2fe9c9428b04586be07fe0fc528cb8179d165178126de680c487941f109faca"
+  },
+  {
+    "id": 21,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/21.svg",
+    "sourceSha256": "94727ab400fcbbc4f823e9b339a3d7c2542b4ffc279a5dbf92f76ac45c9732fd",
+    "output": "frontend/assets/illustrated/21.svg",
+    "sha256": "92c9c6297b91319ea7cfb165e3a6bbba6ceb3584f1fdb4a87d6c9431e17f198e"
+  },
+  {
+    "id": 22,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/22.svg",
+    "sourceSha256": "b8f14284e5e2c0e4619d733446cdf83eb0ed5d92596859fca573e382cce7df6a",
+    "output": "frontend/assets/illustrated/22.svg",
+    "sha256": "2c9911fa009f400849b07af93da8d19cffa220ee1aefa9e8fe62eb7e9860f204"
+  },
+  {
+    "id": 23,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/23.svg",
+    "sourceSha256": "4ab13d0e493c1b860a27f9c62a80bd27e5b914b09e1659355e9c0f3cab92d12e",
+    "output": "frontend/assets/illustrated/23.svg",
+    "sha256": "3b1cfc9da8e000f250b0d20cf74e672b68fdeb6b6f262979e3c5f4a405e02d93"
+  },
+  {
+    "id": 24,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/24.svg",
+    "sourceSha256": "53da91b8482826079330a2554af57fe5ecd957feecfb669fed58f8408cca46a8",
+    "output": "frontend/assets/illustrated/24.svg",
+    "sha256": "47d56dc9ca0adf6f91a8d8132ff0fd54c4ff68bf07c90a34375ab1414cdf4ebf"
+  },
+  {
+    "id": 25,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/25.svg",
+    "sourceSha256": "5eaf6a861b0fa8447bd340a1a5ba6f1000515bc539448c86805e748bfc05c45c",
+    "output": "frontend/assets/illustrated/25.svg",
+    "sha256": "696c20f48fcb6c33e6ac0d8e119f56a7d1b038f3299704acc3d23e3b1fe6b5d7"
+  },
+  {
+    "id": 26,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/26.svg",
+    "sourceSha256": "e53e1ec610b5816dd9f46c4cbc033f06d2b4df994da4fa710c4be4dcdde9c963",
+    "output": "frontend/assets/illustrated/26.svg",
+    "sha256": "4ba394788b89499fb852bb74f9c8ba010528d78b406da2c7f10f33733c6e37f6"
+  },
+  {
+    "id": 27,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/27.svg",
+    "sourceSha256": "6136ad2a0bfda16ac4358e933e84eee4907375b0dfacc6fcc045a34f096429e7",
+    "output": "frontend/assets/illustrated/27.svg",
+    "sha256": "1b8689ccaa19986e4793c620d6fd10e50a7c74c38fe7501668c01176bcf35e4d"
+  },
+  {
+    "id": 28,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/28.svg",
+    "sourceSha256": "7351019f7fc93666a524960c7ea98384eb13cdcd31672eb3ec4a64c21f3669fc",
+    "output": "frontend/assets/illustrated/28.svg",
+    "sha256": "9b1b0e764e6a273e6e9218201f25b7148f39901628582f5f0c8ef30ab9803045"
+  },
+  {
+    "id": 29,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/29.svg",
+    "sourceSha256": "c1067d41aef0b3df58735a99167b53e52eeddf0ee5a99671e6ff0d63583efe5a",
+    "output": "frontend/assets/illustrated/29.svg",
+    "sha256": "3413e40c4170d330263e8e6b67163a6ca6ddaa43ff9f9973a4b9dc811e1eb83c"
+  },
+  {
+    "id": 30,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/30.svg",
+    "sourceSha256": "c10e4a8e405eebe1f4d45dbd0067dda389e4cef94e97d1581ea0f1f28eeaa32e",
+    "output": "frontend/assets/illustrated/30.svg",
+    "sha256": "9780093c98d8b8472a91da44b54edb8101fa2449298282fa86e32f842bdadda8"
+  },
+  {
+    "id": 31,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/31.svg",
+    "sourceSha256": "1182550c6a9d72bae15f06f4397eb17b75f5c9fe595c3bd725bb94497a5079af",
+    "output": "frontend/assets/illustrated/31.svg",
+    "sha256": "278d3d4fa4d626dc094d9ca621486c0eb0cacf3e557b08221ea38ce48e3c5244"
+  },
+  {
+    "id": 32,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/32.svg",
+    "sourceSha256": "ef0eef5bd31e2259a8ff1797987c49a3c4b66a7c6ad2af73079a25ae8ba7a283",
+    "output": "frontend/assets/illustrated/32.svg",
+    "sha256": "7d6a25fc408d501da140816aa40fafff62d641a7aefd605021a292fba10c8156"
+  },
+  {
+    "id": 33,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/33.svg",
+    "sourceSha256": "2401d0e9540e0d2f38ef51b4e65ead48adc6ea4774c0a2877870d075626ea669",
+    "output": "frontend/assets/illustrated/33.svg",
+    "sha256": "88db67d85387debadf21edb179d8f9073798cbae506dd2034a044260dc909401"
+  },
+  {
+    "id": 34,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/34.svg",
+    "sourceSha256": "66baf4060d7a5962e6978b6cff3938fb46c82796139222ac9671f4361106650d",
+    "output": "frontend/assets/illustrated/34.svg",
+    "sha256": "063d59d22d22dfa92eb69a25ccdf5264aadd122520f0cc276ea84a28f62253c2"
+  },
+  {
+    "id": 35,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/35.svg",
+    "sourceSha256": "5b5af5d2d8eb2df571769fe61a1229aa6a86b60127d9962e12b27c19d724bcbc",
+    "output": "frontend/assets/illustrated/35.svg",
+    "sha256": "bfeb87a303cab219244ae86cecbb5573ea9dcb7c3ae0fef5a91b928f1209b0b9"
+  },
+  {
+    "id": 36,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/36.svg",
+    "sourceSha256": "0aea830cc258feb90caad11819d01ed9f80679333c81cb9e463ae69cf7c8291c",
+    "output": "frontend/assets/illustrated/36.svg",
+    "sha256": "74ff091d261395636ea4caea9a86410239446ff262b64fc51db7d3f28131a15f"
+  },
+  {
+    "id": 37,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/37.svg",
+    "sourceSha256": "84fa232809eec987034ea0054cdee73405deca9960428b21420bbe1c82a7f22f",
+    "output": "frontend/assets/illustrated/37.svg",
+    "sha256": "ab07073fe3272355380c6740dd32c56c5bdbc2724c5b9510b2729659f2938a52"
+  },
+  {
+    "id": 38,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/38.svg",
+    "sourceSha256": "5d12d812f2766a737f4492cac51a5e437a7ed1a49dfcb590aa403654fe5ae1c4",
+    "output": "frontend/assets/illustrated/38.svg",
+    "sha256": "c90a8bf15c1e5d1886624dab45aa3454c5706b4e9b10c7ebdf66cc493df768e2"
+  },
+  {
+    "id": 39,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/39.svg",
+    "sourceSha256": "5aaac7823d8a3bcc8f9785d89bb51ea822e5ba1cdec86228c63acf98a441bad0",
+    "output": "frontend/assets/illustrated/39.svg",
+    "sha256": "c6027ce802fb10c42fd6705f134f6c6f48f506864a29aee95f208e04c8a7be1a"
+  },
+  {
+    "id": 40,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/40.svg",
+    "sourceSha256": "86e20e6bca645bd68c2447fc6c5a7b2edaa5e3e4f94b61c8ae528f70c7378565",
+    "output": "frontend/assets/illustrated/40.svg",
+    "sha256": "865b0fd8f7a9247e9285b65e1503ad8fa0bf288538a405633020b9732d24fa9a"
+  },
+  {
+    "id": 41,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/41.svg",
+    "sourceSha256": "d27933e558dc0b238eb472c359253432b37b6e1354d7f723f4a31089ba8c7ca5",
+    "output": "frontend/assets/illustrated/41.svg",
+    "sha256": "2ca891c2d835083b20c9e4dbb7d2307ec34e7206f20dc2c399b758d239f9095f"
+  },
+  {
+    "id": 42,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/42.svg",
+    "sourceSha256": "5550a8af326e9ac166182115f5628c73c63eb28944a5a596e7170192ba8164e6",
+    "output": "frontend/assets/illustrated/42.svg",
+    "sha256": "5ffb44bd047d15bd6f8d96641e394c17453a102a65b4cd6cdf11b795b25507d7"
+  },
+  {
+    "id": 43,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/43.svg",
+    "sourceSha256": "b8d8a2f77fbfa25a4825a2ad6dc74b20a7ee2bdfa0110694bb9969880aefe467",
+    "output": "frontend/assets/illustrated/43.svg",
+    "sha256": "17f261d87c642ca120db691e39cc6833cacb6af0e49096635087b4579ba1d8ff"
+  },
+  {
+    "id": 44,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/44.svg",
+    "sourceSha256": "feae5188b0d1a9d71632750fcc499ab651f8f35c13f9a668fe4d30ed19eb66b5",
+    "output": "frontend/assets/illustrated/44.svg",
+    "sha256": "90b055c729894d869acbb34052c2bf0ff36e537e183a12d2641c086488611625"
+  },
+  {
+    "id": 45,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/45.svg",
+    "sourceSha256": "c725b3b252fc8fd4d5d6ba4a269b137287d9760745cac984c440712d1f5b96a9",
+    "output": "frontend/assets/illustrated/45.svg",
+    "sha256": "02e7dd9c7f758aab5883609dfb3d991eb6856a6d1999793e77913f15c5edaf8d"
+  },
+  {
+    "id": 46,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/46.svg",
+    "sourceSha256": "f269b8a4938a72226d74c83f3098f7d9b74fcd9828b07be75d94f274c77bad58",
+    "output": "frontend/assets/illustrated/46.svg",
+    "sha256": "0af87d883bd753ab16cb20ffbb6d684358e702e441fc8ea3b0c2aa0728ade48a"
+  },
+  {
+    "id": 47,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/47.svg",
+    "sourceSha256": "f845479b15f25378f2da09f5632b595ab8b99932782a845abef059d20702bce7",
+    "output": "frontend/assets/illustrated/47.svg",
+    "sha256": "1413367cc3ccd24734860ea4246d191f2c3cf64aed321fb77988dc6ce27beda8"
+  },
+  {
+    "id": 48,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/48.svg",
+    "sourceSha256": "2b2a96e70ff414bfbffec2096ed0d60ade2694e1a882de6e40dbd2d14d5e1f2a",
+    "output": "frontend/assets/illustrated/48.svg",
+    "sha256": "e6f1409df28e79017ce3b3044df4ce99ff8a7a12b8663aff2c84bcfb28f2e48b"
+  },
+  {
+    "id": 49,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/49.svg",
+    "sourceSha256": "ae5aac0b7142b6729344a6cfa5dfc3368f769dcbbc2954edf17cd5de469cb342",
+    "output": "frontend/assets/illustrated/49.svg",
+    "sha256": "a71f403f5411217838b079acef8072bf1c93e15bf1f878dd3a412799912c9710"
+  },
+  {
+    "id": 50,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/50.svg",
+    "sourceSha256": "8ee538fd7e3b3a613d7f151f3d4951b48adec2138b220b034f947d58d38ae9a8",
+    "output": "frontend/assets/illustrated/50.svg",
+    "sha256": "396372fe8887b1363e9890146c7f92ecd6fbca270475146ce9451d10b453f28b"
+  },
+  {
+    "id": 51,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/51.svg",
+    "sourceSha256": "5b6b704b915e64eaa78e3bdcf0e39015856cf45e8b9b098b9fbe681dac8350c9",
+    "output": "frontend/assets/illustrated/51.svg",
+    "sha256": "7770ce1b0ab7dd90c0f7a6ae2066250cc98ce3fec604ebb38ea6add8d78ceca8"
+  },
+  {
+    "id": 52,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/52.svg",
+    "sourceSha256": "efb2e56a5f39ac80ee5bfd76c90e219135cb5d632d7a92f7a5e9252ea20726bd",
+    "output": "frontend/assets/illustrated/52.svg",
+    "sha256": "202081bb78965a7c39a302ff31a5fcc3d0cb224795482d05a36a290c7d624bab"
+  },
+  {
+    "id": 53,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/53.svg",
+    "sourceSha256": "1de412acfdfc4a792601bb5bbed98bef85f4500aaa634fc956a3feb2fd81ea28",
+    "output": "frontend/assets/illustrated/53.svg",
+    "sha256": "dd39acceffd11aef48a78157d61f1aa18124bec62be597a80600ed068b82b0f9"
+  },
+  {
+    "id": 54,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/54.svg",
+    "sourceSha256": "1268f1499cd277b7be8d48e931fc2a267664b6cc4e7bde54e7a7428e1b3711ba",
+    "output": "frontend/assets/illustrated/54.svg",
+    "sha256": "3451b43d170508b89a523a5c5ea1d51b29777a1dac002a5e52464d7335480961"
+  },
+  {
+    "id": 55,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/55.svg",
+    "sourceSha256": "e2441d4ed851b28f49ec777b8970ea6793ad989cb3df643354d7e0a764f1411d",
+    "output": "frontend/assets/illustrated/55.svg",
+    "sha256": "05efc28d574f44a2c30490e0fe2090b009bfe6e0ed5154665a0cddee09e2e0c5"
+  },
+  {
+    "id": 56,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/56.svg",
+    "sourceSha256": "b4913298db9218726777262082637cc7724ee0a6275d3e8ae2e848cac38bc940",
+    "output": "frontend/assets/illustrated/56.svg",
+    "sha256": "b7f8678bae2e9d0cf0d7cc4e432b638dd1facd372213f02cc5c6864f00a8d3eb"
+  },
+  {
+    "id": 57,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/57.svg",
+    "sourceSha256": "1b3f50dfd912b054d0d48ba774cc1849d7cdceff025c44ac9e21e0d0da5fe403",
+    "output": "frontend/assets/illustrated/57.svg",
+    "sha256": "a058791dba5d79158a6f4220a107d215d93af26df87752872c7e54d6241a4a04"
+  },
+  {
+    "id": 58,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/58.svg",
+    "sourceSha256": "5de6cd40e17b7b45c3400effc9b1808c7f25af0f845fa90005f259809088887a",
+    "output": "frontend/assets/illustrated/58.svg",
+    "sha256": "250205fbed96d2a4664de3e373a9de59da2570ea49239dfed2bc263fe1ea10bd"
+  },
+  {
+    "id": 59,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/59.svg",
+    "sourceSha256": "48e595e703b7b815734a3ae0596f018ad2c67de1c80aee57965cc95d10f2605a",
+    "output": "frontend/assets/illustrated/59.svg",
+    "sha256": "ecad6b7ee731fe8a8a015f5b302a1d694c23aea4ea459936ce0bd1394d5e7c0b"
+  },
+  {
+    "id": 60,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/60.svg",
+    "sourceSha256": "764cd7004cf5a3c7cb2c6dd0622e2ab6423c8d2fb13916d900c5a91f170cd1ac",
+    "output": "frontend/assets/illustrated/60.svg",
+    "sha256": "397ed0c981a9adc01ef1a07e540a2b7d26e9cdd732a5261c3fdc056ffdb1b186"
+  },
+  {
+    "id": 61,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/61.svg",
+    "sourceSha256": "3fe2d6d3f26eed068e380fab71b3054332e31a83d28f4c75a3835326d7224b85",
+    "output": "frontend/assets/illustrated/61.svg",
+    "sha256": "921493be8c0f5bd021f3b82dfb9aa708da9805a0db1eb6a494efccd0c09cfce4"
+  },
+  {
+    "id": 62,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/62.svg",
+    "sourceSha256": "4fdabaf0a4cb45d795fac671a10a50e48bb9d1255f38a80d2372d07484eddc6c",
+    "output": "frontend/assets/illustrated/62.svg",
+    "sha256": "26a91878d1fa725cdd05c92a15082d2810a8d1ade6c832ac08a27f3fb8add893"
+  },
+  {
+    "id": 63,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/63.svg",
+    "sourceSha256": "29e127d24e40e84aea45fb7e317a1a42f1c70940df396c8a47eb3025cefcedd2",
+    "output": "frontend/assets/illustrated/63.svg",
+    "sha256": "c6d63cf85ae09a3bd8f7ddc640e4c0e05ed9b74b5e8e7cbc2b1b22feea8cf56b"
+  },
+  {
+    "id": 64,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/64.svg",
+    "sourceSha256": "4f603b7dadad22be7eefb98152102a06d9ea26a4bd0ea9712c7454c054d532cd",
+    "output": "frontend/assets/illustrated/64.svg",
+    "sha256": "82ddd1588353f5abc2c08de4c7e93455cc8b72fb70e469581e40e87b8939dea5"
+  },
+  {
+    "id": 65,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/65.svg",
+    "sourceSha256": "004365ab68ac6d78adf3638ca23ca034505038c9fa6593c56f51c59359057b57",
+    "output": "frontend/assets/illustrated/65.svg",
+    "sha256": "cfbeb768048c3df5b3981c02db713e4be05af766bb9b95956288ae256d2ef189"
+  },
+  {
+    "id": 66,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/66.svg",
+    "sourceSha256": "a884033930a9bfe3ca5da6d22e2999a6c5793b1fa45eaf217f963ac89aeeae9d",
+    "output": "frontend/assets/illustrated/66.svg",
+    "sha256": "68b52687b9d4c260769ec14b5aa065892ec7a740c43ea46bfa6b8d1ba4ba7d74"
+  },
+  {
+    "id": 67,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/67.svg",
+    "sourceSha256": "e5769ae40e0bd794860cde0db28c98b420ec0b5a7230f48b0aa5a76a94ce5b0a",
+    "output": "frontend/assets/illustrated/67.svg",
+    "sha256": "cea3996b3d222e292ceb3089c5f5a35c8a9fd73815cd89cd6a101cd4f4ce985a"
+  },
+  {
+    "id": 68,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/68.svg",
+    "sourceSha256": "6b42fbdf1ea630ab0adedd076d58a089843d687b96c106ef9082bfeeeb208912",
+    "output": "frontend/assets/illustrated/68.svg",
+    "sha256": "36c72040b35655f47c909bde6953090c582cb1b787fd3f5af9c3c0f0862cdd17"
+  },
+  {
+    "id": 69,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/69.svg",
+    "sourceSha256": "f71259d034de40c6f0cd455e3c7f0c5583fe1f0f8e97fcb1be7c9d992d6cc1d6",
+    "output": "frontend/assets/illustrated/69.svg",
+    "sha256": "1d5c57a27d6454d030bfd5adbb966b00eaa91cb18154a3421046ad74732791fd"
+  },
+  {
+    "id": 70,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/70.svg",
+    "sourceSha256": "bad7d28eeb1ce22c63127f34a7e926fd3190260140fe0e11b789265dde9a133e",
+    "output": "frontend/assets/illustrated/70.svg",
+    "sha256": "ff68c7577d55ea9aad48cd37decf9942dfd5b19289655c416c95702e17e53202"
+  },
+  {
+    "id": 71,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/71.svg",
+    "sourceSha256": "a5d5c4d3447a34c8d9615bc0c0ad2bfbb1a9079602878bcbdc2f411ebb22dce7",
+    "output": "frontend/assets/illustrated/71.svg",
+    "sha256": "d652ed620b59c431f7ffd33cf2cb1993733aa1cbdf3f1a049cc236738015ac63"
+  },
+  {
+    "id": 72,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/72.svg",
+    "sourceSha256": "5c8b307a9188f0ad1a590b1a344407606791cda2c352f452204b031530e89f50",
+    "output": "frontend/assets/illustrated/72.svg",
+    "sha256": "7d202b0e370b1beb83e3d716ca20526a8da40d46e15f8ed46e194fe76ad9f47c"
+  },
+  {
+    "id": 73,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/73.svg",
+    "sourceSha256": "1dd54f32f66315675fec5c86b7383dda4d9ed3b8427ffd311e3afe7b3cadb6b6",
+    "output": "frontend/assets/illustrated/73.svg",
+    "sha256": "a9e81023df0ad06044ff4c5be6866c5e67435bb00bd468f3c4dd162b26986518"
+  },
+  {
+    "id": 74,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/74.svg",
+    "sourceSha256": "ccd406f37a9ec49fdfce8fd4e6aecac4d8fd11e9f9f029fb90b8e4bf7606dcb6",
+    "output": "frontend/assets/illustrated/74.svg",
+    "sha256": "9abfa6b4091183f4be38427e4a52080a60040f45ab6c26bd9ddb97a71f93ca8e"
+  },
+  {
+    "id": 75,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/75.svg",
+    "sourceSha256": "2411d09fcaa9d5f7086e5d9e0346f23870246e065a1d73167a48d88b550c7aa5",
+    "output": "frontend/assets/illustrated/75.svg",
+    "sha256": "d5389abbd835d6a1cb601bbcfb2f39b32e88a904e3658b341cbc59e7af3c9072"
+  },
+  {
+    "id": 76,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/76.svg",
+    "sourceSha256": "fb87506cf51d6e1045a3e198ac7e339340b6a688a423f56e7191b3c63c30864f",
+    "output": "frontend/assets/illustrated/76.svg",
+    "sha256": "c436112644a2a7586dc5bd66c58c046d388339937da0712db7dd3374a25e6cd1"
+  },
+  {
+    "id": 77,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/77.svg",
+    "sourceSha256": "f76153a1110339eabdbb11040df4525a89e89f79ecbcecf87c9e3f6a927c70a2",
+    "output": "frontend/assets/illustrated/77.svg",
+    "sha256": "352cb85d9282ef07f8271b95e2ff33a2b09a45545f7e6f025e863a43afd9ed1b"
+  },
+  {
+    "id": 78,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/78.svg",
+    "sourceSha256": "e9f9daf0486a6078bfb649321cfd714eec9d6b845be84a759acb595a45a890c0",
+    "output": "frontend/assets/illustrated/78.svg",
+    "sha256": "063853450b2a30c4026da98642fc04bce7047ddabacbe6a00c844821980046a9"
+  },
+  {
+    "id": 79,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/79.svg",
+    "sourceSha256": "0c98e5b8f306b55e062aeaf911c6c8e6c83e3f0c5bf863cfc2566dbf591cd1b3",
+    "output": "frontend/assets/illustrated/79.svg",
+    "sha256": "714dda39b9e3829bc0ae07a3008e19c87595d78098ebd2d41c3fd1533e67ad7e"
+  },
+  {
+    "id": 80,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/80.svg",
+    "sourceSha256": "23ff38d8ac0dadc8ee82721d38ab34f0fcd19f751e498ef0f03ce0f6d0ac278e",
+    "output": "frontend/assets/illustrated/80.svg",
+    "sha256": "be71edf7bdbfacba784d8b3e949f4a35acd83a0b2b9fe5720e9d0d704b6fe4c1"
+  },
+  {
+    "id": 81,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/81.svg",
+    "sourceSha256": "c80cb8b321b234e3e3f697fbd8162396751159d2e7c5ce41993f3862e6153543",
+    "output": "frontend/assets/illustrated/81.svg",
+    "sha256": "6bc05228b53a4175b3949edfd402847a22e2c8aca88c8a3c50c006b3008e1cfd"
+  },
+  {
+    "id": 82,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/82.svg",
+    "sourceSha256": "c26a580a384ba3aedb4b929ecdada1becd47eafafcd251f7bf9ec68cc26a1c37",
+    "output": "frontend/assets/illustrated/82.svg",
+    "sha256": "5a329042ae64d519e512d496ccba2a25db36f76b85f1ae535f2a5a4ae0066319"
+  },
+  {
+    "id": 83,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/83.svg",
+    "sourceSha256": "7b9684abb90e5b63ddcba1e86f250f019fa225041c16b2e6365fcabf1e5d8d2f",
+    "output": "frontend/assets/illustrated/83.svg",
+    "sha256": "879161b83523208edbdfeda2ea1c1fd1e6ded78f995695ac487fb2992d660138"
+  },
+  {
+    "id": 84,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/84.svg",
+    "sourceSha256": "83a21565f1310890e708c6838d7200c908b93632f97e1dbc8eb2cd4eef3f704f",
+    "output": "frontend/assets/illustrated/84.svg",
+    "sha256": "ef702461a89f5b485614493190b3030a86e10ada0ea5d9abc5a7cff73062a84c"
+  },
+  {
+    "id": 85,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/85.svg",
+    "sourceSha256": "504f1949f5fdfe8147b440ee4cb51311a779b1441779f2ebf0a7bcc5ae47b78b",
+    "output": "frontend/assets/illustrated/85.svg",
+    "sha256": "824a9a5e4817f77b55ffe6c600735c46b0e21c8c1f4ac1ac8cae74d24b296c47"
+  },
+  {
+    "id": 86,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/86.svg",
+    "sourceSha256": "14bb18324ba4155458d1717d8beece1d30a7c843d51c2a5eb99c7323b673155c",
+    "output": "frontend/assets/illustrated/86.svg",
+    "sha256": "0265c573a0c870da3d663b08abe780d7bfc780a2f0e3ecb36ae4298abf2495b1"
+  },
+  {
+    "id": 87,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/87.svg",
+    "sourceSha256": "c0c9d6ef24533fdaadf1aafe1788e843182be746c06a04674f47b44bf3506c2a",
+    "output": "frontend/assets/illustrated/87.svg",
+    "sha256": "d5cbb3d820a89ef25dcc23258d5a5c675deed396ed574cb48221cbe5bce5353d"
+  },
+  {
+    "id": 88,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/88.svg",
+    "sourceSha256": "b5776bc949f966df85e4ad6f04f18e99a388978244ac9a9ffc1ae5840ec06dc7",
+    "output": "frontend/assets/illustrated/88.svg",
+    "sha256": "55aa398720de6ae0eada2c1f7e8694a2ce535ddd55869a8d272a7c01f929abda"
+  },
+  {
+    "id": 89,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/89.svg",
+    "sourceSha256": "b49f1afe7bbd53279d556dfb94eff8c7feb9cd29076154c0ae027401be2d4e7b",
+    "output": "frontend/assets/illustrated/89.svg",
+    "sha256": "aae9a060c01e39e064887ba2fd72d7518781f75a39bb44f7d4967597036d5f83"
+  },
+  {
+    "id": 90,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/90.svg",
+    "sourceSha256": "7f7fbf3d82a6e2ee2efc45ac188e8eb2294f9687c26db78647292a1602a2cddf",
+    "output": "frontend/assets/illustrated/90.svg",
+    "sha256": "b5d54491a8e12626724a15b6734ef44d6356845a11de426dd4e64a333a32bc41"
+  },
+  {
+    "id": 91,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/91.svg",
+    "sourceSha256": "818e994bb350fd1741158625e939f1a080e7fa074ef1f37ff6d0d5c3aac86ab8",
+    "output": "frontend/assets/illustrated/91.svg",
+    "sha256": "4b46a8bb8f808ec55119e411be4b30805f96a7a692519b6211abaaae5db766ed"
+  },
+  {
+    "id": 92,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/92.svg",
+    "sourceSha256": "a508194c55f3246b359ca1c9e6b167e91ab2a367b61e8e986b83cd05d3e061bd",
+    "output": "frontend/assets/illustrated/92.svg",
+    "sha256": "f632a1b025e8bd3d708b036431fd058ab23206405d1cc7fa38fa24d414e7b113"
+  },
+  {
+    "id": 93,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/93.svg",
+    "sourceSha256": "1c5f88ed6267ad49be500001e36e3e732321ee5b3b0b64f85b2257abcab349a3",
+    "output": "frontend/assets/illustrated/93.svg",
+    "sha256": "4bd6f7b937631360cb4862be0de89a5bfef74c158ca8d000df522e49d2a953f5"
+  },
+  {
+    "id": 94,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/94.svg",
+    "sourceSha256": "876fed1e977465d678463713988649e78dcd652d70b82ede457bd0d04743e0cc",
+    "output": "frontend/assets/illustrated/94.svg",
+    "sha256": "553e9792a5d62db8d49b03d3c50b9225f689345ed8d781be27d779db77c8753f"
+  },
+  {
+    "id": 95,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/95.svg",
+    "sourceSha256": "3c13b7906b881dcb6b273969649dc9e5f871da836fbff04c2a15d040fd7fb748",
+    "output": "frontend/assets/illustrated/95.svg",
+    "sha256": "38163ca5b864518b081bb6c6abeddf1207e99a9fd533b7cea6b4aa8716038956"
+  },
+  {
+    "id": 96,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/96.svg",
+    "sourceSha256": "c38f620283209e8f4cc2578178861ad99d1029964af7fd79e947d3d481696183",
+    "output": "frontend/assets/illustrated/96.svg",
+    "sha256": "15dc69f4c740fe7b21cad6e4c3b80157dee14b60c7710535dd273cc177ca5dca"
+  },
+  {
+    "id": 97,
+    "source": "Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/frontend/assets/portraits/97.svg",
+    "sourceSha256": "c152e01894e04d76490978842bec227811fcbd46075fe18c57f91ea49278eadb",
+    "output": "frontend/assets/illustrated/97.svg",
+    "sha256": "bf9e3e836f213ad40af69442a8382ac903931209a5d04d5d0a6f9bf067b3c240"
+  }
+]

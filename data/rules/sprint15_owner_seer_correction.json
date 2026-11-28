@@ -1,0 +1,13 @@
+{
+  "ruleId": "S15-OWNER-SEER-01",
+  "verificationStatus": "CONFIRMED",
+  "effectiveRuleset": "wolvesville-official-v1.3.2",
+  "legacyRuleset": "wolvesville-official-v1.3.1",
+  "source": {"document": "Sprint 15 owner correction in current project conversation", "localMirror": "data/rules/sprint15_owner_seer_correction.json", "lookupKey": "S15-OWNER-SEER-01"},
+  "exactRule": "Tiên Tri (#25) chỉ soi hào quang của người bị soi (Thiện, Ác, Không xác định), không biết nhân vật cụ thể. Tiên Tri Huyền Bí (#74) vẫn soi nhân vật cụ thể.",
+  "implementationStatus": "IMPLEMENTED_RESTRICTED",
+  "linkedSkillBranchIds": ["WV-CH25-S01"],
+  "relatedTestSpecIds": ["T-COV-03", "T-MC-04", "T-MC-33"],
+  "supersedes": ["data/character.json#25: exact-role interpretation", "prior P05 exact-role interpretation for #25", "Sprint 15 UX initial owner report"],
+  "scope": "New matches only; keep old event logs and in-progress legacy matches pinned to their original ruleset. All existing #74, #5, #20, and other character rules unchanged. No new distortion interactions are certified."
+}

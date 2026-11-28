@@ -1,0 +1,263 @@
+{
+  "version": "1.7.15-s15-deep-engine-wip",
+  "enabledRegistry": 12,
+  "newBackendVerified": 6,
+  "newBrowserAndBackendVerified": 6,
+  "records": [
+    {
+      "deck": "s15-deep-leader",
+      "characterIds": [
+        25,
+        48,
+        74
+      ],
+      "backend": true,
+      "browser": true,
+      "browserSuite": "browser_s15_deep_normal_leader_e2e.py",
+      "evidence": [
+        {
+          "deck": "s15-deep-leader",
+          "ids": [
+            25,
+            48,
+            74
+          ],
+          "side": "village",
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        },
+        {
+          "deck": "s15-deep-leader",
+          "ids": [
+            25,
+            48,
+            74
+          ],
+          "side": "enemy",
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        }
+      ],
+      "mode": "NORMAL_GAMEPLAY",
+      "fullBranchCertificate": false,
+      "alreadyCountedInA": true
+    },
+    {
+      "deck": "s15-deep-leader-snow",
+      "characterIds": [
+        9,
+        25,
+        48,
+        74
+      ],
+      "backend": true,
+      "browser": true,
+      "browserSuite": "browser_s15_deep_normal_leader_snow_e2e.py",
+      "evidence": [
+        {
+          "deck": "s15-deep-leader-snow",
+          "ids": [
+            9,
+            25,
+            48,
+            74
+          ],
+          "side": "village",
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        },
+        {
+          "deck": "s15-deep-leader-snow",
+          "ids": [
+            9,
+            25,
+            48,
+            74
+          ],
+          "side": "enemy",
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        }
+      ],
+      "mode": "NORMAL_GAMEPLAY",
+      "fullBranchCertificate": false,
+      "alreadyCountedInA": true
+    },
+    {
+      "deck": "s15-deep-knight-snow",
+      "characterIds": [
+        8,
+        9
+      ],
+      "backend": true,
+      "browser": true,
+      "browserSuite": "browser_s15_deep_normal_knight_snow_e2e.py",
+      "evidence": [
+        {
+          "deck": "s15-deep-knight-snow",
+          "ids": [
+            8,
+            9
+          ],
+          "side": "village",
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        },
+        {
+          "deck": "s15-deep-knight-snow",
+          "ids": [
+            8,
+            9
+          ],
+          "side": "enemy",
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        }
+      ],
+      "mode": "NORMAL_GAMEPLAY",
+      "fullBranchCertificate": false,
+      "alreadyCountedInA": true
+    },
+    {
+      "deck": "s15-deep-knight-snow-aura",
+      "characterIds": [
+        8,
+        9,
+        25
+      ],
+      "backend": true,
+      "browser": true,
+      "browserSuite": "browser_s15_deep_normal_knight_snow_aura_e2e.py",
+      "evidence": [
+        {
+          "deck": "s15-deep-knight-snow-aura",
+          "ids": [
+            8,
+            9,
+            25
+          ],
+          "side": "village",
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        },
+        {
+          "deck": "s15-deep-knight-snow-aura",
+          "ids": [
+            8,
+            9,
+            25
+          ],
+          "side": "enemy",
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        }
+      ],
+      "mode": "NORMAL_GAMEPLAY",
+      "fullBranchCertificate": false,
+      "alreadyCountedInA": true
+    },
+    {
+      "deck": "s15-deep-knight-snow-role",
+      "characterIds": [
+        8,
+        9,
+        74
+      ],
+      "backend": true,
+      "browser": true,
+      "browserSuite": "browser_s15_deep_normal_knight_snow_role_e2e.py",
+      "evidence": [
+        {
+          "deck": "s15-deep-knight-snow-role",
+          "ids": [
+            8,
+            9,
+            74
+          ],
+          "side": "village",
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        },
+        {
+          "deck": "s15-deep-knight-snow-role",
+          "ids": [
+            8,
+            9,
+            74
+          ],
+          "side": "enemy",
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        }
+      ],
+      "mode": "NORMAL_GAMEPLAY",
+      "fullBranchCertificate": false,
+      "alreadyCountedInA": true
+    },
+    {
+      "deck": "s15-deep-knight-snow-dual",
+      "characterIds": [
+        8,
+        9,
+        25,
+        74
+      ],
+      "backend": true,
+      "browser": true,
+      "browserSuite": "browser_s15_deep_normal_knight_snow_dual_e2e.py",
+      "evidence": [
+        {
+          "deck": "s15-deep-knight-snow-dual",
+          "ids": [
+            8,
+            9,
+            25,
+            74
+          ],
+          "side": "village",
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        },
+        {
+          "deck": "s15-deep-knight-snow-dual",
+          "ids": [
+            8,
+            9,
+            25,
+            74
+          ],
+          "side": "enemy",
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        }
+      ],
+      "mode": "NORMAL_GAMEPLAY",
+      "fullBranchCertificate": false,
+      "alreadyCountedInA": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+S07_BROWSER_PASS: two official roles server-assigned, private projections, real skill capability
+S07_BROWSER_PASS: action accepted but not shown as resolved or winner
+S07_BROWSER_PASS: certified elimination and winner after commit; UI, WS, reconnect, winner ACL
+S06_BROWSER_PASS browser_s07_e2e.py
+S06_BROWSER_PASS: UI room host selected official 3-seat peace-wolf deck; private role projections
+S06_BROWSER_PASS: night resolution -> dawn -> vote intake, two realtime clients
+S06_BROWSER_PASS: server accepted private ballot and official #79 skill; no early disclosure
+S06_BROWSER_PASS: PH-02 cancels vote, returns to next night; replay, privacy, reconnect, Codex intact
+S06_BROWSER_PASS browser_s06_e2e.py
+S06_BROWSER_ALL_2_PASS

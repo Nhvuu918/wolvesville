@@ -1,0 +1,10 @@
+E2E_SCHEDULER_WAIT exclusive 89456
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 36547
+E2E_RESOURCE start cpu "usage_usec 14161626440\nuser_usec 11693932069\nsystem_usec 2467694370\nnice_usec 7782111\nnr_periods 58959\nnr_throttled 25607\nthrottled_usec 1760853433\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 63868\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s15_protection_e2e.py default port 33231 db /tmp/wolvesville-s06-browser-jHicoo/test.sqlite
+S15_BROWSER_PASS
+S06_BROWSER_PASS browser_s15_protection_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 14209057443\nuser_usec 11732689181\nsystem_usec 2476368262\nnice_usec 7841237\nnr_periods 59154\nnr_throttled 25620\nthrottled_usec 1761287038\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 63868\noom 0\noom_kill 0\noom_group_kill 0"

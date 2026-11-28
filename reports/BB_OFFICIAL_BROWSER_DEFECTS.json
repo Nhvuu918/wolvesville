@@ -1,0 +1,27 @@
+{
+  "build": "1.7.21-s15-official-bb-wip",
+  "defects": [
+    {
+      "id": "WV-BR-2026-1125-01",
+      "suite": "browser_s15_normal_e2e.py",
+      "status": "OPEN_FAIL",
+      "scope": "1.3.3 Normal Gameplay, second scenario following aura-village PASS",
+      "expected": "completed=true, winner IDs exact, one .wv-winners DOM element",
+      "observed": "completed and winner IDs assertions passed; immediate DOM count assertion failed",
+      "rootCause": "NOT_CONFIRMED; asynchronous projection/render gap or harness timing plausible, not proven",
+      "evidence": "reports/s15-official-bb/browser-delivery-cert/1.3.3-browser_s15_normal_e2e.log",
+      "noRetryPromotion": true,
+      "releaseBlocking": true
+    }
+  ],
+  "baselineTimeouts": {
+    "suites": [
+      "browser_s15_normal_rescue_e2e.py",
+      "browser_s15_normal_guard_rescue_e2e.py"
+    ],
+    "status": "RETEST_PASS_BOTH",
+    "rootCause": "NOT_UNIQUELY_REPRODUCED; previous snow suite first scenario closed then timeout during second; guard suite printed victory before case end",
+    "changes": "Quiesce all polling, context lifecycle logs, faulthandler, unchanged 65s deadline",
+    "evidence": "reports/s15-official-bb/browser-delivery/"
+  }
+}

@@ -1,0 +1,3 @@
+(node:77237) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+LEGACY_QA_ARCHIVE_COMPATIBILITY PASS: previous order, open selection, v1.7.25 resolution, same representative and replay

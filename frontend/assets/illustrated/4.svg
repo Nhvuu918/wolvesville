@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="Người Buôn Bí">
+  <defs>
+    <radialGradient id="bg4" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#402e2a"/>
+      <stop offset="100%" stop-color="#161115"/>
+    </radialGradient>
+    <radialGradient id="halo4" cx="50%" cy="46%" r="44%">
+      <stop offset="0%" stop-color="#f4b86b" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#f4b86b" stop-opacity="0"/>
+    </radialGradient>
+    
+  </defs>
+  <rect width="240" height="240" rx="26" fill="url(#bg4)"/>
+  <path d="M20 226 V96 Q20 20 120 16 Q220 20 220 96 V226 Z" fill="none" stroke="#f4b86b" stroke-opacity="0.45" stroke-width="1.8"/>
+  <circle cx="120" cy="112" r="88" fill="url(#halo4)"/>
+  <g class="chibi-sparkle" fill="#f4b86b">
+    <path d="M44 48 L46 42 L48 48 L54 50 L48 52 L46 58 L44 52 L38 50 Z"/>
+    <path d="M192 56 L193.5 51 L195 56 L200 57.5 L195 59 L193.5 64 L192 59 L187 57.5 Z"/>
+  </g>
+  
+    <g class="chibi-body">
+      
+      
+      <path d="M92 134 L82 174 L106 168 L134 168 L158 174 L148 134 Z" fill="#3a2724" stroke="#1d1424" stroke-width="2.4" stroke-linejoin="round"/>
+      <rect x="103" y="172" width="12" height="24" rx="4" fill="#e8e2d8" stroke="#1d1424" stroke-width="2.2"/>
+      <rect x="125" y="172" width="12" height="24" rx="4" fill="#e8e2d8" stroke="#1d1424" stroke-width="2.2"/>
+      <rect x="101" y="191" width="15" height="9" rx="4" fill="#1d1424"/>
+      <rect x="124" y="191" width="15" height="9" rx="4" fill="#1d1424"/>
+      <path d="M101 160 L139 160 L141 178 L124 178 L120 170 L116 178 L99 178 Z" fill="#3a2724" stroke="#1d1424" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M99 132 L141 132 L143 163 L97 163 Z" fill="#72493b" stroke="#1d1424" stroke-width="2.6" stroke-linejoin="round"/>
+      <path d="M106 132 L120 148 L134 132" fill="#f4eee6" stroke="#1d1424" stroke-width="2"/>
+      <polygon points="116,138 124,138 122,150 118,150" fill="#f4b86b" stroke="#1d1424" stroke-width="1.6"/>
+      <rect x="98" y="156" width="44" height="5" fill="#2c2136" stroke="#1d1424" stroke-width="1.6"/>
+      <rect x="116" y="155" width="8" height="7" rx="1.5" fill="#f4b86b" stroke="#1d1424" stroke-width="1.4"/>
+      <path d="M99 135 L78 154 L86 162 L101 147 Z" fill="#72493b" stroke="#1d1424" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M141 135 L162 154 L154 162 L139 147 Z" fill="#72493b" stroke="#1d1424" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M74 92 Q64 70 86 58 Q104 46 120 54 Q136 46 154 58 Q176 70 166 92 Q170 112 154 114 L86 114 Q70 112 74 92 Z" fill="#66473d" stroke="#1d1424" stroke-width="2.6"/>
+      <path d="M82 94 Q82 62 120 60 Q158 62 158 94 Q157 128 120 132 Q83 128 82 94 Z" fill="#f5e6dc" stroke="#1d1424" stroke-width="2.8"/>
+      
+        <path d="M93 89 L111 91 M129 91 L147 87" stroke="#1d1424" stroke-width="2.3" stroke-linecap="round"/>
+        <g class="chibi-eyes">
+          <ellipse cx="102" cy="100" rx="7.8" ry="6.8" fill="#1b1424"/>
+          <ellipse cx="102" cy="101" rx="5.8" ry="4.8" fill="#eb984c"/>
+          <circle cx="103" cy="100" r="2.8" fill="#171022"/><circle cx="99" cy="97" r="2.1" fill="#fff"/>
+          <ellipse cx="138" cy="100" rx="7.8" ry="6.8" fill="#1b1424"/>
+          <ellipse cx="138" cy="101" rx="5.8" ry="4.8" fill="#eb984c"/>
+          <circle cx="139" cy="100" r="2.8" fill="#171022"/><circle cx="135" cy="97" r="2.1" fill="#fff"/>
+        </g><path d="M114 116 Q123 118 129 112" fill="none" stroke="#6e404e" stroke-width="2.2" stroke-linecap="round"/>
+      
+      
+      <g fill="none" stroke="#f4b86b" stroke-width="2.2"><circle cx="138" cy="101" r="11.5"/><path d="M149 104 Q154 118 148 130" stroke-width="1.4"/></g>
+      <path d="M80 88 Q90 66 106 82 Q120 64 134 82 Q150 66 160 88 Q154 56 120 54 Q86 56 80 88 Z" fill="#66473d" stroke="#1d1424" stroke-width="2.4"/>
+      <g><ellipse cx="120" cy="64" rx="58" ry="11" fill="#3a2724" stroke="#1d1424" stroke-width="2.6"/><path d="M88 62 Q92 34 120 36 Q148 34 152 62 Z" fill="#72493b" stroke="#1d1424" stroke-width="2.6"/><path d="M90 56 Q120 62 150 56" fill="none" stroke="#f4b86b" stroke-width="3"/></g>
+      <g class="chibi-prop"><circle cx="178" cy="150" r="18" fill="#f4b86b" opacity="0.28"/><rect x="169" y="138" width="18" height="22" rx="4" fill="#ffd98a" stroke="#1d1424" stroke-width="2.4"/><path d="M167 138 L178 130 L189 138 Z" fill="#3a2f44" stroke="#1d1424" stroke-width="2"/></g>
+    </g>
+  <rect x="86" y="208" width="68" height="20" rx="10" fill="#120d1f" fill-opacity="0.82" stroke="#f4b86b" stroke-opacity="0.55" stroke-width="1.2"/>
+  
+</svg>

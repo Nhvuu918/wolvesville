@@ -1,0 +1,4 @@
+
+> wolvesville-sprint04-official-rule-intelligence@0.6.0 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+

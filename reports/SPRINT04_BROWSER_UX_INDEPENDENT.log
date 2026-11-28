@@ -1,0 +1,10 @@
+PASS Browser UX: independently authenticated real sessions have simple navigation, no unsupported mock links
+PASS Browser UX: approved 97-character Wheel/Grid unchanged, player-facing labels simplified
+PASS Browser UX: settings show actual local preferences without prototype data reset/import
+PASS Browser UX: real lobby across 1920/1366/768 widths, no horizontal overflow
+PASS Browser UX: world-map lobby uses backend room count, not three prototype rooms
+PASS Browser UX: two clients join server room, room states translated, host permissions intact
+PASS Browser UX: disconnect banner and reconnect state reconciliation
+Browser UX mobile viewport metrics: {'scroll': 390, 'client': 390}
+PASS Browser UX: logout expires only own session, preserves other client
+PASS Browser UX: no page JavaScript errors

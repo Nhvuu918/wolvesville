@@ -1,0 +1,160 @@
+{
+  "version": "1.6.0-s14-recovery",
+  "scope": "Restricted QA sessions only; competitive NO-GO",
+  "metricR": {
+    "baseline": 18,
+    "executableCharacters": 27,
+    "totalCharacters": 97,
+    "newCharacters": [
+      23,
+      32,
+      36,
+      50,
+      52,
+      68,
+      78,
+      84,
+      88
+    ],
+    "ids": [
+      5,
+      8,
+      9,
+      11,
+      16,
+      17,
+      20,
+      23,
+      24,
+      25,
+      31,
+      32,
+      33,
+      34,
+      36,
+      50,
+      52,
+      59,
+      66,
+      67,
+      68,
+      74,
+      76,
+      78,
+      79,
+      84,
+      88
+    ]
+  },
+  "metricF": {
+    "fullyImplemented": 0,
+    "certified": false
+  },
+  "metricS": {
+    "inheritedTechnicalMinimum": 19,
+    "newVerifiedAdapterIds": [
+      "official.32.shoot",
+      "official.36.fireball",
+      "official.67.sword",
+      "official.78.meteor",
+      "official.52.solo-dog",
+      "official.23.shield",
+      "official.84.silence",
+      "official.50.numb",
+      "official.68.mark",
+      "official.88.pin"
+    ],
+    "exactRatio": null,
+    "certified": false,
+    "reason": "Composite audit rows are not atomic official branches; no denominator claimed"
+  },
+  "metricA": 8,
+  "completedDecks": [
+    "8,25",
+    "8,28",
+    "8,9,25",
+    "8,9,28",
+    "8,25,28",
+    "8,9,25,28",
+    "8,25,68",
+    "8,25,88"
+  ],
+  "metricB": 6,
+  "metricC": 0,
+  "evidence": [
+    {
+      "id": 32,
+      "skill": "official.32.shoot",
+      "restart": true,
+      "replay": true
+    },
+    {
+      "id": 36,
+      "skill": "official.36.fireball",
+      "restart": true,
+      "replay": true
+    },
+    {
+      "id": 67,
+      "skill": "official.67.sword",
+      "restart": true,
+      "replay": true
+    },
+    {
+      "id": 78,
+      "skill": "official.78.meteor",
+      "restart": true,
+      "replay": true
+    },
+    {
+      "id": 52,
+      "skill": "official.52.solo-dog",
+      "restart": true,
+      "replay": true
+    },
+    {
+      "id": 23,
+      "skill": "official.23.shield",
+      "restart": true,
+      "replay": true
+    },
+    {
+      "id": 84,
+      "skill": "official.84.silence",
+      "restart": true,
+      "replay": true
+    },
+    {
+      "id": 50,
+      "skill": "official.50.numb",
+      "restart": true,
+      "replay": true
+    },
+    {
+      "id": 68,
+      "skill": "official.68.mark",
+      "restart": true,
+      "replay": true,
+      "completedDeck": [
+        8,
+        25,
+        68
+      ]
+    },
+    {
+      "id": 88,
+      "skill": "official.88.pin",
+      "restart": true,
+      "replay": true,
+      "completedDeck": [
+        8,
+        25,
+        88
+      ]
+    }
+  ],
+  "qa": {
+    "newTestsExit": 0,
+    "newTestCount": 16
+  }
+}

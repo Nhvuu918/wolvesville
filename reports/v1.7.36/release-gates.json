@@ -1,0 +1,1257 @@
+{
+  "version": "1.7.36",
+  "sourceFingerprint": "0edd9aa78cd86efb60bfc56fc22417699ce2b956cfcf0d9a00a17fe9654f8447",
+  "activeRuleVersion": "wolvesville-official-v1.3.3",
+  "proposedRuleVersion": "wolvesville-official-v1.3.4",
+  "state": "CANDIDATE",
+  "ownerPolicyApproved": true,
+  "ownerDecisionCount": 18,
+  "activationAuthorized": false,
+  "readyForApproval": false,
+  "obligations": [
+    {
+      "id": "PACK-01",
+      "policy": "unanimity, full target set, KEEP, eligible-at-lock, no deadline",
+      "scope": [
+        9,
+        25,
+        48,
+        74,
+        76
+      ],
+      "implementation": "backend/src/experimental/owner-bb-v2/pack.ts",
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_pack_e2e.py",
+        "B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL",
+        "B/B owner final: representative RNG is server-bound and waiting survives restart"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": null,
+      "historicalStatus": "IMPLEMENTED_BOUNDED_LIVE_QA",
+      "currentBackendPass": [
+        "B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL",
+        "B/B owner final: representative RNG is server-bound and waiting survives restart"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_pack_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL",
+        "B/B owner final: representative RNG is server-bound and waiting survives restart"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_pack_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ]
+    },
+    {
+      "id": "PACK-02",
+      "policy": "SAME/RESOLVE, #48 only sole living wolf entitlement",
+      "scope": [
+        25,
+        48,
+        74,
+        77
+      ],
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_retaliation_e2e.py",
+        "B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": null,
+      "historicalStatus": "IMPLEMENTED_BOUNDED_LIVE_QA",
+      "currentBackendPass": [
+        "B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_retaliation_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_retaliation_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ]
+    },
+    {
+      "id": "PACK-03",
+      "policy": "BB-REP-NEW-01=B: one server RNG all-player permutation, immutable per-game archive, filter lawful current participants, no initial priority",
+      "implementation": "backend/src/experimental/owner-bb-v2/representative-order.ts",
+      "tests": [
+        "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+        "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+        "B/B owner final: representative RNG is server-bound and waiting survives restart"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "note": "Old QA archives keep old policy; replay checks stored tape. No migration or retroactive change.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": null,
+      "historicalStatus": "IMPLEMENTED_BOUNDED_LIVE_QA",
+      "currentBackendPass": [
+        "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+        "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+        "B/B owner final: representative RNG is server-bound and waiting survives restart"
+      ],
+      "currentBrowser": [],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+        "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+        "B/B owner final: representative RNG is server-bound and waiting survives restart"
+      ],
+      "prior_currentBrowser": []
+    },
+    {
+      "id": "TRAP-01",
+      "policy": "#25 aura, #74 role, #5 exact judgment; two placements, persistent, valid action only",
+      "scope": [
+        5,
+        10,
+        25,
+        74
+      ],
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_trap_e2e.py",
+        "B/B live trap: delayed valid use, private typed results, two placements, consumption and restart",
+        "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": null,
+      "historicalStatus": "IMPLEMENTED_BOUNDED_LIVE_QA",
+      "currentBackendPass": [
+        "B/B live trap: delayed valid use, private typed results, two placements, consumption and restart",
+        "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_trap_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "B/B live trap: delayed valid use, private typed results, two placements, consumption and restart",
+        "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_trap_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ]
+    },
+    {
+      "id": "TRAP-02",
+      "policy": "BB-04=B direct death, guard cooldown",
+      "scope": [
+        5,
+        10,
+        25,
+        31,
+        74
+      ],
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_guard_e2e.py",
+        "B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "IMPLEMENTED_STAGED_QA_ONLY",
+      "historicalStatus": "IMPLEMENTED_STAGED_QA_ONLY",
+      "currentBackendPass": [
+        "B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_guard_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_guard_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ]
+    },
+    {
+      "id": "TRAP-03",
+      "policy": "BB-05=B cross-window #29, PH-01, resource consumption, delayed public death, once-only mark",
+      "scope": [
+        8,
+        10,
+        25,
+        29
+      ],
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_witch_e2e.py",
+        "browser_s15_bb_cross_window_e2e.py",
+        "B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory",
+        "B/B live Witch: poison-only consumes trap and potion, later rescue is normal",
+        "B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)",
+        "B/B owner final: separate rescue and poison windows persist one nightly trap group",
+        "B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn",
+        "Stability BB: empty split windows retain mark, later poison-only window consumes once"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "IMPLEMENTED_STAGED_QA_ONLY",
+      "historicalStatus": "IMPLEMENTED_STAGED_QA_ONLY",
+      "currentBackendPass": [
+        "B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory",
+        "B/B live Witch: poison-only consumes trap and potion, later rescue is normal",
+        "B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)",
+        "B/B owner final: separate rescue and poison windows persist one nightly trap group",
+        "B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn",
+        "Stability BB: empty split windows retain mark, later poison-only window consumes once"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_witch_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s15_bb_cross_window_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory",
+        "B/B live Witch: poison-only consumes trap and potion, later rescue is normal",
+        "B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)",
+        "B/B owner final: separate rescue and poison windows persist one nightly trap group",
+        "B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn",
+        "Stability BB: empty split windows retain mark, later poison-only window consumes once"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_witch_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s15_bb_cross_window_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ]
+    },
+    {
+      "id": "TRAP-04",
+      "policy": "same-night placement/activation, resource/cooldown and real phase dependencies",
+      "implementation": "live-profile.ts: staged night1 placement and later execution for guard/witch; backend/src/official/revival.ts; backend/src/engine/service.ts; backend/src/experimental/owner-bb-v2/night-action-group.ts",
+      "status": "PARTIAL",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "Trapped actor/target and wolf revival retained; S22 third-faction revival in [8,25,26,28] separately verified, not trap + third-faction combined. Exclusions in live games, multi-window and complex chains remain.",
+      "tests": [],
+      "historicalStatus": "BLOCKED_IMPLEMENTATION_AND_ACCEPTANCE",
+      "currentBackendPass": [
+        "S17 TRAP-04: placement before same-night inspection uses existing phase priority and consumes once",
+        "S20 DC-TRAP-02: same-night placement precedes accepted revival; no duplicate death or revival",
+        "S20 DC-TRAP-02: trapped medium fails revival, consumes mark and use once; invalid action and restart",
+        "S21 VH73: wolf dies, medium revives same identity with remaining trap uses, re-elimination and replay"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s17_trap_revival_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s20_owner_trap_e2e.py",
+          "version": "1.3.3+qa-dc-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s21_wolf_revival_e2e.py",
+          "version": "1.3.3+qa-dc-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "S17 TRAP-04: placement before same-night inspection uses existing phase priority and consumes once",
+        "S20 DC-TRAP-02: same-night placement precedes accepted revival; no duplicate death or revival",
+        "S20 DC-TRAP-02: trapped medium fails revival, consumes mark and use once; invalid action and restart",
+        "S21 VH73: wolf dies, medium revives same identity with remaining trap uses, re-elimination and replay"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s17_trap_revival_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s20_owner_trap_e2e.py",
+          "version": "1.3.3+qa-dc-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s21_wolf_revival_e2e.py",
+          "version": "1.3.3+qa-dc-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ]
+    },
+    {
+      "id": "TRAP-05",
+      "policy": "persistent marks after death/revival, VH73/VH76 and death-chain, PH-01",
+      "implementation": "no supported combined #10/#26 revival deck; verify mark state and mapping under legal execution; backend/src/official/revival.ts; backend/src/engine/service.ts; backend/src/experimental/owner-bb-v2/night-action-group.ts",
+      "status": "PARTIAL",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "Trapped actor/target and wolf revival retained; S22 third-faction revival in [8,25,26,28] separately verified, not trap + third-faction combined. Exclusions in live games, multi-window and complex chains remain.",
+      "tests": [],
+      "historicalStatus": "BLOCKED_IMPLEMENTATION_AND_ACCEPTANCE",
+      "currentBackendPass": [
+        "S17 TRAP-05: mark persists through death, public medium revival, next-night inspection and restart",
+        "S20 DC-TRAP-02: same-night placement precedes accepted revival; no duplicate death or revival",
+        "S20 DC-TRAP-02: trapped medium fails revival, consumes mark and use once; invalid action and restart",
+        "S21 VH73: wolf dies, medium revives same identity with remaining trap uses, re-elimination and replay"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s17_trap_revival_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s20_owner_trap_e2e.py",
+          "version": "1.3.3+qa-dc-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s21_wolf_revival_e2e.py",
+          "version": "1.3.3+qa-dc-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "S17 TRAP-05: mark persists through death, public medium revival, next-night inspection and restart",
+        "S20 DC-TRAP-02: same-night placement precedes accepted revival; no duplicate death or revival",
+        "S20 DC-TRAP-02: trapped medium fails revival, consumes mark and use once; invalid action and restart",
+        "S21 VH73: wolf dies, medium revives same identity with remaining trap uses, re-elimination and replay"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s17_trap_revival_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s20_owner_trap_e2e.py",
+          "version": "1.3.3+qa-dc-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s21_wolf_revival_e2e.py",
+          "version": "1.3.3+qa-dc-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ]
+    },
+    {
+      "id": "TRAP-06",
+      "policy": "additional source-authorized mappings, BB-PENDING-03=B, including actual eligible cross-window actors",
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "note": "Do not invent inversion for sedative or other unlisted skill. Inventory source-backed mapping before opening domain.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "Do not invent inversion for sedative or other unlisted skill. Inventory source-backed mapping before opening domain.",
+      "tests": [],
+      "historicalStatus": "BLOCKED_IMPLEMENTATION_AND_ACCEPTANCE",
+      "currentBackendPass": [],
+      "currentBrowser": [],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [],
+      "prior_currentBrowser": []
+    },
+    {
+      "id": "PACK-04",
+      "policy": "Extra attack grants from source #93 (verified bounded mixed), #17/#21/#86 still unverified; VH74 cap two",
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "note": "Do not grant a second target merely because #48 remains with another living wolf. #93 conversion grant and both targets verified on exact mixed profile; other grants need source-bound runtime and branch acceptance.",
+      "tests": [
+        "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+        "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative",
+        "browser_s15_bb_mixed_e2e.py"
+      ],
+      "exitCriteria": "Verify each applicable source grant with alive/eligible changes, full-set consensus, max two, SAME/RESOLVE, restart, replay and authorized target projection; verify denial without a grant.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "blocker": "Do not grant a second target merely because #48 remains with another living wolf. #93 conversion grant and both targets verified on exact mixed profile; other grants need source-bound runtime and branch acceptance.",
+      "historicalStatus": "PARTIAL_LIVE_QA",
+      "currentBackendPass": [
+        "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+        "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_mixed_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.36/browser-regression/1.3.3+qa-bb-browser_s15_bb_mixed_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_mixed_e2e.py",
+          "durationMs": 22594
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+        "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s15_bb_mixed_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.35/browser-critical/1.3.3+qa-bb-browser_s15_bb_mixed_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_mixed_e2e.py",
+          "durationMs": 22018
+        }
+      ]
+    },
+    {
+      "id": "PACK-05",
+      "policy": "Converted eligible wolf retains original all-player rank. BB-REP-NEW-01=B approved; #93 conversion after #94 dies.",
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "note": "Mixed live [48,74,77,84,93,94] verified if both backend and browser pass. #93 conversion at day resolution, no artificial transition. Same-night mid-window eligibility change and final victory after representative death remain unclosed; fail closed if set changes after lock. Pre-resolution direct target-list, error and receipt leak addressed by public-seat choices and server-only validation. Hidden-ineligible request counts as a response but retains the previous valid choice; no eligibility change. Inference from actual attack/no-attack and third-party redirection remain unverified. General mixed privacy is not release-certified.",
+      "tests": [
+        "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+        "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+        "browser_s15_bb_conversion_e2e.py",
+        "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+        "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative",
+        "browser_s15_bb_mixed_e2e.py"
+      ],
+      "mixedLiveVerified": true,
+      "exitCriteria": "Mixed #93 and initial wolf actual lawful conversion; both rank cases; lawful membership changes while collecting and locked; final winner closure after retaliation; target projection must not expose unauthorized faction; SQLite restart, replay and browser acceptance.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "blocker": "S21 candidate revalidates latest selections including temporarily ineligible authors on supplied trusted snapshots; only state-level evidence. No live mid-window transition and private phase progression unresolved.",
+      "historicalStatus": "PARTIAL_LIVE_QA",
+      "currentBackendPass": [
+        "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+        "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+        "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+        "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative",
+        "S21 PACK KEEP privacy counterexample: two identical receipts but unavoidable distinct lock outcomes",
+        "S21 PACK KEEP: revoke invalid two-target selection while author temporarily ineligible; never resurrect it"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_conversion_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s15_bb_mixed_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.36/browser-regression/1.3.3+qa-bb-browser_s15_bb_mixed_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_mixed_e2e.py",
+          "durationMs": 22594
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+        "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+        "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+        "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative",
+        "S21 PACK KEEP privacy counterexample: two identical receipts but unavoidable distinct lock outcomes",
+        "S21 PACK KEEP: revoke invalid two-target selection while author temporarily ineligible; never resurrect it"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s15_bb_conversion_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s15_bb_mixed_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.35/browser-critical/1.3.3+qa-bb-browser_s15_bb_mixed_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_mixed_e2e.py",
+          "durationMs": 22018
+        }
+      ]
+    },
+    {
+      "id": "RELEASE-01",
+      "policy": "immutable 1.3.2/1.3.3 archive bindings, separate effective rule registry, migration and replay checks",
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "BLOCKED_OFFICIAL_ACTIVATION_PATH_AND_ACCEPTANCE",
+      "tests": [],
+      "historicalStatus": "BLOCKED_OFFICIAL_ACTIVATION_PATH_AND_ACCEPTANCE",
+      "currentBackendPass": [],
+      "currentBrowser": [],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [],
+      "prior_currentBrowser": []
+    },
+    {
+      "id": "RELEASE-02",
+      "policy": "authorization, REST/WS, SQLite restart, current critical browser suite and human QA evidence",
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "exitCriteria": "All mandatory current release browser obligations without unresolved failure, bounded privacy/ACL and persistence evidence, actual owner QA feedback, no implicit production activation.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "blocker": "PENDING_FINAL_ACCEPTANCE",
+      "tests": [
+        "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged",
+        "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+        "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events"
+      ],
+      "historicalStatus": "PENDING_FINAL_ACCEPTANCE",
+      "currentBackendPass": [
+        "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged",
+        "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+        "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events"
+      ],
+      "currentBrowser": [],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged",
+        "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+        "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events"
+      ],
+      "prior_currentBrowser": []
+    },
+    {
+      "id": "PACK-PRIVACY-01",
+      "policy": "No secret faction-dependent target list, receipt, error or visible metadata before resolution; server still validates actual entitlement",
+      "scope": [
+        48,
+        74,
+        77,
+        84,
+        93,
+        94
+      ],
+      "implementation": "backend/src/experimental/owner-bb-v2/pack.ts; live-profile.ts; runtime.ts; frontend/integration.js",
+      "tests": [
+        "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+        "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events",
+        "browser_s15_bb_mixed_e2e.py"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01 Articles 1,2,7; VH62/VH68; #93/#94; BB-REP-NEW-01=B",
+      "blocker": "Global revision/timing, secret revocation lock/wait oracle, post-resolution and third-party scope. No live activation of new KEEP policy.",
+      "exitCriteria": "Verify direct and outcome-dependent privacy across all in-domain target/redirect cases without changing approved eligibility; all observers, reconnect, replay and authorized events; no secret status metadata.",
+      "historicalStatus": "PARTIAL_LIVE_QA",
+      "currentBackendPass": [
+        "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+        "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_mixed_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.36/browser-regression/1.3.3+qa-bb-browser_s15_bb_mixed_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_mixed_e2e.py",
+          "durationMs": 22594
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.36/acceptance.json",
+        "reports/v1.7.36/browser-results.json",
+        "reports/v1.7.36/focused.log"
+      ],
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+        "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s15_bb_mixed_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.35/browser-critical/1.3.3+qa-bb-browser_s15_bb_mixed_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_mixed_e2e.py",
+          "durationMs": 22018
+        }
+      ]
+    }
+  ],
+  "additionalGates": [
+    {
+      "decisionId": "DC-SOUL-01",
+      "choice": "A",
+      "ownerApproved": true,
+      "sourceVerification": "PARTIAL_DESIGNATED_SCOPE",
+      "ruleProvenance": [
+        "data/character.json#8/#23",
+        "data/rules/official_merged_118.json LIFE-01/VH06/VH82/PH-01",
+        "data/rules/skills.json WV-CH23-S01/S02/S03",
+        "reports/v1.7.29/DECISION_CARDS.md"
+      ],
+      "code": [
+        "backend/src/official/soul-shooter.ts",
+        "backend/src/engine/validate.ts",
+        "backend/src/official/solo-rules.ts",
+        "backend/src/engine/service.ts",
+        "backend/src/official/capabilities.ts"
+      ],
+      "scope": [
+        "existing QA [8,23,25,36], official.8.night-kill only; one nightly use, no finite ammo"
+      ],
+      "backendPass": [
+        "S20 DC-SOUL-01: designated #8 blind attempt on dead seat consumes nightly slot; no extra death, finite fire still restricted"
+      ],
+      "browser": [
+        {
+          "suite": "browser_s18_soul_second_death_e2e.py",
+          "version": "1.3.3",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "status": "PARTIAL",
+      "privacy": "PARTIAL; no release-level assertion",
+      "replay": "Scoped live tests verify replay",
+      "blocker": "No contradiction for existing #8 QA. Complete designated list not established by owner text or skill registry.",
+      "exitCriteria": "All source-authorized interaction classes and privacy/replay/browser obligations, plus explicit release approval.",
+      "priorEvidenceVersion": "1.7.35",
+      "prior_backendPass": [
+        "S20 DC-SOUL-01: designated #8 blind attempt on dead seat consumes nightly slot; no extra death, finite fire still restricted"
+      ],
+      "prior_browser": [
+        {
+          "suite": "browser_s18_soul_second_death_e2e.py",
+          "version": "1.3.3",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ]
+    },
+    {
+      "decisionId": "DC-SOUL-02",
+      "choice": "A",
+      "ownerApproved": true,
+      "sourceVerification": "SOURCE_VERIFIED_POLICY",
+      "ruleProvenance": [
+        "data/character.json#23",
+        "data/rules/skills.json WV-CH23-S03",
+        "data/rules/official_merged_118.json VH06/VH82/LIFE-01/PH-01/VH03",
+        "data/rules/WV-RULE-DECISION-2026-11-25-001.json QD-01",
+        "reports/v1.7.29/DECISION_CARDS.md"
+      ],
+      "code": [
+        "backend/src/official/s13-mechanics.ts",
+        "backend/src/experimental/owner-dc-policy.ts",
+        "backend/src/engine/service.ts"
+      ],
+      "scope": [
+        "QA [8,23,25,36] with persisted WV-DC-2026-11-25-A policy; public-living non-self target, existing two-bullet/night-only restriction"
+      ],
+      "backendPass": [
+        "S20 DC-SOUL-02: friendly kill then enemy kill, victory after second shot; legacy policy remains pinned",
+        "S20 DC-SOUL-02: friendly shot spends one bullet, shield blocks, unshielded villager dies, retry and restart"
+      ],
+      "browser": [
+        {
+          "suite": "browser_s20_owner_soul_e2e.py",
+          "version": "1.3.3+qa-dc",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "status": "HISTORICAL_LIVE_QA_PASS_FRESH_BROWSER_INCOMPLETE",
+      "privacy": "PARTIAL; no release-level assertion",
+      "replay": "Scoped live tests verify replay",
+      "blocker": "#23 describes goal of eliminating wolves and third factions, not an explicit friendly-fire immunity; owner choice settles mistaken targeting. QD-01 includes dead village winners.",
+      "exitCriteria": "All source-authorized interaction classes and privacy/replay/browser obligations, plus explicit release approval.",
+      "priorEvidenceVersion": "1.7.35",
+      "prior_backendPass": [
+        "S20 DC-SOUL-02: friendly kill then enemy kill, victory after second shot; legacy policy remains pinned",
+        "S20 DC-SOUL-02: friendly shot spends one bullet, shield blocks, unshielded villager dies, retry and restart"
+      ],
+      "prior_browser": [
+        {
+          "suite": "browser_s20_owner_soul_e2e.py",
+          "version": "1.3.3+qa-dc",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ]
+    },
+    {
+      "decisionId": "DC-TRAP-02",
+      "choice": "A",
+      "ownerApproved": true,
+      "sourceVerification": "SOURCE_VERIFIED_POLICY",
+      "ruleProvenance": [
+        "data/character.json#10/#26",
+        "data/rules/official_merged_118.json VH73/VH76/PH-01/VH08",
+        "data/rules/owner_bb_final_decisions_20261125.json DEC-BT-02/BB-04/BB-05/BB-PENDING-03",
+        "reports/v1.7.29/DECISION_CARDS.md"
+      ],
+      "code": [
+        "backend/src/official/revival.ts",
+        "backend/src/engine/service.ts",
+        "backend/src/experimental/owner-bb-v2/night-action-group.ts"
+      ],
+      "scope": [
+        "QA [8,10,25,26], persisted WV-DC-2026-11-25-A policy; valid prior or same-night trap with placement priority 50, revival priority 200"
+      ],
+      "backendPass": [
+        "S20 DC-TRAP-02: same-night placement precedes accepted revival; no duplicate death or revival",
+        "S20 DC-TRAP-02: trapped medium fails revival, consumes mark and use once; invalid action and restart",
+        "S21 VH73: wolf dies, medium revives same identity with remaining trap uses, re-elimination and replay"
+      ],
+      "browser": [
+        {
+          "suite": "browser_s20_owner_trap_e2e.py",
+          "version": "1.3.3+qa-dc-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s21_wolf_revival_e2e.py",
+          "version": "1.3.3+qa-dc-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "status": "HISTORICAL_LIVE_QA_PASS_FRESH_BROWSER_INCOMPLETE",
+      "privacy": "PARTIAL; no release-level assertion",
+      "replay": "Scoped live tests verify replay",
+      "blocker": "VH73 supersedes original village-only revival and VH76 excludes 46/47/53. BB-04 concerns protection/rescue, not revival of a deceased player; DC-TRAP-02 establishes specific failure semantics.",
+      "exitCriteria": "All source-authorized interaction classes and privacy/replay/browser obligations, plus explicit release approval.",
+      "priorEvidenceVersion": "1.7.35",
+      "prior_backendPass": [
+        "S20 DC-TRAP-02: same-night placement precedes accepted revival; no duplicate death or revival",
+        "S20 DC-TRAP-02: trapped medium fails revival, consumes mark and use once; invalid action and restart",
+        "S21 VH73: wolf dies, medium revives same identity with remaining trap uses, re-elimination and replay"
+      ],
+      "prior_browser": [
+        {
+          "suite": "browser_s20_owner_trap_e2e.py",
+          "version": "1.3.3+qa-dc-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s21_wolf_revival_e2e.py",
+          "version": "1.3.3+qa-dc-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ]
+    },
+    {
+      "decisionId": "DC-PACK-KEEP",
+      "choice": "A",
+      "ownerApproved": true,
+      "sourceVerification": "POLICY_CONSISTENT_PRIVACY_DESIGN_PENDING",
+      "ruleProvenance": [
+        "data/rules/owner_bb_final_decisions_20261125.json DEC-BT-01/BB-01-BLANK/BB-02/BB-03/BB-PENDING-01",
+        "data/rules/owner_bb_rep_new_01_20261125.json",
+        "data/rules/official_merged_118.json VH54/VH74/VH52",
+        "reports/v1.7.29/DECISION_CARDS.md"
+      ],
+      "code": [
+        "backend/src/experimental/owner-bb-v2/pack.ts",
+        "backend/src/experimental/owner-dc-policy.ts"
+      ],
+      "scope": [
+        "candidate lockPack state-level logic, persisted revoked selection revisions; NOT activated in live pack QA"
+      ],
+      "backendPass": [
+        "S20 DC-PACK-KEEP: blinded own receipt is unchanged when target becomes secretly invalid (before lock only)",
+        "S20 DC-PACK-KEEP: revoked latest selection stays revoked through blank, restored eligibility and restart; explicit replacement only",
+        "S21 PACK KEEP privacy counterexample: two identical receipts but unavoidable distinct lock outcomes",
+        "S21 PACK KEEP: revoke invalid two-target selection while author temporarily ineligible; never resurrect it"
+      ],
+      "browser": [],
+      "status": "PARTIAL",
+      "privacy": "PARTIAL; no release-level assertion",
+      "replay": "State-level serialization only, not live replay",
+      "blocker": "No conflict with KEEP; a secretly revoked valid submission can alter phase progression vs a still-valid selection. Observable lock/wait oracle is unresolved. No new public reason is authorized.",
+      "exitCriteria": "All source-authorized interaction classes and privacy/replay/browser obligations, plus explicit release approval.",
+      "priorEvidenceVersion": "1.7.35",
+      "prior_backendPass": [
+        "S20 DC-PACK-KEEP: blinded own receipt is unchanged when target becomes secretly invalid (before lock only)",
+        "S20 DC-PACK-KEEP: revoked latest selection stays revoked through blank, restored eligibility and restart; explicit replacement only",
+        "S21 PACK KEEP privacy counterexample: two identical receipts but unavoidable distinct lock outcomes",
+        "S21 PACK KEEP: revoke invalid two-target selection while author temporarily ineligible; never resurrect it"
+      ],
+      "prior_browser": []
+    },
+    {
+      "id": "SHARED-23",
+      "status": "PARTIAL",
+      "ruleSource": "character.json#23, VH06, VH82, LIFE-01, DC-SOUL-01/02",
+      "code": "backend/src/official/soul-shooter.ts; backend/src/official/s13-mechanics.ts; backend/src/engine/service.ts",
+      "test": "tests/sprint20-owner-decisions.test.mjs; tests/browser_s20_owner_soul_e2e.py",
+      "evidence": "focused.log; browser-results.json",
+      "blocker": "Finite blind attack designation; broader protection, wolf, link/death-chain, secret status, full privacy; no FULL certificate.",
+      "priorEvidenceVersion": "1.7.35"
+    },
+    {
+      "id": "FULL-26",
+      "status": "PARTIAL",
+      "ruleSource": "VH73/VH76, character.json#26/#10/#8, PH-01/VH03, DC-TRAP-02",
+      "code": "backend/src/official/s13-mechanics.ts; backend/src/official/revival.ts; backend/src/engine/service.ts",
+      "test": "tests/sprint21-revival.test.mjs; tests/browser_s21_wolf_revival_e2e.py; tests/sprint22-dual-swap.test.mjs; tests/browser_s22_jester_revival_e2e.py",
+      "evidence": "focused.log; browser-results.json",
+      "blocker": "Three factions represented in bounded QA decks; S22 #28 revival and real hanging. Exclusion roles, complex links, full authorized domain and endgame interactions remain.",
+      "priorEvidenceVersion": "1.7.35"
+    },
+    {
+      "id": "S22-DUAL-INSPECTION",
+      "status": "PARTIAL",
+      "ruleSource": "character.json#37/#74, VH14, S15-OWNER-SEER-01",
+      "code": "backend/src/official/inspection-rules.ts; backend/src/official/inspection-effects.ts; backend/src/official/swap-rules.ts",
+      "currentBackendPass": [
+        "S22 #25/#74/#37: shared transposition preserves typed private inspection, expiry, restart and actual hanging"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s22_dual_swap_e2e.py",
+          "version": "1.3.3",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.36/browser-regression/1.3.3-browser_s22_dual_swap_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s22_dual_swap_e2e.py",
+          "durationMs": 16996
+        }
+      ],
+      "blocker": "QA deck only; no disguise, transformation, all noise, attack exchange or full global evidence.",
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "S22 #25/#74/#37: shared transposition preserves typed private inspection, expiry, restart and actual hanging"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s22_dual_swap_e2e.py",
+          "version": "1.3.3",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ]
+    },
+    {
+      "id": "S22-THIRD-FACTION-REVIVAL",
+      "status": "PARTIAL",
+      "ruleSource": "VH73, VH76, VH03, character.json#28",
+      "code": "backend/src/official/revival-capability.ts; backend/src/engine/elimination-chain.ts",
+      "currentBackendPass": [
+        "S22 VH73 #26: third faction #28 night death, revival, real hanging victory and closed death ledger"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s22_jester_revival_e2e.py",
+          "version": "1.3.3",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "blocker": "QA deck only, all factions represented across limited decks but forbidden-role privacy and link/death-chain classes remain.",
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "S22 VH73 #26: third faction #28 night death, revival, real hanging victory and closed death ledger"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s22_jester_revival_e2e.py",
+          "version": "1.3.3",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ]
+    },
+    {
+      "id": "FULL-36",
+      "status": "PARTIAL",
+      "blocker": "Protection classes, SHARED-23, full target, death-chain, revival, privacy and browser obligations retained.",
+      "priorEvidenceVersion": "1.7.35"
+    },
+    {
+      "id": "NORMAL-HANDOFF",
+      "status": "CLOSED_TESTED_SCOPE",
+      "ruleSource": "ROOM-03, V02/V03",
+      "code": "frontend/integration.js",
+      "test": "tests/sprint19-handoff-ui.test.mjs; tests/browser_s15_normal_e2e.py",
+      "evidence": "acceptance.json; browser-results.json",
+      "priorEvidenceVersion": "1.7.35"
+    },
+    {
+      "id": "BACKEND",
+      "status": "PASS",
+      "evidence": "acceptance.json",
+      "exitCriteria": "Full inventory; previous S25 failure corrected; all other inherited results unchanged; new tests PASS",
+      "priorEvidenceVersion": "1.7.35"
+    },
+    {
+      "id": "BROWSER",
+      "status": "INCOMPLETE_OR_FAIL",
+      "evidence": "browser-results.json",
+      "exitCriteria": "All 120 obligations",
+      "priorEvidenceVersion": "1.7.35"
+    },
+    {
+      "id": "HUMAN_QA",
+      "status": "PENDING",
+      "evidence": "HUMAN_QA.md",
+      "exitCriteria": "Actual owner feedback.",
+      "priorEvidenceVersion": "1.7.35"
+    },
+    {
+      "id": "PG_LIVE",
+      "status": "PENDING",
+      "evidence": "Backend skips",
+      "exitCriteria": "Live PostgreSQL for production.",
+      "priorEvidenceVersion": "1.7.35"
+    },
+    {
+      "id": "FULL-84",
+      "status": "PARTIAL",
+      "evidence": "FULL_CONTRACT_CLOSURE.md; focused.log; browser-results.json",
+      "blocker": "Living cap at grant tested; no live recruitment/sacrifice caller, cult victory and rights pending; death/lock/revival combinations and other group profiles not closed.",
+      "priorEvidenceVersion": "1.7.35"
+    },
+    {
+      "id": "FULL-79",
+      "status": "PARTIAL",
+      "evidence": "FULL_CONTRACT_CLOSURE.md; focused.log",
+      "blocker": "Unchanged: multiwolf authorized audience, Q13-09 Director mission and Oscar, real co-queued day actions.",
+      "priorEvidenceVersion": "1.7.35"
+    },
+    {
+      "id": "SYSTEM-GROUP-ACL",
+      "status": "FIXTURE_TRANSPORT_PASS",
+      "ruleProvenance": "VH57/VH59/VH78, PRIV-01, REL-02",
+      "currentBackendPass": [
+        "S24 group ACL HTTP/WS: trusted grant fixture, no public fallback, restricted refresh, SQLite restart and replay",
+        "S24 group ACL: muted member, frozen audience, hidden ledger positions, restart and replay"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s24_group_transport_e2e.py",
+          "version": "1.3.3+acl-fixture",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.36/browser-regression/1.3.3+acl-fixture-browser_s24_group_transport_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s24_group_transport_e2e.py",
+          "durationMs": 15165
+        }
+      ],
+      "blocker": "No actual gameplay recruitment producer. S25 rejects independent win links and wolf grants; no #90 admission or new FULL.",
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "S24 group ACL HTTP/WS: trusted grant fixture, no public fallback, restricted refresh, SQLite restart and replay",
+        "S24 group ACL: muted member, frozen audience, hidden ledger positions, restart and replay"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s24_group_transport_e2e.py",
+          "version": "1.3.3+acl-fixture",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.35/browser-critical/1.3.3+acl-fixture-browser_s24_group_transport_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s24_group_transport_e2e.py",
+          "durationMs": 15012
+        }
+      ]
+    },
+    {
+      "id": "VISUAL-INTEGRATION",
+      "status": "PARTIAL",
+      "ruleProvenance": "PRIV-01, VH57, VH68; Sprint07 animation contract; current authoritative projection",
+      "currentBackendPass": [
+        "S25 graphics: 97 illustrated portraits exist, immutable old paths remain available, no active SVG or remote links",
+        "S25 visual: transition uses authorized committed projection, no secret payload or fabricated winner"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s25_visual_e2e.py",
+          "version": "1.3.3",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.36/browser-regression/1.3.3-browser_s25_visual_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s25_visual_e2e.py",
+          "durationMs": 14893
+        },
+        {
+          "suite": "browser_s25_themes_e2e.py",
+          "version": "1.3.3",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.36/browser-regression/1.3.3-browser_s25_themes_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s25_themes_e2e.py",
+          "durationMs": 8395
+        }
+      ],
+      "blocker": "S26 scoped phase banner, seat-name contrast and stale vote receipt verified only if current mirror suite PASS; broader HUD, chat, toast, accessibility, all themes and full replay UX remain unverified.",
+      "priorEvidenceVersion": "1.7.35",
+      "prior_currentBackendPass": [
+        "S25 graphics: 97 illustrated portraits exist, immutable old paths remain available, no active SVG or remote links",
+        "S25 visual: transition uses authorized committed projection, no secret payload or fabricated winner"
+      ],
+      "prior_currentBrowser": [
+        {
+          "suite": "browser_s25_visual_e2e.py",
+          "version": "1.3.3",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.35/browser-visual/1.3.3-browser_s25_visual_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s25_visual_e2e.py",
+          "durationMs": 15582
+        },
+        {
+          "suite": "browser_s25_themes_e2e.py",
+          "version": "1.3.3",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.35/browser-visual/1.3.3-browser_s25_themes_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s25_themes_e2e.py",
+          "durationMs": 9153
+        }
+      ]
+    },
+    {
+      "id": "S26-MIRROR",
+      "status": "NORMAL_BOUNDED_VERIFIED",
+      "ruleProvenance": "character.json#35, VH11, WIN-03, VH03, character.json#25/#74",
+      "currentBackendPass": [
+        "S26 normal mirror: private reflection, guard, second scan, both victory routes, restart and replay"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s26_mirror_normal_e2e.py",
+          "version": "1.3.3",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.36/browser-mirror/1.3.3-browser_s26_mirror_normal_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s26_mirror_normal_e2e.py",
+          "durationMs": 39923
+        }
+      ],
+      "blocker": "No FULL: multi-victim memory, compound P05 interference, transformations and remaining role-wide contracts."
+    }
+  ]
+}

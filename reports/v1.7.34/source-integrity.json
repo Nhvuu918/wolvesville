@@ -1,0 +1,24 @@
+{
+  "inputFiles": 4162,
+  "missing": [],
+  "modifiedInheritedFiles": [
+    "README.md",
+    "backend/src/engine/replay.ts",
+    "backend/src/engine/service.ts",
+    "backend/src/engine/visibility.ts",
+    "backend/src/game/coordinator.ts",
+    "backend/src/official/public-chat-access.ts",
+    "data/rule-intelligence/source_inventory.json",
+    "frontend/integration.js",
+    "package.json",
+    "shared/contracts/index.ts"
+  ],
+  "historicalReportsUnchanged": 3288,
+  "rulesAndCharactersUnchanged": 29,
+  "newCode": [
+    "backend/src/official/group-chat.ts",
+    "tests/sprint24-group-acl.test.mjs",
+    "tests/fixtures/s24-group-archive.mjs",
+    "tests/browser_s24_group_transport_e2e.py"
+  ]
+}

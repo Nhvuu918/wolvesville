@@ -1,0 +1,118 @@
+{
+  "version": "1.7.5-s15-deep-wip",
+  "nodes": [
+    {
+      "id": "preliminary-death",
+      "status": "RESTRICTED",
+      "implementedFor": [
+        29
+      ],
+      "potentialUnlocks": [
+        26,
+        45,
+        51,
+        87,
+        97
+      ],
+      "blockers": [
+        "multiple attacks",
+        "Q13-07 prolonged life/hibernation",
+        "VH05 x2",
+        "NV16 linked rescue"
+      ]
+    },
+    {
+      "id": "redirect",
+      "status": "RESTRICTED",
+      "implementedFor": [
+        63,
+        85
+      ],
+      "potentialUnlocks": [
+        7,
+        37,
+        55,
+        77,
+        94
+      ],
+      "blockers": [
+        "VH56 cycles",
+        "VH61 immune recipient",
+        "multiple shields/attack sources"
+      ]
+    },
+    {
+      "id": "linked-death",
+      "status": "RESTRICTED",
+      "implementedFor": [
+        15
+      ],
+      "potentialUnlocks": [
+        27,
+        41,
+        42,
+        53,
+        62
+      ],
+      "blockers": [
+        "VH65 immunity/protection",
+        "REL-01/02/03",
+        "Q13-03 restoration",
+        "night death and rescue integration"
+      ]
+    },
+    {
+      "id": "faction-checkpoint",
+      "status": "RESTRICTED",
+      "implementedFor": [
+        28,
+        79
+      ],
+      "potentialUnlocks": [
+        3,
+        69,
+        93,
+        94
+      ],
+      "blockers": [
+        "general wolf bite",
+        "village terminal predicate",
+        "dead faction membership and simultaneous predicates",
+        "actual #55/#19 nonlethal hanging"
+      ]
+    },
+    {
+      "id": "alignment-transition",
+      "status": "NOT_IMPLEMENTED_THIS_BATCH",
+      "potentialUnlocks": [
+        18,
+        57,
+        69,
+        93,
+        94
+      ],
+      "blockers": [
+        "current role mode + group ACL + pack eligibility + victory membership"
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "redirect",
+      "preliminary-death"
+    ],
+    [
+      "preliminary-death",
+      "linked-death"
+    ],
+    [
+      "linked-death",
+      "faction-checkpoint"
+    ],
+    [
+      "alignment-transition",
+      "faction-checkpoint"
+    ]
+  ],
+  "note": "Edges are engineering dependencies; potentialUnlocks are not R or FULL claims."
+}

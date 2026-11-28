@@ -1,0 +1,107 @@
+{
+  "checkpoint": "FULL50-UNIVERSAL-01",
+  "sourceFingerprint": "d77300af6c8ac3b1e092e17e3288cf94291ea11959833ab1c5aeea3dd92bbf38",
+  "baseZipSha256": "67b7123303aea1a39bfc558dd72ae9c1e9690d18fea45b7878070bc0c65c0ce3",
+  "baseFingerprint": "1e9e3b01c5d30571b79cf779f318dda485c69023ff4fd948686b24d4a254ff3c",
+  "ownerResponses": 48,
+  "clarifications": 2,
+  "knownPendingOwnerClarifications": 0,
+  "directorDecisions": 2,
+  "characterRegistry": 97,
+  "historicalDecisions": 118,
+  "legacySpecifications": 207,
+  "legacyOwnerChoices": 25,
+  "historicalF": 1,
+  "newFull": 0,
+  "freshFull": 1,
+  "full64": "NOT_MET",
+  "targetFull": 50,
+  "normalDecksHistorical": 16,
+  "developmentNormalConfigurations": [
+    [
+      8,
+      25,
+      31
+    ],
+    [
+      8,
+      31,
+      74
+    ],
+    [
+      8,
+      25,
+      31,
+      74
+    ],
+    [
+      8,
+      25,
+      31,
+      64
+    ],
+    [
+      8,
+      31,
+      64,
+      74
+    ],
+    [
+      8,
+      25,
+      31,
+      64,
+      74
+    ]
+  ],
+  "developmentNormalApiVerified": 6,
+  "developmentNormalBrowserVerified": 1,
+  "moduleRoleIds": [
+    8,
+    25,
+    27,
+    29,
+    31,
+    64,
+    74,
+    97
+  ],
+  "admissibleCompositionSubsets": 88,
+  "focusedBackend": {
+    "pass": 10,
+    "fail": 0,
+    "skip": 0,
+    "log": "reports/FULL50-UNIVERSAL-01/universal-api.log"
+  },
+  "monolithic": {
+    "command": "WV_ARCHIVED_RULE_REGRESSION=1 node --test --test-concurrency=4 tests/*.test.mjs",
+    "exitCode": 0,
+    "status": "PASS",
+    "counts": {
+      "tests": 516,
+      "pass": 505,
+      "fail": 0,
+      "skipped": 11,
+      "cancelled": 0
+    },
+    "log": "reports/FULL50-UNIVERSAL-01/backend-full.log"
+  },
+  "freshBrowserPass": [
+    "browser_full50_universal_normal_e2e.py",
+    "browser_s15_approved_pin_e2e.py",
+    "browser_s15_approved_revenge_e2e.py"
+  ],
+  "freshBrowserPassCount": 3,
+  "activation": "CONDITIONAL_INTERNAL_DEVELOPMENT_ONLY",
+  "scope": "LIFE-MODULES-1-GUARD-OBSERVATION",
+  "defaultEnabled": false,
+  "activeRuleset": "wolvesville-official-v1.3.3",
+  "candidateRuleset": "wolvesville-official-v1.3.4",
+  "competitive": "NO-GO",
+  "privacy": "PARTIAL",
+  "postgresLive": "PENDING",
+  "nativeMac": "NOT_VERIFIED",
+  "build": "PASS",
+  "sourceVerification": "PASS",
+  "noNewCertificates": true
+}

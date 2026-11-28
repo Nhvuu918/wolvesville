@@ -1,0 +1,168 @@
+TAP version 13
+# (node:13778) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Codex: official character.json is byte-identical and contains 97 unique character IDs
+ok 1 - Codex: official character.json is byte-identical and contains 97 unique character IDs
+  ---
+  duration_ms: 2.018982
+  type: 'test'
+  ...
+# Subtest: Codex: rejects incomplete, duplicated, malformed and unauthorized team data instead of showing a false 97
+ok 2 - Codex: rejects incomplete, duplicated, malformed and unauthorized team data instead of showing a false 97
+  ---
+  duration_ms: 0.765854
+  type: 'test'
+  ...
+# Subtest: Codex: view model uses official name, faction, aura and description without generated rules
+ok 3 - Codex: view model uses official name, faction, aura and description without generated rules
+  ---
+  duration_ms: 0.180983
+  type: 'test'
+  ...
+# Subtest: Codex: Vietnamese accent-insensitive name search, correct team filtering and predictable sorting
+ok 4 - Codex: Vietnamese accent-insensitive name search, correct team filtering and predictable sorting
+  ---
+  duration_ms: 8.035868
+  type: 'test'
+  ...
+# Subtest: Codex: every counter derives from filtered and loaded data
+ok 5 - Codex: every counter derives from filtered and loaded data
+  ---
+  duration_ms: 0.575217
+  type: 'test'
+  ...
+# Subtest: Codex: production player detail uses actual ability text and no JSON/raw/debug tags, no ID beside name
+ok 6 - Codex: production player detail uses actual ability text and no JSON/raw/debug tags, no ID beside name
+  ---
+  duration_ms: 0.494405
+  type: 'test'
+  ...
+# Subtest: Codex: Wheel keeps no more than 12 cards, Grid is responsive, reduced-motion is supported
+ok 7 - Codex: Wheel keeps no more than 12 cards, Grid is responsive, reduced-motion is supported
+  ---
+  duration_ms: 0.392111
+  type: 'test'
+  ...
+# Subtest: Codex: static source and presentation extras are served by same-origin backend, with no arbitrary source access
+ok 8 - Codex: static source and presentation extras are served by same-origin backend, with no arbitrary source access
+  ---
+  duration_ms: 45.965346
+  type: 'test'
+  ...
+# Subtest: Codex: approved visual baseline is preserved as archived references, with presentation additive stylesheet
+ok 9 - Codex: approved visual baseline is preserved as archived references, with presentation additive stylesheet
+  ---
+  duration_ms: 0.417279
+  type: 'test'
+  ...
+# (node:13779) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: UX: server error codes map to Vietnamese without exposing backend code or arbitrary messages
+ok 10 - UX: server error codes map to Vietnamese without exposing backend code or arbitrary messages
+  ---
+  duration_ms: 0.887758
+  type: 'test'
+  ...
+# Subtest: UX: game and room statuses use player language; unknown states do not print engine enums
+ok 11 - UX: game and room statuses use player language; unknown states do not print engine enums
+  ---
+  duration_ms: 0.160883
+  type: 'test'
+  ...
+# Subtest: UX: approved Codex is intact while navigation uses only Bách khoa terminology
+ok 12 - UX: approved Codex is intact while navigation uses only Bách khoa terminology
+  ---
+  duration_ms: 0.359371
+  type: 'test'
+  ...
+# Subtest: UX: lobby map and directory use same backend room list, not prototype default rooms
+ok 13 - UX: lobby map and directory use same backend room list, not prototype default rooms
+  ---
+  duration_ms: 0.266081
+  type: 'test'
+  ...
+# Subtest: UX: unavailable mock ranking, history and overview are hidden in authenticated main navigation
+ok 14 - UX: unavailable mock ranking, history and overview are hidden in authenticated main navigation
+  ---
+  duration_ms: 0.228174
+  type: 'test'
+  ...
+# Subtest: UX: settings do not present local prototype JSON export/import as server account backup
+ok 15 - UX: settings do not present local prototype JSON export/import as server account backup
+  ---
+  duration_ms: 0.208344
+  type: 'test'
+  ...
+# Subtest: UX: private results are projected from server, and technical action IDs stay in markup attributes only
+ok 16 - UX: private results are projected from server, and technical action IDs stay in markup attributes only
+  ---
+  duration_ms: 0.396648
+  type: 'test'
+  ...
+# Subtest: UX: reconnect rehydrates server state and frontend discards stale revisions
+ok 17 - UX: reconnect rehydrates server state and frontend discards stale revisions
+  ---
+  duration_ms: 0.120852
+  type: 'test'
+  ...
+# Subtest: UX: action acceptance is not a resolved result; game text remains instant
+ok 18 - UX: action acceptance is not a resolved result; game text remains instant
+  ---
+  duration_ms: 0.55078
+  type: 'test'
+  ...
+# Subtest: UX: static backend serves new assets same-origin without exposing arbitrary source
+ok 19 - UX: static backend serves new assets same-origin without exposing arbitrary source
+  ---
+  duration_ms: 55.549311
+  type: 'test'
+  ...
+# Subtest: UX: test:03:codex uses separate explicit test paths, not concatenated filenames
+ok 20 - UX: test:03:codex uses separate explicit test paths, not concatenated filenames
+  ---
+  duration_ms: 0.488266
+  type: 'test'
+  ...
+# (node:13781) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S24 group ACL: muted member, frozen audience, hidden ledger positions, restart and replay
+ok 21 - S24 group ACL: muted member, frozen audience, hidden ledger positions, restart and replay
+  ---
+  duration_ms: 66.741334
+  type: 'test'
+  ...
+# Subtest: S24 group ACL HTTP/WS: trusted grant fixture, no public fallback, restricted refresh, SQLite restart and replay
+ok 22 - S24 group ACL HTTP/WS: trusted grant fixture, no public fallback, restricted refresh, SQLite restart and replay
+  ---
+  duration_ms: 857.788558
+  type: 'test'
+  ...
+# (node:13811) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S25 visual: transition uses authorized committed projection, no secret payload or fabricated winner
+ok 23 - S25 visual: transition uses authorized committed projection, no secret payload or fabricated winner
+  ---
+  duration_ms: 1.941996
+  type: 'test'
+  ...
+# Subtest: S25 graphics: 97 illustrated portraits exist, immutable old paths remain available, no active SVG or remote links
+ok 24 - S25 graphics: 97 illustrated portraits exist, immutable old paths remain available, no active SVG or remote links
+  ---
+  duration_ms: 3.708488
+  type: 'test'
+  ...
+# Subtest: S25 cult grant boundary: Q13-08 and wolf rejection before group mutation
+ok 25 - S25 cult grant boundary: Q13-08 and wolf rejection before group mutation
+  ---
+  duration_ms: 40.189564
+  type: 'test'
+  ...
+1..25
+# tests 25
+# suites 0
+# pass 25
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1131.00699

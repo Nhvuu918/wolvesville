@@ -1,0 +1,3 @@
+# Sprint 13 — macOS Apple Silicon
+
+Requires Node.js >=22.13, npm, Python 3, and Playwright + Chromium for browser suites. In extracted source: `npm install`, `npm run verify:source`, `npm run build`, `npm run rules:build`, `npm run test:13:new`, `npm run test:13:all`. For local test-only server: `cp .env.example .env`, configure a separate SQLite data path, set `WV_OFFICIAL_RULE_TEST_MODE=1` **only for development**, `npm run dev`; visit the local URL configured by the server. Do not deploy competitive without additional gates. For browser tests install browser dependencies, then `npm run test:browser:13` (new skills) or `npm run test:browser:12:all` (inherited 14 suites). PostgreSQL requires a running isolated test database and connection settings; skip is not PASS.

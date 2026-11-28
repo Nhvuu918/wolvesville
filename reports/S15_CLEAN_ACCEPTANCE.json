@@ -1,0 +1,194 @@
+{
+  "version": "1.7.0-s15-wip",
+  "baselineFiles": 920,
+  "inheritedPathsPreserved": true,
+  "inheritedTestsByteIdentical": true,
+  "changedBaselinePaths": [
+    "README.md",
+    "backend/src/engine/service.ts",
+    "backend/src/engine/vote-adjudicator.ts",
+    "backend/src/feedback/projector.ts",
+    "backend/src/official/capabilities.ts",
+    "backend/src/official/s13-mechanics.ts",
+    "data/rule-intelligence/source_inventory.json",
+    "frontend/integration.js",
+    "package.json"
+  ],
+  "candidateCRC": "PASS",
+  "candidateCleanExtraction": "PASS",
+  "testedPayloadFiles": 322,
+  "sourceIntegrity": {
+    "status": "PASS",
+    "exit": 0
+  },
+  "build": {
+    "status": "PASS",
+    "exit": 0
+  },
+  "rulesBuild": {
+    "status": "PASS",
+    "exit": 0
+  },
+  "backend": {
+    "pass": 235,
+    "fail": 0,
+    "skipped": 11,
+    "total": 246,
+    "exit": 0,
+    "log": "reports/s15-clean/backend.log"
+  },
+  "newSkillTests": {
+    "pass": 8,
+    "fail": 0,
+    "exit": 0
+  },
+  "metrics": {
+    "exit": 0,
+    "log": "reports/s15-clean/metrics.log"
+  },
+  "postgresLive": "PENDING",
+  "browser": [
+    {
+      "suite": "browser_s12_attack_e2e.py",
+      "exit": 0,
+      "status": "CLEANUP_WARNING",
+      "log": "reports/s15-qa/browser_s12_attack_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_s11_voting_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_s11_voting_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_s11_seer_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_s11_seer_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_s10_gameplay_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_s10_gameplay_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_s09_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_s09_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_s08_gameplay_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_s08_gameplay_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_s07_e2e.py",
+      "exit": 0,
+      "status": "CLEANUP_WARNING",
+      "log": "reports/s15-qa/browser_s07_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_s06_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_s06_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_s05_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_s05_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_lobby_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_lobby_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_codex_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_codex_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_demo_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_demo_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_ux_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_ux_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_s13_skills_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_s13_skills_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_s14_gameplay_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-qa/browser_s14_gameplay_e2e.py.log",
+      "scope": "workspace same implementation"
+    },
+    {
+      "suite": "browser_s14_transport_regression.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-clean/transport.log",
+      "scope": "clean extraction"
+    },
+    {
+      "suite": "browser_s15_protection_e2e.py",
+      "exit": 1,
+      "status": "FAIL",
+      "log": "reports/s15-clean/protection.log",
+      "scope": "clean extraction"
+    },
+    {
+      "suite": "browser_s15_voting_information_e2e.py",
+      "exit": 1,
+      "status": "FAIL",
+      "log": "reports/s15-clean/voting-info.log",
+      "scope": "clean extraction"
+    }
+  ],
+  "browserCounts": {
+    "PASS": 15,
+    "FAIL": 2,
+    "CLEANUP_WARNING": 2,
+    "PENDING/INCOMPLETE": 0,
+    "INCOMPLETE": 0
+  },
+  "competitive": "NO-GO",
+  "release": "WIP"
+}

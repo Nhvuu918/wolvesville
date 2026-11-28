@@ -1,0 +1,80 @@
+{
+  "version": "1.7.8-s15-closure-wip",
+  "records": [
+    {
+      "id": "CLOSURE-01",
+      "classification": "LOGICALLY_DERIVED",
+      "sources": [
+        "character.json#9",
+        "character.json#88",
+        "VH65",
+        "Ma_Soi_Quy_Tac_Da_Chot_Va_De_Xuat.xlsx / 04 Char nguon / row 89 (NV91)"
+      ],
+      "premises": [
+        "#88 actual death triggers marked victim death",
+        "VH65 allows valid protection or immunity to stop linked death",
+        "#9 absorbs one night attack over two nights, persists after creator death"
+      ],
+      "conclusion": "In admitted deck 8,9,28,88, an active #9 layer stops the night death-follow and is consumed; expired or daytime layer does not stop it.",
+      "exceptions": [
+        "Only single snow layer; competing protections and revival not certified"
+      ],
+      "tests": [
+        "S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester",
+        "S15 closure primary shield prevents Hunter death and follow; next night mark may be renewed",
+        "S15 closure snow shield persists after owner dies and is consumed once",
+        "S15 closure snow protection expires before the third night Hunter follow",
+        "S15 closure night-only snow protection cannot block daytime Hunter follow"
+      ]
+    },
+    {
+      "id": "CLOSURE-02",
+      "classification": "LOGICALLY_DERIVED",
+      "sources": [
+        "character.json#33",
+        "character.json#88",
+        "VH03",
+        "VH65"
+      ],
+      "premises": [
+        "#33 actually hanged may choose one villager to kill",
+        "#88 reacts to actual killing or hanging",
+        "VH03 closes current event chain before checking winners"
+      ],
+      "conclusion": "In the all-other-villager deck 25,33,74,88, revenge that kills Hunter triggers current mark before victory; Hunter secondary death of #33 does not count as hanging.",
+      "exceptions": [
+        "No mixed-team selection or stale mark lifetime inference",
+        "No additional team victory"
+      ],
+      "tests": [
+        "S15 closure revenge kills Hunter and follows pinned villager before closing original chain",
+        "S15 closure Hunter hanging pulls wolf as secondary without opening revenge or duplicating death"
+      ]
+    },
+    {
+      "id": "CLOSURE-03",
+      "classification": "ENGINEERING_INTERPRETATION",
+      "sources": [
+        "VH03",
+        "VH06",
+        "VH82",
+        "character.json#8",
+        "character.json#15",
+        "character.json#58"
+      ],
+      "premises": [
+        "Full chain before win",
+        "Current admitted domains have no resurrection"
+      ],
+      "conclusion": "Reuse explicit sole survivor candidate facts; require authoritative single elimination and latest completed chain closure for each final death, reject unresolved preliminary/revenge state.",
+      "exceptions": [
+        "No new eligibility for decks",
+        "No resurrection ledger certification",
+        "No village predicate"
+      ],
+      "tests": [
+        "S15 closure death ledger rejects missing, duplicated and reopened death chains before victory"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+
+> wolvesville-sprint01-engine-kernel@0.1.0 demo
+> npm run build && node scripts/demo.mjs
+
+
+> wolvesville-sprint01-engine-kernel@0.1.0 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+(node:3991) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Submit: { status: 'ACCEPTED', actionId: 'protect', duplicate: false }
+Submit: { status: 'ACCEPTED', actionId: 'attack', duplicate: false }
+Resolve: { resolved: 2, cancelled: 0, randomDraws: 0, revision: 6 }
+Player-safe view: {
+  "gameId": "demo-game",
+  "roomId": "room-demo",
+  "phase": "NIGHT_RESOLVE",
+  "round": 1,
+  "revision": 6,
+  "completed": false,
+  "players": [
+    {
+      "playerId": "p1",
+      "publicReportedDead": false,
+      "self": {
+        "initialCharacterId": 1,
+        "currentCharacterId": 1,
+        "currentFaction": "soi",
+        "life": "ALIVE",
+        "resources": {},
+        "skillLocks": []
+      }
+    },
+    {
+      "playerId": "p2",
+      "publicReportedDead": false
+    },
+    {
+      "playerId": "p3",
+      "publicReportedDead": false
+    }
+  ]
+}
+Replay verified: true events: 15 draws: 0
+NOTE: fixture.* is an isolated technical demonstration, NOT official Wolvesville character abilities.

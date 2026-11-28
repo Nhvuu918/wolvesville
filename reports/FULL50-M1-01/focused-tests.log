@@ -1,0 +1,60 @@
+TAP version 13
+# (node:809) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: FULL50 candidate: sacrificed follower keeps win entitlement but no live group access
+ok 1 - FULL50 candidate: sacrificed follower keeps win entitlement but no live group access
+  ---
+  duration_ms: 2428.244435
+  type: 'test'
+  ...
+# (node:810) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: FULL50 candidate: Cupid dead, living pair night chat and pair-only victory
+ok 2 - FULL50 candidate: Cupid dead, living pair night chat and pair-only victory
+  ---
+  duration_ms: 1894.591018
+  type: 'test'
+  ...
+# (node:814) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S27 cult gameplay: recruitment, mute group ACL, preserved role, private chat, restart and living cult victory
+ok 3 - S27 cult gameplay: recruitment, mute group ACL, preserved role, private chat, restart and living cult victory
+  ---
+  duration_ms: 1632.461968
+  type: 'test'
+  ...
+# Subtest: S27 cult gameplay: independent target failure, single attempt, private generic feedback and leader death chain
+ok 4 - S27 cult gameplay: independent target failure, single attempt, private generic feedback and leader death chain
+  ---
+  duration_ms: 1910.384862
+  type: 'test'
+  ...
+# Subtest: S27 cult gameplay: same-night recruitment before sacrifice, final deaths, no membership restoration or fabricated winner
+ok 5 - S27 cult gameplay: same-night recruitment before sacrifice, final deaths, no membership restoration or fabricated winner
+  ---
+  duration_ms: 1103.663681
+  type: 'test'
+  ...
+# (node:817) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: RC01 T-COV-64: public pseudo-death neither kills Cupid partner nor spends bell; wake then real linked deaths
+ok 6 - RC01 T-COV-64: public pseudo-death neither kills Cupid partner nor spends bell; wake then real linked deaths
+  ---
+  duration_ms: 2697.508617
+  type: 'test'
+  ...
+# Subtest: RC01 LIFE-02: seed limits, self-target rejection, hanging sleep, second seed and true death
+ok 7 - RC01 LIFE-02: seed limits, self-target rejection, hanging sleep, second seed and true death
+  ---
+  duration_ms: 5092.840309
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8039.724722

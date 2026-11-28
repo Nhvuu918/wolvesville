@@ -1,0 +1,155 @@
+{
+  "version": "1.7.18-s15-owner-bb-finalization-wip",
+  "baseRuleset": "wolvesville-official-v1.3.3",
+  "profile": "owner-bb-candidate-v2",
+  "sourceContract": "reports/OWNER_BB_COMPLETION_CONTRACTS.json",
+  "officialFullCertificatesAdded": [],
+  "candidateContracts": [
+    {
+      "characterId": 10,
+      "scope": "Unpublished, bounded; candidate PASS is not official FULL or S",
+      "obligations": [
+        {
+          "id": "TRAP-LIFETIME",
+          "status": "PASS",
+          "sources": [
+            "DEC-BT-02",
+            "VH10",
+            "VH41"
+          ],
+          "evidence": [
+            "BBv2 14",
+            "BBv2 12"
+          ],
+          "scope": "Across-night journal/group reducer; not live multi-night route"
+        },
+        {
+          "id": "TRAP-AURA",
+          "status": "PASS",
+          "sources": [
+            "character.json#10",
+            "character.json#25"
+          ],
+          "evidence": [
+            "BBv2 07",
+            "BBv2 real accepted engineer queue: trap on 25"
+          ],
+          "scope": "Actual accepted queue + grouped candidate"
+        },
+        {
+          "id": "TRAP-ROLE",
+          "status": "PASS",
+          "sources": [
+            "SK-05",
+            "Q13-06"
+          ],
+          "evidence": [
+            "BBv2 12",
+            "BBv2 real accepted engineer queue: trap on 74"
+          ],
+          "scope": "Actual accepted queue + typed RNG"
+        },
+        {
+          "id": "TRAP-JUDGMENT",
+          "status": "PASS",
+          "sources": [
+            "VH84"
+          ],
+          "evidence": [
+            "BBv2 real accepted engineer queue: trap on 5"
+          ],
+          "scope": "Actual accepted queue and official usage charge"
+        },
+        {
+          "id": "TRAP-GUARD",
+          "status": "PASS",
+          "sources": [
+            "BB-04=B",
+            "BB-05=B"
+          ],
+          "evidence": [
+            "BBv2 08"
+          ],
+          "scope": "Bounded trusted effect group, direct death bypasses shield"
+        },
+        {
+          "id": "TRAP-POISON-RESCUE",
+          "status": "PASS",
+          "sources": [
+            "BB-04=B",
+            "BB-05=B"
+          ],
+          "evidence": [
+            "BBv2 09"
+          ],
+          "scope": "Bounded trusted effect group, poison suppressed and preliminary death closed"
+        },
+        {
+          "id": "TRAP-GROUP",
+          "status": "PASS",
+          "sources": [
+            "BB-05=B"
+          ],
+          "evidence": [
+            "BBv2 07",
+            "BBv2 10",
+            "BBv2 16"
+          ],
+          "scope": "One actor/round/phase sealed group, rollback on unknown interaction"
+        },
+        {
+          "id": "TRAP-REPLAY",
+          "status": "PASS",
+          "sources": [
+            "DEC-BT-02"
+          ],
+          "evidence": [
+            "BBv2 12",
+            "BBv2 15"
+          ],
+          "scope": "Separate journal v1/v2"
+        },
+        {
+          "id": "TRAP-LIVE",
+          "status": "NOT_IMPLEMENTED",
+          "reason": "Live multi-night Game Session transaction, authorized public API/WS/UI and browser evidence"
+        },
+        {
+          "id": "TRAP-RESOURCES",
+          "status": "NOT_IMPLEMENTED",
+          "reason": "Guard/witch cost, cooldown and resource accounting in live engine"
+        },
+        {
+          "id": "TRAP-REACTIONS",
+          "status": "NOT_IMPLEMENTED",
+          "reason": "Unknown death-chain and multi-layer interactions outside bounded adapter"
+        },
+        {
+          "id": "TRAP-MULTIWINDOW",
+          "status": "NOT_IMPLEMENTED",
+          "reason": "Precise cross-phase group boundary and unsupported mapping"
+        }
+      ]
+    }
+  ],
+  "packContract": {
+    "scope": "unpublished candidate only",
+    "policyEvidence": [
+      "BBv2 01",
+      "BBv2 02",
+      "BBv2 03",
+      "BBv2 04",
+      "BBv2 05",
+      "BBv2 06",
+      "BBv2 11",
+      "BBv2 13"
+    ],
+    "remaining": [
+      "indefinite response timeout/AFK policy",
+      "general authorized entitlement allocator and fixed order source",
+      "official transaction and mixed rescue/death-chain",
+      "public API/WS/UI and browser evidence"
+    ],
+    "officialMetricCredit": 0
+  }
+}

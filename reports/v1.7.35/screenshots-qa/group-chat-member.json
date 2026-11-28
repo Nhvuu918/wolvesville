@@ -1,0 +1,12 @@
+{
+  "file": "group-chat-member.png",
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  },
+  "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+  "ruleset": "wolvesville-official-v1.3.3",
+  "mode": "TRUSTED_ACL_FIXTURE_ONLY",
+  "viewer": "authorized member",
+  "sha256": "caa9c6b9713aa71c5fc2f8c5a21fa88d17d50e5e041b2f1cb2994f6edd5a4b90"
+}

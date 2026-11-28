@@ -1,0 +1,29 @@
+{
+  "version": "1.7.8-s15-closure-wip",
+  "certifiedIds": [],
+  "certificates": [],
+  "scopeLocked": [
+    "#28 actual hanging; negative non-hanging, protection, cancellation, transferred hanging, linked death, post-hanging closure, co-win",
+    "#88 nightly mark, lethal/hanging follow, valid protection and expiry, actual secondary death, privacy and persistence",
+    "#9 snow one attack/two nights, max three distinct, persists after owner death, village win"
+  ],
+  "blockers": {
+    "28": "R33-MIXED-TARGET; H88-MARK-LIFETIME; co-winner cases not generalized (E02-VILLAGE). New hunter/snow and revenge chain verified.",
+    "88": "H88-MARK-LIFETIME; non-snow defenses and protection priority, village victory.",
+    "9": "E02-VILLAGE; other lethal attack families and competing layers not certified."
+  },
+  "changeRecord": "No additional hypothetical interactions added as FULL requirements; these blockers follow actual source branches and tested counterexamples.",
+  "scopeLockVersion": "wolvesville-official-v1.3.1 + S15 owner Seer override; technical overlay 1.7.8",
+  "testEvidenceFiles": [
+    "tests/sprint15-closure.test.mjs",
+    "tests/sprint15-final-breakthrough.test.mjs",
+    "tests/sprint15-breakthrough.test.mjs",
+    "tests/sprint15-deep.test.mjs"
+  ],
+  "passedClosureTests": 8,
+  "browserEvidence": [
+    "browser_s15_closure_snow_e2e.py",
+    "browser_s15_closure_revenge_e2e.py"
+  ],
+  "note": "No certificate emitted. The finite scope remains a locked target, not a claim of completeness."
+}

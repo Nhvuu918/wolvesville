@@ -1,0 +1,5 @@
+SCENARIO_READY s15-deep-jester-peace
+SCENARIO_ACTIONS_PASS s15-deep-jester-peace
+S15_DEEP_JESTER_BROWSER_PASS
+S06_BROWSER_PASS browser_s15_deep_jester_e2e.py
+S06_BROWSER_ALL_1_PASS

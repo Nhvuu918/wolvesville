@@ -1,0 +1,74 @@
+TAP version 13
+# (node:94691) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_BREAK_EVIDENCE {"id":55,"branch":"stone.hanging.protect.once","skill":"official.55.stone-protection","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[25,28,55],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 breakthrough \#55 protects \#28 from actual hanging once; later true hanging and wolf parity co-win
+ok 1 - S15 breakthrough \#55 protects \#28 from actual hanging once; later true hanging and wolf parity co-win
+  ---
+  duration_ms: 898.100415
+  type: 'test'
+  ...
+# S15_BREAK_EVIDENCE {"id":8,"branch":"hanging.immune.while.wolf","skill":"passive.8.hanging-immunity","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[8,25,55],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 breakthrough \#8 hanging immunity with wolf alive, no fallback candidate, later knight victory
+ok 2 - S15 breakthrough \#8 hanging immunity with wolf alive, no fallback candidate, later knight victory
+  ---
+  duration_ms: 781.129502
+  type: 'test'
+  ...
+# S15_BREAK_EVIDENCE {"id":55,"branch":"stone.untriggered.expiration.and.solo","skill":"official.55.stone-protection","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[8,25,28,55],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 breakthrough \#55 cannot prevent solo night kill; untriggered mark expires for hanging and remains usable
+ok 3 - S15 breakthrough \#55 cannot prevent solo night kill; untriggered mark expires for hanging and remains usable
+  ---
+  duration_ms: 952.637838
+  type: 'test'
+  ...
+# S15_BREAK_EVIDENCE {"id":94,"branch":"effigy.redirect","skill":"official.94.effigy","restart":true,"replay":true,"privacy":true}
+# S15_BREAK_EVIDENCE {"id":93,"branch":"alignment.after.partner.death","skill":"passive.93.alignment","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 breakthrough \#94 redirect to actual victim, private alignment transition on subsequent \#94 death
+ok 4 - S15 breakthrough \#94 redirect to actual victim, private alignment transition on subsequent \#94 death
+  ---
+  duration_ms: 892.814792
+  type: 'test'
+  ...
+# S15_BREAK_EVIDENCE {"id":94,"branch":"effigy.identity.and.self","skill":"official.94.effigy","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 breakthrough \#94 self effigy converts \#93 before victory, identity effigy never creates duplicate death
+ok 5 - S15 breakthrough \#94 self effigy converts \#93 before victory, identity effigy never creates duplicate death
+  ---
+  duration_ms: 1255.216816
+  type: 'test'
+  ...
+# S15_BREAK_EVIDENCE {"id":28,"branch":"linked.death.not.hanging","skill":"passive.28.hanged-victory","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[15,25,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 breakthrough \#28 linked death is not hanging; only actual hanging earns co-win
+ok 6 - S15 breakthrough \#28 linked death is not hanging; only actual hanging earns co-win
+  ---
+  duration_ms: 1041.271447
+  type: 'test'
+  ...
+# S15_BREAK_EVIDENCE {"id":19,"branch":"ballot.contract.accept.fulfilled","skill":"official.19.ballot-offer","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[19,25,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 breakthrough \#19 anonymous ballot contract uses final valid ballot; \#28 survives fulfilled contract then wins by real hanging
+ok 7 - S15 breakthrough \#19 anonymous ballot contract uses final valid ballot; \#28 survives fulfilled contract then wins by real hanging
+  ---
+  duration_ms: 793.081614
+  type: 'test'
+  ...
+# S15_BREAK_EVIDENCE {"id":19,"branch":"ballot.contract.declined.or.breached","skill":"official.19.ballot-offer","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 breakthrough \#19 declined or breached contract cannot prevent true hanging
+ok 8 - S15 breakthrough \#19 declined or breached contract cannot prevent true hanging
+  ---
+  duration_ms: 1215.433521
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8012.004671

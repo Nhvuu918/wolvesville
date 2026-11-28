@@ -1,0 +1,20 @@
+{
+  "inputFiles": 4099,
+  "missing": [],
+  "modifiedInheritedFiles": [
+    "README.md",
+    "backend/src/engine/queue.ts",
+    "backend/src/engine/service.ts",
+    "backend/src/engine/state.ts",
+    "backend/src/game/coordinator.ts",
+    "data/rule-intelligence/source_inventory.json",
+    "package.json"
+  ],
+  "historicalReportsUnchanged": 3228,
+  "rulesAndCharactersUnchanged": 29,
+  "newCode": [
+    "backend/src/official/public-chat-access.ts",
+    "tests/sprint23-role-closure.test.mjs",
+    "tests/browser_s23_mute_acl_e2e.py"
+  ]
+}

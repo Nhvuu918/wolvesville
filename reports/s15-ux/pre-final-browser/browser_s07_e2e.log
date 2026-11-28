@@ -1,0 +1,14 @@
+S07_BROWSER_PASS: two official roles server-assigned, private projections, real skill capability
+S07_BROWSER_PASS: action accepted but not shown as resolved or winner
+Traceback (most recent call last):
+  File "/mnt/data/s15work/tests/browser_s07_e2e.py", line 77, in <module>
+    try:run()
+        ~~~^^
+  File "/mnt/data/s15work/tests/browser_s07_e2e.py", line 63, in run
+    assert not knight.locator('.day-discussion-panel').count()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+S07_BROWSER_FAILED AssertionError() PAGE_ERRORS []
+Error: E2E failed browser_s07_e2e.py, exit=1, signal=null
+    at file:///mnt/data/s15work/scripts/run-browser-s06.mjs:37:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

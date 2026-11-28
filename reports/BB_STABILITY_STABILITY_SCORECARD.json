@@ -1,0 +1,79 @@
+{
+  "version": "1.7.22-s15-stability-completion-wip",
+  "sourceFingerprint": "35a5c2302d5f68a3c35978cf9ec2171c1d357cb16842d4a84512b9ca7f439853",
+  "gates": [
+    {
+      "gate": "Monolithic Backend",
+      "baseline": "PASS_SPLIT",
+      "result": "PASS",
+      "evidence": "reports/BB_STABILITY_BACKEND_REGRESSION.json"
+    },
+    {
+      "gate": "Browser FAIL",
+      "baseline": 1,
+      "result": 1,
+      "evidence": "reports/BB_STABILITY_BROWSER_RESULTS.json"
+    },
+    {
+      "gate": "Browser INCOMPLETE",
+      "baseline": 47,
+      "result": 37,
+      "evidence": "reports/BB_STABILITY_BROWSER_RESULTS.json"
+    },
+    {
+      "gate": "FULL Revalidation",
+      "baseline": "1/1",
+      "result": "1/1",
+      "evidence": "reports/BB_STABILITY_FULL_ROLE_CERTIFICATES.json"
+    },
+    {
+      "gate": "QA C Revalidation",
+      "baseline": "1/2",
+      "result": "2/2",
+      "evidence": "reports/BB_STABILITY_BRANCH_COMPLETE_MATRIX.json"
+    },
+    {
+      "gate": "Playable C Revalidation",
+      "baseline": "3/5",
+      "result": "5/5",
+      "evidence": "reports/BB_STABILITY_BRANCH_COMPLETE_MATRIX.json"
+    },
+    {
+      "gate": "Atomic Revalidation",
+      "baseline": "73/79",
+      "result": "78/79",
+      "evidence": "reports/BB_STABILITY_ATOMIC_COVERAGE.json"
+    },
+    {
+      "gate": "B/B Live Browser",
+      "baseline": "6/6",
+      "result": "6/6",
+      "evidence": "reports/BB_STABILITY_BROWSER_RESULTS.json"
+    },
+    {
+      "gate": "Official v1.3.4",
+      "baseline": "CANDIDATE",
+      "result": "CANDIDATE",
+      "evidence": "reports/BB_STABILITY_RELEASE_SCOPE.json"
+    },
+    {
+      "gate": "Human QA",
+      "baseline": "PENDING",
+      "result": "PENDING",
+      "evidence": "reports/BB_STABILITY_HUMAN_QA_PACK.md"
+    }
+  ],
+  "accumulatedCertificates": {
+    "FULL": 1,
+    "QA_C": 2,
+    "Playable_C": 5
+  },
+  "currentRevalidated": {
+    "F": 1,
+    "qaC": 2,
+    "playableC": 5,
+    "S_pass": 78
+  },
+  "newCertificates": [],
+  "competitiveProduction": "NO_GO"
+}

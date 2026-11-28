@@ -1,0 +1,98 @@
+[
+  {
+    "screen": "lobby",
+    "before": "lobby-v1.7.34.png",
+    "after": "../screenshots/02-lobby/village-lobby.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "beforeFingerprint": "aa748258cd09a9884f95cdb9bb591cbfc208558acdbd9f48abba4f4d26ae703d",
+    "afterFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+    "beforeSha256": "9363b41b8ca46e05ead45ee35721172b17cdd37c0dbc0558fd21cb51821baaa4",
+    "afterSha256": "5d7478990424a445630b256047804d1bf9f972a075e66a1c8a722057d231ce56",
+    "mode": "NORMAL_GAMEPLAY",
+    "note": "Equivalent phase/viewport; independent server-assigned roles, not identical RNG or pixel-regression test."
+  },
+  {
+    "screen": "codex",
+    "before": "codex-v1.7.34.png",
+    "after": "../screenshots/04-codex/wheel.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "beforeFingerprint": "aa748258cd09a9884f95cdb9bb591cbfc208558acdbd9f48abba4f4d26ae703d",
+    "afterFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+    "beforeSha256": "ac20e0957e54229fd43d01a8e0aed4b7924df4d16839b5f89aa7d5e90cfa2196",
+    "afterSha256": "0d2675f826acbf251c0e1a23da23065f98766967618697c9e9491dbb84fcd3d2",
+    "mode": "NORMAL_GAMEPLAY",
+    "note": "Equivalent phase/viewport; independent server-assigned roles, not identical RNG or pixel-regression test."
+  },
+  {
+    "screen": "room",
+    "before": "room-v1.7.34.png",
+    "after": "../screenshots/03-room/configuration.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "host",
+    "beforeFingerprint": "aa748258cd09a9884f95cdb9bb591cbfc208558acdbd9f48abba4f4d26ae703d",
+    "afterFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+    "beforeSha256": "83fcc3700e019a082a9504f329a747be154d42a61b657cfb5c0c4febaf070caf",
+    "afterSha256": "b9b1509909074a09dce302ca6cffd17a7ef48943b198ba8949fc590d3c01b89b",
+    "mode": "NORMAL_GAMEPLAY",
+    "note": "Equivalent phase/viewport; independent server-assigned roles, not identical RNG or pixel-regression test."
+  },
+  {
+    "screen": "night",
+    "before": "night-v1.7.34.png",
+    "after": "../screenshots/05-night-gameplay/night.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "beforeFingerprint": "aa748258cd09a9884f95cdb9bb591cbfc208558acdbd9f48abba4f4d26ae703d",
+    "afterFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+    "beforeSha256": "c10e099c2a501447e74ce1b1960ecdb511fa000e64e8aae623654c359d8bbab9",
+    "afterSha256": "3e4826ab78982441c2a8b3f8ed1f5abcf77caf3b2da8430aad249bb39b405155",
+    "mode": "NORMAL_GAMEPLAY",
+    "note": "Equivalent phase/viewport; independent server-assigned roles, not identical RNG or pixel-regression test."
+  },
+  {
+    "screen": "night-action",
+    "before": "night-action-v1.7.34.png",
+    "after": "../screenshots/05-night-gameplay/selected-target.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "beforeFingerprint": "aa748258cd09a9884f95cdb9bb591cbfc208558acdbd9f48abba4f4d26ae703d",
+    "afterFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+    "beforeSha256": "64900fbc1cac1cf6a2fc50ef2b0a869ec0b1349670c9d9e875738e1abcb9104a",
+    "afterSha256": "25c2610d92b85e02ea5ed9aa64da4c20269249d983174dc9347605f956e78940",
+    "mode": "NORMAL_GAMEPLAY",
+    "note": "Equivalent phase/viewport; independent server-assigned roles, not identical RNG or pixel-regression test."
+  },
+  {
+    "screen": "day",
+    "before": "day-v1.7.34.png",
+    "after": "../screenshots/06-day-gameplay/day-private-result.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "beforeFingerprint": "aa748258cd09a9884f95cdb9bb591cbfc208558acdbd9f48abba4f4d26ae703d",
+    "afterFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+    "beforeSha256": "99be6800ca3fb5262a918affe11aad117a64ca1151ab6fd03f921763de7c2a55",
+    "afterSha256": "9984a82aff9db2a156eb11725775f9d431239e792bb9b214c365b29a9874752b",
+    "mode": "NORMAL_GAMEPLAY",
+    "note": "Equivalent phase/viewport; independent server-assigned roles, not identical RNG or pixel-regression test."
+  }
+]

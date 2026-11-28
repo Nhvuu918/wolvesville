@@ -1,0 +1,30 @@
+[
+  {
+    "inferenceId": "S04-I-01",
+    "verificationStatus": "DERIVED",
+    "claim": "When #25 directly inspects #20 inside approved 3-role test deck, #25 receives true role as information and loses skill capability during the following night.",
+    "evidence": [
+      "data/character.json#25",
+      "data/character.json#20",
+      "data/rules/tests_207.json#T-COV-20"
+    ],
+    "proof": "Both source descriptions expressly describe nightly role inspection and the response to inspection; the legacy scenario names #25. Damage-by-shooting is separately unresolved.",
+    "implementation": "backend/src/official/reactive-rules.ts",
+    "test": "tests/official-reactive.test.mjs",
+    "notPromotedToConfirmed": true
+  },
+  {
+    "inferenceId": "S04-I-02",
+    "verificationStatus": "DERIVED",
+    "claim": "When #74 inspects #20 in the approved closed deck, the exact-role private result and following-night injury may both occur.",
+    "evidence": [
+      "data/character.json#74",
+      "data/character.json#20",
+      "VH08"
+    ],
+    "proof": "Character #74 is an explicit exact-role inspector; the #20 passive is phrased against being inspected (not against a specific inspector). Applies only to #74 and #20 with no distortion roles in deck.",
+    "implementation": "backend/src/official/reactive-rules.ts",
+    "test": "tests/official-reactive.test.mjs",
+    "notPromotedToConfirmed": true
+  }
+]

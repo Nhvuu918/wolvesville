@@ -1,0 +1,3 @@
+UNIVERSAL-01
+Fingerprint: d77300af6c8ac3b1e092e17e3288cf94291ea11959833ab1c5aeea3dd92bbf38
+Baseline verified. Run verify_delivery_universal_01.py. See acceptance.json for actual results; no new FULL.

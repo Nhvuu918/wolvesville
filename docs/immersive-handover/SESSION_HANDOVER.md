@@ -1,0 +1,14 @@
+# IMMERSIVE-03 handover
+Continue from this integrated source. Do not restart FULL-5/FULL-50. Product Design Decisions: PD-03-01 public declared counts only for compatible roster at game creation; old games retain original projection. PD-03-02 persisted ledger phase-start, manual phases have no fake deadline, dynamic server clock scoped to new compatible Normal (historical/QA stable projection). PD-03-03 committed phase notice only for authorized coordinator; no hidden actor counts. PD-03-04 media stored in DB with post ACL; one reaction notification per actor/post, idempotent comment ID; load on request. PD-03-05 one-instance cloud staging, explicit PostgreSQL and fail-closed startup; no Demo/QA. These are product decisions, not new Owner gameplay rules. Source inventory hash refreshed after engine field addition without changing rules. See reports/IMMERSIVE-03 for test logs, evidence, benchmark and incomplete items. Prioritize real deadline semantics only where rules specify, accepted-vs-resolved host pipeline, summary tabs, random stage, durable badges, charts, effective knowledge, PostgreSQL integration, security and public multiplayer gates; no new P IDs. Deploy only after GitHub CI, Docker, PG, staging access control verified. Keep current DB backups; no destructive migrations. No background tasks.
+
+
+## IMMERSIVE-03 — Wheel of Fate checkpoint
+Continue from this integrated source, not older IMMERSIVE-03. Personal wheel integrated in actual HUD, with bounded avatar reads, cancellable shared SFX, local per-user/game/mode configuration, crypto/geometry animation and explicit apply-to-existing Action Panel. Existing rules, game engine, decks and FULL-5/FULL-50 remain frozen. Focused 21/21 PASS; actual 4-account Normal DEV browser PASS, 114 Chromium capture frames. Native refresh, larger live rosters, all skill modes, full regression, PG/Docker/CI and cloud pending. See WHEEL_OF_FATE_QA.md and reports/WHEEL-OF-FATE/ACCEPTANCE.md. Preserve prior IMMERSIVE-03 backlog; no silent completion claim.
+
+Wheel of Fate source fingerprint: `f48b954d3798933bb997536c51816c2d59d574a7a3a805779c8bb2657d54b8fe`.
+
+## IMMERSIVE-04
+See reports/IMMERSIVE-04/CHECKPOINT.md and acceptance.json. Continue from this integrated source. FULL programs frozen; Wheel approved and preserved. No public/competitive production approval.
+
+## IMMERSIVE-05
+Use latest integrated archive, verify delivery manifest. New code: backend/src/social/workspace.ts, social repository, configure revision, global game-alert projection, migration 012, frontend/workspace.js/css and account hooks. Tests: immersive05-workspace.test.mjs, browser_immersive05_workspace_e2e.py. Keep historical reports and no new admission. Cloud remains not live. Do not treat focused evidence as full regression or PG verification.

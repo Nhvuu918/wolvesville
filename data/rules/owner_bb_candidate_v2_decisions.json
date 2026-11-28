@@ -1,0 +1,24 @@
+{
+  "profile": "owner-bb-candidate-v2",
+  "baseRuleset": "wolvesville-official-v1.3.3",
+  "supersedesCandidate": "owner-bb-candidate-v1",
+  "status": "OWNER_CHOICES_APPROVED_UNPUBLISHED",
+  "officialActivation": false,
+  "source": "Owner confirmation in current conversation: BB-01=B, Phiếu trống=KEEP, BB-02=A, BB-03=A, Đại diện=SAME, Phản sát đòn đầu=RESOLVE, BB-04=B, BB-05=B",
+  "decisions": [
+    {"id":"DEC-BT-01","choice":"B","text":"Bầy Sói phải đồng thuận tuyệt đối về mục tiêu cắn.","refs":["VH54","VH74","P04","VH52"]},
+    {"id":"DEC-BT-02","choice":"B","text":"Bẫy tồn tại đến lần sử dụng kỹ năng hợp lệ tiếp theo.","refs":["character.json#10","SK-05","Q13-06","Q13-11","VH08","VH84"]},
+    {"id":"BB-01","choice":"B","text":"Giữ cửa sổ chọn mục tiêu đến khi đủ phản hồi.","refs":["DEC-BT-01","PH-04"]},
+    {"id":"BB-01-BLANK","choice":"KEEP","text":"Phiếu trống giữ lựa chọn hợp lệ cuối cùng."},
+    {"id":"BB-02","choice":"A","text":"Đồng thuận toàn bộ tập mục tiêu; khác tập thì không cắn.","refs":["DEC-BT-01","VH74"]},
+    {"id":"BB-03","choice":"A","text":"Cập nhật danh sách đủ quyền khi chốt; đại diện theo thứ tự cố định trước ván.","refs":["VH54","VH52","VH10","VH41"]},
+    {"id":"BB-03-REPRESENTATIVE","choice":"SAME","text":"Cùng một đại diện hợp lệ cho hai đòn cắn."},
+    {"id":"BB-03-SECOND-ATTACK","choice":"RESOLVE","text":"Đòn thứ hai đã chốt vẫn phân giải nếu đại diện bị phản sát bởi đòn đầu.","refs":["VH51","VH54","VH74"]},
+    {"id":"BB-04","choice":"B","text":"Đảo bảo vệ và cứu thành chết trực tiếp, không qua phòng thủ hoặc cứu khác.","refs":["character.json#10","Q13-11","SK-05","VH08","VH03"]},
+    {"id":"BB-05","choice":"B","text":"Đảo toàn bộ nhóm hành động được nộp trong lượt đó.","refs":["DEC-BT-02","VH08","VH85","SYS-07"]}
+  ],
+  "derivedDetails": ["All responded with differing full sets: no bite. A blank without an earlier valid selection supplies a response but cannot authorize a bite.","Missing response: no close or random fallback.","A direct inverted rescue finalizes a preliminary death only once; it is not a resurrection ban.","Unknown mappings or mandatory post-death chains abort the whole candidate group; no partial trap consumption."],
+  "engineeringDetails": ["Separate v2 journal table and streams; v1 reducer remains intact.","Representative order is a trusted pre-match policy input, not a client field.","Actor/round/phase action grouping from accepted queue, all executed actions in group transformed; rejected/blocked/skipped actions do not trigger.","Atomic candidate snapshot + outcome + mark + event in SQLite; no official archive writes."],
+  "pending": ["Deadline/disconnect/AFK fallback for an indefinitely incomplete response window; do not auto-advance or randomize.","Exact pre-match representative ordering algorithm for general production and dynamic wolf entitlement source; only supplied trusted lab order accepted.","Target entitlement revoked after previous selection, or no eligible wolves at lock: hold unresolved rather than invent fallback.","Cross-window action groups and unsupported multi-effect/multi-target mappings; grouping by actor/round/phase only in bounded lab.","Full death reactions, linked deaths, rescue timing, resource charges and pack/official Game Session transactional integration outside bounded adapter."],
+  "releaseGate": "No official 1.3.4 publication until live transactional integration, applicable remaining policy clarification, regression and owner release approval."
+}

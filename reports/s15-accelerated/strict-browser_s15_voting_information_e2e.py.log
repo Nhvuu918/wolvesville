@@ -1,0 +1,17 @@
+VOTING_INFO_READY s15-sedative
+VOTING_INFO_ASSERTIONS_PASS s15-sedative
+VOTING_INFO_CLEANUP_PASS s15-sedative
+S15_BROWSER_PASS
+S06_BROWSER_CASE_PASS browser_s15_voting_information_e2e.py sedative
+VOTING_INFO_READY s15-reveal
+VOTING_INFO_ASSERTIONS_PASS s15-reveal
+VOTING_INFO_CLEANUP_PASS s15-reveal
+S15_BROWSER_PASS
+S06_BROWSER_CASE_PASS browser_s15_voting_information_e2e.py reveal
+VOTING_INFO_READY s15-violin-knight
+VOTING_INFO_ASSERTIONS_PASS s15-violin-knight
+VOTING_INFO_CLEANUP_PASS s15-violin-knight
+S15_BROWSER_PASS
+S06_BROWSER_CASE_PASS browser_s15_voting_information_e2e.py violin
+S06_BROWSER_PASS browser_s15_voting_information_e2e.py
+S06_BROWSER_ALL_1_PASS

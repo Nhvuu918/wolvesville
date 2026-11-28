@@ -1,0 +1,85 @@
+{
+  "scope": "Restricted official rule test mode; not competitive certification",
+  "metricA": 6,
+  "metricB": 6,
+  "metricC": 0,
+  "evidence": [
+    {
+      "ids": [
+        8,
+        25
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        28
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        9,
+        25
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        9,
+        28
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        25,
+        28
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        9,
+        25,
+        28
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    }
+  ]
+}

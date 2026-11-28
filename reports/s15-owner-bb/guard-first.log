@@ -1,0 +1,26 @@
+TAP version 13
+# (node:49871) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# OWNER_BB_GUARD_NIGHT_MATRIX 35
+# Subtest: Owner BB independent guard acceptance: all 35 initial-night guard and bite combinations, alternating submission order and private observations
+ok 1 - Owner BB independent guard acceptance: all 35 initial-night guard and bite combinations, alternating submission order and private observations
+  ---
+  duration_ms: 15904.471245
+  type: 'test'
+  ...
+# OWNER_BB_GUARD_CONTINUATION_PASS
+# Subtest: Owner BB independent guard acceptance: cooldown skip, self shield, guard death, vote ties, blank/change/retry, handoff and restart
+ok 2 - Owner BB independent guard acceptance: cooldown skip, self shield, guard death, vote ties, blank/change/retry, handoff and restart
+  ---
+  duration_ms: 6350.661449
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 22463.315871

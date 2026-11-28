@@ -1,0 +1,397 @@
+{
+  "version": "1.7.9-s15-approved-wip",
+  "defaultRuleVersion": "wolvesville-official-v1.3.3",
+  "baseline": "1.7.8-s15-closure-wip",
+  "baselineZipSha256": "4a841afac7b057d47e5d1239a0bf778778a70ba08b04296eb86c096e5a210a57",
+  "sourceIntegrity": {
+    "exitCode": 0,
+    "log": "reports/s15-approved/final-integrity.log"
+  },
+  "build": {
+    "exitCode": 0,
+    "log": "reports/s15-approved/clean-build.log"
+  },
+  "rulesBuild": {
+    "exitCode": 0,
+    "log": "reports/s15-approved/final-rules.log"
+  },
+  "backend": {
+    "tests": 323,
+    "pass": 312,
+    "fail": 0,
+    "skipped": 11,
+    "exitCode": 0,
+    "log": "reports/s15-approved/clean-full-backend.log",
+    "archivedRuleMode": "296 passes on 1.3.2 compatibility; new test module explicitly uses 1.3.3, including a historical version case"
+  },
+  "browser": {
+    "manifestCount": 44,
+    "passed": 44,
+    "archivedCount": 38,
+    "approvedCount": 6,
+    "suites": [
+      {
+        "suite": "browser_s12_attack_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s12_attack_e2e.py.log"
+      },
+      {
+        "suite": "browser_s11_voting_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s11_voting_e2e.py.log"
+      },
+      {
+        "suite": "browser_s11_seer_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s11_seer_e2e.py.log"
+      },
+      {
+        "suite": "browser_s10_gameplay_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s10_gameplay_e2e.py.log"
+      },
+      {
+        "suite": "browser_s09_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s09_e2e.py.log"
+      },
+      {
+        "suite": "browser_s08_gameplay_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s08_gameplay_e2e.py.log"
+      },
+      {
+        "suite": "browser_s07_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s07_e2e.py.log"
+      },
+      {
+        "suite": "browser_s06_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s06_e2e.py.log"
+      },
+      {
+        "suite": "browser_s05_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s05_e2e.py.log"
+      },
+      {
+        "suite": "browser_lobby_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_lobby_e2e.py.log"
+      },
+      {
+        "suite": "browser_codex_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_codex_e2e.py.log"
+      },
+      {
+        "suite": "browser_demo_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_demo_e2e.py.log"
+      },
+      {
+        "suite": "browser_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_e2e.py.log"
+      },
+      {
+        "suite": "browser_ux_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_ux_e2e.py.log"
+      },
+      {
+        "suite": "browser_s13_skills_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s13_skills_e2e.py.log"
+      },
+      {
+        "suite": "browser_s14_gameplay_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s14_gameplay_e2e.py.log"
+      },
+      {
+        "suite": "browser_s14_transport_regression.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s14_transport_regression.py.log"
+      },
+      {
+        "suite": "browser_s15_protection_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_protection_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_voting_information_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_voting_information_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_gameplay_ux_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_gameplay_ux_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_aura_expansion_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_aura_expansion_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_guard_shot_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_guard_shot_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_accelerated_witch_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_accelerated_witch_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_accelerated_exile_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_accelerated_exile_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_accelerated_combat_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_accelerated_combat_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_deep_rescue_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_deep_rescue_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_deep_redirect_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_deep_redirect_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_deep_pair_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_deep_pair_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_deep_jester_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_deep_jester_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_break_stone_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_break_stone_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_break_exile_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_break_exile_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_break_contract_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_break_contract_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_break_swap_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_break_swap_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_final_hunter_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_final_hunter_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_final_revenge_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_final_revenge_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_final_pack_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_final_pack_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_closure_snow_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_closure_snow_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_closure_revenge_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.2",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/archived-browser_s15_closure_revenge_e2e.py.log"
+      },
+      {
+        "suite": "browser_s15_approved_village_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/browser-village.log"
+      },
+      {
+        "suite": "browser_s15_approved_revenge_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/browser-revenge.log"
+      },
+      {
+        "suite": "browser_s15_approved_leader_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/browser-leader.log"
+      },
+      {
+        "suite": "browser_s15_approved_knight_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/browser-knight.log"
+      },
+      {
+        "suite": "browser_s15_approved_pin_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/browser-pin.log"
+      },
+      {
+        "suite": "browser_s15_approved_team_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/browser-team.log"
+      }
+    ],
+    "additionalNewVersionChecks": [
+      {
+        "suite": "browser_s11_seer_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/new-version-browser_s11_seer_e2e.py.log"
+      },
+      {
+        "suite": "browser_s14_transport_regression.py",
+        "ruleVersion": "wolvesville-official-v1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/new-version-browser_s14_transport_regression.py.log"
+      },
+      {
+        "suite": "browser_s15_gameplay_ux_e2e.py",
+        "ruleVersion": "wolvesville-official-v1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-approved/new-version-browser_s15_gameplay_ux_e2e.py.log"
+      }
+    ],
+    "initialFailureRetained": "archived-browser_s15_break_exile_e2e.py.first-failure.log; TargetClosedError, isolated rerun exit 0; no harness/assertion change"
+  },
+  "metrics": {
+    "exitCode": 0,
+    "log": "reports/s15-approved/metrics.log",
+    "source": "completed zero-failure full regression + new-version role-local rerun + browser evidence"
+  },
+  "compatibility": {
+    "oldTestsByteIdentical": 93,
+    "historicalSourcesByteIdentical": [
+      "data/character.json",
+      "data/rules/official_merged_118.json",
+      "data/rules/tests_207.json",
+      "data/rules/vh01_vh85_UNCHANGED.json",
+      "data/rules/decisions_21_v1_2_UNCHANGED.json",
+      "data/rules/q13_12_user_confirmed.json",
+      "data/rules/sprint11_official_voting_decisions.json",
+      "data/rules/sprint15_owner_seer_correction.json"
+    ],
+    "appFilesMatchedCleanCandidate": 184,
+    "backendTestsMatchedCleanCandidate": 54,
+    "archivedVersionTestsPreserved": true
+  },
+  "postgreSQL": "PENDING; 11 skipped",
+  "competitiveProduction": "NO-GO",
+  "limitations": [
+    "F role-local locked branch scope, not arbitrary room admission",
+    "C only deck [8,25]",
+    "General village predicate gated by resolved life states, no active links, no unresolved independent contenders; all-village training decks remain noncompetitive",
+    "VH06/VH82 pending revival counted in historical law; QD01 pending-effects guard prevents new certification until revival semantics implemented",
+    "Multi-wolf consensus and protected/mixed revenge and pin domains not generalized; one new role #48 only"
+  ]
+}

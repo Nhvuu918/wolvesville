@@ -1,0 +1,77 @@
+{
+  "version": "1.7.7-s15-final-breakthrough-wip",
+  "nodes": [
+    {
+      "id": "hanging-follow",
+      "implementedFor": [
+        88,
+        28
+      ],
+      "missing": [
+        "stale duration",
+        "protections"
+      ]
+    },
+    {
+      "id": "post-hanging-response",
+      "implementedFor": [
+        33
+      ],
+      "missing": [
+        "mixed-faction targeting",
+        "competing effects"
+      ]
+    },
+    {
+      "id": "pack",
+      "implementedFor": [
+        93
+      ],
+      "missing": [
+        "multi-wolf consensus",
+        "retained powers",
+        "general attacks"
+      ]
+    },
+    {
+      "id": "rescue",
+      "implementedFor": [
+        87,
+        29
+      ],
+      "missing": [
+        "multiple rescue sources",
+        "competing protection"
+      ]
+    },
+    {
+      "id": "victory",
+      "missing": [
+        "village terminal",
+        "general co-winners"
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "hanging-follow",
+      "victory"
+    ],
+    [
+      "post-hanging-response",
+      "victory"
+    ],
+    [
+      "pack",
+      "rescue"
+    ],
+    [
+      "pack",
+      "victory"
+    ],
+    [
+      "rescue",
+      "victory"
+    ]
+  ]
+}

@@ -1,0 +1,1175 @@
+# WOLVESVILLE — IMMERSIVE-04
+
+## GAMEPLAY COMMUNICATION & RESULT EXPERIENCE
+
+### SMART MODERATOR CONTROL · PROMINENT NOTIFICATIONS · GROUP CHAT · CINEMATIC RESULTS · GAME FLOW POLISH
+
+**PROJECT OWNER DIRECTIVE**
+
+# 1. SOURCE BASELINE
+
+Tiếp tục trực tiếp từ:
+
+**Wolvesville IMMERSIVE-03 — THE WHEEL OF FATE EDITION.**
+
+Theo báo cáo hiện tại:
+
+- Full Source: 187,22 MB.
+- Tổng số tệp: 5.396.
+- Character Registry: 97/97.
+- Focused Regression: 21 PASS, 0 FAIL, 0 SKIPPED.
+- Wheel of Fate đã tích hợp.
+- Game Engine được bảo toàn.
+- FULL-5 và FULL-50 đang đóng băng.
+
+Xác minh source và hồ sơ bàn giao thực tế trước khi phát triển.
+
+Không quay lại IMMERSIVE-02.
+
+Không khởi tạo lại dự án.
+
+Không làm mất những chức năng đã triển khai.
+
+# 2. WHEEL OF FATE — DESIGN APPROVED
+
+Tôi đã đồng ý với vòng quay định mệnh hiện tại.
+
+Giữ nguyên:
+
+- Thiết kế la bàn ma thuật.
+- Kim nhỏ cố định tại tâm.
+- Đĩa xoay thực sự.
+- Animation.
+- Âm thanh.
+- Ba tốc độ quay.
+- Danh sách mặc định.
+- Khả năng tùy chỉnh.
+- Vị trí trên Game HUD.
+- Tích hợp Action Panel.
+- Quyền riêng tư.
+
+Không tiếp tục dành nguồn lực để thiết kế lại vòng quay.
+
+Chỉ sửa lỗi nếu phát hiện lỗi thực tế hoặc lỗi hồi quy.
+
+Không làm mất chất lượng thiết kế đã được duyệt.
+
+# 3. MỤC TIÊU IMMERSIVE-04
+
+Sau khi trực tiếp trải nghiệm sản phẩm, tôi muốn nâng cấp các nội dung sau:
+
+- Thông báo trong phòng chơi phải lớn hơn và rõ ràng hơn.
+- Quản trò phải dễ dàng nhận biết khi mọi người đã xác nhận xong.
+- Người chơi phải biết hệ thống đang chờ điều gì.
+- Quản trò phải có nút xác nhận dễ tìm.
+- Mở Group Chat cho ban đêm.
+- Hoàn thiện Group Chat và kiểm thử thực tế.
+- Hiển thị kết quả từng lượt hành động rõ ràng.
+- Hiển thị kết quả từng ngày và đêm dễ hiểu.
+- Cải thiện toàn bộ quá trình chuyển bước trong trận.
+- Tạo cảm giác hệ thống đang chủ động hướng dẫn người chơi.
+
+Tôi cho phép bạn sáng tạo thêm để trải nghiệm chuyên nghiệp và hấp dẫn hơn.
+
+# 4. GAME NOTIFICATION SYSTEM 2.0
+
+Thông báo hiện tại chưa đủ nổi bật.
+
+Tôi không muốn những thông báo quan trọng chỉ xuất hiện dưới dạng Toast nhỏ ở góc màn hình.
+
+Hãy xây dựng hệ thống thông báo trong phòng chơi theo mức độ ưu tiên.
+
+## LEVEL 1 — INFORMATION
+
+Thông báo thông thường:
+
+- Người chơi tham gia.
+- Người chơi rời phòng.
+- Kết nối lại.
+- Cập nhật thông tin phòng.
+- Tin nhắn mới theo quyền.
+- Các trạng thái không cần thao tác ngay.
+
+Có thể sử dụng Toast nhỏ.
+
+## LEVEL 2 — IMPORTANT
+
+Thông báo quan trọng:
+
+- Bắt đầu ngày.
+- Bắt đầu đêm.
+- Bắt đầu biểu quyết.
+- Đến lượt thực hiện kỹ năng.
+- Sắp hết thời gian.
+- Có kết quả kỹ năng.
+- Thay đổi vai trò hoặc phe khi được phép biết.
+- Yêu cầu chọn lại.
+- Trận đấu sắp kết thúc.
+
+Sử dụng Banner lớn, có tiêu đề và nội dung rõ ràng.
+
+Ưu tiên vị trí phía trên sân chơi hoặc gần trung tâm Game HUD.
+
+## LEVEL 3 — ACTION REQUIRED
+
+Thông báo yêu cầu thao tác:
+
+- Phòng đã đủ người, cần xác nhận.
+- Người chơi cần xác nhận sẵn sàng.
+- Quản trò cần chuyển bước.
+- Tất cả yêu cầu cần thiết đã được tiếp nhận.
+- Hệ thống đang chờ quản trò xác nhận.
+- Người chơi cần thực hiện lựa chọn.
+- Người chơi cần chọn lại mục tiêu.
+
+Thông báo phải có:
+
+- Tiêu đề lớn.
+- Icon dễ nhận biết.
+- Nội dung ngắn gọn.
+- Trạng thái hiện tại.
+- Nút thực hiện hành động phù hợp.
+- Âm thanh nếu người dùng bật.
+
+Không để thông báo yêu cầu thao tác tự biến mất khi nghĩa vụ vẫn chưa hoàn thành.
+
+# 5. NOTIFICATION VISUAL DESIGN
+
+Tôi muốn thông báo trong Game Room có kích thước lớn hơn đáng kể.
+
+Đặc biệt đối với thông báo dành cho quản trò.
+
+Thiết kế theo phong cách Dark Fantasy cao cấp.
+
+Có thể sử dụng:
+
+- Viền vàng cổ.
+- Biểu tượng chuông.
+- Ánh sáng nhẹ.
+- Icon theo loại sự kiện.
+- Typography rõ ràng.
+- Chuyển động xuất hiện mềm mại.
+- Hiệu ứng âm thanh phù hợp.
+
+Không sử dụng chữ quá nhỏ.
+
+Không để thông báo chìm vào nền.
+
+Không sử dụng màu sắc làm dấu hiệu duy nhất.
+
+Không hiển thị quá nhiều Toast chồng lên nhau.
+
+Thông báo quan trọng phải nằm ở vùng người chơi dễ nhìn thấy ngay cả khi đang sử dụng chat hoặc chọn mục tiêu.
+
+Không che timer, sân chơi hoặc nút thao tác chính một cách không cần thiết.
+
+# 6. SMART MODERATOR CONTROL — TRỌNG TÂM CAO NHẤT
+
+Quản trò hiện phải xác nhận thủ công để chuyển bước theo quy trình vận hành.
+
+Vì vậy, tôi muốn hệ thống hỗ trợ quản trò tốt hơn.
+
+Không bắt quản trò liên tục kiểm tra thủ công xem mọi người đã chọn xong chưa.
+
+## 6.1. Moderator Progress Panel
+
+Tạo một bảng điều phối dành riêng cho quản trò.
+
+Hiển thị trạng thái chung:
+
+- Pha hiện tại.
+- Bước đang thực hiện.
+- Đang tiếp nhận yêu cầu.
+- Đã tiếp nhận đầy đủ.
+- Đang chờ xác nhận.
+- Đang phân giải.
+- Đã phân giải.
+- Đủ điều kiện chuyển bước.
+
+Tùy quyền thông tin, có thể hiển thị tiến độ tổng hợp nếu không làm lộ vai hoặc kỹ năng.
+
+Không hiển thị danh sách người có kỹ năng bí mật.
+
+Không hiển thị người nào đang thực hiện kỹ năng gì.
+
+Không cấp quyền xem hidden GameState cho quản trò.
+
+## 6.2. All Actions Received
+
+Khi server xác nhận toàn bộ những yêu cầu bắt buộc của bước hiện tại đã được tiếp nhận, hiển thị thông báo lớn:
+
+**TẤT CẢ ĐÃ XÁC NHẬN!**
+
+“Hệ thống đã tiếp nhận đầy đủ các yêu cầu cần thiết. Vui lòng xác nhận để tiếp tục.”
+
+Hiển thị nút nổi bật:
+
+**XÁC NHẬN VÀ TIẾP TỤC**
+
+Nút phải nằm trực tiếp trong thông báo hoặc ngay bên cạnh.
+
+Không bắt quản trò đóng thông báo rồi tìm nút xác nhận ở nơi khác.
+
+Nút chỉ được kích hoạt khi backend xác nhận đủ điều kiện và quản trò có quyền thực hiện.
+
+## 6.3. Persistent Confirmation Alert
+
+Thông báo chờ quản trò phải duy trì cho đến khi:
+
+- Quản trò xác nhận hợp lệ.
+- Điều kiện xác nhận không còn đúng.
+- Bước hiện tại kết thúc hợp lệ.
+- Quyền quản trò thay đổi.
+- Trận kết thúc.
+
+Không tự ẩn sau 3–5 giây.
+
+Nếu quản trò đóng một thông báo dạng mở rộng, phải còn một Banner hoặc trạng thái nổi bật để có thể mở lại.
+
+Khi refresh hoặc reconnect, thông báo vẫn phản ánh đúng trạng thái hiện tại.
+
+## 6.4. Sound Notification
+
+Khi tất cả yêu cầu đã được tiếp nhận, phát một âm thanh riêng cho quản trò.
+
+Âm thanh phải đủ dễ nhận biết.
+
+Không quá lớn hoặc gây khó chịu.
+
+Tuân thủ cài đặt âm lượng.
+
+Chỉ phát một lần cho mỗi chuyển trạng thái hợp lệ.
+
+Không liên tục phát lại sau reconnect hoặc mỗi lần cập nhật giao diện.
+
+## 6.5. Confirmation Safety
+
+Khi quản trò xác nhận:
+
+- Hiển thị trạng thái đang gửi.
+- Khóa gửi trùng.
+- Server kiểm tra quyền.
+- Server kiểm tra đúng Phase ID.
+- Server kiểm tra điều kiện hiện tại.
+- Server thực hiện bước hợp lệ.
+- Giao diện nhận kết quả.
+- Cập nhật trạng thái tiếp theo.
+
+Nếu chưa đủ điều kiện, nút xác nhận phải bị vô hiệu hóa hoặc giải thích rõ điều kiện còn thiếu theo phạm vi được phép biết.
+
+Nếu xác nhận thất bại, hiển thị thông báo rõ ràng.
+
+Không tự động chuyển pha thay cho quản trò trong những bước yêu cầu xác nhận thủ công.
+
+Không thay đổi quy trình điều hành đã được chốt.
+
+# 7. PLAYER WAITING EXPERIENCE
+
+Đối với người chơi thông thường, sau khi xác nhận kỹ năng hoặc lựa chọn, phải hiển thị rõ hệ thống đang làm gì.
+
+Ví dụ:
+
+**LỰA CHỌN ĐÃ ĐƯỢC TIẾP NHẬN**
+
+“Hệ thống đã ghi nhận yêu cầu của bạn.”
+
+Nếu đang chờ quản trò:
+
+**ĐANG CHỜ QUẢN TRÒ XÁC NHẬN**
+
+“Bạn chưa cần thực hiện thêm thao tác.”
+
+Nếu đang phân giải:
+
+**HỆ THỐNG ĐANG PHÂN GIẢI**
+
+“Các kết quả sẽ được hiển thị khi quá trình xử lý hoàn tất.”
+
+Nếu có yêu cầu tiếp theo:
+
+**ĐẾN LƯỢT CỦA BẠN**
+
+“Vui lòng lựa chọn và xác nhận hành động.”
+
+Không để người chơi chỉ thấy giao diện đứng yên mà không biết tại sao.
+
+Phân biệt rõ:
+
+- Đã lựa chọn.
+- Đã gửi.
+- Đã được tiếp nhận.
+- Đang chờ.
+- Đang phân giải.
+- Đã phân giải.
+- Đã nhận kết quả.
+
+Không đánh đồng việc server nhận yêu cầu với kỹ năng đã thành công.
+
+# 8. GAME FLOW STATUS BAR
+
+Bổ sung thanh tiến trình trong trận nếu phù hợp.
+
+Ví dụ:
+
+LỰA CHỌN
+
+→ XÁC NHẬN
+
+→ CHỜ QUẢN TRÒ
+
+→ PHÂN GIẢI
+
+→ KẾT QUẢ.
+
+Thanh tiến trình phải phản ánh đúng workflow hiện hành.
+
+Đối với những bước tự động theo luật, không tạo thêm nút xác nhận không cần thiết.
+
+Đối với bước cần quản trò xác nhận, làm nổi bật rõ người đang chịu trách nhiệm thực hiện.
+
+Không để thanh tiến trình tiết lộ thông tin về hành động bí mật của người chơi khác.
+
+# 9. GROUP CHAT — OWNER RULE UPDATE
+
+Tôi muốn mở Group Chat vào cả ban ngày và ban đêm.
+
+Đây là cập nhật về thời gian sử dụng các kênh chat nhóm chức năng hợp lệ.
+
+Các nhóm mà người chơi đã được hệ thống cấp quyền hợp lệ có thể tiếp tục trao đổi khi chuyển sang ban đêm.
+
+Không tự động đóng quyền gửi tin của một nhóm chỉ vì chuyển pha sang đêm.
+
+Áp dụng cho:
+
+- Nhóm Sói.
+- Nhóm Cupid.
+- Nhóm Giáo phái.
+- Các nhóm chức năng thường trực khác được hệ thống cấp quyền.
+
+Đối với VH78 trước đây quy định nhóm giáo phái chỉ chat ban ngày, cập nhật phạm vi thời gian thành cả ngày và đêm cho ruleset mới được áp dụng.
+
+Ghi nhận quyết định mới, bảo toàn lịch sử VH78 và khả năng replay các trận sử dụng ruleset cũ.
+
+Đây chỉ là cập nhật thời gian giao tiếp.
+
+Không thay đổi:
+
+- Điều kiện gia nhập nhóm.
+- Điều kiện rời nhóm.
+- Thành viên nhóm.
+- Quyền xem lịch sử.
+- Quyền của người chết.
+- Quyền của người ngủ đông.
+- Quyền của người bị khóa nếu có quy định riêng.
+- Quyền của người bị chuyển phe.
+- Điều kiện tạo nhóm.
+- Quyền tiết lộ danh tính.
+
+Các phiên chat đặc biệt có thời hạn theo kỹ năng vẫn tuân theo quy định riêng, bao gồm Thầy Đồng và Quản Ngục.
+
+Không mở chat công khai ban đêm trái luật.
+
+Không mở DM 1–1 thông thường giữa người chơi.
+
+Không cho người chơi tự tạo nhóm bí mật ngoài cơ chế game.
+
+# 10. GROUP CHAT INTERFACE
+
+Tôi chưa trực tiếp kiểm thử được Group Chat.
+
+Hãy làm cho các kênh mà người chơi được cấp quyền trở nên dễ tìm và dễ sử dụng.
+
+Thiết kế Chat Panel có thể bao gồm:
+
+- Chat chung.
+- Nhóm của tôi.
+- Các nhóm chức năng được phép truy cập.
+- Chat kỹ năng đặc biệt nếu đang tồn tại.
+- Thông báo hệ thống.
+
+Chỉ hiển thị những kênh người chơi thực sự có quyền biết.
+
+Nếu người chơi không thuộc nhóm Sói, không hiển thị tab Sói.
+
+Nếu người chơi không thuộc nhóm Giáo phái, không hiển thị tab Giáo phái.
+
+Không hiển thị tên những nhóm bí mật mà người chơi không có quyền biết.
+
+## 10.1. Tab và trạng thái
+
+Mỗi nhóm hợp lệ có:
+
+- Tên nhóm.
+- Icon phù hợp.
+- Trạng thái hoạt động.
+- Số tin chưa đọc.
+- Tin nhắn mới.
+- Trạng thái gửi.
+- Thông báo khi mất quyền truy cập nếu được phép.
+
+## 10.2. Notification
+
+Khi có tin nhắn nhóm:
+
+- Hiển thị chấm thông báo trên tab.
+- Có unread count.
+- Có âm thanh nhẹ nếu được bật.
+- Không bắt người chơi rời khỏi Action Panel.
+
+Không hiển thị nội dung tin nhắn bí mật trong thông báo công khai.
+
+## 10.3. Chat interaction
+
+Hỗ trợ:
+
+- Gửi tin bằng Enter.
+- Xuống dòng bằng tổ hợp phím phù hợp.
+- Cuộn lịch sử.
+- Chuyển giữa các kênh.
+- Jump to Latest.
+- Trạng thái đang gửi.
+- Gửi thất bại và thử lại.
+- Chống gửi trùng.
+- Giữ trạng thái sau reconnect.
+
+Không làm mất nội dung đang nhập khi chuyển giữa các tab nếu có thể bảo toàn an toàn.
+
+# 11. GROUP CHAT BACKEND & ACL
+
+Group Chat phải sử dụng backend và WebSocket thật.
+
+Không chỉ tạo tab giao diện nhưng không thể gửi tin.
+
+Server xác định:
+
+- Channel ID.
+- Thành viên hợp lệ.
+- Quyền đọc.
+- Quyền gửi.
+- Quyền xem lịch sử.
+- Trạng thái hiện tại.
+- Thời điểm mở hoặc đóng phiên kỹ năng đặc biệt.
+
+Khi người chơi chuyển phe hợp lệ, cập nhật quyền nhóm đúng thời điểm đã chốt.
+
+Khi người chơi mất quyền, thu hồi subscription và quyền gửi tương ứng.
+
+Khi hồi sinh hoặc thay đổi trạng thái, đánh giá lại quyền theo luật.
+
+Bị câm chỉ chặn chat công khai theo phạm vi luật hiện hành; không mặc định tước quyền nhóm hợp lệ.
+
+Không tiết lộ tin nhắn, channel metadata hoặc danh sách thành viên qua API trái quyền.
+
+Không dựa vào frontend để kiểm soát quyền truy cập.
+
+# 12. GROUP CHAT REAL MULTIPLAYER ACCEPTANCE
+
+Tôi yêu cầu nghiệm thu Group Chat bằng nhiều tài khoản độc lập.
+
+Kiểm thử trong những đội hình mà hệ thống đã hỗ trợ.
+
+## Nhóm Sói
+
+- Thành viên hợp lệ gửi tin ban đêm.
+- Thành viên khác trong nhóm nhận realtime.
+- Người ngoài nhóm không nhận.
+- Chuyển ngày đêm không mất quyền trái luật.
+- Reconnect khôi phục đúng quyền.
+
+## Nhóm Cupid
+
+- Thành viên hợp lệ trao đổi.
+- Chat ban ngày.
+- Chat ban đêm.
+- Người ngoài nhóm không nhận.
+
+## Nhóm Giáo phái
+
+- Thành viên được kết nạp hợp lệ nhận quyền nhóm.
+- Chat ban ngày.
+- Chat ban đêm theo cập nhật mới.
+- Người chưa được kết nạp không nhận nội dung.
+- Mất quyền được xử lý đúng luật.
+
+## Chat kỹ năng
+
+- Thầy Đồng.
+- Quản Ngục.
+- Các phiên chat đặc biệt đã hỗ trợ.
+
+Giữ nguyên cơ chế ẩn danh và giới hạn riêng.
+
+Nếu một nhóm chưa có gameplay runtime hoạt động trong phạm vi hiện tại, không mở quyền giả hoặc tạo thành viên bằng cách sửa trực tiếp GameState để báo cáo Normal Gameplay PASS.
+
+Kiểm thử ACL trong phạm vi thực tế có thể hỗ trợ, ghi rõ những nhóm chưa đủ điều kiện chơi thử.
+
+Không quay lại chương trình tăng FULL để phục vụ yêu cầu chat.
+
+# 13. GAMEPLAY RESULT EXPERIENCE 2.0
+
+Tôi muốn kết quả của từng lượt hành động được hiển thị rõ ràng hơn.
+
+Không chỉ sử dụng một dòng thông báo nhỏ.
+
+Không để kết quả xuất hiện vài giây rồi biến mất.
+
+Không bắt người chơi tìm lại trong chat mới biết kỹ năng của mình đã xảy ra chuyện gì.
+
+Tạo một Result Center trong Game Room.
+
+# 14. PERSONAL RESULT CARD
+
+Mỗi khi một kết quả riêng được server phân giải và được phép công bố, hiển thị một Result Card nổi bật.
+
+Bao gồm:
+
+- Ngày hoặc đêm.
+- Artwork nhân vật của bản thân theo quyền.
+- Tên kỹ năng.
+- Mục tiêu.
+- Thời điểm.
+- Kết quả.
+- Trạng thái.
+- Tài nguyên còn lại nếu được phép biết.
+
+Ví dụ:
+
+## Kết quả điều tra
+
+Đêm 02.
+
+Tiên Tri đã điều tra người chơi số 05.
+
+Hệ thống trả về hào quang được phép biết.
+
+## Kết quả bảo vệ
+
+Đêm 02.
+
+Bạn đã gửi yêu cầu bảo vệ người chơi số 03.
+
+Hiển thị kết quả bảo vệ theo thông tin luật cho phép.
+
+Không tự thông báo người đó đã bị tấn công nếu kỹ năng không cho phép biết.
+
+## Kết quả hồi sinh
+
+Hiển thị:
+
+- Mục tiêu đã lựa chọn.
+- Trạng thái phân giải.
+- Kết quả được phép nhận.
+- Tài nguyên nếu được phép biết.
+
+Không công bố trước thời điểm luật quy định.
+
+## Kết quả biểu quyết
+
+Hiển thị:
+
+- Lựa chọn của bản thân.
+- Trạng thái phiếu.
+- Kết quả công khai.
+- Người bị loại hoặc trạng thái không có người bị loại.
+
+Không hiển thị trọng số và thao túng phiếu bí mật trái quyền.
+
+Các ví dụ trên chỉ định hướng cách trình bày, không phải luật mới của nhân vật.
+
+# 15. RESULT PRESENTATION STATES
+
+Tạo các trạng thái kết quả rõ ràng:
+
+- Đã tiếp nhận.
+- Đang chờ phân giải.
+- Đã phân giải.
+- Thành công nếu được phép biết.
+- Không thành công nếu được phép biết.
+- Bị từ chối.
+- Cần chọn lại.
+- Đã hủy.
+- Không có kết quả công bố ở thời điểm hiện tại.
+
+Không mặc định kỹ năng nào cũng được biết thành công hay thất bại.
+
+Nếu luật chỉ cho phép nhận một thông báo chung, giữ đúng nội dung chung.
+
+Không giải thích nguyên nhân bí mật để làm giao diện có vẻ chi tiết hơn.
+
+# 16. RESULT CARD DESIGN
+
+Tôi muốn Result Card đẹp và có cảm giác của một trò chơi fantasy.
+
+Có thể sử dụng:
+
+- Artwork.
+- Icon kỹ năng.
+- Viền theo nhóm thông tin.
+- Hiệu ứng xuất hiện nhẹ.
+- Âm thanh công bố.
+- Highlight mục tiêu.
+- Typography rõ ràng.
+- Bố cục trực quan.
+
+Có thể phân loại hình ảnh theo:
+
+- Điều tra.
+- Bảo vệ.
+- Tấn công.
+- Hồi sinh.
+- Biểu quyết.
+- Biến đổi.
+- Thông báo hệ thống.
+
+Không công bố loại hiệu ứng nếu thông tin đó chưa được phép biết.
+
+Không dùng hiệu ứng hình ảnh hoặc âm thanh khiến người khác suy ra kỹ năng bí mật.
+
+# 17. RESULT ACKNOWLEDGEMENT
+
+Mỗi kết quả quan trọng có thể có nút:
+
+**Đã hiểu**
+
+Hoặc:
+
+**Đã xem kết quả**
+
+Khi người chơi nhấn, thu gọn Result Card.
+
+Kết quả vẫn phải lưu trong Nhật ký cá nhân.
+
+Nút này chỉ là xác nhận giao diện, không phải xác nhận thay đổi kết quả gameplay.
+
+Không tự tạo thêm điều kiện bắt buộc chuyển pha.
+
+Nếu luật hiện hành yêu cầu một bước xác nhận gameplay riêng, sử dụng đúng bước đó và phân biệt với xác nhận đã đọc.
+
+Không khiến người chơi khác phải chờ chỉ vì một người chưa đóng Result Card.
+
+# 18. MULTIPLE RESULTS
+
+Một người chơi có thể nhận nhiều kết quả trong cùng một lượt.
+
+Không để các popup xuất hiện chồng lên nhau.
+
+Thiết kế:
+
+- Result Queue.
+- Danh sách kết quả.
+- Chuyển qua lại giữa các kết quả.
+- Gộp các kết quả liên quan khi phù hợp.
+- Đánh dấu kết quả chưa đọc.
+- Nút xem lại.
+
+Hiển thị theo thứ tự event và thời điểm được phép công bố.
+
+Không làm mất kết quả trước khi người chơi có cơ hội xem.
+
+Nếu nhiều kết quả cùng xuất hiện, ưu tiên thông tin cần hành động trước.
+
+# 19. NIGHT SUMMARY
+
+Khi đêm kết thúc, hiển thị bảng tổng kết đẹp và rõ ràng.
+
+Có thể đặt tên:
+
+**BÌNH MINH TẠI LÀNG SƯƠNG MÙ**
+
+Bao gồm:
+
+- Đêm vừa kết thúc.
+- Những sự kiện công khai.
+- Người được công bố chết.
+- Người được công bố hồi sinh.
+- Những thay đổi trạng thái được phép công bố.
+- Kết quả riêng của người xem.
+- Hành động của người xem.
+
+Phân biệt:
+
+- Diễn biến chung.
+- Kết quả cá nhân.
+
+Không hiển thị trạng thái chết thật, giả chết hoặc ngủ đông nếu chưa được phép công bố.
+
+Có thể sử dụng animation bình minh nhưng không trì hoãn gameplay.
+
+# 20. DAY SUMMARY
+
+Khi kết thúc ngày, hiển thị:
+
+- Ngày hiện tại.
+- Các sự kiện công khai.
+- Kỹ năng ngày được phép biết.
+- Biểu quyết của bản thân.
+- Kết quả biểu quyết.
+- Người bị loại.
+- Trạng thái tiếp theo.
+
+Có thể đặt tên:
+
+**PHÁN QUYẾT CỦA HỘI ĐỒNG**
+
+Nếu hòa phiếu, hủy biểu quyết hoặc không có người bị loại, trình bày rõ tình huống tương ứng.
+
+Không để người chơi phải tự suy luận hệ thống đã kết thúc biểu quyết như thế nào.
+
+# 21. PERSONAL JOURNAL COMPLETION
+
+Tất cả kết quả đã được phép công bố phải được lưu trong Nhật ký cá nhân.
+
+Chia theo:
+
+- Đêm 01.
+- Ngày 01.
+- Đêm 02.
+- Ngày 02.
+- Các vòng tiếp theo.
+
+Mỗi bản ghi có:
+
+- Nhân vật tại thời điểm hành động.
+- Kỹ năng.
+- Mục tiêu.
+- Thời điểm.
+- Trạng thái.
+- Kết quả được phép biết.
+
+Bổ sung các tab:
+
+- Tất cả.
+- Kỹ năng của tôi.
+- Kết quả của tôi.
+- Biểu quyết.
+- Diễn biến công khai.
+
+Cho phép thu gọn và mở rộng từng ngày hoặc đêm.
+
+Đánh dấu kết quả chưa đọc nếu phù hợp.
+
+Khi người chơi đóng thông báo hoặc Result Card, dữ liệu không được mất.
+
+Refresh và reconnect phải phục hồi nhật ký theo quyền.
+
+Không lưu chỉ dựa trên Toast phía frontend.
+
+Sử dụng event ledger, dữ liệu chính thức và authorized projection hiện có.
+
+# 22. LIVE VOTING PRESERVATION
+
+Bảo toàn Live Voting đã được triển khai trong IMMERSIVE-03.
+
+Tiếp tục hoàn thiện nếu còn thiếu.
+
+Giữ:
+
+- Số lựa chọn công khai theo từng mục tiêu.
+- Biểu đồ.
+- Trạng thái phiếu của bản thân.
+- Cập nhật realtime.
+- Thay đổi phiếu theo luật.
+- Kết quả cuối.
+
+Không công khai dữ liệu thao túng phiếu hoặc trọng số bí mật.
+
+Bảo toàn cấu hình `WV_PUBLIC_ORDINARY_VOTE` theo source thực tế.
+
+Đối với môi trường public playtest, xác định rõ cách bật tính năng đã được phép một cách chính thức.
+
+Không yêu cầu người dùng thông thường tự bật nhiều biến môi trường để xem các tính năng giao diện cần thiết.
+
+# 23. GAME HUD POLISH
+
+Tổ chức lại các công cụ trong Game HUD nếu cần.
+
+Ưu tiên:
+
+- Thông báo.
+- Vòng quay định mệnh.
+- Nhật ký.
+- Nhân vật trong ván.
+- Group Chat.
+- Người Giữ Luật.
+- Cài đặt.
+
+Giữ vòng quay ở vị trí dễ thấy.
+
+Không thêm quá nhiều nút khiến Game HUD chật chội.
+
+Các công cụ quan trọng phải truy cập được mà không cần cuộn xuống cuối trang.
+
+Khi người chơi đang cần xác nhận, nút hành động phải nổi bật nhất.
+
+Khi quản trò cần xác nhận, thông báo dành cho quản trò phải nổi bật nhất.
+
+# 24. AUDIO EXPERIENCE
+
+Giữ toàn bộ âm thanh hiện có.
+
+Có thể bổ sung hoặc cải thiện:
+
+- Âm thanh đến lượt.
+- Âm thanh yêu cầu xác nhận.
+- Âm thanh mọi người đã xác nhận.
+- Âm thanh tiếp nhận yêu cầu.
+- Âm thanh phân giải hoàn tất.
+- Âm thanh tin nhắn nhóm.
+- Âm thanh công bố kết quả.
+- Âm thanh bình minh.
+- Âm thanh biểu quyết.
+
+Tích hợp vào SFX Engine hiện có.
+
+Không tạo nhiều hệ thống âm thanh trùng nhau.
+
+Có tùy chỉnh âm lượng.
+
+Không phát âm thanh liên tục mỗi khi server cập nhật.
+
+Không phát lại thông báo cũ sau reconnect.
+
+Không để âm thanh của vòng quay che mất thông báo quan trọng.
+
+# 25. REALTIME & NOTIFICATION RELIABILITY
+
+Các thông báo phải đến từ trạng thái backend chính thức.
+
+Không tự tạo thông báo hoàn tất chỉ dựa vào số nút đã được bấm trên frontend.
+
+Đảm bảo:
+
+- Event ID.
+- Phase ID.
+- Match ID.
+- Recipient.
+- Visibility.
+- Timestamp.
+- Deduplication.
+- Read/Acknowledgement state nếu cần.
+- Deep link nếu phù hợp.
+
+Xử lý:
+
+- Refresh.
+- Reconnect.
+- Nhiều tab.
+- Sự kiện đến trùng.
+- Sự kiện đến sai thứ tự.
+- Chuyển pha.
+- Hết hạn thao tác.
+- Server restart.
+
+Thông báo xác nhận cũ không được phép thực hiện hành động trong pha mới.
+
+Không để giao diện xuất hiện trạng thái tất cả đã hoàn tất nếu server chưa xác nhận.
+
+# 26. GAME PRIVACY
+
+Việc làm thông báo lớn hơn không đồng nghĩa với công khai nhiều dữ liệu bí mật hơn.
+
+Luôn bảo toàn:
+
+- Hidden roles.
+- Hidden factions.
+- Hidden skills.
+- Private results.
+- Secret vote effects.
+- Hibernation.
+- Fake death.
+- Private chat membership.
+- Anonymous skill sessions.
+
+Thông báo quản trò chỉ chứa thông tin điều phối được phép biết.
+
+Kết quả riêng chỉ gửi cho người được phép nhận.
+
+Group Chat chỉ gửi cho thành viên có quyền.
+
+Kiểm tra dữ liệu HTTP và WebSocket thực tế.
+
+Không chỉ ẩn thông tin bằng CSS.
+
+# 27. RESPONSIVE & THEMES
+
+Toàn bộ giao diện mới phải tương thích:
+
+- Desktop.
+- MacBook.
+- Tablet.
+- Mobile.
+- Các theme hiện có.
+
+Thông báo lớn phải thích ứng với kích thước màn hình.
+
+Không che sân chơi quá mức.
+
+Không làm nút xác nhận nằm ngoài viewport.
+
+Result Card có thể thu gọn trên mobile.
+
+Group Chat có thể sử dụng Drawer hoặc Tab phù hợp.
+
+Bảo toàn toàn bộ artwork và âm thanh.
+
+Hỗ trợ Reduced Motion.
+
+# 28. PRODUCT ACCEPTANCE
+
+Nghiệm thu trực tiếp bằng nhiều tài khoản độc lập trong cùng một trận.
+
+## JOURNEY A — MODERATOR
+
+Người chơi thực hiện lựa chọn
+
+→ Server tiếp nhận
+
+→ Tất cả yêu cầu cần thiết hoàn tất
+
+→ Quản trò nhận thông báo lớn
+
+→ Âm thanh thông báo
+
+→ Quản trò nhấn xác nhận
+
+→ Server phân giải
+
+→ Chuyển bước hợp lệ.
+
+Kiểm tra thông báo không tự biến mất trước khi xác nhận.
+
+## JOURNEY B — PLAYER WAITING
+
+Người chơi chọn mục tiêu
+
+→ Xác nhận
+
+→ Nhận thông báo đã tiếp nhận
+
+→ Biết hệ thống đang chờ quản trò
+
+→ Nhận kết quả
+
+→ Xem lại trong nhật ký.
+
+## JOURNEY C — GROUP CHAT NIGHT
+
+Nhiều thành viên hợp lệ trong cùng nhóm
+
+→ Chuyển sang ban đêm
+
+→ Gửi tin nhắn
+
+→ Nhận realtime
+
+→ Kiểm tra unread count
+
+→ Kiểm tra người ngoài nhóm không nhận
+
+→ Reconnect
+
+→ Tiếp tục chat đúng quyền.
+
+## JOURNEY D — RESULTS
+
+Sử dụng kỹ năng
+
+→ Server phân giải
+
+→ Result Card lớn xuất hiện
+
+→ Hiển thị đúng kết quả được phép biết
+
+→ Đóng Result Card
+
+→ Mở lại nhật ký
+
+→ Refresh
+
+→ Kết quả vẫn tồn tại.
+
+## JOURNEY E — DAY AND NIGHT SUMMARY
+
+Hoàn thành đêm
+
+→ Hiển thị tổng kết đêm
+
+→ Chuyển ngày
+
+→ Biểu quyết
+
+→ Hiển thị kết quả biểu quyết
+
+→ Tổng kết ngày.
+
+## JOURNEY F — MULTIPLE RESULTS
+
+Người chơi nhận nhiều kết quả
+
+→ Result Queue xử lý đúng
+
+→ Không chồng popup
+
+→ Không mất thông tin
+
+→ Không tiết lộ kết quả trái quyền.
+
+## JOURNEY G — REGRESSION
+
+Kiểm tra vòng quay định mệnh vẫn hoạt động.
+
+Kiểm tra chat, skill, vote, timer, reconnect, replay và game flow kế thừa.
+
+Không làm mất bất kỳ chức năng nào đã hoạt động trong IMMERSIVE-03.
+
+# 29. CLOUD DEPLOYMENT & FULL-STACK CONTINUITY
+
+Toàn bộ yêu cầu trước đó tiếp tục có hiệu lực:
+
+- Backend thật.
+- SQLite local.
+- PostgreSQL integration.
+- Railway deployment.
+- GitHub CI/CD.
+- Persistent storage.
+- HTTPS.
+- WebSocket qua Internet.
+- AI Rule Assistant.
+- Player Career.
+- Huy hiệu.
+- Social Platform.
+- Match History.
+- Replay.
+
+Các thông báo, Group Chat và Result Center phải tương thích với môi trường cloud.
+
+Không hardcode localhost.
+
+Không phụ thuộc browser transport bridge khi triển khai website thật.
+
+Không bật Demo Auth hoặc QA công khai trái chính sách.
+
+Nếu PostgreSQL, Railway hoặc AI Provider chưa được nghiệm thu thật, tiếp tục hoàn thiện cấu hình và báo cáo đúng trạng thái.
+
+Không tuyên bố đã deploy trực tuyến nếu chưa có website live.
+
+# 30. REAL WEBSITE EVIDENCE
+
+Cung cấp ảnh website thật của:
+
+1. Thông báo lớn trong phòng chơi.
+2. Thông báo mọi người đã xác nhận dành cho quản trò.
+3. Nút xác nhận và tiếp tục.
+4. Trạng thái người chơi đang chờ quản trò.
+5. Group Chat ban ngày.
+6. Group Chat ban đêm.
+7. Tin nhắn được nhận realtime từ hai tài khoản.
+8. Result Card riêng.
+9. Nhiều kết quả trong cùng lượt.
+10. Night Summary.
+11. Day Summary.
+12. Personal Journal.
+13. Giao diện mobile.
+14. Game HUD sau khi hoàn thiện.
+
+Ưu tiên cung cấp video quay trực tiếp website:
+
+Người chơi chọn kỹ năng
+
+→ Tất cả xác nhận
+
+→ Quản trò nhận thông báo
+
+→ Quản trò xác nhận
+
+→ Hệ thống phân giải
+
+→ Người chơi nhận kết quả
+
+→ Xem lại nhật ký.
+
+Cung cấp thêm bằng chứng Group Chat ban đêm từ nhiều tài khoản.
+
+Không sử dụng ảnh AI hoặc mockup thay cho bằng chứng thực tế.
+
+# 31. FULL SOURCE DELIVERY
+
+Bàn giao:
+
+`Wolvesville_IMMERSIVE-04_Full_Source.zip`
+
+Tích hợp đầy đủ các thay đổi vào source mới nhất.
+
+Không chỉ giao patch.
+
+Không yêu cầu tôi ghép source thủ công.
+
+Bảo toàn toàn bộ luật, nhân vật, dữ liệu, artwork và tiến độ.
+
+Cung cấp:
+
+- Full Source.
+- Human QA Pack.
+- Screenshot Evidence.
+- Video nếu môi trường hỗ trợ.
+- Changelog.
+- Delivery Verification.
+- Product Acceptance cập nhật.
+- Hướng dẫn chạy Mac.
+- Hướng dẫn cloud deployment.
+
+Không cần tạo thêm nhiều chỉ số mới.
+
+Không quay lại chương trình tăng F.
+
+# FINAL PROJECT OWNER COMMAND
+
+Vòng quay định mệnh đã được tôi chấp thuận.
+
+Giữ nguyên.
+
+Tôi muốn tập trung nâng cấp khả năng giao tiếp và điều phối trong trận.
+
+Thông báo phải rõ.
+
+Quản trò phải biết lúc nào cần xác nhận.
+
+Người chơi phải biết hệ thống đang chờ điều gì.
+
+Group Chat phải hoạt động cả ban ngày và ban đêm trong phạm vi được cấp quyền.
+
+Kết quả kỹ năng phải được trình bày rõ ràng.
+
+Kết quả từng ngày và đêm phải dễ xem.
+
+Nhật ký phải lưu lại đầy đủ thông tin được phép biết.
+
+Tôi muốn hệ thống chủ động dẫn dắt người chơi qua từng bước.
+
+Không để người chơi hoặc quản trò phải tự tìm kiếm thông tin quan trọng.
+
+**KEEP THE WHEEL OF FATE.**
+
+**MAKE GAME NOTIFICATIONS BIGGER AND CLEARER.**
+
+**BUILD PROMINENT MODERATOR CONFIRMATION ALERTS.**
+
+**KEEP MANUAL MODERATOR CONFIRMATION.**
+
+**ENABLE AUTHORIZED GROUP CHAT DURING THE NIGHT.**
+
+**COMPLETE REALTIME GROUP CHAT.**
+
+**MAKE EVERY AUTHORIZED ACTION RESULT CLEAR.**
+
+**BUILD IMMERSIVE NIGHT AND DAY SUMMARIES.**
+
+**COMPLETE PERSONAL JOURNAL.**
+
+**IMPROVE THE ENTIRE GAME FLOW.**
+
+**PRESERVE GAME RULES AND PRIVACY.**
+
+**DELIVER A POLISHED, WORKING MULTIPLAYER EXPERIENCE.**
+
+**BEGIN IMMERSIVE-04 IMPLEMENTATION NOW.**

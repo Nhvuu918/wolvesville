@@ -1,0 +1,77 @@
+{
+  "scope": "Clean extraction from Sprint 13 full source ZIP, isolated temporary SQLite (no PostgreSQL instance)",
+  "sourceIntegrity": {
+    "status": "PASS",
+    "exitCode": 0,
+    "characters": 97,
+    "approvedDecisions": 118,
+    "legacySpecs": 207
+  },
+  "zipIntegrity": {
+    "status": "PASS",
+    "crc": "PASS",
+    "cleanExtraction": "PASS",
+    "filesInZipBeforeFinalDocs": 799
+  },
+  "build": {
+    "status": "PASS",
+    "exitCode": 0
+  },
+  "rulesBuild": {
+    "status": "PASS",
+    "exitCode": 0
+  },
+  "backendRegression": {
+    "status": "PASS",
+    "exitCode": 0,
+    "total": 222,
+    "passed": 211,
+    "failed": 0,
+    "skipped": 11
+  },
+  "newCharacterIntegration": {
+    "status": "PASS",
+    "exitCode": 0,
+    "passed": 7,
+    "failed": 0
+  },
+  "browserS13RealBackend": {
+    "status": "PASS",
+    "exitCode": 0,
+    "suites": 1,
+    "multiClient": true
+  },
+  "inheritedBrowserSuites": {
+    "status": "PASS_IN_SPLIT_RUNS",
+    "passedSuites": 14,
+    "failedAfterRetries": 0,
+    "aggregateSingleRunnerCertified": false
+  },
+  "metricsVerification": {
+    "status": "PASS",
+    "exitCode": 0,
+    "R": 18,
+    "F": 0,
+    "S_exact": null,
+    "S_minimumTechnicalPaths": 19,
+    "A": 6,
+    "B": 6,
+    "C": 0
+  },
+  "s12MatchProof": {
+    "status": "PASS",
+    "exitCode": 0,
+    "A": 6,
+    "B": 6,
+    "C": 0
+  },
+  "postgresQLLive": {
+    "status": "PENDING",
+    "passed": 0,
+    "skippedByBackend": 11
+  },
+  "fullCompetitiveProduction": {
+    "status": "NO_GO"
+  },
+  "note": "Local clean-extraction compilation used environment-provided TypeScript Node typings. Normal installations run npm install, without bundling node_modules. Original source 97 roles/118 decisions/207 specs preserved. No live PostgreSQL acceptance, no complete generalized death-chain or victory."
+}

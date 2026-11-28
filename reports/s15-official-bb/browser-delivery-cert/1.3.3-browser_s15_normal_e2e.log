@@ -1,0 +1,13 @@
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS aura-village
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py aura-village
+Traceback (most recent call last):
+  File "/tmp/wv21/tests/browser_s15_normal_e2e.py", line 67, in <module>
+    if __name__=='__main__':run(sys.argv[1])
+                            ~~~^^^^^^^^^^^^^
+  File "/tmp/wv21/tests/browser_s15_normal_e2e.py", line 59, in run
+    p.wait_for_function('WolvesLive.game.completed===true',timeout=18000);assert p.evaluate('WolvesLive.game.winnerIds')==[wid];assert p.locator('.wv-winners').count()==1
+                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Error: E2E failed browser_s15_normal_e2e.py, exit=1, signal=null
+    at file:///tmp/wv21/scripts/run-browser-s06.mjs:45:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

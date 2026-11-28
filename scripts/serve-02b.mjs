@@ -1,0 +1,12 @@
+import {SqliteMultiplayerStore} from '../dist/backend/src/multiplayer/sqlite-store.js';
+import {PostgresMultiplayerStore} from '../dist/backend/src/multiplayer/pg-store.js';
+import {createMultiplayerServer} from '../dist/backend/src/multiplayer/server.js';
+const isPg=process.env.DB_PROVIDER==='postgres';
+const store=isPg?await PostgresMultiplayerStore.connect(requireDatabaseUrl()):new SqliteMultiplayerStore(process.env.WV_LOBBY_DB??'./local/02b_full.sqlite');
+import {loadLocalEnv,requireDatabaseUrl} from './local-env.mjs';
+loadLocalEnv();
+const port=Number(process.env.PORT??3210),testMode=process.env.WV_INTEGRATION_TEST_MODE==='1',officialRuleTestMode=process.env.WV_OFFICIAL_RULE_TEST_MODE==='1';
+const server=createMultiplayerServer(store,{integrationTestMode:testMode,officialRuleTestMode,allowedOrigins:(process.env.ALLOWED_ORIGINS??'').split(',').filter(Boolean)});
+const actual=await server.start(port,process.env.HOST??'127.0.0.1');
+console.log(`Wolvesville 02B http://127.0.0.1:${actual} DB=${isPg?'PostgreSQL':'SQLite'} fixture mode=${testMode} official read-only test mode=${officialRuleTestMode}`);
+for(const signal of ['SIGTERM','SIGINT'])process.on(signal,()=>void server.close().then(()=>process.exit()));

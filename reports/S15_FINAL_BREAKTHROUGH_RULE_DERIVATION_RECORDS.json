@@ -1,0 +1,73 @@
+{
+  "version": "1.7.7-s15-final-breakthrough-wip",
+  "records": [
+    {
+      "ruleSources": [
+        "character.json#88",
+        "character.json#28",
+        "VH03",
+        "VH65",
+        "S11-V03"
+      ],
+      "verifiedPremises": "Hunter marks a player each night; actual killed or hanged Hunter pulls marked player; Jester wins on own real hanging only.",
+      "derivedBehaviorAndEngineering": "Apply secondary death on same-round mark before terminal check; never count secondary death as hanging; dead target no duplicate.",
+      "conflictChecksAndLimits": "Protection-free verified decks only. Stale mark fails atomically, no arbitrary duration; no general village winner.",
+      "status": "RESTRICTED_IMPLEMENTED",
+      "ruleVersion": "1.7.7-s15-final-breakthrough-wip",
+      "evidenceFile": "tests/sprint15-final-breakthrough.test.mjs"
+    },
+    {
+      "ruleSources": [
+        "character.json#33",
+        "VH03",
+        "VH65",
+        "S11-V03"
+      ],
+      "verifiedPremises": "Hanged Trickster may select a villager to die.",
+      "derivedBehaviorAndEngineering": "Private pending response after actual elimination, choice/skip, block premature advance, atomic chain closure and replay.",
+      "conflictChecksAndLimits": "All other players villagers, no secret-faction oracle. Mixed factions and competing death effects not enabled; no inferred village win.",
+      "status": "RESTRICTED_IMPLEMENTED",
+      "ruleVersion": "1.7.7-s15-final-breakthrough-wip",
+      "evidenceFile": "tests/sprint15-final-breakthrough.test.mjs"
+    },
+    {
+      "ruleSources": [
+        "character.json#93",
+        "character.json#94",
+        "VH74",
+        "P04",
+        "WIN-03"
+      ],
+      "verifiedPremises": "Partner true death converts exile to wolf; pack may bite up to two; no stacking above two.",
+      "derivedBehaviorAndEngineering": "One current wolf only: one authoritative submission with 1 or 2 distinct targets; close all deaths before existing parity predicate.",
+      "conflictChecksAndLimits": "Only two new decks, no hidden faction selection, no other defenses, multi-wolf consensus, post-conversion aura or retained seal behavior inferred.",
+      "status": "RESTRICTED_IMPLEMENTED",
+      "ruleVersion": "1.7.7-s15-final-breakthrough-wip",
+      "evidenceFile": "tests/sprint15-final-breakthrough.test.mjs"
+    },
+    {
+      "ruleSources": [
+        "character.json#87",
+        "VH64"
+      ],
+      "verifiedPremises": "Pharmacist sees all wolf bite victims; one flask rescues one person.",
+      "derivedBehaviorAndEngineering": "Reuse preliminary death window; one victim per flask, includes own pending life (no source self exclusion), no final death revival.",
+      "conflictChecksAndLimits": "Self-rescue is a logical derivation, not a separately approved owner rule; only pack bite, no other damage classes or overlapping rescue.",
+      "status": "RESTRICTED_IMPLEMENTED",
+      "ruleVersion": "1.7.7-s15-final-breakthrough-wip",
+      "evidenceFile": "tests/sprint15-final-breakthrough.test.mjs"
+    },
+    {
+      "ruleSources": [
+        "WIN-03",
+        "VH03"
+      ],
+      "verifiedPremises": "Wolf parity or majority wins only with no contesting third faction; village majority continues.",
+      "derivedBehaviorAndEngineering": "Reuse existing wolf parity after stable chain, no generalized village predicate.",
+      "conflictChecksAndLimits": "No source-confirmed terminal village condition; #8/#9 counterexample remains, no last-survivor default.",
+      "status": "BLOCKED_FOR_VILLAGE",
+      "ruleVersion": "1.7.7-s15-final-breakthrough-wip",
+      "evidenceFile": "tests/sprint15-final-breakthrough.test.mjs"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "version": "1.5.0-s13",
+  "mode": "Restricted noncompetitive game sessions",
+  "metricR": {
+    "executableCharacters": 18,
+    "totalCharacters": 97,
+    "baseline": 11,
+    "newCharacters": [
+      11,
+      16,
+      17,
+      24,
+      59,
+      66,
+      67
+    ]
+  },
+  "metricF": {
+    "fullyImplemented": 0,
+    "certified": false,
+    "reason": "Unresolved mandatory branches, interactions, global victory"
+  },
+  "metricS": {
+    "verifiedMinimumTechnicalPaths": 19,
+    "auditedCompositeBranchRows": 145,
+    "exactRatio": null,
+    "certified": false,
+    "reason": "145 inherited audit rows are composite and not one-to-one with executable official skill branches"
+  },
+  "metricA": 6,
+  "metricB": 6,
+  "metricC": 0,
+  "officialGameMode": "NO_GO",
+  "evidence": [
+    {
+      "characterIds": [
+        11
+      ],
+      "source": "character.json#11, VH08",
+      "skill": "maintenance-vs-nightmare",
+      "authoritative": true,
+      "replay": true
+    },
+    {
+      "characterIds": [
+        16
+      ],
+      "source": "character.json#16",
+      "skill": "antidote",
+      "authoritative": true,
+      "replay": true
+    },
+    {
+      "characterIds": [
+        16
+      ],
+      "source": "character.json#16",
+      "skill": "delayed-poison",
+      "authoritative": true,
+      "replay": true
+    },
+    {
+      "characterIds": [
+        24
+      ],
+      "source": "character.json#24,VH79",
+      "skill": "jail-block-and-defense",
+      "authoritative": true,
+      "replay": true
+    },
+    {
+      "characterIds": [
+        66
+      ],
+      "source": "character.json#66,VH34",
+      "skill": "three-use-guard-attack-defense",
+      "authoritative": true,
+      "replay": true
+    },
+    {
+      "characterIds": [
+        67
+      ],
+      "source": "character.json#67,VH35,VH70",
+      "skill": "two-shield-defense",
+      "authoritative": true,
+      "replay": true
+    },
+    {
+      "characterIds": [
+        59
+      ],
+      "source": "character.json#59,VH31",
+      "skill": "day-injury-next-night-lock",
+      "authoritative": true,
+      "replay": true
+    },
+    {
+      "characterIds": [
+        17
+      ],
+      "source": "character.json#17,SYS-10,VH57",
+      "skill": "public-day-judgment-wolf-permanent-lock",
+      "authoritative": true,
+      "replay": true
+    }
+  ],
+  "qa": {
+    "newTestsExit": 0,
+    "newTestCount": 7
+  }
+}

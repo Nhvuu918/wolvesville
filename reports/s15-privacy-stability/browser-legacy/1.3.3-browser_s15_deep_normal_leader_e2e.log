@@ -1,0 +1,14 @@
+E2E_SCHEDULER_WAIT exclusive 89231
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 25422
+E2E_RESOURCE start cpu "usage_usec 14098357576\nuser_usec 11642691001\nsystem_usec 2455666575\nnice_usec 7743049\nnr_periods 58719\nnr_throttled 25580\nthrottled_usec 1759796877\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 63868\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s15_deep_normal_leader_e2e.py village port 39119 db /tmp/wolvesville-s06-browser-RhZDFg/test.sqlite
+DEEP_NORMAL_BROWSER_PASS s15-deep-leader village
+S06_BROWSER_CASE_PASS browser_s15_deep_normal_leader_e2e.py village
+E2E_ISOLATION browser_s15_deep_normal_leader_e2e.py enemy port 45345 db /tmp/wolvesville-s06-browser-vDMSGt/test.sqlite
+DEEP_NORMAL_BROWSER_PASS s15-deep-leader enemy
+S06_BROWSER_CASE_PASS browser_s15_deep_normal_leader_e2e.py enemy
+S06_BROWSER_PASS browser_s15_deep_normal_leader_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 14161563067\nuser_usec 11693869620\nsystem_usec 2467693447\nnice_usec 7782111\nnr_periods 58958\nnr_throttled 25607\nthrottled_usec 1760853433\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 63868\noom 0\noom_kill 0\noom_group_kill 0"

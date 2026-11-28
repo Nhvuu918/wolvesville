@@ -1,0 +1,332 @@
+[
+  {
+    "screen": "title",
+    "file": "01-landing-auth/title.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "public",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "login",
+    "file": "01-landing-auth/login.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "public",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "register",
+    "file": "01-landing-auth/register.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "public",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "wheel",
+    "file": "04-codex/wheel.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "grid",
+    "file": "04-codex/grid.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "character-detail",
+    "file": "04-codex/character-detail.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "moon",
+    "file": "12-themes/moon.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "gothic",
+    "file": "12-themes/gothic.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "classic",
+    "file": "12-themes/classic.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "basicdark",
+    "file": "12-themes/basicdark.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "basiclight",
+    "file": "12-themes/basiclight.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "cream",
+    "file": "12-themes/cream.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "sage",
+    "file": "12-themes/sage.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "europe",
+    "file": "12-themes/europe.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "eastasia",
+    "file": "12-themes/eastasia.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "jade",
+    "file": "12-themes/jade.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "sakura",
+    "file": "12-themes/sakura.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "loli",
+    "file": "12-themes/loli.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "frost",
+    "file": "12-themes/frost.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "bloodmoon",
+    "file": "12-themes/bloodmoon.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "forest",
+    "file": "12-themes/forest.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "royal",
+    "file": "12-themes/royal.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "theme preview",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  }
+]

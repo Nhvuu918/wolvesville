@@ -1,0 +1,290 @@
+TAP version 13
+# (node:16380) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_APPROVED_MATCH {"ids":[8,25],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 [8,25] Village victory after valid hanging; no vote, tie, retry, change, phase, privacy, replay
+ok 1 - QD01 [8,25] Village victory after valid hanging; no vote, tie, retry, change, phase, privacy, replay
+  ---
+  duration_ms: 2985.631424
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[8,25],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 [8,25] knight night victory with seer action before death; both choices private
+ok 2 - QD01 [8,25] knight night victory with seer action before death; both choices private
+  ---
+  duration_ms: 1504.91912
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[8,25],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 [8,25] Knight wins by hanging, Village cannot win with contender alive
+ok 3 - QD01 [8,25] Knight wins by hanging, Village cannot win with contender alive
+  ---
+  duration_ms: 1486.360114
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[8,9,25],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 dead Village teammate wins by current faction; opposite direction [8,9,25]
+ok 4 - QD01 dead Village teammate wins by current faction; opposite direction [8,9,25]
+  ---
+  duration_ms: 1464.577411
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[25,28,33,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD02 wrong alignment consumes revenge without disclosure or retry; Village and Jester co-win
+ok 5 - QD02 wrong alignment consumes revenge without disclosure or retry; Village and Jester co-win
+  ---
+  duration_ms: 4466.802563
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[25,33,74,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD02 valid revenge after hanging, Hunter follow completes before dead Village teammates win
+ok 6 - QD02 valid revenge after hanging, Hunter follow completes before dead Village teammates win
+  ---
+  duration_ms: 4021.374234
+  type: 'test'
+  ...
+# Subtest: QD03 pin expires at next night before no-repin death, replay and retry
+ok 7 - QD03 pin expires at next night before no-repin death, replay and retry
+  ---
+  duration_ms: 5206.070417
+  type: 'test'
+  ...
+# Subtest: QD03 pin reselect same target or change target, daytime follow still valid
+ok 8 - QD03 pin reselect same target or change target, daytime follow still valid
+  ---
+  duration_ms: 7800.509648
+  type: 'test'
+  ...
+# Subtest: QD01 historical active game stays 1.3.2 after restart; old winner behavior and replay unchanged
+ok 9 - QD01 historical active game stays 1.3.2 after restart; old winner behavior and replay unchanged
+  ---
+  duration_ms: 2842.810428
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[25,48,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_APPROVED_EVIDENCE {"id":48,"skill":"official.48.pack-bite","restart":true,"replay":true,"privacy":true}
+# Subtest: QD01 \#48 two victims via shared pack, retry, target limits, authorized projection and replay
+ok 10 - QD01 \#48 two victims via shared pack, retry, target limits, authorized projection and replay
+  ---
+  duration_ms: 4013.478477
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[25,48,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 \#48 sole wolf blocks Village victory until true hanging
+ok 11 - QD01 \#48 sole wolf blocks Village victory until true hanging
+  ---
+  duration_ms: 4681.339241
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[25,28,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 direct Jester hanging with live Hunter mark yields Village and Jester co-winners
+ok 12 - QD01 direct Jester hanging with live Hunter mark yields Village and Jester co-winners
+  ---
+  duration_ms: 2843.569871
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[25,33,74,84],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 revenge skip after true hanging closes chain and Village wins
+ok 13 - QD01 revenge skip after true hanging closes chain and Village wins
+  ---
+  duration_ms: 3490.552655
+  type: 'test'
+  ...
+# Subtest: QD01 [8,25] all 16 final ballot combinations including self, abstention and explicit blank
+ok 14 - QD01 [8,25] all 16 final ballot combinations including self, abstention and explicit blank
+  ---
+  duration_ms: 33622.699079
+  type: 'test'
+  ...
+# Subtest: QD01 [8,25] night kill without inspection, terminal phase rejects actions
+ok 15 - QD01 [8,25] night kill without inspection, terminal phase rejects actions
+  ---
+  duration_ms: 1767.267317
+  type: 'test'
+  ...
+# Subtest: QD01 current alignment and pending-life counterexamples on a real session snapshot
+ok 16 - QD01 current alignment and pending-life counterexamples on a real session snapshot
+  ---
+  duration_ms: 2696.471861
+  type: 'test'
+  ...
+# (node:16383) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# CONTINUED_KERNEL_BALLOTS 157
+# CONTINUED_KERNEL_NIGHTS 54
+# GROWTH_NIGHT_PERMUTATIONS 48
+# Subtest: Three-player current-rule kernel: all 125 first ballot combinations and 32 two-survivor combinations
+ok 17 - Three-player current-rule kernel: all 125 first ballot combinations and 32 two-survivor combinations
+  ---
+  duration_ms: 38053.581313
+  type: 'test'
+  ...
+# Subtest: Three-player current-rule kernel: all 27 night choices in both submission orders and remaining night kill
+ok 18 - Three-player current-rule kernel: all 27 night choices in both submission orders and remaining night kill
+  ---
+  duration_ms: 16143.702558
+  type: 'test'
+  ...
+# Subtest: Growth dual-seer: all six submission permutations for every legal complete night choice
+ok 19 - Growth dual-seer: all six submission permutations for every legal complete night choice
+  ---
+  duration_ms: 14732.488193
+  type: 'test'
+  ...
+# (node:16392) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# NORMAL_PLAY_EVIDENCE {"deck":[8,25],"mode":"NORMAL_GAMEPLAY","ruleVersion":"wolvesville-official-v1.3.3","victory":"VILLAGE","restart":true,"replay":true,"privacy":true}
+# Subtest: Normal gameplay real authenticated session: readiness, QA isolation, private aura, chat, vote, restart, reconnect and Village victory
+ok 20 - Normal gameplay real authenticated session: readiness, QA isolation, private aura, chat, vote, restart, reconnect and Village victory
+  ---
+  duration_ms: 3437.791143
+  type: 'test'
+  ...
+# NORMAL_PLAY_EVIDENCE {"deck":[8,74],"mode":"NORMAL_GAMEPLAY","ruleVersion":"wolvesville-official-v1.3.3","victory":"KNIGHT","restart":true,"replay":true,"privacy":true}
+# Subtest: Normal gameplay exact-role seer, night kill, dead player actions denied and persisted Knight victory
+ok 21 - Normal gameplay exact-role seer, night kill, dead player actions denied and persisted Knight victory
+  ---
+  duration_ms: 1809.022467
+  type: 'test'
+  ...
+# NORMAL_BRANCH_EVIDENCE {"deck":[8,25],"ballotCombinations":16,"mode":"NORMAL_GAMEPLAY","replay":true}
+# Subtest: Normal [8,25] all 16 final ballot combinations in real rooms, V02/V03, both winning sides
+ok 22 - Normal [8,25] all 16 final ballot combinations in real rooms, V02/V03, both winning sides
+  ---
+  duration_ms: 33354.588736
+  type: 'test'
+  ...
+# NORMAL_BRANCH_EVIDENCE {"deck":[8,25],"nightScenarios":5,"mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true}
+# Subtest: Normal [8,25] four optional night branches plus reversed submission, phase and target rejection
+ok 23 - Normal [8,25] four optional night branches plus reversed submission, phase and target rejection
+  ---
+  duration_ms: 6910.121901
+  type: 'test'
+  ...
+# NORMAL_BRANCH_EVIDENCE {"deck":[8,74],"ballotCombinations":16,"mode":"NORMAL_GAMEPLAY","replay":true}
+# Subtest: Normal [8,74] all 16 final ballot combinations in real rooms, V02/V03, both winning sides
+ok 24 - Normal [8,74] all 16 final ballot combinations in real rooms, V02/V03, both winning sides
+  ---
+  duration_ms: 32350.896505
+  type: 'test'
+  ...
+# NORMAL_BRANCH_EVIDENCE {"deck":[8,74],"nightScenarios":5,"mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true}
+# Subtest: Normal [8,74] four optional night branches plus reversed submission, phase and target rejection
+ok 25 - Normal [8,74] four optional night branches plus reversed submission, phase and target rejection
+  ---
+  duration_ms: 8646.085247
+  type: 'test'
+  ...
+# NORMAL_HANDOFF_EVIDENCE {"mode":"NORMAL_GAMEPLAY","deck":[8,25],"restart":true,"replay":true,"originalAssignmentsPreserved":true}
+# Subtest: Normal ROOM-03 authenticated handoff after host disconnect, no reassignment, phase authorization, restart and audit
+ok 26 - Normal ROOM-03 authenticated handoff after host disconnect, no reassignment, phase authorization, restart and audit
+  ---
+  duration_ms: 5371.602717
+  type: 'test'
+  ...
+# Subtest: Normal migration 007/008 preserves an actual archived 1.3.2 QA game and replay byte-for-byte
+ok 27 - Normal migration 007/008 preserves an actual archived 1.3.2 QA game and replay byte-for-byte
+  ---
+  duration_ms: 2168.254469
+  type: 'test'
+  ...
+# CONTINUED_NORMAL_EVIDENCE {"deck":[8,25,74],"side":"village","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# CONTINUED_NORMAL_EVIDENCE {"deck":[8,25,74],"side":"knight","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# Subtest: Normal three-human dual-seer journey: role privacy, both victory routes, restart and replay
+ok 28 - Normal three-human dual-seer journey: role privacy, both victory routes, restart and replay
+  ---
+  duration_ms: 11704.414501
+  type: 'test'
+  ...
+# MATURITY_NORMAL_GUARD_EVIDENCE {"deck":[25,31,48,74],"side":"village","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# MATURITY_NORMAL_GUARD_EVIDENCE {"deck":[25,31,48,74],"side":"wolf","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# Subtest: Normal four-human guard and leader: real blocked bite, both victory routes, restart and replay
+ok 29 - Normal four-human guard and leader: real blocked bite, both victory routes, restart and replay
+  ---
+  duration_ms: 11798.865686
+  type: 'test'
+  ...
+# GROWTH_NORMAL_RESCUE_EVIDENCE {"deck":[9,25,48,74,87],"side":"village","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# GROWTH_NORMAL_RESCUE_EVIDENCE {"deck":[9,25,48,74,87],"side":"wolf","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# Subtest: Growth normal five-human snow and pharmacist: protected and rescued bite, both victory routes, restart and replay
+ok 30 - Growth normal five-human snow and pharmacist: protected and rescued bite, both victory routes, restart and replay
+  ---
+  duration_ms: 20462.467452
+  type: 'test'
+  ...
+# (node:17715) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_SCALE_MATCH {"ids":[25,48,64,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_SCALE_EVIDENCE {"id":64,"skill":"official.64.pair","restart":true,"replay":true,"privacy":true}
+# Subtest: Scale \#64 pair replacement, no premature disclosure, day hanging and private role result
+ok 31 - Scale \#64 pair replacement, no premature disclosure, day hanging and private role result
+  ---
+  duration_ms: 7299.166865
+  type: 'test'
+  ...
+# S15_SCALE_MATCH {"ids":[25,48,64,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_SCALE_EVIDENCE {"id":64,"skill":"official.64.pair","restart":true,"replay":true,"privacy":true}
+# Subtest: Scale \#64 two simultaneous pack deaths reveal both once before victory
+ok 32 - Scale \#64 two simultaneous pack deaths reveal both once before victory
+  ---
+  duration_ms: 3708.464723
+  type: 'test'
+  ...
+# Subtest: Scale \#64 first marked death freezes pair; no second information or selection
+ok 33 - Scale \#64 first marked death freezes pair; no second information or selection
+  ---
+  duration_ms: 5618.715276
+  type: 'test'
+  ...
+# S15_SCALE_MATCH {"ids":[9,25,48,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: Scale leader double bite respects Snow Angel, independent victims, then Village co-wins
+ok 34 - Scale leader double bite respects Snow Angel, independent victims, then Village co-wins
+  ---
+  duration_ms: 4279.807411
+  type: 'test'
+  ...
+# S15_SCALE_MATCH {"ids":[9,25,48,74,87],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: Scale leader protection precedes preliminary death and rescue; no protected victim in private list
+ok 35 - Scale leader protection precedes preliminary death and rescue; no protected victim in private list
+  ---
+  duration_ms: 5438.576238
+  type: 'test'
+  ...
+# Subtest: Scale QA [8,74] sixteen final ballots and valid terminal or next-round results
+ok 36 - Scale QA [8,74] sixteen final ballots and valid terminal or next-round results
+  ---
+  duration_ms: 32341.721711
+  type: 'test'
+  ...
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: Scale QA [8,74] inspection, abstain, retry, vote change, restart and Village victory
+ok 37 - Scale QA [8,74] inspection, abstain, retry, vote change, restart and Village victory
+  ---
+  duration_ms: 3141.059268
+  type: 'test'
+  ...
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: Scale QA [8,74] independent optional inspection on fatal night, both orders, exact-role privacy
+ok 38 - Scale QA [8,74] independent optional inspection on fatal night, both orders, exact-role privacy
+  ---
+  duration_ms: 10192.543308
+  type: 'test'
+  ...
+# Subtest: Scale production room cannot start an official QA composition without test mode
+ok 39 - Scale production room cannot start an official QA composition without test mode
+  ---
+  duration_ms: 203.864243
+  type: 'test'
+  ...
+1..39
+# tests 39
+# suites 0
+# pass 39
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 142598.15723

@@ -1,0 +1,4 @@
+
+> wolvesville-sprint15-role-completeness@1.7.7-s15-final-breakthrough-wip build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+

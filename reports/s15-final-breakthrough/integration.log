@@ -1,0 +1,89 @@
+TAP version 13
+# (node:110342) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_MATCH_EVIDENCE {"ids":[8,28,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 final \#88 hanging follow kills \#28 without Jester win; stable knight victory
+ok 1 - S15 final \#88 hanging follow kills \#28 without Jester win; stable knight victory
+  ---
+  duration_ms: 862.939668
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[25,28,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 final \#28 direct hanging remains winning despite a live Hunter mark
+ok 2 - S15 final \#28 direct hanging remains winning despite a live Hunter mark
+  ---
+  duration_ms: 599.937403
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[8,25,28,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 final \#88 hanging without mark does not eliminate secondary player; subsequent direct Jester win
+ok 3 - S15 final \#88 hanging without mark does not eliminate secondary player; subsequent direct Jester win
+  ---
+  duration_ms: 931.044206
+  type: 'test'
+  ...
+# Subtest: S15 final \#88 night follow and \#28 non-hanging death are closed before victory
+ok 4 - S15 final \#88 night follow and \#28 non-hanging death are closed before victory
+  ---
+  duration_ms: 518.637727
+  type: 'test'
+  ...
+# Subtest: S15 final \#88 hanging follow to Knight does not award Jester a false survivor win
+ok 5 - S15 final \#88 hanging follow to Knight does not award Jester a false survivor win
+  ---
+  duration_ms: 584.884926
+  type: 'test'
+  ...
+# Subtest: S15 final \#88 already dead marked target is not eliminated twice
+ok 6 - S15 final \#88 already dead marked target is not eliminated twice
+  ---
+  duration_ms: 972.525893
+  type: 'test'
+  ...
+# Subtest: S15 final \#88 stale mark without renewed choice fails atomically rather than inventing duration
+ok 7 - S15 final \#88 stale mark without renewed choice fails atomically rather than inventing duration
+  ---
+  duration_ms: 792.635739
+  type: 'test'
+  ...
+# Subtest: S15 final \#33 actual hanging opens private post-death response; choice commits secondary before victory
+ok 8 - S15 final \#33 actual hanging opens private post-death response; choice commits secondary before victory
+  ---
+  duration_ms: 925.312168
+  type: 'test'
+  ...
+# Subtest: S15 final \#33 decline revenge closes chain without secondary death and no invented winner
+ok 9 - S15 final \#33 decline revenge closes chain without secondary death and no invented winner
+  ---
+  duration_ms: 913.103219
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[74,84,93,94],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 final \#93 current faction grants one-wolf two-target pack action after \#94 hanging
+ok 10 - S15 final \#93 current faction grants one-wolf two-target pack action after \#94 hanging
+  ---
+  duration_ms: 1425.681296
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[74,84,87,93,94],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 final \#87 privately receives both bite victims and rescues only one before wolf parity
+ok 11 - S15 final \#87 privately receives both bite victims and rescues only one before wolf parity
+  ---
+  duration_ms: 1561.974565
+  type: 'test'
+  ...
+# Subtest: S15 final \#87 may use its single rescue on itself while preliminarily bitten
+ok 12 - S15 final \#87 may use its single rescue on itself while preliminarily bitten
+  ---
+  duration_ms: 1093.759982
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11391.654692

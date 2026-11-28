@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "id": "FULL50-CLARIFY-08",
+      "originalId": "WV-REVIVAL-FAILED-COST-01",
+      "known": "Không tiêu lượt nếu chọn 46/47/53; lưu lệnh đã nộp; không công bố hồi sinh không xảy ra; thông báo chung không lộ vai.",
+      "scenario": "Đêm N, Thầy Đồng chọn người chết thuộc vai cấm; vẫn còn lượt hồi sinh.",
+      "A": "Xử lý ở cuối đêm, báo riêng thất bại chung vào sáng N; chọn người khác từ Đêm N+1.",
+      "B": "Báo riêng thất bại chung ngay khi xác minh trong đêm; cho chọn mục tiêu khác trong cùng đêm.",
+      "recommendation": "A",
+      "impacts": [
+        "WV-A26-REVIVE",
+        "BT-26-1/2/3",
+        "BT-26-GLOBAL-0/1/2",
+        "BT-64 (tương tác hồi sinh)"
+      ]
+    },
+    {
+      "id": "FULL50-CLARIFY-47",
+      "originalId": "DC-PACK-PRIVACY-BOUNDARY",
+      "known": "Đổi phe hợp lệ cấp/cắt ACL ngay; DC-PACK-KEEP=A thu hồi lựa chọn không còn hợp lệ trước lock, giữ lựa chọn còn hợp lệ, yêu cầu thay thế rõ ràng, không timeout/fallback, không sửa đòn đã commit.",
+      "scenario": "Một Sói đã chọn X trước lock; X đổi phe hợp lệ, mục tiêu không còn được cắn. Những lựa chọn khác còn hợp lệ.",
+      "A": "Chỉ người có lựa chọn bị thu hồi nhận yêu cầu chọn lại chung ở lúc lock, không lý do/role/phe/ghế; chấp nhận suy luận tối thiểu từ việc phải chọn lại. Giữ lựa chọn hợp lệ, chờ đồng thuận.",
+      "B": "Không chấp nhận suy luận từ lock/wait; giữ mixed-pack chưa kích hoạt cho tới khi xác định giao thức không tiết lộ.",
+      "recommendation": "A",
+      "impacts": [
+        "packContract in reports/BB_PRIVACY_STABILITY_COMPLETION_CONTRACTS.json",
+        "Normal mixed-pack eligibility",
+        "WV-A64-PAIR-DEATH-OBSERVATION when used in this interaction domain"
+      ]
+    }
+  ],
+  "status": "ONLY_TWO_KNOWN_OPEN_SUBPOINTS; no exhaustive guarantee"
+}

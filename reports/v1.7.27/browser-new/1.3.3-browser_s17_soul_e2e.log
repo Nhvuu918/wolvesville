@@ -1,0 +1,45 @@
+E2E_SCHEDULER_WAIT exclusive [33m7547[39m
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+E2E_SCHEDULER_ACQUIRED exclusive waitMs [33m5973[39m
+E2E_RESOURCE start cpu "usage_usec 1716928400\nuser_usec 1417667540\nsystem_usec 299260859\nnice_usec 149411\nnr_periods 12357\nnr_throttled 846\nthrottled_usec 32200336\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s17_soul_e2e.py default port [33m36509[39m db /tmp/wolvesville-s06-browser-2EKdWl/test.sqlite
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+SCENARIO_READY s17-soul-lifecycle
+E2E_STAGE action 36 official.36.fireball 23
+E2E_STAGE resolve DAY_DISCUSS
+E2E_STAGE action 36 official.36.shield 8
+E2E_STAGE action 23 official.23.shoot 8
+E2E_STAGE resolve DAY_DISCUSS
+E2E_STAGE action 23 official.23.shoot 8
+E2E_STAGE resolve GAME_COMPLETED
+SCENARIO_ACTIONS_PASS s17-soul-lifecycle
+E2E_STAGE cleanup
+E2E_CONTEXT_CLOSED 0 0.05
+E2E_CONTEXT_CLOSED 1 0.043
+E2E_CONTEXT_CLOSED 2 0.039
+E2E_CONTEXT_CLOSED 3 0.042
+E2E_STAGE cleanup-complete
+S17_SOUL_BROWSER_PASS
+S06_BROWSER_PASS browser_s17_soul_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 1789417964\nuser_usec 1470520623\nsystem_usec 318897341\nnice_usec 149411\nnr_periods 12656\nnr_throttled 872\nthrottled_usec 33082321\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

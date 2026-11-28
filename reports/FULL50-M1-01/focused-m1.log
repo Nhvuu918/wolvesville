@@ -1,0 +1,109 @@
+TAP version 13
+# (node:873) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: FULL50 candidate: sacrificed follower keeps win entitlement but no live group access
+ok 1 - FULL50 candidate: sacrificed follower keeps win entitlement but no live group access
+  ---
+  duration_ms: 2418.309119
+  type: 'test'
+  ...
+# (node:874) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: FULL50 candidate: Cupid dead, living pair night chat and pair-only victory
+ok 2 - FULL50 candidate: Cupid dead, living pair night chat and pair-only victory
+  ---
+  duration_ms: 2581.816203
+  type: 'test'
+  ...
+# Subtest: FULL50 M1: linked death puts seeded partner to sleep; both revive next night and publish once
+ok 3 - FULL50 M1: linked death puts seeded partner to sleep; both revive next night and publish once
+  ---
+  duration_ms: 1452.77184
+  type: 'test'
+  ...
+# Subtest: FULL50 M1: sleeping partner dies for real after other partner is hanged; no duplicate public death or wake
+ok 4 - FULL50 M1: sleeping partner dies for real after other partner is hanged; no duplicate public death or wake
+  ---
+  duration_ms: 1733.504033
+  type: 'test'
+  ...
+# (node:880) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S27 cult gameplay: recruitment, mute group ACL, preserved role, private chat, restart and living cult victory
+ok 5 - S27 cult gameplay: recruitment, mute group ACL, preserved role, private chat, restart and living cult victory
+  ---
+  duration_ms: 2077.660707
+  type: 'test'
+  ...
+# Subtest: S27 cult gameplay: independent target failure, single attempt, private generic feedback and leader death chain
+ok 6 - S27 cult gameplay: independent target failure, single attempt, private generic feedback and leader death chain
+  ---
+  duration_ms: 2798.096901
+  type: 'test'
+  ...
+# Subtest: S27 cult gameplay: same-night recruitment before sacrifice, final deaths, no membership restoration or fabricated winner
+ok 7 - S27 cult gameplay: same-night recruitment before sacrifice, final deaths, no membership restoration or fabricated winner
+  ---
+  duration_ms: 1479.257702
+  type: 'test'
+  ...
+# (node:886) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S28_NORMAL_BELL_EVIDENCE {"deck":[25,48,64,74],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: real double bite and one private observation batch before victory
+ok 8 - S28 normal bell: real double bite and one private observation batch before victory
+  ---
+  duration_ms: 1434.862108
+  type: 'test'
+  ...
+# S28_NORMAL_BELL_EVIDENCE {"deck":[15,25,64,74],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: linked simultaneous death, actual vote, spent observation and village victory
+ok 9 - S28 normal bell: linked simultaneous death, actual vote, spent observation and village victory
+  ---
+  duration_ms: 2253.147789
+  type: 'test'
+  ...
+# S28_NORMAL_BELL_EVIDENCE {"deck":[8,25,26,64],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: previously revived target can be paired, repeated final death, privacy and village victory
+ok 10 - S28 normal bell: previously revived target can be paired, repeated final death, privacy and village victory
+  ---
+  duration_ms: 1930.269049
+  type: 'test'
+  ...
+# S28_NORMAL_BELL_EVIDENCE {"deck":[25,48,64,74],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: owner dies in the same batch, no private observation or resource reuse
+ok 11 - S28 normal bell: owner dies in the same batch, no private observation or resource reuse
+  ---
+  duration_ms: 882.992712
+  type: 'test'
+  ...
+# S28_NORMAL_BELL_EVIDENCE {"deck":[8,25,26,64],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: replace pair across nights, dead target invalid, first observation only
+ok 12 - S28 normal bell: replace pair across nights, dead target invalid, first observation only
+  ---
+  duration_ms: 2136.727455
+  type: 'test'
+  ...
+# (node:917) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: RC01 T-COV-64: public pseudo-death neither kills Cupid partner nor spends bell; wake then real linked deaths
+ok 13 - RC01 T-COV-64: public pseudo-death neither kills Cupid partner nor spends bell; wake then real linked deaths
+  ---
+  duration_ms: 3371.342112
+  type: 'test'
+  ...
+# Subtest: RC01 LIFE-02: seed limits, self-target rejection, hanging sleep, second seed and true death
+ok 14 - RC01 LIFE-02: seed limits, self-target rejection, hanging sleep, second seed and true death
+  ---
+  duration_ms: 4884.472115
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11316.653706

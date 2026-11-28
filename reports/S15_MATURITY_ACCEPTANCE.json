@@ -1,0 +1,94 @@
+{
+  "version": "1.7.13-s15-engine-maturity-wip",
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "status": "WIP",
+  "competitiveProduction": "NO-GO",
+  "postgresLive": "PENDING",
+  "source": {
+    "inputVersion": "1.7.12-s15-continuation-wip",
+    "inputSha256": "5a9d88b2ac6f6a03f6446a3d870fea0f2e8071ad2cbebbaf4858f5a0013e3193",
+    "inputCrc": "PASS",
+    "inputRecordedHashesVerified": 754,
+    "sourceIntegrity": "PASS",
+    "build": "PASS",
+    "rulesBuild": "PASS",
+    "cleanExtraction": "see external verification log"
+  },
+  "backend": {
+    "status": "PASS",
+    "tests": 345,
+    "pass": 334,
+    "fail": 0,
+    "skipped": 11,
+    "exitCode": 0,
+    "log": "reports/s15-maturity/backend.log",
+    "prototypeSeparatePass": 3,
+    "prototypeLog": "reports/s15-maturity/prototype.log",
+    "atomicCurrentRetestPass": 17,
+    "role28RetestPass": 17
+  },
+  "browser": {
+    "manifest": {
+      "total": 51,
+      "PASS": 8,
+      "FAIL": 0,
+      "INCOMPLETE": 43
+    },
+    "matrix": {
+      "total": 86,
+      "PASS": 12,
+      "FAIL": 0,
+      "INCOMPLETE": 74
+    },
+    "results": "reports/S15_MATURITY_BROWSER_RESULTS.json"
+  },
+  "metrics": {
+    "baseline": {
+      "R": 49,
+      "F": 1,
+      "A": 44,
+      "B": 36,
+      "qaC": 2,
+      "playableC": 2,
+      "S_auditedRoles": 30,
+      "S_pass": 49,
+      "S_total": 63,
+      "normalDecks": 3,
+      "newNormalDecksWithBrowserAndBackend": 1
+    },
+    "historicalCertificatesRetained": {
+      "R": 49,
+      "F": 1,
+      "qaC": 2,
+      "playableC": 2
+    },
+    "fresh": {
+      "R": 48,
+      "F": 0,
+      "A": 44,
+      "B": 36,
+      "qaC": 0,
+      "playableC": 0,
+      "S_auditedRoles": 40,
+      "S_pass": 64,
+      "S_total": 87,
+      "normalDecks": 4,
+      "newNormalDecksWithBrowserAndBackend": 1
+    },
+    "newInventoriedBranchesPass": 14,
+    "note": "Historical certificates remain intact; lack of fresh browser evidence not a revocation. A/B unique decks, no duplicate normal deck. S inventory increase does not imply new roles or full coverage."
+  },
+  "remaining": [
+    "Full browser matrix not completed",
+    "No PostgreSQL live environment",
+    "No new character or formal FULL/Branch Complete certificates",
+    "Four-human composition not exhaustively branch-complete",
+    "Multi-wolf intake prototype not integrated; no official consensus approved",
+    "No new revival implementation",
+    "No native macOS verification"
+  ],
+  "environment": {
+    "node": "22.16.0",
+    "browser": "Linux Chromium + Python Playwright with real backend transport bridge"
+  }
+}

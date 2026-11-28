@@ -1,0 +1,4 @@
+IDLE_SERVER NIGHT_COLLECT 2 GUEST {'phase': 'NIGHT_COLLECT', 'revision': 2, 'connection': 'online'}
+S14_IDLE_TRANSPORT_PASS
+S06_BROWSER_PASS browser_s14_transport_regression.py
+S06_BROWSER_ALL_1_PASS

@@ -1,0 +1,135 @@
+TAP version 13
+# (node:11134) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S04 OFF20 inspected by both official seers: aura/role results private and next-night injury for each investigator
+ok 1 - S04 OFF20 inspected by both official seers: aura/role results private and next-night injury for each investigator
+  ---
+  duration_ms: 2675.847469
+  type: 'test'
+  ...
+# Subtest: S04 OFF20 persists an injury through SQLite restart and duplicate action cannot double-apply it
+ok 2 - S04 OFF20 persists an injury through SQLite restart and duplicate action cannot double-apply it
+  ---
+  duration_ms: 3418.834095
+  type: 'test'
+  ...
+# (node:11135) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S05-01 \#34 blocks accepted \#9 action but not \#25 Tiên Tri or \#31 Bảo Vệ (VH10/VH24)
+ok 3 - S05-01 \#34 blocks accepted \#9 action but not \#25 Tiên Tri or \#31 Bảo Vệ (VH10/VH24)
+  ---
+  duration_ms: 4925.401977
+  type: 'test'
+  ...
+# Subtest: S05-02 \#34 targeting \#25/\#31 does not lock protected named roles; \#74 can be locked
+ok 4 - S05-02 \#34 targeting \#25/\#31 does not lock protected named roles; \#74 can be locked
+  ---
+  duration_ms: 6556.065755
+  type: 'test'
+  ...
+# (node:11137) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S10-01 \#5 source VH84 returns private unmodified verdict; \#20 injures investigator in following night
+ok 5 - S10-01 \#5 source VH84 returns private unmodified verdict; \#20 injures investigator in following night
+  ---
+  duration_ms: 2789.274079
+  type: 'test'
+  ...
+# Subtest: S10-02 \#5 two match-wide uses, deterministic replay and SQLite restart; cannot infer hanging
+ok 6 - S10-02 \#5 two match-wide uses, deterministic replay and SQLite restart; cannot infer hanging
+  ---
+  duration_ms: 3294.954655
+  type: 'test'
+  ...
+# (node:11186) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# \# S13_CHARACTER_EVIDENCE {"characterIds":[11],"source":"character.json\#11, VH08","skill":"maintenance-vs-nightmare","authoritative":true,"replay":true}
+# Subtest: S13-01 \#11 maintenance protects \#25 from \#76 nightmare in a real game session
+ok 7 - S13-01 \#11 maintenance protects \#25 from \#76 nightmare in a real game session
+  ---
+  duration_ms: 2338.790482
+  type: 'test'
+  ...
+# \# S13_CHARACTER_EVIDENCE {"characterIds":[24],"source":"character.json\#24,VH79","skill":"jail-block-and-defense","authoritative":true,"replay":true}
+# Subtest: S13-03 \#24 jail blocks inspection and absorbs a night attack; rule-private events
+ok 8 - S13-03 \#24 jail blocks inspection and absorbs a night attack; rule-private events
+  ---
+  duration_ms: 1200.398312
+  type: 'test'
+  ...
+# \# S13_CHARACTER_EVIDENCE {"characterIds":[66],"source":"character.json\#66,VH34","skill":"three-use-guard-attack-defense","authoritative":true,"replay":true}
+# Subtest: S13-04 \#66 guard blocks lethal attack, persists and expires, uses 3 charges max
+ok 9 - S13-04 \#66 guard blocks lethal attack, persists and expires, uses 3 charges max
+  ---
+  duration_ms: 1501.217175
+  type: 'test'
+  ...
+# \# S13_CHARACTER_EVIDENCE {"characterIds":[17],"source":"character.json\#17,SYS-10,VH57","skill":"public-day-judgment-wolf-permanent-lock","authoritative":true,"replay":true}
+# Subtest: S13-07 \#17 public judgment reveals only the certified wolf and permanently disables the skill
+ok 10 - S13-07 \#17 public judgment reveals only the certified wolf and permanently disables the skill
+  ---
+  duration_ms: 1415.775513
+  type: 'test'
+  ...
+# (node:11200) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S14_EVIDENCE {"id":36,"skill":"official.36.fireball","restart":true,"replay":true}
+# Subtest: S14 \#36 authoritative attack, retry, privacy and restart
+ok 11 - S14 \#36 authoritative attack, retry, privacy and restart
+  ---
+  duration_ms: 2891.717568
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":52,"skill":"official.52.solo-dog","restart":true,"replay":true}
+# Subtest: S14 \#52 solo dog consumes protection and expires
+ok 12 - S14 \#52 solo dog consumes protection and expires
+  ---
+  duration_ms: 2353.403109
+  type: 'test'
+  ...
+# Subtest: S14 \#17 judgment on villager causes persistent public-chat mute but no vote denial
+ok 13 - S14 \#17 judgment on villager causes persistent public-chat mute but no vote denial
+  ---
+  duration_ms: 1778.924445
+  type: 'test'
+  ...
+# (node:11229) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":3,"branch":"passive.false-aura","skill":"passive.3.seer-aura","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 accelerated \#3 passive aura concealment does not distort exact-role \#74
+ok 14 - S15 accelerated \#3 passive aura concealment does not distort exact-role \#74
+  ---
+  duration_ms: 3934.883686
+  type: 'test'
+  ...
+# (node:11242) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":36,"branch":"shield.success-private","skill":"official.36.shield","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#36 shield absorbs knight attack, role feedback private, once per match
+ok 15 - S15 \#36 shield absorbs knight attack, role feedback private, once per match
+  ---
+  duration_ms: 3034.947541
+  type: 'test'
+  ...
+# Subtest: S15 \#36 fire and unused shield may both be spent in one night, no false reveal
+ok 16 - S15 \#36 fire and unused shield may both be spent in one night, no false reveal
+  ---
+  duration_ms: 1666.935021
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":66,"branch":"observe.other-protected","skill":"passive.66.observe-protected","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#66 sees only other protection recipients, not source or own protection
+ok 17 - S15 \#66 sees only other protection recipients, not source or own protection
+  ---
+  duration_ms: 1804.859584
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 21427.817396

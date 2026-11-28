@@ -1,0 +1,4 @@
+SCENARIO_READY s15-closure-hunter-snow
+SCENARIO_ACTIONS_PASS s15-closure-hunter-snow
+Error: E2E timeout browser_s15_approved_pin_e2e.py: cleanup did not finish; not counted PASS
+    at file:///tmp/wv14/scripts/run-browser-s06.mjs:42:10

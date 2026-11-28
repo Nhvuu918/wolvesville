@@ -1,0 +1,31 @@
+{
+  "build": "1.7.25-s15-privacy-stability-wip",
+  "sourceFingerprint": "2aaa5dfa1e0067c6bb82beff4c06c18375ed6dd37380b1b5f30c99ec8ff9cec5",
+  "ownerEvidence": "PENDING",
+  "tasks": [
+    {
+      "id": "QA-MIXED-01",
+      "status": "PENDING",
+      "actual": null,
+      "evidence": [],
+      "bugId": null,
+      "retest": null
+    },
+    {
+      "id": "QA-REV-01",
+      "status": "PENDING",
+      "actual": null,
+      "evidence": [],
+      "bugId": null,
+      "retest": null
+    },
+    {
+      "id": "QA-REL-04",
+      "status": "PENDING",
+      "actual": null,
+      "evidence": [],
+      "bugId": null,
+      "retest": null
+    }
+  ]
+}

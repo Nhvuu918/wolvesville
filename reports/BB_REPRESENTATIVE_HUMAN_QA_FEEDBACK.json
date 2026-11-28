@@ -1,0 +1,31 @@
+{
+  "build": "1.7.23-s15-representative-order-wip",
+  "sourceFingerprint": "288abf2f367554e34d9ed717089f58d5cba9a265ad3333bbb4cad60aee74a244",
+  "ownerEvidence": "PENDING",
+  "tasks": [
+    {
+      "id": "QA-REP-01",
+      "status": "PENDING",
+      "actual": null,
+      "evidence": [],
+      "bugId": null,
+      "retest": null
+    },
+    {
+      "id": "QA-REV-01",
+      "status": "PENDING",
+      "actual": null,
+      "evidence": [],
+      "bugId": null,
+      "retest": null
+    },
+    {
+      "id": "QA-REL-04",
+      "status": "PENDING",
+      "actual": null,
+      "evidence": [],
+      "bugId": null,
+      "retest": null
+    }
+  ]
+}

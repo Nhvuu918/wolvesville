@@ -1,0 +1,17 @@
+SCENARIO_READY s15-scale-leader-rescue
+E2E_STAGE action 9 official.9.snow-protection 25
+E2E_STAGE action 48 official.48.pack-bite 25
+E2E_STAGE resolve WITCH_WINDOW
+E2E_STAGE action 87 official.87.rescue 74
+E2E_STAGE resolve DAY_DISCUSS
+SCENARIO_ACTIONS_PASS s15-scale-leader-rescue
+E2E_STAGE cleanup
+E2E_CONTEXT_CLOSED 0 0.126
+E2E_CONTEXT_CLOSED 1 0.191
+E2E_CONTEXT_CLOSED 2 0.289
+E2E_CONTEXT_CLOSED 3 0.127
+E2E_CONTEXT_CLOSED 4 0.112
+E2E_STAGE cleanup-complete
+S15_SCALE_RESCUE_BROWSER_PASS
+S06_BROWSER_PASS browser_s15_scale_rescue_e2e.py
+S06_BROWSER_ALL_1_PASS

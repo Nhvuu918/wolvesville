@@ -1,0 +1,65 @@
+TAP version 13
+# (node:21529) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: FULL5 Q13-07: prolonged life keeps rights and seed; day close triggers hibernation, later wake and real Bell observation
+ok 1 - FULL5 Q13-07: prolonged life keeps rights and seed; day close triggers hibernation, later wake and real Bell observation
+  ---
+  duration_ms: 2133.412708
+  type: 'test'
+  ...
+# Subtest: FULL5 Q13-12: Witch rescue wins over ferry and seed; no charge until actual extension
+ok 2 - FULL5 Q13-12: Witch rescue wins over ferry and seed; no charge until actual extension
+  ---
+  duration_ms: 3161.533865
+  type: 'test'
+  ...
+# Subtest: FULL5 VH26: expiry plus hanging closes ledger before victory; prolonged villager counted until day end
+ok 3 - FULL5 VH26: expiry plus hanging closes ledger before victory; prolonged villager counted until day end
+  ---
+  duration_ms: 913.694224
+  type: 'test'
+  ...
+# Subtest: FULL5 F01: Ferryman anonymous night channel, reported-dead address without sleeper delivery, retry and replay
+ok 4 - FULL5 F01: Ferryman anonymous night channel, reported-dead address without sleeper delivery, retry and replay
+  ---
+  duration_ms: 1634.729314
+  type: 'test'
+  ...
+# Subtest: FULL5 \#64: delayed observation uses current transformed Cupid role, not original character id
+ok 5 - FULL5 \#64: delayed observation uses current transformed Cupid role, not original character id
+  ---
+  duration_ms: 1689.682895
+  type: 'test'
+  ...
+# (node:21530) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# BREAKTHROUGH_MEDIUM_EVIDENCE {"id":26,"deck":[8,26,74],"mediumKilled":false,"completed":true,"privacy":true,"replay":true,"restart":true,"deathCycles":2}
+# Subtest: Breakthrough medium \#26 with \#74: closed death, revival, repeated elimination, PH-01 false
+ok 6 - Breakthrough medium \#26 with \#74: closed death, revival, repeated elimination, PH-01 false
+  ---
+  duration_ms: 922.490723
+  type: 'test'
+  ...
+# BREAKTHROUGH_MEDIUM_EVIDENCE {"id":26,"deck":[8,26,74],"mediumKilled":true,"completed":true,"privacy":true,"replay":true,"restart":true,"deathCycles":2}
+# Subtest: Breakthrough medium \#26 with \#74: closed death, revival, repeated elimination, PH-01 true
+ok 7 - Breakthrough medium \#26 with \#74: closed death, revival, repeated elimination, PH-01 true
+  ---
+  duration_ms: 811.417451
+  type: 'test'
+  ...
+# BREAKTHROUGH_MEDIUM_CHAT_EVIDENCE {"id":26,"deck":[8,26,74],"anonymous":true,"privacy":true,"retry":true,"restart":true,"replay":true}
+# Subtest: Breakthrough VH77 medium private chat: authorization, anonymous projections, retry, SQLite restart, phase close and replay
+ok 8 - Breakthrough VH77 medium private chat: authorization, anonymous projections, retry, SQLite restart, phase close and replay
+  ---
+  duration_ms: 659.517182
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 9726.303953

@@ -1,0 +1,1320 @@
+{
+  "scope": "49 executable IDs; readiness triage based on inherited source and newly audited registry, not a new full-role certificate",
+  "roleVersion": "wolvesville-official-v1.3.3",
+  "rows": [
+    {
+      "characterId": 3,
+      "name": "Sói Tiên Tri",
+      "ruleSource": "data/character.json#3",
+      "sourceDescription": "Mỗi đêm, bạn có thể chọn một người chơi để xem vai trò thuộc chức năng soi/ giết người/ bảo vệ,... Nếu bạn là ma sói cuối cùng hoặc bạn từ bỏ khả năng của mình, bạn sẽ trở thành ma sói thường.\n\n Tiên Tri soi Sói Tiên Tri ra hào quang 'Thiện'",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "passive.3.seer-aura"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remainingImplementation": "Only passive aura masking implemented; functional inspection, voluntary transformation, last wolf transformation, team bite and victory remain.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 5,
+      "name": "Thẩm Phán Linh Hồn",
+      "ruleSource": "data/character.json#5",
+      "sourceDescription": "Cân Phán Quyết: Hai lần trong trò chơi, mỗi đêm TPLH có thể chọn một người chơi và đặt linh hồn của họ lên bàn cân đã có sẵn Lông Vũ Phán Quyết. Nếu linh hồn người đó nhẹ hơn lông vũ → thiện, nếu nặng hơn → ác/không xác định. Kỹ năng này không bị nhiễu bởi bất kì char nào, soi đúng 100%. \n\n Công Lý Tuyệt Đối: Với mỗi người soi ra thiện, TPLH có khả năng bảo vệ họ khỏi mọi tác động khiến người đó bị đổi sang phe ác/không xác định. Tuy nhiên, TPLH có thể bị kéo sang phe khác, khi đó TPLH có quyền quyết định muốn bảo vệ người soi ra thiện không bị đổi phe hay không.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.5.weigh-soul"
+      ],
+      "evidenceFiles": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 8,
+      "name": "Kỵ Sĩ Không Đầu",
+      "ruleSource": "data/character.json#8",
+      "sourceDescription": "Mỗi đêm, bạn có thể lấy mạng một người chơi. Vì bạn không có đầu nên bạn không thể bị treo cổ cho đến khi tất cả ma sói đều bị giết. Ma sói có thể giết bạn. Bạn thắng nếu bạn là người chơi cuối cùng.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 3,
+      "verifiedRestrictedBranches": 3,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.8.night-kill",
+        "passive.8.hanging-immunity"
+      ],
+      "evidenceFiles": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)",
+        "tests/sprint15-breakthrough.test.mjs"
+      ],
+      "remainingImplementation": "Hanging immunity verified with living wolf; wolf pack attack, competing defenses and unrestricted victory remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A08-ATTACK",
+          "remaining": "Wolf team bite and universal defense interactions",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A08-HANG-IMMUNITY",
+          "remaining": "Overlapping immunity; pack bite remains unsupported",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A08-VICTORY",
+          "remaining": "Unrestricted role combinations",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 9,
+      "name": "Thiên Sứ Tuyết",
+      "ruleSource": "data/character.json#9",
+      "sourceDescription": "Mỗi đêm, bạn có thể chọn một người chơi để bảo vệ khỏi một lần tấn công trong hai đêm liên tiếp. Hiệu lực bảo vệ vẫn tiếp tục ngay cả khi bạn bị giết. Bạn có thể bảo vệ tối đa 3 người chơi khác nhau trong một ván, và không thể bảo vệ cùng một người hai lần.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.9.snow-protection"
+      ],
+      "evidenceFiles": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A09-SHIELD",
+          "remaining": "All attack families and stacked defenses",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 11,
+      "name": "Thợ Rèn Cơ Khí",
+      "ruleSource": "data/character.json#11",
+      "sourceDescription": "Chức năng: Mỗi đêm, chọn 1 người chơi để \"Nâng cấp\" hoặc \"Bảo trì\". \n Cơ chế: \n - Nâng cấp: Có 2 lần giúp chức năng của người được chọn x2 lần \n - Bảo trì: Giúp mục tiêu miễn nhiễm với mọi hiệu ứng làm nhiễu hoặc chặn chức năng trong đêm đó. \n Ghi chú: Không thể nâng cấp cho chính mình.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.11.maintenance"
+      ],
+      "evidenceFiles": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 15,
+      "name": "Thần Tình Yêu Hắc Ám",
+      "ruleSource": "data/character.json#15",
+      "sourceDescription": "Mỗi đêm, bạn có thể chọn lên đến hai người chơi để kết tơ hồng. \n\n - Nếu bạn chọn một người chơi, họ sẽ chết. \n - Nếu bạn chọn hai người, họ sẽ bị ràng buộc với nhau, nếu một người chết, người kia cũng sẽ chết theo. \n\n Những người chơi được kết tơ hồng sẽ không biết rằng họ bị ràng buộc. Bạn chỉ có thể kết tơ hồng với mỗi người một lần.\nBạn không thể bị giết bởi ma sói.\n\nBạn thắng nếu bạn là người chơi cuối cùng.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 5,
+      "verifiedRestrictedBranches": 4,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.15.single-kill"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-deep.test.mjs",
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remainingImplementation": "Single attack, secret pair, hanging-linked death and sole survivor verified; wolf immunity, protected or rescued links and overlapping links remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A15-SINGLE",
+          "remaining": "General protections and accepted action after death",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A15-PAIR",
+          "remaining": "Link precedence, overwrite/restore",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A15-FOLLOW",
+          "remaining": "Only hanging in no-protection pair; night death, rescue, immunity",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A15-IMMUNITY",
+          "remaining": "No general pack attack",
+          "status": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE"
+        },
+        {
+          "branch": "WV-A15-VICTORY",
+          "remaining": "Unrestricted combinations",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 16,
+      "name": "Phù Thủy Cấm Kỵ",
+      "ruleSource": "data/character.json#16",
+      "sourceDescription": "Kỹ năng Đài Phun Thuốc Độc:\n- Có 2 lần sử dụng trong trò chơi. Vào ban đêm, PTCK có thể kích hoạt kỹ năng và chọn tối đa 2 người chơi để gieo độc.\n- Người được chọn sẽ nhận trạng thái Nhiễm Độc, nhưng không chết ngay lập tức và bản thân họ cũng không biết mình đã bị nhiễm độc.\n- Vào đêm kế tiếp, nếu người nhiễm độc thuộc phe Sói hoặc phe thứ ba, họ sẽ bị vô hiệu hóa toàn bộ kỹ năng trong đêm đó\n- Nếu người nhiễm độc thuộc phe Dân, họ sẽ không bị ảnh hưởng.\n- Sau khi hiệu ứng phát tác, trạng thái Nhiễm Độc sẽ tự động biến mất.\n\nKỹ năng Bình Thuốc Giải:\n- Có 2 lần sử dụng trong trò chơi. Vào ban đêm, PTCK có thể sử dụng thuốc giải lên một người chơi bất kỳ, bao gồm cả bản thân.\n- Người được sử dụng thuốc giải sẽ được bảo vệ khỏi một lần tấn công gây chết trong đêm đó.\n- Thuốc giải chỉ có hiệu lực trong đêm sử dụng và sẽ tự động biến mất vào sáng hôm sau.\n- Người nhận thuốc giải sẽ không biết bản thân đã được sử dụng thuốc.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.16.delayed-poison",
+        "official.16.antidote"
+      ],
+      "evidenceFiles": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 17,
+      "name": "Nữ Tu Huyết Thệ",
+      "ruleSource": "data/character.json#17",
+      "sourceDescription": "Kỹ năng Ánh Sao Báo Thù: mỗi đêm NTHT có thể chọn một người để ban phước cho họ, sau khi được ban phước, người đó được +1 lần giết/vệ/soi trong đêm đó. Lưu ý những ai đã được ban phước sẽ không ban phước lần nữa\nVí dụ: Bình thường Vệ mỗi đêm vệ 1 người, nếu được ban phước sẽ vệ 2 người. Nhưng nếu ban phước trúng phe 3 hoặc sói thì đêm đó họ có thể cắn/giết/ảo ảnh nhiều hơn 1 người so với bình thường\n\nKỹ năng Thiêng Khí Phán Xét: một lần duy nhất vào ban ngày NTHT có thể công khai danh tính bản thân để phán xét một người. Nếu người đó là sói/phe 3 sẽ bị mất chức năng vĩnh viễn, nếu là dân NTHT sẽ bị câm suốt ván",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.17.day-judgment"
+      ],
+      "evidenceFiles": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 19,
+      "name": "Kẻ Mặc Cả Bóng Tối",
+      "ruleSource": "data/character.json#19",
+      "sourceDescription": "Kỹ năng 'GIAO DỊCH ẨN DANH': Mỗi đêm chọn một người và gửi một trong các giao kèo cụ thể sau (mỗi loại tối đa 1 lần):\n- Giao kèo Im Lặng: Nếu bạn KHÔNG dùng kỹ năng đêm nay, bạn sẽ được bất tử trong đêm nay.\n- Giao kèo Lá Phiếu: Nếu ngày mai bạn bỏ phiếu theo chỉ định của tôi, bạn sẽ được miễn nhiễm treo cổ vào ngày mai.\n- Giao kèo Che Giấu: Nếu bạn KHÔNG phát biểu hoặc nhắc tên tôi vào ngày mai, đêm sau bạn sẽ biết được phe của 1 người bất kỳ.\n- Giao kèo Thao Túng: Nếu bạn chấp nhận bị tôi đổi hướng mục tiêu kỹ năng vào đêm nay, đêm sau bạn sẽ được chọn xem vai trò chính xác của 1 người chết.\nNếu có 3 giao kèo thành công, KMCBT thắng.\n\nKỹ năng 'TRỪNG PHẠT NGẦM': Khi có người đồng ý nhưng lại phá giao kèo, có thể chọn trừng phạt bằng cách khiến người đó không thể dùng kỹ năng 2 đêm tiếp theo và mất quyền vote trong 2 ngày đó.\n\nKỹ năng 'GIAO DỊCH BẢN THÂN': Kích hoạt khi 2 đêm liên tiếp không có giao dịch thành công, KMCBT có thể chọn:\n1. Gia nhập một phe khác và thắng cùng họ.\n2. Chọn 1 trong 3 nhiệm vụ đơn độc (nếu hoàn thành, KMCBT thắng một mình):\n   - Nhiệm vụ 1: Sống sót cho đến khi trò chơi còn đúng 3 người tính cả KMCBT.\n   - Nhiệm vụ 2: Khiến 1 người chơi do quản trò chỉ định bị treo cổ vào Ban Ngày.\n   - Nhiệm vụ 3: Bảo vệ 1 người chơi cụ thể sống sót từ đầu đến hết game.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 10,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.19.ballot-offer"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-breakthrough.test.mjs"
+      ],
+      "remainingImplementation": "Anonymous ballot contract with acceptance, final valid ballot and hanging immunity verified; three other contracts, punishment, self-contract, victory and same-recipient-as-ballot-target remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A19-SILENCE",
+          "remaining": "Not implemented",
+          "status": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE"
+        },
+        {
+          "branch": "WV-A19-BALLOT",
+          "remaining": "Other branches and own-target direction not implemented",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A19-CONCEAL",
+          "remaining": "Not implemented",
+          "status": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE"
+        },
+        {
+          "branch": "WV-A19-MANIPULATE",
+          "remaining": "Not implemented",
+          "status": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE"
+        },
+        {
+          "branch": "WV-A19-PUNISH",
+          "remaining": "Not implemented",
+          "status": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE"
+        },
+        {
+          "branch": "WV-A19-JOIN",
+          "remaining": "Not implemented",
+          "status": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE"
+        },
+        {
+          "branch": "WV-A19-TASK1",
+          "remaining": "Not implemented",
+          "status": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE"
+        },
+        {
+          "branch": "WV-A19-TASK2",
+          "remaining": "Not implemented",
+          "status": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE"
+        },
+        {
+          "branch": "WV-A19-TASK3",
+          "remaining": "Not implemented",
+          "status": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE"
+        },
+        {
+          "branch": "WV-A19-WIN3",
+          "remaining": "Not implemented",
+          "status": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE"
+        }
+      ]
+    },
+    {
+      "characterId": 20,
+      "name": "Sói Gai Độc",
+      "ruleSource": "data/character.json#20",
+      "sourceDescription": "Nếu bị bắn hoặc soi, người thực hiện hành động bị thương, mất khả năng 1 đêm tiếp theo.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "OFFICIAL_CHAR_20_REACTIVE_INSPECTION"
+      ],
+      "evidenceFiles": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 23,
+      "name": "Xạ Thủ Linh Hồn",
+      "ruleSource": "data/character.json#23",
+      "sourceDescription": "Khi còn sống, XTLH có 1 lần dùng khiên để bảo vệ chính mình hoặc người khác\n\nNếu chết, quản thông báo với toàn dân, đồng thời vào đêm tiếp theo XTLH được cấp 2 viên đạn và bí mật hồi sinh để cùng dân giết sói và phe 3, không ai biết XTLH là ai và đã hồi sinh hay chưa\n\n XTLH có thể bị giết lần 2 nếu dân làng nghi ngờ là BBMA hoặc bị sói/ phe 3 giết\nXTLH không thể vote sau khi đã chết\nNếu chết lần 2 mới chết thật sự",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.23.shield"
+      ],
+      "evidenceFiles": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remainingImplementation": "Revival, post-death actions, victory population",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 24,
+      "name": "Quản Ngục",
+      "ruleSource": "data/character.json#24",
+      "sourceDescription": "Vào ban đêm, bạn có thể chọn một người chơi để giam vào ngục. Bạn có thể nói chuyện ẩn danh với người chơi bị giam vào ban đêm. Người đó không thể sử dụng khả năng của họ và sẽ không bị tấn công. Bạn có một viên đạn để giết người chơi bị giam vào ngục trong đêm.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.24.jail"
+      ],
+      "evidenceFiles": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 25,
+      "name": "Tiên Tri",
+      "ruleSource": "data/character.json#25",
+      "sourceDescription": "Mỗi đêm bạn có thể xem vai trò của người chơi khác.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.25.inspect-role"
+      ],
+      "evidenceFiles": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)",
+        "tests/sprint15-gameplay-ux.test.mjs",
+        "tests/sprint15-seer-version.test.mjs"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A25-AURA",
+          "remaining": "#10 trap and other unimplemented distortions",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 28,
+      "name": "Thằng Ngố",
+      "ruleSource": "data/character.json#28",
+      "sourceDescription": "Bạn phải lừa dân làng treo cổ bạn. Nếu họ treo cổ bạn, bạn thắng.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": true,
+      "runtimeSkillIds": [
+        "passive.28.hanged-victory"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-final-breakthrough.test.mjs",
+        "tests/sprint15-breakthrough.test.mjs",
+        "tests/sprint15-deep.test.mjs",
+        "tests/sprint15-aura-expansion.test.mjs",
+        "tests/sprint15-approved.test.mjs"
+      ],
+      "remainingImplementation": null,
+      "branchBlockers": []
+    },
+    {
+      "characterId": 29,
+      "name": "Phù Thủy",
+      "ruleSource": "data/character.json#29",
+      "sourceDescription": "Sở hữu hai bình thuốc, một bình để cứu một người, một bình để giết một người. Phù thuỷ chỉ được sử dụng mỗi bình một lần trong cả ván chơi và có thể sử dụng cả hai bình trong một đêm. \n Mỗi đêm, quản trò gọi Phù thuỷ dậy và cho Phù thuỷ biết hôm qua ai đã bị giết vào đêm đó và Phù thuỷ có quyền quyết định có cứu người đó hay không. Sau đó, quản trò sẽ hỏi Phù thuỷ có muốn dùng bình \"giết\" giết ai đó không.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 3,
+      "verifiedRestrictedBranches": 3,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.29.poison",
+        "official.29.rescue"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-deep.test.mjs",
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remainingImplementation": "Preliminary-death notice, self/other rescue, both potions in a night and poison with shield verified; x2, linked rescue, multiple attacks, hibernation and team victory remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A29-NOTICE",
+          "remaining": "Multiattack, hibernation and prolonged life",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A29-RESCUE",
+          "remaining": "x2, linked rescue, hibernation, broader attack sources",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A29-POISON",
+          "remaining": "Multiple protection types, rescue of preliminary target then poison same target not admitted",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 31,
+      "name": "Bảo Vệ",
+      "ruleSource": "data/character.json#31",
+      "sourceDescription": "Mỗi đêm, Bảo Vệ có quyền chọn một người để bảo vệ nhưng không được vệ một người hai đêm liên tiếp, có thể vệ cùng một người nhưng cách ngày.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.31.guard"
+      ],
+      "evidenceFiles": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A31-GUARD",
+          "remaining": "Actual protection against attack is not covered by the runtime guard layer; do not certify full branch from placement/cooldown alone.",
+          "status": "PARTIAL_LAYER_WITHOUT_ATTACK_ABSORPTION"
+        }
+      ]
+    },
+    {
+      "characterId": 32,
+      "name": "Xạ Thủ",
+      "ruleSource": "data/character.json#32",
+      "sourceDescription": "Xạ Thủ có 3 viên đạn, có quyền bắn cả ngày hoặc đêm với điều kiện chỉ chọn bắn ngày hoặc đêm trong hôm đó.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.32.shoot"
+      ],
+      "evidenceFiles": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remainingImplementation": "Global attack/protection interactions; cross-deck certification",
+      "branchBlockers": [
+        {
+          "branch": "WV-A32-SHOOT",
+          "remaining": "Full upgrade and rescue interactions remain unverified",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 33,
+      "name": "Sói Lừa Gạt",
+      "ruleSource": "data/character.json#33",
+      "sourceDescription": "Ảo ảnh: Một lần trong ván có thể hiện lên là dân làng khi bị tiên tri soi\n\nThao túng: Một lần trong ván có khả năng ép buộc một người bỏ phiếu theo mình vào ban ngày (quản vẫn cho người bị thao túng tự vote nhưng sẽ hỏi ý Sói Lừa Gạt muốn vote ai.\nVd. A bị thao túng, A vote B. Sói Lừa Gạt vote C thì phiếu bầu của A theo SLG)\n\nBáo thù: Nếu bị treo cổ, được chọn một dân làng để kéo chết theo.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 3,
+      "verifiedRestrictedBranches": 2,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.33.force-vote",
+        "official.33.hanging-revenge"
+      ],
+      "evidenceFiles": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)",
+        "tests/sprint15-closure.test.mjs",
+        "tests/sprint15-final-breakthrough.test.mjs"
+      ],
+      "remainingImplementation": "Post-hanging private response in all-other-villager decks, including Hunter death-follow; mixed-faction eligibility and general village victory unresolved.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A33-ILLUSION",
+          "remaining": "Activation and interaction timing not certified",
+          "status": "NOT_IMPLEMENTED"
+        },
+        {
+          "branch": "WV-A33-COERCION",
+          "remaining": "Broader effects and targets not certified",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A33-REVENGE",
+          "remaining": "Multi-wolf protection and other unimplemented #33 branches",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 34,
+      "name": "Sói Mộng Du",
+      "ruleSource": "data/character.json#34",
+      "sourceDescription": "Mỗi đêm sẽ đi lang thang và chọn một người, nếu chọn trúng dân làng sẽ làm mất chức năng trong đêm của người đó",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.34.night-block"
+      ],
+      "evidenceFiles": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 36,
+      "name": "Pháp Sư",
+      "ruleSource": "data/character.json#36",
+      "sourceDescription": "Có hai quả cầu lửa và một khiên hộ vệ, mỗi đêm Pháp Sư sẽ ném một quả cầu vào một người\nMột lần duy nhất, Pháp Sư có thể nâng khiên hộ vệ bảo vệ một người, khi bảo vệ thành công, vai trò của người đó sẽ được quản tiết lộ cho bạn\n\n Lượt bảo vệ bị trừ kể cả khi người được bảo vệ không bị tấn công, Pháp Sư không thể tự bảo vệ mình",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.36.fireball",
+        "official.36.shield"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "remainingImplementation": "Both named skills exist; general attack, shield stacking, team victory and arbitrary decks not certified.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 37,
+      "name": "Ảo Thuật Gia",
+      "ruleSource": "data/character.json#37",
+      "sourceDescription": "Khả năng: Mỗi đêm có thể chọn hai người chơi và tráo đổi trạng thái của họ. Các hiệu ứng có thể bao gồm:\n\nNếu một trong hai người bị giết, người kia sẽ chết thay.\n\nNếu một trong hai người bị soi, người kia sẽ bị nhận nhầm danh tính.\n\nNếu một trong hai người bị bỏ phiếu chết vào ban ngày, người kia sẽ bị treo cổ thay thế.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 4,
+      "verifiedRestrictedBranches": 3,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.37.swap"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-breakthrough.test.mjs"
+      ],
+      "remainingImplementation": "Aura and hanging transposition verified; night attack and exact-role exchange, multiple overlapping redirects and victory remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A37-SWAP",
+          "remaining": "Exact-role and attacks not enabled; overlapping redirects",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A37-ATTACK",
+          "remaining": "Night attack exchange unimplemented",
+          "status": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE"
+        },
+        {
+          "branch": "WV-A37-INSPECT",
+          "remaining": "Exact-role not certified",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A37-HANG",
+          "remaining": "Multiple modifiers/defense and other deck effects",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 43,
+      "name": "Sói Bắn Tỉa",
+      "ruleSource": "data/character.json#43",
+      "sourceDescription": "Sói bắn tỉa có 2 viên đạn, vào ban đêm hoặc ban ngày có thể bắn một viên vào người chơi bất kì, lưu ý chỉ chọn bắn ngày hoặc đêm, không được bắn 2 viên vào cùng một ngày",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.43.shoot"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "remainingImplementation": "Only #25 attack target in closed QA decks; faction/team bite and victory not implemented.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A43-SNIPER",
+          "remaining": "Pack actions and other protection interactions",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 48,
+      "name": "Sói Thủ Lĩnh",
+      "ruleSource": "data/character.json#48",
+      "sourceDescription": "Khi chỉ còn mình sói thủ lĩnh còn sống, vào mỗi đêm nó có thể cắn hai mạng",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.48.pack-bite"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-approved.test.mjs"
+      ],
+      "remainingImplementation": "Multi-wolf action, other protection/attack domains",
+      "branchBlockers": [
+        {
+          "branch": "WV-A48-LAST-WOLF-DOUBLE-BITE",
+          "remaining": "Multi-wolf and protections outside current composition",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 49,
+      "name": "Sói Ảo Ảnh",
+      "ruleSource": "data/character.json#49",
+      "sourceDescription": "Hai lần trong đêm được phép bật chức năng ảo ảnh, khi đó Tiên Tri soi một người bất kì đều cho ra phe sói",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.49.aura-illusion"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-aura-expansion.test.mjs"
+      ],
+      "remainingImplementation": "Aura-only in QA deck; wolf team attack, exact-role interaction and victory not certified.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A49-ILLUSION",
+          "remaining": "Other investigation and blocking interactions; pack",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 50,
+      "name": "Sói Gây Tê",
+      "ruleSource": "data/character.json#50",
+      "sourceDescription": "Ban đêm bạn có thể sử dụng kỹ năng của mình để khiến 1 người chơi không thể dùng chức năng vào ban đêm và bị câm vào sáng hôm sau.\n\nLưu ý: sau khi sử dụng chức năng phải nghỉ ngơi 1 đêm mới dùng lại được",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.50.numb"
+      ],
+      "evidenceFiles": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remainingImplementation": "Collective wolf actions and wider protection/lock interactions",
+      "branchBlockers": [
+        {
+          "branch": "WV-A50-NUMB",
+          "remaining": "All skill-block and team-action domains",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 52,
+      "name": "Chó Canh Gác",
+      "ruleSource": "data/character.json#52",
+      "sourceDescription": "Mỗi đêm, bạn có thể chỉ định hai chú chó bảo vệ của mình để bảo vệ những người chơi khác. Một chú chó chặn các cuộc tấn công của người sói, trong khi chú chó kia chặn các cuộc tấn công của kẻ giết người solo. Bạn có thể bảo vệ tối đa hai đêm",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.52.solo-dog"
+      ],
+      "evidenceFiles": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remainingImplementation": "Wolf dog, double dog, other attacks",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 54,
+      "name": "Người Canh Gác",
+      "ruleSource": "data/character.json#54",
+      "sourceDescription": "Kể từ sau giai đoạn bỏ phiếu ngày thứ nhất, Người Canh Gác có thể bắn hoặc tiết lộ người chơi khác. Cả hai hành động có thể được thực hiện một lần, nhưng không thể làm cả hai một ngày.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.54.shoot",
+        "official.54.reveal"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-aura-expansion.test.mjs",
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "remainingImplementation": "Shot and reveal with same-day exclusion implemented; day 2+ QA timing only, positive hanging and broader interactions not certified.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 55,
+      "name": "Sói Thạch",
+      "ruleSource": "data/character.json#55",
+      "sourceDescription": "Vào ban đêm, Sói Thạch có thể lựa chọn một người chơi sẽ được bảo vệ một lần khỏi dân làng vào ngày và đêm tiếp theo, bao gồm cả chức năng giết người và treo cổ. Chức năng giết người đó sẽ bị tiêu hao. Khi Sói Thạch cứu thành công một người chơi, Sói Thạch sẽ mất đi chức năng và trở thành một ma sói bình thường.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 2,
+      "verifiedRestrictedBranches": 2,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.55.stone-protection"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-breakthrough.test.mjs"
+      ],
+      "remainingImplementation": "Single successful hanging protection and ordinary-wolf marker verified; village attacks, overlap, post-death marks and wolf pack action remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A55-PROTECT",
+          "remaining": "Village night/day attacks unimplemented",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A55-SPENT",
+          "remaining": "Ordinary wolf pack action absent; role name override private",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 58,
+      "name": "Thám Tử Ác Ma",
+      "ruleSource": "data/character.json#58",
+      "sourceDescription": "Mỗi đêm bạn có thể lựa chọn hai người chơi, bao gồm bản thân bạn. Nếu hai người chơi đó ở hai phe khác nhau, cả hai bọn họ sẽ chết, còn không thì phe của họ sẽ bị tiết lộ với bạn. Nếu bạn lựa chọn bản thân thì chỉ người còn lại sẽ chết.\nBạn không thể bị giết bởi ma sói.\n\nBạn thắng nếu bạn là người chơi cuối cùng.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 4,
+      "verifiedRestrictedBranches": 3,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.58.compare"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-deep.test.mjs",
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remainingImplementation": "Same faction, self+other and two other targets of different factions, sole survivor verified; wolf immunity and independent protection of one target remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A58-SAME",
+          "remaining": "General transformations",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A58-DIFFERENT",
+          "remaining": "Protection on one of two; competing death reactions",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A58-IMMUNITY",
+          "remaining": "No general pack attack",
+          "status": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE"
+        },
+        {
+          "branch": "WV-A58-VICTORY",
+          "remaining": "Unrestricted combinations",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 59,
+      "name": "Ná Thủ",
+      "ruleSource": "data/character.json#59",
+      "sourceDescription": "Vào ban ngày, bạn có thể ném viên đá vào một người chơi khác, khiến họ chấn thương và ngăn chặn họ hành động trong phiên hiện tại và kế tiếp. Ném viên đá vào một người chơi đã bị chấn thương trước đó sẽ giết chết họ và tiết lộ vai trò của bạn cho ngôi làng. Bạn chỉ có thể giết hai người chơi trong một game.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.59.stone"
+      ],
+      "evidenceFiles": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 63,
+      "name": "Người Gắn Cờ",
+      "ruleSource": "data/character.json#63",
+      "sourceDescription": "Vào đêm thứ hai, Người Gắn Cờ có thể chọn một người chơi để bảo vệ khỏi một cuộc tấn công và người chơi khác sẽ chuyển hướng cuộc tấn công. Người Gắn Cờ có thể chuyển hướng tấn công 2 lần. Sau khi thành công chuyển hướng, Người Gắn Cờ sẽ không thể sử dụng khả năng vào đêm tiếp theo.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 2,
+      "verifiedRestrictedBranches": 2,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.63.redirect"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-deep.test.mjs"
+      ],
+      "remainingImplementation": "Redirect tested after night 2 with successful-use budget and cooldown; immune targets, cycles, other attacks and team victory remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A63-MARK",
+          "remaining": "Self-selection not admitted",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A63-TRANSFER",
+          "remaining": "Immune recipient, redirect cycles, other attack families",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 64,
+      "name": "Người Rung Chuông",
+      "ruleSource": "data/character.json#64",
+      "sourceDescription": "Vào ban đêm, Người Rung Chuông có thể chọn hai người chơi. Sự lựa chọn có thể thay đổi miễn là một trong hai người chơi được lựa chọn không chết. Nếu một trong hai người chơi chết, vai trò của người chơi còn lại sẽ bị tiết lộ cho Người Rung Chuông.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.64.pair"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-scaleup.test.mjs",
+        "tests/browser_s15_scale_bell_e2e.py"
+      ],
+      "remainingImplementation": "Generalized protection, transformation, revival, linked death and mixed factions outside verified composition",
+      "branchBlockers": [
+        {
+          "branch": "WV-A64-PAIR-DEATH-OBSERVATION",
+          "remaining": "other attack sources, linked death, revival, transformations; self-selection not certified",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 66,
+      "name": "Người Gác Đêm",
+      "ruleSource": "data/character.json#66",
+      "sourceDescription": "Ba lần trong một trò chơi, người gác đêm có thể bảo vệ một người chơi khỏi sự tấn công vào ban đêm. Lượt bảo vệ sẽ bị tiêu hao kể cả khi họ không bị tấn công. Thêm vào đó, người gác đêm có thể quan sát ai đang được bảo vệ bởi người khác vào ban đêm.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.66.night-guard",
+        "passive.66.observe-protected"
+      ],
+      "evidenceFiles": [
+        "tests/sprint13-character-implementation.test.mjs",
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "remainingImplementation": "Observation only with #67 shield; protection types, death and victory outside restricted QA not certified.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 67,
+      "name": "Thợ Rèn",
+      "ruleSource": "data/character.json#67",
+      "sourceDescription": "Thợ rèn có thể rèn hai chiếc khiên và một thanh kiếm. Chiếc khiên sẽ bảo vệ người chơi khỏi bị tấn công vào ban đêm. Thanh kiếm có thể dùng để giết một người chơi khác.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.67.shield",
+        "official.67.sword"
+      ],
+      "evidenceFiles": [
+        "tests/sprint13-character-implementation.test.mjs",
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remainingImplementation": "Wider interaction and victory certification",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 68,
+      "name": "Sói Trẻ",
+      "ruleSource": "data/character.json#68",
+      "sourceDescription": "Chọn một người chơi để kéo theo khi bạn chết",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.68.mark"
+      ],
+      "evidenceFiles": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remainingImplementation": "Other death causes and protection interactions",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 71,
+      "name": "Sát Nhân Ảnh Thuật",
+      "ruleSource": "data/character.json#71",
+      "sourceDescription": "Mỗi đêm bạn có thể ngụy trang một người chơi và người chơi này sẽ bị Tiên Tri soi thành Sát Nhân Ảnh Thuật. Bạn có thể giết tất cả người chơi bị dính ảo ảnh trong giai đoạn thảo luận. Bạn không thể bị giết bởi Ma Sói.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.71.disguise"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remainingImplementation": "Persistent aura effect implemented; daytime mass kill, immunity and legitimate removal remain.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 72,
+      "name": "Sói Pháp Sư",
+      "ruleSource": "data/character.json#72",
+      "sourceDescription": "Vào ban đêm, Sói Pháp Sư chọn một người để yểm, người đấy sẽ bị coi là Ma Sói (Ác) bởi Tiên Tri vào ban đêm.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.72.aura-curse"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-aura-expansion.test.mjs"
+      ],
+      "remainingImplementation": "Single-target aura-only QA; exact-role interaction and wolf team victory not certified.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A72-CURSE",
+          "remaining": "Other investigation/blocking interactions; pack",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 74,
+      "name": "Tiên Tri Huyền Bí",
+      "ruleSource": "data/character.json#74",
+      "sourceDescription": "Thuộc phe Dân làng. Mỗi đêm, Tiên tri Huyền bí sẽ tỉnh dậy và chỉ định một người. Quản trò sẽ cho Tiên tri Huyền bí biết chính xác người chơi này là Chức năng gì. Đây là một lá bài cực kì mạnh, đem đến lợi thế lớn cho Phe dân làng.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.74.inspect-role"
+      ],
+      "evidenceFiles": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A74-EXACT",
+          "remaining": "#10 false-role trap not integrated",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 76,
+      "name": "Sói Ác Mộng",
+      "ruleSource": "data/character.json#76",
+      "sourceDescription": "Hai lần trong trò chơi, bạn có thể khiến một người chơi trong ngày \"chìm vào cơn ác mộng\" trong một đêm. Người chơi đó sẽ không thể sử dụng bất kỳ khả năng nào trong một đêm.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.76.nightmare"
+      ],
+      "evidenceFiles": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A76-NIGHTMARE",
+          "remaining": "Pack and all block-order domains",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 77,
+      "name": "Thợ Săn Quái Thú",
+      "ruleSource": "data/character.json#77",
+      "sourceDescription": "Vào ban đêm, bạn có thể đặt bẫy lên một người chơi, người này không thể bị giết vào ban đêm. Nếu người chơi bị giết, người đã giết đó sẽ chết.\n Có thể tự đặt bẫy để tự vệ.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.77.trap"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remainingImplementation": "Trap intercept and counter-kill verified for solo knight; pack bite, frenzy, multiple protections and village victory remain.",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 78,
+      "name": "Nhà Thiên Văn Học",
+      "ruleSource": "data/character.json#78",
+      "sourceDescription": "Bạn có quyền năng triệu hồi trăng non để ngăn chặn lũ ma sói giết chóc vào ban đêm, và triệu hồi cơn mưa sao băng để giết một người chơi khác. Cả hai quyền năng này chỉ có thể sử dụng một lần duy nhất.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": false,
+      "knownBranches": null,
+      "verifiedRestrictedBranches": 0,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.78.meteor"
+      ],
+      "evidenceFiles": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remainingImplementation": "New moon and combined powers; wider interactions",
+      "branchBlockers": []
+    },
+    {
+      "characterId": 79,
+      "name": "Sói Hòa Bình",
+      "ruleSource": "data/character.json#79",
+      "sourceDescription": "Một lần trong mỗi trận đấu, bạn có thể tiết lộ vai trò của người chơi và ngăn chặn cuộc bỏ phiếu trong ngày đó. Chỉ có bạn và những ma sói khác mới có thể nhìn thấy vai trò của người chơi đã được tiết lộ.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.79.cancel-vote-reveal"
+      ],
+      "evidenceFiles": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remainingImplementation": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A79-CANCEL",
+          "remaining": "Director trigger, wolf team actions, broader composition",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 80,
+      "name": "Nghệ Sĩ Vĩ Cầm",
+      "ruleSource": "data/character.json#80",
+      "sourceDescription": "Mỗi đêm, người sở hữu kỹ năng có thể chọn 1 người chơi còn sống để kiểm tra, đối chiếu với 1 người chơi đã chết vào đêm trước đó.\n\n - Nếu cả hai người thuộc cùng một phe, kết quả sẽ là Tiếc Thương.\n- Nếu cả hai người thuộc hai phe khác nhau, kết quả sẽ là Không Tiếc Thương.\n\nKết quả chỉ phản ánh mối quan hệ cùng phe hoặc khác phe giữa hai người, không tiết lộ cụ thể phe phái của họ.\nKết quả Tiếc Thương không đồng nghĩa với việc người được kiểm tra thuộc phe Dân; chỉ cần hai người cùng phe là có kết quả Tiếc Thương.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.80.compare"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "remainingImplementation": "Death facts only from #8/#32 night attacks in closed decks; revival/transformations and team victory not certified.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A80-VIOLIN",
+          "remaining": "Revival and alignment-transition integration not tested",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 84,
+      "name": "Phù Thủy Câm",
+      "ruleSource": "data/character.json#84",
+      "sourceDescription": "Mỗi đêm, Phù Thủy Câm sẽ được phép chỉ định 1 người bị câm vào hôm sau. Người này vào ngày hôm sau sẽ không được nói.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 1,
+      "verifiedRestrictedBranches": 1,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.84.silence"
+      ],
+      "evidenceFiles": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remainingImplementation": "Other configurations, interaction with groups",
+      "branchBlockers": [
+        {
+          "branch": "WV-A84-SILENCE",
+          "remaining": "Other group communication and lock interaction domains",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 85,
+      "name": "Thầy Thôi Miên",
+      "ruleSource": "data/character.json#85",
+      "sourceDescription": "Mỗi đêm, Thầy Thôi Miên có thể chọn một người chơi để thôi miên. Nếu Thầy Thôi Miên bị giết trong đêm đó, người bị thôi miên cũng sẽ chết thay. Thầy Thôi Miên không được chọn cùng một người chơi để thôi miên hai đêm liên tiếp",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 2,
+      "verifiedRestrictedBranches": 2,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.85.hypnotize"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-deep.test.mjs"
+      ],
+      "remainingImplementation": "Nightly hypnosis and redirect of #8 attack tested; other lethal night sources, overlapping protections and team victory remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A85-MARK",
+          "remaining": "Other death triggers, self selection not admitted",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A85-TRANSFER",
+          "remaining": "Other attack families, competing shields/redirects",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 87,
+      "name": "Dược Sĩ",
+      "ruleSource": "data/character.json#87",
+      "sourceDescription": "Dược sĩ có 2 Bình: Bình thuốc mê và Bình hồi phục. \n- Bình Thuốc mê: dùng để làm cho một người chơi mất quyền biểu quyết và không được nói chuyện gì vào ngày hôm sau. \n - Bình Hồi phục: Dược sĩ biết ai bị Sói cắn và có thể chọn dùng thuốc cứu người đó.\n\nMỗi chức năng chỉ được sử dụng một lần duy nhất.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 2,
+      "verifiedRestrictedBranches": 2,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.87.rescue",
+        "official.87.sedative"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-final-breakthrough.test.mjs",
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "remainingImplementation": "One-flask rescue of one bite victim (including self) in one-wolf domain verified; other attack/protection combinations and other chat groups remain unsupported.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A87-RESCUE",
+          "remaining": "Other pack/protection interactions; other rescue rules not generalized.",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A87-SEDATIVE",
+          "remaining": "Other chat classes and generalized combinations.",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 88,
+      "name": "Thợ Săn",
+      "ruleSource": "data/character.json#88",
+      "sourceDescription": "Mỗi đêm, Thợ Săn có quyền ghim một người. Nếu Thợ Săn bị giết hay bị treo cổ, người này chết theo.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 2,
+      "verifiedRestrictedBranches": 2,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.88.pin"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-closure.test.mjs",
+        "tests/sprint15-final-breakthrough.test.mjs"
+      ],
+      "remainingImplementation": "Night/hanging follow, Hunter killed by revenge and snow shield consumption verified in restricted decks; stale mark duration and other protections unresolved.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A88-MARK",
+          "remaining": "Blocked night in mixed status domain not yet integration-tested",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A88-DEATH-FOLLOW",
+          "remaining": "Other valid protections outside currently admitted games",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 93,
+      "name": "Sói Lưu Đày",
+      "ruleSource": "data/character.json#93",
+      "sourceDescription": "Đi chung với Kẻ Giải Nguyền\n\n Sói Lưu Đày không thức dậy cùng bầy sói. \nMỗi đêm, Sói Lưu Đày chọn một người, người này sẽ mất toàn bộ chức năng trong đêm đó và hoàn toàn bị cấm chat, cấm bỏ phiếu vào ban ngày. \n\n Nếu Kẻ Giải Nguyền chết, phong ấn vỡ, Sói Lưu Đày hóa điên, gia nhập bầy sói cũ và bầy sói được cắn 2 người mỗi đêm.",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 3,
+      "verifiedRestrictedBranches": 3,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "official.93.seal",
+        "official.93.pack-bite",
+        "passive.93.alignment"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-final-breakthrough.test.mjs",
+        "tests/sprint15-breakthrough.test.mjs",
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remainingImplementation": "Night skill lock + day chat and vote restriction; alignment change after partner death verified; one-wolf two-target bite verified; multi-wolf consensus, post-conversion aura and skill retention unresolved.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A93-SEAL",
+          "remaining": "General action locks/pack conversion not fully covered",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A93-ALIGN",
+          "remaining": "One-wolf pack now implemented; multiple wolves and post-conversion aura unresolved.",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A93-DOUBLE-BITE",
+          "remaining": "Multiple wolves consensus, other protections, aura after conversion and inherited skills.",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    },
+    {
+      "characterId": 94,
+      "name": "Kẻ Giải Nguyền",
+      "ruleSource": "data/character.json#94",
+      "sourceDescription": "Đi chung với Sói Lưu Đày\n\n Kỹ năng Hình Nhân Thế Mạng: Mỗi đêm, bạn chọn một người chơi bất kỳ để làm \"Hình Nhân\". Nếu trong đêm đó Sói Lưu Đày bị giết, toàn bộ sát thương sẽ bí mật chuyển hướng sang Hình Nhân.\n\n Kỹ năng Che Giấu Khí Tức: Khi Kẻ Giải Nguyền còn sống, nếu Tiên Tri soi trúng Sói Lưu Đày, kết quả luôn bị bóp méo và trả về là \"Thiện\".",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "auditedAtomic": true,
+      "knownBranches": 2,
+      "verifiedRestrictedBranches": 2,
+      "certifiedFull": false,
+      "runtimeSkillIds": [
+        "passive.94.conceal-aura",
+        "official.94.effigy"
+      ],
+      "evidenceFiles": [
+        "tests/sprint15-breakthrough.test.mjs",
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remainingImplementation": "Living partner aura concealment and effigy redirect of knight lethal attack verified; competing redirects and attack families remain.",
+      "branchBlockers": [
+        {
+          "branch": "WV-A94-EFFIGY",
+          "remaining": "Competing redirects and other attack families",
+          "status": "IMPLEMENTED_RESTRICTED"
+        },
+        {
+          "branch": "WV-A94-AURA",
+          "remaining": "Exact-role and post-conversion aura not certified",
+          "status": "IMPLEMENTED_RESTRICTED"
+        }
+      ]
+    }
+  ]
+}

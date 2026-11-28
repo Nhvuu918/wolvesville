@@ -1,0 +1,16 @@
+# Sprint 08 — Root Causes, Changes and Regression Coverage
+
+| Defect / need | Root cause | Actual code change | Regression evidence |
+|---|---|---|---|
+| DAY vote could close while accepted #79 was pending | `closeVoting` did not check Kernel queued day actions, stranding PH-02 | `backend/src/engine/service.ts` preflight `repo.queued(gameId)` before commit; emits structured `PENDING_ACTIONS` 409 with player-first Vietnamese microcopy | `S08-G03` verifies 409, unchanged revision, later successful resolution |
+| Cancellation visually resembled an unresolved vote | No separately certified persisted outcome | New `vote-adjudicator.ts`; `peace-rules.ts` applies frozen source-backed outcome; public minimal `VOTE_OUTCOME_CONFIRMED` | `S08-G03`, `S08-G08` privacy/restart/replay |
+| Unique highest raw vote could be misread as hanging | Legacy `auditRawBallots` is diagnostic, V02/V03 not confirmed | `certifiedVoteEliminationTarget` throws, close persists `ADJUDICATION_UNRESOLVED`, no invented victim | `S08-G04`, `S08-G05`, prior S07/S06 tests |
+| Death chain implicitly assumed closed for #8 | Winner code checked one attack audit but lacked explicit postdeath chain certificate | New `elimination-chain.ts`; internal proof event and new `victory-resolver.ts` require both audit and closed effects chain | `S08-G01`, `S08-G02`, `S08-G06` |
+| Only one closed-deck knight finish despite #28 source | #28's hanged-only win condition did not require invented night passive | Extended exact supported closed deck to `[8,28]`; no general attack/kill framework enabled | `S08-G01`, `S08-G02`, browser `browser_s08_gameplay_e2e.py` |
+| Mobile preview modal could be re-rendered with unchanged room data while touch/focus remains active | `previewRoom()` always re-rendered after an async room-list fetch regardless of content change, detaching button DOM during a tap | `frontend/integration.js` compares preview room data before/after fetch and only re-renders on a real change | `browser_lobby_e2e.py`, desktop/mobile pointer E2E and runner |
+| Sprint08 Foundation only measured A=1 | Metrics harness hard-coded current baseline rather than new evidence | Versioned independent `s08-gameplay-readiness.mjs`, real backend runs for both certified decks; Foundation tests preserved unchanged | `S08-G09`, `S08-G10`; A=2/B=0 |
+| UI had no alternate 2-person deck; cancellation lacked player explanation | Only prior #8/#25 selection and raw vote screens | `frontend/integration.js` adds #8/#28 option and localized public event message | Real Chromium with two independent contexts |
+
+**Additional new/changed files:** `shared/contracts/index.ts` adds an optional, backward-compatible `VoteLedger.outcome`; `backend/src/official/inspection-rules.ts` whitelists the new exact deck; `package.json` adds source/test/metric/browser/PG scripts; `tests/sprint08-gameplay.test.mjs`, `tests/sprint08-gameplay-metrics.test.mjs`, `tests/postgres-s08-gameplay.test.mjs`; `scripts/s08-gameplay-readiness.mjs`; accompanying documentation and logs.
+
+**Original unchanged:** `data/character.json`, `data/rules/official_merged_118.json`, `data/rules/tests_207.json`, migrations 002/004/005/006 and `reference/approved_frontend_original/` (107 frontend files); no old test removed or modified to produce a passing result.

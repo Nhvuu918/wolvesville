@@ -1,0 +1,29 @@
+{
+  "inheritedEntries": 4501,
+  "historicalReportsByteIdentical": 3522,
+  "protectedRulesCharacterAssetsByteIdentical": 3751,
+  "changedInheritedFiles": [
+    "README.md",
+    "backend/src/engine/elimination-chain.ts",
+    "backend/src/engine/service.ts",
+    "backend/src/game/normal-decks.ts",
+    "backend/src/official/capabilities.ts",
+    "backend/src/official/final-pack.ts",
+    "backend/src/official/group-chat.ts",
+    "backend/src/official/inspection-effects.ts",
+    "backend/src/official/inspection-rules.ts",
+    "backend/src/official/s13-mechanics.ts",
+    "backend/src/official/victory-resolver.ts",
+    "data/rule-intelligence/source_inventory.json",
+    "frontend/integration.css",
+    "frontend/integration.js",
+    "package.json",
+    "scripts/run-browser-s06.mjs",
+    "tests/browser_s25_visual_e2e.py",
+    "tests/sprint25-visual.test.mjs"
+  ],
+  "activeRuleset": "wolvesville-official-v1.3.3",
+  "candidate": "wolvesville-official-v1.3.4",
+  "graphicsChanged": false,
+  "newRoleCertificate": false
+}

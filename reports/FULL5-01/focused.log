@@ -1,0 +1,48 @@
+TAP version 13
+# (node:16799) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Universal module admission is order-independent and rejects unknown/duplicate roles
+ok 1 - Universal module admission is order-independent and rejects unknown/duplicate roles
+  ---
+  duration_ms: 6.307307
+  type: 'test'
+  ...
+# Subtest: Universal real API: guard and Bell without Cupid or Witch; no fabricated mandatory action; restart and true death
+ok 2 - Universal real API: guard and Bell without Cupid or Witch; no fabricated mandatory action; restart and true death
+  ---
+  duration_ms: 1685.195675
+  type: 'test'
+  ...
+# Subtest: Universal real API: seed, Witch and exact inspection without Cupid or Bell; rescue then hibernation and wake
+ok 3 - Universal real API: seed, Witch and exact inspection without Cupid or Bell; rescue then hibernation and wake
+  ---
+  duration_ms: 2390.726067
+  type: 'test'
+  ...
+# Subtest: FULL5 \#74 sees converted Cupid as villager; private feedback, restart, replay
+ok 4 - FULL5 \#74 sees converted Cupid as villager; private feedback, restart, replay
+  ---
+  duration_ms: 3276.279353
+  type: 'test'
+  ...
+# Subtest: FULL5 \#31/\#9 layered protection: renewable guard first, snow retained then consumed, Bell only on true death
+ok 5 - FULL5 \#31/\#9 layered protection: renewable guard first, snow retained then consumed, Bell only on true death
+  ---
+  duration_ms: 3372.371136
+  type: 'test'
+  ...
+# Subtest: FULL5 \#9 shield survives provider death and blocks linked night death once
+ok 6 - FULL5 \#9 shield survives provider death and blocks linked night death once
+  ---
+  duration_ms: 2716.510534
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 13743.493122

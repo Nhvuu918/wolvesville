@@ -1,0 +1,77 @@
+{
+  "checkpoint": "FULL50-M1-01",
+  "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+  "fingerprintAlgorithm": "RC-01 algorithm over backend/shared/frontend/data/tests/scripts/package.json/tsconfig.json and inherited RC-01/BROWSER_MANIFEST.json; generated delivery metadata excluded",
+  "baseSHA256": "3ee17a5bfc6dd57c9c4e4f8ab69ca7076a740b45662bc84a8f65b32e04d900df",
+  "characterRegistry": 97,
+  "historicalDecisions": 118,
+  "legacySpecifications": 207,
+  "legacyOwnerChoices": 25,
+  "ownerResponses": 48,
+  "scopeDecisionEvidenceCount": 8,
+  "activeRuleset": "wolvesville-official-v1.3.3",
+  "candidateRuleset": "wolvesville-official-v1.3.4",
+  "historicalMetrics": {
+    "R": 53,
+    "A": 52,
+    "B": 40,
+    "F": 1,
+    "qaC": 2,
+    "playableC": 7,
+    "atomicPass": 79,
+    "atomicTotal": 108,
+    "normalDecks": 16
+  },
+  "newFull": 0,
+  "freshFullRevalidation": 0,
+  "full64": "NOT_MET",
+  "focusedBackend": {
+    "tests": 39,
+    "pass": 39,
+    "fail": 0,
+    "skip": 0,
+    "exitCode": 0,
+    "log": "reports/FULL50-M1-01/focused-final.log"
+  },
+  "monolithicDiagnostic": {
+    "scope": "PRE_RESCUE_INTERMEDIATE_SOURCE; NOT_FINAL_FINGERPRINT",
+    "tests": 503,
+    "pass": 491,
+    "fail": 1,
+    "skip": 11,
+    "exitCode": 1,
+    "failure": "S04 KB-06 hash inventory; corrected using generator; final focused PASS",
+    "log": "reports/FULL50-M1-01/backend-full.log"
+  },
+  "monolithicFinal": "NOT_RUN",
+  "browserFinal": {
+    "candidate": {
+      "suite": "browser_s29_life02_e2e.py",
+      "status": "PASS",
+      "mode": "INTEGRATION_TEST",
+      "log": "reports/FULL50-M1-01/browser-final.log"
+    },
+    "normal": {
+      "suite": "browser_s28_bell_normal_e2e.py",
+      "status": "PASS",
+      "mode": "NORMAL_GAMEPLAY",
+      "log": "reports/FULL50-M1-01/browser-normal-final.log"
+    },
+    "freshPassCount": 2,
+    "remainingSuitesNotRun": 86,
+    "note": "88-suite inventory historical; both suites here are re-executed on final source. No certificate promotion. 6-player rescue browser not run."
+  },
+  "freshAtomic": "NOT_COMPUTED",
+  "promotionReadyGroups": 0,
+  "privacy": "PARTIAL",
+  "competitive": "NO-GO",
+  "postgresLive": "PENDING",
+  "nativeMac": "NOT_VERIFIED",
+  "humanQA": "PENDING",
+  "build": "PASS with installed global TypeScript and Node types; dependency installation not tested",
+  "pendingOwnerSubpoints": [
+    "FULL50-CLARIFY-08",
+    "FULL50-CLARIFY-47"
+  ],
+  "noNewCertificates": true
+}

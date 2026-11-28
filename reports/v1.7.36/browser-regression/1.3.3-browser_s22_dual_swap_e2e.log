@@ -1,0 +1,25 @@
+E2E_SCHEDULER_WAIT exclusive 46467
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 978
+E2E_RESOURCE start cpu "usage_usec 7073853468\nuser_usec 5939006196\nsystem_usec 1134847272\nnice_usec 2171690\nnr_periods 54585\nnr_throttled 4314\nthrottled_usec 200650336\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s22_dual_swap_e2e.py default port 37319 db /tmp/wolvesville-s06-browser-eZyzcr/test.sqlite
+SCENARIO_READY s22-dual-swap
+E2E_STAGE action 74 official.74.inspect-role 28
+E2E_STAGE action 25 official.25.inspect-role 28
+E2E_STAGE action 37 official.37.swap 28
+E2E_STAGE resolve DAY_DISCUSS
+E2E_STAGE action 25 official.25.inspect-role 28
+E2E_STAGE action 74 official.74.inspect-role 28
+E2E_STAGE resolve DAY_DISCUSS
+SCENARIO_ACTIONS_PASS s22-dual-swap
+E2E_STAGE cleanup
+E2E_CONTEXT_CLOSED 0 0.033
+E2E_CONTEXT_CLOSED 1 0.054
+E2E_CONTEXT_CLOSED 2 0.051
+E2E_CONTEXT_CLOSED 3 0.037
+E2E_STAGE cleanup-complete
+S22_DUAL_SWAP_BROWSER_PASS
+S06_BROWSER_PASS browser_s22_dual_swap_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 7115968662\nuser_usec 5972484567\nsystem_usec 1143484095\nnice_usec 2171690\nnr_periods 54743\nnr_throttled 4328\nthrottled_usec 200916151\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

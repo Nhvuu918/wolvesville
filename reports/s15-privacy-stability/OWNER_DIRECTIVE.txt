@@ -1,0 +1,632 @@
+# WOLVESVILLE — v1.7.25 PRIVACY, STABILITY & FULL COMPLETION
+## ELIMINATE INFORMATION LEAKS · FIX CONCURRENT BROWSER FAILURES · CERTIFY FIVE-PLAYER DECK · COMPLETE SHARED MECHANICS
+
+**PROJECT OWNER DIRECTIVE**
+
+**SOURCE:** `v1.7.24-s15-gameplay-closure-wip`
+
+**OFFICIAL RULES:** `wolvesville-official-v1.3.3`
+
+**CANDIDATE RULES:** `wolvesville-official-v1.3.4`
+
+# I. CHỈ THỊ CHIẾN LƯỢC
+
+Tôi đã kiểm tra báo cáo v1.7.24.
+
+Tôi ghi nhận:
+
+- Mixed Wolf Pack sau chuyển phe đã có đường gameplay live.
+- BB-REP-NEW-01=B đã được tích hợp vào thứ tự đại diện của toàn bộ người chơi.
+- #93 và #48 đã thực hiện đồng thuận tập hai mục tiêu.
+- #36 Pháp Sư đã mở rộng đòn lửa sang #8.
+- Metric A tăng từ 48 lên 49.
+- Backend Regression đạt 439 PASS, 0 FAIL.
+- B/B Live Backend đạt 16/16 PASS.
+- B/B Live Browser đạt 8/8 PASS.
+
+Nhưng tôi không chấp nhận tiếp tục phát triển trong tình trạng:
+
+- Mixed Wolf Pack có nguy cơ rò rỉ thông tin phe.
+- Browser Regression giảm từ 37 PASS xuống 33 PASS.
+- Hai suite thất bại khi chạy đồng thời.
+- Playable C kế thừa mới chỉ tái nghiệm thu 5/6.
+- F vẫn bằng 1.
+- Bộ năm người gần hoàn thiện chưa được cấp chứng nhận.
+- Ruleset v1.3.4 vẫn chưa sẵn sàng.
+
+**ƯU TIÊN CỦA PHIÊN NÀY: PRIVACY → STABILITY → CERTIFICATION → SHARED MECHANICS → RELEASE READINESS.**
+
+Không tiếp tục mở rộng PARTIAL khi các vấn đề trên chưa được xử lý.
+
+# II. BASELINE
+
+Tiếp tục trực tiếp từ:
+
+`v1.7.24-s15-gameplay-closure-wip`
+
+Baseline theo báo cáo:
+
+| Metric | Current |
+|---|---:|
+| R | 52/97 |
+| F | 1/97 |
+| A | 49 |
+| B | 37 |
+| QA C | 2 |
+| Playable C | 6 |
+| Atomic PASS | 79/108 |
+| Normal Gameplay Decks | 12 |
+| Backend | 439 PASS, 0 FAIL, 11 SKIPPED |
+| Browser | 33 PASS, 2 FAIL, 37 INCOMPLETE |
+| Rule-version | 39 PASS, 2 FAIL, 66 INCOMPLETE |
+| B/B Live Backend | 16/16 PASS |
+| B/B Live Browser | 8/8 PASS |
+| FULL Revalidation | 1/1 |
+| QA C Revalidation | 2/2 |
+| Playable C Revalidation | 5/6 |
+| Human QA | PENDING |
+
+Phải xác minh lại các chỉ số bằng source và evidence.
+
+Bảo toàn:
+
+- 97 Character IDs.
+- 118 Historical Decisions.
+- 207 Legacy Specifications.
+- 14 quyết định gameplay B/B đã được phê duyệt.
+- QD-01/02/03.
+- Voting V02/V03.
+- Official Rules v1.3.2 và v1.3.3.
+- Historical Replay.
+- Authentication và authorization.
+- FULL/C Certificates hiện có.
+
+Không quay về source cũ.
+
+Không tự kích hoạt v1.3.4.
+
+# III. PRIORITY ZERO — FIX MIXED WOLF PRIVACY LEAK
+
+Báo cáo v1.7.24 đã xác định:
+
+Danh sách mục tiêu cắn có thể vô tình tiết lộ thông tin về phe thứ ba trước khi điều kiện chuyển phe xảy ra.
+
+Đây là lỗi có nguy cơ ảnh hưởng tới fairness.
+
+Tôi yêu cầu kiểm tra toàn bộ đường dữ liệu:
+
+1. GameState nội bộ.
+2. Server-side allowed target calculation.
+3. Authorized projection.
+4. REST response.
+5. WebSocket event.
+6. Frontend target list.
+7. Disabled target indicators.
+8. Tooltip và error messages.
+9. Event Log và Replay visibility.
+10. Reconnect state.
+
+## Quy tắc bắt buộc
+
+**Server phải giữ quyền xác thực và phân giải mục tiêu.**
+
+Client chỉ được nhận thông tin mà người chơi có quyền biết theo luật.
+
+Không tiết lộ phe bí mật bằng:
+
+- Việc loại ghế khỏi danh sách mục tiêu.
+- Trạng thái disabled.
+- Thông báo lỗi quá cụ thể.
+- Payload metadata.
+- WebSocket event.
+- Retry response.
+- Reconnect projection.
+
+Không được giả định mọi mục tiêu đều hợp lệ nếu luật có ràng buộc khác.
+
+Cần phân biệt:
+
+- Điều kiện không hợp lệ mà người chơi được phép biết.
+- Điều kiện bí mật chỉ server được phép biết.
+- Điều kiện bị từ chối do trạng thái phase/actor.
+- Điều kiện do quyền hoặc capability.
+
+## Privacy acceptance
+
+Bắt buộc kiểm tra:
+
+- Trước khi #93 chuyển phe.
+- Sau khi #93 chuyển phe.
+- Khi #48 và #93 cùng tồn tại.
+- Người chơi phe Dân.
+- Người chơi phe Sói.
+- Người chơi thuộc phe thứ ba.
+- Người chết.
+- Người đã reconnect.
+- Người không thuộc phòng.
+- Các thông báo sau khi lựa chọn mục tiêu bị từ chối.
+
+So sánh projections của những trạng thái chỉ khác nhau ở thông tin phe bí mật mà người quan sát không được biết.
+
+Trong những trường hợp đó, response dành cho người quan sát không được giúp suy luận trái phép thông tin phe.
+
+Không chỉ sửa UI để che một trường đã bị backend gửi xuống.
+
+Sửa tại server authorization/projection nếu đó là nguồn rò rỉ.
+
+Không tự thay đổi luật target eligibility.
+
+Nếu một trường hợp cần chính sách gameplay mới, ghi Decision Card riêng.
+
+**Không đánh dấu Mixed Wolf Pack RELEASE_READY nếu chưa PASS privacy acceptance.**
+
+# IV. PRIORITY ONE — FIX CONCURRENT BROWSER REGRESSION
+
+Hai suite đang FAIL:
+
+`browser_s15_normal_rescue_e2e.py`
+
+`browser_s15_normal_guard_rescue_e2e.py`
+
+Theo báo cáo:
+
+- Chạy đồng thời: FAIL khoảng 66,5 giây.
+- Chạy riêng: PASS khoảng 37–38 giây.
+
+Các kết quả chạy riêng không được sử dụng để xóa FAIL của ma trận chính.
+
+Tôi yêu cầu tìm nguyên nhân:
+
+1. Shared backend instance.
+2. Shared SQLite database.
+3. Shared port.
+4. Test account collisions.
+5. Game ID collisions.
+6. CPU contention.
+7. Browser process saturation.
+8. WebSocket lifecycle.
+9. Polling loop.
+10. Orphan processes.
+11. Cleanup race.
+12. Resource limits.
+13. Test orchestration.
+14. Actual gameplay latency.
+
+## Cách nghiệm thu
+
+Chạy controlled experiments:
+
+- Mỗi suite độc lập.
+- Hai suite chạy tuần tự.
+- Hai suite chạy đồng thời với tài nguyên tách biệt.
+- Hai suite chạy đồng thời với cấu hình runner hiện tại.
+
+Đối chiếu logs, timings, traces và process lifecycle.
+
+Nếu nguyên nhân là shared test resources, sửa isolation hoặc scheduler.
+
+Nếu nguyên nhân là application concurrency, sửa backend/frontend.
+
+Không tăng timeout để che tình trạng nghẽn.
+
+Không bỏ assertions.
+
+Không tự retry đến khi PASS rồi chỉ báo kết quả cuối.
+
+Không âm thầm giảm số suite chạy.
+
+Phải giữ đầy đủ manifest và báo cáo giới hạn môi trường.
+
+Tôi muốn nhận được bằng chứng rằng các suite hoàn thành ổn định trong cấu hình kiểm thử được công bố, không chỉ PASS ở một lượt chạy riêng lẻ.
+
+# V. PRIORITY TWO — REVALIDATE ALL EXISTING CERTIFICATES
+
+Hiện:
+
+- FULL: 1/1.
+- QA C: 2/2.
+- Playable C: 5/6.
+- Atomic: 79/79.
+
+Tôi yêu cầu tái nghiệm thu Playable C còn thiếu:
+
+`[25,31,48,74,87]`
+
+Đồng thời bảo toàn:
+
+- `[8,25]`
+- `[8,74]`
+- `[8,25,74]`
+- `[8,9]`
+- `[25,31,48,74]`
+- `[25,31,48,74,87]`
+
+Mỗi certificate phải gắn:
+
+- Source fingerprint.
+- Rule version.
+- Backend evidence.
+- Browser evidence.
+- Privacy evidence.
+- Replay evidence.
+- Trạng thái revalidation.
+
+Không xóa certificate lịch sử.
+
+Không tuyên bố tất cả đã PASS khi vẫn còn suite bị chặn.
+
+# VI. PRIORITY THREE — COMPLETE SECOND FIVE-PLAYER DECK
+
+Bộ vai:
+
+`[9,25,48,74,87]`
+
+Các ma trận kernel đã được báo cáo PASS.
+
+Blocker còn lại hiện nằm ở Browser Acceptance và các nghĩa vụ chưa hoàn thành của Finite Completion Contract.
+
+Yêu cầu:
+
+1. Đọc chính xác contract hiện hành.
+2. Liệt kê toàn bộ nghĩa vụ chưa đạt.
+3. Phân biệt thiếu code, thiếu evidence, lỗi harness và thiếu luật.
+4. Sửa Browser timeout.
+5. Hoàn thiện UI interactions.
+6. Kiểm tra Snow Angel protection qua nhiều đêm.
+7. Kiểm tra Pharmacist rescue.
+8. Kiểm tra status lifecycle.
+9. Kiểm tra Voting.
+10. Kiểm tra Victory.
+11. Kiểm tra Resource/Cooldown.
+12. Kiểm tra Persistence.
+13. Kiểm tra Replay.
+14. Kiểm tra Privacy.
+15. Chạy Browser E2E trên source cuối.
+
+Cấp Playable Branch Complete chỉ khi toàn bộ nghĩa vụ áp dụng đạt PASS.
+
+Không bắt deck chứng minh các interaction không thể xảy ra trong chính deck đó.
+
+Không dùng ma trận kernel để thay thế Browser E2E.
+
+Mục tiêu: Playable C từ 6 lên 7 nếu đủ bằng chứng.
+
+# VII. PRIORITY FOUR — COMPLETE A SHARED MECHANIC TO UNLOCK FULL ROLES
+
+F vẫn bằng 1/97.
+
+Tôi không muốn thêm một phiên bản chỉ mở rộng mục tiêu của Pháp Sư rồi dừng lại.
+
+Rà soát Completion Contracts của:
+
+- #36 Pháp Sư.
+- #9 Thiên Sứ Tuyết.
+- #25 Tiên Tri.
+- #74 Tiên Tri Huyền Bí.
+- #31 Bảo Vệ.
+- #29 Phù Thủy.
+- #26 Thầy Đồng.
+- #10 Sói Kỹ Sư.
+- Các vai khác có ít nghĩa vụ còn thiếu.
+
+Xác định cơ chế chung nào đang chặn nhiều nhân vật nhất.
+
+Đặc biệt kiểm tra:
+
+- Death-chain #23.
+- Attack/protection interaction.
+- Multi-night skill lifecycle.
+- Revival.
+- Resource/cooldown.
+- Status transitions.
+- Capability-based target validation.
+
+Chọn một dependency có giá trị mở khóa cao nhất và triển khai đầy đủ.
+
+## Đối với #36 Pháp Sư
+
+Phải xác minh:
+
+1. Giới hạn mục tiêu nào còn tồn tại.
+2. Hai lần sử dụng đòn lửa qua nhiều đêm.
+3. Trường hợp đòn lửa không kết thúc trận.
+4. Tương tác với những lớp phòng thủ áp dụng.
+5. Death-chain #23.
+6. Interaction sau hồi sinh.
+7. Resource/Cooldown.
+8. Privacy.
+9. Replay.
+10. Browser E2E.
+
+Không mở rộng mục tiêu bằng cách bỏ qua các hiệu ứng chết liên kết.
+
+Không tự cấp FULL nếu chưa hoàn thành miền luật bắt buộc.
+
+Nếu #36 quá khó vì dependency mới chưa có, chọn một vai gần FULL khác và thực hiện đến khi có chứng nhận hoặc blocker được chứng minh.
+
+Không tiếp tục chỉ viết thêm triage report.
+
+# VIII. PRIORITY FIVE — MIXED WOLF PACK COMPLETION
+
+Giữ toàn bộ 14 quyết định B/B đã được phê duyệt.
+
+Bộ Live QA:
+
+`[48,74,77,84,93,94]`
+
+Đã có bằng chứng backend mixed pack.
+
+Nhưng báo cáo cho biết Browser E2E sáu tài khoản từng PASS ở lượt chẩn đoán sau sửa frontend và chưa được tái xác minh trên fingerprint giao hàng.
+
+Yêu cầu:
+
+1. Chạy lại Browser E2E trên source giao hàng cuối cùng.
+2. Kiểm tra #93 chuyển phe hợp lệ.
+3. Kiểm tra #48 và #93 cùng tham gia đồng thuận.
+4. Kiểm tra KEEP.
+5. Kiểm tra Waiting State.
+6. Kiểm tra toàn bộ tập hai mục tiêu.
+7. Kiểm tra thứ tự đại diện RNG.
+8. Kiểm tra SAME/RESOLVE.
+9. Kiểm tra death-chain.
+10. Kiểm tra Victory.
+11. Kiểm tra Privacy.
+12. Kiểm tra Reconnect.
+13. Kiểm tra SQLite restart.
+14. Kiểm tra Replay.
+
+Đặc biệt:
+
+- Thay đổi thành viên đủ quyền trong cửa sổ đồng thuận.
+- Chuyển phe khi đã có lựa chọn pending.
+- Thành viên mất quyền trước thời điểm chốt.
+- Đại diện bị phản sát ở đòn đầu.
+- Đòn thứ hai vẫn được phân giải nếu luật cho phép.
+
+Không tạo trạng thái trái luật để nghiệm thu.
+
+Nếu kết quả vẫn chỉ là QA profile, ghi đúng LIVE_QA_VERIFIED, không ghi OFFICIAL_NORMAL_GAMEPLAY.
+
+# IX. PRIORITY SIX — v1.3.4 RELEASE READINESS
+
+Ruleset hiện tại:
+
+`wolvesville-official-v1.3.3`
+
+Candidate:
+
+`wolvesville-official-v1.3.4`
+
+14 quyết định của chủ dự án đã được phê duyệt.
+
+Không hỏi lại.
+
+Đọc Release Scope Contract hiện hành.
+
+Ưu tiên đóng:
+
+- Mixed Pack Privacy.
+- Membership changes during consensus.
+- Representative attribution.
+- Multi-target retaliation.
+- Trap + Revival.
+- Cross-window resolution.
+- Same-night interactions.
+- Historical Replay.
+- Official activation tests.
+
+Phải tạo bảng:
+
+| Obligation | Rule | Code | Backend | Browser | Privacy | Replay | State |
+|---|---|---|---|---|---|---|---|
+
+Phân biệt rõ:
+
+- POLICY_APPROVED.
+- IMPLEMENTED.
+- LIVE_QA_VERIFIED.
+- RELEASE_SCOPE_COMPLETE.
+- READY_FOR_APPROVAL.
+- ACTIVE.
+
+Không tự chuyển ACTIVE.
+
+Không âm thầm loại interaction classes bắt buộc để đạt READY.
+
+Không yêu cầu toàn bộ 97 nhân vật FULL nếu không thuộc phạm vi release.
+
+# X. PRIORITY SEVEN — HUMAN QA
+
+Tôi vẫn sẵn sàng trực tiếp thử game.
+
+Duy trì tối đa ba nhiệm vụ:
+
+1. Mixed Wolf Pack sau chuyển phe.
+2. Thầy Đồng hồi sinh.
+3. Bẫy xuyên cửa sổ.
+
+Chỉ giao nhiệm vụ chạy được qua giao diện thật.
+
+Cung cấp:
+
+- Build fingerprint.
+- Mac Apple Silicon instructions.
+- Số tài khoản.
+- Deck.
+- Phase setup.
+- Steps.
+- Expected Results.
+- Evidence.
+- PASS/FAIL feedback.
+
+Không yêu cầu tôi chỉnh source hoặc database.
+
+Không tự ghi Human QA PASS.
+
+Nếu privacy bug còn tồn tại, ghi rõ build đó chưa đạt nghiệm thu release và không coi Human QA chơi thành công là bằng chứng đã an toàn.
+
+# XI. BROWSER ACCEPTANCE EXECUTION
+
+Baseline:
+
+- 72 Browser Suites.
+- 33 PASS.
+- 2 FAIL.
+- 37 INCOMPLETE.
+- Rule-version Matrix: 39 PASS, 2 FAIL, 66 INCOMPLETE.
+
+Hãy chạy thêm những shard chưa hoàn tất.
+
+Không tiếp tục tạo runner mới khi runner hiện có đã đủ.
+
+Mỗi suite phải có:
+
+- Suite ID.
+- Rule version.
+- Source fingerprint.
+- Command.
+- Exit code.
+- Log.
+- Duration.
+- PASS/FAIL/INCOMPLETE.
+- Root cause nếu FAIL.
+
+Không lấy kết quả chạy riêng để che kết quả chạy đồng thời.
+
+Không đếm source trung gian.
+
+Không dùng số backend PASS để thay thế Browser Acceptance.
+
+# XII. EXIT CRITERIA
+
+Đợt phát triển phải chứng minh:
+
+**GATE 1 — PRIVACY**
+
+Không còn rò rỉ thông tin phe qua target projection trong phạm vi release.
+
+**GATE 2 — STABILITY**
+
+Hai browser FAIL được giải quyết có bằng chứng.
+
+**GATE 3 — REVALIDATION**
+
+FULL/C kế thừa được tái nghiệm thu đầy đủ.
+
+**GATE 4 — PLAYABLE C**
+
+Bộ năm người thứ hai được hoàn thiện hoặc còn blocker cụ thể đã xác minh.
+
+**GATE 5 — FULL ROLE**
+
+Có một shared mechanic được hoàn thiện thực sự và ít nhất một Full Role Certificate mới nếu đủ nghĩa vụ.
+
+**GATE 6 — MIXED WOLF**
+
+Có Browser E2E sáu tài khoản trên source cuối, không chỉ diagnostic PASS.
+
+**GATE 7 — RELEASE**
+
+v1.3.4 có Release Scope Contract và trạng thái chính xác.
+
+Nếu chưa đạt, giữ WIP.
+
+Không công bố Competitive Production GO.
+
+# XIII. METRICS & EVIDENCE
+
+Báo cáo:
+
+| Metric | Baseline | Result | Evidence |
+|---|---:|---:|---|
+| R | 52 | ... | ... |
+| F | 1 | ... | ... |
+| A | 49 | ... | ... |
+| B | 37 | ... | ... |
+| QA C | 2 | ... | ... |
+| Playable C | 6 | ... | ... |
+| Atomic PASS | 79 | ... | ... |
+| Normal Gameplay | 12 | ... | ... |
+| Browser PASS | 33 | ... | ... |
+| Browser FAIL | 2 | ... | ... |
+| Browser INCOMPLETE | 37 | ... | ... |
+
+Tách riêng:
+
+- New Certificates.
+- Revalidated Certificates.
+- Live QA Evidence.
+- Official Gameplay Evidence.
+- Diagnostic-only Results.
+
+Không tính trùng.
+
+Không hạ tiêu chuẩn metrics.
+
+# XIV. FULL SOURCE DELIVERY
+
+Bàn giao Full Source ZIP mới bao gồm:
+
+- Frontend.
+- Backend.
+- Game Engine.
+- Game Session.
+- B/B Live Runtime.
+- Mixed Wolf Pack.
+- Authorized Projection.
+- Representative Order.
+- NightActionGroup.
+- Persistent Trap.
+- Rule Registry.
+- Decision Records.
+- Completion Contracts.
+- FULL Certificates.
+- Branch Complete Certificates.
+- Normal Gameplay.
+- Database Migration.
+- Event Log/Replay.
+- Backend Tests.
+- Browser Tests.
+- Regression Reports.
+- Release Scope Contract.
+- Human QA Pack.
+- Changelog.
+- README Mac Apple Silicon.
+
+Kiểm tra:
+
+- ZIP CRC.
+- Clean Extraction.
+- Source Integrity.
+- Build.
+- Rules Build.
+- Monolithic Backend Regression.
+- Browser Acceptance.
+- Certificate Revalidation.
+- Metrics Verification.
+
+Không chứa secrets, `.env` thật, node_modules hoặc runtime databases.
+
+Giữ WIP khi chưa đủ gates.
+
+# XV. CHỈ THỊ CUỐI CÙNG
+
+**TÔI MUỐN WOLVESVILLE PHÁT TRIỂN NHANH NHƯNG KHÔNG ĐÁNH ĐỔI SỰ CÔNG BẰNG VÀ ĐỘ ỔN ĐỊNH.**
+
+Không được để danh sách mục tiêu tiết lộ phe bí mật.
+
+Không được để hai browser suites thất bại chỉ vì tranh chấp tài nguyên trong hệ thống kiểm thử.
+
+Không được để các chứng nhận gameplay cũ liên tục mất trạng thái PASS sau mỗi lần sửa engine.
+
+Không tiếp tục mở rộng nhiều vai PARTIAL mà không hoàn thiện được FULL.
+
+Hãy thực hiện:
+
+**FIX PRIVACY → FIX CONCURRENT BROWSER FAILURES → REVALIDATE CERTIFICATES → CERTIFY FIVE-PLAYER DECK → COMPLETE SHARED MECHANIC → VERIFY MIXED PACK → ADVANCE v1.3.4 RELEASE.**
+
+Tiếp tục trực tiếp từ:
+
+`v1.7.24-s15-gameplay-closure-wip`
+
+**HÃY THỰC THI CODE, KIỂM THỬ, CẤP CHỨNG NHẬN KHI ĐỦ BẰNG CHỨNG VÀ BÀN GIAO FULL SOURCE ZIP.**

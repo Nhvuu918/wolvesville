@@ -1,0 +1,32 @@
+[
+  {
+    "screen": "mobile-night",
+    "file": "s26-polish/mobile-night.png",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "mobile-day",
+    "file": "s26-polish/mobile-day.png",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  }
+]

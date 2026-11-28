@@ -1,0 +1,206 @@
+{
+  "version": "1.7.15-s15-deep-engine-wip",
+  "baselineIds": [
+    3,
+    5,
+    8,
+    9,
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24,
+    25,
+    28,
+    29,
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    39,
+    43,
+    48,
+    49,
+    50,
+    52,
+    54,
+    55,
+    58,
+    59,
+    63,
+    64,
+    66,
+    67,
+    68,
+    71,
+    72,
+    74,
+    76,
+    77,
+    78,
+    79,
+    80,
+    84,
+    85,
+    87,
+    88,
+    93,
+    94
+  ],
+  "addedIds": [
+    10,
+    26
+  ],
+  "removedIds": [],
+  "afterIds": [
+    3,
+    5,
+    8,
+    9,
+    10,
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    39,
+    43,
+    48,
+    49,
+    50,
+    52,
+    54,
+    55,
+    58,
+    59,
+    63,
+    64,
+    66,
+    67,
+    68,
+    71,
+    72,
+    74,
+    76,
+    77,
+    78,
+    79,
+    80,
+    84,
+    85,
+    87,
+    88,
+    93,
+    94
+  ],
+  "scope": "Restricted current-rule runtime only; no FULL or competitive permission",
+  "evidence": {
+    "10": {
+      "scope": [
+        5,
+        10,
+        25,
+        74
+      ],
+      "ruleProvenance": [
+        "character.json#10",
+        "SK-05",
+        "Q13-06",
+        "VH08",
+        "VH84"
+      ],
+      "runtime": [
+        {
+          "id": 10,
+          "target": 25,
+          "skill": "official.10.trap",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        },
+        {
+          "id": 10,
+          "target": 74,
+          "skill": "official.10.trap",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        },
+        {
+          "id": 10,
+          "target": 5,
+          "skill": "official.10.trap",
+          "privacy": true,
+          "replay": true,
+          "restart": true
+        }
+      ],
+      "browser": true,
+      "testPath": "tests/sprint15-deep-engineer.test.mjs"
+    },
+    "26": {
+      "scope": [
+        8,
+        25,
+        26
+      ],
+      "ruleProvenance": [
+        "character.json#26",
+        "VH73",
+        "VH76",
+        "PH-01",
+        "VH03"
+      ],
+      "runtime": [
+        {
+          "id": 26,
+          "deck": [
+            8,
+            25,
+            26
+          ],
+          "mediumKilled": false,
+          "completed": true,
+          "privacy": true,
+          "replay": true,
+          "restart": true,
+          "deathCycles": 2
+        },
+        {
+          "id": 26,
+          "deck": [
+            8,
+            25,
+            26
+          ],
+          "mediumKilled": true,
+          "completed": true,
+          "privacy": true,
+          "replay": true,
+          "restart": true,
+          "deathCycles": 2
+        }
+      ],
+      "browser": true,
+      "testPath": "tests/sprint15-deep-medium.test.mjs"
+    }
+  }
+}

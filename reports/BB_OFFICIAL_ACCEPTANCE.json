@@ -1,0 +1,89 @@
+{
+  "version": "1.7.21-s15-official-bb-wip",
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "sourceFingerprint": "437703af3db42cea9439912fbba3b24aed564c4aa14bdd3eeaf970b0cb6d36de",
+  "officialActivation": false,
+  "decisionRecord": "data/rules/owner_bb_final_decisions_20261125.json",
+  "backendGate": "PASS_SPLIT",
+  "backend": {
+    "tests": 432,
+    "pass": 421,
+    "fail": 0,
+    "skipped": 11
+  },
+  "candidateRetest": true,
+  "liveBackendTests": 12,
+  "liveBrowser": {
+    "pack": "PASS",
+    "trap": "PASS",
+    "guard": "PASS",
+    "witch": "PASS",
+    "retaliation": "PASS",
+    "cross_window": "PASS"
+  },
+  "liveScope": "Actual Game Session archive and transaction in explicit bounded local QA profiles, no official activation.",
+  "browser": {
+    "total": 69,
+    "PASS": 21,
+    "FAIL": 1,
+    "INCOMPLETE": 47
+  },
+  "matrix": {
+    "total": 104,
+    "PASS": 25,
+    "FAIL": 1,
+    "INCOMPLETE": 78
+  },
+  "officialBrowser": {
+    "total": 63,
+    "PASS": 15,
+    "FAIL": 1,
+    "INCOMPLETE": 47
+  },
+  "officialMatrix": {
+    "total": 98,
+    "PASS": 19,
+    "FAIL": 1,
+    "INCOMPLETE": 78
+  },
+  "freshCertificates": {
+    "F": 1,
+    "qaC": 1,
+    "playableC": 3,
+    "S_pass": 73
+  },
+  "fullManifestAccepted": false,
+  "postgreSQLLive": "PENDING",
+  "competitiveProduction": "NO_GO",
+  "legacySourceChecksumChanged": [
+    "README.md",
+    "backend/src/engine/replay.ts",
+    "backend/src/engine/service.ts",
+    "backend/src/engine/visibility.ts",
+    "backend/src/experimental/owner-bb-v2/live-profile.ts",
+    "backend/src/experimental/owner-bb-v2/pack.ts",
+    "backend/src/game/coordinator.ts",
+    "data/rule-intelligence/source_inventory.json",
+    "frontend/integration.js",
+    "package.json",
+    "scripts/run-browser-s06.mjs",
+    "shared/contracts/index.ts",
+    "tests/browser_e2e.py",
+    "tests/browser_s15_bb_live_witch_e2e.py",
+    "tests/browser_s15_normal_guard_rescue_e2e.py",
+    "tests/browser_s15_normal_rescue_e2e.py",
+    "tests/sprint15-bb-live.test.mjs",
+    "tests/sprint15-owner-bb-guard-acceptance.test.mjs"
+  ],
+  "legacyReportsUnchanged": 2261,
+  "ownerQA": "PENDING",
+  "newFull": [],
+  "newPlayable": [
+    [
+      25,
+      31,
+      48,
+      74
+    ]
+  ]
+}

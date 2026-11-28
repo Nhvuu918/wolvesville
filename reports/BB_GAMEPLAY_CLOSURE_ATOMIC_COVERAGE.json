@@ -1,0 +1,3877 @@
+{
+  "version": "1.7.24-s15-gameplay-closure-wip",
+  "auditedRoleIds": [
+    3,
+    5,
+    8,
+    9,
+    10,
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    39,
+    43,
+    48,
+    49,
+    50,
+    52,
+    55,
+    58,
+    63,
+    64,
+    66,
+    67,
+    68,
+    72,
+    74,
+    76,
+    77,
+    79,
+    80,
+    84,
+    85,
+    87,
+    88,
+    93,
+    94
+  ],
+  "unresolvedRoleIds": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    12,
+    13,
+    14,
+    18,
+    21,
+    22,
+    27,
+    30,
+    35,
+    38,
+    40,
+    41,
+    42,
+    44,
+    45,
+    46,
+    47,
+    51,
+    53,
+    54,
+    56,
+    57,
+    59,
+    60,
+    61,
+    62,
+    65,
+    69,
+    70,
+    71,
+    73,
+    75,
+    78,
+    81,
+    82,
+    83,
+    86,
+    89,
+    90,
+    91,
+    92,
+    95,
+    96,
+    97
+  ],
+  "verifiedDenominator": 108,
+  "executedTested": 79,
+  "cumulativePass": 79,
+  "globalDenominatorCertified": false,
+  "branches": [
+    {
+      "characterId": 8,
+      "skillId": "official.8.night-kill",
+      "branchId": "WV-A08-ATTACK",
+      "trigger": "night action",
+      "preconditions": "alive",
+      "targetConstraints": "one other living",
+      "effect": "lethal attack",
+      "duration": "night",
+      "resource": "once per night",
+      "exceptions": "valid defense; wolf attack can kill #8; accepted action PH-01",
+      "interactionDependencies": [
+        "attack",
+        "protection",
+        "death-chain"
+      ],
+      "ruleProvenance": [
+        "character.json#8",
+        "PH-01",
+        "VH03"
+      ],
+      "requiredPassTests": [
+        "S12 durable metric evidence 8,25",
+        "S15 deep two-seat snow protects self, blank vote, knight wins by hanging"
+      ],
+      "remainingInteractions": "Wolf team bite and universal defense interactions",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S12 durable metric evidence 8,25",
+        "S15 deep two-seat snow protects self, blank vote, knight wins by hanging"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 8,
+      "skillId": "passive.8.hang-immunity",
+      "branchId": "WV-A08-HANG-IMMUNITY",
+      "trigger": "vote authorization",
+      "preconditions": "living wolf exists",
+      "targetConstraints": "#8",
+      "effect": "prevent hanging",
+      "duration": "while wolf counted alive",
+      "resource": "passive",
+      "exceptions": "no wolves means normal hanging",
+      "interactionDependencies": [
+        "vote",
+        "faction-count"
+      ],
+      "ruleProvenance": [
+        "character.json#8",
+        "VH06",
+        "Q13-05"
+      ],
+      "requiredPassTests": [
+        "S15 breakthrough #8 hanging immunity with wolf alive, no fallback candidate, later knight victory"
+      ],
+      "remainingInteractions": "Overlapping immunity; pack bite remains unsupported",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 breakthrough #8 hanging immunity with wolf alive, no fallback candidate, later knight victory"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 8,
+      "skillId": "passive.8.sole-survivor",
+      "branchId": "WV-A08-VICTORY",
+      "trigger": "stable checkpoint",
+      "preconditions": "sole living participant",
+      "targetConstraints": "#8",
+      "effect": "verified independent win",
+      "duration": "terminal",
+      "resource": "passive",
+      "exceptions": "pending chain and concurrent winners",
+      "interactionDependencies": [
+        "victory",
+        "death-chain"
+      ],
+      "ruleProvenance": [
+        "character.json#8",
+        "VH03",
+        "VH58"
+      ],
+      "requiredPassTests": [
+        "S12 durable metric evidence 8,28",
+        "S15 deep #29 self rescue per NV32, second use rejected, no-rescue deaths close before winner"
+      ],
+      "remainingInteractions": "Unrestricted role combinations",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S12 durable metric evidence 8,28",
+        "S15 deep #29 self rescue per NV32, second use rejected, no-rescue deaths close before winner"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 9,
+      "skillId": "official.9.snow-protection",
+      "branchId": "WV-A09-SHIELD",
+      "trigger": "night action",
+      "preconditions": "alive",
+      "targetConstraints": "one eligible distinct unused person",
+      "effect": "one attack absorbed",
+      "duration": "two consecutive nights",
+      "resource": "three unique targets per match",
+      "exceptions": "persists after actor death; not repeated target",
+      "interactionDependencies": [
+        "protection",
+        "expiry"
+      ],
+      "ruleProvenance": [
+        "character.json#9",
+        "PH-01"
+      ],
+      "requiredPassTests": [
+        "S12 shield survives creator death and absorbs in following night; knight wins after hanging",
+        "S12 shield expires after two nights without attack",
+        "S05-04 #9 snow protection lasts two nights and cannot repeat any of three targets",
+        "S15 deep two-seat snow protects self, blank vote, knight wins by hanging",
+        "S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester",
+        "S15 closure snow shield persists after owner dies and is consumed once",
+        "S15 closure snow protection expires before the third night Hunter follow",
+        "S15 closure night-only snow protection cannot block daytime Hunter follow"
+      ],
+      "remainingInteractions": "All attack families and stacked defenses",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S12 shield survives creator death and absorbs in following night; knight wins after hanging",
+        "S12 shield expires after two nights without attack",
+        "S05-04 #9 snow protection lasts two nights and cannot repeat any of three targets",
+        "S15 deep two-seat snow protects self, blank vote, knight wins by hanging",
+        "S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester",
+        "S15 closure snow shield persists after owner dies and is consumed once",
+        "S15 closure snow protection expires before the third night Hunter follow",
+        "S15 closure night-only snow protection cannot block daytime Hunter follow"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 15,
+      "skillId": "official.15.single-kill",
+      "branchId": "WV-A15-SINGLE",
+      "trigger": "night action",
+      "preconditions": "alive",
+      "targetConstraints": "one never selected other",
+      "effect": "lethal attack",
+      "duration": "night",
+      "resource": "once per target",
+      "exceptions": "protection valid",
+      "interactionDependencies": [
+        "attack",
+        "target-history"
+      ],
+      "ruleProvenance": [
+        "character.json#15",
+        "VH03"
+      ],
+      "requiredPassTests": [
+        "S15 #15 single-target lethal branch commits official sole-survivor winner without binding"
+      ],
+      "remainingInteractions": "General protections and accepted action after death",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 #15 single-target lethal branch commits official sole-survivor winner without binding"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 15,
+      "skillId": "official.15.single-kill",
+      "branchId": "WV-A15-PAIR",
+      "trigger": "night action",
+      "preconditions": "alive",
+      "targetConstraints": "two distinct never selected others",
+      "effect": "private pair relationship",
+      "duration": "persistent until death",
+      "resource": "once per target",
+      "exceptions": "members not notified; overlapping links not admitted",
+      "interactionDependencies": [
+        "links",
+        "private projection"
+      ],
+      "ruleProvenance": [
+        "character.json#15",
+        "VH68",
+        "VH04",
+        "REL-01"
+      ],
+      "requiredPassTests": [
+        "S15 deep #15 secret link once per target, vote death chain closes before sole winner"
+      ],
+      "remainingInteractions": "Link precedence, overwrite/restore",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 deep #15 secret link once per target, vote death chain closes before sole winner"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 15,
+      "skillId": "passive.15.linked-death",
+      "branchId": "WV-A15-FOLLOW",
+      "trigger": "true death of pair member",
+      "preconditions": "active pair",
+      "targetConstraints": "other linked member",
+      "effect": "secondary lethal death",
+      "duration": "same chain",
+      "resource": "passive",
+      "exceptions": "VH65 protection and immunity; LIFE-02 hibernation not death",
+      "interactionDependencies": [
+        "death-chain",
+        "protection",
+        "revival"
+      ],
+      "ruleProvenance": [
+        "character.json#15",
+        "VH03",
+        "VH65",
+        "LIFE-02"
+      ],
+      "requiredPassTests": [
+        "S15 deep #15 secret link once per target, vote death chain closes before sole winner"
+      ],
+      "remainingInteractions": "Only hanging in no-protection pair; night death, rescue, immunity",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 deep #15 secret link once per target, vote death chain closes before sole winner"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 15,
+      "skillId": "passive.15.wolf-immunity",
+      "branchId": "WV-A15-IMMUNITY",
+      "trigger": "wolf bite",
+      "preconditions": "alive",
+      "targetConstraints": "#15",
+      "effect": "prevent ordinary wolf kill",
+      "duration": "attack",
+      "resource": "passive",
+      "exceptions": "special piercing rules not inferred",
+      "interactionDependencies": [
+        "pack attack",
+        "protection"
+      ],
+      "ruleProvenance": [
+        "character.json#15"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "No general pack attack",
+      "implementationStatus": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 15,
+      "skillId": "passive.15.sole-survivor",
+      "branchId": "WV-A15-VICTORY",
+      "trigger": "stable checkpoint",
+      "preconditions": "sole survivor",
+      "targetConstraints": "#15",
+      "effect": "independent victory",
+      "duration": "terminal",
+      "resource": "passive",
+      "exceptions": "all linked deaths settled",
+      "interactionDependencies": [
+        "death-chain",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#15",
+        "VH03",
+        "WIN-01"
+      ],
+      "requiredPassTests": [
+        "S15 #15 single-target lethal branch commits official sole-survivor winner without binding",
+        "S15 deep #15 secret link once per target, vote death chain closes before sole winner"
+      ],
+      "remainingInteractions": "Unrestricted combinations",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 #15 single-target lethal branch commits official sole-survivor winner without binding",
+        "S15 deep #15 secret link once per target, vote death chain closes before sole winner"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 25,
+      "skillId": "official.25.inspect-role",
+      "branchId": "WV-A25-AURA",
+      "trigger": "night action",
+      "preconditions": "alive",
+      "targetConstraints": "one other living",
+      "effect": "private aura (not role)",
+      "duration": "resolved result",
+      "resource": "once per night",
+      "exceptions": "owner correction supersedes old #25; lawful distortion and lock",
+      "interactionDependencies": [
+        "investigation",
+        "privacy",
+        "lock"
+      ],
+      "ruleProvenance": [
+        "character.json#25",
+        "S15-OWNER-SEER-01",
+        "VH39",
+        "VH25",
+        "Q13-11"
+      ],
+      "requiredPassTests": [
+        "S15 UX: seer aura and mystical seer exact role privately, public composition has no mapping, restart/replay",
+        "S15 aura expansion #49 private distortion, expiry, duplicate and restart",
+        "S15 aura expansion #72 private distortion, expiry, duplicate and restart"
+      ],
+      "remainingInteractions": "#10 trap and other unimplemented distortions",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 UX: seer aura and mystical seer exact role privately, public composition has no mapping, restart/replay",
+        "S15 aura expansion #49 private distortion, expiry, duplicate and restart",
+        "S15 aura expansion #72 private distortion, expiry, duplicate and restart"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 28,
+      "skillId": "passive.28.hanged-victory",
+      "branchId": "WV-A28-HANG-WIN",
+      "trigger": "committed true hanging",
+      "preconditions": "official unique positive vote, final death, stable chain",
+      "targetConstraints": "#28",
+      "effect": "independent victory; co-winner if other predicate",
+      "duration": "terminal",
+      "resource": "passive",
+      "exceptions": "no win if cancelled, nonlethal or killed by attack",
+      "interactionDependencies": [
+        "vote",
+        "death-chain",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#28",
+        "S11-V02",
+        "S11-V03",
+        "PH-02",
+        "VH03",
+        "NV31",
+        "WIN-03",
+        "QD-01",
+        "QD-02",
+        "QD-03"
+      ],
+      "requiredPassTests": [
+        "S11 real multiplayer: zero, tie, blank, changed ballot, retry, hanging, co-winners, restart and replay",
+        "S08-G01 NEW official #8/#28 closed deck commits real night elimination and legitimate knight win, not hanged-jester win",
+        "S15 deep #28 hanging wins with other contenders alive, non-final trigger cannot win",
+        "S15 deep #28 PH-02 cancelled leading ballot cannot win; actual later hanging can win",
+        "S15 breakthrough #55 protects #28 from actual hanging once; later true hanging and wolf parity co-win",
+        "S15 breakthrough #28 linked death is not hanging; only actual hanging earns co-win",
+        "S15 breakthrough #19 anonymous ballot contract uses final valid ballot; #28 survives fulfilled contract then wins by real hanging",
+        "S15 breakthrough #19 declined or breached contract cannot prevent true hanging",
+        "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28",
+        "S15 final #88 hanging follow kills #28 without Jester win; stable knight victory",
+        "S15 final #28 direct hanging remains winning despite a live Hunter mark",
+        "S15 final #88 hanging without mark does not eliminate secondary player; subsequent direct Jester win",
+        "S15 final #88 night follow and #28 non-hanging death are closed before victory",
+        "S15 final #88 hanging follow to Knight does not award Jester a false survivor win",
+        "S15 closure death ledger rejects missing, duplicated and reopened death chains before victory",
+        "QD02 wrong alignment consumes revenge without disclosure or retry; Village and Jester co-win",
+        "QD01 direct Jester hanging with live Hunter mark yields Village and Jester co-winners",
+        "QD03 pin expires at next night before no-repin death, replay and retry"
+      ],
+      "remainingInteractions": null,
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S11 real multiplayer: zero, tie, blank, changed ballot, retry, hanging, co-winners, restart and replay",
+        "S08-G01 NEW official #8/#28 closed deck commits real night elimination and legitimate knight win, not hanged-jester win",
+        "S15 deep #28 hanging wins with other contenders alive, non-final trigger cannot win",
+        "S15 deep #28 PH-02 cancelled leading ballot cannot win; actual later hanging can win",
+        "S15 breakthrough #55 protects #28 from actual hanging once; later true hanging and wolf parity co-win",
+        "S15 breakthrough #28 linked death is not hanging; only actual hanging earns co-win",
+        "S15 breakthrough #19 anonymous ballot contract uses final valid ballot; #28 survives fulfilled contract then wins by real hanging",
+        "S15 breakthrough #19 declined or breached contract cannot prevent true hanging",
+        "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28",
+        "S15 final #88 hanging follow kills #28 without Jester win; stable knight victory",
+        "S15 final #28 direct hanging remains winning despite a live Hunter mark",
+        "S15 final #88 hanging without mark does not eliminate secondary player; subsequent direct Jester win",
+        "S15 final #88 night follow and #28 non-hanging death are closed before victory",
+        "S15 final #88 hanging follow to Knight does not award Jester a false survivor win",
+        "S15 closure death ledger rejects missing, duplicated and reopened death chains before victory",
+        "QD02 wrong alignment consumes revenge without disclosure or retry; Village and Jester co-win",
+        "QD01 direct Jester hanging with live Hunter mark yields Village and Jester co-winners",
+        "QD03 pin expires at next night before no-repin death, replay and retry"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 29,
+      "skillId": "passive.29.preliminary-notice",
+      "branchId": "WV-A29-NOTICE",
+      "trigger": "witch window",
+      "preconditions": "alive or self pending night death",
+      "targetConstraints": "witch only",
+      "effect": "private preliminary names",
+      "duration": "window",
+      "resource": "none",
+      "exceptions": "not a public death; no role names in payload",
+      "interactionDependencies": [
+        "preliminary-death",
+        "ACL"
+      ],
+      "ruleProvenance": [
+        "character.json#29",
+        "Q13-12",
+        "sheet7/PH-01"
+      ],
+      "requiredPassTests": [
+        "S15 deep #29 preliminary rescue + poison in same night, private notice and exact-once resources"
+      ],
+      "remainingInteractions": "Multiattack, hibernation and prolonged life",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 deep #29 preliminary rescue + poison in same night, private notice and exact-once resources"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 29,
+      "skillId": "official.29.rescue",
+      "branchId": "WV-A29-RESCUE",
+      "trigger": "witch window",
+      "preconditions": "eligible preliminary victim",
+      "targetConstraints": "one pending victim including self",
+      "effect": "cancel preliminary death",
+      "duration": "same window",
+      "resource": "one potion per match",
+      "exceptions": "x2 VH05; rescue before poison; day deaths excluded",
+      "interactionDependencies": [
+        "preliminary-death",
+        "revival",
+        "resource"
+      ],
+      "ruleProvenance": [
+        "character.json#29",
+        "Q13-12",
+        "VH05",
+        "NV32",
+        "sheet7/PH-01"
+      ],
+      "requiredPassTests": [
+        "S15 deep #29 preliminary rescue + poison in same night, private notice and exact-once resources",
+        "S15 deep #29 self rescue per NV32, second use rejected, no-rescue deaths close before winner"
+      ],
+      "remainingInteractions": "x2, linked rescue, hibernation, broader attack sources",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 deep #29 preliminary rescue + poison in same night, private notice and exact-once resources",
+        "S15 deep #29 self rescue per NV32, second use rejected, no-rescue deaths close before winner"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 29,
+      "skillId": "official.29.poison",
+      "branchId": "WV-A29-POISON",
+      "trigger": "witch window",
+      "preconditions": "potion available",
+      "targetConstraints": "one living other",
+      "effect": "lethal poison",
+      "duration": "same window",
+      "resource": "one potion per match",
+      "exceptions": "VH60 shield blocks, potion spent; independent of rescue",
+      "interactionDependencies": [
+        "attack",
+        "protection",
+        "resource"
+      ],
+      "ruleProvenance": [
+        "character.json#29",
+        "VH60",
+        "Q13-12",
+        "sheet7/PH-01"
+      ],
+      "requiredPassTests": [
+        "S15 #29 poison versus #67 shield: VH60 charges even when valid shield absorbs",
+        "S15 deep #29 preliminary rescue + poison in same night, private notice and exact-once resources"
+      ],
+      "remainingInteractions": "Multiple protection types, rescue of preliminary target then poison same target not admitted",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 #29 poison versus #67 shield: VH60 charges even when valid shield absorbs",
+        "S15 deep #29 preliminary rescue + poison in same night, private notice and exact-once resources"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 58,
+      "skillId": "official.58.compare",
+      "branchId": "WV-A58-SAME",
+      "trigger": "night action",
+      "preconditions": "alive",
+      "targetConstraints": "two distinct living, self allowed",
+      "effect": "private same actual faction",
+      "duration": "night result",
+      "resource": "once per night",
+      "exceptions": "self choice supported; do not infer aura",
+      "interactionDependencies": [
+        "investigation",
+        "faction"
+      ],
+      "ruleProvenance": [
+        "character.json#58",
+        "VH49"
+      ],
+      "requiredPassTests": [
+        "S15 #58 compares same faction privately, then self plus different faction kills only other"
+      ],
+      "remainingInteractions": "General transformations",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 #58 compares same faction privately, then self plus different faction kills only other"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 58,
+      "skillId": "official.58.compare",
+      "branchId": "WV-A58-DIFFERENT",
+      "trigger": "night action",
+      "preconditions": "alive",
+      "targetConstraints": "two distinct living, self allowed",
+      "effect": "independent lethal effects on different factions except self",
+      "duration": "same chain",
+      "resource": "once per night",
+      "exceptions": "VH30 valid defense independent for each; self never dies from own compare",
+      "interactionDependencies": [
+        "attack",
+        "protection",
+        "death-chain"
+      ],
+      "ruleProvenance": [
+        "character.json#58",
+        "VH30",
+        "VH03"
+      ],
+      "requiredPassTests": [
+        "S15 #58 compares same faction privately, then self plus different faction kills only other",
+        "S15 deep #58 two other factions die, Jester killed at night does not win"
+      ],
+      "remainingInteractions": "Protection on one of two; competing death reactions",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 #58 compares same faction privately, then self plus different faction kills only other",
+        "S15 deep #58 two other factions die, Jester killed at night does not win"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 58,
+      "skillId": "passive.58.wolf-immunity",
+      "branchId": "WV-A58-IMMUNITY",
+      "trigger": "wolf bite",
+      "preconditions": "alive",
+      "targetConstraints": "#58",
+      "effect": "prevent ordinary wolf kill",
+      "duration": "attack",
+      "resource": "passive",
+      "exceptions": "piercing rule not inferred",
+      "interactionDependencies": [
+        "pack attack"
+      ],
+      "ruleProvenance": [
+        "character.json#58"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "No general pack attack",
+      "implementationStatus": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 58,
+      "skillId": "passive.58.sole-survivor",
+      "branchId": "WV-A58-VICTORY",
+      "trigger": "stable checkpoint",
+      "preconditions": "sole survivor",
+      "targetConstraints": "#58",
+      "effect": "independent win",
+      "duration": "terminal",
+      "resource": "passive",
+      "exceptions": "all lethal effects resolved",
+      "interactionDependencies": [
+        "death-chain",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#58",
+        "VH03",
+        "WIN-01"
+      ],
+      "requiredPassTests": [
+        "S15 #58 compares same faction privately, then self plus different faction kills only other",
+        "S15 deep #58 two other factions die, Jester killed at night does not win"
+      ],
+      "remainingInteractions": "Unrestricted combinations",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 #58 compares same faction privately, then self plus different faction kills only other",
+        "S15 deep #58 two other factions die, Jester killed at night does not win"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 63,
+      "skillId": "official.63.redirect",
+      "branchId": "WV-A63-MARK",
+      "trigger": "night action",
+      "preconditions": "night 2+, less than two successful redirects, no cooldown",
+      "targetConstraints": "two distinct living others",
+      "effect": "set protect/recipient relationship",
+      "duration": "night",
+      "resource": "no charge if no trigger",
+      "exceptions": "night after successful redirect locked",
+      "interactionDependencies": [
+        "redirect",
+        "target validation"
+      ],
+      "ruleProvenance": [
+        "character.json#63",
+        "VH61"
+      ],
+      "requiredPassTests": [
+        "S15 deep #63 redirect begins night two, unsuccessful mark free, cooldown and actual recipient"
+      ],
+      "remainingInteractions": "Self-selection not admitted",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 deep #63 redirect begins night two, unsuccessful mark free, cooldown and actual recipient"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 63,
+      "skillId": "passive.63.redirect-trigger",
+      "branchId": "WV-A63-TRANSFER",
+      "trigger": "valid attack on selected protected target",
+      "preconditions": "active mark",
+      "targetConstraints": "chosen recipient",
+      "effect": "redirect actual attack, consume one use",
+      "duration": "attack",
+      "resource": "two successful redirects per match",
+      "exceptions": "VH61 immune recipient consumes; VH56 no cycle",
+      "interactionDependencies": [
+        "redirect",
+        "protection",
+        "death-chain"
+      ],
+      "ruleProvenance": [
+        "character.json#63",
+        "VH61",
+        "VH56"
+      ],
+      "requiredPassTests": [
+        "S15 deep #63 redirect begins night two, unsuccessful mark free, cooldown and actual recipient"
+      ],
+      "remainingInteractions": "Immune recipient, redirect cycles, other attack families",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 deep #63 redirect begins night two, unsuccessful mark free, cooldown and actual recipient"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 74,
+      "skillId": "official.74.inspect-role",
+      "branchId": "WV-A74-EXACT",
+      "trigger": "night action",
+      "preconditions": "alive",
+      "targetConstraints": "one other living",
+      "effect": "private exact role",
+      "duration": "resolved result",
+      "resource": "once per night",
+      "exceptions": "SK05/Q13-06 false-role trap; aura effects separate",
+      "interactionDependencies": [
+        "investigation",
+        "privacy",
+        "lock"
+      ],
+      "ruleProvenance": [
+        "character.json#74",
+        "S15-OWNER-SEER-01",
+        "SK-05",
+        "Q13-06"
+      ],
+      "requiredPassTests": [
+        "S15 UX: seer aura and mystical seer exact role privately, public composition has no mapping, restart/replay",
+        "S15 accelerated #3 passive aura concealment does not distort exact-role #74"
+      ],
+      "remainingInteractions": "#10 false-role trap not integrated",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 UX: seer aura and mystical seer exact role privately, public composition has no mapping, restart/replay",
+        "S15 accelerated #3 passive aura concealment does not distort exact-role #74"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 79,
+      "skillId": "official.79.cancel-vote-reveal",
+      "branchId": "WV-A79-CANCEL",
+      "trigger": "day vote collection",
+      "preconditions": "alive, unused, vote open",
+      "targetConstraints": "one other alive",
+      "effect": "cancel vote, reveal exact role privately",
+      "duration": "day to next night",
+      "resource": "once per match",
+      "exceptions": "retain earlier committed day events; cancel pending skills; Q13-09 director trigger",
+      "interactionDependencies": [
+        "vote",
+        "privacy",
+        "team"
+      ],
+      "ruleProvenance": [
+        "character.json#79",
+        "PH-02",
+        "Q13-09",
+        "VIS-03"
+      ],
+      "requiredPassTests": [
+        "S06-07 #79 cancels ongoing day vote, reveals target only to wolf, phase returns to next night (PH-02)",
+        "S15 deep #28 PH-02 cancelled leading ballot cannot win; actual later hanging can win"
+      ],
+      "remainingInteractions": "Director trigger, wolf team actions, broader composition",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S06-07 #79 cancels ongoing day vote, reveals target only to wolf, phase returns to next night (PH-02)",
+        "S15 deep #28 PH-02 cancelled leading ballot cannot win; actual later hanging can win"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 85,
+      "skillId": "official.85.hypnotize",
+      "branchId": "WV-A85-MARK",
+      "trigger": "night action",
+      "preconditions": "alive",
+      "targetConstraints": "one living other not selected last night",
+      "effect": "set substitution relationship",
+      "duration": "night",
+      "resource": "once per night",
+      "exceptions": "no same target two consecutive nights",
+      "interactionDependencies": [
+        "redirect",
+        "target history"
+      ],
+      "ruleProvenance": [
+        "character.json#85",
+        "VH45"
+      ],
+      "requiredPassTests": [
+        "S15 deep #85 redirect actual victim, consecutive target forbidden, durable winner"
+      ],
+      "remainingInteractions": "Other death triggers, self selection not admitted",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 deep #85 redirect actual victim, consecutive target forbidden, durable winner"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 85,
+      "skillId": "passive.85.hypnotized-death",
+      "branchId": "WV-A85-TRANSFER",
+      "trigger": "lethal night attack on #85",
+      "preconditions": "valid active mark",
+      "targetConstraints": "hypnotized target",
+      "effect": "target dies instead; #85 survives",
+      "duration": "same attack",
+      "resource": "passive",
+      "exceptions": "valid redirection only; VH56 no cycle",
+      "interactionDependencies": [
+        "redirect",
+        "protection",
+        "death-chain"
+      ],
+      "ruleProvenance": [
+        "character.json#85",
+        "VH45",
+        "VH56"
+      ],
+      "requiredPassTests": [
+        "S15 deep #85 redirect actual victim, consecutive target forbidden, durable winner"
+      ],
+      "remainingInteractions": "Other attack families, competing shields/redirects",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 deep #85 redirect actual victim, consecutive target forbidden, durable winner"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 37,
+      "skillId": "official.37.swap",
+      "branchId": "WV-A37-SWAP",
+      "trigger": "night selection",
+      "preconditions": "alive",
+      "targetConstraints": "two distinct living",
+      "effect": "exchange status/target positions",
+      "duration": "night through next day",
+      "resource": "once/night",
+      "exceptions": "VH14",
+      "interactionDependencies": [
+        "redirect",
+        "inspection",
+        "vote",
+        "attack"
+      ],
+      "ruleProvenance": [
+        "character.json#37",
+        "VH14",
+        "VH15"
+      ],
+      "requiredPassTests": [
+        "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28"
+      ],
+      "remainingInteractions": "Exact-role and attacks not enabled; overlapping redirects",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 37,
+      "skillId": "passive.37.attack-swap",
+      "branchId": "WV-A37-ATTACK",
+      "trigger": "each lethal attack",
+      "preconditions": "active pair",
+      "targetConstraints": "paired counterpart",
+      "effect": "exchange each attack; both lethal attacks kill both",
+      "duration": "night",
+      "resource": "passive",
+      "exceptions": "VH15, VH56",
+      "interactionDependencies": [
+        "attack",
+        "redirect",
+        "death-chain"
+      ],
+      "ruleProvenance": [
+        "character.json#37",
+        "VH15",
+        "VH56"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Night attack exchange unimplemented",
+      "implementationStatus": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 37,
+      "skillId": "passive.37.inspection-swap",
+      "branchId": "WV-A37-INSPECT",
+      "trigger": "inspection",
+      "preconditions": "active pair",
+      "targetConstraints": "paired counterpart",
+      "effect": "result uses other member identity/aura",
+      "duration": "night",
+      "resource": "passive",
+      "exceptions": "owner seer distinction",
+      "interactionDependencies": [
+        "inspection"
+      ],
+      "ruleProvenance": [
+        "character.json#37",
+        "VH14",
+        "S15-OWNER-SEER-01"
+      ],
+      "requiredPassTests": [
+        "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28"
+      ],
+      "remainingInteractions": "Exact-role not certified",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 37,
+      "skillId": "passive.37.hanging-swap",
+      "branchId": "WV-A37-HANG",
+      "trigger": "authorized hanging",
+      "preconditions": "active pair",
+      "targetConstraints": "paired counterpart",
+      "effect": "actual victim substituted; raw votes unchanged",
+      "duration": "following day",
+      "resource": "passive",
+      "exceptions": "V02/V03",
+      "interactionDependencies": [
+        "vote",
+        "death-chain",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#37",
+        "VH14",
+        "S11-V03"
+      ],
+      "requiredPassTests": [
+        "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28"
+      ],
+      "remainingInteractions": "Multiple modifiers/defense and other deck effects",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 55,
+      "skillId": "official.55.stone-protection",
+      "branchId": "WV-A55-PROTECT",
+      "trigger": "night selection",
+      "preconditions": "alive, not spent",
+      "targetConstraints": "one living",
+      "effect": "one protection against village kill/hanging",
+      "duration": "next day and next night",
+      "resource": "one successful rescue",
+      "exceptions": "not solo knight",
+      "interactionDependencies": [
+        "protection",
+        "vote",
+        "attack"
+      ],
+      "ruleProvenance": [
+        "character.json#55"
+      ],
+      "requiredPassTests": [
+        "S15 breakthrough #55 protects #28 from actual hanging once; later true hanging and wolf parity co-win"
+      ],
+      "remainingInteractions": "Village night/day attacks unimplemented",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 breakthrough #55 protects #28 from actual hanging once; later true hanging and wolf parity co-win"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 55,
+      "skillId": "passive.55.ordinary-wolf",
+      "branchId": "WV-A55-SPENT",
+      "trigger": "successful protection",
+      "preconditions": "protection consumed",
+      "targetConstraints": "self",
+      "effect": "loses special skill and becomes normal wolf",
+      "duration": "permanent",
+      "resource": "passive",
+      "exceptions": "only after success",
+      "interactionDependencies": [
+        "resource",
+        "alignment",
+        "team-action"
+      ],
+      "ruleProvenance": [
+        "character.json#55"
+      ],
+      "requiredPassTests": [
+        "S15 breakthrough #55 protects #28 from actual hanging once; later true hanging and wolf parity co-win"
+      ],
+      "remainingInteractions": "Ordinary wolf pack action absent; role name override private",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 breakthrough #55 protects #28 from actual hanging once; later true hanging and wolf parity co-win"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 93,
+      "skillId": "official.93.seal",
+      "branchId": "WV-A93-SEAL",
+      "trigger": "night action",
+      "preconditions": "alive",
+      "targetConstraints": "one living",
+      "effect": "blocks skill, day chat and vote",
+      "duration": "night and following day",
+      "resource": "once/night",
+      "exceptions": "paired role",
+      "interactionDependencies": [
+        "status",
+        "vote",
+        "chat"
+      ],
+      "ruleProvenance": [
+        "character.json#93",
+        "VH57"
+      ],
+      "requiredPassTests": [
+        "S15 accelerated #93 seal and #94 passive concealment, lock expiry and vote/chat enforcement"
+      ],
+      "remainingInteractions": "General action locks/pack conversion not fully covered",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 accelerated #93 seal and #94 passive concealment, lock expiry and vote/chat enforcement"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 93,
+      "skillId": "passive.93.alignment",
+      "branchId": "WV-A93-ALIGN",
+      "trigger": "partner true death",
+      "preconditions": "exile alive",
+      "targetConstraints": "self",
+      "effect": "current alignment becomes wolf",
+      "duration": "permanent",
+      "resource": "passive",
+      "exceptions": "actual final death only",
+      "interactionDependencies": [
+        "alignment",
+        "death-chain",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#93"
+      ],
+      "requiredPassTests": [
+        "S15 breakthrough #94 redirect to actual victim, private alignment transition on subsequent #94 death",
+        "S15 breakthrough #94 self effigy converts #93 before victory, identity effigy never creates duplicate death"
+      ],
+      "remainingInteractions": "One-wolf pack now implemented; multiple wolves and post-conversion aura unresolved.",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 breakthrough #94 redirect to actual victim, private alignment transition on subsequent #94 death",
+        "S15 breakthrough #94 self effigy converts #93 before victory, identity effigy never creates duplicate death"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 93,
+      "skillId": "official.93.pack-bite",
+      "branchId": "WV-A93-DOUBLE-BITE",
+      "trigger": "post-transition wolf night",
+      "preconditions": "partner dead, converted",
+      "targetConstraints": "two wolf attack targets",
+      "effect": "wolf pack bites two",
+      "duration": "each night",
+      "resource": "team action",
+      "exceptions": "wolf attack rights",
+      "interactionDependencies": [
+        "team-action",
+        "attack",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#93",
+        "VH74",
+        "P04"
+      ],
+      "requiredPassTests": [
+        "S15 final #93 current faction grants one-wolf two-target pack action after #94 hanging",
+        "S15 final #87 privately receives both bite victims and rescues only one before wolf parity",
+        "S15 final #87 may use its single rescue on itself while preliminarily bitten"
+      ],
+      "remainingInteractions": "Multiple wolves consensus, other protections, aura after conversion and inherited skills.",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 final #93 current faction grants one-wolf two-target pack action after #94 hanging",
+        "S15 final #87 privately receives both bite victims and rescues only one before wolf parity",
+        "S15 final #87 may use its single rescue on itself while preliminarily bitten"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 94,
+      "skillId": "official.94.effigy",
+      "branchId": "WV-A94-EFFIGY",
+      "trigger": "night selection and lethal attack on #93",
+      "preconditions": "living #94",
+      "targetConstraints": "one living doll",
+      "effect": "redirect entire lethal damage",
+      "duration": "same night",
+      "resource": "once/night",
+      "exceptions": "identity mapping no duplicate attack",
+      "interactionDependencies": [
+        "attack",
+        "redirect",
+        "death-chain"
+      ],
+      "ruleProvenance": [
+        "character.json#94"
+      ],
+      "requiredPassTests": [
+        "S15 breakthrough #94 redirect to actual victim, private alignment transition on subsequent #94 death",
+        "S15 breakthrough #94 self effigy converts #93 before victory, identity effigy never creates duplicate death"
+      ],
+      "remainingInteractions": "Competing redirects and other attack families",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 breakthrough #94 redirect to actual victim, private alignment transition on subsequent #94 death",
+        "S15 breakthrough #94 self effigy converts #93 before victory, identity effigy never creates duplicate death"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 94,
+      "skillId": "passive.94.conceal",
+      "branchId": "WV-A94-AURA",
+      "trigger": "seer checks living partner",
+      "preconditions": "living #94",
+      "targetConstraints": "exile",
+      "effect": "aura appears Thiện",
+      "duration": "while #94 alive",
+      "resource": "passive",
+      "exceptions": "aura only",
+      "interactionDependencies": [
+        "inspection"
+      ],
+      "ruleProvenance": [
+        "character.json#94",
+        "S15-OWNER-SEER-01"
+      ],
+      "requiredPassTests": [
+        "S15 accelerated #93 seal and #94 passive concealment, lock expiry and vote/chat enforcement"
+      ],
+      "remainingInteractions": "Exact-role and post-conversion aura not certified",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 accelerated #93 seal and #94 passive concealment, lock expiry and vote/chat enforcement"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 19,
+      "skillId": "official.19.silence",
+      "branchId": "WV-A19-SILENCE",
+      "trigger": "anonymous offer or applicable condition",
+      "preconditions": "character.json#19",
+      "targetConstraints": "eligible participant or self",
+      "effect": "No night skill → night immunity",
+      "duration": "as specified by source",
+      "resource": "each offer type once; self trigger two nights",
+      "exceptions": "NV21 immediate response",
+      "interactionDependencies": [
+        "contract",
+        "status",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#19",
+        "NV21"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Not implemented",
+      "implementationStatus": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 19,
+      "skillId": "official.19.ballot-offer",
+      "branchId": "WV-A19-BALLOT",
+      "trigger": "anonymous offer or applicable condition",
+      "preconditions": "character.json#19",
+      "targetConstraints": "eligible participant or self",
+      "effect": "Final valid instructed vote → hanging immunity",
+      "duration": "as specified by source",
+      "resource": "each offer type once; self trigger two nights",
+      "exceptions": "NV21 immediate response",
+      "interactionDependencies": [
+        "contract",
+        "status",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#19",
+        "NV21"
+      ],
+      "requiredPassTests": [
+        "S15 breakthrough #19 anonymous ballot contract uses final valid ballot; #28 survives fulfilled contract then wins by real hanging",
+        "S15 breakthrough #19 declined or breached contract cannot prevent true hanging"
+      ],
+      "remainingInteractions": "Other branches and own-target direction not implemented",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 breakthrough #19 anonymous ballot contract uses final valid ballot; #28 survives fulfilled contract then wins by real hanging",
+        "S15 breakthrough #19 declined or breached contract cannot prevent true hanging"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 19,
+      "skillId": "official.19.conceal",
+      "branchId": "WV-A19-CONCEAL",
+      "trigger": "anonymous offer or applicable condition",
+      "preconditions": "character.json#19",
+      "targetConstraints": "eligible participant or self",
+      "effect": "No speech/name → faction info next night",
+      "duration": "as specified by source",
+      "resource": "each offer type once; self trigger two nights",
+      "exceptions": "NV21 immediate response",
+      "interactionDependencies": [
+        "contract",
+        "status",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#19",
+        "NV21"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Not implemented",
+      "implementationStatus": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 19,
+      "skillId": "official.19.manipulate",
+      "branchId": "WV-A19-MANIPULATE",
+      "trigger": "anonymous offer or applicable condition",
+      "preconditions": "character.json#19",
+      "targetConstraints": "eligible participant or self",
+      "effect": "Accept redirected skill → exact dead role next night",
+      "duration": "as specified by source",
+      "resource": "each offer type once; self trigger two nights",
+      "exceptions": "NV21 immediate response",
+      "interactionDependencies": [
+        "contract",
+        "status",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#19",
+        "NV21"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Not implemented",
+      "implementationStatus": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 19,
+      "skillId": "official.19.punish",
+      "branchId": "WV-A19-PUNISH",
+      "trigger": "anonymous offer or applicable condition",
+      "preconditions": "character.json#19",
+      "targetConstraints": "eligible participant or self",
+      "effect": "Breached accepted contract → two nights skill block and two days vote block",
+      "duration": "as specified by source",
+      "resource": "each offer type once; self trigger two nights",
+      "exceptions": "NV21 immediate response",
+      "interactionDependencies": [
+        "contract",
+        "status",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#19",
+        "NV21"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Not implemented",
+      "implementationStatus": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 19,
+      "skillId": "official.19.join",
+      "branchId": "WV-A19-JOIN",
+      "trigger": "anonymous offer or applicable condition",
+      "preconditions": "character.json#19",
+      "targetConstraints": "eligible participant or self",
+      "effect": "After two unsuccessful nights choose other faction",
+      "duration": "as specified by source",
+      "resource": "each offer type once; self trigger two nights",
+      "exceptions": "NV21 immediate response",
+      "interactionDependencies": [
+        "contract",
+        "status",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#19",
+        "NV21"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Not implemented",
+      "implementationStatus": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 19,
+      "skillId": "official.19.task1",
+      "branchId": "WV-A19-TASK1",
+      "trigger": "anonymous offer or applicable condition",
+      "preconditions": "character.json#19",
+      "targetConstraints": "eligible participant or self",
+      "effect": "After trigger choose survive to exactly 3",
+      "duration": "as specified by source",
+      "resource": "each offer type once; self trigger two nights",
+      "exceptions": "NV21 immediate response",
+      "interactionDependencies": [
+        "contract",
+        "status",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#19",
+        "NV21"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Not implemented",
+      "implementationStatus": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 19,
+      "skillId": "official.19.task2",
+      "branchId": "WV-A19-TASK2",
+      "trigger": "anonymous offer or applicable condition",
+      "preconditions": "character.json#19",
+      "targetConstraints": "eligible participant or self",
+      "effect": "After trigger choose designated person hanged",
+      "duration": "as specified by source",
+      "resource": "each offer type once; self trigger two nights",
+      "exceptions": "NV21 immediate response",
+      "interactionDependencies": [
+        "contract",
+        "status",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#19",
+        "NV21"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Not implemented",
+      "implementationStatus": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 19,
+      "skillId": "official.19.task3",
+      "branchId": "WV-A19-TASK3",
+      "trigger": "anonymous offer or applicable condition",
+      "preconditions": "character.json#19",
+      "targetConstraints": "eligible participant or self",
+      "effect": "After trigger choose protected person survive to end",
+      "duration": "as specified by source",
+      "resource": "each offer type once; self trigger two nights",
+      "exceptions": "NV21 immediate response",
+      "interactionDependencies": [
+        "contract",
+        "status",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#19",
+        "NV21"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Not implemented",
+      "implementationStatus": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 19,
+      "skillId": "official.19.win3",
+      "branchId": "WV-A19-WIN3",
+      "trigger": "anonymous offer or applicable condition",
+      "preconditions": "character.json#19",
+      "targetConstraints": "eligible participant or self",
+      "effect": "Three successful contracts → personal win",
+      "duration": "as specified by source",
+      "resource": "each offer type once; self trigger two nights",
+      "exceptions": "NV21 immediate response",
+      "interactionDependencies": [
+        "contract",
+        "status",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#19",
+        "NV21"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Not implemented",
+      "implementationStatus": "NOT_IMPLEMENTED_OR_NO_SESSION_EVIDENCE",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 87,
+      "skillId": "official.87.rescue",
+      "branchId": "WV-A87-RESCUE",
+      "trigger": "wolf bite preliminary death",
+      "preconditions": "alive or pending, rescue window",
+      "targetConstraints": "one bite victim",
+      "effect": "restore living state",
+      "duration": "current night",
+      "resource": "one flask",
+      "exceptions": "not final death",
+      "interactionDependencies": [
+        "preliminary-death",
+        "pack",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#87",
+        "VH64"
+      ],
+      "requiredPassTests": [
+        "S15 final #87 privately receives both bite victims and rescues only one before wolf parity",
+        "S15 final #87 may use its single rescue on itself while preliminarily bitten"
+      ],
+      "remainingInteractions": "Other pack/protection interactions; other rescue rules not generalized.",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 final #87 privately receives both bite victims and rescues only one before wolf parity",
+        "S15 final #87 may use its single rescue on itself while preliminarily bitten"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 87,
+      "skillId": "official.87.sedative",
+      "branchId": "WV-A87-SEDATIVE",
+      "trigger": "night action",
+      "preconditions": "alive, resource available",
+      "targetConstraints": "one living player",
+      "effect": "deny day chat and ballot",
+      "duration": "next day",
+      "resource": "one flask",
+      "exceptions": "expires",
+      "interactionDependencies": [
+        "status",
+        "voting",
+        "chat"
+      ],
+      "ruleProvenance": [
+        "character.json#87",
+        "VH57"
+      ],
+      "requiredPassTests": [
+        "S15 #87 sedative denies chat and ballot intake, expires next day, blank tally is official"
+      ],
+      "remainingInteractions": "Other chat classes and generalized combinations.",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 #87 sedative denies chat and ballot intake, expires next day, blank tally is official"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 33,
+      "skillId": "unimplemented.33.false-aura",
+      "branchId": "WV-A33-ILLUSION",
+      "trigger": "inspection",
+      "preconditions": "alive",
+      "targetConstraints": "self",
+      "effect": "appear village to seer",
+      "duration": "not certified",
+      "resource": "once per match",
+      "exceptions": "owner aura-only #25; exact-role #74 unchanged",
+      "interactionDependencies": [
+        "investigation"
+      ],
+      "ruleProvenance": [
+        "character.json#33",
+        "S15-OWNER-SEER-01"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Activation and interaction timing not certified",
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 33,
+      "skillId": "official.33.force-vote",
+      "branchId": "WV-A33-COERCION",
+      "trigger": "voting",
+      "preconditions": "eligible action",
+      "targetConstraints": "one other player",
+      "effect": "coerce ballot",
+      "duration": "current vote",
+      "resource": "once per match",
+      "exceptions": "invalid ballots remain invalid",
+      "interactionDependencies": [
+        "voting"
+      ],
+      "ruleProvenance": [
+        "character.json#33",
+        "S11-V02",
+        "S11-V03"
+      ],
+      "requiredPassTests": [
+        "S09-01 certified #33 server-side directive transforms a ballot with private audit but never hangs a player",
+        "S09-02 coercion is once-per-match and all retries preserve idempotency and revision"
+      ],
+      "remainingInteractions": "Broader effects and targets not certified",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S09-01 certified #33 server-side directive transforms a ballot with private audit but never hangs a player",
+        "S09-02 coercion is once-per-match and all retries preserve idempotency and revision"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 33,
+      "skillId": "official.33.hanging-revenge",
+      "branchId": "WV-A33-REVENGE",
+      "trigger": "actual hanging",
+      "preconditions": "dead after hanging",
+      "targetConstraints": "any living other; only current Village dies, non-Village consumes",
+      "effect": "lethal revenge or skip",
+      "duration": "pending response",
+      "resource": "one response",
+      "exceptions": "no secondary death trigger; only authorized actor",
+      "interactionDependencies": [
+        "hanging",
+        "death-chain",
+        "victory",
+        "privacy"
+      ],
+      "ruleProvenance": [
+        "character.json#33",
+        "VH03",
+        "VH65",
+        "QD-02"
+      ],
+      "requiredPassTests": [
+        "S15 final #33 actual hanging opens private post-death response; choice commits secondary before victory",
+        "S15 final #33 decline revenge closes chain without secondary death and no invented winner",
+        "S15 closure revenge kills Hunter and follows pinned villager before closing original chain",
+        "S15 closure Hunter hanging pulls wolf as secondary without opening revenge or duplicating death",
+        "QD02 wrong alignment consumes revenge without disclosure or retry; Village and Jester co-win",
+        "QD02 valid revenge after hanging, Hunter follow completes before dead Village teammates win"
+      ],
+      "remainingInteractions": "Multi-wolf protection and other unimplemented #33 branches",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 final #33 actual hanging opens private post-death response; choice commits secondary before victory",
+        "S15 final #33 decline revenge closes chain without secondary death and no invented winner",
+        "S15 closure revenge kills Hunter and follows pinned villager before closing original chain",
+        "S15 closure Hunter hanging pulls wolf as secondary without opening revenge or duplicating death",
+        "QD02 wrong alignment consumes revenge without disclosure or retry; Village and Jester co-win",
+        "QD02 valid revenge after hanging, Hunter follow completes before dead Village teammates win"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 88,
+      "skillId": "official.88.pin",
+      "branchId": "WV-A88-MARK",
+      "trigger": "night",
+      "preconditions": "alive",
+      "targetConstraints": "one living target",
+      "effect": "mark target",
+      "duration": "expires at next NIGHT_COLLECT",
+      "resource": "nightly choice",
+      "exceptions": "no repin leaves no mark; historical 1.3.2 unchanged",
+      "interactionDependencies": [
+        "status",
+        "target authorization"
+      ],
+      "ruleProvenance": [
+        "character.json#88",
+        "QD-03"
+      ],
+      "requiredPassTests": [
+        "S15 closure primary shield prevents Hunter death and follow; next night mark may be renewed",
+        "S15 final #88 stale mark without renewed choice fails atomically rather than inventing duration",
+        "QD03 pin expires at next night before no-repin death, replay and retry",
+        "QD03 pin reselect same target or change target, daytime follow still valid"
+      ],
+      "remainingInteractions": "Blocked night in mixed status domain not yet integration-tested",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 closure primary shield prevents Hunter death and follow; next night mark may be renewed",
+        "S15 final #88 stale mark without renewed choice fails atomically rather than inventing duration",
+        "QD03 pin expires at next night before no-repin death, replay and retry",
+        "QD03 pin reselect same target or change target, daytime follow still valid"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 88,
+      "skillId": "official.88.pin",
+      "branchId": "WV-A88-DEATH-FOLLOW",
+      "trigger": "actual attack death or hanging",
+      "preconditions": "actual elimination",
+      "targetConstraints": "marked target",
+      "effect": "secondary death if no valid protection",
+      "duration": "death chain",
+      "resource": "one death trigger",
+      "exceptions": "already dead not killed twice; valid protection blocks follow",
+      "interactionDependencies": [
+        "protection",
+        "death-chain",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#88",
+        "VH65",
+        "VH03",
+        "NV91 source workbook response",
+        "QD-03"
+      ],
+      "requiredPassTests": [
+        "S15 final #88 hanging follow kills #28 without Jester win; stable knight victory",
+        "S15 final #88 night follow and #28 non-hanging death are closed before victory",
+        "S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester",
+        "S15 closure snow shield persists after owner dies and is consumed once",
+        "S15 closure revenge kills Hunter and follows pinned villager before closing original chain",
+        "S15 closure snow protection expires before the third night Hunter follow",
+        "S15 closure night-only snow protection cannot block daytime Hunter follow",
+        "QD03 pin expires at next night before no-repin death, replay and retry"
+      ],
+      "remainingInteractions": "Other valid protections outside currently admitted games",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 final #88 hanging follow kills #28 without Jester win; stable knight victory",
+        "S15 final #88 night follow and #28 non-hanging death are closed before victory",
+        "S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester",
+        "S15 closure snow shield persists after owner dies and is consumed once",
+        "S15 closure revenge kills Hunter and follows pinned villager before closing original chain",
+        "S15 closure snow protection expires before the third night Hunter follow",
+        "S15 closure night-only snow protection cannot block daytime Hunter follow",
+        "QD03 pin expires at next night before no-repin death, replay and retry"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 48,
+      "skillId": "official.48.pack-bite",
+      "branchId": "WV-A48-LAST-WOLF-DOUBLE-BITE",
+      "trigger": "night when sole living wolf is leader",
+      "preconditions": "sole wolf alive",
+      "targetConstraints": "one or two different living Village targets in QA composition",
+      "effect": "pack damage",
+      "duration": "night",
+      "resource": "nightly choice",
+      "exceptions": "no multi-wolf consensus implementation",
+      "interactionDependencies": [
+        "pack",
+        "damage",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#48"
+      ],
+      "requiredPassTests": [
+        "QD01 #48 two victims via shared pack, retry, target limits, authorized projection and replay",
+        "QD01 #48 sole wolf blocks Village victory until true hanging"
+      ],
+      "remainingInteractions": "Multi-wolf and protections outside current composition",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "QD01 #48 two victims via shared pack, retry, target limits, authorized projection and replay",
+        "QD01 #48 sole wolf blocks Village victory until true hanging"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 64,
+      "skillId": "official.64.pair",
+      "branchId": "WV-A64-PAIR-DEATH-OBSERVATION",
+      "trigger": "night pair choice; first actual death of either marked player",
+      "preconditions": "Bell Ringer alive, first observation not spent",
+      "targetConstraints": "two different living other players in admitted deck",
+      "effect": "private role of surviving paired player; if both die in same batch, reveal both",
+      "duration": "until first pair death; replace both choices before observation",
+      "resource": "one resolved observation",
+      "exceptions": "simultaneous death; no observation after owner death in current scope",
+      "interactionDependencies": [
+        "death-chain",
+        "pack",
+        "private projection"
+      ],
+      "ruleProvenance": [
+        "character.json#64",
+        "Ma_Soi_Quy_Tac_Da_Chot_Va_De_Xuat.xlsx / 04 Char nguon row 65 (answer present, not marked chốt)"
+      ],
+      "requiredPassTests": [
+        "Scale #64 pair replacement, no premature disclosure, day hanging and private role result",
+        "Scale #64 two simultaneous pack deaths reveal both once before victory",
+        "Scale #64 first marked death freezes pair; no second information or selection"
+      ],
+      "remainingInteractions": "other attack sources, linked death, revival, transformations; self-selection not certified",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "Scale #64 pair replacement, no premature disclosure, day hanging and private role result",
+        "Scale #64 two simultaneous pack deaths reveal both once before victory",
+        "Scale #64 first marked death freezes pair; no second information or selection"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 31,
+      "skillId": "official.31.guard",
+      "branchId": "WV-A31-GUARD",
+      "trigger": "night choice",
+      "preconditions": "actor authorized, correct phase and resource in admitted domain",
+      "targetConstraints": "living eligible player; no same target consecutive nights",
+      "effect": "protection per source",
+      "duration": "night",
+      "resource": "one choice/night",
+      "exceptions": "self protection in Excel answer; protection bypass and multiple hits need proof",
+      "interactionDependencies": [
+        "phase",
+        "authorization",
+        "role-specific effect",
+        "persistence"
+      ],
+      "ruleProvenance": [
+        "character.json#31",
+        "NV34",
+        "VH24",
+        "character.json#48",
+        "Ma_Soi_Quy_Tac_Da_Chot_Va_De_Xuat.xlsx / 04 Char nguon row32"
+      ],
+      "requiredPassTests": [
+        "Play #31 regular wolf bite actually blocked, cooldown, different recipient, Village victory and durable privacy"
+      ],
+      "remainingInteractions": "Proven actual regular bite absorption in [25,31,48,74], self guard, cooldown and distinct target. Piercing attacks, repeated hits against one target, multiple protection layers and other decks remain unverified; not FULL.",
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "partialTestEvidence": [
+        "S05-03 #31 guard cannot select same target in consecutive nights but can after a gap"
+      ],
+      "implementation": "backend/src/official/final-pack.ts + support-rules.ts",
+      "requiredBrowser": "browser_s15_play_guard_e2e",
+      "passedTests": [
+        "Play #31 regular wolf bite actually blocked, cooldown, different recipient, Village victory and durable privacy"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 32,
+      "skillId": "official.32.shoot",
+      "branchId": "WV-A32-SHOOT",
+      "trigger": "day OR night choice",
+      "preconditions": "actor authorized, correct phase and resource in admitted domain",
+      "targetConstraints": "living target",
+      "effect": "lethal shot subject to defense",
+      "duration": "chosen phase",
+      "resource": "three bullets/game; one chosen phase/day unless confirmed upgrade",
+      "exceptions": "VH09; blocked shots and upgrade ordering",
+      "interactionDependencies": [
+        "phase",
+        "authorization",
+        "role-specific effect",
+        "persistence"
+      ],
+      "ruleProvenance": [
+        "character.json#32",
+        "VH09"
+      ],
+      "requiredPassTests": [
+        "S14 #32 authoritative attack, retry, privacy and restart",
+        "S14 #32 day shot permitted, night shot in same round denied after shielded shot"
+      ],
+      "remainingInteractions": "Full upgrade and rescue interactions remain unverified",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S14 #32 authoritative attack, retry, privacy and restart",
+        "S14 #32 day shot permitted, night shot in same round denied after shielded shot"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 43,
+      "skillId": "official.43.shoot",
+      "branchId": "WV-A43-SNIPER",
+      "trigger": "day OR night choice",
+      "preconditions": "actor authorized, correct phase and resource in admitted domain",
+      "targetConstraints": "living player",
+      "effect": "lethal shot subject to defense",
+      "duration": "chosen phase",
+      "resource": "two bullets/game, no two shots same day",
+      "exceptions": "cannot invent guess-role branch; inherited faction rules",
+      "interactionDependencies": [
+        "phase",
+        "authorization",
+        "role-specific effect",
+        "persistence"
+      ],
+      "ruleProvenance": [
+        "character.json#43"
+      ],
+      "requiredPassTests": [
+        "S15 #43 two rounds two bullets, blocked then day shot, retry privacy restart"
+      ],
+      "remainingInteractions": "Pack actions and other protection interactions",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 #43 two rounds two bullets, blocked then day shot, retry privacy restart"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 49,
+      "skillId": "official.49.aura-illusion",
+      "branchId": "WV-A49-ILLUSION",
+      "trigger": "night activation",
+      "preconditions": "actor authorized, correct phase and resource in admitted domain",
+      "targetConstraints": "all applicable aura inspections during same night",
+      "effect": "seer aura appears evil",
+      "duration": "activation night only",
+      "resource": "two activations/game",
+      "exceptions": "VH25 supersedes ambiguous original duration; exact-role unaffected unless source confirms",
+      "interactionDependencies": [
+        "phase",
+        "authorization",
+        "role-specific effect",
+        "persistence"
+      ],
+      "ruleProvenance": [
+        "character.json#49",
+        "VH25",
+        "QD seer version"
+      ],
+      "requiredPassTests": [
+        "S15 aura expansion #49 private distortion, expiry, duplicate and restart"
+      ],
+      "remainingInteractions": "Other investigation and blocking interactions; pack",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 aura expansion #49 private distortion, expiry, duplicate and restart"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 50,
+      "skillId": "official.50.numb",
+      "branchId": "WV-A50-NUMB",
+      "trigger": "night choice",
+      "preconditions": "actor authorized, correct phase and resource in admitted domain",
+      "targetConstraints": "one eligible player",
+      "effect": "block night ability and mute next day",
+      "duration": "current night / next day",
+      "resource": "must rest one night",
+      "exceptions": "VH57 mute is public chat only; not automatic vote denial",
+      "interactionDependencies": [
+        "phase",
+        "authorization",
+        "role-specific effect",
+        "persistence"
+      ],
+      "ruleProvenance": [
+        "character.json#50",
+        "VH57"
+      ],
+      "requiredPassTests": [
+        "S14 #50 public chat mute, WS/HTTP ACL, restart, expiry"
+      ],
+      "remainingInteractions": "All skill-block and team-action domains",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S14 #50 public chat mute, WS/HTTP ACL, restart, expiry"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 72,
+      "skillId": "official.72.aura-curse",
+      "branchId": "WV-A72-CURSE",
+      "trigger": "night choice",
+      "preconditions": "actor authorized, correct phase and resource in admitted domain",
+      "targetConstraints": "one eligible player",
+      "effect": "evil aura to Seer during that night",
+      "duration": "activation night only",
+      "resource": "nightly choice",
+      "exceptions": "VH39, exact role not silently changed",
+      "interactionDependencies": [
+        "phase",
+        "authorization",
+        "role-specific effect",
+        "persistence"
+      ],
+      "ruleProvenance": [
+        "character.json#72",
+        "VH39"
+      ],
+      "requiredPassTests": [
+        "S15 aura expansion #72 private distortion, expiry, duplicate and restart"
+      ],
+      "remainingInteractions": "Other investigation/blocking interactions; pack",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 aura expansion #72 private distortion, expiry, duplicate and restart"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 76,
+      "skillId": "official.76.nightmare",
+      "branchId": "WV-A76-NIGHTMARE",
+      "trigger": "night choice under VH41",
+      "preconditions": "actor authorized, correct phase and resource in admitted domain",
+      "targetConstraints": "one eligible player",
+      "effect": "same-night ability lock",
+      "duration": "current night",
+      "resource": "two uses/game",
+      "exceptions": "maintenance protects, no day selection under superseding VH41",
+      "interactionDependencies": [
+        "phase",
+        "authorization",
+        "role-specific effect",
+        "persistence"
+      ],
+      "ruleProvenance": [
+        "character.json#76",
+        "VH41"
+      ],
+      "requiredPassTests": [
+        "S10-03 #76 current-night nightmare cancels queued skills, privately informs victim, consumes only two match uses",
+        "S13-01 #11 maintenance protects #25 from #76 nightmare in a real game session"
+      ],
+      "remainingInteractions": "Pack and all block-order domains",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S10-03 #76 current-night nightmare cancels queued skills, privately informs victim, consumes only two match uses",
+        "S13-01 #11 maintenance protects #25 from #76 nightmare in a real game session"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 80,
+      "skillId": "official.80.compare",
+      "branchId": "WV-A80-VIOLIN",
+      "trigger": "night comparison",
+      "preconditions": "actor authorized, correct phase and resource in admitted domain",
+      "targetConstraints": "one living and one previous-night dead still dead",
+      "effect": "same/different actual faction only",
+      "duration": "private result",
+      "resource": "one comparison/night",
+      "exceptions": "VH49 faction at death vs current faction; VH53 still dead, no exact faction disclosure",
+      "interactionDependencies": [
+        "phase",
+        "authorization",
+        "role-specific effect",
+        "persistence"
+      ],
+      "ruleProvenance": [
+        "character.json#80",
+        "VH49",
+        "VH53"
+      ],
+      "requiredPassTests": [
+        "S15 #80 Không Tiếc Thương, previous-night death only, private relation, restart",
+        "S15 #80 Tiếc Thương, previous-night death only, private relation, restart"
+      ],
+      "remainingInteractions": "Revival and alignment-transition integration not tested",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S15 #80 Không Tiếc Thương, previous-night death only, private relation, restart",
+        "S15 #80 Tiếc Thương, previous-night death only, private relation, restart"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 84,
+      "skillId": "official.84.silence",
+      "branchId": "WV-A84-SILENCE",
+      "trigger": "night choice",
+      "preconditions": "actor authorized, correct phase and resource in admitted domain",
+      "targetConstraints": "one eligible player",
+      "effect": "public chat mute next day",
+      "duration": "following day",
+      "resource": "nightly choice",
+      "exceptions": "VH57 only public chat; vote and eligible group chat not blocked",
+      "interactionDependencies": [
+        "phase",
+        "authorization",
+        "role-specific effect",
+        "persistence"
+      ],
+      "ruleProvenance": [
+        "character.json#84",
+        "VH57"
+      ],
+      "requiredPassTests": [
+        "S14 #84 public chat mute, WS/HTTP ACL, restart, expiry"
+      ],
+      "remainingInteractions": "Other group communication and lock interaction domains",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "S14 #84 public chat mute, WS/HTTP ACL, restart, expiry"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 3,
+      "skillId": "official.3.inspect-function (reserved inventory label)",
+      "branchId": "WV-A03-FUNCTION-INSPECTION",
+      "trigger": "night choice",
+      "preconditions": "actor alive, authorized, correct night phase",
+      "targetConstraints": "other living player",
+      "effect": "return source-defined functional category, including multi-skill target",
+      "duration": "night result",
+      "resource": "nightly",
+      "exceptions": "exact role is not the functional category",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "role classification"
+      ],
+      "ruleProvenance": [
+        "character.json#3",
+        "NV03"
+      ],
+      "implementation": null,
+      "requiredPassTests": [],
+      "requiredBrowser": null,
+      "implementationStatus": "UNVERIFIED_OR_NOT_IMPLEMENTED",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Sói Tiên Tri",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 3,
+      "skillId": "passive.3.voluntary-conversion (inventory label)",
+      "branchId": "WV-A03-VOLUNTARY-CONVERSION",
+      "trigger": "voluntary abandonment",
+      "preconditions": "holds original #3 ability",
+      "targetConstraints": "self",
+      "effect": "become ordinary wolf",
+      "duration": "rest of game",
+      "resource": "one conversion",
+      "exceptions": "trigger timing must match approved source",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "role transition",
+        "wolf pack"
+      ],
+      "ruleProvenance": [
+        "character.json#3",
+        "NV03"
+      ],
+      "implementation": null,
+      "requiredPassTests": [],
+      "requiredBrowser": null,
+      "implementationStatus": "UNVERIFIED_OR_NOT_IMPLEMENTED",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Sói Tiên Tri",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 3,
+      "skillId": "passive.3.last-wolf (inventory label)",
+      "branchId": "WV-A03-LAST-WOLF",
+      "trigger": "last wolf remains",
+      "preconditions": "only surviving pack member with #3",
+      "targetConstraints": "self",
+      "effect": "become ordinary wolf",
+      "duration": "rest of game",
+      "resource": "once",
+      "exceptions": "not tied to phase",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "role transition",
+        "wolf pack",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#3",
+        "NV03"
+      ],
+      "implementation": null,
+      "requiredPassTests": [],
+      "requiredBrowser": null,
+      "implementationStatus": "UNVERIFIED_OR_NOT_IMPLEMENTED",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Sói Tiên Tri",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 3,
+      "skillId": "passive.3.seer-aura",
+      "branchId": "WV-A03-AURA-CONCEAL",
+      "trigger": "ordinary aura inspection",
+      "preconditions": "#3 in applicable wolf state",
+      "targetConstraints": "self when inspected by #25",
+      "effect": "return Thiện to aura seer; exact-role #74 remains exact",
+      "duration": "while role effect applies",
+      "resource": "passive",
+      "exceptions": "last-wolf transformation not implemented",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "aura",
+        "exact role"
+      ],
+      "ruleProvenance": [
+        "character.json#3",
+        "S15-OWNER-SEER-01"
+      ],
+      "implementation": "backend/src/official/inspection-rules.ts",
+      "requiredPassTests": [
+        "S15 accelerated #3 passive aura concealment does not distort exact-role #74"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Sói Tiên Tri",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S15 accelerated #3 passive aura concealment does not distort exact-role #74"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 5,
+      "skillId": "official.5.weigh-soul",
+      "branchId": "WV-A05-WEIGH-SOUL",
+      "trigger": "night choice",
+      "preconditions": "actor alive, authorized, correct night phase",
+      "targetConstraints": "living eligible target",
+      "effect": "actual faction verdict Thiện/Ác/Không xác định, private",
+      "duration": "result",
+      "resource": "2/game",
+      "exceptions": "immune to distortion; changed faction outside current domain",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "faction",
+        "investigation"
+      ],
+      "ruleProvenance": [
+        "character.json#5",
+        "VH84",
+        "NV05"
+      ],
+      "implementation": "backend/src/official/judgment-rules.ts",
+      "requiredPassTests": [
+        "S10-01 #5 source VH84 returns private unmodified verdict; #20 injures investigator in following night",
+        "S10-02 #5 two match-wide uses, deterministic replay and SQLite restart; cannot infer hanging"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Thẩm Phán Linh Hồn",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S10-01 #5 source VH84 returns private unmodified verdict; #20 injures investigator in following night",
+        "S10-02 #5 two match-wide uses, deterministic replay and SQLite restart; cannot infer hanging"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 5,
+      "skillId": "official.5.absolute-justice (inventory label)",
+      "branchId": "WV-A05-JUSTICE",
+      "trigger": "successful good verdict",
+      "preconditions": "valid #5 protection choice",
+      "targetConstraints": "player judged good",
+      "effect": "protect against hostile faction changes",
+      "duration": "source-defined",
+      "resource": "per eligible verdict",
+      "exceptions": "source permits choice after #5 changes faction",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "alignment transition",
+        "choice lifecycle"
+      ],
+      "ruleProvenance": [
+        "character.json#5",
+        "NV05",
+        "VH84"
+      ],
+      "implementation": null,
+      "requiredPassTests": [],
+      "requiredBrowser": null,
+      "implementationStatus": "UNVERIFIED_OR_NOT_IMPLEMENTED",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Thẩm Phán Linh Hồn",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 11,
+      "skillId": "official.11.upgrade (inventory label)",
+      "branchId": "WV-A11-UPGRADE",
+      "trigger": "night choice",
+      "preconditions": "actor alive, authorized, correct night phase",
+      "targetConstraints": "other player",
+      "effect": "double skill uses for valid night",
+      "duration": "night",
+      "resource": "2/game",
+      "exceptions": "resource and modifier order need proof",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "resource",
+        "modifier"
+      ],
+      "ruleProvenance": [
+        "character.json#11",
+        "NV11",
+        "P04"
+      ],
+      "implementation": null,
+      "requiredPassTests": [],
+      "requiredBrowser": null,
+      "implementationStatus": "UNVERIFIED_OR_NOT_IMPLEMENTED",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Thợ Rèn Cơ Khí",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 11,
+      "skillId": "official.11.maintenance",
+      "branchId": "WV-A11-MAINTENANCE",
+      "trigger": "night choice",
+      "preconditions": "actor alive, authorized, correct night phase",
+      "targetConstraints": "living eligible target",
+      "effect": "protect from eligible disruption/block",
+      "duration": "night",
+      "resource": "one choice/night",
+      "exceptions": "full interference matrix not verified",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "blocking",
+        "aura"
+      ],
+      "ruleProvenance": [
+        "character.json#11",
+        "NV11"
+      ],
+      "implementation": "backend/src/official/s13-mechanics.ts",
+      "requiredPassTests": [
+        "S13-01 #11 maintenance protects #25 from #76 nightmare in a real game session"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Thợ Rèn Cơ Khí",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S13-01 #11 maintenance protects #25 from #76 nightmare in a real game session"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 17,
+      "skillId": "official.17.blessing (inventory label)",
+      "branchId": "WV-A17-BLESSING",
+      "trigger": "night choice",
+      "preconditions": "actor alive, authorized, correct night phase",
+      "targetConstraints": "player not previously blessed",
+      "effect": "increase skill usage per VH85",
+      "duration": "night",
+      "resource": "once per target",
+      "exceptions": "VH85 limits resources and pack target cap",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "resource",
+        "pack",
+        "modifier"
+      ],
+      "ruleProvenance": [
+        "character.json#17",
+        "VH85",
+        "VH74"
+      ],
+      "implementation": null,
+      "requiredPassTests": [],
+      "requiredBrowser": null,
+      "implementationStatus": "UNVERIFIED_OR_NOT_IMPLEMENTED",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Nữ Tu Huyết Thệ",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 17,
+      "skillId": "official.17.day-judgment",
+      "branchId": "WV-A17-JUDGMENT-HOSTILE",
+      "trigger": "day choice",
+      "preconditions": "alive, authorized, day",
+      "targetConstraints": "wolf or independent",
+      "effect": "reveal actual role and permanently block skills",
+      "duration": "rest of game",
+      "resource": "1 shared judgment/game",
+      "exceptions": "cannot reuse after other outcome",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "reveal",
+        "blocking"
+      ],
+      "ruleProvenance": [
+        "character.json#17",
+        "VH07"
+      ],
+      "implementation": "backend/src/official/s13-mechanics.ts",
+      "requiredPassTests": [
+        "S13-07 #17 public judgment reveals only the certified wolf and permanently disables the skill"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Nữ Tu Huyết Thệ",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S13-07 #17 public judgment reveals only the certified wolf and permanently disables the skill"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 17,
+      "skillId": "official.17.day-judgment",
+      "branchId": "WV-A17-JUDGMENT-VILLAGE",
+      "trigger": "day choice",
+      "preconditions": "alive, authorized, day",
+      "targetConstraints": "village",
+      "effect": "reveal; caster muted public chat",
+      "duration": "rest of game",
+      "resource": "1 shared judgment/game",
+      "exceptions": "mute does not deny voting or authorized groups",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "chat",
+        "voting"
+      ],
+      "ruleProvenance": [
+        "character.json#17",
+        "VH57"
+      ],
+      "implementation": "backend/src/official/s13-mechanics.ts",
+      "requiredPassTests": [
+        "S14 #17 judgment on villager causes persistent public-chat mute but no vote denial"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Nữ Tu Huyết Thệ",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S14 #17 judgment on villager causes persistent public-chat mute but no vote denial"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 20,
+      "skillId": "passive.20.injury",
+      "branchId": "WV-A20-INSPECT-INJURY",
+      "trigger": "inspection received",
+      "preconditions": "valid actual inspection on #20",
+      "targetConstraints": "investigator",
+      "effect": "injure and block following night",
+      "duration": "next night",
+      "resource": "passive",
+      "exceptions": "not triggered merely by selection without valid inspection",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "investigation",
+        "blocking"
+      ],
+      "ruleProvenance": [
+        "character.json#20"
+      ],
+      "implementation": "backend/src/official/reactive-rules.ts",
+      "requiredPassTests": [
+        "S04 OFF20 inspected by both official seers: aura/role results private and next-night injury for each investigator",
+        "S04 OFF20 persists an injury through SQLite restart and duplicate action cannot double-apply it"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Sói Gai Độc",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S04 OFF20 inspected by both official seers: aura/role results private and next-night injury for each investigator",
+        "S04 OFF20 persists an injury through SQLite restart and duplicate action cannot double-apply it"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 20,
+      "skillId": "passive.20.shot-injury (inventory label)",
+      "branchId": "WV-A20-SHOT-INJURY",
+      "trigger": "shot received",
+      "preconditions": "applicable actual shot",
+      "targetConstraints": "shooter",
+      "effect": "injure and block following night",
+      "duration": "next night",
+      "resource": "passive",
+      "exceptions": "protection/blocked shot interaction not certified",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "attack",
+        "blocking"
+      ],
+      "ruleProvenance": [
+        "character.json#20"
+      ],
+      "implementation": null,
+      "requiredPassTests": [],
+      "requiredBrowser": null,
+      "implementationStatus": "UNVERIFIED_OR_NOT_IMPLEMENTED",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Sói Gai Độc",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 24,
+      "skillId": "official.24.jail",
+      "branchId": "WV-A24-JAIL",
+      "trigger": "night choice",
+      "preconditions": "actor alive, authorized, correct night phase",
+      "targetConstraints": "living eligible target",
+      "effect": "block chosen player skills and protect against night attack",
+      "duration": "night",
+      "resource": "nightly",
+      "exceptions": "execution and anonymous chat are separate abilities",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "protection",
+        "blocking"
+      ],
+      "ruleProvenance": [
+        "character.json#24",
+        "VH79"
+      ],
+      "implementation": "backend/src/official/s13-mechanics.ts",
+      "requiredPassTests": [
+        "S13-03 #24 jail blocks inspection and absorbs a night attack; rule-private events"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Quản Ngục",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S13-03 #24 jail blocks inspection and absorbs a night attack; rule-private events"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 24,
+      "skillId": "official.24.jail-chat (inventory label)",
+      "branchId": "WV-A24-ANONYMOUS-CHAT",
+      "trigger": "jail active",
+      "preconditions": "valid live session",
+      "targetConstraints": "jailer and prisoner",
+      "effect": "anonymous 1-1 channel, asymmetric identity",
+      "duration": "night",
+      "resource": "one jail session",
+      "exceptions": "no metadata leak; no general DM",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "chat ACL"
+      ],
+      "ruleProvenance": [
+        "character.json#24",
+        "VH79"
+      ],
+      "implementation": null,
+      "requiredPassTests": [],
+      "requiredBrowser": null,
+      "implementationStatus": "UNVERIFIED_OR_NOT_IMPLEMENTED",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Quản Ngục",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 24,
+      "skillId": "official.24.execute (inventory label)",
+      "branchId": "WV-A24-EXECUTION",
+      "trigger": "night choice",
+      "preconditions": "valid jailed target and bullet",
+      "targetConstraints": "current prisoner",
+      "effect": "execute prisoner",
+      "duration": "night",
+      "resource": "one bullet/game",
+      "exceptions": "interaction with jail protection requires source-specific resolution",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "attack",
+        "death-chain"
+      ],
+      "ruleProvenance": [
+        "character.json#24"
+      ],
+      "implementation": null,
+      "requiredPassTests": [],
+      "requiredBrowser": null,
+      "implementationStatus": "UNVERIFIED_OR_NOT_IMPLEMENTED",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Quản Ngục",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 34,
+      "skillId": "official.34.night-block",
+      "branchId": "WV-A34-NIGHT-LOCK",
+      "trigger": "night choice",
+      "preconditions": "actor alive, authorized, correct night phase",
+      "targetConstraints": "living eligible target",
+      "effect": "block eligible village role, including queued unexecuted skill",
+      "duration": "night",
+      "resource": "nightly",
+      "exceptions": "#25/#31 immune in inherited rule; non-village does not lock",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "blocking",
+        "queued actions"
+      ],
+      "ruleProvenance": [
+        "character.json#34",
+        "VH10",
+        "VH24"
+      ],
+      "implementation": "backend/src/official/support-rules.ts",
+      "requiredPassTests": [
+        "S05-01 #34 blocks accepted #9 action but not #25 Tiên Tri or #31 Bảo Vệ (VH10/VH24)",
+        "S05-02 #34 targeting #25/#31 does not lock protected named roles; #74 can be locked"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Sói Mộng Du",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S05-01 #34 blocks accepted #9 action but not #25 Tiên Tri or #31 Bảo Vệ (VH10/VH24)",
+        "S05-02 #34 targeting #25/#31 does not lock protected named roles; #74 can be locked"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 36,
+      "skillId": "official.36.fireball",
+      "branchId": "WV-A36-FIREBALL",
+      "trigger": "night choice",
+      "preconditions": "actor alive, authorized, correct night phase",
+      "targetConstraints": "other living player",
+      "effect": "lethal attack subject to defense",
+      "duration": "night",
+      "resource": "2/game",
+      "exceptions": "no bypass valid protection; may coexist with shield",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "attack",
+        "protection"
+      ],
+      "ruleProvenance": [
+        "character.json#36",
+        "VH12",
+        "VH13"
+      ],
+      "implementation": "backend/src/official/s13-mechanics.ts",
+      "requiredPassTests": [
+        "S14 #36 authoritative attack, retry, privacy and restart",
+        "S15 #36 fire and unused shield may both be spent in one night, no false reveal"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Pháp Sư",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S14 #36 authoritative attack, retry, privacy and restart",
+        "S15 #36 fire and unused shield may both be spent in one night, no false reveal"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 36,
+      "skillId": "official.36.shield",
+      "branchId": "WV-A36-SHIELD",
+      "trigger": "night choice",
+      "preconditions": "actor alive, authorized, correct night phase",
+      "targetConstraints": "other living player",
+      "effect": "one valid protection; consume even if untriggered",
+      "duration": "night",
+      "resource": "1/game",
+      "exceptions": "no self; independent fireball resource",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "protection",
+        "resource"
+      ],
+      "ruleProvenance": [
+        "character.json#36",
+        "VH12"
+      ],
+      "implementation": "backend/src/official/s13-mechanics.ts",
+      "requiredPassTests": [
+        "S15 #36 shield absorbs knight attack, role feedback private, once per match",
+        "S15 #36 fire and unused shield may both be spent in one night, no false reveal"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Pháp Sư",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S15 #36 shield absorbs knight attack, role feedback private, once per match",
+        "S15 #36 fire and unused shield may both be spent in one night, no false reveal"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 36,
+      "skillId": "official.36.shield",
+      "branchId": "WV-A36-SHIELD-REVEAL",
+      "trigger": "successful shield absorption",
+      "preconditions": "valid #36 shield actually blocks an attack",
+      "targetConstraints": "protected player",
+      "effect": "private exact-role feedback to mage",
+      "duration": "result",
+      "resource": "conditional",
+      "exceptions": "no reveal when shield unused",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "protection",
+        "investigation"
+      ],
+      "ruleProvenance": [
+        "character.json#36"
+      ],
+      "implementation": "backend/src/official/s13-mechanics.ts",
+      "requiredPassTests": [
+        "S15 #36 shield absorbs knight attack, role feedback private, once per match",
+        "S15 #36 fire and unused shield may both be spent in one night, no false reveal"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Pháp Sư",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S15 #36 shield absorbs knight attack, role feedback private, once per match",
+        "S15 #36 fire and unused shield may both be spent in one night, no false reveal"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 52,
+      "skillId": "official.52.solo-dog",
+      "branchId": "WV-A52-SOLO-DOG",
+      "trigger": "night choice",
+      "preconditions": "actor alive, authorized, correct night phase",
+      "targetConstraints": "other living player",
+      "effect": "block independent killer attack",
+      "duration": "night",
+      "resource": "two protection nights shared per source",
+      "exceptions": "different attack class; shared-night accounting not proven",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "attack provenance",
+        "protection"
+      ],
+      "ruleProvenance": [
+        "character.json#52",
+        "VH27"
+      ],
+      "implementation": "backend/src/official/s13-mechanics.ts",
+      "requiredPassTests": [
+        "S14 #52 solo dog consumes protection and expires"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Chó Canh Gác",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S14 #52 solo dog consumes protection and expires"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 52,
+      "skillId": "official.52.wolf-dog (inventory label)",
+      "branchId": "WV-A52-WOLF-DOG",
+      "trigger": "night choice",
+      "preconditions": "actor alive, authorized, correct night phase",
+      "targetConstraints": "other living player",
+      "effect": "block wolf attack",
+      "duration": "night",
+      "resource": "two protection nights shared per source",
+      "exceptions": "both dogs may select same target",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "wolf pack",
+        "protection"
+      ],
+      "ruleProvenance": [
+        "character.json#52",
+        "VH27"
+      ],
+      "implementation": null,
+      "requiredPassTests": [],
+      "requiredBrowser": null,
+      "implementationStatus": "UNVERIFIED_OR_NOT_IMPLEMENTED",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Chó Canh Gác",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 66,
+      "skillId": "official.66.night-guard",
+      "branchId": "WV-A66-GUARD",
+      "trigger": "night choice",
+      "preconditions": "actor alive, authorized, correct night phase",
+      "targetConstraints": "living eligible target",
+      "effect": "protect from night attack",
+      "duration": "night",
+      "resource": "3/game",
+      "exceptions": "consume even if unused",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "protection",
+        "resource"
+      ],
+      "ruleProvenance": [
+        "character.json#66"
+      ],
+      "implementation": "backend/src/official/s13-mechanics.ts",
+      "requiredPassTests": [
+        "S13-04 #66 guard blocks lethal attack, persists and expires, uses 3 charges max"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Người Gác Đêm",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S13-04 #66 guard blocks lethal attack, persists and expires, uses 3 charges max"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 66,
+      "skillId": "passive.66.watch",
+      "branchId": "WV-A66-WATCH",
+      "trigger": "night protection observation",
+      "preconditions": "valid #66 observation",
+      "targetConstraints": "players protected by others",
+      "effect": "private list of protected recipients, no source identities",
+      "duration": "night result",
+      "resource": "passive",
+      "exceptions": "exclude own protection; not disclose source",
+      "interactionDependencies": [
+        "authorization",
+        "phase",
+        "privacy",
+        "persistence",
+        "replay",
+        "protection",
+        "privacy"
+      ],
+      "ruleProvenance": [
+        "character.json#66",
+        "VH34"
+      ],
+      "implementation": "backend/src/official/s13-mechanics.ts",
+      "requiredPassTests": [
+        "S15 #66 sees only other protection recipients, not source or own protection"
+      ],
+      "requiredBrowser": null,
+      "implementationStatus": "RESTRICTED_EXECUTION",
+      "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified.",
+      "characterName": "Người Gác Đêm",
+      "ruleTextSource": "data/character.json",
+      "passedTests": [
+        "S15 #66 sees only other protection recipients, not source or own protection"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 39,
+      "branchId": "WV-A39-CAPTURE",
+      "skillId": "official.39.capture",
+      "trigger": "night capture or victory evaluation",
+      "preconditions": "alive, valid phase, Exciter ready; for victory stable ledger",
+      "targetConstraints": "one other living in supported deck",
+      "effect": "Wolf killed and attributed to #39",
+      "duration": "one night; counters persist",
+      "resource": "one capture/night, one-night penalty",
+      "exceptions": "No skill if blocked, cannot target self; other third-party combinations not supported",
+      "interactionDependencies": [
+        "attack",
+        "lock",
+        "victory",
+        "death-ledger"
+      ],
+      "ruleProvenance": [
+        "character.json#39",
+        "VH17",
+        "VH18"
+      ],
+      "requiredPassTests": [
+        "Growth #39 real QA capture: wolf death, fixed initial majority, private role data, restart and replay",
+        "Growth #39 nightmare cancels queued capture without consuming a miss"
+      ],
+      "remainingInteractions": "Single wolf/village QA scope only; protection, other third-party faction and co-win outside this deck",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "implementationPath": "backend/src/official/dog-thief.ts",
+      "requiredBrowser": "browser_s15_growth_dog_thief_e2e",
+      "passedTests": [
+        "Growth #39 real QA capture: wolf death, fixed initial majority, private role data, restart and replay",
+        "Growth #39 nightmare cancels queued capture without consuming a miss"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 39,
+      "branchId": "WV-A39-MISS",
+      "skillId": "official.39.capture",
+      "trigger": "night capture or victory evaluation",
+      "preconditions": "alive, valid phase, Exciter ready; for victory stable ledger",
+      "targetConstraints": "one other living in supported deck",
+      "effect": "Village target unharmed; miss count +1 and vehicle unavailable next night",
+      "duration": "one night; counters persist",
+      "resource": "one capture/night, one-night penalty",
+      "exceptions": "No skill if blocked, cannot target self; other third-party combinations not supported",
+      "interactionDependencies": [
+        "attack",
+        "lock",
+        "victory",
+        "death-ledger"
+      ],
+      "ruleProvenance": [
+        "character.json#39",
+        "VH17",
+        "VH18"
+      ],
+      "requiredPassTests": [
+        "Growth #39 real QA miss, exact one-night loss, restart, third miss death, wolf victory",
+        "Growth #39 nightmare cancels queued capture without consuming a miss"
+      ],
+      "remainingInteractions": "Single wolf/village QA scope only; protection, other third-party faction and co-win outside this deck",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "implementationPath": "backend/src/official/dog-thief.ts",
+      "passedTests": [
+        "Growth #39 real QA miss, exact one-night loss, restart, third miss death, wolf victory",
+        "Growth #39 nightmare cancels queued capture without consuming a miss"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 39,
+      "branchId": "WV-A39-THIRD-MISS",
+      "skillId": "official.39.capture",
+      "trigger": "night capture or victory evaluation",
+      "preconditions": "alive, valid phase, Exciter ready; for victory stable ledger",
+      "targetConstraints": "one other living in supported deck",
+      "effect": "Third miss kills actor",
+      "duration": "one night; counters persist",
+      "resource": "one capture/night, one-night penalty",
+      "exceptions": "No skill if blocked, cannot target self; other third-party combinations not supported",
+      "interactionDependencies": [
+        "attack",
+        "lock",
+        "victory",
+        "death-ledger"
+      ],
+      "ruleProvenance": [
+        "character.json#39",
+        "VH17",
+        "VH18"
+      ],
+      "requiredPassTests": [
+        "Growth #39 real QA miss, exact one-night loss, restart, third miss death, wolf victory"
+      ],
+      "remainingInteractions": "Single wolf/village QA scope only; protection, other third-party faction and co-win outside this deck",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "implementationPath": "backend/src/official/dog-thief.ts",
+      "passedTests": [
+        "Growth #39 real QA miss, exact one-night loss, restart, third miss death, wolf victory"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 39,
+      "branchId": "WV-A39-MAJORITY-WIN",
+      "skillId": "official.39.capture",
+      "trigger": "night capture or victory evaluation",
+      "preconditions": "alive, valid phase, Exciter ready; for victory stable ledger",
+      "targetConstraints": "one other living in supported deck",
+      "effect": "More than half of initial wolves killed by this actor; after closed night ledger",
+      "duration": "one night; counters persist",
+      "resource": "one capture/night, one-night penalty",
+      "exceptions": "No skill if blocked, cannot target self; other third-party combinations not supported",
+      "interactionDependencies": [
+        "attack",
+        "lock",
+        "victory",
+        "death-ledger"
+      ],
+      "ruleProvenance": [
+        "character.json#39",
+        "VH17",
+        "VH18"
+      ],
+      "requiredPassTests": [
+        "Growth #39 real QA capture: wolf death, fixed initial majority, private role data, restart and replay"
+      ],
+      "remainingInteractions": "Single wolf/village QA scope only; protection, other third-party faction and co-win outside this deck",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "implementationPath": "backend/src/official/dog-thief.ts",
+      "requiredBrowser": "browser_s15_growth_dog_thief_e2e",
+      "passedTests": [
+        "Growth #39 real QA capture: wolf death, fixed initial majority, private role data, restart and replay"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 39,
+      "branchId": "WV-A39-THIRD-PARTY-COWIN",
+      "skillId": "official.39.capture",
+      "trigger": "night capture or victory evaluation",
+      "preconditions": "alive, valid phase, Exciter ready; for victory stable ledger",
+      "targetConstraints": "one other living in supported deck",
+      "effect": "Win with other third-party winners if own goal unmet",
+      "duration": "one night; counters persist",
+      "resource": "one capture/night, one-night penalty",
+      "exceptions": "No skill if blocked, cannot target self; other third-party combinations not supported",
+      "interactionDependencies": [
+        "attack",
+        "lock",
+        "victory",
+        "death-ledger"
+      ],
+      "ruleProvenance": [
+        "character.json#39",
+        "VH17",
+        "VH18"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Single wolf/village QA scope only; protection, other third-party faction and co-win outside this deck",
+      "implementationStatus": "UNIMPLEMENTED",
+      "implementationPath": "backend/src/official/dog-thief.ts",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 16,
+      "branchId": "WV-A16-ANTIDOTE",
+      "skillId": "official.16.antidote",
+      "trigger": "night",
+      "preconditions": "alive, remaining uses",
+      "targetConstraints": "one living, including self",
+      "effect": "one lethal hit blocked",
+      "duration": "until dawn",
+      "resource": "2 uses/game",
+      "exceptions": "private; expires even without attack",
+      "interactionDependencies": [
+        "protection",
+        "attack"
+      ],
+      "ruleProvenance": [
+        "character.json#16"
+      ],
+      "requiredPassTests": [
+        "S13-02 #16 antidote absorbs real #8 night attack; poison triggers next-night skill lock"
+      ],
+      "remainingInteractions": "Self-target and all attack families not fully verified",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "implementationPath": "backend/src/official/s13-mechanics.ts",
+      "passedTests": [
+        "S13-02 #16 antidote absorbs real #8 night attack; poison triggers next-night skill lock"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 16,
+      "branchId": "WV-A16-POISON",
+      "skillId": "official.16.delayed-poison",
+      "trigger": "night",
+      "preconditions": "alive, remaining uses",
+      "targetConstraints": "up to two living",
+      "effect": "next-night lock on wolf/third, no effect on village",
+      "duration": "next night then expiry",
+      "resource": "2 uses/game",
+      "exceptions": "private, no immediate death",
+      "interactionDependencies": [
+        "lock",
+        "delayed status"
+      ],
+      "ruleProvenance": [
+        "character.json#16"
+      ],
+      "requiredPassTests": [
+        "S13-02 #16 antidote absorbs real #8 night attack; poison triggers next-night skill lock",
+        "S14 #16 two poison targets consume one use, faction-specific next-night effect"
+      ],
+      "remainingInteractions": "Third-party target and combined effects not fully verified",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "implementationPath": "backend/src/official/s13-mechanics.ts",
+      "passedTests": [
+        "S13-02 #16 antidote absorbs real #8 night attack; poison triggers next-night skill lock",
+        "S14 #16 two poison targets consume one use, faction-specific next-night effect"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 23,
+      "branchId": "WV-A23-SHIELD",
+      "skillId": "official.23.shield",
+      "trigger": "night",
+      "preconditions": "alive, unused",
+      "targetConstraints": "self or another living",
+      "effect": "one attack blocked",
+      "duration": "night",
+      "resource": "1/game",
+      "exceptions": "private",
+      "interactionDependencies": [
+        "protection"
+      ],
+      "ruleProvenance": [
+        "character.json#23"
+      ],
+      "requiredPassTests": [
+        "S14 #23 one shield absorbs #36 fireball, then expires; persistence and private events"
+      ],
+      "remainingInteractions": "Self and broader attacks not fully verified",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "implementationPath": "backend/src/official/s13-mechanics.ts",
+      "passedTests": [
+        "S14 #23 one shield absorbs #36 fireball, then expires; persistence and private events"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 23,
+      "branchId": "WV-A23-REVIVAL",
+      "skillId": "unimplemented.23.revival",
+      "trigger": "first death",
+      "preconditions": "first death",
+      "targetConstraints": "self",
+      "effect": "secret revival next night with two bullets",
+      "duration": "pending then active",
+      "resource": "once",
+      "exceptions": "VH06/VH82 counted while pending; no vote after death",
+      "interactionDependencies": [
+        "revival",
+        "privacy",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#23",
+        "VH06",
+        "VH82"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Pending-life and revival transition not integrated",
+      "implementationStatus": "UNIMPLEMENTED",
+      "implementationPath": "backend/src/official/s13-mechanics.ts",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 23,
+      "branchId": "WV-A23-REVIVED-SHOOT",
+      "skillId": "unimplemented.23.shoot",
+      "trigger": "after revival",
+      "preconditions": "revived, remaining bullets",
+      "targetConstraints": "other living",
+      "effect": "lethal shot",
+      "duration": "after revival",
+      "resource": "2 bullets",
+      "exceptions": "cannot vote; second death final",
+      "interactionDependencies": [
+        "revival",
+        "attack",
+        "death"
+      ],
+      "ruleProvenance": [
+        "character.json#23",
+        "VH82"
+      ],
+      "requiredPassTests": [],
+      "remainingInteractions": "Requires revival state and attack authorization",
+      "implementationStatus": "UNIMPLEMENTED",
+      "implementationPath": "backend/src/official/s13-mechanics.ts",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 67,
+      "branchId": "WV-A67-SHIELD",
+      "skillId": "official.67.shield",
+      "trigger": "night",
+      "preconditions": "alive, inventory",
+      "targetConstraints": "one living",
+      "effect": "blocks valid attack",
+      "duration": "night",
+      "resource": "2/game; one/night",
+      "exceptions": "preexisting inventory",
+      "interactionDependencies": [
+        "protection",
+        "attack"
+      ],
+      "ruleProvenance": [
+        "character.json#67",
+        "VH35",
+        "VH70"
+      ],
+      "requiredPassTests": [
+        "S13-05 #67 shield blocks real attack; exactly two shields per game",
+        "S14 #67 shield and sword both accepted in same night, valid shield blocks sword"
+      ],
+      "remainingInteractions": "Other defenses and attacks not fully verified",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "implementationPath": "backend/src/official/s13-mechanics.ts",
+      "passedTests": [
+        "S13-05 #67 shield blocks real attack; exactly two shields per game",
+        "S14 #67 shield and sword both accepted in same night, valid shield blocks sword"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 67,
+      "branchId": "WV-A67-SWORD",
+      "skillId": "official.67.sword",
+      "trigger": "night",
+      "preconditions": "alive, sword unused",
+      "targetConstraints": "one other living",
+      "effect": "lethal attack subject to valid protection",
+      "duration": "night",
+      "resource": "1/game",
+      "exceptions": "one shield and sword same night",
+      "interactionDependencies": [
+        "attack",
+        "protection"
+      ],
+      "ruleProvenance": [
+        "character.json#67",
+        "VH35",
+        "VH70"
+      ],
+      "requiredPassTests": [
+        "S14 #67 shield and sword both accepted in same night, valid shield blocks sword"
+      ],
+      "remainingInteractions": "Unblocked sword and all attack interactions not certified",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "implementationPath": "backend/src/official/s13-mechanics.ts",
+      "passedTests": [
+        "S14 #67 shield and sword both accepted in same night, valid shield blocks sword"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 68,
+      "branchId": "WV-A68-MARK-FOLLOW",
+      "skillId": "official.68.mark",
+      "trigger": "night selection, death trigger",
+      "preconditions": "alive when selecting",
+      "targetConstraints": "one other living",
+      "effect": "death follow on actor death",
+      "duration": "until death",
+      "resource": "preselection",
+      "exceptions": "no preselection => no follow",
+      "interactionDependencies": [
+        "death-chain",
+        "victory"
+      ],
+      "ruleProvenance": [
+        "character.json#68",
+        "VH36"
+      ],
+      "requiredPassTests": [
+        "S14 #68 death-follow chain commits before certified knight victory",
+        "S14 #68 no preselected target means no secondary death (VH36)"
+      ],
+      "remainingInteractions": "Hanging and defenses not fully verified",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "implementationPath": "backend/src/official/s13-mechanics.ts",
+      "passedTests": [
+        "S14 #68 death-follow chain commits before certified knight victory",
+        "S14 #68 no preselected target means no secondary death (VH36)"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 77,
+      "branchId": "WV-A77-TRAP",
+      "skillId": "official.77.trap",
+      "trigger": "night selection, received lethal attack",
+      "preconditions": "alive, permitted night action",
+      "targetConstraints": "one living, including self",
+      "effect": "block lethal attack and counter-kill attacker",
+      "duration": "night",
+      "resource": "per night as source permits",
+      "exceptions": "VH51 valid protection/redirect; VH54 only representative for pack bite",
+      "interactionDependencies": [
+        "protection",
+        "attack",
+        "counterattack",
+        "death-chain",
+        "wolf pack"
+      ],
+      "ruleProvenance": [
+        "character.json#77",
+        "VH51",
+        "VH54"
+      ],
+      "requiredPassTests": [
+        "S15 #77 VH51 trap absorbs one lethal attack and counter kills knight without public cause"
+      ],
+      "remainingInteractions": "Self trap, pack representative and stacked protections not fully verified",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "implementationPath": "backend/src/official/s13-mechanics.ts",
+      "passedTests": [
+        "S15 #77 VH51 trap absorbs one lethal attack and counter kills knight without public cause"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 10,
+      "skillId": "official.10.trap",
+      "branchId": "WV-A10-TRAP-AURA",
+      "trigger": "NIGHT_COLLECT",
+      "preconditions": "living engineer, first night only, no duplicate target",
+      "targetConstraints": "one other living seer",
+      "effect": "Invert #25 true aura Thiện/Ác",
+      "resource": "2 per game per source; first-night only proven",
+      "duration": "first-night resolution; lifetime unresolved",
+      "exceptions": "VH84 #5 immune; no actual role mutation",
+      "interactionDependencies": [
+        "IN",
+        "BL",
+        "RNG"
+      ],
+      "ruleProvenance": [
+        "character.json#10",
+        "SK-05",
+        "Q13-06",
+        "VH84",
+        "VH08"
+      ],
+      "implementationPath": "backend/src/official/engineer-trap.ts",
+      "requiredPassTests": [
+        "Deep engineer #10: first-night trap on 25, typed inspection, private RNG and durable replay",
+        "Deep engineer #10: first-night trap on 5, typed inspection, private RNG and durable replay"
+      ],
+      "requiredBrowser": "browser_s15_deep_engineer_e2e",
+      "remainingInteractions": "Complete match resource limit, cross-night lifetime, other targets; #25 unknown-aura reversal not in current deck.",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "Deep engineer #10: first-night trap on 25, typed inspection, private RNG and durable replay",
+        "Deep engineer #10: first-night trap on 5, typed inspection, private RNG and durable replay"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 10,
+      "skillId": "official.10.trap",
+      "branchId": "WV-A10-TRAP-ROLE",
+      "trigger": "NIGHT_COLLECT",
+      "preconditions": "living engineer, first night only, no duplicate target",
+      "targetConstraints": "one other living seer",
+      "effect": "Server RNG draws false exact role from locked deck excluding true",
+      "resource": "2 per game per source; first-night only proven",
+      "duration": "first-night resolution; lifetime unresolved",
+      "exceptions": "VH84 #5 immune; no actual role mutation",
+      "interactionDependencies": [
+        "IN",
+        "BL",
+        "RNG"
+      ],
+      "ruleProvenance": [
+        "character.json#10",
+        "SK-05",
+        "Q13-06",
+        "VH84",
+        "VH08"
+      ],
+      "implementationPath": "backend/src/official/engineer-trap.ts",
+      "requiredPassTests": [
+        "Deep engineer #10: first-night trap on 74, typed inspection, private RNG and durable replay",
+        "Deep engineer #10: first-night trap on 5, typed inspection, private RNG and durable replay"
+      ],
+      "requiredBrowser": "browser_s15_deep_engineer_e2e",
+      "remainingInteractions": "Complete match resource limit, cross-night lifetime, other targets; #25 unknown-aura reversal not in current deck.",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "Deep engineer #10: first-night trap on 74, typed inspection, private RNG and durable replay",
+        "Deep engineer #10: first-night trap on 5, typed inspection, private RNG and durable replay"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 10,
+      "skillId": "official.10.trap",
+      "branchId": "WV-A10-TRAP-PROTECTION",
+      "trigger": "night skill resolution",
+      "preconditions": "valid trap on skill user",
+      "targetConstraints": "source-specific actor and target",
+      "effect": "Protection reverses into death",
+      "resource": "2 per game; unique targets",
+      "duration": "not certified",
+      "exceptions": "Preserve source damage/chain dependencies",
+      "interactionDependencies": [
+        "AT",
+        "DF",
+        "RESCUE",
+        "DEATH"
+      ],
+      "ruleProvenance": [
+        "character.json#10"
+      ],
+      "implementationPath": null,
+      "requiredPassTests": [],
+      "remainingInteractions": "Adapter missing; order/attack/protection and death chain not yet verified.",
+      "implementationStatus": "NOT_EXECUTED",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 10,
+      "skillId": "official.10.trap",
+      "branchId": "WV-A10-TRAP-POISON",
+      "trigger": "night skill resolution",
+      "preconditions": "valid trap on skill user",
+      "targetConstraints": "source-specific actor and target",
+      "effect": "Poison reverses into no death",
+      "resource": "2 per game; unique targets",
+      "duration": "not certified",
+      "exceptions": "Preserve source damage/chain dependencies",
+      "interactionDependencies": [
+        "AT",
+        "DF",
+        "RESCUE",
+        "DEATH"
+      ],
+      "ruleProvenance": [
+        "character.json#10"
+      ],
+      "implementationPath": null,
+      "requiredPassTests": [],
+      "remainingInteractions": "Adapter missing; order/attack/protection and death chain not yet verified.",
+      "implementationStatus": "NOT_EXECUTED",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 10,
+      "skillId": "official.10.trap",
+      "branchId": "WV-A10-TRAP-RESCUE",
+      "trigger": "night skill resolution",
+      "preconditions": "valid trap on skill user",
+      "targetConstraints": "source-specific actor and target",
+      "effect": "Rescue reverses into death",
+      "resource": "2 per game; unique targets",
+      "duration": "not certified",
+      "exceptions": "Preserve source damage/chain dependencies",
+      "interactionDependencies": [
+        "AT",
+        "DF",
+        "RESCUE",
+        "DEATH"
+      ],
+      "ruleProvenance": [
+        "character.json#10"
+      ],
+      "implementationPath": null,
+      "requiredPassTests": [],
+      "remainingInteractions": "Adapter missing; order/attack/protection and death chain not yet verified.",
+      "implementationStatus": "NOT_EXECUTED",
+      "passedTests": [],
+      "executedTested": false,
+      "historicalEvidenceRetained": false,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 26,
+      "skillId": "official.26.revive",
+      "branchId": "WV-A26-REVIVE",
+      "trigger": "night collection; commit at NIGHT_FINALIZE",
+      "preconditions": "alive when submitting; one charge",
+      "targetConstraints": "previously eliminated participant, excluding IDs 46/47/53",
+      "effect": "restore original life identity, faction, resources; public minimal PLAYER_REVIVED",
+      "resource": "1 per game",
+      "duration": "same-night finalize",
+      "exceptions": "VH73 any faction/time; VH76 exclusions; PH-01 accepted actor death",
+      "interactionDependencies": [
+        "REVIVAL",
+        "DEATH",
+        "VICTORY",
+        "REPLAY"
+      ],
+      "ruleProvenance": [
+        "character.json#26",
+        "VH73",
+        "VH76",
+        "PH-01",
+        "VH03"
+      ],
+      "implementationPath": "backend/src/official/revival.ts",
+      "requiredPassTests": [
+        "Deep medium #26: closed death, revival, repeated elimination, PH-01 false",
+        "Deep medium #26: closed death, revival, repeated elimination, PH-01 true"
+      ],
+      "requiredBrowser": "browser_s15_deep_medium_e2e",
+      "remainingInteractions": "Bounded [8,25,26] / [8,26,74]; cross-faction targets and three excluded roles not verified end-to-end.",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "Deep medium #26: closed death, revival, repeated elimination, PH-01 false",
+        "Deep medium #26: closed death, revival, repeated elimination, PH-01 true"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full"
+    },
+    {
+      "characterId": 26,
+      "skillId": "official.26.anonymous-chat",
+      "branchId": "WV-A26-ANONYMOUS-CHAT",
+      "trigger": "night",
+      "preconditions": "living medium",
+      "targetConstraints": "dead participant",
+      "effect": "anonymous 1–1 chat",
+      "resource": "per source",
+      "duration": "night",
+      "exceptions": "medium knows identity, dead player does not",
+      "interactionDependencies": [
+        "CH",
+        "PRIVACY"
+      ],
+      "ruleProvenance": [
+        "character.json#26",
+        "VH77"
+      ],
+      "implementationPath": "backend/src/official/medium-chat.ts",
+      "requiredPassTests": [
+        "Breakthrough VH77 medium private chat: authorization, anonymous projections, retry, SQLite restart, phase close and replay"
+      ],
+      "remainingInteractions": "Bounded [8,25,26] / [8,26,74]; cross-composition eligibility not certified.",
+      "implementationStatus": "IMPLEMENTED_RESTRICTED",
+      "passedTests": [
+        "Breakthrough VH77 medium private chat: authorization, anonymous projections, retry, SQLite restart, phase close and replay"
+      ],
+      "executedTested": true,
+      "historicalEvidenceRetained": true,
+      "scope": "Restricted runtime, not global/full",
+      "requiredBrowser": "browser_s15_breakthrough_medium_e2e"
+    }
+  ],
+  "inventoryDelta": {
+    "addedRoleIds": [],
+    "note": "No new official role or branch certified."
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "version": "1.7.16-s15-breakthrough-wip",
+  "rankBasis": "Bounded runtime unlock first; then certificate closure; unresolved rule choices last. No invented impact score.",
+  "blockers": [
+    {
+      "id": "BT-01",
+      "modules": [
+        "backend/src/official/revival-capability.ts",
+        "backend/src/official/revival.ts",
+        "backend/src/official/s13-mechanics.ts",
+        "backend/src/engine/service.ts"
+      ],
+      "ruleSources": [
+        "VH73",
+        "VH76",
+        "PH-01"
+      ],
+      "characterIds": [
+        8,
+        25,
+        26,
+        74
+      ],
+      "branches": [
+        "WV-A26-REVIVE"
+      ],
+      "certificates": [
+        "FULL #26"
+      ],
+      "status": "PASS_BOUNDED",
+      "testPath": "tests/sprint15-breakthrough-medium.test.mjs",
+      "resolutionCondition": "New supported investigator combination; broader factions still blocked",
+      "priority": 1
+    },
+    {
+      "id": "BT-02",
+      "modules": [
+        "backend/src/official/medium-chat.ts",
+        "frontend/integration.js"
+      ],
+      "ruleSources": [
+        "VH77"
+      ],
+      "characterIds": [
+        26
+      ],
+      "branches": [
+        "WV-A26-ANONYMOUS-CHAT"
+      ],
+      "certificates": [
+        "FULL #26"
+      ],
+      "status": "PASS_BOUNDED",
+      "testPath": "tests/sprint15-breakthrough-medium.test.mjs",
+      "resolutionCondition": "Asymmetric chat real session; bounded eligibility",
+      "priority": 2
+    },
+    {
+      "id": "BT-03",
+      "modules": [
+        "backend/src/official/support-rules.ts",
+        "backend/src/official/capabilities.ts"
+      ],
+      "ruleSources": [
+        "character.json#9",
+        "character.json#31"
+      ],
+      "characterIds": [
+        9,
+        31
+      ],
+      "branches": [
+        "WV-A09-SHIELD",
+        "WV-A31-GUARD"
+      ],
+      "certificates": [
+        "FULL #9",
+        "#31",
+        "Playable [8,9]"
+      ],
+      "status": "PASS_BOUNDED",
+      "testPath": "tests/sprint15-breakthrough-capability.test.mjs",
+      "resolutionCondition": "Same actor history used by validator and UI projection",
+      "priority": 3
+    },
+    {
+      "id": "BT-04",
+      "modules": [
+        "tests/sprint15-breakthrough-snow.test.mjs"
+      ],
+      "ruleSources": [
+        "character.json#8",
+        "character.json#9",
+        "V02",
+        "V03",
+        "QD-01"
+      ],
+      "characterIds": [
+        8,
+        9
+      ],
+      "branches": [
+        "WV-A09-SHIELD"
+      ],
+      "certificates": [
+        "Playable [8,9]"
+      ],
+      "status": "EVIDENCE_READY",
+      "testPath": "tests/sprint15-breakthrough-snow.test.mjs",
+      "resolutionCondition": "Finite interaction and browser obligations",
+      "priority": 4
+    },
+    {
+      "id": "BT-05",
+      "modules": [
+        "scripts/s15-breakthrough-browser-matrix.mjs"
+      ],
+      "ruleSources": [],
+      "characterIds": [],
+      "branches": [],
+      "certificates": [
+        "all certificates"
+      ],
+      "status": "PARTIAL",
+      "testPath": "tests/browser_s15_breakthrough_medium_e2e.py",
+      "resolutionCondition": "All required browser obligations still need execution",
+      "priority": 5
+    },
+    {
+      "id": "BT-06",
+      "modules": [
+        "backend/src/official/protection-consumption.ts"
+      ],
+      "ruleSources": [
+        "VH42",
+        "VH72",
+        "character.json#9"
+      ],
+      "characterIds": [
+        1,
+        9,
+        31,
+        75
+      ],
+      "branches": [
+        "WV-A09-SHIELD",
+        "WV-A31-GUARD"
+      ],
+      "certificates": [
+        "FULL #9",
+        "#31"
+      ],
+      "status": "RULE_DECISION_REQUIRED_OR_NOT_TESTED",
+      "testPath": null,
+      "resolutionCondition": "Resolve sourced multi-layer interaction, not arbitrary priority",
+      "priority": 6
+    },
+    {
+      "id": "BT-07",
+      "modules": [
+        "backend/src/official/revival.ts"
+      ],
+      "ruleSources": [
+        "VH06",
+        "VH73",
+        "VH76",
+        "VH82"
+      ],
+      "characterIds": [
+        23,
+        26,
+        83
+      ],
+      "branches": [
+        "WV-A26-REVIVE"
+      ],
+      "certificates": [
+        "FULL #26"
+      ],
+      "status": "NOT_IMPLEMENTED_GENERAL",
+      "testPath": "tests/sprint15-breakthrough-medium.test.mjs",
+      "resolutionCondition": "Broad faction/exclusion and pending life-state tests",
+      "priority": 7
+    },
+    {
+      "id": "BT-08",
+      "modules": [
+        "backend/src/official/engineer-trap.ts"
+      ],
+      "ruleSources": [
+        "character.json#10",
+        "SK-05",
+        "Q13-06"
+      ],
+      "characterIds": [
+        10,
+        25,
+        74,
+        31
+      ],
+      "branches": [
+        "WV-A10-TRAP-PROTECTION",
+        "WV-A10-TRAP-POISON",
+        "WV-A10-TRAP-RESCUE"
+      ],
+      "certificates": [
+        "FULL #10",
+        "#25",
+        "#74"
+      ],
+      "status": "RULE_DECISION_REQUIRED_OR_NOT_IMPLEMENTED",
+      "testPath": null,
+      "resolutionCondition": "Lifetime decision and inverse effect integration",
+      "priority": 8
+    },
+    {
+      "id": "BT-09",
+      "modules": [
+        "backend/src/experimental/pack-intake.ts"
+      ],
+      "ruleSources": [
+        "VH54",
+        "VH74"
+      ],
+      "characterIds": [
+        48,
+        83,
+        93
+      ],
+      "branches": [],
+      "certificates": [
+        "multi-wolf decks"
+      ],
+      "status": "RULE_DECISION_REQUIRED",
+      "testPath": null,
+      "resolutionCondition": "Owner decision on consensus; no official activation",
+      "priority": 9
+    }
+  ]
+}

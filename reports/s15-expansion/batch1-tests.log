@@ -1,0 +1,26 @@
+TAP version 13
+# (node:55414) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":49,"branch":"illusion.global-aura","skill":"official.49.aura-illusion","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 aura expansion \#49 private distortion, expiry, duplicate and restart
+ok 1 - S15 aura expansion \#49 private distortion, expiry, duplicate and restart
+  ---
+  duration_ms: 1138.24395
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":72,"branch":"curse.single-aura","skill":"official.72.aura-curse","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 aura expansion \#72 private distortion, expiry, duplicate and restart
+ok 2 - S15 aura expansion \#72 private distortion, expiry, duplicate and restart
+  ---
+  duration_ms: 1112.685159
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2477.849727

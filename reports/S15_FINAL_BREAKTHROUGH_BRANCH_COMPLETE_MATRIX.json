@@ -1,0 +1,49 @@
+{
+  "version": "1.7.7-s15-final-breakthrough-wip",
+  "certifiedDecks": [],
+  "candidates": [
+    {
+      "deck": [
+        8,
+        28,
+        88
+      ],
+      "passed": [
+        "hunter current-round mark",
+        "direct and secondary hanging",
+        "knight win",
+        "replay/privacy"
+      ],
+      "blockers": [
+        "knight pulled by hunter leaves Jester alive, no legitimate terminal predicate",
+        "stale mark duration"
+      ]
+    },
+    {
+      "deck": [
+        74,
+        84,
+        93,
+        94
+      ],
+      "passed": [
+        "partner hanging",
+        "one-wolf double bite",
+        "wolf parity"
+      ],
+      "blockers": [
+        "village-only win",
+        "post-conversion seal retention and aura"
+      ]
+    },
+    {
+      "deck": [
+        8,
+        9
+      ],
+      "blockers": [
+        "general village victory predicate unresolved"
+      ]
+    }
+  ]
+}

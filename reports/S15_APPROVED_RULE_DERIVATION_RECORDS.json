@@ -1,0 +1,117 @@
+{
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "records": [
+    {
+      "id": "QD-01",
+      "classification": "VERIFIED RULE",
+      "sources": [
+        "WV-RULE-DECISION-2026-11-25-001",
+        "QD-01"
+      ],
+      "conclusion": "Khi toàn bộ Sói và các nhân vật phe Ba có khả năng tranh chấp đã bị loại, phe Dân chiến thắng nếu còn ít nhất một thành viên được tính quân số. Các thành viên thuộc phe Dân khi xét thắng đồng thắng, kể cả đã chết; bảo toàn ngoại lệ thắng cá nhân, đồng thắng, chuyển phe.",
+      "implementation": [
+        "backend/src/official/victory-predicates.ts",
+        "backend/src/official/victory-resolver.ts"
+      ],
+      "evidence": {
+        "integration": [
+          "QD01 [8,25] Village victory after valid hanging; no vote, tie, retry, change, phase, privacy, replay",
+          "QD01 [8,25] knight night victory with seer action before death; both choices private",
+          "QD01 [8,25] Knight wins by hanging, Village cannot win with contender alive",
+          "QD01 dead Village teammate wins by current faction; opposite direction [8,9,25]",
+          "QD01 historical active game stays 1.3.2 after restart; old winner behavior and replay unchanged",
+          "QD01 #48 two victims via shared pack, retry, target limits, authorized projection and replay",
+          "QD01 #48 sole wolf blocks Village victory until true hanging",
+          "QD01 direct Jester hanging with live Hunter mark yields Village and Jester co-winners",
+          "QD01 revenge skip after true hanging closes chain and Village wins",
+          "QD01 [8,25] all 16 final ballot combinations including self, abstention and explicit blank",
+          "QD01 [8,25] night kill without inspection, terminal phase rejects actions",
+          "QD01 current alignment and pending-life counterexamples on a real session snapshot"
+        ],
+        "browser": [
+          "browser_s15_approved_village_e2e.py",
+          "browser_s15_approved_team_e2e.py",
+          "browser_s15_approved_knight_e2e.py"
+        ],
+        "log": "reports/s15-approved/clean-full-backend.log"
+      }
+    },
+    {
+      "id": "QD-02",
+      "classification": "VERIFIED RULE",
+      "sources": [
+        "WV-RULE-DECISION-2026-11-25-001",
+        "QD-02"
+      ],
+      "conclusion": "Khi Sói Lừa Gạt bị treo thật và có lượt báo thù, lựa chọn hợp lệ về cấu trúc và công khai nhưng không thuộc phe Dân tiêu hao lượt, không giết, không thông báo phe, không chọn lại.",
+      "implementation": [
+        "backend/src/official/post-hanging-revenge.ts",
+        "backend/src/engine/service.ts"
+      ],
+      "evidence": {
+        "integration": [
+          "QD02 wrong alignment consumes revenge without disclosure or retry; Village and Jester co-win",
+          "QD02 valid revenge after hanging, Hunter follow completes before dead Village teammates win"
+        ],
+        "browser": [
+          "browser_s15_approved_revenge_e2e.py"
+        ],
+        "log": "reports/s15-approved/clean-full-backend.log"
+      }
+    },
+    {
+      "id": "QD-03",
+      "classification": "VERIFIED RULE",
+      "sources": [
+        "WV-RULE-DECISION-2026-11-25-001",
+        "QD-03"
+      ],
+      "conclusion": "Ghim của Thợ Săn có hiệu lực trong đêm tương ứng và ngày sau đó cho đến khi đêm tiếp theo bắt đầu. Khi sang đêm mới ghim cũ hết hiệu lực; không ghim mới thì không còn ghim.",
+      "implementation": [
+        "backend/src/engine/state.ts",
+        "backend/src/official/s13-mechanics.ts"
+      ],
+      "evidence": {
+        "integration": [
+          "QD03 pin expires at next night before no-repin death, replay and retry",
+          "QD03 pin reselect same target or change target, daytime follow still valid"
+        ],
+        "browser": [
+          "browser_s15_approved_pin_e2e.py"
+        ],
+        "log": "reports/s15-approved/clean-full-backend.log"
+      }
+    },
+    {
+      "id": "S15-48-SOLE-WOLF",
+      "classification": "LOGICALLY DERIVED RULE",
+      "sources": [
+        "character.json#48",
+        "existing pack bite #93 pipeline",
+        "WIN-03"
+      ],
+      "premises": [
+        "#48 explicitly may bite two people at night when sole wolf",
+        "current living wolf count in admitted deck is exactly one"
+      ],
+      "conclusion": "reuse one-wolf pack pipeline; up to two distinct living nonself Village targets in admitted composition",
+      "conflictCheck": "No multi-wolf consensus or new team chat rights; no general protection order inferred",
+      "evidence": [
+        "QD01 #48 two victims via shared pack, retry, target limits, authorized projection and replay",
+        "QD01 #48 sole wolf blocks Village victory until true hanging"
+      ],
+      "implementation": [
+        "backend/src/official/final-pack.ts",
+        "backend/src/official/s13-mechanics.ts"
+      ]
+    },
+    {
+      "id": "S15-ARCHIVED-REGRESSION",
+      "classification": "ENGINEERING INTERPRETATION",
+      "sources": [
+        "Rule version binding requirement"
+      ],
+      "conclusion": "Archived expectations run in 1.3.2; 1.3.3 has new and role-local acceptance; no historical events reinterpreted."
+    }
+  ]
+}

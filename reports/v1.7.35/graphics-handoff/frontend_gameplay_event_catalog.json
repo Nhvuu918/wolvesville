@@ -1,0 +1,70 @@
+{
+  "version": "s06-event-handoff-v1",
+  "competitive": false,
+  "events": [
+    {
+      "type": "PHASE_CHANGED",
+      "status": "IMPLEMENTED & TESTED",
+      "audience": "ROOM_PUBLIC",
+      "animation": "fade whole stage; show all text immediately",
+      "source": "backend/src/engine/service.ts",
+      "reconnect": "derive current phase from authorized snapshot"
+    },
+    {
+      "type": "VOTING_OPENED",
+      "status": "IMPLEMENTED & TESTED",
+      "audience": "ROOM_PUBLIC",
+      "animation": "show vote panel as a whole",
+      "source": "backend/src/engine/service.ts",
+      "reconnect": "snapshot.voting"
+    },
+    {
+      "type": "VOTE_INTENT_RECORDED",
+      "status": "IMPLEMENTED & TESTED",
+      "audience": "PLAYER_PRIVATE",
+      "animation": "instant confirmation only",
+      "source": "backend/src/engine/service.ts",
+      "reconnect": "snapshot.voting.ownBallot"
+    },
+    {
+      "type": "ROLE_OBSERVED",
+      "status": "IMPLEMENTED & TESTED",
+      "audience": "PLAYER_PRIVATE",
+      "animation": "show result as a whole; no early reveal",
+      "source": "backend/src/official/peace-rules.ts and inspection-effects.ts",
+      "reconnect": "authorized feedback"
+    },
+    {
+      "type": "VOTING_CANCELLED",
+      "status": "IMPLEMENTED & TESTED",
+      "audience": "ROOM_PUBLIC",
+      "animation": "hide vote panel; phase transition separately",
+      "source": "backend/src/engine/service.ts",
+      "reconnect": "snapshot.voting.status=CANCELLED"
+    },
+    {
+      "type": "VOTING_CLOSED_PENDING_RULES",
+      "status": "PARTIAL",
+      "audience": "ROOM_PUBLIC",
+      "animation": "show voting closed with no elimination",
+      "source": "backend/src/engine/service.ts",
+      "reconnect": "snapshot.voting.status=CLOSED_UNRESOLVED"
+    },
+    {
+      "type": "PLAYER_ELIMINATED",
+      "status": "BLOCKED BY RULE",
+      "audience": null,
+      "animation": null,
+      "source": null,
+      "reconnect": null
+    },
+    {
+      "type": "GAME_COMPLETED",
+      "status": "BLOCKED BY RULE",
+      "audience": null,
+      "animation": null,
+      "source": null,
+      "reconnect": null
+    }
+  ]
+}

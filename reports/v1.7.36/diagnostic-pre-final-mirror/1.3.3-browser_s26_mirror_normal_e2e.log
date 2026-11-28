@@ -1,0 +1,21 @@
+E2E_SCHEDULER_WAIT exclusive 29793
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 595
+E2E_RESOURCE start cpu "usage_usec 3884146686\nuser_usec 3255059434\nsystem_usec 629087252\nnice_usec 2171690\nnr_periods 43449\nnr_throttled 1280\nthrottled_usec 39658332\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s26_mirror_normal_e2e.py default port 41899 db /tmp/wolvesville-s06-browser-D5zJUs/test.sqlite
+ACTUAL_SCREENSHOT mobile-night {'width': 390, 'height': 844} 0 []
+ACTUAL_SCREENSHOT mobile-day {'width': 390, 'height': 844} 0 []
+S26_CONTRAST basiclight [{"foreground": "rgb(34, 43, 56)", "background": "rgb(24, 21, 44)", "ratio": 1.2437244126241493, "dead": true, "selected": "false"}, {"foreground": "rgb(34, 43, 56)", "background": "rgb(24, 21, 44)", "ratio": 1.2437244126241493, "dead": false, "selected": "true"}, {"foreground": "rgb(34, 43, 56)", "background": "rgb(24, 21, 44)", "ratio": 1.2437244126241493, "dead": false, "selected": "false"}, {"foreground": "rgb(34, 43, 56)", "background": "rgb(24, 21, 44)", "ratio": 1.2437244126241493, "dead": false, "selected": "false"}]
+Traceback (most recent call last):
+  File "/tmp/wv36/tests/browser_s26_mirror_normal_e2e.py", line 63, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/tmp/wv36/tests/browser_s26_mirror_normal_e2e.py", line 53, in run
+    print('S26_CONTRAST',theme,json.dumps(vals),flush=True);assert all(v['ratio']>=4.5 for v in vals),vals;captured(a,theme+'-hud')
+                                                                   ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [{'foreground': 'rgb(34, 43, 56)', 'background': 'rgb(24, 21, 44)', 'ratio': 1.2437244126241493, 'dead': True, 'selected': 'false'}, {'foreground': 'rgb(34, 43, 56)', 'background': 'rgb(24, 21, 44)', 'ratio': 1.2437244126241493, 'dead': False, 'selected': 'true'}, {'foreground': 'rgb(34, 43, 56)', 'background': 'rgb(24, 21, 44)', 'ratio': 1.2437244126241493, 'dead': False, 'selected': 'false'}, {'foreground': 'rgb(34, 43, 56)', 'background': 'rgb(24, 21, 44)', 'ratio': 1.2437244126241493, 'dead': False, 'selected': 'false'}]
+Error: E2E failed browser_s26_mirror_normal_e2e.py, exit=1, signal=null
+    at file:///tmp/wv36/scripts/run-browser-s06.mjs:70:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+E2E_RESOURCE end cpu "usage_usec 3921901106\nuser_usec 3285851979\nsystem_usec 636049127\nnice_usec 2171690\nnr_periods 43602\nnr_throttled 1295\nthrottled_usec 40137448\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

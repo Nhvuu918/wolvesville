@@ -1,0 +1,853 @@
+{
+  "scope": "Computed opaque foreground/background samples in live night HUD; not full WCAG certification; keyboard seat focus/Space selection PASS",
+  "themes": [
+    {
+      "theme": "moon",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(244, 238, 250)",
+          "background": "rgb(24, 21, 44)",
+          "backgroundImage": "none",
+          "contrast": 15.61
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(244, 238, 250)",
+          "background": "rgb(24, 21, 44)",
+          "backgroundImage": "none",
+          "contrast": 15.61
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(244, 238, 250)",
+          "background": "rgb(24, 21, 44)",
+          "backgroundImage": "none",
+          "contrast": 15.61
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(244, 238, 250)",
+          "background": "rgb(24, 21, 44)",
+          "backgroundImage": "none",
+          "contrast": 15.61
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(244, 238, 250)",
+          "background": "rgb(34, 29, 61)",
+          "backgroundImage": "none",
+          "contrast": 14.08
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(244, 238, 250)",
+          "background": "rgb(34, 29, 61)",
+          "backgroundImage": "none",
+          "contrast": 14.08
+        }
+      ]
+    },
+    {
+      "theme": "gothic",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(246, 231, 237)",
+          "background": "rgb(27, 16, 28)",
+          "backgroundImage": "none",
+          "contrast": 15.45
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(246, 231, 237)",
+          "background": "rgb(24, 21, 44)",
+          "backgroundImage": "none",
+          "contrast": 14.86
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(246, 231, 237)",
+          "background": "rgb(27, 16, 28)",
+          "backgroundImage": "none",
+          "contrast": 15.45
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(246, 231, 237)",
+          "background": "rgb(27, 16, 28)",
+          "backgroundImage": "none",
+          "contrast": 15.45
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(246, 231, 237)",
+          "background": "rgb(44, 25, 46)",
+          "backgroundImage": "none",
+          "contrast": 13.67
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(246, 231, 237)",
+          "background": "rgb(44, 25, 46)",
+          "backgroundImage": "none",
+          "contrast": 13.67
+        }
+      ]
+    },
+    {
+      "theme": "classic",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(242, 240, 235)",
+          "background": "rgb(24, 26, 32)",
+          "backgroundImage": "none",
+          "contrast": 15.27
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(242, 240, 235)",
+          "background": "rgb(24, 21, 44)",
+          "backgroundImage": "none",
+          "contrast": 15.59
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(242, 240, 235)",
+          "background": "rgb(24, 26, 32)",
+          "backgroundImage": "none",
+          "contrast": 15.27
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(242, 240, 235)",
+          "background": "rgb(24, 26, 32)",
+          "backgroundImage": "none",
+          "contrast": 15.27
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(242, 240, 235)",
+          "background": "rgb(36, 40, 48)",
+          "backgroundImage": "none",
+          "contrast": 12.97
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(242, 240, 235)",
+          "background": "rgb(36, 40, 48)",
+          "backgroundImage": "none",
+          "contrast": 12.97
+        }
+      ]
+    },
+    {
+      "theme": "basicdark",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(230, 234, 240)",
+          "background": "rgb(32, 38, 46)",
+          "backgroundImage": "none",
+          "contrast": 12.62
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(230, 234, 240)",
+          "background": "rgb(24, 21, 44)",
+          "backgroundImage": "none",
+          "contrast": 14.71
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(230, 234, 240)",
+          "background": "rgb(32, 38, 46)",
+          "backgroundImage": "none",
+          "contrast": 12.62
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(230, 234, 240)",
+          "background": "rgb(32, 38, 46)",
+          "backgroundImage": "none",
+          "contrast": 12.62
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(230, 234, 240)",
+          "background": "rgb(44, 52, 62)",
+          "backgroundImage": "none",
+          "contrast": 10.43
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(230, 234, 240)",
+          "background": "rgb(44, 52, 62)",
+          "backgroundImage": "none",
+          "contrast": 10.43
+        }
+      ]
+    },
+    {
+      "theme": "basiclight",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(34, 43, 56)",
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "contrast": 14.28
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(34, 43, 56)",
+          "background": "rgb(24, 21, 44)",
+          "backgroundImage": "none",
+          "contrast": 1.24
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(34, 43, 56)",
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "contrast": 14.28
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(34, 43, 56)",
+          "background": "rgb(255, 255, 255)",
+          "backgroundImage": "none",
+          "contrast": 14.28
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(34, 43, 56)",
+          "background": "rgb(234, 239, 245)",
+          "backgroundImage": "none",
+          "contrast": 12.35
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(34, 43, 56)",
+          "background": "rgb(234, 239, 245)",
+          "backgroundImage": "none",
+          "contrast": 12.35
+        }
+      ]
+    },
+    {
+      "theme": "cream",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(59, 51, 43)",
+          "background": "rgb(255, 250, 242)",
+          "backgroundImage": "none",
+          "contrast": 11.93
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(59, 51, 43)",
+          "background": "rgb(24, 21, 44)",
+          "backgroundImage": "none",
+          "contrast": 1.43
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(59, 51, 43)",
+          "background": "rgb(255, 250, 242)",
+          "backgroundImage": "none",
+          "contrast": 11.93
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(59, 51, 43)",
+          "background": "rgb(255, 250, 242)",
+          "backgroundImage": "none",
+          "contrast": 11.93
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(59, 51, 43)",
+          "background": "rgb(236, 227, 213)",
+          "backgroundImage": "none",
+          "contrast": 9.75
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(59, 51, 43)",
+          "background": "rgb(236, 227, 213)",
+          "backgroundImage": "none",
+          "contrast": 9.75
+        }
+      ]
+    },
+    {
+      "theme": "sage",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(40, 56, 48)",
+          "background": "rgb(248, 250, 247)",
+          "backgroundImage": "none",
+          "contrast": 11.78
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(40, 56, 48)",
+          "background": "rgb(24, 21, 44)",
+          "backgroundImage": "none",
+          "contrast": 1.44
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(40, 56, 48)",
+          "background": "rgb(248, 250, 247)",
+          "backgroundImage": "none",
+          "contrast": 11.78
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(40, 56, 48)",
+          "background": "rgb(248, 250, 247)",
+          "backgroundImage": "none",
+          "contrast": 11.78
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(40, 56, 48)",
+          "background": "rgb(223, 232, 223)",
+          "backgroundImage": "none",
+          "contrast": 9.86
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(40, 56, 48)",
+          "background": "rgb(223, 232, 223)",
+          "backgroundImage": "none",
+          "contrast": 9.86
+        }
+      ]
+    },
+    {
+      "theme": "europe",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(247, 237, 215)",
+          "background": "rgb(36, 28, 21)",
+          "backgroundImage": "none",
+          "contrast": 14.42
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(247, 237, 215)",
+          "background": "rgb(33, 30, 52)",
+          "backgroundImage": "none",
+          "contrast": 13.88
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(247, 237, 215)",
+          "background": "rgb(36, 28, 21)",
+          "backgroundImage": "none",
+          "contrast": 14.42
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(247, 237, 215)",
+          "background": "rgb(36, 28, 21)",
+          "backgroundImage": "none",
+          "contrast": 14.42
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(247, 237, 215)",
+          "background": "rgb(51, 39, 29)",
+          "backgroundImage": "none",
+          "contrast": 12.46
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(247, 237, 215)",
+          "background": "rgb(51, 39, 29)",
+          "backgroundImage": "none",
+          "contrast": 12.46
+        }
+      ]
+    },
+    {
+      "theme": "eastasia",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(249, 238, 231)",
+          "background": "rgb(33, 26, 32)",
+          "backgroundImage": "none",
+          "contrast": 14.93
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(249, 238, 231)",
+          "background": "rgb(33, 30, 51)",
+          "backgroundImage": "none",
+          "contrast": 14.18
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(249, 238, 231)",
+          "background": "rgb(33, 26, 32)",
+          "backgroundImage": "none",
+          "contrast": 14.93
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(249, 238, 231)",
+          "background": "rgb(33, 26, 32)",
+          "backgroundImage": "none",
+          "contrast": 14.93
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(249, 238, 231)",
+          "background": "rgb(50, 36, 43)",
+          "backgroundImage": "none",
+          "contrast": 12.94
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(249, 238, 231)",
+          "background": "rgb(50, 36, 43)",
+          "backgroundImage": "none",
+          "contrast": 12.94
+        }
+      ]
+    },
+    {
+      "theme": "jade",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(233, 246, 233)",
+          "background": "rgb(16, 40, 33)",
+          "backgroundImage": "none",
+          "contrast": 13.97
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(233, 246, 233)",
+          "background": "rgb(33, 30, 51)",
+          "backgroundImage": "none",
+          "contrast": 14.5
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(233, 246, 233)",
+          "background": "rgb(16, 40, 33)",
+          "backgroundImage": "none",
+          "contrast": 13.97
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(233, 246, 233)",
+          "background": "rgb(16, 40, 33)",
+          "backgroundImage": "none",
+          "contrast": 13.97
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(233, 246, 233)",
+          "background": "rgb(27, 59, 49)",
+          "backgroundImage": "none",
+          "contrast": 10.97
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(233, 246, 233)",
+          "background": "rgb(27, 59, 49)",
+          "backgroundImage": "none",
+          "contrast": 10.97
+        }
+      ]
+    },
+    {
+      "theme": "sakura",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(255, 240, 248)",
+          "background": "rgb(47, 31, 51)",
+          "backgroundImage": "none",
+          "contrast": 13.98
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(255, 240, 248)",
+          "background": "rgb(33, 30, 51)",
+          "backgroundImage": "none",
+          "contrast": 14.69
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(255, 240, 248)",
+          "background": "rgb(47, 31, 51)",
+          "backgroundImage": "none",
+          "contrast": 13.98
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(255, 240, 248)",
+          "background": "rgb(47, 31, 51)",
+          "backgroundImage": "none",
+          "contrast": 13.98
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(255, 240, 248)",
+          "background": "rgb(66, 43, 71)",
+          "backgroundImage": "none",
+          "contrast": 11.43
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(255, 240, 248)",
+          "background": "rgb(66, 43, 71)",
+          "backgroundImage": "none",
+          "contrast": 11.43
+        }
+      ]
+    },
+    {
+      "theme": "loli",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(255, 241, 255)",
+          "background": "rgb(40, 31, 69)",
+          "backgroundImage": "none",
+          "contrast": 14.05
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(255, 241, 255)",
+          "background": "rgb(33, 30, 52)",
+          "backgroundImage": "none",
+          "contrast": 14.83
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(255, 241, 255)",
+          "background": "rgb(40, 31, 69)",
+          "backgroundImage": "none",
+          "contrast": 14.05
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(255, 241, 255)",
+          "background": "rgb(40, 31, 69)",
+          "backgroundImage": "none",
+          "contrast": 14.05
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(255, 241, 255)",
+          "background": "rgb(62, 45, 94)",
+          "backgroundImage": "none",
+          "contrast": 11.07
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(255, 241, 255)",
+          "background": "rgb(62, 45, 94)",
+          "backgroundImage": "none",
+          "contrast": 11.07
+        }
+      ]
+    },
+    {
+      "theme": "frost",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(237, 249, 255)",
+          "background": "rgb(16, 40, 56)",
+          "backgroundImage": "none",
+          "contrast": 14.17
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(237, 249, 255)",
+          "background": "rgb(33, 30, 52)",
+          "backgroundImage": "none",
+          "contrast": 15.07
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(237, 249, 255)",
+          "background": "rgb(16, 40, 56)",
+          "backgroundImage": "none",
+          "contrast": 14.17
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(237, 249, 255)",
+          "background": "rgb(16, 40, 56)",
+          "backgroundImage": "none",
+          "contrast": 14.17
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(237, 249, 255)",
+          "background": "rgb(26, 60, 80)",
+          "backgroundImage": "none",
+          "contrast": 10.85
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(237, 249, 255)",
+          "background": "rgb(26, 60, 80)",
+          "backgroundImage": "none",
+          "contrast": 10.85
+        }
+      ]
+    },
+    {
+      "theme": "bloodmoon",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(255, 240, 233)",
+          "background": "rgb(38, 16, 21)",
+          "backgroundImage": "none",
+          "contrast": 16.18
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(255, 240, 233)",
+          "background": "rgb(33, 30, 52)",
+          "backgroundImage": "none",
+          "contrast": 14.53
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(255, 240, 233)",
+          "background": "rgb(38, 16, 21)",
+          "backgroundImage": "none",
+          "contrast": 16.18
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(255, 240, 233)",
+          "background": "rgb(38, 16, 21)",
+          "backgroundImage": "none",
+          "contrast": 16.18
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(255, 240, 233)",
+          "background": "rgb(59, 26, 34)",
+          "backgroundImage": "none",
+          "contrast": 13.92
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(255, 240, 233)",
+          "background": "rgb(59, 26, 34)",
+          "backgroundImage": "none",
+          "contrast": 13.92
+        }
+      ]
+    },
+    {
+      "theme": "forest",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(237, 245, 232)",
+          "background": "rgb(23, 35, 24)",
+          "backgroundImage": "none",
+          "contrast": 14.59
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(237, 245, 232)",
+          "background": "rgb(33, 30, 52)",
+          "backgroundImage": "none",
+          "contrast": 14.48
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(237, 245, 232)",
+          "background": "rgb(23, 35, 24)",
+          "backgroundImage": "none",
+          "contrast": 14.59
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(237, 245, 232)",
+          "background": "rgb(23, 35, 24)",
+          "backgroundImage": "none",
+          "contrast": 14.59
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(237, 245, 232)",
+          "background": "rgb(37, 54, 38)",
+          "backgroundImage": "none",
+          "contrast": 11.52
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(237, 245, 232)",
+          "background": "rgb(37, 54, 38)",
+          "backgroundImage": "none",
+          "contrast": 11.52
+        }
+      ]
+    },
+    {
+      "theme": "royal",
+      "samples": [
+        {
+          "selector": ".wv-match-side",
+          "available": true,
+          "foreground": "rgb(238, 240, 255)",
+          "background": "rgb(23, 29, 56)",
+          "backgroundImage": "none",
+          "contrast": 14.61
+        },
+        {
+          "selector": ".arena-seat",
+          "available": true,
+          "foreground": "rgb(238, 240, 255)",
+          "background": "rgb(33, 30, 51)",
+          "backgroundImage": "none",
+          "contrast": 14.28
+        },
+        {
+          "selector": ".hud-left-cluster",
+          "available": true,
+          "foreground": "rgb(238, 240, 255)",
+          "background": "rgb(23, 29, 56)",
+          "backgroundImage": "none",
+          "contrast": 14.61
+        },
+        {
+          "selector": ".ingame-dialogue-bar",
+          "available": true,
+          "foreground": "rgb(238, 240, 255)",
+          "background": "rgb(23, 29, 56)",
+          "backgroundImage": "none",
+          "contrast": 14.61
+        },
+        {
+          "selector": ".btn-secondary",
+          "available": true,
+          "foreground": "rgb(238, 240, 255)",
+          "background": "rgb(37, 47, 84)",
+          "backgroundImage": "none",
+          "contrast": 11.49
+        },
+        {
+          "selector": ".wv-public-chat",
+          "available": true,
+          "foreground": "rgb(238, 240, 255)",
+          "background": "rgb(37, 47, 84)",
+          "backgroundImage": "none",
+          "contrast": 11.49
+        }
+      ]
+    }
+  ]
+}

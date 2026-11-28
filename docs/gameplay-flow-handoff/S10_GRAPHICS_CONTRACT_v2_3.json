@@ -1,0 +1,19 @@
+{
+  "contractVersion":"2.3",
+  "extends":"2.2",
+  "breakingChanges":false,
+  "serverAuthoritative":true,
+  "events":[
+    {"event":"SOUL_JUDGMENT_OBSERVED","graphicsSource":"OWN_FEEDBACK","resultType":"AURA_INFORMATION","audience":"PLAYER_PRIVATE_ACTOR","hook":"soul-judgment-reveal","status":"IMPLEMENTED_AND_TESTED","publicReveal":false},
+    {"event":"SKILL_LOCK_NOTICE","graphicsSource":"AUTHORIZED_EVENTS","audience":"PLAYER_PRIVATE_TARGET","hook":"skill-locked-toast","status":"IMPLEMENTED_AND_TESTED","casterIdentityExposed":false},
+    {"event":"OFFICIAL_NIGHTMARE_APPLIED","graphicsSource":"SERVER_INTERNAL","audience":"NONE","hook":null,"status":"ENGINE_ONLY"},
+    {"event":"ACTION_ACCEPTED","graphicsSource":"OWN_ACTION_ACK","audience":"PLAYER_PRIVATE_ACTOR","hook":"skill-action-pending","status":"INHERITED"},
+    {"event":"VOTE_LOCKED_UNRESOLVED","graphicsSource":"AUTHORIZED_GAME_PROJECTION","audience":"ROOM_AUTHORIZED","hook":"vote-locked-await-rules","status":"INHERITED"},
+    {"event":"HANGING_ELIMINATION","graphicsSource":"NONE","audience":"NONE","hook":null,"status":"BLOCKED_BY_RULE"}
+  ],
+  "compatibility":{"2.2":"All pre-existing event names/payload audiences remain unchanged; new event families additive"},
+  "reconnect":"Reconcile current authorized server projection; do not replay stale animations",
+  "reducedMotion":"Instant text, no repeating motion",
+  "clientCanCommitElimination":false,
+  "clientCanCommitVictory":false
+}

@@ -1,0 +1,37 @@
+
+> wolvesville-sprint09-voting-multiround@1.1.0-s09 test:browser:09:all
+> npm run build && node scripts/run-browser-s06.mjs browser_s09_e2e.py browser_s08_gameplay_e2e.py browser_s07_e2e.py browser_s06_e2e.py browser_s05_e2e.py browser_lobby_e2e.py browser_codex_e2e.py browser_demo_e2e.py browser_e2e.py browser_ux_e2e.py
+
+
+> wolvesville-sprint09-voting-multiround@1.1.0-s09 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+S09_BROWSER_PASS: approved three-player closed deck, server assigned roles and ACL
+S09_BROWSER_PASS: wolf UI submitted official coercion; no early public result
+S09_BROWSER_PASS: 3 real ballots, server locks votes, ACL and reconnect; no fabricated hanging/winner
+Task exception was never retrieved
+future: <Task finished name='Task-888' coro=<Channel.send() done, defined at /opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py:61> exception=TargetClosedError('Channel.send: Target page, context or browser has been closed')>
+Traceback (most recent call last):
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Channel.send: Target page, context or browser has been closed
+S06_BROWSER_PASS browser_s09_e2e.py
+S08_GAMEPLAY_BROWSER_PASS: two official roles server-assigned, private projections, real skill capability
+S08_GAMEPLAY_BROWSER_PASS: action accepted but not shown as resolved or winner
+S08_GAMEPLAY_BROWSER_PASS: certified elimination and winner after commit; UI, WS, reconnect, winner ACL
+S06_BROWSER_PASS browser_s08_gameplay_e2e.py
+S07_BROWSER_PASS: two official roles server-assigned, private projections, real skill capability
+S07_BROWSER_PASS: action accepted but not shown as resolved or winner
+S07_BROWSER_PASS: certified elimination and winner after commit; UI, WS, reconnect, winner ACL
+S06_BROWSER_PASS browser_s07_e2e.py
+S06_BROWSER_PASS: UI room host selected official 3-seat peace-wolf deck; private role projections
+S06_BROWSER_PASS: night resolution -> dawn -> vote intake, two realtime clients
+S06_BROWSER_PASS: server accepted private ballot and official #79 skill; no early disclosure
+S06_BROWSER_PASS: PH-02 cancels vote, returns to next night; replay, privacy, reconnect, Codex intact
+S06_BROWSER_PASS browser_s06_e2e.py

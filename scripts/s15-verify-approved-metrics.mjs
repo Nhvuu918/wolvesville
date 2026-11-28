@@ -1,0 +1,52 @@
+import {spawnSync} from 'node:child_process';
+import {readFileSync,writeFileSync,existsSync,mkdirSync} from 'node:fs';
+const read=p=>JSON.parse(readFileSync(p,'utf8')),write=(p,v)=>writeFileSync(p,JSON.stringify(v,null,2)+'\n');
+const prefix='reports/s15-approved/';mkdirSync(prefix,{recursive:true});
+const env={...process.env};delete env.WV_ARCHIVED_RULE_REGRESSION;
+// Preserve historical reports while re-running their original evidence script.
+const archivedPaths=['reports/S15_METRICS.json','reports/S15_CLOSURE_CHARACTER_ID_DELTA.json','reports/S15_CLOSURE_ATOMIC_COVERAGE.json','data/rule-intelligence-s15/character_readiness_97.json','reports/S15_SKILL_BRANCH_COVERAGE.json'];
+const backups=archivedPaths.map(p=>[p,readFileSync(p)]);
+function run(args,env,name){const r=spawnSync(process.execPath,args,{env,encoding:'utf8',maxBuffer:32*1024*1024});writeFileSync(prefix+name+'.log',(r.stdout||'')+(r.stderr||''));if(r.status!==0)throw Error(`${name} exit ${r.status}`);return r.stdout;}
+let old,legacy,current;
+const fullLog=process.argv.includes('--from-regression')?process.argv[process.argv.indexOf('--from-regression')+1]:null;
+if(fullLog){
+ legacy=readFileSync(fullLog,'utf8');if(!/^# fail 0$/m.test(legacy)||!/^# pass \d+$/m.test(legacy))throw Error('Unfinished or failing full regression');
+ // Reconstruct prior coverage from actual emitted evidence in this full run.
+ const get=p=>legacy.split('\n').map(s=>s.replaceAll('\\#','#')).filter(s=>s.startsWith('# '+p+' ')||s.startsWith('# # '+p+' ')).map(s=>JSON.parse(s.slice(s.indexOf(p)+p.length+1)));
+ const e14=get('S14_EVIDENCE'),e15=[...get('S15_EVIDENCE'),...get('S15_DEEP_EVIDENCE'),...get('S15_BREAK_EVIDENCE')],e12=get('METRIC_EVIDENCE'),m=[...e12,...get('S15_MATCH_EVIDENCE')];
+ const b=read('data/rule-intelligence-s13/character_readiness_97.json');const baseIds=[...new Set([...b.filter(r=>r.executedSkillIds.length&&r.proofStatus!=='NO_EXECUTABLE_TEST').map(r=>r.characterId),...e14.map(e=>e.id)])];
+ const ids=[...new Set([...baseIds,...e15.map(e=>e.id)])].sort((a,b)=>a-b),key=a=>[...a].sort((a,b)=>a-b).join(','),qual=e=>e.restartReplay&&e.privacy&&e.multiClient;
+ const completed=new Set(m.filter(e=>qual(e)&&e.completed).map(e=>key(e.ids)));for(const e of e14)if(e.completedDeck)completed.add(key(e.completedDeck));
+ const before=read('reports/S15_PRE_APPROVED_METRICS.json');const B=new Set(m.filter(e=>qual(e)&&e.voteChain).map(e=>key(e.ids))).size;
+ if(JSON.stringify(ids)!==JSON.stringify(before.metricR.ids)||completed.size!==before.metricA||B!==before.metricB)throw Error('Baseline evidence mismatch in current full regression: '+JSON.stringify({ids,A:completed.size,B}));
+ old={...before,metricR:{...before.metricR,ids,executableCharacters:ids.length},metricA:completed.size,metricB:B,completedDecks:[...completed]};
+ current=legacy; // approved test file explicitly selects new version; historical tests run archived
+}else{
+ try{legacy=run(['scripts/s15-verify-metrics.mjs'],{...env,WV_ARCHIVED_RULE_REGRESSION:'1'},'metrics-archived');old=read('reports/S15_METRICS.json');}finally{for(const [p,b] of backups)writeFileSync(p,b);}
+ current=run(['--test','tests/sprint15-approved.test.mjs'],env,'metrics-approved');
+}
+const pattern='protects #28|linked death is not hanging|anonymous ballot contract|declined or breached|swaps aura|hanging follow kills #28|hanging follow to Knight|hanging without mark|night follow and #28|cancelled leading ballot|hanging wins with other contenders|snow shield absorbs|night-only snow|death ledger rejects|night elimination and legitimate knight win|zero, tie, blank';
+const role=run(['--test','--test-name-pattern='+pattern,'tests/sprint15-breakthrough.test.mjs','tests/sprint15-final-breakthrough.test.mjs','tests/sprint15-deep.test.mjs','tests/sprint15-closure.test.mjs','tests/sprint08-gameplay.test.mjs','tests/sprint11-voting.test.mjs'],env,'metrics-role28');
+const parse=(text,p)=>text.split('\n').filter(l=>l.startsWith('# '+p+' ')||l.startsWith('# # '+p+' ')).map(l=>JSON.parse(l.slice(l.indexOf(p)+p.length+1)));
+const names=t=>new Set(t.split('\n').filter(l=>/^ok \d+ - /.test(l)&&!/# SKIP/.test(l)).map(l=>l.replace(/^ok \d+ - /,'').replaceAll('\\#','#')));
+const pass=new Set([...names(legacy),...names(current),...names(role)]),newPass=new Set([...Array.from(names(current)).filter(n=>n.startsWith('QD')),...names(role)]);
+const evidence=parse(current,'S15_APPROVED_EVIDENCE').filter(e=>e.restart&&e.replay&&e.privacy),matches=parse(current,'S15_APPROVED_MATCH').filter(e=>e.completed&&e.restartReplay&&e.privacy&&e.multiClient);
+const key=a=>[...a].sort((a,b)=>a-b).join(','),oldKeys=new Set(old.completedDecks),allKeys=new Set([...oldKeys,...matches.map(e=>key(e.ids))]);
+const newB=new Set(matches.filter(e=>e.voteChain&&!oldKeys.has(key(e.ids))).map(e=>key(e.ids)));
+const ids=[...new Set([...old.metricR.ids,...evidence.map(e=>e.id)])].sort((a,b)=>a-b),before=read('reports/S15_PRE_APPROVED_METRICS.json');
+const reg=read('data/rules/s15_approved_atomic_branch_registry.json');
+const branches=reg.branches.map(b=>({...b,passedTests:b.requiredPassTests.filter(n=>pass.has(n)),executedTested:b.requiredPassTests.length>0&&b.requiredPassTests.every(n=>pass.has(n))}));
+const browser=n=>{const p=prefix+'browser-'+n;return existsSync(p+'.exit')&&readFileSync(p+'.exit','utf8').trim()==='0'&&readFileSync(p+'.log','utf8').includes('S06_BROWSER_PASS browser_s15_approved_'+n+'_e2e.py')&&!/TargetClosedError|BRIDGE_READER_FAILURE|Task exception was never retrieved|BROWSER_RESOURCE_LEAK/.test(readFileSync(p+'.log','utf8'));};
+const r28Required=reg.branches.find(b=>b.characterId===28).requiredPassTests.filter(n=>!n.includes('direct hanging remains winning despite a live Hunter mark'));
+// That historical assertion expects an archived winner set; explicit new-version replacement required.
+r28Required.push('QD01 direct Jester hanging with live Hunter mark yields Village and Jester co-winners');
+const r28={characterId:28,ruleVersion:'wolvesville-official-v1.3.3',ruleSources:['character.json#28','NV31','VH03','S11-V02','S11-V03','QD-01','QD-02','QD-03'],branches:['WV-A28-HANG-WIN'],scope:'Role-local official branch, not arbitrary unsupported room configurations',mandatoryInteractions:['actual hanging','nonhanging death','cancelled vote','hanging protection','contract','redirect','linked death','Hunter follow','revenge wrong alignment','pin expiration','closed ledger','co-winners'],requiredTests:[...new Set(r28Required)],browserEvidence:['revenge','pin'],remainingExclusions:[],certified:false};
+r28.missingTests=r28.requiredTests.filter(n=>!newPass.has(n));r28.certified=!r28.missingTests.length&&r28.browserEvidence.every(browser);
+const c={deck:[8,25],ruleVersion:r28.ruleVersion,scope:'Both possible night commands independently optional; all 16 terminal ballot combinations; two winning sides; authorized UI/reconnect/replay; no other skill or protection can occur within this composition.',requiredTests:[...names(current)].filter(n=>n.startsWith('QD01 [8,25]')),browserEvidence:['village','knight'],certified:false};
+c.certified=c.requiredTests.length===5&&c.requiredTests.every(n=>newPass.has(n))&&c.browserEvidence.every(browser);
+const atomic={auditedRoleIds:reg.auditedRoleIds,unresolvedRoleIds:reg.unresolvedRoleIds,verifiedDenominator:branches.length,executedTested:branches.filter(b=>b.executedTested).length,globalDenominatorCertified:false,branches};atomic.restrictedCoverage=atomic.executedTested/atomic.verifiedDenominator;
+const delta={beforeIds:before.metricR.ids,afterIds:ids,addedIds:ids.filter(i=>!before.metricR.ids.includes(i)),removedIds:before.metricR.ids.filter(i=>!ids.includes(i)),evidence};
+const report={...old,version:read('package.json').version,ruleVersion:r28.ruleVersion,scope:'Verified admitted QA configurations; archived evidence re-executed in 1.3.2 compatibility mode, new and role-local evidence on 1.3.3; competitive NO-GO',metricR:{...old.metricR,ids,executableCharacters:ids.length},metricF:{fullyImplemented:r28.certified?1:0,certifiedIds:r28.certified?[28]:[]},metricS:{...old.metricS,atomicSubset:{auditedRoles:reg.auditedRoleIds.length,verifiedDenominator:atomic.verifiedDenominator,executedTested:atomic.executedTested,restrictedCoverage:atomic.restrictedCoverage,globalDenominatorCertified:false,unresolvedRoleIds:reg.unresolvedRoleIds}},metricA:allKeys.size,metricB:old.metricB+newB.size,metricC:c.certified?1:0,completedDecks:[...allKeys],approved:{delta,matchEvidence:matches,newCompletedDecks:[...allKeys].filter(k=>!oldKeys.has(k)),newVoteDecks:[...newB],roleCertificate:r28,branchCompleteCertificate:c,executed:{archived:fullLog?[...names(legacy)].filter(n=>!n.startsWith("QD")).length:names(legacy).size,approved:[...names(current)].filter(n=>n.startsWith('QD')).length,roleRetest:names(role).size}}};
+write('reports/S15_APPROVED_CHARACTER_ID_DELTA.json',delta);write('reports/S15_APPROVED_ATOMIC_COVERAGE.json',atomic);write('reports/S15_APPROVED_FULL_ROLE_CERTIFICATES.json',{certificates:r28.certified?[r28]:[],candidates:[r28]});write('reports/S15_APPROVED_BRANCH_COMPLETE_MATRIX.json',{certificates:c.certified?[c]:[],candidates:[c]});write('reports/S15_METRICS.json',report);
+const rows=read('data/rule-intelligence-s15/character_readiness_97.json');for(const row of rows){if(row.characterId===48&&ids.includes(48)){row.executedSkillIds=[...new Set([...row.executedSkillIds,'official.48.pack-bite'])];row.implementationStatus='PARTIAL_RESTRICTED_EXECUTION';row.proofStatus='S15_APPROVED_HTTP_SQLITE';row.testEvidence=[...new Set([...row.testEvidence,'tests/sprint15-approved.test.mjs'])];row.missingImplementation='Multi-wolf action, other protection/attack domains';}if(row.characterId===28&&r28.certified){row.fullRoleCertified=true;row.implementationStatus='FULL_ROLE_CERTIFIED';row.missingImplementation='No remaining role-local mandatory branch in locked v1.3.3 acceptance; arbitrary deck support separate.';row.testEvidence=[...new Set([...row.testEvidence,'tests/sprint15-approved.test.mjs'])];}}write('data/rule-intelligence-s15/character_readiness_97.json',rows);
+console.log('S15_APPROVED_METRICS '+JSON.stringify({R:ids.length,F:report.metricF.fullyImplemented,A:report.metricA,B:report.metricB,C:report.metricC,S:[atomic.executedTested,atomic.verifiedDenominator],missingRoleTests:r28.missingTests,executed:report.approved.executed}));

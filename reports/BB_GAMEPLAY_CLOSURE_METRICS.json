@@ -1,0 +1,148 @@
+{
+  "version": "1.7.24-s15-gameplay-closure-wip",
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "sourceFingerprint": "611eda16bbcf0f48530cc6174c03912206578aefd857f236fe255bf4bd066d52",
+  "baseline": {
+    "R": 52,
+    "F": 1,
+    "A": 48,
+    "B": 37,
+    "qaC": 2,
+    "playableC": 6,
+    "S_auditedRoles": 48,
+    "S_pass": 79,
+    "S_total": 108,
+    "normalDecks": 12
+  },
+  "cumulative": {
+    "R": 52,
+    "F": 1,
+    "A": 49,
+    "B": 37,
+    "qaC": 2,
+    "playableC": 6,
+    "S_auditedRoles": 48,
+    "S_pass": 79,
+    "S_total": 108,
+    "normalDecks": 12
+  },
+  "delta": {
+    "R": 0,
+    "F": 0,
+    "A": 1,
+    "B": 0,
+    "qaC": 0,
+    "playableC": 0,
+    "S_auditedRoles": 0,
+    "S_pass": 0,
+    "S_total": 0,
+    "normalDecks": 0
+  },
+  "fresh": {
+    "F": 1,
+    "qaC": 2,
+    "playableC": 5,
+    "S_pass": 79
+  },
+  "enabledNormalRegistry": 12,
+  "completedDecks": [
+    "15,25",
+    "15,25,28",
+    "15,25,74",
+    "19,25,28",
+    "25,28,33,74",
+    "25,28,37",
+    "25,28,55",
+    "25,28,58",
+    "25,28,79",
+    "25,28,88",
+    "25,31,48,74",
+    "25,31,48,74,87",
+    "25,33,74,84",
+    "25,33,74,88",
+    "25,39,76",
+    "25,48,64,74",
+    "25,48,74",
+    "25,58,74",
+    "74,84,87,93,94",
+    "74,84,93,94",
+    "8,25",
+    "8,25,26",
+    "8,25,28",
+    "8,25,28,55",
+    "8,25,28,74",
+    "8,25,28,88",
+    "8,25,29",
+    "8,25,36",
+    "8,25,55",
+    "8,25,68",
+    "8,25,74",
+    "8,25,85",
+    "8,25,88",
+    "8,26,74",
+    "8,28",
+    "8,28,74",
+    "8,28,88",
+    "8,74",
+    "8,9",
+    "8,9,25",
+    "8,9,25,28",
+    "8,9,25,28,74",
+    "8,9,25,74",
+    "8,9,28",
+    "8,9,28,74",
+    "8,9,28,88",
+    "8,9,74",
+    "9,25,48,74",
+    "9,25,48,74,87"
+  ],
+  "newMatchDecks": [
+    "8,25,36"
+  ],
+  "newMatchEvidence": {
+    "log": "reports/s15-gameplay-closure/mage-durable-acceptance.log",
+    "script": "reports/s15-gameplay-closure/mage-durable-acceptance.mjs",
+    "evidence": {
+      "ids": [
+        8,
+        25,
+        36
+      ],
+      "completed": true,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "voteChain": false,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "sourceFingerprint": "611eda16bbcf0f48530cc6174c03912206578aefd857f236fe255bf4bd066d52"
+    },
+    "qualified": true
+  },
+  "newVotingDecks": [],
+  "browser": {
+    "total": 72,
+    "PASS": 33,
+    "FAIL": 2,
+    "INCOMPLETE": 37
+  },
+  "matrix": {
+    "total": 107,
+    "PASS": 39,
+    "FAIL": 2,
+    "INCOMPLETE": 66
+  },
+  "liveQA": {
+    "browser": {
+      "pack": "PASS",
+      "trap": "PASS",
+      "guard": "PASS",
+      "witch": "PASS",
+      "retaliation": "PASS",
+      "cross_window": "PASS",
+      "conversion": "PASS",
+      "mixed": "PASS"
+    },
+    "backendPass": 16
+  },
+  "note": "Exact 1.3.3 certificates only: snow C if finite closure; mage A if official closed-deck QA commits MATCH_COMPLETED with restart, replay, privacy, multiclient and current browser proof. No B without vote chain; no B/B candidate profile counted."
+}

@@ -1,0 +1,34 @@
+{
+  "version": "0.7.0",
+  "baseRuleVersion": "wolvesville-official-v1.3.1",
+  "sourceHash": "7a9fc87f979198004260115f512cac9b171322a98b264e59dae9fa3b4d29a9c3",
+  "confirmedDecisions": 118,
+  "auditSkillBranches": 145,
+  "legacySpecs": 207,
+  "characters": 97,
+  "activeAdapters": 5,
+  "passiveAdapters": 1,
+  "charactersWithAtLeastOneExecutedBranch": 6,
+  "charactersWithAllBranchesCompetitiveReady": 0,
+  "supportedDecks": [
+    [
+      25,
+      74
+    ],
+    [
+      20,
+      25,
+      74
+    ],
+    [
+      9,
+      25,
+      31,
+      34,
+      74
+    ]
+  ],
+  "executedPairCases": 12,
+  "pairScreening": 4656,
+  "fullCompetitive": false
+}

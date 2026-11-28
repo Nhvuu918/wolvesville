@@ -1,0 +1,83 @@
+{
+  "version": "1.7.12-s15-continuation-wip",
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "status": "WIP",
+  "competitiveProduction": "NO-GO",
+  "postgresLive": "PENDING",
+  "source": {
+    "inputSha256": "098c434fa51dcd75a17f8c838cba46c60732a1cd1460237db991b6a50413b6f2",
+    "inputEntries": 2508,
+    "inputCrc": "PASS",
+    "inputRecordedHashesVerified": 397,
+    "sourceIntegrity": "PASS",
+    "build": "PASS",
+    "rulesBuild": "PASS",
+    "cleanExtraction": "see external delivery verification"
+  },
+  "backend": {
+    "status": "PASS",
+    "tests": 344,
+    "pass": 333,
+    "fail": 0,
+    "skipped": 11,
+    "exitCode": 0,
+    "log": "reports/s15-continued/backend.log"
+  },
+  "browser": {
+    "manifest": {
+      "total": 50,
+      "PASS": 8,
+      "FAIL": 0,
+      "INCOMPLETE": 42
+    },
+    "matrix": {
+      "total": 85,
+      "PASS": 8,
+      "FAIL": 0,
+      "INCOMPLETE": 77
+    },
+    "results": "reports/S15_CONTINUED_BROWSER_RESULTS.json"
+  },
+  "metrics": {
+    "baseline": {
+      "R": 49,
+      "F": 1,
+      "A": 44,
+      "B": 36,
+      "qaC": 2,
+      "playableC": 2,
+      "S_auditedRoles": 30,
+      "S_pass": 50,
+      "S_total": 63,
+      "normalDecks": 2
+    },
+    "fresh": {
+      "R": 49,
+      "F": 1,
+      "A": 44,
+      "B": 36,
+      "qaC": 2,
+      "playableC": 2,
+      "S_auditedRoles": 30,
+      "S_pass": 49,
+      "S_total": 63,
+      "normalDecks": 3,
+      "newNormalDecksWithBrowserAndBackend": 1
+    },
+    "note": "Fresh certification may be lower than historical count when mandatory browser retest incomplete. This is not removal of existing roles/certificates. A/B count unique deck keys, new normal deck already in A/B. No new character IDs, atomic inventory or formal branch certificate."
+  },
+  "remaining": [
+    "Full 85-obligation browser matrix not completed",
+    "No PostgreSQL live environment",
+    "No new role implementations or four/five-person normal composition",
+    "Three-player Branch Complete not issued; real-room combinatorial and three-player handoff required",
+    "Multi-wolf consensus proposal not approved; no new official wolf-pack or revival mechanics",
+    "No competitive production approval"
+  ],
+  "environment": {
+    "node": "22.16.0",
+    "typescript": "5.8.3",
+    "localTypeDefinitions": "preinstalled @types/node; clean extraction separately uses 22.15.33",
+    "browser": "Linux Chromium + Python Playwright, real backend transport bridge; no native macOS verification"
+  }
+}

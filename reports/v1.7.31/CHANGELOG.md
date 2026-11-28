@@ -1,0 +1,5 @@
+# v1.7.31 — bounded gameplay and candidate privacy closure
+- Add persisted `WV-DC-2026-11-25-A-S21` scope to new opt-in trap/revival QA games only; previous policy still recognized, soul policy unchanged. #8 may legally attack #10 in that exact QA deck, permitting a new real wolf revival cycle by #26 without manufacturing dead state. Existing protection/damage/death and revival ledgers are reused. Original identity/faction, consumed trap use, public minimal revival and re-elimination preserved.
+- Add candidate `refreshRevocations` for S21 policy: revalidate latest nonempty selections on trusted snapshots at submit or lock even for temporarily ineligible members. Store revoked revisions permanently; no change to already locked packs or old-policy replay. No mixed live activation.
+- Add one new live backend case, two candidate state-level tests and one browser obligation. Preserve 77 existing suites and 112 obligations. Actual current results from acceptance.json.
+- Add explicit PACK-KEEP privacy counterexample and decision card. No new owner approval inferred. No global privacy PASS, new FULL or normal deck certification.

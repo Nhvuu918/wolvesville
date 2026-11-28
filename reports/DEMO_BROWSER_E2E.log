@@ -1,0 +1,30 @@
+Task exception was never retrieved
+future: <Task finished name='Task-164' coro=<Channel.send() done, defined at /opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py:61> exception=TargetClosedError('Channel.send: Target page, context or browser has been closed')>
+Traceback (most recent call last):
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Channel.send: Target page, context or browser has been closed
+PASS Browser: two real Demo CTA clicks create distinct backend accounts and Lobby sessions
+PASS Browser: two independent demo sessions create/join same room through real backend
+PASS Browser: authenticated WebSocket connectivity and server-authorized room membership
+PASS Browser: fresh document reconnects an existing Demo session without shared credentials
+PASS Browser: logout removes only the current demo session
+PASS Browser: demo WebSocket reconnect
+Task exception was never retrieved
+future: <Task finished name='Task-187' coro=<Channel.send() done, defined at /opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py:61> exception=TargetClosedError('Channel.send: Target page, context or browser has been closed')>
+Traceback (most recent call last):
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Channel.send: Target page, context or browser has been closed

@@ -1,0 +1,88 @@
+{
+  "recordId": "WV-DC-2026-11-25-S27",
+  "approvedOn": "2026-11-25",
+  "policyStatus": "OWNER_APPROVED",
+  "officialActivation": false,
+  "baseRuleset": "wolvesville-official-v1.3.3",
+  "proposedRuleset": "wolvesville-official-v1.3.4",
+  "decisions": [
+    {
+      "id": "DC-CULT-WIN-01",
+      "choice": "A",
+      "ownerApproved": true,
+      "ownerText": "DC-CULT-WIN-01\n\n**OWNER CHOICE: A**\n\n**APPROVED CONTENT:**\n\nGiáo Chủ còn sống và tất cả người còn sống thuộc giáo phái thì giáo phái đạt điều kiện thắng.\n\n### Implementation requirements\n\n- Xét điều kiện thắng tại checkpoint hợp lệ sau khi hoàn thành chuỗi sự kiện hiện tại.\n- Bảo toàn VH03, VH06, VH58 và các quy tắc trạng thái sống/chết đặc biệt.\n- Không tự kết thúc giữa quá trình tuyển mộ, hiến tế, cứu hoặc death-chain.\n- Phân biệt điều kiện thắng của giáo phái với chính sách ghi nhận thắng cho từng người chơi.\n- Không bỏ qua người đang chờ hồi sinh hoặc ngủ đông khi quy tắc hiện hành yêu cầu tính họ.\n- Không suy diễn quy tắc thắng cá nhân của tín đồ đã chết nếu nguồn luật chưa xác định.",
+      "sourceVerification": "PARTIAL",
+      "implementation": "PARTIAL_CANDIDATE",
+      "runtimeVerification": "FOCUSED_BACKEND_PASS_SCOPE_ONLY",
+      "scope": "CULT candidate living-members predicate; dead follower award remains unresolved",
+      "active": false
+    },
+    {
+      "id": "DC-CULT-RIGHTS-01",
+      "choice": "A",
+      "ownerApproved": true,
+      "ownerText": "DC-CULT-RIGHTS-01\n\n**OWNER CHOICE: A**\n\n**APPROVED CONTENT:**\n\nTín đồ giữ nguyên vai trò, kỹ năng, tài nguyên và cooldown; chuyển phe và nhóm thắng giáo phái theo luật đã chốt.\n\n### Implementation requirements\n\nPhân biệt và lưu độc lập:\n\n- initialRoleId.\n- currentRoleId.\n- effectiveSkillSet.\n- originalFaction.\n- currentFaction.\n- currentWinGroup.\n- cultMembership.\n- resources.\n- cooldowns.\n- statusEffects.\n- groupChatPermissions.\n\nKhông reset tài nguyên.\n\nKhông tự cấp thêm lượt dùng kỹ năng.\n\nKhông xóa cooldown hoặc hiệu ứng đang có hiệu lực chỉ vì người chơi được tuyển mộ.\n\nKhông tự biến mọi tín đồ thành cùng một Character ID.\n\nKhông tự thay đổi hào quang nếu quy tắc hào quang tương ứng không yêu cầu.\n\nBảo toàn Q13-08 và các quy tắc liên kết thắng độc lập.",
+      "sourceVerification": "PARTIAL",
+      "implementation": "PARTIAL_CANDIDATE",
+      "runtimeVerification": "FOCUSED_BACKEND_PASS_SCOPE_ONLY",
+      "scope": "CULT candidate role/resource preservation; no general transformation",
+      "active": false
+    },
+    {
+      "id": "DC-CULT-FAILED-01",
+      "choice": "A",
+      "ownerApproved": true,
+      "ownerText": "DC-CULT-FAILED-01\n\n**OWNER CHOICE: A**\n\n**APPROVED CONTENT:**\n\nNếu tuyển mộ thất bại, Giáo Chủ mất lượt tuyển đêm đó, nhận thông báo thất bại chung và mục tiêu không biết.\n\n### Implementation requirements\n\n- Tiêu hao lượt tuyển khi lượt tuyển hợp lệ được phân giải thành thất bại.\n- Không thay đổi membership.\n- Không đổi phe.\n- Không đổi nhóm thắng.\n- Không thay đổi tài nguyên hoặc kỹ năng của mục tiêu.\n- Không gửi thông báo tuyển mộ cho mục tiêu.\n- Không tiết lộ lý do thất bại có khả năng làm lộ thông tin bí mật.\n\nPhân biệt:\n\n1. Recruitment failure theo luật.\n2. Invalid request.\n3. Unauthorized request.\n4. Duplicate request.\n5. Network failure.\n6. Retry.\n\nKhông tính trùng lượt tuyển khi retry.\n\nKhông biến lỗi kỹ thuật thành recruitment failure.\n\nKhông cho phép Action Capabilities, danh sách mục tiêu, API response hoặc UI làm lộ trước những phe và vai trò bí mật mà Giáo Chủ không có quyền biết.\n\nĐóng câu hỏi NV93 trong đúng phạm vi quyết định này.",
+      "sourceVerification": "PARTIAL",
+      "implementation": "PARTIAL_CANDIDATE",
+      "runtimeVerification": "FOCUSED_BACKEND_PASS_SCOPE_ONLY",
+      "scope": "CULT candidate generic failure with independent #28 target",
+      "active": false
+    },
+    {
+      "id": "DC-CULT-KILLER-DOMAIN-01",
+      "choice": "A",
+      "ownerApproved": true,
+      "ownerText": "DC-CULT-KILLER-DOMAIN-01\n\n**OWNER CHOICE: A**\n\n**APPROVED CONTENT:**\n\nNhóm kẻ giết người không thể tuyển mộ được xác định là kẻ giết người độc lập; không tự động cấm Dân làng có kỹ năng sát thương.\n\n### Implementation requirements\n\nKhông cho phép tuyển:\n\n- Thành viên phe Sói theo luật hiện hành.\n- Kẻ giết người độc lập.\n- Người có nhóm hoặc liên kết thắng độc lập bị cấm theo Q13-08.\n- Các mục tiêu không hợp lệ khác theo nguồn luật đang có hiệu lực.\n\nKhông từ chối người chơi chỉ vì nhân vật có ATTACK capability.\n\nSử dụng Character Registry, SMU Classification, Effective Rule Registry và trạng thái hiện hành của người chơi.\n\nKiểm tra các trường hợp:\n\n- Dân có kỹ năng bắn.\n- Dân có kỹ năng đầu độc.\n- Nhân vật có kỹ năng sát thương bị động.\n- Nhân vật độc lập có điều kiện thắng riêng.\n- Nhân vật đã đổi phe.\n- Nhân vật đã đổi nhóm thắng.\n- Nhân vật có liên kết độc lập.\n\nKhông tự mở rộng miền cấm tuyển ngoài phạm vi luật đã được xác nhận.",
+      "sourceVerification": "PARTIAL",
+      "implementation": "PARTIAL_CANDIDATE",
+      "runtimeVerification": "FOCUSED_BACKEND_PASS_SCOPE_ONLY",
+      "scope": "Bounded roster; no general SMU killer matrix",
+      "active": false
+    },
+    {
+      "id": "DC-CULT-REVIVAL-01",
+      "choice": "B",
+      "ownerApproved": true,
+      "ownerText": "DC-CULT-REVIVAL-01\n\n**OWNER CHOICE: B**\n\n**APPROVED CONTENT:**\n\nKhông tự khôi phục membership giáo phái sau khi tín đồ được hồi sinh; phe, nhóm thắng và khả năng tuyển lại phải tuân theo luật hồi sinh đã chốt.\n\n### Implementation requirements\n\nPhân biệt:\n\n- Pending Death.\n- Final Death.\n- Protected.\n- Saved.\n- Extended Life.\n- Hibernating.\n- Pending Revival.\n- Revived.\n\nKhông thu hồi membership chỉ vì xuất hiện trong danh sách chết sơ bộ.\n\nKhông coi cứu thành công là hồi sinh sau khi đã chết chính thức.\n\nKhông tự cấp lại Cult Group Membership hoặc quyền chat khi một tín đồ chết chính thức được hồi sinh.\n\nKhông tự mặc định người được hồi sinh trở về phe Dân hoặc tiếp tục thuộc phe giáo phái nếu luật tương ứng chưa xác định.\n\nKiểm tra lại quyền truy cập trên REST, WebSocket, Replay và Reconnect.\n\nBảo toàn các ngoại lệ hồi sinh hiện hành, bao gồm VH73, VH76 và các trạng thái đặc biệt theo Q13.",
+      "sourceVerification": "PARTIAL",
+      "implementation": "PARTIAL_CANDIDATE",
+      "runtimeVerification": "FOCUSED_BACKEND_PASS_SCOPE_ONLY",
+      "scope": "Final death revocation; actual cult revival not admitted",
+      "active": false
+    },
+    {
+      "id": "DC-MIRROR-MULTIVICTIM-01",
+      "choice": "A",
+      "ownerApproved": true,
+      "ownerText": "DC-MIRROR-MULTIVICTIM-01\n\n**OWNER CHOICE: A**\n\n**APPROVED CONTENT:**\n\nSói Gương lấy hào quang của nạn nhân chết chính thức cuối cùng do bầy Sói cắn theo thứ tự phân giải ổn định; không tính người đã được cứu.\n\n### Implementation requirements\n\n- Xác định chính xác nguồn sát thương thuộc lượt cắn tập thể của bầy Sói.\n- Phân biệt đòn cắn bầy với sát thương độc lập của nhân vật Sói.\n- Không chọn nạn nhân chỉ vì chết trong cùng một đêm.\n- Không tính người bị tấn công nhưng sống do bảo vệ hoặc cứu.\n- Sử dụng hào quang thực sự tại thời điểm chết theo VH22.\n- Lưu thứ tự phân giải ổn định theo VH08 và luật cắn bầy hiện hành.\n- Không dựa trên thứ tự HTTP request.\n- Không phụ thuộc tốc độ người chơi nhấn nút.\n- Không random lại khi replay hoặc reconnect.\n- Không sử dụng cái chết trong tương lai để sửa kết quả soi đã commit trước đó.\n\nNếu có nhiều nạn nhân đủ điều kiện, chọn nạn nhân chết chính thức cuối cùng theo thứ tự phân giải hợp lệ.\n\nNếu chỉ một nạn nhân đủ điều kiện, chọn nạn nhân đó.\n\nNếu không có nạn nhân mới đủ điều kiện, giữ phản chiếu gần nhất theo VH11.\n\nNếu chưa từng có phản chiếu, sử dụng hào quang thật theo VH11.\n\nBảo toàn:\n\n- Quy tắc phản chiếu nạn nhân từ đêm trước.\n- Cơ chế bị soi hai lần sẽ lộ nguyên hình.\n- Phạm vi áp dụng của từng loại điều tra.\n- Giới hạn lượt cắn theo VH74.\n\nKhông tự áp dụng bộ đếm soi hào quang sang mọi loại soi khác.",
+      "sourceVerification": "PARTIAL",
+      "implementation": "PARTIAL_CANDIDATE",
+      "runtimeVerification": "FOCUSED_BACKEND_PASS_SCOPE_ONLY",
+      "scope": "Collective candidate pack direct committed deaths; protection covered, other death chains and aura transformations not admitted",
+      "active": false
+    },
+    {
+      "id": "DC-INSPECTION-ORDER-01",
+      "choice": "A",
+      "ownerApproved": true,
+      "ownerText": "DC-INSPECTION-ORDER-01\n\n**OWNER CHOICE: A**\n\n**APPROVED CONTENT:**\n\nChuyển hướng mục tiêu → xác định dữ liệu gốc → áp dụng giả danh/nhiễu → đảo kết quả; hiệu ứng miễn nhiễu loại bỏ đúng những tác động mà nó có quyền kháng. Giữ ngoại lệ từng vai.\n\n### Implementation requirements\n\nXây dựng Shared Investigation Pipeline:\n\n1. Xác thực quyền hành động.\n2. Xử lý khóa và chống khóa đúng thời điểm.\n3. Xác định mục tiêu ban đầu.\n4. Áp dụng chuyển hướng hợp lệ đối với kỹ năng đang sử dụng.\n5. Xác định mục tiêu cuối.\n6. Xác định loại điều tra.\n7. Truy xuất dữ liệu gốc tại checkpoint hợp lệ.\n8. Áp dụng giả danh.\n9. Áp dụng hiệu ứng hào quang và nhiễu theo P05.\n10. Áp dụng đảo hoặc làm sai kết quả theo luật từng kỹ năng.\n11. Bảo toàn phạm vi miễn nhiễu.\n12. Xác định kết quả cuối.\n13. Commit event.\n14. Phân phối kết quả theo Authorized Audience.\n\nĐây là pipeline điều tra, không phải quy định thay đổi toàn bộ thứ tự phân giải đêm.\n\nKhông đưa các hiệu ứng bảo trì chống khóa xuống sau thời điểm sử dụng kỹ năng.\n\nKhông áp dụng chuyển hướng sát thương vào kỹ năng soi nếu luật không cho phép.\n\nBảo toàn:\n\n- SYS-03.\n- SYS-25.\n- P05.\n- VH08.\n- VH10.\n- VH11.\n- VH41.\n- VH71.\n- VH84.\n- Q13-06.\n- Q13-11.\n\nĐặc biệt:\n\n- Soi hào quang phải trả dữ liệu hào quang.\n- Soi vai chính xác phải trả dữ liệu vai trò.\n- Soi phân loại phải trả dữ liệu phân loại.\n- Soi phe phải trả dữ liệu phe.\n- Không dùng một phép đảo Thiện/Ác để xử lý mọi loại điều tra.\n- Bẫy soi vai chính xác phải giữ tập random từ bộ vai đã khóa theo Q13-06.\n- Bẫy soi phân loại phải trả giá trị sai cùng kiểu theo Q13-11.\n- Thẩm Phán Linh Hồn phải bảo toàn miễn nhiễu theo VH84.\n- Bảo trì chỉ kháng đúng những hiệu ứng thuộc phạm vi có hiệu lực.\n- Không làm sai các tương tác riêng đã được Owner xác nhận.\n\nNếu vẫn còn xung đột cụ thể giữa hai hiệu ứng cùng cấp mà các quyết định trên chưa giải quyết, ghi nhận riêng trường hợp biên đó.\n\nKhông đánh dấu toàn bộ DC-INSPECTION-ORDER-01 là chưa được phê duyệt chỉ vì một trường hợp biên còn thiếu luật.",
+      "sourceVerification": "PARTIAL",
+      "implementation": "PARTIAL_CANDIDATE",
+      "runtimeVerification": "PARTIAL_EXISTING_TYPED_PATH",
+      "scope": "Existing typed inspections extended for candidate cult and mirror; compound P05 and transformation pipeline not completed",
+      "active": false
+    }
+  ],
+  "decisionCount": 7
+}

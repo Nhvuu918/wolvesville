@@ -1,0 +1,177 @@
+[
+  {
+    "file": "cross-device-deck.png",
+    "scope": "Normal chính thức, 2 tài khoản và browser profile mới",
+    "sha256": "d4dfc9e3630607b6c59ff511a57168438f91e3084da546f881c026611839c3bd",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "custom-deck.png",
+    "scope": "Normal chính thức, 2 tài khoản và browser profile mới",
+    "sha256": "00e5c775fab6c7395d858675c92280329ab43fb681a8a92dcfd7f864d07909cd",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "global-full-career.png",
+    "scope": "Normal chính thức, 2 tài khoản và browser profile mới",
+    "sha256": "09818d9a95c5d8fe402ffcf05fb21b2247f7884ea8600774d2b0b3828a874f3f",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "global-invite-feed.png",
+    "scope": "Normal chính thức, 2 tài khoản và browser profile mới",
+    "sha256": "425b694a861368581e0d68fbf61ed5e7fc1344af5bb2c7a5f78de55be6e10493",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "invalid-deck.png",
+    "scope": "Normal chính thức, 2 tài khoản và browser profile mới",
+    "sha256": "50beeaa1d1a7407194c96376fa2ac9aa49bd1f98653ced20abda78336e89d4fd",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "mobile-deck.png",
+    "scope": "Normal chính thức, 2 tài khoản và browser profile mới",
+    "sha256": "ee0e051b09e70e4bb61f1965750dc4b4be86fd4f45169c514f5fdab1ffd3216d",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "moderator-outside-room.png",
+    "scope": "Normal chính thức, 2 tài khoản và browser profile mới",
+    "sha256": "14b545bd496fe1d5cefb2f37d2c2591d68a7f09ece5bc01ad9339f1f8bb76e2e",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "profile-after-match.png",
+    "scope": "Normal chính thức, 2 tài khoản và browser profile mới",
+    "sha256": "362c22cfe02b68a4685b42c20d7def61bd8dc22fa4be0a35538dee92c839edb3",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "saved-deck.png",
+    "scope": "Normal chính thức, 2 tài khoản và browser profile mới",
+    "sha256": "42d9e7ebfa8341ae1a6c616a990467a0d4b40c7cc41622591b3c5ba215031c2c",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-action-selection.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "9da9a43816755042e5f5aa4a9201d8ecd980162db11beaba9fc06161f7aac9c7",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-custom.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "03de043e575d365b8a1ee63d4f50e38ceaab76e67c2617182910c4b9d4d599c6",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-default.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "c5f32e86b7caeae8a5d7e15a48b547e98a2b3b258e4750551dccf020e2d89fb3",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-frame-000.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "9b24619059710195408607b84d69891c43914fef140dc4d7c2e50517aa9b885a",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-frame-001.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "76e15059a8d1ae86164a9bd5bd5a00a8deda392ac1fd33f36c2226ccdeddbaa9",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-frame-002.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "e047cc0def4214b8b107f2349ffb6aa6d5a97dc28c3bc0237704900c5964e994",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-frame-003.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "063a9b6bd4a9ad2adf5a4b1f816e6c7a5cfcdc5b31fd63e39412c96e42273316",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-frame-004.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "774a5bee77fc0cde955865e3d5deebf500884a19bc614b5f2b2589acdd6860d5",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-frame-005.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "946ddc08a8d32f6825c0f06044fa64c5aaaffe212a58eb7845094d10d368392f",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-frame-006.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "15d5a87da4cddcbfbfe2c6b7cf23719ac329c8ed0e157ff9998494f0b3a64922",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-game-hud.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "edbcdf3a090049b2e5420d0efd3dfb06920b819c6133e21ca8d9eb7c004696b0",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-light.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "a91c9c891e4e1ce5804f25f9a4fb58dbac06d17fa7c6c8c95b3a9d5bba99c4af",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-mobile.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "24633b1dbd55884b1ffac963cbf9328cb37bc35034430ac164e88e9b88c0183a",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-normal-config.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "3f8933670a964c4356113cd76944eb40bfbc3973f7bc86ecd3f8d98798a88ca4",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-result.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "fa5dd914388c8241b93c279cbffa93ffa73b2dd68f00155cdf1a3d38a8777110",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "wheel-valid-vote.png",
+    "scope": "Normal phát triển, kiểm thử Wheel",
+    "sha256": "e789432877a7c102477f5e7e36967b74d067fb88ef0a681452b510a78b0fb5a1",
+    "sourceFingerprint": "ab252af9e357f5109160aa2f2a04368824b83cf2ebcd3b92695fb6cabb8c8e70",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  }
+]

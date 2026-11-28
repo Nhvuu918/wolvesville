@@ -1,0 +1,529 @@
+{
+  "sourceFingerprint": "4ba194c57aa4a0e46739b06c503eaadadc1f858fe2fa193b6ce41b138e150183",
+  "F": [
+    {
+      "deck": null,
+      "characterId": 28,
+      "historicalCertified": true,
+      "missingFreshTests": [],
+      "missingFreshBrowser": [],
+      "freshRevalidated": true
+    }
+  ],
+  "qaC": [
+    {
+      "deck": [
+        8,
+        25
+      ],
+      "characterId": null,
+      "historicalCertified": true,
+      "missingFreshTests": [],
+      "missingFreshBrowser": [],
+      "freshRevalidated": true
+    },
+    {
+      "deck": [
+        8,
+        74
+      ],
+      "characterId": null,
+      "historicalCertified": true,
+      "missingFreshTests": [],
+      "missingFreshBrowser": [],
+      "freshRevalidated": true
+    }
+  ],
+  "playableC": [
+    {
+      "deck": [
+        8,
+        25
+      ],
+      "characterId": null,
+      "historicalCertified": true,
+      "missingFreshTests": [],
+      "missingFreshBrowser": [],
+      "freshRevalidated": true
+    },
+    {
+      "deck": [
+        8,
+        74
+      ],
+      "characterId": null,
+      "historicalCertified": true,
+      "missingFreshTests": [],
+      "missingFreshBrowser": [],
+      "freshRevalidated": true
+    },
+    {
+      "deck": [
+        8,
+        25,
+        74
+      ],
+      "characterId": null,
+      "historicalCertified": true,
+      "missingFreshTests": [],
+      "missingFreshBrowser": [],
+      "freshRevalidated": true
+    },
+    {
+      "deck": [
+        8,
+        9
+      ],
+      "characterId": null,
+      "historicalCertified": true,
+      "missingFreshTests": [],
+      "missingFreshBrowser": [],
+      "freshRevalidated": true
+    },
+    {
+      "deck": [
+        25,
+        31,
+        48,
+        74
+      ],
+      "characterId": null,
+      "historicalCertified": true,
+      "missingFreshTests": [],
+      "missingFreshBrowser": [],
+      "freshRevalidated": true
+    },
+    {
+      "deck": [
+        25,
+        31,
+        48,
+        74,
+        87
+      ],
+      "characterId": null,
+      "historicalCertified": true,
+      "missingFreshTests": [],
+      "missingFreshBrowser": [],
+      "freshRevalidated": true
+    },
+    {
+      "deck": [
+        9,
+        25,
+        48,
+        74,
+        87
+      ],
+      "characterId": null,
+      "historicalCertified": true,
+      "missingFreshTests": [],
+      "missingFreshBrowser": [],
+      "freshRevalidated": true
+    }
+  ],
+  "atomic": [
+    {
+      "branchId": "WV-A08-ATTACK",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A08-HANG-IMMUNITY",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A08-VICTORY",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A09-SHIELD",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A15-SINGLE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A15-PAIR",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A15-FOLLOW",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A15-VICTORY",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A25-AURA",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A28-HANG-WIN",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A29-NOTICE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A29-RESCUE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A29-POISON",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A58-SAME",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A58-DIFFERENT",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A58-VICTORY",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A63-MARK",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A63-TRANSFER",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A74-EXACT",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A79-CANCEL",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A85-MARK",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A85-TRANSFER",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A37-SWAP",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A37-INSPECT",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A37-HANG",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A55-PROTECT",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A55-SPENT",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A93-SEAL",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A93-ALIGN",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A93-DOUBLE-BITE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A94-EFFIGY",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A94-AURA",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A19-BALLOT",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A87-RESCUE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A87-SEDATIVE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A33-COERCION",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A33-REVENGE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A88-MARK",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A88-DEATH-FOLLOW",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A48-LAST-WOLF-DOUBLE-BITE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A64-PAIR-DEATH-OBSERVATION",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A31-GUARD",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A32-SHOOT",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A43-SNIPER",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A49-ILLUSION",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A50-NUMB",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A72-CURSE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A76-NIGHTMARE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A80-VIOLIN",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A84-SILENCE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A03-AURA-CONCEAL",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A05-WEIGH-SOUL",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A11-MAINTENANCE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A17-JUDGMENT-HOSTILE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A17-JUDGMENT-VILLAGE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A20-INSPECT-INJURY",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A24-JAIL",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A34-NIGHT-LOCK",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A36-FIREBALL",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A36-SHIELD",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A36-SHIELD-REVEAL",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A52-SOLO-DOG",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A66-GUARD",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A66-WATCH",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A39-CAPTURE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A39-MISS",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A39-THIRD-MISS",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A39-MAJORITY-WIN",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A16-ANTIDOTE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A16-POISON",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A23-SHIELD",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A67-SHIELD",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A67-SWORD",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A68-MARK-FOLLOW",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A77-TRAP",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A10-TRAP-AURA",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A10-TRAP-ROLE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A26-REVIVE",
+      "missingTests": [],
+      "freshRevalidated": true
+    },
+    {
+      "branchId": "WV-A26-ANONYMOUS-CHAT",
+      "missingTests": [],
+      "freshRevalidated": true
+    }
+  ],
+  "newCertificates": [],
+  "fresh": {
+    "F": 1,
+    "qaC": 2,
+    "playableC": 7,
+    "atomicPass": 79
+  }
+}

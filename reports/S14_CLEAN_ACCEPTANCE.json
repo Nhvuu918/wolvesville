@@ -1,0 +1,65 @@
+{
+  "version": "1.6.0-s14-recovery",
+  "status": "STABLE DEVELOPMENT BASELINE — restricted QA only; competitive NO-GO",
+  "cleanExtraction": true,
+  "crc": "PASS",
+  "sourceIntegrity": {
+    "status": "PASS",
+    "exit": 0
+  },
+  "build": {
+    "status": "PASS",
+    "exit": 0
+  },
+  "rulesBuild": {
+    "status": "PASS",
+    "exit": 0
+  },
+  "backend": {
+    "pass": 227,
+    "fail": 0,
+    "skipped": 11,
+    "total": 238,
+    "cancelled": 0,
+    "exit": 0
+  },
+  "newIntegration": {
+    "pass": 16,
+    "fail": 0,
+    "skipped": 0,
+    "exit": 0
+  },
+  "metrics": {
+    "status": "PASS",
+    "exit": 0,
+    "R": 27,
+    "F": 0,
+    "S": null,
+    "A": 8,
+    "B": 6,
+    "C": 0
+  },
+  "browser": {
+    "status": "PASS",
+    "inherited": {
+      "pass": 15,
+      "total": 15,
+      "execution": "individual isolated workspace runs; executable payload compared byte-for-byte to clean extraction"
+    },
+    "s14": {
+      "pass": 2,
+      "total": 2,
+      "execution": "workspace and clean extraction, exit 0 each"
+    },
+    "report": "reports/S14_BROWSER_RECOVERY.json",
+    "nativeNetworkAcceptance": "NOT RUN (Linux transport bridge used)",
+    "cleanup": "no TargetClosedError, uncaught task errors, or runner leak marker in accepted logs"
+  },
+  "postgresql": {
+    "status": "PENDING ENVIRONMENT",
+    "skipped": 11
+  },
+  "testedPayloadFiles": 317,
+  "testedPayloadManifest": "reports/S14_RECOVERY_TESTED_PAYLOAD_SHA256.txt",
+  "note": "Candidate clean extraction tested; final archive adds only documentation and evidence, not executable payload changes. Final archive CRC and clean extraction with tested payload hashes validated. No new gameplay in recovery revision."
+}

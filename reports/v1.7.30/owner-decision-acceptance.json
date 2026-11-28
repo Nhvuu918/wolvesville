@@ -1,0 +1,164 @@
+{
+  "version": "1.7.30",
+  "sourceFingerprint": "a4e3442df2161e9973fbd472fad22b8288f891862aa7a085f3376c22e59d9cac",
+  "ownerApproved": 4,
+  "policySourceVerified": 2,
+  "partiallyVerified": 2,
+  "newRuntimeDecisions": 2,
+  "candidateCoreDecisions": 1,
+  "existingBoundedDecision": 1,
+  "liveQABoundedPass": 2,
+  "decisions": [
+    {
+      "decisionId": "DC-SOUL-01",
+      "choice": "A",
+      "ownerApproved": true,
+      "sourceVerification": "PARTIAL_DESIGNATED_SCOPE",
+      "ruleProvenance": [
+        "data/character.json#8/#23",
+        "data/rules/official_merged_118.json LIFE-01/VH06/VH82/PH-01",
+        "data/rules/skills.json WV-CH23-S01/S02/S03",
+        "reports/v1.7.29/DECISION_CARDS.md"
+      ],
+      "code": [
+        "backend/src/official/soul-shooter.ts",
+        "backend/src/engine/validate.ts",
+        "backend/src/official/solo-rules.ts",
+        "backend/src/engine/service.ts",
+        "backend/src/official/capabilities.ts"
+      ],
+      "scope": [
+        "existing QA [8,23,25,36], official.8.night-kill only; one nightly use, no finite ammo"
+      ],
+      "backendPass": [
+        "S20 DC-SOUL-01: designated #8 blind attempt on dead seat consumes nightly slot; no extra death, finite fire still restricted"
+      ],
+      "browser": [
+        {
+          "suite": "browser_s18_soul_second_death_e2e.py",
+          "version": "1.3.3",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.30/browser-recovery/1.3.3-browser_s18_soul_second_death_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s18_soul_second_death_e2e.py",
+          "durationMs": 20162
+        }
+      ],
+      "status": "PARTIAL",
+      "privacy": "PARTIAL; no release-level assertion",
+      "replay": "Scoped live tests verify replay",
+      "blocker": "No contradiction for existing #8 QA. Complete designated list not established by owner text or skill registry.",
+      "exitCriteria": "All source-authorized interaction classes and privacy/replay/browser obligations, plus explicit release approval."
+    },
+    {
+      "decisionId": "DC-SOUL-02",
+      "choice": "A",
+      "ownerApproved": true,
+      "sourceVerification": "SOURCE_VERIFIED_POLICY",
+      "ruleProvenance": [
+        "data/character.json#23",
+        "data/rules/skills.json WV-CH23-S03",
+        "data/rules/official_merged_118.json VH06/VH82/LIFE-01/PH-01/VH03",
+        "data/rules/WV-RULE-DECISION-2026-11-25-001.json QD-01",
+        "reports/v1.7.29/DECISION_CARDS.md"
+      ],
+      "code": [
+        "backend/src/official/s13-mechanics.ts",
+        "backend/src/experimental/owner-dc-policy.ts",
+        "backend/src/engine/service.ts"
+      ],
+      "scope": [
+        "QA [8,23,25,36] with persisted WV-DC-2026-11-25-A policy; public-living non-self target, existing two-bullet/night-only restriction"
+      ],
+      "backendPass": [
+        "S20 DC-SOUL-02: friendly kill then enemy kill, victory after second shot; legacy policy remains pinned",
+        "S20 DC-SOUL-02: friendly shot spends one bullet, shield blocks, unshielded villager dies, retry and restart"
+      ],
+      "browser": [
+        {
+          "suite": "browser_s20_owner_soul_e2e.py",
+          "version": "1.3.3+qa-dc",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.30/browser-owner/1.3.3+qa-dc-browser_s20_owner_soul_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s20_owner_soul_e2e.py",
+          "durationMs": 21922
+        }
+      ],
+      "status": "LIVE_QA_BOUNDED_PASS",
+      "privacy": "PARTIAL; no release-level assertion",
+      "replay": "Scoped live tests verify replay",
+      "blocker": "#23 describes goal of eliminating wolves and third factions, not an explicit friendly-fire immunity; owner choice settles mistaken targeting. QD-01 includes dead village winners.",
+      "exitCriteria": "All source-authorized interaction classes and privacy/replay/browser obligations, plus explicit release approval."
+    },
+    {
+      "decisionId": "DC-TRAP-02",
+      "choice": "A",
+      "ownerApproved": true,
+      "sourceVerification": "SOURCE_VERIFIED_POLICY",
+      "ruleProvenance": [
+        "data/character.json#10/#26",
+        "data/rules/official_merged_118.json VH73/VH76/PH-01/VH08",
+        "data/rules/owner_bb_final_decisions_20261125.json DEC-BT-02/BB-04/BB-05/BB-PENDING-03",
+        "reports/v1.7.29/DECISION_CARDS.md"
+      ],
+      "code": [
+        "backend/src/official/revival.ts",
+        "backend/src/engine/service.ts",
+        "backend/src/experimental/owner-bb-v2/night-action-group.ts"
+      ],
+      "scope": [
+        "QA [8,10,25,26], persisted WV-DC-2026-11-25-A policy; valid prior or same-night trap with placement priority 50, revival priority 200"
+      ],
+      "backendPass": [
+        "S20 DC-TRAP-02: same-night placement precedes accepted revival; no duplicate death or revival",
+        "S20 DC-TRAP-02: trapped medium fails revival, consumes mark and use once; invalid action and restart"
+      ],
+      "browser": [
+        {
+          "suite": "browser_s20_owner_trap_e2e.py",
+          "version": "1.3.3+qa-dc-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.30/browser-owner/1.3.3+qa-dc-bb-browser_s20_owner_trap_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s20_owner_trap_e2e.py",
+          "durationMs": 18905
+        }
+      ],
+      "status": "LIVE_QA_BOUNDED_PASS",
+      "privacy": "PARTIAL; no release-level assertion",
+      "replay": "Scoped live tests verify replay",
+      "blocker": "VH73 supersedes original village-only revival and VH76 excludes 46/47/53. BB-04 concerns protection/rescue, not revival of a deceased player; DC-TRAP-02 establishes specific failure semantics.",
+      "exitCriteria": "All source-authorized interaction classes and privacy/replay/browser obligations, plus explicit release approval."
+    },
+    {
+      "decisionId": "DC-PACK-KEEP",
+      "choice": "A",
+      "ownerApproved": true,
+      "sourceVerification": "POLICY_CONSISTENT_PRIVACY_DESIGN_PENDING",
+      "ruleProvenance": [
+        "data/rules/owner_bb_final_decisions_20261125.json DEC-BT-01/BB-01-BLANK/BB-02/BB-03/BB-PENDING-01",
+        "data/rules/owner_bb_rep_new_01_20261125.json",
+        "data/rules/official_merged_118.json VH54/VH74/VH52",
+        "reports/v1.7.29/DECISION_CARDS.md"
+      ],
+      "code": [
+        "backend/src/experimental/owner-bb-v2/pack.ts",
+        "backend/src/experimental/owner-dc-policy.ts"
+      ],
+      "scope": [
+        "candidate lockPack state-level logic, persisted revoked selection revisions; NOT activated in live pack QA"
+      ],
+      "backendPass": [
+        "S20 DC-PACK-KEEP: blinded own receipt is unchanged when target becomes secretly invalid (before lock only)",
+        "S20 DC-PACK-KEEP: revoked latest selection stays revoked through blank, restored eligibility and restart; explicit replacement only"
+      ],
+      "browser": [],
+      "status": "PARTIAL",
+      "privacy": "PARTIAL; no release-level assertion",
+      "replay": "State-level serialization only, not live replay",
+      "blocker": "No conflict with KEEP; a secretly revoked valid submission can alter phase progression vs a still-valid selection. Observable lock/wait oracle is unresolved. No new public reason is authorized.",
+      "exitCriteria": "All source-authorized interaction classes and privacy/replay/browser obligations, plus explicit release approval."
+    }
+  ]
+}

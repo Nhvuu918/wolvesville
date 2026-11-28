@@ -1,0 +1,29 @@
+[
+  {
+    "id": "S04-TEST-CONFLICT-25-01",
+    "sourceTestId": "T-MC-04",
+    "field": "expected",
+    "quotedLegacyInterpretation": "soi aura chuẩn",
+    "actualCharacterSource": "data/character.json#25",
+    "finding": "Test expects aura, while #25 source describes exact role inspection; SPEC ONLY, must not be executable as written.",
+    "disposition": "QUARANTINE_EXPECTED_RESULT"
+  },
+  {
+    "id": "S04-TEST-CONFLICT-25-02",
+    "sourceTestId": "T-COV-03",
+    "field": "preconditions",
+    "quotedLegacyInterpretation": "#25 soi hào quang",
+    "actualCharacterSource": "data/character.json#25",
+    "finding": "Test premise treats #25 as aura seer contrary to the original role-description.",
+    "disposition": "QUARANTINE_PRECONDITION"
+  },
+  {
+    "id": "S04-TEST-CONFLICT-25-03",
+    "sourceTestId": "T-MC-33",
+    "field": "preconditions",
+    "quotedLegacyInterpretation": "#25 soi aura",
+    "actualCharacterSource": "data/character.json#25",
+    "finding": "Legacy narrative assumes #25 aura; other scenario assertions may be reusable if re-specified.",
+    "disposition": "QUARANTINE_ROLE_ASSUMPTION"
+  }
+]

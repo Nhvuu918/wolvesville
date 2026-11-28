@@ -1,0 +1,1035 @@
+{
+  "version": "1.7.22-s15-stability-completion-wip",
+  "sourceFingerprint": "35a5c2302d5f68a3c35978cf9ec2171c1d357cb16842d4a84512b9ca7f439853",
+  "shard": "1/1",
+  "selection": [
+    "browser_s15_bb_cross_window_e2e.py",
+    "browser_s15_bb_live_retaliation_e2e.py",
+    "browser_s15_bb_live_witch_e2e.py",
+    "browser_s15_bb_live_trap_e2e.py",
+    "browser_s15_bb_live_pack_e2e.py",
+    "browser_s15_bb_live_guard_e2e.py",
+    "browser_s15_normal_rescue_e2e.py",
+    "browser_s15_normal_guard_rescue_e2e.py"
+  ],
+  "manifest": {
+    "total": 69,
+    "PASS": 8,
+    "FAIL": 0,
+    "INCOMPLETE": 61
+  },
+  "matrix": {
+    "total": 104,
+    "PASS": 8,
+    "FAIL": 0,
+    "INCOMPLETE": 96
+  },
+  "suites": [
+    {
+      "suite": "browser_s12_attack_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s11_voting_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s11_seer_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s10_gameplay_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s09_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s08_gameplay_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s07_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s06_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s05_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_lobby_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_codex_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_demo_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_ux_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s13_skills_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s14_gameplay_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s14_transport_regression.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_protection_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_voting_information_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_gameplay_ux_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_aura_expansion_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_guard_shot_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_accelerated_witch_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_accelerated_exile_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_accelerated_combat_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_deep_rescue_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_deep_redirect_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_deep_pair_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_deep_jester_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_break_stone_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_break_exile_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_break_contract_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_break_swap_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_final_hunter_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_final_revenge_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_final_pack_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_closure_snow_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_closure_revenge_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_approved_village_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_approved_revenge_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_approved_leader_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_approved_knight_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_approved_pin_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_approved_team_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_scale_bell_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_scale_rescue_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_scale_mystic_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_normal_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_play_guard_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_continued_three_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_normal_guard_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_normal_rescue_e2e.py",
+      "status": "PASS"
+    },
+    {
+      "suite": "browser_s15_normal_guard_rescue_e2e.py",
+      "status": "PASS"
+    },
+    {
+      "suite": "browser_s15_growth_dog_thief_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_deep_normal_knight_snow_aura_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_deep_normal_knight_snow_dual_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_deep_normal_knight_snow_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_deep_normal_knight_snow_role_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_deep_normal_leader_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_deep_normal_leader_snow_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_deep_engineer_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_deep_medium_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_breakthrough_medium_e2e.py",
+      "status": "INCOMPLETE"
+    },
+    {
+      "suite": "browser_s15_bb_live_trap_e2e.py",
+      "status": "PASS"
+    },
+    {
+      "suite": "browser_s15_bb_live_pack_e2e.py",
+      "status": "PASS"
+    },
+    {
+      "suite": "browser_s15_bb_live_guard_e2e.py",
+      "status": "PASS"
+    },
+    {
+      "suite": "browser_s15_bb_live_witch_e2e.py",
+      "status": "PASS"
+    },
+    {
+      "suite": "browser_s15_bb_live_retaliation_e2e.py",
+      "status": "PASS"
+    },
+    {
+      "suite": "browser_s15_bb_cross_window_e2e.py",
+      "status": "PASS"
+    }
+  ],
+  "runs": [
+    {
+      "suite": "browser_s15_bb_cross_window_e2e.py",
+      "version": "1.3.3+qa-bb",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_cross_window_e2e.log"
+    },
+    {
+      "suite": "browser_s15_normal_rescue_e2e.py",
+      "version": "1.3.3",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-stability/browser-bb/1.3.3-browser_s15_normal_rescue_e2e.log"
+    },
+    {
+      "suite": "browser_s15_normal_guard_rescue_e2e.py",
+      "version": "1.3.3",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-stability/browser-bb/1.3.3-browser_s15_normal_guard_rescue_e2e.log"
+    },
+    {
+      "suite": "browser_s15_bb_live_retaliation_e2e.py",
+      "version": "1.3.3+qa-bb",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_live_retaliation_e2e.log"
+    },
+    {
+      "suite": "browser_s15_bb_live_witch_e2e.py",
+      "version": "1.3.3+qa-bb",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_live_witch_e2e.log"
+    },
+    {
+      "suite": "browser_s15_bb_live_trap_e2e.py",
+      "version": "1.3.3+qa-bb",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_live_trap_e2e.log"
+    },
+    {
+      "suite": "browser_s15_bb_live_pack_e2e.py",
+      "version": "1.3.3+qa-bb",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_live_pack_e2e.log"
+    },
+    {
+      "suite": "browser_s15_bb_live_guard_e2e.py",
+      "version": "1.3.3+qa-bb",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_live_guard_e2e.log"
+    },
+    {
+      "suite": "browser_s15_breakthrough_medium_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_normal_knight_snow_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_approved_pin_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_approved_revenge_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_normal_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_continued_three_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_medium_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_engineer_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_normal_leader_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_normal_leader_snow_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_normal_knight_snow_aura_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_normal_knight_snow_role_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_normal_knight_snow_dual_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_approved_village_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_approved_knight_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_scale_bell_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_play_guard_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_scale_mystic_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_growth_dog_thief_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_normal_guard_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s12_attack_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s12_attack_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s11_voting_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s11_voting_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s11_seer_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s11_seer_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s10_gameplay_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s10_gameplay_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s09_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s09_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s08_gameplay_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s08_gameplay_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s07_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s07_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s06_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s06_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s05_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s05_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_lobby_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_lobby_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_codex_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_codex_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_demo_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_demo_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_ux_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_ux_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s13_skills_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s13_skills_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s14_gameplay_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s14_gameplay_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s14_transport_regression.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s14_transport_regression.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_protection_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_protection_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_voting_information_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_voting_information_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_gameplay_ux_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_gameplay_ux_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_aura_expansion_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_aura_expansion_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_guard_shot_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_guard_shot_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_accelerated_witch_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_accelerated_witch_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_accelerated_exile_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_accelerated_exile_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_accelerated_combat_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_accelerated_combat_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_rescue_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_rescue_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_redirect_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_redirect_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_pair_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_pair_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_jester_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_deep_jester_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_break_stone_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_break_stone_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_break_exile_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_break_exile_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_break_contract_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_break_contract_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_break_swap_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_final_hunter_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_final_hunter_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_final_revenge_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_final_pack_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_final_pack_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_closure_snow_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_closure_snow_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_closure_revenge_e2e.py",
+      "version": "1.3.2",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_approved_leader_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_approved_team_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    },
+    {
+      "suite": "browser_s15_scale_rescue_e2e.py",
+      "version": "1.3.3",
+      "status": "INCOMPLETE",
+      "exitCode": null,
+      "log": null
+    }
+  ]
+}

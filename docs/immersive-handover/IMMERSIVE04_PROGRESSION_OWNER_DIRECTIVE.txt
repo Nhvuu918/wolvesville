@@ -1,0 +1,1042 @@
+# WOLVESVILLE — IMMERSIVE-04 ADDITIONAL DIRECTIVE
+
+## PLAYER CAREER EXPANSION
+
+### EXPERIENCE POINTS · LEVEL SYSTEM · TITLES · ACHIEVEMENTS · BADGE COLLECTION · PROGRESSION SYSTEM
+
+# 1. MỤC TIÊU
+
+Tôi muốn mở rộng phân hệ Sự nghiệp của người chơi.
+
+Không chỉ có thống kê số trận, thắng thua, tỷ lệ thắng và lịch sử trận đấu.
+
+Tôi muốn bổ sung:
+
+- Điểm kinh nghiệm tích lũy XP.
+- Cấp độ tài khoản.
+- Thanh tiến trình lên cấp.
+- Danh hiệu.
+- Huy hiệu cá nhân.
+- Huy hiệu sự nghiệp.
+- Huy hiệu chiến thắng.
+- Huy hiệu sinh tồn.
+- Huy hiệu trải nghiệm nhân vật.
+- Huy hiệu quan hệ.
+- Bộ sưu tập huy hiệu.
+- Độ hiếm.
+- Lịch sử nhận XP.
+- Lịch sử lên cấp.
+- Lịch sử mở khóa huy hiệu.
+- Thông báo thành tích.
+- Hiệu ứng lên cấp.
+- Hiệu ứng nhận huy hiệu sau trận.
+
+Tạo một hệ thống Player Progression hoàn chỉnh, khiến người chơi cảm nhận được quá trình phát triển tài khoản qua thời gian.
+
+# 2. SOURCE CONTINUITY
+
+Tiếp tục từ Full Source mới nhất đang thực hiện IMMERSIVE-04.
+
+Bảo toàn toàn bộ:
+
+- Wheel of Fate đã được chấp thuận.
+- Game Room.
+- Notification.
+- Group Chat.
+- Personal Journal.
+- Result Center.
+- Player Career hiện có.
+- Statistics.
+- Friends.
+- Top 5 Bạn thân.
+- Match History.
+- Replay.
+- Social Platform.
+- AI Rule Assistant.
+- Backend.
+- Database.
+- Cloud Deployment.
+
+Không khởi tạo lại Player Career.
+
+Tận dụng những service, projection, schema và API hiện có.
+
+FULL-5 và FULL-50 tiếp tục được đóng băng.
+
+# 3. EXPERIENCE POINTS — XP
+
+Xây dựng hệ thống điểm kinh nghiệm tích lũy cho tài khoản.
+
+XP chỉ phục vụ:
+
+- Cấp độ.
+- Sự nghiệp.
+- Thành tích.
+- Danh hiệu.
+- Bộ sưu tập.
+- Tiến trình phát triển tài khoản.
+
+XP không được sử dụng để:
+
+- Tăng sức mạnh nhân vật.
+- Tăng số lượt kỹ năng.
+- Tăng quyền biểu quyết.
+- Tăng xác suất nhận vai đặc biệt.
+- Tăng khả năng sống sót.
+- Mua lợi thế gameplay.
+- Thay đổi điều kiện thắng.
+- Vượt qua luật nhân vật.
+
+Không biến Wolvesville thành Pay-to-Win.
+
+# 4. XP REWARD POLICY
+
+Sử dụng bộ giá trị đề xuất sau làm cấu hình ban đầu:
+
+| Hoạt động | XP |
+|---|---:|
+| Hoàn thành trận hợp lệ | 50 |
+| Chiến thắng | 50 |
+| Sống sót đến cuối trận | 10 |
+| Hoàn thành trận đầu tiên | 100 |
+| Chiến thắng đầu tiên | 100 |
+| Huy hiệu Common | 50 |
+| Huy hiệu Rare | 100 |
+| Huy hiệu Epic | 250 |
+| Huy hiệu Legendary | 500 |
+
+Các khoản XP có thể cộng dồn nếu người chơi thực sự đạt đủ các điều kiện tương ứng.
+
+Các phần thưởng lần đầu và phần thưởng mở khóa huy hiệu chỉ được cấp một lần.
+
+Không cấp lặp khi đăng nhập, refresh, reconnect hoặc xem lại trận.
+
+Không trừ XP thông thường khi thua hoặc chết trong trận.
+
+Không cộng XP trực tiếp cho mỗi lần:
+
+- Sử dụng kỹ năng.
+- Tấn công.
+- Giết người.
+- Gửi chat.
+- Biểu quyết.
+- Quay Wheel of Fate.
+- Thực hiện thao tác lặp lại.
+
+Những hành vi này không phải căn cứ đủ để xác định người chơi có đóng góp tích cực.
+
+Tránh khuyến khích farm XP hoặc chơi sai chiến thuật.
+
+Các giá trị XP phải được lưu dưới dạng Reward Policy có version và cấu hình tập trung.
+
+Không hardcode công thức tại nhiều màn hình frontend.
+
+Có thể đề xuất cân bằng lại nếu phát hiện bất hợp lý, nhưng phải ghi rõ thay đổi và không âm thầm sửa phần thưởng đã commit.
+
+# 5. MATCH ELIGIBILITY
+
+XP sự nghiệp cạnh tranh chỉ được cấp cho trận đủ điều kiện theo chính sách hiện hành.
+
+Phân biệt:
+
+- HUMAN_ONLY.
+- MIXED.
+- AI_PRACTICE.
+- Normal chính thức.
+- Normal phát triển.
+- Demo.
+- Candidate QA.
+- Integration Test.
+- Cancelled.
+- Invalid.
+- Under Review.
+
+Không cộng QA, Demo hoặc ván bị hủy vào XP cạnh tranh.
+
+Không mặc định gộp ván AI vào thành tích người thật.
+
+Có thể tạo Practice XP riêng nếu phù hợp, nhưng phải hiển thị tách biệt.
+
+Không tạo tiến độ sự nghiệp giả từ fixture hoặc database test.
+
+# 6. LEVEL SYSTEM
+
+Xây dựng cấp độ tài khoản dựa trên XP tích lũy hợp lệ.
+
+Công thức đề xuất:
+
+XP cần để lên cấp tiếp theo = 100 + 75 × (cấp hiện tại − 1).
+
+Ví dụ:
+
+- Cấp 1 lên cấp 2: cần 100 XP.
+- Cấp 2 lên cấp 3: cần 175 XP.
+- Cấp 3 lên cấp 4: cần 250 XP.
+- Cấp 10 lên cấp 11: cần 775 XP.
+
+Triển khai công thức trong Level Policy tập trung.
+
+Phân biệt:
+
+- Tổng XP tích lũy.
+- XP cần để đạt cấp hiện tại.
+- XP trong cấp hiện tại.
+- XP cần để đạt cấp tiếp theo.
+- Phần trăm tiến độ.
+- Số XP còn thiếu.
+
+Hỗ trợ việc tăng nhiều cấp sau một lần nhận thưởng.
+
+Không mất phần XP dư khi lên cấp.
+
+Không reset XP đã tích lũy khi đạt mốc cấp độ.
+
+Không bắt buộc giới hạn ở cấp 100.
+
+Thiết kế có khả năng mở rộng trong tương lai.
+
+# 7. LEVEL TITLES — DANH HIỆU
+
+Tạo hệ thống danh hiệu theo cấp độ.
+
+Định hướng ban đầu:
+
+- Cấp 1–4: Tân Binh.
+- Cấp 5–9: Lữ Khách.
+- Cấp 10–19: Người Canh Gác.
+- Cấp 20–29: Thợ Săn Bóng Tối.
+- Cấp 30–49: Kẻ Làm Chủ Màn Đêm.
+- Cấp 50–74: Huyền Thoại Sương Mù.
+- Cấp 75–99: Bất Tử.
+- Cấp 100+: Chúa Tể Định Mệnh.
+
+Có thể sáng tạo tên danh hiệu phù hợp hơn với thế giới Wolvesville.
+
+Mỗi danh hiệu có:
+
+- Title ID.
+- Tên.
+- Mô tả.
+- Điều kiện.
+- Biểu tượng.
+- Màu sắc.
+- Artwork nếu phù hợp.
+- Ngày mở khóa.
+- Trạng thái đã đạt.
+
+Cho phép người dùng lựa chọn hiển thị một trong những danh hiệu đã mở khóa.
+
+Không cấp danh hiệu cấp cao cho tài khoản chưa đạt điều kiện.
+
+Danh hiệu không tạo quyền đặc biệt trong trận.
+
+# 8. ACHIEVEMENT SYSTEM
+
+Hoàn thiện hệ thống huy hiệu hiện có.
+
+Không chỉ tính tiến độ tại thời điểm mở trang.
+
+Phải lưu bản ghi mở khóa thật trong database.
+
+Mỗi huy hiệu bao gồm:
+
+- Achievement ID.
+- Tên.
+- Mô tả.
+- Điều kiện mở khóa.
+- Nhóm.
+- Độ hiếm.
+- Biểu tượng.
+- XP thưởng.
+- Tiến độ hiện tại.
+- Tiến độ yêu cầu.
+- Ngày đạt.
+- Trận tạo thành tích nếu phù hợp.
+- Trạng thái.
+- Phiên bản điều kiện.
+
+# 9. BADGE CATEGORIES
+
+Tạo các nhóm huy hiệu.
+
+## A. Sự nghiệp
+
+- Hoàn thành 1 trận.
+- Hoàn thành 10 trận.
+- Hoàn thành 50 trận.
+- Hoàn thành 100 trận.
+- Hoàn thành 250 trận.
+- Hoàn thành 500 trận.
+- Hoàn thành 1.000 trận.
+
+## B. Chiến thắng
+
+- Thắng trận đầu tiên.
+- Thắng 10 trận.
+- Thắng 25 trận.
+- Thắng 50 trận.
+- Thắng 100 trận.
+- Thắng 250 trận.
+- Thắng 500 trận.
+
+## C. Chuỗi thắng
+
+- 3 trận liên tiếp.
+- 5 trận liên tiếp.
+- 10 trận liên tiếp.
+- 20 trận liên tiếp.
+
+Chỉ tính chuỗi theo đúng phạm vi chế độ và chính sách hợp lệ.
+
+## D. Sinh tồn
+
+- Sống sót đến cuối 10 trận.
+- Sống sót đến cuối 25 trận.
+- Sống sót đến cuối 50 trận.
+- Sống sót đến cuối 100 trận.
+
+Không mặc định coi người sống sót là người chiến thắng.
+
+## E. Trải nghiệm nhân vật
+
+- Trải nghiệm 5 nhân vật khác nhau.
+- Trải nghiệm 10 nhân vật khác nhau.
+- Trải nghiệm 15 nhân vật khác nhau.
+- Trải nghiệm 30 nhân vật khác nhau.
+- Trải nghiệm 50 nhân vật khác nhau.
+- Trải nghiệm toàn bộ nhân vật đủ điều kiện trong catalog nếu phạm vi gameplay sau này cho phép.
+
+Không tự kích hoạt nhân vật chưa được hỗ trợ để hoàn thành huy hiệu.
+
+## F. Thành tích theo phe
+
+Các mốc chiến thắng hợp lệ:
+
+- Phe Dân.
+- Phe Sói.
+- Phe Ba.
+- Các phe độc lập hoặc nhóm đặc biệt theo ruleset.
+
+Sử dụng phe và điều kiện thắng được Game Engine xác nhận.
+
+Không suy diễn dựa trên phe gốc nếu người chơi đã chuyển phe.
+
+## G. Thành tích theo nhân vật
+
+Có thể xây dựng các mốc chuyên môn:
+
+- Số trận đã sử dụng nhân vật.
+- Số trận thắng với nhân vật.
+- Thành tích đặc biệt có căn cứ từ luật.
+
+Không tạo tiêu chí hiệu quả kỹ năng nếu chưa có định nghĩa đo lường phù hợp.
+
+Không khuyến khích người chơi sử dụng kỹ năng sai mục đích để farm huy hiệu.
+
+## H. Huy hiệu quan hệ
+
+Bảo toàn năm huy hiệu đã chốt:
+
+DESTINED_SOULMATES:
+100 ván chung hợp lệ.
+
+RIVALS:
+50 ván khác phe.
+
+DUO_VICTORY:
+30 ván cùng phe và cả hai thắng.
+
+ENDLESS_FATE:
+100 ván chung, trong đó ít nhất 60 ván khác phe.
+
+PERFECT_DUO:
+Chuỗi 10 ván chung liên tiếp cùng phe và cùng thắng.
+
+Không thay đổi điều kiện đã xác nhận.
+
+## I. Huy hiệu bí mật và đặc biệt
+
+Có thể sáng tạo các huy hiệu phi cạnh tranh dựa trên những mốc trải nghiệm hợp lý.
+
+Các huy hiệu này không được:
+
+- Làm lộ vai bí mật trong trận.
+- Khuyến khích gian lận.
+- Khuyến khích phá trận.
+- Khuyến khích spam.
+- Khuyến khích farm tài khoản.
+- Yêu cầu sử dụng các nhân vật chưa được hỗ trợ.
+
+Các điều kiện bí mật phải được đánh giá ở backend và chỉ công bố khi đủ quyền.
+
+# 10. BADGE RARITY
+
+Phân loại huy hiệu:
+
+- Common — Phổ thông.
+- Uncommon — Không phổ biến.
+- Rare — Hiếm.
+- Epic — Sử thi.
+- Legendary — Huyền thoại.
+- Mythic — Thần thoại, nếu cần mở rộng.
+
+Mỗi nhóm có:
+
+- Viền đặc trưng.
+- Họa tiết.
+- Icon.
+- Màu sắc.
+- Hiệu ứng phù hợp.
+
+Không phân biệt độ hiếm chỉ bằng màu sắc.
+
+Phải hiển thị tên độ hiếm bằng chữ hoặc biểu tượng.
+
+Độ hiếm ban đầu là phân loại thiết kế theo độ khó của điều kiện, không giả vờ là tỷ lệ người chơi thực tế đã đạt.
+
+Nếu muốn hiển thị tỷ lệ sở hữu, phải tính từ dữ liệu tài khoản thật với mẫu số hợp lệ.
+
+XP thưởng cho Uncommon và Mythic cần được quy định trong Reward Policy trước khi kích hoạt.
+
+# 11. BADGE ART DIRECTION
+
+Tôi muốn huy hiệu có thiết kế riêng, chuyên nghiệp.
+
+Phong cách:
+
+- Dark Fantasy.
+- Gothic.
+- Medieval Insignia.
+- Antique Medal.
+- Mystic Rune.
+- Fantasy Collectible.
+
+Có thể sử dụng hình dạng:
+
+- Huy chương tròn.
+- Khiên.
+- Vương miện.
+- Mặt trăng.
+- Kiếm.
+- Ngôi sao.
+- Đá quý.
+- Biểu tượng ma thuật.
+- Huy hiệu chạm khắc.
+
+Không chỉ sử dụng các icon đơn giản giống dashboard quản trị.
+
+Mỗi nhóm huy hiệu có nhận diện riêng.
+
+Tạo SVG hoặc asset phù hợp, có quyền sử dụng rõ ràng.
+
+Giữ tính nhất quán với artwork Wolvesville.
+
+Tối ưu dung lượng và khả năng hiển thị trên các theme.
+
+# 12. PLAYER CAREER DASHBOARD
+
+Thiết kế lại phần Sự nghiệp thành một hệ thống Career Center hoàn chỉnh.
+
+## Career Overview
+
+Hiển thị:
+
+- Avatar.
+- Player ID.
+- Tên người chơi.
+- Cấp độ.
+- Danh hiệu.
+- Tổng XP.
+- Thanh tiến trình lên cấp.
+- XP còn thiếu.
+- Tổng số huy hiệu đã mở khóa.
+- Tổng số trận.
+- Tỷ lệ thắng.
+- Chuỗi thắng.
+- Huy hiệu nổi bật.
+
+## Career Navigation
+
+Tổ chức thành các tab:
+
+1. Tổng quan.
+2. Thống kê.
+3. Nhân vật.
+4. Điểm tích lũy.
+5. Huy hiệu.
+6. Danh hiệu.
+7. Bạn thân.
+8. Lịch sử trận đấu.
+
+Không bắt buộc hiển thị tất cả thông tin trên cùng một màn hình.
+
+# 13. XP HISTORY
+
+Tạo trang lịch sử điểm tích lũy.
+
+Hiển thị:
+
+- Thời gian.
+- XP thay đổi.
+- Lý do.
+- Match ID nếu có.
+- Achievement ID nếu có.
+- Reward Policy version.
+- Tổng điểm sau giao dịch nếu phù hợp.
+
+Ví dụ:
+
+Ngày 28/11
+
++50 XP — Hoàn thành trận.
+
++50 XP — Chiến thắng.
+
++10 XP — Sống sót.
+
++100 XP — Mở khóa huy hiệu Kẻ chinh phục.
+
+Tổng cộng: +210 XP.
+
+Hỗ trợ bộ lọc theo thời gian và nguồn XP.
+
+Không hiển thị giao dịch giả.
+
+Cho phép xem trận đấu liên quan theo quyền.
+
+# 14. BADGE COLLECTION GALLERY
+
+Tạo một bộ sưu tập huy hiệu trực quan.
+
+Hiển thị:
+
+- Đã mở khóa.
+- Chưa mở khóa.
+- Gần đạt.
+- Huy hiệu cá nhân.
+- Huy hiệu nhân vật.
+- Huy hiệu quan hệ.
+- Độ hiếm.
+- Huy hiệu nổi bật.
+
+Mỗi huy hiệu chưa đạt có thanh tiến độ nếu điều kiện đo được.
+
+Ví dụ:
+
+Cựu Binh.
+
+Điều kiện: Hoàn thành 100 trận.
+
+Tiến độ: 68/100.
+
+Còn thiếu: 32 trận.
+
+Huy hiệu có nhiều điều kiện phải hiển thị từng điều kiện riêng.
+
+Không sử dụng một thanh phần trăm sai lệch cho điều kiện kết hợp.
+
+Cho phép:
+
+- Tìm kiếm.
+- Lọc.
+- Sắp xếp.
+- Xem chi tiết.
+- Ghim.
+- Bỏ ghim.
+- Chia sẻ huy hiệu nếu người dùng muốn.
+
+# 15. PROFILE INTEGRATION
+
+Tích hợp hệ thống sự nghiệp vào hồ sơ cá nhân.
+
+Hiển thị:
+
+- Cấp độ.
+- Khung avatar.
+- Danh hiệu đang sử dụng.
+- XP theo quyền riêng tư.
+- Huy hiệu nổi bật.
+- Thành tích gần đây.
+- Tổng số huy hiệu.
+
+Có thể cho phép ghim tối đa 3–5 huy hiệu tùy bố cục.
+
+Cho phép người dùng tự chọn huy hiệu muốn trưng bày.
+
+Không tự công khai toàn bộ dữ liệu nếu người dùng thiết lập hồ sơ riêng tư.
+
+# 16. PLAYER CARD INTEGRATION
+
+Có thể hiển thị cấp độ và danh hiệu tại:
+
+- Danh sách bạn bè.
+- Phòng chờ.
+- Hồ sơ.
+- Newsfeed.
+- Match History.
+- Endgame.
+
+Trong Game Room, chỉ hiển thị khi phù hợp với luật, quyền riêng tư và chất lượng giao diện.
+
+Không làm thẻ người chơi trở nên rối mắt.
+
+Không để khung cấp độ làm mất khả năng nhận biết trạng thái gameplay.
+
+# 17. ENDGAME REWARD EXPERIENCE
+
+Sau khi trận kết thúc hợp lệ, bổ sung màn hình phần thưởng.
+
+Hiển thị:
+
+- Kết quả trận.
+- Vai của bản thân.
+- XP hoàn thành trận.
+- XP chiến thắng nếu có.
+- XP sinh tồn nếu có.
+- XP từ thành tích.
+- Tổng XP nhận được.
+- Cấp độ trước trận.
+- Cấp độ sau trận.
+- Thanh tiến trình.
+- Huy hiệu mới.
+- Danh hiệu mới.
+
+Nếu người chơi thua, vẫn hiển thị XP tham gia hợp lệ nếu đủ điều kiện.
+
+Nếu trận không được tính XP, giải thích rõ lý do theo chính sách.
+
+Nếu kết quả đang được xác minh, hiển thị trạng thái chờ.
+
+Không thông báo cấp thưởng khi giao dịch database chưa hoàn tất.
+
+# 18. LEVEL UP ANIMATION
+
+Khi người chơi lên cấp:
+
+- Hiển thị hiệu ứng nổi bật.
+- Artwork cấp độ.
+- Biểu tượng.
+- Cấp cũ.
+- Cấp mới.
+- Danh hiệu mới nếu đạt.
+- Âm thanh lên cấp.
+- Hiệu ứng ánh sáng nhẹ.
+- Thanh XP chuyển động mượt.
+
+Không sử dụng hiệu ứng quá dài.
+
+Không che mất các thông tin quan trọng của kết quả trận.
+
+Có thể bỏ qua.
+
+Hỗ trợ Reduced Motion.
+
+# 19. ACHIEVEMENT UNLOCK ANIMATION
+
+Khi mở khóa huy hiệu:
+
+- Hiển thị biểu tượng huy hiệu.
+- Tên.
+- Độ hiếm.
+- Điều kiện vừa đạt.
+- XP thưởng.
+- Nút xem bộ sưu tập.
+- Âm thanh nhận thành tích.
+
+Nếu nhiều huy hiệu được mở khóa cùng lúc, sử dụng Reward Queue hoặc màn hình tổng hợp.
+
+Không tạo nhiều popup chồng lên nhau.
+
+# 20. REALTIME NOTIFICATIONS
+
+Kết nối hệ thống XP, Level và Achievement với Notification Center.
+
+Thông báo:
+
+- Nhận XP từ trận đấu.
+- Lên cấp.
+- Mở khóa danh hiệu.
+- Mở khóa huy hiệu.
+- Đạt huy hiệu quan hệ.
+
+Thông báo phải lưu thật trong database.
+
+Không gửi trùng.
+
+Có thể truy cập lại thành tích liên quan.
+
+Cho phép tùy chỉnh âm thanh thông báo.
+
+Không phát thông báo quá nhiều khi tất cả phần thưởng có thể gộp hợp lý.
+
+# 21. NEWSFEED INTEGRATION
+
+Cho phép người chơi chia sẻ:
+
+- Huy hiệu mới.
+- Cấp độ mới.
+- Danh hiệu mới.
+- Mốc sự nghiệp.
+- Thành tích quan hệ.
+
+Người dùng có thể lựa chọn chia sẻ hoặc không.
+
+Không tự đăng bài công khai trái với cài đặt riêng tư.
+
+# 22. BACKEND ARCHITECTURE
+
+Xây dựng hoặc hoàn thiện các thành phần:
+
+- Progression Service.
+- XP Reward Service.
+- Level Policy.
+- Title Registry.
+- Achievement Registry.
+- Achievement Evaluator.
+- Reward Ledger.
+- Player Career Projection.
+- Notification Integration.
+
+Tận dụng các service đã có.
+
+Không tạo service trùng chức năng.
+
+Game Engine vẫn là nguồn kết quả trận duy nhất.
+
+Progression không được ghi ngược vào GameState để thay đổi kết quả trận.
+
+Luồng xử lý:
+
+GAME COMPLETED
+
+→ RESULT COMMITTED
+
+→ MATCH ELIGIBILITY CHECK
+
+→ PLAYER STATISTICS
+
+→ ACHIEVEMENT EVALUATION
+
+→ XP REWARD CALCULATION
+
+→ XP TRANSACTION
+
+→ LEVEL CALCULATION
+
+→ TITLE UNLOCK
+
+→ CAREER UPDATE
+
+→ NOTIFICATION.
+
+# 23. DATABASE PERSISTENCE
+
+Đối chiếu schema hiện tại trước khi tạo migration.
+
+Các nhóm dữ liệu logic cần thiết:
+
+## Player Progression
+
+- User ID.
+- Total XP.
+- Current Level.
+- Active Title.
+- Updated At.
+
+## XP Transactions
+
+- Transaction ID.
+- User ID.
+- XP Amount.
+- Reason.
+- Source Type.
+- Source ID.
+- Policy Version.
+- Idempotency Key.
+- Created At.
+
+## Level History
+
+- User ID.
+- Old Level.
+- New Level.
+- Source Transaction.
+- Created At.
+
+## Achievement Definitions
+
+- Achievement ID.
+- Category.
+- Rarity.
+- Condition.
+- Reward XP.
+- Asset.
+- Version.
+
+## User Achievements
+
+- User ID.
+- Achievement ID.
+- Unlock Date.
+- Source.
+- Status.
+- Featured State.
+
+## Relationship Achievements
+
+- Pair ID.
+- Achievement ID.
+- Unlock Date.
+- Source.
+- Status.
+
+## User Titles
+
+- User ID.
+- Title ID.
+- Unlock Date.
+- Status.
+
+Tên bảng và model thực tế có thể điều chỉnh để phù hợp source.
+
+Không tạo bảng mới nếu đã có cấu trúc tương đương.
+
+Phải hỗ trợ SQLite và PostgreSQL theo kiến trúc dự án.
+
+# 24. DATA INTEGRITY & ANTI-FARM
+
+Đảm bảo:
+
+- Một trận chỉ cấp XP hợp lệ một lần cho mỗi tài khoản.
+- Một huy hiệu chỉ thưởng XP một lần theo chính sách.
+- Không cộng trùng khi retry.
+- Không cộng trùng khi restart.
+- Không cộng trùng khi reconnect.
+- Không cộng trùng khi xem Replay.
+- Không cấp XP từ frontend.
+- Không cho người dùng tự thay đổi XP.
+- Không cho tự sửa cấp độ.
+- Không cho tự mở khóa huy hiệu.
+
+Mọi phần thưởng phải được xác thực ở backend.
+
+Sử dụng transaction và idempotency phù hợp.
+
+Nếu trận bị xác định gian lận hoặc không hợp lệ:
+
+- Ghi giao dịch điều chỉnh XP.
+- Tính lại cấp độ nếu cần.
+- Tính lại thành tích.
+- Thu hồi huy hiệu hoặc danh hiệu không còn hợp lệ theo chính sách.
+- Giữ lịch sử kiểm toán.
+
+Không xóa dấu vết giao dịch.
+
+Không tự coi việc hai người chơi chung nhiều trận là gian lận.
+
+# 25. LEGACY DATA MIGRATION
+
+Đối với người dùng đã có lịch sử trận đấu:
+
+Kiểm tra dữ liệu có đủ căn cứ để tính lại XP và huy hiệu hay không.
+
+Nếu đủ:
+
+- Backfill có kiểm soát.
+- Không cộng trùng.
+- Đối soát với lịch sử trận.
+- Bảo toàn Player ID.
+- Bảo toàn dữ liệu tài khoản.
+
+Nếu không đủ:
+
+- Ghi rõ giới hạn dữ liệu.
+- Không tự tạo trận.
+- Không tự tạo ngày đạt huy hiệu.
+- Không tự dựng XP lịch sử.
+
+Phải có khả năng rebuild Career Projection từ những dữ liệu chính thức còn tồn tại.
+
+Không cấp XP hai lần khi triển khai lại hệ thống.
+
+# 26. CLOUD DEPLOYMENT
+
+Hệ thống XP và Achievement phải hoạt động với website triển khai trực tuyến.
+
+Tương thích:
+
+- GitHub.
+- Railway.
+- PostgreSQL.
+- SQLite local.
+- Backend hiện tại.
+- WebSocket.
+- CI/CD.
+- Migration.
+- Backup.
+- Restore.
+
+Không lưu XP chính thức bằng localStorage.
+
+Dữ liệu tài khoản phải được bảo toàn khi:
+
+- Refresh.
+- Đăng xuất.
+- Đăng nhập lại.
+- Đổi thiết bị.
+- Restart backend.
+- Redeploy website.
+- Cập nhật source.
+
+Không tuyên bố Cloud PASS nếu chưa nghiệm thu thật.
+
+# 27. ACCEPTANCE
+
+Kiểm thử thực tế:
+
+- Hoàn thành trận hợp lệ.
+- Chiến thắng.
+- Thua trận.
+- Sống sót.
+- Tính XP chính xác.
+- Tăng cấp.
+- Tăng nhiều cấp.
+- XP dư sau lên cấp.
+- Mở khóa huy hiệu.
+- Nhận danh hiệu.
+- Ghim huy hiệu.
+- Xem lịch sử XP.
+- Xem tiến độ huy hiệu.
+- Nhận thông báo.
+- Hiệu ứng Endgame.
+- Restart.
+- Refresh.
+- Reconnect.
+- Database migration.
+- Chống cộng trùng.
+- Tách Demo và QA.
+- Thu hồi thành tích không hợp lệ.
+- Phân quyền dữ liệu.
+- Responsive.
+- Các theme hiện có.
+
+Với huy hiệu yêu cầu hàng trăm trận, có thể dùng dữ liệu kiểm thử riêng để kiểm tra các ngưỡng 99/100, 49/50 hoặc 9/10.
+
+Không đưa dữ liệu kiểm thử vào tài khoản sản xuất.
+
+Không yêu cầu chơi hàng trăm trận thật chỉ để kiểm tra một phép so sánh ngưỡng.
+
+Phải phân biệt kiểm thử logic bằng fixture với end-to-end từ ván thật.
+
+# 28. REAL WEBSITE EVIDENCE
+
+Cung cấp ảnh website thật của:
+
+- Career Overview.
+- Cấp độ.
+- Thanh XP.
+- XP History.
+- Badge Gallery.
+- Huy hiệu đã đạt.
+- Huy hiệu chưa đạt.
+- Tiến độ huy hiệu.
+- Huy hiệu quan hệ.
+- Danh hiệu.
+- Profile có huy hiệu ghim.
+- Endgame Reward.
+- Level Up.
+- Achievement Unlock.
+- Notification.
+- Mobile.
+
+Nếu môi trường hỗ trợ, cung cấp video:
+
+Kết thúc trận
+
+→ Nhận XP
+
+→ Thanh XP tăng
+
+→ Lên cấp nếu đủ điều kiện
+
+→ Nhận huy hiệu
+
+→ Notification
+
+→ Mở Career Dashboard
+
+→ Xem lịch sử XP.
+
+Không sử dụng hình ảnh AI hoặc mockup thay cho bằng chứng triển khai.
+
+# 29. FINAL DELIVERY
+
+Tích hợp toàn bộ Player Career Expansion vào Full Source IMMERSIVE-04.
+
+Không tạo dự án riêng.
+
+Không yêu cầu tôi tự ghép patch.
+
+Bảo toàn toàn bộ yêu cầu IMMERSIVE-04 trước đó.
+
+Không làm mất:
+
+- Thông báo lớn.
+- Thông báo quản trò.
+- Xác nhận thủ công.
+- Group Chat ban ngày và ban đêm theo quyền.
+- Kết quả từng lượt.
+- Tổng kết ngày đêm.
+- Personal Journal.
+- Wheel of Fate.
+- AI.
+- Database.
+- Cloud Deployment.
+
+# FINAL PROJECT OWNER COMMAND
+
+Tôi muốn mỗi tài khoản Wolvesville có một hành trình phát triển sự nghiệp riêng.
+
+Chơi trận đấu.
+
+Nhận kinh nghiệm.
+
+Tích lũy điểm.
+
+Tăng cấp.
+
+Mở khóa danh hiệu.
+
+Sưu tầm huy hiệu.
+
+Ghi nhận thành tích.
+
+Xem lại lịch sử.
+
+Chia sẻ thành tựu.
+
+Tất cả phải được tính từ dữ liệu thật, lưu trong database thật và hoạt động xuyên suốt khi website được triển khai trực tuyến.
+
+**BUILD THE PLAYER PROGRESSION SYSTEM.**
+
+**BUILD EXPERIENCE POINTS.**
+
+**BUILD LEVELS AND TITLES.**
+
+**COMPLETE THE ACHIEVEMENT SYSTEM.**
+
+**BUILD A PREMIUM BADGE COLLECTION.**
+
+**ADD ENDGAME REWARDS.**
+
+**ADD LEVEL-UP AND ACHIEVEMENT ANIMATIONS.**
+
+**PERSIST ALL CAREER DATA.**
+
+**PREVENT XP FARMING AND DUPLICATE REWARDS.**
+
+**NO PAY-TO-WIN.**
+
+**NO GAMEPLAY ADVANTAGE FROM ACCOUNT LEVEL.**
+
+**INTEGRATE EVERYTHING INTO IMMERSIVE-04.**

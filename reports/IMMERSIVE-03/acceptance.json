@@ -1,0 +1,110 @@
+{
+  "checkpoint": "IMMERSIVE-03 development and cloud staging checkpoint",
+  "sourceFingerprint": "23c938f72f5ff76dc9919658194369af00b99ee7d9eee7872eb97fe98d1cab8c",
+  "deploymentConfigFingerprint": "1c2922825423c595bb6661a245e40cc0d3b16e5308cc2d7b45887bf6525eab01",
+  "baseFingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+  "historicalF": 1,
+  "newFull": 0,
+  "freshFull": null,
+  "completionMetricsFrozen": true,
+  "characterRegistry": 97,
+  "historicalDecisions": 118,
+  "legacySpecifications": 207,
+  "focusedBackend": {
+    "exit": 0,
+    "summary": {
+      "tests": 20,
+      "pass": 20,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    }
+  },
+  "repairBackend": {
+    "exit": 0,
+    "summary": {
+      "tests": 80,
+      "pass": 80,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "scope": "overlaps monolithic; do not add counts"
+  },
+  "monolithic": {
+    "command": "WV_ARCHIVED_RULE_REGRESSION=1 node --test --test-concurrency=4 tests/*.test.mjs",
+    "exit": 124,
+    "status": "INCOMPLETE",
+    "summary": {
+      "observedPass": 394,
+      "observedFail": 0,
+      "observedSkipped": 11
+    },
+    "log": "regression.log",
+    "earlierFailedRun": "regression-pre-fix.log"
+  },
+  "browser": {
+    "game": "PASS",
+    "social": "PASS",
+    "transport": "Chromium repository HTTP/WS bridge connected to actual backend/SQLite, not direct Internet"
+  },
+  "baselinePathsPreserved": 5227,
+  "baselineChangedFiles": [
+    ".env.example",
+    ".gitignore",
+    "README.md",
+    "backend/src/engine/service.ts",
+    "backend/src/game/coordinator.ts",
+    "backend/src/multiplayer/pg-store.ts",
+    "backend/src/multiplayer/server.ts",
+    "backend/src/multiplayer/sqlite-store.ts",
+    "backend/src/multiplayer/types.ts",
+    "backend/src/social/media.ts",
+    "backend/src/social/repository.ts",
+    "data/rule-intelligence/source_inventory.json",
+    "docs/immersive-handover/HUMAN_QA.md",
+    "docs/immersive-handover/PRODUCT_ACCEPTANCE.md",
+    "docs/immersive-handover/PROJECT_STATE.md",
+    "docs/immersive-handover/SESSION_HANDOVER.md",
+    "frontend/immersive.css",
+    "frontend/immersive.js",
+    "frontend/integration.js",
+    "package.json",
+    "scripts/copy-schema.mjs",
+    "scripts/migrate-pg-02b.mjs",
+    "scripts/serve-03.mjs",
+    "shared/contracts/index.ts"
+  ],
+  "historicalReportsUnchanged": 4173,
+  "livePostgresql": "PENDING",
+  "liveProvider": "PENDING",
+  "macNative": "PENDING",
+  "cloudDeployment": "NOT RUN",
+  "dockerBuild": "NOT RUN",
+  "ci": "CONFIGURED_NOT_RUN",
+  "lockfile": "NOT GENERATED registry DNS EAI_AGAIN",
+  "performance": {
+    "workload": "50 posts, 500 comments; SQLite in-memory, same fixture, 20 warmup + 100 interleaved runs/version; repository only, not browser/network",
+    "result": [
+      {
+        "version": "IMMERSIVE-02",
+        "queriesPerRequest": [
+          51
+        ],
+        "medianMs": 3.823,
+        "p95Ms": 11.293
+      },
+      {
+        "version": "IMMERSIVE-03",
+        "queriesPerRequest": [
+          2
+        ],
+        "medianMs": 3.094,
+        "p95Ms": 7.406
+      }
+    ]
+  },
+  "databaseUpgrade": "PASS on two copied IMMERSIVE-02 test DBs, not personal DBs",
+  "newSchema": "010 additive post media",
+  "productAcceptance": "docs/immersive-handover/PRODUCT_ACCEPTANCE.md"
+}

@@ -1,0 +1,3 @@
+UX_ACTIONS_PASS
+Error: E2E timeout browser_s15_gameplay_ux_e2e.py: cleanup did not finish; not counted PASS
+    at file:///mnt/data/s15work/scripts/run-browser-s06.mjs:39:10

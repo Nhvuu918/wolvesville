@@ -1,0 +1,44 @@
+{
+  "version": "1.6.0-s14-wip",
+  "status": "WIP / competitive NO-GO",
+  "cleanExtraction": true,
+  "crc": "PASS",
+  "sourceIntegrity": {
+    "status": "PASS",
+    "exit": 0
+  },
+  "build": {
+    "status": "PASS",
+    "exit": 0
+  },
+  "rulesBuild": {
+    "status": "PASS",
+    "exit": 0
+  },
+  "backend": {
+    "pass": 227,
+    "fail": 0,
+    "skipped": 11,
+    "total": 238,
+    "exit": 0
+  },
+  "newIntegration": {
+    "pass": 16,
+    "fail": 0,
+    "skipped": 0,
+    "exit": 0
+  },
+  "metrics": {
+    "status": "PASS",
+    "exit": 0
+  },
+  "browser": {
+    "status": "INCOMPLETE",
+    "reason": "Runner interrupted by execution timeout; no observed exit code or PASS. Inherited suites not rerun."
+  },
+  "postgresql": {
+    "status": "PENDING ENVIRONMENT",
+    "skipped": 11
+  },
+  "note": "Clean acceptance ran on candidate archive. Final archive adds QA reports only; executable source, scripts, tests and data verified byte-for-byte against tested candidate."
+}

@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS player_progression(user_id TEXT PRIMARY KEY REFERENCES user_accounts(id) ON DELETE CASCADE,total_xp INTEGER NOT NULL DEFAULT 0,active_title TEXT NOT NULL DEFAULT 'novice');
+CREATE TABLE IF NOT EXISTS xp_transactions(user_id TEXT NOT NULL REFERENCES user_accounts(id) ON DELETE CASCADE,event_key TEXT NOT NULL,amount INTEGER NOT NULL,reason TEXT NOT NULL,source_game TEXT NOT NULL,achievement_id TEXT,policy TEXT NOT NULL,created_at INTEGER NOT NULL,PRIMARY KEY(user_id,event_key));
+CREATE TABLE IF NOT EXISTS user_achievements(user_id TEXT NOT NULL REFERENCES user_accounts(id) ON DELETE CASCADE,achievement_id TEXT NOT NULL,definition_id TEXT NOT NULL,partner_id TEXT,source_game TEXT NOT NULL,unlocked_at INTEGER NOT NULL,rarity TEXT NOT NULL,featured INTEGER NOT NULL DEFAULT 0,PRIMARY KEY(user_id,achievement_id));
+CREATE TABLE IF NOT EXISTS player_level_history(user_id TEXT NOT NULL REFERENCES user_accounts(id) ON DELETE CASCADE,event_key TEXT NOT NULL,old_level INTEGER NOT NULL,new_level INTEGER NOT NULL,created_at INTEGER NOT NULL,PRIMARY KEY(user_id,event_key));
+CREATE TABLE IF NOT EXISTS user_titles(user_id TEXT NOT NULL REFERENCES user_accounts(id) ON DELETE CASCADE,title_id TEXT NOT NULL,unlocked_at INTEGER NOT NULL,PRIMARY KEY(user_id,title_id));
+CREATE INDEX IF NOT EXISTS xp_history_idx ON xp_transactions(user_id,created_at);

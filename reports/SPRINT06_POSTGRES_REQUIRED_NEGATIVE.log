@@ -1,0 +1,36 @@
+
+> wolvesville-sprint06-complete-gameplay@0.8.0 test:pg:06
+> npm run build && WV_REQUIRE_POSTGRES=1 node --test tests/postgres-s06.test.mjs
+
+
+> wolvesville-sprint06-complete-gameplay@0.8.0 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+TAP version 13
+# (node:66369) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S06 PostgreSQL LIVE isolated schema: vote, \#79 PH-02, atomicity, replay, restart, ACL
+not ok 1 - S06 PostgreSQL LIVE isolated schema: vote, \#79 PH-02, atomicity, replay, restart, ACL
+  ---
+  duration_ms: 1.001087
+  type: 'test'
+  location: '/mnt/data/Wolvesville_Sprint_06_Complete_Gameplay_Full_Source/tests/postgres-s06.test.mjs:11:1'
+  failureType: 'testCodeFailure'
+  error: 'DATABASE_URL REQUIRED for mandatory PostgreSQL acceptance'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/Wolvesville_Sprint_06_Complete_Gameplay_Full_Source/tests/postgres-s06.test.mjs:14:25)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 145.670789

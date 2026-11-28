@@ -1,0 +1,62 @@
+{
+  "version": "1.7.8-s15-closure-wip",
+  "officialGameplayModified": false,
+  "decisions": [
+    {
+      "id": "E02-VILLAGE",
+      "status": "PROPOSED_NOT_ACTIVE",
+      "sources": [
+        "reference/official_rule_sources_v1_3_1",
+        "data/rules/official_merged_118.json VH03/VH06/VH58/VH82",
+        "character.json#8/#9",
+        "data/rules/decisions_21_v1_2_UNCHANGED.json"
+      ],
+      "known": [
+        "After death-chain, evaluate simultaneously; counted pending revival matters; independent contender prevents population-based endgame"
+      ],
+      "options": [
+        "Village wins when all current wolves and independent contenders are eliminated; define winning membership incl dead separately",
+        "Require a living/countable village member and a distinct membership rule when all village members are dead; specify simultaneous personal wins"
+      ],
+      "discriminator": "Deck 8,9: #9 hangs #8. Another case: all village players dead, all wolves and independent contenders die in same chain. Pending revival and team-transition cases also distinguish membership.",
+      "recommendation": "Adopt explicit Village predicate with at least one countable current village member, no remaining wolves and no independent contender, separately confirm dead village membership and simultaneous personal winners. Not official until approved."
+    },
+    {
+      "id": "R33-MIXED-TARGET",
+      "status": "PROPOSED_NOT_ACTIVE",
+      "sources": [
+        "character.json#33",
+        "VH03"
+      ],
+      "known": [
+        "Only a villager may be killed by revenge after actual hanging",
+        "Do not disclose private faction via filtering/reject/retry"
+      ],
+      "options": [
+        "Blind one-shot selection of a living target; non-villager consumes response without kill",
+        "Provide faction-authorized eligible-target list only if owner explicitly allows this information",
+        "Allow a private ordered list with server choosing first eligible only if approved"
+      ],
+      "discriminator": "Hanged #33 selects living #28 or another wolf before choosing a villager; options differ in information and action budget.",
+      "recommendation": "Blind one-shot option minimizes pre-selection disclosure; requires approval for consumption/no-op rule."
+    },
+    {
+      "id": "H88-MARK-LIFETIME",
+      "status": "PROPOSED_NOT_ACTIVE",
+      "sources": [
+        "character.json#88",
+        "VH65",
+        "tests/sprint15-final-breakthrough.test.mjs"
+      ],
+      "known": [
+        "May mark every night; marked player dies when Hunter actually killed/hanged unless valid defense. Source does not specify skip-next-night expiry."
+      ],
+      "options": [
+        "Mark lasts until the next night begins; skipped next-night choice leaves no active mark",
+        "Last mark persists until replaced or target eliminated"
+      ],
+      "discriminator": "Mark A night 1, skip night 2, Hunter dies night 2 or day 2; options disagree whether A dies.",
+      "recommendation": "Current round-only validity with explicit expiry at next-night start is a candidate, but owner must settle expiry. Existing stale mark test preserved; engine fails closed when it matters."
+    }
+  ]
+}

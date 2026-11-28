@@ -1,0 +1,119 @@
+[
+  {
+    "path": "reports/FULL50-M1-01/browser/final-candidate/endgame.png",
+    "sha256": "ed670064122d16fb15b8d285500903e8df96052bd43a81e09e9bc72641cc34a9",
+    "scenario": "browser_s29_life02_e2e.py",
+    "mode": "INTEGRATION_TEST / pinned V3",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+    "scope": "Actual Chromium screenshot, no mock"
+  },
+  {
+    "path": "reports/FULL50-M1-01/browser/final-candidate/hibernating-self.png",
+    "sha256": "a163ef228b9b250080d9500842c0eeea442a3ab625acbc0b4f9f62b047dbfa1d",
+    "scenario": "browser_s29_life02_e2e.py",
+    "mode": "INTEGRATION_TEST / pinned V3",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+    "scope": "Actual Chromium screenshot, no mock"
+  },
+  {
+    "path": "reports/FULL50-M1-01/browser/final-candidate/public-death-no-bell.png",
+    "sha256": "9ffb77193c445ea387e8b6add79d1102fefa82b7c8cf6d5680319e356cd88bb0",
+    "scenario": "browser_s29_life02_e2e.py",
+    "mode": "INTEGRATION_TEST / pinned V3",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+    "scope": "Actual Chromium screenshot, no mock"
+  },
+  {
+    "path": "reports/FULL50-M1-01/browser/final-candidate/real-linked-death-bell.png",
+    "sha256": "45bea8f44c239cbe35a8725e28836b07ccaa2fe6858ec67a99990560f986561f",
+    "scenario": "browser_s29_life02_e2e.py",
+    "mode": "INTEGRATION_TEST / pinned V3",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+    "scope": "Actual Chromium screenshot, no mock"
+  },
+  {
+    "path": "reports/FULL50-M1-01/browser/final-candidate/wake-no-bell.png",
+    "sha256": "f00cf4c18a1206b471218b8e625adde64d7b15e806b7f7764152da90527e336b",
+    "scenario": "browser_s29_life02_e2e.py",
+    "mode": "INTEGRATION_TEST / pinned V3",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+    "scope": "Actual Chromium screenshot, no mock"
+  },
+  {
+    "path": "reports/FULL50-M1-01/browser/final-normal/bell-leader-endgame.png",
+    "sha256": "b013768e5d1abb389c5151aec2c2c28007a4183e815c49d7c308bc56f39740e8",
+    "scenario": "browser_s28_bell_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+    "scope": "Actual Chromium screenshot, no mock"
+  },
+  {
+    "path": "reports/FULL50-M1-01/browser/final-normal/bell-leader-pair.png",
+    "sha256": "5f79ad54975fae79ffb35a2031b72caf4deed42e257ea368a3e90b5d61f482bc",
+    "scenario": "browser_s28_bell_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+    "scope": "Actual Chromium screenshot, no mock"
+  },
+  {
+    "path": "reports/FULL50-M1-01/browser/final-normal/bell-linked-endgame.png",
+    "sha256": "408d6565fe3c8949d3ad3388bed8c168527eaae32bcf81f9462892af4506cacd",
+    "scenario": "browser_s28_bell_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+    "scope": "Actual Chromium screenshot, no mock"
+  },
+  {
+    "path": "reports/FULL50-M1-01/browser/final-normal/bell-linked-observed.png",
+    "sha256": "276b9760731cc1b014af09aa5571cacab097491cb9048b35b119cf8f29d03431",
+    "scenario": "browser_s28_bell_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+    "scope": "Actual Chromium screenshot, no mock"
+  },
+  {
+    "path": "reports/FULL50-M1-01/browser/final-normal/bell-linked-pair.png",
+    "sha256": "8d57e07021ac697a22ed018500716bdee6c98f67eaf848912ac8062ee2792d6e",
+    "scenario": "browser_s28_bell_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+    "scope": "Actual Chromium screenshot, no mock"
+  },
+  {
+    "path": "reports/FULL50-M1-01/browser/final-normal/bell-revival-endgame.png",
+    "sha256": "997e6eb57e8358147ecd3f87ff141dde15c3fbeb3a4c14762919194c3e621df2",
+    "scenario": "browser_s28_bell_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+    "scope": "Actual Chromium screenshot, no mock"
+  },
+  {
+    "path": "reports/FULL50-M1-01/browser/final-normal/bell-revival-observed.png",
+    "sha256": "9966b05cce5a23c2a4478583f4df650ec6e9edadd12db0f9a37bd8e54fa1a05d",
+    "scenario": "browser_s28_bell_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+    "scope": "Actual Chromium screenshot, no mock"
+  },
+  {
+    "path": "reports/FULL50-M1-01/browser/final-normal/bell-revival-pair.png",
+    "sha256": "1a01d4a90a4f0851cb9533037aeaf60d9077d091730720d7d29eb56adffdeb9a",
+    "scenario": "browser_s28_bell_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab",
+    "scope": "Actual Chromium screenshot, no mock"
+  }
+]

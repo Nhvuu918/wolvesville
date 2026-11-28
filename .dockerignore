@@ -1,0 +1,13 @@
+node_modules
+.git
+dist
+.env
+.env.*
+!.env.example
+local
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.zip
+**/__pycache__

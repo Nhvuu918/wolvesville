@@ -1,0 +1,486 @@
+{
+  "schemaVersion": "graphics-handoff-v2.0-s08-addendum",
+  "supersedes": "S07 14_SPRINT07_ANIMATION_ACL_CONTRACT.md for scenario-specific PLAYER_ELIMINATED/MATCH_COMPLETED; base S06 event catalog remains archived for compatibility",
+  "foundationVersion": "Sprint 07 v0.9.0",
+  "runtimeConstraints": {
+    "serverAuthoritative": true,
+    "noTypewriter": true,
+    "neverPlayPreviewAsGameplay": true,
+    "eventRevisionRequired": true,
+    "privateAudienceAtEmission": true,
+    "noCharacterIdsInPlayerFacingText": true,
+    "reduceMotion": "show full message immediately; preserve logical transition"
+  },
+  "statusMeaning": {
+    "IMPLEMENTED_TESTED": "runtime + test evidence",
+    "IMPLEMENTED_TESTED_SCOPED": "runtime only in certified role pack",
+    "IMPLEMENTED_TESTED_INTAKE": "ballot intake is not resolution",
+    "PARTIAL": "partial code, not a full rule path",
+    "BLOCKED_BY_RULE": "design-only placeholder no runtime event"
+  },
+  "states": [
+    {
+      "id": "AUTH_ENTRY",
+      "title": "Bước vào làng",
+      "status": "IMPLEMENTED_TESTED",
+      "trigger": "Người dùng nhấn đăng nhập hoặc Demo",
+      "backendEvent": "auth HTTP response",
+      "authoritativeSource": "POST /api/auth/login hoặc /api/auth/demo",
+      "authorizedAudience": "SELF",
+      "authorizedPayload": [
+        "profile public projection"
+      ],
+      "animationHook": "auth.enter.v1",
+      "transitions": [
+        "LOBBY_MAP"
+      ],
+      "loading": "Không chặn thao tác khác; hiển thị trạng thái tải",
+      "error": "Giữ trạng thái hiện tại và hiển thị lỗi tiếng Việt",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Logo/ảnh nền gốc; không thêm thông tin kỹ thuật",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "LOBBY_MAP",
+      "title": "Sảnh làng",
+      "status": "IMPLEMENTED_TESTED",
+      "trigger": "Auth thành công, tải danh sách phòng",
+      "backendEvent": "room snapshot/update",
+      "authoritativeSource": "GET /api/rooms và Room WS",
+      "authorizedAudience": "PUBLIC",
+      "authorizedPayload": [
+        "roomName",
+        "memberCount",
+        "capacity",
+        "status"
+      ],
+      "animationHook": "lobby.rooms.update.v1",
+      "transitions": [
+        "ROOM_PREVIEW",
+        "CODEX"
+      ],
+      "loading": "Skeleton/đang tải danh sách từ server; không hiện phòng mock",
+      "error": "Giữ trạng thái hiện tại và hiển thị lỗi tiếng Việt",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Bản đồ gốc + room markers; click vào toàn bảng tên",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "ROOM_PREVIEW",
+      "title": "Thông tin phòng",
+      "status": "IMPLEMENTED_TESTED",
+      "trigger": "Một lần click/tap/phím trên marker",
+      "backendEvent": "room preview from HTTP list",
+      "authoritativeSource": "Backend room record",
+      "authorizedAudience": "PUBLIC",
+      "authorizedPayload": [
+        "name",
+        "membersCount",
+        "capacity",
+        "status",
+        "joinable"
+      ],
+      "animationHook": "room.preview.open.v1",
+      "transitions": [
+        "LOBBY_MAP",
+        "ROOM_WAITING"
+      ],
+      "loading": "Không chặn thao tác khác; hiển thị trạng thái tải",
+      "error": "Phòng hết chỗ/bị khóa/đã xóa → thông báo tiếng Việt; không tự join",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Bảng phòng đúng phong cách Dark Fantasy; vùng bấm ≥44px",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "ROOM_WAITING",
+      "title": "Phòng chờ",
+      "status": "IMPLEMENTED_TESTED",
+      "trigger": "Join được server xác nhận",
+      "backendEvent": "room.updated",
+      "authoritativeSource": "Room API + WS",
+      "authorizedAudience": "ROOM_MEMBERS",
+      "authorizedPayload": [
+        "roomName",
+        "members",
+        "host",
+        "status"
+      ],
+      "animationHook": "room.waiting.update.v1",
+      "transitions": [
+        "ROLE_REVEAL",
+        "LOBBY_MAP"
+      ],
+      "loading": "Không chặn thao tác khác; hiển thị trạng thái tải",
+      "error": "Giữ trạng thái hiện tại và hiển thị lỗi tiếng Việt",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Danh sách thành viên; quyền host chỉ nhìn theo server",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "ROLE_REVEAL",
+      "title": "Nhận vai riêng",
+      "status": "IMPLEMENTED_TESTED",
+      "trigger": "Start chính thức trong restricted test pack",
+      "backendEvent": "game.snapshot",
+      "authoritativeSource": "Authorized GET /api/games/:id",
+      "authorizedAudience": "PLAYER_SELF",
+      "authorizedPayload": [
+        "self.currentCharacterId (lookup nội bộ)",
+        "self role display from official data"
+      ],
+      "animationHook": "role.reveal.private.v1",
+      "transitions": [
+        "NIGHT_ACTION",
+        "GAME_RESULT"
+      ],
+      "loading": "Ẩn vai đến khi có `self` từ server",
+      "error": "Không có self → không reveal, yêu cầu đồng bộ lại",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Artwork role gốc; không show ID bên cạnh tên",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "NIGHT_ACTION",
+      "title": "Đêm — chọn mục tiêu",
+      "status": "IMPLEMENTED_TESTED",
+      "trigger": "Game phase NIGHT_COLLECT và skill capability available",
+      "backendEvent": "game.snapshot / game.state_updated",
+      "authoritativeSource": "Authorized game capabilities",
+      "authorizedAudience": "PLAYER_SELF",
+      "authorizedPayload": [
+        "phase",
+        "capabilities",
+        "validTarget constraints server-provided"
+      ],
+      "animationHook": "night.action.select.v1",
+      "transitions": [
+        "ACTION_PENDING",
+        "DAY_DISCUSSION",
+        "GAME_RESULT"
+      ],
+      "loading": "Không chặn thao tác khác; hiển thị trạng thái tải",
+      "error": "Không hợp lệ/đã khóa → lý do dễ hiểu; không tự quyết định skill hợp lệ",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Thanh kỹ năng và thẻ mục tiêu đã duyệt",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "ACTION_PENDING",
+      "title": "Đã gửi hành động",
+      "status": "IMPLEMENTED_TESTED",
+      "trigger": "Backend trả HTTP ACCEPTED",
+      "backendEvent": "ACTION_ACCEPTED receipt",
+      "authoritativeSource": "Action HTTP response + authorized feedback",
+      "authorizedAudience": "PLAYER_SELF",
+      "authorizedPayload": [
+        "ownActionId for dedupe only",
+        "status without secret effect"
+      ],
+      "animationHook": "action.pending.v1",
+      "transitions": [
+        "NIGHT_RESULT",
+        "DAY_DISCUSSION",
+        "GAME_RESULT"
+      ],
+      "loading": "Hiển thị Đã tiếp nhận · Chờ phân giải",
+      "error": "Giữ trạng thái hiện tại và hiển thị lỗi tiếng Việt",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Vành sáng nút chờ, không tạo kết quả trước commit",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "NIGHT_RESULT",
+      "title": "Kết quả kỹ năng",
+      "status": "IMPLEMENTED_TESTED_SCOPED",
+      "trigger": "Engine phân giải rồi commit và projection cho phép",
+      "backendEvent": "ROLE_OBSERVED",
+      "authoritativeSource": "Authorized event/feedback",
+      "authorizedAudience": "PLAYER_PRIVATE",
+      "authorizedPayload": [
+        "own authorized role information only"
+      ],
+      "animationHook": "skill.result.private.v1",
+      "transitions": [
+        "DAY_DISCUSSION",
+        "GAME_RESULT"
+      ],
+      "loading": "Không chặn thao tác khác; hiển thị trạng thái tải",
+      "error": "Không có authorized result → chỉ xác nhận action không hiển thị hiệu quả",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Tấm thẻ riêng tư có khả năng đọc đủ lâu; không tự đóng ngay",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "DAY_DISCUSSION",
+      "title": "Bình minh & thảo luận",
+      "status": "IMPLEMENTED_TESTED",
+      "trigger": "Engine commit phase DAY_DISCUSS",
+      "backendEvent": "PHASE_CHANGED",
+      "authoritativeSource": "Authorized game phase",
+      "authorizedAudience": "ROOM_PUBLIC",
+      "authorizedPayload": [
+        "phase",
+        "public death announcements if committed"
+      ],
+      "animationHook": "phase.dawn.v1",
+      "transitions": [
+        "VOTE_OPEN",
+        "NIGHT_ACTION",
+        "GAME_RESULT"
+      ],
+      "loading": "Không chặn thao tác khác; hiển thị trạng thái tải",
+      "error": "Giữ trạng thái hiện tại và hiển thị lỗi tiếng Việt",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Đổi sáng nền toàn màn; không tiết lộ action ẩn",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "VOTE_OPEN",
+      "title": "Bỏ phiếu",
+      "status": "IMPLEMENTED_TESTED_INTAKE",
+      "trigger": "Host mở giai đoạn vote",
+      "backendEvent": "VOTING_OPENED",
+      "authoritativeSource": "Authorized voting projection",
+      "authorizedAudience": "ROOM_MEMBERS",
+      "authorizedPayload": [
+        "phase",
+        "own eligible target list",
+        "ballots received count as allowed"
+      ],
+      "animationHook": "vote.open.v1",
+      "transitions": [
+        "VOTE_SUBMITTED",
+        "VOTE_CLOSED_PENDING"
+      ],
+      "loading": "Không chặn thao tác khác; hiển thị trạng thái tải",
+      "error": "Target không hợp lệ/không đủ quyền → không hiển thị đã gửi",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Bảng bỏ phiếu, target focus rõ ràng",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "VOTE_SUBMITTED",
+      "title": "Đã ghi nhận phiếu",
+      "status": "IMPLEMENTED_TESTED_INTAKE",
+      "trigger": "Phiếu được server ACCEPTED",
+      "backendEvent": "VOTE_INTENT_RECORDED",
+      "authoritativeSource": "Own vote projection",
+      "authorizedAudience": "PLAYER_SELF",
+      "authorizedPayload": [
+        "ownBallot receipt"
+      ],
+      "animationHook": "vote.received.private.v1",
+      "transitions": [
+        "VOTE_CANCELLED",
+        "VOTE_CLOSED_PENDING"
+      ],
+      "loading": "Không chặn thao tác khác; hiển thị trạng thái tải",
+      "error": "Giữ trạng thái hiện tại và hiển thị lỗi tiếng Việt",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Chỉ hiển thị xác nhận gửi; không công bố phiếu người khác",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "VOTE_CANCELLED",
+      "title": "Biểu quyết bị hủy",
+      "status": "IMPLEMENTED_TESTED_RESTRICTED",
+      "trigger": "Kỹ năng Sói Hòa Bình #79 được phân giải hợp lệ",
+      "backendEvent": "VOTING_CANCELLED",
+      "authoritativeSource": "Server commit + authorized projection",
+      "authorizedAudience": "ROOM_PUBLIC",
+      "authorizedPayload": [
+        "voting.status=CANCELLED",
+        "next phase"
+      ],
+      "animationHook": "vote.cancelled.public.v1",
+      "transitions": [
+        "NIGHT_ACTION"
+      ],
+      "loading": "Không chặn thao tác khác; hiển thị trạng thái tải",
+      "error": "Giữ trạng thái hiện tại và hiển thị lỗi tiếng Việt",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Bảng phiếu tan thành sương; không tạo người bị loại",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "VOTE_CLOSED_PENDING",
+      "title": "Biểu quyết đã khóa",
+      "status": "PARTIAL",
+      "trigger": "Host khóa phiếu nhưng chưa có quy tắc chốt treo chung",
+      "backendEvent": "VOTING_CLOSED_PENDING_RULES",
+      "authoritativeSource": "Game phase & voting projection",
+      "authorizedAudience": "ROOM_MEMBERS",
+      "authorizedPayload": [
+        "voting.status=CLOSED_UNRESOLVED"
+      ],
+      "animationHook": "vote.closed.unresolved.v1",
+      "transitions": [],
+      "loading": "Không chặn thao tác khác; hiển thị trạng thái tải",
+      "error": "Giữ trạng thái hiện tại và hiển thị lỗi tiếng Việt",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Giữ thông báo Đã khóa phiếu, chờ xử lý; không hiện người chết",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "VOTE_RESOLUTION",
+      "title": "Kết quả biểu quyết",
+      "status": "BLOCKED_BY_RULE",
+      "trigger": "Khi có vote adjudication được xác nhận",
+      "backendEvent": "NOT_IMPLEMENTED",
+      "authoritativeSource": "Chưa có official vote resolver chung",
+      "authorizedAudience": "NONE",
+      "authorizedPayload": [],
+      "animationHook": null,
+      "transitions": [
+        "VOTE_ELIMINATION"
+      ],
+      "loading": "Không tạo loading giả từ UI",
+      "error": "Fail closed",
+      "reconnect": "Không có sự kiện thật; không hiển thị",
+      "reducedMotion": "Không có animation live",
+      "assetPlaceholder": "Design Preview only; không dùng trong live gameplay",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "VOTE_ELIMINATION",
+      "title": "Người bị treo",
+      "status": "BLOCKED_BY_RULE",
+      "trigger": "Sau adjudication và post-death chain có căn cứ",
+      "backendEvent": "NOT_IMPLEMENTED",
+      "authoritativeSource": "Generic hanging unresolved",
+      "authorizedAudience": "NONE",
+      "authorizedPayload": [],
+      "animationHook": null,
+      "transitions": [
+        "GAME_RESULT",
+        "NIGHT_ACTION"
+      ],
+      "loading": "Không được giả vờ đã chốt phiếu",
+      "error": "Fail closed",
+      "reconnect": "Không có event live",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Design Preview only; tách khỏi event PLAYER_ELIMINATED đêm",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "VERIFIED_NIGHT_ELIMINATION",
+      "title": "Người bị loại (đêm)",
+      "status": "IMPLEMENTED_TESTED_SCOPED",
+      "trigger": "Đòn #8 được commit trong bộ [8,25]",
+      "backendEvent": "PLAYER_ELIMINATED",
+      "authoritativeSource": "Backend Engine event from closed-deck only",
+      "authorizedAudience": "ROOM_PUBLIC",
+      "authorizedPayload": [
+        "playerId only (định danh sự kiện)",
+        "publicReportedDead"
+      ],
+      "animationHook": "player.eliminated.verified.v1",
+      "transitions": [
+        "GAME_RESULT",
+        "DAY_DISCUSSION"
+      ],
+      "loading": "Không chặn thao tác khác; hiển thị trạng thái tải",
+      "error": "Không có committed event → không làm animation",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Ánh nến tắt, không tự show ai tấn công hoặc vai bị loại",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "GAME_RESULT",
+      "title": "Kết quả trận",
+      "status": "IMPLEMENTED_TESTED_SCOPED",
+      "trigger": "Engine commit GAME_COMPLETED trong bộ [8,25]",
+      "backendEvent": "MATCH_COMPLETED",
+      "authoritativeSource": "Authorized game snapshot/event",
+      "authorizedAudience": "ROOM_PUBLIC",
+      "authorizedPayload": [
+        "winnerIds",
+        "completed",
+        "phase"
+      ],
+      "animationHook": "match.completed.verified.v1",
+      "transitions": [
+        "LOBBY_MAP"
+      ],
+      "loading": "Trước commit không hiển thị màn thắng",
+      "error": "Thiếu winnerIds hoặc không completed → không reveal",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Màn thắng/thua Dark Fantasy gốc; không tự suy winner",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "RECONNECT",
+      "title": "Đang kết nối lại",
+      "status": "IMPLEMENTED_TESTED",
+      "trigger": "WebSocket close hoặc refresh",
+      "backendEvent": "auth.ok + game.snapshot",
+      "authoritativeSource": "Auth + re-subscribe + HTTP",
+      "authorizedAudience": "PLAYER_SELF",
+      "authorizedPayload": [
+        "authorized snapshot",
+        "last acknowledged revision"
+      ],
+      "animationHook": "connection.resync.v1",
+      "transitions": [
+        "LOBBY_MAP",
+        "ROOM_WAITING",
+        "NIGHT_ACTION",
+        "ACTION_PENDING",
+        "DAY_DISCUSSION",
+        "VOTE_OPEN",
+        "GAME_RESULT"
+      ],
+      "loading": "Đang nối lại…; thông báo trạng thái có thể đã thay đổi",
+      "error": "Giữ trạng thái hiện tại và hiển thị lỗi tiếng Việt",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Thanh trạng thái; không chặn màn chơi bởi overlay bất tận",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    },
+    {
+      "id": "CODEX",
+      "title": "Bách khoa 97 nhân vật",
+      "status": "IMPLEMENTED_TESTED",
+      "trigger": "Chọn menu Bách khoa",
+      "backendEvent": "official catalog loaded",
+      "authoritativeSource": "data/character.json",
+      "authorizedAudience": "PUBLIC",
+      "authorizedPayload": [
+        "official role names and public descriptions"
+      ],
+      "animationHook": "codex.open.v1",
+      "transitions": [
+        "LOBBY_MAP"
+      ],
+      "loading": "Không chặn thao tác khác; hiển thị trạng thái tải",
+      "error": "Giữ trạng thái hiện tại và hiển thị lỗi tiếng Việt",
+      "reconnect": "Lấy lại snapshot theo quyền; không phát animation cũ",
+      "reducedMotion": "Hiện toàn bộ chữ ngay; bỏ chuyển động",
+      "assetPlaceholder": "Wheel/Grid đã duyệt; tuyệt đối không thiết kế lại",
+      "responsiveGuidance": "Tương thích desktop 1920×1080, laptop 1366×768 và mobile 390px; không giả định ảnh gốc có kích thước cố định"
+    }
+  ],
+  "sourceEvidence": [
+    "docs/gameplay-flow-handoff/13_SPRINT07_VERIFIED_EARLY_ENDGAME.md",
+    "docs/gameplay-flow-handoff/14_SPRINT07_ANIMATION_ACL_CONTRACT.md",
+    "docs/SPRINT07_RULE_BLOCKER_DIAGNOSIS.md",
+    "tests/sprint07-endgame.test.mjs",
+    "tests/sprint06-lifecycle.test.mjs"
+  ],
+  "assetDimensionsDisclaimer": "Use existing actual UI layout and CSS as ground truth; min touch target ~44x44 CSS pixels is an accessibility recommendation, not an artwork source dimension."
+}

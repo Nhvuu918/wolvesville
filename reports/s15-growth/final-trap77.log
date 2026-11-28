@@ -1,0 +1,19 @@
+TAP version 13
+# (node:23540) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":77,"branch":"trap.lethal-block-counter","skill":"official.77.trap","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#77 VH51 trap absorbs one lethal attack and counter kills knight without public cause
+ok 1 - S15 \#77 VH51 trap absorbs one lethal attack and counter kills knight without public cause
+  ---
+  duration_ms: 4474.210545
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5214.046118

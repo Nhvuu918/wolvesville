@@ -1,0 +1,18 @@
+TAP version 13
+# (node:80094) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S23 \#84: existing voting deck, channel isolation, mute expiry, repeated use, restart and real victory
+ok 1 - S23 \#84: existing voting deck, channel isolation, mute expiry, repeated use, restart and real victory
+  ---
+  duration_ms: 1221.310222
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1411.150906

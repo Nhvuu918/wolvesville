@@ -1,0 +1,3 @@
+(node:80366) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+LEGACY_MIXED_ARCHIVE_COMPATIBILITY PASS: original archive hash, rank and legal pending choice preserved; new blind receipt does not overwrite; same legal bite and verified replay

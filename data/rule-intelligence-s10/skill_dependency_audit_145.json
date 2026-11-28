@@ -1,0 +1,2424 @@
+{
+  "schemaVersion": 1,
+  "status": "TECHNICAL_AUDIT_NOT_OFFICIAL_RULE",
+  "source": "data/rule-intelligence/skills_145.json",
+  "branchCount": 145,
+  "mechanismTagCounts": {
+    "AT": 79,
+    "DF": 74,
+    "RS": 64,
+    "IN": 36,
+    "RV": 28,
+    "LK": 34,
+    "TR": 37,
+    "NO": 12,
+    "RN": 14,
+    "BL": 30,
+    "TM": 31,
+    "VT": 28,
+    "CH": 24,
+    "WC": 39,
+    "OP": 12,
+    "RF": 6
+  },
+  "mechanisms": [
+    {
+      "id": "auth_acl",
+      "description": "Account identity, membership, role-secret filtering"
+    },
+    {
+      "id": "phase_scheduler",
+      "description": "Night/day stage, deadlines, server revisions"
+    },
+    {
+      "id": "action_intake",
+      "description": "Target eligibility, idempotency, action receipts"
+    },
+    {
+      "id": "resource_ledger",
+      "description": "Charges, expirations, active effects"
+    },
+    {
+      "id": "status_interactions",
+      "description": "Block, shield, deception, faction transfer and reflect"
+    },
+    {
+      "id": "combat_resolution",
+      "description": "Attack, redirect, defense, reactive and delayed effects"
+    },
+    {
+      "id": "elimination_chain",
+      "description": "Death source, revive, protection and death-linked cascades"
+    },
+    {
+      "id": "voting_policy",
+      "description": "Vote eligibility, effective ballot and authorized adjudication — V02/V03 BLOCKED"
+    },
+    {
+      "id": "victory_resolution",
+      "description": "Source-backed win predicates after all effects"
+    },
+    {
+      "id": "event_acl_replay",
+      "description": "Persisted, auditable events, private feedback, replay and reconnect"
+    },
+    {
+      "id": "graphics_projection",
+      "description": "Authorized visuals, never authoritative game outcomes"
+    }
+  ],
+  "dependencies": [
+    [
+      "auth_acl",
+      "phase_scheduler"
+    ],
+    [
+      "auth_acl",
+      "action_intake"
+    ],
+    [
+      "phase_scheduler",
+      "action_intake"
+    ],
+    [
+      "action_intake",
+      "resource_ledger"
+    ],
+    [
+      "resource_ledger",
+      "status_interactions"
+    ],
+    [
+      "status_interactions",
+      "combat_resolution"
+    ],
+    [
+      "combat_resolution",
+      "elimination_chain"
+    ],
+    [
+      "action_intake",
+      "voting_policy"
+    ],
+    [
+      "voting_policy",
+      "elimination_chain"
+    ],
+    [
+      "elimination_chain",
+      "victory_resolution"
+    ],
+    [
+      "victory_resolution",
+      "event_acl_replay"
+    ],
+    [
+      "elimination_chain",
+      "event_acl_replay"
+    ],
+    [
+      "event_acl_replay",
+      "graphics_projection"
+    ]
+  ],
+  "branchAudit": [
+    {
+      "branchId": "WV-CH01-S01",
+      "characterId": 1,
+      "tags": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "SK-04",
+        "VH72"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH02-S01",
+      "characterId": 2,
+      "tags": [
+        "IN",
+        "AT",
+        "DF",
+        "RV",
+        "RS",
+        "LK"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH03-S01",
+      "characterId": 3,
+      "tags": [
+        "IN",
+        "TR",
+        "NO"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH04-S01",
+      "characterId": 4,
+      "tags": [
+        "RN",
+        "DF",
+        "AT",
+        "BL",
+        "TM"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH83"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH05-S01",
+      "characterId": 5,
+      "tags": [
+        "IN",
+        "TR",
+        "DF",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH84"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH05-S02",
+      "characterId": 5,
+      "tags": [
+        "IN",
+        "TR",
+        "DF",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH84"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH06-S01",
+      "characterId": 6,
+      "tags": [
+        "VT",
+        "CH",
+        "LK",
+        "RS",
+        "WC"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "PH-02",
+        "Q13-09",
+        "VH01"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH06-S02",
+      "characterId": 6,
+      "tags": [
+        "VT",
+        "CH",
+        "LK",
+        "RS",
+        "WC"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "PH-02",
+        "Q13-09",
+        "VH01"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH06-S03",
+      "characterId": 6,
+      "tags": [
+        "VT",
+        "CH",
+        "LK",
+        "RS",
+        "WC"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "PH-02",
+        "Q13-09",
+        "VH01"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH06-S04",
+      "characterId": 6,
+      "tags": [
+        "VT",
+        "CH",
+        "LK",
+        "RS",
+        "WC"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "PH-02",
+        "Q13-09",
+        "VH01"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH07-S01",
+      "characterId": 7,
+      "tags": [
+        "DF",
+        "AT",
+        "OP",
+        "RS",
+        "WC"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH07-S02",
+      "characterId": 7,
+      "tags": [
+        "DF",
+        "AT",
+        "OP",
+        "RS",
+        "WC"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH08-S01",
+      "characterId": 8,
+      "tags": [
+        "AT",
+        "DF",
+        "WC",
+        "VT"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH09-S01",
+      "characterId": 9,
+      "tags": [
+        "DF",
+        "TM",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH10-S01",
+      "characterId": 10,
+      "tags": [
+        "BL",
+        "NO",
+        "AT",
+        "RS"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "Q13-06",
+        "Q13-11",
+        "SK-05"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH11-S01",
+      "characterId": 11,
+      "tags": [
+        "DF",
+        "BL",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-01",
+        "SK-01",
+        "SK-02"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH11-S02",
+      "characterId": 11,
+      "tags": [
+        "DF",
+        "BL",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-01",
+        "SK-01",
+        "SK-02"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH12-S01",
+      "characterId": 12,
+      "tags": [
+        "LK",
+        "RN",
+        "WC",
+        "TM",
+        "RV"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH13-S01",
+      "characterId": 13,
+      "tags": [
+        "DF",
+        "AT",
+        "LK",
+        "RN",
+        "TR",
+        "WC",
+        "CH"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH13-S02",
+      "characterId": 13,
+      "tags": [
+        "DF",
+        "AT",
+        "LK",
+        "RN",
+        "TR",
+        "WC",
+        "CH"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH13-S03",
+      "characterId": 13,
+      "tags": [
+        "DF",
+        "AT",
+        "LK",
+        "RN",
+        "TR",
+        "WC",
+        "CH"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH13-S04",
+      "characterId": 13,
+      "tags": [
+        "DF",
+        "AT",
+        "LK",
+        "RN",
+        "TR",
+        "WC",
+        "CH"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH14-S01",
+      "characterId": 14,
+      "tags": [
+        "AT",
+        "RN",
+        "LK",
+        "DF",
+        "WC"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH15-S01",
+      "characterId": 15,
+      "tags": [
+        "AT",
+        "LK",
+        "DF",
+        "WC"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH16-S01",
+      "characterId": 16,
+      "tags": [
+        "BL",
+        "DF",
+        "AT",
+        "RS",
+        "TM"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH16-S02",
+      "characterId": 16,
+      "tags": [
+        "BL",
+        "DF",
+        "AT",
+        "RS",
+        "TM"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH17-S01",
+      "characterId": 17,
+      "tags": [
+        "RS",
+        "DF",
+        "AT",
+        "BL",
+        "IN"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-01",
+        "VH85"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH17-S02",
+      "characterId": 17,
+      "tags": [
+        "RS",
+        "DF",
+        "AT",
+        "BL",
+        "IN"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-01",
+        "VH85"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH18-S01",
+      "characterId": 18,
+      "tags": [
+        "TR",
+        "TM",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-04",
+        "SK-03",
+        "VH71"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH19-S01",
+      "characterId": 19,
+      "tags": [
+        "LK",
+        "BL",
+        "VT",
+        "TR",
+        "IN",
+        "WC",
+        "DF"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH19-S02",
+      "characterId": 19,
+      "tags": [
+        "LK",
+        "BL",
+        "VT",
+        "TR",
+        "IN",
+        "WC",
+        "DF"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH19-S03",
+      "characterId": 19,
+      "tags": [
+        "LK",
+        "BL",
+        "VT",
+        "TR",
+        "IN",
+        "WC",
+        "DF"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH19-S04",
+      "characterId": 19,
+      "tags": [
+        "LK",
+        "BL",
+        "VT",
+        "TR",
+        "IN",
+        "WC",
+        "DF"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH19-S05",
+      "characterId": 19,
+      "tags": [
+        "LK",
+        "BL",
+        "VT",
+        "TR",
+        "IN",
+        "WC",
+        "DF"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH19-S06",
+      "characterId": 19,
+      "tags": [
+        "LK",
+        "BL",
+        "VT",
+        "TR",
+        "IN",
+        "WC",
+        "DF"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH19-S07",
+      "characterId": 19,
+      "tags": [
+        "LK",
+        "BL",
+        "VT",
+        "TR",
+        "IN",
+        "WC",
+        "DF"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH20-S01",
+      "characterId": 20,
+      "tags": [
+        "BL",
+        "IN",
+        "AT",
+        "OP"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "IMPLEMENTED_RESTRICTED_PASSIVE_INSPECTION_ONLY",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH21-S01",
+      "characterId": 21,
+      "tags": [
+        "AT",
+        "TM"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "LIFE-03",
+        "VH74"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH22-S01",
+      "characterId": 22,
+      "tags": [
+        "TR",
+        "RS",
+        "AT"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH75",
+        "VH80",
+        "VH81"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH23-S01",
+      "characterId": 23,
+      "tags": [
+        "DF",
+        "RV",
+        "AT",
+        "VT",
+        "TM"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "LIFE-01",
+        "VH82"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH23-S02",
+      "characterId": 23,
+      "tags": [
+        "DF",
+        "RV",
+        "AT",
+        "VT",
+        "TM"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "LIFE-01",
+        "VH82"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH23-S03",
+      "characterId": 23,
+      "tags": [
+        "DF",
+        "RV",
+        "AT",
+        "VT",
+        "TM"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "LIFE-01",
+        "VH82"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH24-S01",
+      "characterId": 24,
+      "tags": [
+        "BL",
+        "CH",
+        "DF",
+        "AT"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "SK-07",
+        "VH79"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH24-S02",
+      "characterId": 24,
+      "tags": [
+        "BL",
+        "CH",
+        "DF",
+        "AT"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "SK-07",
+        "VH79"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH25-S01",
+      "characterId": 25,
+      "tags": [
+        "IN"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "IMPLEMENTED_RESTRICTED_ACTION",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH26-S01",
+      "characterId": 26,
+      "tags": [
+        "RV",
+        "CH"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH73",
+        "VH76",
+        "VH77"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH27-S01",
+      "characterId": 27,
+      "tags": [
+        "LK",
+        "WC",
+        "CH",
+        "TR"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "Q13-03",
+        "REL-01",
+        "REL-02",
+        "REL-03"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH28-S01",
+      "characterId": 28,
+      "tags": [
+        "WC",
+        "VT"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH29-S01",
+      "characterId": 29,
+      "tags": [
+        "DF",
+        "AT",
+        "RV",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-12",
+        "VH05",
+        "VH60"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH29-S02",
+      "characterId": 29,
+      "tags": [
+        "DF",
+        "AT",
+        "RV",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-12",
+        "VH05",
+        "VH60"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH30-S01",
+      "characterId": 30,
+      "tags": [
+        "AT",
+        "WC",
+        "TM"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH31-S01",
+      "characterId": 31,
+      "tags": [
+        "DF"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-10"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH32-S01",
+      "characterId": 32,
+      "tags": [
+        "AT",
+        "RS",
+        "TM"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH09"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH33-S01",
+      "characterId": 33,
+      "tags": [
+        "VT",
+        "NO"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH08"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH33-S02",
+      "characterId": 33,
+      "tags": [
+        "VT",
+        "NO"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH08"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH34-S01",
+      "characterId": 34,
+      "tags": [
+        "BL"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH10"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH35-S01",
+      "characterId": 35,
+      "tags": [
+        "NO",
+        "IN",
+        "TM"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH11"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH36-S01",
+      "characterId": 36,
+      "tags": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH12",
+        "VH13"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH36-S02",
+      "characterId": 36,
+      "tags": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH12",
+        "VH13"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH37-S01",
+      "characterId": 37,
+      "tags": [
+        "RF",
+        "IN",
+        "VT",
+        "TM"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH14",
+        "VH15",
+        "VH56"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH38-S01",
+      "characterId": 38,
+      "tags": [
+        "RV",
+        "IN",
+        "AT",
+        "DF",
+        "VT",
+        "RS"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH16"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH38-S02",
+      "characterId": 38,
+      "tags": [
+        "RV",
+        "IN",
+        "AT",
+        "DF",
+        "VT",
+        "RS"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH16"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH38-S03",
+      "characterId": 38,
+      "tags": [
+        "RV",
+        "IN",
+        "AT",
+        "DF",
+        "VT",
+        "RS"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH16"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH38-S04",
+      "characterId": 38,
+      "tags": [
+        "RV",
+        "IN",
+        "AT",
+        "DF",
+        "VT",
+        "RS"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH16"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH38-S05",
+      "characterId": 38,
+      "tags": [
+        "RV",
+        "IN",
+        "AT",
+        "DF",
+        "VT",
+        "RS"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH16"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH38-S06",
+      "characterId": 38,
+      "tags": [
+        "RV",
+        "IN",
+        "AT",
+        "DF",
+        "VT",
+        "RS"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH16"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH39-S01",
+      "characterId": 39,
+      "tags": [
+        "AT",
+        "RS",
+        "WC",
+        "BL"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH17",
+        "VH18"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH40-S01",
+      "characterId": 40,
+      "tags": [
+        "RN",
+        "AT"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH19"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH41-S01",
+      "characterId": 41,
+      "tags": [
+        "LK",
+        "TR",
+        "CH"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH42-S01",
+      "characterId": 42,
+      "tags": [
+        "LK",
+        "TR",
+        "WC"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH20"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH43-S01",
+      "characterId": 43,
+      "tags": [
+        "AT",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH44-S01",
+      "characterId": 44,
+      "tags": [
+        "LK",
+        "DF",
+        "AT",
+        "TR",
+        "WC",
+        "RS"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH21"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH44-S02",
+      "characterId": 44,
+      "tags": [
+        "LK",
+        "DF",
+        "AT",
+        "TR",
+        "WC",
+        "RS"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH21"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH45-S01",
+      "characterId": 45,
+      "tags": [
+        "TR",
+        "RV",
+        "DF"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH46-S01",
+      "characterId": 46,
+      "tags": [
+        "BL",
+        "AT",
+        "WC",
+        "OP"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH23",
+        "VH76"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH47-S01",
+      "characterId": 47,
+      "tags": [
+        "BL",
+        "AT",
+        "WC",
+        "OP"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH24",
+        "VH76"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH48-S01",
+      "characterId": 48,
+      "tags": [
+        "AT",
+        "WC"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH74"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH49-S01",
+      "characterId": 49,
+      "tags": [
+        "NO",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH25"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH50-S01",
+      "characterId": 50,
+      "tags": [
+        "BL",
+        "TM"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH51-S01",
+      "characterId": 51,
+      "tags": [
+        "RV",
+        "CH",
+        "TM"
+      ],
+      "readiness": "CONFLICTING",
+      "sourceRuleIds": [
+        "Q13-07",
+        "VH26",
+        "VH57"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH51-S02",
+      "characterId": 51,
+      "tags": [
+        "RV",
+        "CH",
+        "TM"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-07",
+        "VH26",
+        "VH57"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH52-S01",
+      "characterId": 52,
+      "tags": [
+        "DF"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-10",
+        "VH27"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH53-S01",
+      "characterId": 53,
+      "tags": [
+        "DF",
+        "AT",
+        "LK",
+        "OP"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH76"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH53-S02",
+      "characterId": 53,
+      "tags": [
+        "DF",
+        "AT",
+        "LK",
+        "OP"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH76"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH54-S01",
+      "characterId": 54,
+      "tags": [
+        "AT",
+        "IN",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH28"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH54-S02",
+      "characterId": 54,
+      "tags": [
+        "AT",
+        "IN",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH28"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH55-S01",
+      "characterId": 55,
+      "tags": [
+        "DF",
+        "TR"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH56-S01",
+      "characterId": 56,
+      "tags": [
+        "DF",
+        "AT"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH29"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH57-S01",
+      "characterId": 57,
+      "tags": [
+        "AT",
+        "TR",
+        "NO"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH58-S01",
+      "characterId": 58,
+      "tags": [
+        "AT",
+        "IN"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH30"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH59-S01",
+      "characterId": 59,
+      "tags": [
+        "BL",
+        "AT",
+        "TM"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH31"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH60-S01",
+      "characterId": 60,
+      "tags": [
+        "TR",
+        "RS",
+        "RV",
+        "CH",
+        "TM"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "Q13-04",
+        "VH32"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH60-S02",
+      "characterId": 60,
+      "tags": [
+        "TR",
+        "RS",
+        "RV",
+        "CH",
+        "TM"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "Q13-04",
+        "VH32"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH61-S01",
+      "characterId": 61,
+      "tags": [
+        "AT",
+        "TM"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH33"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH61-S02",
+      "characterId": 61,
+      "tags": [
+        "AT",
+        "TM"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH33"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH62-S01",
+      "characterId": 62,
+      "tags": [
+        "LK",
+        "TR",
+        "CH",
+        "WC",
+        "AT"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "Q13-08",
+        "REL-01",
+        "VH02"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH62-S02",
+      "characterId": 62,
+      "tags": [
+        "LK",
+        "TR",
+        "CH",
+        "WC",
+        "AT"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "Q13-08",
+        "REL-01",
+        "VH02"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH63-S01",
+      "characterId": 63,
+      "tags": [
+        "DF",
+        "RF",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH56",
+        "VH61"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH63-S02",
+      "characterId": 63,
+      "tags": [
+        "DF",
+        "RF",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH56",
+        "VH61"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH64-S01",
+      "characterId": 64,
+      "tags": [
+        "IN",
+        "LK"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH65-S01",
+      "characterId": 65,
+      "tags": [
+        "AT",
+        "DF",
+        "TM",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH66-S01",
+      "characterId": 66,
+      "tags": [
+        "DF",
+        "IN",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH34"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH67-S01",
+      "characterId": 67,
+      "tags": [
+        "DF",
+        "AT",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-10",
+        "VH35",
+        "VH70"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH67-S02",
+      "characterId": 67,
+      "tags": [
+        "DF",
+        "AT",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-10",
+        "VH35",
+        "VH70"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH68-S01",
+      "characterId": 68,
+      "tags": [
+        "AT",
+        "LK",
+        "OP"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH36"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH69-S01",
+      "characterId": 69,
+      "tags": [
+        "TR"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH37"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH70-S01",
+      "characterId": 70,
+      "tags": [
+        "NO",
+        "TR",
+        "RV"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH71-S01",
+      "characterId": 71,
+      "tags": [
+        "NO",
+        "AT",
+        "TM"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH38"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH72-S01",
+      "characterId": 72,
+      "tags": [
+        "NO"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH39"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH73-S01",
+      "characterId": 73,
+      "tags": [
+        "BL",
+        "RS",
+        "TM"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH40"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH74-S01",
+      "characterId": 74,
+      "tags": [
+        "IN"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-06",
+        "SK-05"
+      ],
+      "legacyImplementationStatus": "IMPLEMENTED_RESTRICTED_ACTION",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH75-S01",
+      "characterId": 75,
+      "tags": [
+        "AT",
+        "DF",
+        "OP",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-10",
+        "SK-06",
+        "VH42"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH76-S01",
+      "characterId": 76,
+      "tags": [
+        "BL",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH41"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH77-S01",
+      "characterId": 77,
+      "tags": [
+        "DF",
+        "AT",
+        "OP"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "SK-06",
+        "VH51",
+        "VH54"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH78-S01",
+      "characterId": 78,
+      "tags": [
+        "DF",
+        "AT",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH43"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH78-S02",
+      "characterId": 78,
+      "tags": [
+        "DF",
+        "AT",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH43"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH79-S01",
+      "characterId": 79,
+      "tags": [
+        "VT",
+        "IN"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "PH-02",
+        "Q13-09"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH80-S01",
+      "characterId": 80,
+      "tags": [
+        "IN",
+        "RV"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH49",
+        "VH53"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH81-S01",
+      "characterId": 81,
+      "tags": [
+        "IN",
+        "RN"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-11"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH82-S01",
+      "characterId": 82,
+      "tags": [
+        "AT",
+        "RN",
+        "TM"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH82-S02",
+      "characterId": 82,
+      "tags": [
+        "AT",
+        "RN",
+        "TM"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH83-S01",
+      "characterId": 83,
+      "tags": [
+        "RV",
+        "TR",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH44",
+        "VH52"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH84-S01",
+      "characterId": 84,
+      "tags": [
+        "BL"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH57"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH85-S01",
+      "characterId": 85,
+      "tags": [
+        "RF",
+        "AT"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH45"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH86-S01",
+      "characterId": 86,
+      "tags": [
+        "AT",
+        "OP"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH74"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH87-S01",
+      "characterId": 87,
+      "tags": [
+        "BL",
+        "DF",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH64"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH87-S02",
+      "characterId": 87,
+      "tags": [
+        "BL",
+        "DF",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH64"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH88-S01",
+      "characterId": 88,
+      "tags": [
+        "AT",
+        "LK",
+        "OP"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH65"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH89-S01",
+      "characterId": 89,
+      "tags": [
+        "IN",
+        "RS"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH47",
+        "VH69"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH90-S01",
+      "characterId": 90,
+      "tags": [
+        "TR",
+        "LK",
+        "AT",
+        "WC",
+        "CH"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "Q13-08",
+        "VH50",
+        "VH55",
+        "VH59",
+        "VH78"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH90-S02",
+      "characterId": 90,
+      "tags": [
+        "TR",
+        "LK",
+        "AT",
+        "WC",
+        "CH"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "Q13-08",
+        "VH50",
+        "VH55",
+        "VH59",
+        "VH78"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH91-S01",
+      "characterId": 91,
+      "tags": [
+        "VT",
+        "WC",
+        "LK"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH92-S01",
+      "characterId": 92,
+      "tags": [
+        "DF",
+        "IN",
+        "AT",
+        "TR",
+        "WC",
+        "RS",
+        "RN"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH92-S02",
+      "characterId": 92,
+      "tags": [
+        "DF",
+        "IN",
+        "AT",
+        "TR",
+        "WC",
+        "RS",
+        "RN"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH92-S03",
+      "characterId": 92,
+      "tags": [
+        "DF",
+        "IN",
+        "AT",
+        "TR",
+        "WC",
+        "RS",
+        "RN"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH93-S01",
+      "characterId": 93,
+      "tags": [
+        "BL",
+        "VT",
+        "TR"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH57"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH94-S01",
+      "characterId": 94,
+      "tags": [
+        "RF",
+        "NO",
+        "RV"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH56"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH94-S02",
+      "characterId": 94,
+      "tags": [
+        "RF",
+        "NO",
+        "RV"
+      ],
+      "readiness": "BLOCKED_BY_RULE",
+      "sourceRuleIds": [
+        "VH56"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH95-S01",
+      "characterId": 95,
+      "tags": [
+        "RS",
+        "DF",
+        "RV",
+        "TM"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-07",
+        "VH66",
+        "VH67"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH95-S02",
+      "characterId": 95,
+      "tags": [
+        "RS",
+        "DF",
+        "RV",
+        "TM"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-07",
+        "VH66",
+        "VH67"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH95-S03",
+      "characterId": 95,
+      "tags": [
+        "RS",
+        "DF",
+        "RV",
+        "TM"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-07",
+        "VH66",
+        "VH67"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH96-S01",
+      "characterId": 96,
+      "tags": [
+        "RS",
+        "DF",
+        "AT",
+        "CH"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH46",
+        "VH48",
+        "VH67"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH96-S02",
+      "characterId": 96,
+      "tags": [
+        "RS",
+        "DF",
+        "AT",
+        "CH"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH46",
+        "VH48",
+        "VH67"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH96-S03",
+      "characterId": 96,
+      "tags": [
+        "RS",
+        "DF",
+        "AT",
+        "CH"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "VH46",
+        "VH48",
+        "VH67"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    },
+    {
+      "branchId": "WV-CH97-S01",
+      "characterId": 97,
+      "tags": [
+        "RV",
+        "TM",
+        "DF"
+      ],
+      "readiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "sourceRuleIds": [
+        "Q13-05",
+        "Q13-07",
+        "Q13-12",
+        "VH63"
+      ],
+      "legacyImplementationStatus": "NOT_IMPLEMENTED",
+      "sourceVerification": "CONFIRMED"
+    }
+  ]
+}

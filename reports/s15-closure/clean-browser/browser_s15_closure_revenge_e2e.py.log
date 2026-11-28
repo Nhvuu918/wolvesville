@@ -1,0 +1,5 @@
+SCENARIO_READY s15-closure-revenge-hunter
+SCENARIO_ACTIONS_PASS s15-closure-revenge-hunter
+S15_CLOSURE_REVENGE_BROWSER_PASS
+S06_BROWSER_PASS browser_s15_closure_revenge_e2e.py
+S06_BROWSER_ALL_1_PASS

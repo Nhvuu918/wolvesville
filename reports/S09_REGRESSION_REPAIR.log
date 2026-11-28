@@ -1,0 +1,118 @@
+TAP version 13
+# (node:101003) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S04 OFF20 inspected by both official seers: exact-role result private and next-night injury for each investigator
+ok 1 - S04 OFF20 inspected by both official seers: exact-role result private and next-night injury for each investigator
+  ---
+  duration_ms: 531.458397
+  type: 'test'
+  ...
+# Subtest: S04 OFF20 passive does not grant an unconfirmed active skill and remains closed to unknown roles
+ok 2 - S04 OFF20 passive does not grant an unconfirmed active skill and remains closed to unknown roles
+  ---
+  duration_ms: 378.761481
+  type: 'test'
+  ...
+# Subtest: S04 OFF20 persists an injury through SQLite restart and duplicate action cannot double-apply it
+ok 3 - S04 OFF20 persists an injury through SQLite restart and duplicate action cannot double-apply it
+  ---
+  duration_ms: 397.315735
+  type: 'test'
+  ...
+# Subtest: S04 OFF20 pack is feature gated, cannot start with arbitrary fourth character
+ok 4 - S04 OFF20 pack is feature gated, cannot start with arbitrary fourth character
+  ---
+  duration_ms: 486.44737
+  type: 'test'
+  ...
+# (node:101004) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S05-01 \#34 blocks accepted \#9 action but not \#25 Tiên Tri or \#31 Bảo Vệ (VH10/VH24)
+ok 5 - S05-01 \#34 blocks accepted \#9 action but not \#25 Tiên Tri or \#31 Bảo Vệ (VH10/VH24)
+  ---
+  duration_ms: 607.04887
+  type: 'test'
+  ...
+# Subtest: S05-02 \#34 targeting \#25/\#31 does not lock protected named roles; \#74 can be locked
+ok 6 - S05-02 \#34 targeting \#25/\#31 does not lock protected named roles; \#74 can be locked
+  ---
+  duration_ms: 1508.126804
+  type: 'test'
+  ...
+# Subtest: S05-03 \#31 guard cannot select same target in consecutive nights but can after a gap
+ok 7 - S05-03 \#31 guard cannot select same target in consecutive nights but can after a gap
+  ---
+  duration_ms: 516.088504
+  type: 'test'
+  ...
+# Subtest: S05-04 \#9 snow protection lasts two nights and cannot repeat any of three targets
+ok 8 - S05-04 \#9 snow protection lasts two nights and cannot repeat any of three targets
+  ---
+  duration_ms: 563.068523
+  type: 'test'
+  ...
+# Subtest: S05-05 no secret leakage, no fixtures in official pack, idempotency preserves one protection layer
+ok 9 - S05-05 no secret leakage, no fixtures in official pack, idempotency preserves one protection layer
+  ---
+  duration_ms: 503.438397
+  type: 'test'
+  ...
+# Subtest: S05-06 SQLite restart preserves layer provenance, action status and deterministic replay
+ok 10 - S05-06 SQLite restart preserves layer provenance, action status and deterministic replay
+  ---
+  duration_ms: 568.351701
+  type: 'test'
+  ...
+# (node:101010) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S09-01 certified \#33 server-side directive transforms a ballot with private audit but never hangs a player
+ok 11 - S09-01 certified \#33 server-side directive transforms a ballot with private audit but never hangs a player
+  ---
+  duration_ms: 622.402199
+  type: 'test'
+  ...
+# Subtest: S09-02 coercion is once-per-match and all retries preserve idempotency and revision
+ok 12 - S09-02 coercion is once-per-match and all retries preserve idempotency and revision
+  ---
+  duration_ms: 345.431297
+  type: 'test'
+  ...
+# Subtest: S09-03 never fabricate an effective ballot if controller or target has not voted
+ok 13 - S09-03 never fabricate an effective ballot if controller or target has not voted
+  ---
+  duration_ms: 378.144352
+  type: 'test'
+  ...
+# Subtest: S09-04 replay and frozen ACL remain valid after SQLite restart
+ok 14 - S09-04 replay and frozen ACL remain valid after SQLite restart
+  ---
+  duration_ms: 511.950584
+  type: 'test'
+  ...
+# Subtest: S09-05 private audit never authorizes hanging, including tied votes and transformed unique leader
+ok 15 - S09-05 private audit never authorizes hanging, including tied votes and transformed unique leader
+  ---
+  duration_ms: 0.344759
+  type: 'test'
+  ...
+# Subtest: S09-06 character.json\#23 explicitly disables the Soul Gunner ballot; no event/revision changes
+ok 16 - S09-06 character.json\#23 explicitly disables the Soul Gunner ballot; no event/revision changes
+  ---
+  duration_ms: 5.115085
+  type: 'test'
+  ...
+# Subtest: S09-07 inherited QA-only day advance cannot fabricate vote, hanging or victory
+ok 17 - S09-07 inherited QA-only day advance cannot fabricate vote, hanging or victory
+  ---
+  duration_ms: 225.901339
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4401.496652

@@ -1,0 +1,154 @@
+{
+  "version": "1.6.0-s14-recovery",
+  "manifestSource": [
+    "test:browser:12:all",
+    "test:browser:13",
+    "test:browser:14",
+    "browser_s14_transport_regression.py"
+  ],
+  "inheritedCount": 15,
+  "sprint14Count": 2,
+  "pass": 17,
+  "fail": 0,
+  "method": "Separate isolated real SQLite backend for each suite, sequential runs; bridge transport, not native network acceptance",
+  "suites": [
+    {
+      "suite": "browser_s12_attack_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_s12_attack_e2e.retry.log",
+      "sha256": "47032afb966ee96306360da761f802f76dd628825766bdd4dd8f5f712e2f053e"
+    },
+    {
+      "suite": "browser_s11_voting_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_s11_voting_e2e.retry.log",
+      "sha256": "411f39bce8fef30932574c76c98931d8d7f674e617505d76a28d909a45baa043"
+    },
+    {
+      "suite": "browser_s11_seer_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_s11_seer_e2e.retry.log",
+      "sha256": "828d0b5b4e715187504660626ec0f05505ae5de71cb04a52c87820cdbb21402c"
+    },
+    {
+      "suite": "browser_s10_gameplay_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_s10_gameplay_e2e.retry.log",
+      "sha256": "37197423f3778e3a36937f5606a2ef6af04bc1f48e546c0a277527f6fd1fc0f1"
+    },
+    {
+      "suite": "browser_s09_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_s09_e2e.retry.log",
+      "sha256": "00e31720fed36611e4cfc350cc9efed0213f55f7bc66329a3b6ea8c448aaa380"
+    },
+    {
+      "suite": "browser_s08_gameplay_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_s08_gameplay_e2e.retry.log",
+      "sha256": "c7d86c294c9b54aa2c23f9b6ead67f3582c72581dec91e6f2817c216396415d9"
+    },
+    {
+      "suite": "browser_s07_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_s07_e2e.retry.log",
+      "sha256": "f9b15db8ec2e9a217df13ca219362e944fe535cc38eee6d16066629a7e1e970e"
+    },
+    {
+      "suite": "browser_s06_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_s06_e2e.retry.log",
+      "sha256": "a2a348bb215295f1effab820802b38ef215ea631ec6ac7403416bc2fd70a7c9f"
+    },
+    {
+      "suite": "browser_s05_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_s05_e2e.retry.log",
+      "sha256": "3f02b6a04bb2fa243692fe6b0b6f21407e4e63233b60b05ec527dbc01a360409"
+    },
+    {
+      "suite": "browser_lobby_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_lobby_e2e.retry.log",
+      "sha256": "9fa7dee1d904bcc32f3f70ba5eea54f4f0f4948db36cd27a04d73d4e4a1bd561"
+    },
+    {
+      "suite": "browser_codex_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_codex_e2e.retry.log",
+      "sha256": "343f5bc765c9bfdc4857214a08b7612d6b785b97dc0ba5034b0141a1370a6f9e"
+    },
+    {
+      "suite": "browser_demo_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_demo_e2e.retry.log",
+      "sha256": "b008f03429488d2ce8bab498ee478351c4ef3dc54fd91f2c05382a9c8feaf424"
+    },
+    {
+      "suite": "browser_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_e2e.retry.log",
+      "sha256": "df2314f7db7b8f2f9695ad5ea67c4116f13105e2c4824aa29dd372ad7eb1c344"
+    },
+    {
+      "suite": "browser_ux_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_ux_e2e.retry.log",
+      "sha256": "e83e0980f9f3aa4f79c541420c5e705e15ae946d722ae954a7af586b62366f36"
+    },
+    {
+      "suite": "browser_s13_skills_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_s13_skills_e2e.retry.log",
+      "sha256": "e8d17770acc5ad379b0ad33d72ca8a9818116ce9477218556fff549692bfe783"
+    },
+    {
+      "suite": "browser_s14_gameplay_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/browser_s14_gameplay_e2e.retry.log",
+      "sha256": "ce0746cbeaeb8279f2a522a8d40966875bbe678765c2cfbecc9aef354ba88c6f"
+    },
+    {
+      "suite": "browser_s14_transport_regression.py",
+      "exit": 0,
+      "status": "PASS",
+      "cleanupLog": "CLEAN",
+      "log": "reports/s14-recovery/idle-after.log",
+      "sha256": "0427d7f3f854ac11622476b9ea251b11d993e768d58cc86dec5e5fa328cc0ba5"
+    }
+  ],
+  "historicalFailuresPreserved": "reports/s14-final and reports/s14-recovery/idle-before.log",
+  "applicationSourceChanged": false
+}

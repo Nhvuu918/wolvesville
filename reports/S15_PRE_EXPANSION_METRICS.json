@@ -1,0 +1,131 @@
+{
+  "version": "1.7.2-s15-ux-wip",
+  "scope": "Restricted QA sessions; competitive NO-GO",
+  "metricR": {
+    "baseline": 27,
+    "executableCharacters": 31,
+    "totalCharacters": 97,
+    "ids": [
+      5,
+      8,
+      9,
+      11,
+      16,
+      17,
+      20,
+      23,
+      24,
+      25,
+      31,
+      32,
+      33,
+      34,
+      36,
+      43,
+      50,
+      52,
+      54,
+      59,
+      66,
+      67,
+      68,
+      74,
+      76,
+      78,
+      79,
+      80,
+      84,
+      87,
+      88
+    ],
+    "newCharacters": [
+      43,
+      54,
+      80,
+      87
+    ]
+  },
+  "metricF": {
+    "fullyImplemented": 0,
+    "certified": false
+  },
+  "metricS": {
+    "newVerifiedBranches": 6,
+    "exactRatio": null,
+    "reason": "Inherited composite rows not an atomic denominator; 6 source-mapped new skills/passive branches only; no overall ratio certified"
+  },
+  "metricA": 8,
+  "completedDecks": [
+    "8,25",
+    "8,28",
+    "8,9,25",
+    "8,9,28",
+    "8,25,28",
+    "8,9,25,28",
+    "8,25,68",
+    "8,25,88"
+  ],
+  "metricB": 6,
+  "metricC": 0,
+  "evidence": [
+    {
+      "id": 36,
+      "branch": "shield.success-private",
+      "skill": "official.36.shield",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 66,
+      "branch": "observe.other-protected",
+      "skill": "passive.66.observe-protected",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 43,
+      "branch": "shoot.day-night",
+      "skill": "official.43.shoot",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 87,
+      "branch": "sedative.chat-and-vote",
+      "skill": "official.87.sedative",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 54,
+      "branch": "reveal.public-after-first-vote",
+      "skill": "official.54.reveal",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 80,
+      "branch": "compare.different-faction",
+      "skill": "official.80.compare",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 80,
+      "branch": "compare.same-faction",
+      "skill": "official.80.compare",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    }
+  ],
+  "qa": {
+    "exit": 0
+  }
+}

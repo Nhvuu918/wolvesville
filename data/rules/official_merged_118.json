@@ -1,0 +1,946 @@
+[
+  {
+    "code": "VH01",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Phải nhận ít nhất 2 phiếu hợp lệ cuối cùng sau khi áp dụng các hiệu ứng thao túng phiếu.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH02",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Chọn lại ngẫu nhiên trong tập ứng viên hợp lệ; nếu không đủ hai hội viên thì không kích hoạt liên kết.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH03",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Hoàn tất toàn bộ chuỗi sự kiện hiện tại, sau đó xét đồng thời điều kiện thắng và công nhận đồng thắng.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH04",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Ưu tiên liên kết hợp lệ được tạo trước; nếu đồng thời thì dùng thứ tự phân giải ổn định xác định trước ván.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH05",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "x2 cho phép dùng một bình cứu tối đa hai lượt trong cùng đêm; sau đó bình hết.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH06",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Người chờ hồi sinh vẫn tính vào quân số theo E03; nếu điều kiện thắng đã thỏa sau chuỗi hiện tại thì kết thúc ván, không mở lượt mới để hồi sinh.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH07",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Kỹ năng công khai vai trò mặc định công khai vai trò thật, trừ ngoại lệ được mô tả rõ.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH08",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Cùng pha/cùng mức tác động: xét phụ thuộc, ưu tiên kỹ năng, thứ tự kích hoạt hợp lệ; nếu thực sự đồng thời thì dùng thứ tự ổn định xác định trước ván.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH09",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Tối đa 1 viên trong một giai đoạn ngày hoặc đêm, trừ nâng cấp hợp lệ.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH10",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Khóa kỹ năng đêm hiện tại; lệnh đã nộp nhưng chưa thực thi cũng bị hủy.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH11",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Giữ hào quang phản chiếu gần nhất nếu đã từng phản chiếu; nếu chưa từng thì hiện hào quang thật.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH12",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Có thể dùng cầu lửa và khiên hộ vệ trong cùng đêm; mỗi kỹ năng tiêu hao tài nguyên riêng.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH13",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Không xuyên qua bảo vệ hợp lệ.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH14",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Tráo đổi kéo dài từ đêm kích hoạt đến hết ngày hôm sau.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH15",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Tráo đổi từng đòn tấn công giữa A và B; nếu cả hai cùng chịu đòn chí mạng thì cả hai chết.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH16",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Hút tối đa một linh hồn mỗi đêm.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH17",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Phải tự giết nhiều hơn một nửa số Sói đầu ván; ngưỡng cố định.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH18",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Bắt nhầm Dân thì mất xe đúng 1 đêm tiếp theo, sau đó tự động lấy lại.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH19",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Người bị hỏi mà không trả lời đúng hạn sẽ chết.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH20",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Người còn lại của cặp đôi cũ được tố cáo cả ngày lẫn đêm; xử lý theo thứ tự sự kiện hợp lệ.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH21",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Được làm bánh và tặng bánh trong cùng một đêm; làm trước, tặng sau.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH22",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Ghi nhận hào quang thực sự của người chết.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH23",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Khi Hắc Tinh chết, phe Sói mất toàn bộ kỹ năng, bao gồm quyền cắn chung của bầy.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH24",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Ngoại lệ miễn khóa áp dụng theo đúng tên vai trò Tiên Tri, Bảo Vệ/Hộ Vệ được nêu trong luật; không mở rộng theo kỹ năng tương tự.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH25",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Có tổng cộng 2 lần kích hoạt ảo ảnh trong cả ván; mỗi lần áp dụng cho đêm kích hoạt.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH26",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Người được kéo dài sự sống được tính vào quân số phe khi xét thắng cho đến khi trở về nghĩa địa.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH27",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Được dùng cả hai chó bảo vệ cùng một người trong cùng đêm; mỗi chó chặn đúng loại tấn công.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH28",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Tiết lộ công khai vai trò thật của mục tiêu cho cả làng.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH29",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Có thể được bảo vệ hợp lệ cứu khỏi cái chết do ghé thăm mục tiêu nguy hiểm.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH30",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Gây chết độc lập lên từng mục tiêu khác phe; bảo vệ một người không cứu người còn lại.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH31",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Chấn thương khóa hành động trong giai đoạn ngày hiện tại và đêm kế tiếp.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH32",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Kế thừa đúng tài nguyên còn lại của người chết.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH33",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Một cặp đêm–ngày được tính là một ngày; đêm đầu là Đêm 1 và sáng sau là Ngày 1. Thiện xạ đánh dấu Đêm 1 có thể bắn ngay trong sáng Ngày 1.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH34",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Chỉ biết danh tính những người được người khác bảo vệ; không biết ai là người bảo vệ.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH35",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Có sẵn 2 khiên và 1 kiếm; sử dụng trực tiếp lên mục tiêu, không cần lượt chế tạo.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH36",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Phải chọn sẵn mục tiêu khi còn sống; nếu chưa chọn thì khi chết không kéo theo ai.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH37",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Khi chuyển một Dân làng sang phe Sói thành công, chỉ người bị chuyển nhận thông báo riêng.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH38",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Ảo ảnh duy trì qua nhiều ngày cho đến khi mục tiêu chết hoặc được giải trừ hợp lệ.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH39",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Yểm hào quang Ác chỉ có hiệu lực trong đêm kích hoạt.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH40",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Tối đa 2 lượt phong ấn vĩnh viễn trong cả ván; mở khóa lần lượt theo mốc 1 và 2 Sói chết.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH41",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Chọn mục tiêu ban đêm và khóa kỹ năng ngay trong đêm đó, theo thứ tự xử lý hợp lệ.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH42",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Xuyên cả bảo vệ và miễn nhiễm sát thương; gây chết mục tiêu và những người bảo vệ.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH43",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Được dùng Trăng non và Mưa sao băng trong cùng đêm; mỗi quyền năng tiêu hao một lượt.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH44",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Chỉ hồi sinh thành công một Sói trong cả ván.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH45",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Nếu bị tấn công gây chết trong đêm, người bị thôi miên chịu chết thay; Thầy Thôi Miên sống nếu chuyển hướng hợp lệ.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH46",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Bình vừa chế tạo được sử dụng ngay trong cùng đêm nếu hợp lệ.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH47",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Thẻ được người nhận sử dụng cả ban ngày lẫn ban đêm.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH48",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Người nhận bình được thông báo riêng loại bình đã nhận; không mặc định biết người tặng.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH49",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "So sánh phe thực tế: người chết lấy phe lúc chết; người sống lấy phe tại thời điểm kiểm tra.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH50",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Được kết nạp và hiến tế trong cùng một đêm nếu đủ điều kiện.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH51",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Bẫy chặn đòn gây chết và phản sát kẻ tấn công; mục tiêu sống nếu chuyển hướng/bảo vệ hợp lệ.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH52",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Sói được hồi sinh có thể tham gia cắn ngay trong cùng đêm nếu hành động cắn của bầy chưa được xử lý.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH53",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Chỉ đối chiếu người đã chết trong đêm trước và vẫn đang chết tại thời điểm kiểm tra.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH54",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Bẫy chỉ phản sát một Sói đại diện cho lượt cắn tập thể; đại diện được xác định bằng quy tắc cố định trước ván.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH55",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Có thể hiến tế tín đồ vừa kết nạp trong cùng đêm nếu kết nạp đã xử lý thành công trước.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH56",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Mỗi đòn không được chuyển hướng trở lại mục tiêu đã đi qua; bỏ qua lần chuyển hướng gây vòng lặp và xử lý tại mục tiêu hiện tại.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH57",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Câm chỉ chặn chat công khai; vẫn cho phép chat nhóm hợp lệ. Không có chat riêng 1–1 thông thường; chỉ chat công khai và nhóm hệ thống tạo.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH58",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Không kết thúc theo quân số khi còn nhân vật độc lập sống và có khả năng tranh chấp thắng; tiếp tục ván.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH59",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Người được kết nạp thành công nhận thông báo riêng và có quyền vào nhóm chat giáo phái nếu hệ thống cho phép.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH60",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Bình độc bị chặn bởi lớp bảo vệ hợp lệ áp dụng cho sát thương gây chết; bình vẫn tiêu hao.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH61",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Chuyển hướng thành công sang mục tiêu miễn nhiễm vẫn tiêu hao một lượt và bị khóa kỹ năng đêm tiếp theo.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH62",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Trong ván chỉ quản trị viên có thẩm quyền xem; sau ván tất cả người tham gia được xem lịch sử đầy đủ.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH63",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Mỗi người chỉ mang tối đa một hạt giống chưa kích hoạt tại một thời điểm.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH64",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Biết tất cả nạn nhân bị Sói cắn trong đêm; một Bình Hồi phục chỉ cứu một người.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH65",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Hiệu ứng chết theo có thể bị lớp bảo vệ hoặc miễn nhiễm hợp lệ ngăn chặn.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH66",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Được xem tồn kho nguyên liệu chung hiện tại nhưng không biết danh tính Thầy Thuốc.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH67",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Khi Thầy Thuốc chết, kỹ năng Đắp thuốc thay thế kỹ năng thu thập nguyên liệu.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH68",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Mặc định không thông báo cho mục tiêu khi kỹ năng không quy định; ngoại lệ khi luật yêu cầu hoặc cần thông tin để thực hiện hành động được cấp quyền.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH69",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Vai trò người dùng thẻ chọn tiết lộ chỉ gửi riêng cho Người Khai Mệnh.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH70",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Tối đa một khiên và một kiếm trong cùng một đêm; giới hạn tổng tài nguyên cả ván vẫn là 2 khiên, 1 kiếm.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH71",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Sao chép kỹ năng nhưng giữ phe Sói và điều kiện thắng của phe Sói.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH72",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Chỉ được cướp thành công một lớp bảo vệ trong cả ván.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH73",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Được hồi sinh bất kỳ người chết nào, không giới hạn phe hoặc thời điểm chết, một lần mỗi ván.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH74",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Giữ P04: hiệu ứng tăng lượt cắn của bầy Sói không cộng dồn; tối đa 2 mục tiêu mỗi đêm.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH75",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Chỉ giao dịch thành công với phe Dân; giao dịch với Sói hoặc phe Ba không thành công.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH76",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Không thể hồi sinh Hắc Tinh ID 46, Bạch Sát ID 47 và Thiên Thần ID 53.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH77",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Mở chat ẩn danh 1–1 giữa Thầy Đồng và người chết; Thầy Đồng biết danh tính người chết, người chết không biết Thầy Đồng.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH78",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Chỉ trao đổi trong nhóm chat giáo phái chung vào ban ngày; không chat riêng 1–1.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH79",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Mở chat riêng ẩn danh 1–1 với tù nhân vào ban đêm; Quản Ngục biết tù nhân, tù nhân không biết Quản Ngục.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH80",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Mỗi lần chọn trúng Sói hoặc phe Ba bị trừ 1 viên đạn; nếu sau 2 lần chọn trúng Sói/phe Ba thì mất quyền giao dịch. Giao dịch thành công chỉ với Dân.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH81",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Ngân sách ban đầu 2 viên đạn tiềm năng; mỗi lần chọn trúng Sói/phe Ba trừ 1. Khi giao dịch thành công, người nhận nhận số đạn còn lại.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH82",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Vẫn tính quân số phe Dân khi chờ hồi sinh theo VH06; nếu điều kiện thắng đã đạt sau chuỗi hiện tại thì kết thúc, không mở lượt mới.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH83",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Cái chết 10% phát sinh ban ngày không được Phù Thủy cứu; áp dụng quy tắc chung.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH84",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Trả chính xác Thiện, Ác hoặc Không xác định riêng biệt; không bị nhiễu; theo câu trả lời Excel.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "VH85",
+    "tier": "VH01-85",
+    "status": "CONFIRMED_2026-11-21",
+    "rule": "Nhân đôi số lượt sử dụng kỹ năng trong đêm theo câu trả lời Excel; người nhận biết mình được ban phước; không vượt tài nguyên hữu hạn và không phá P04 về cắn chung.",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "prior_refs": ""
+  },
+  {
+    "code": "PH-01",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Kỹ năng đã nộp khi còn sống tiếp tục phân giải sau khi người thực hiện chết; chỉ ngừng nhận hành động mới, trừ ngoại lệ kỹ năng.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "VH08, VH10, VH41"
+  },
+  {
+    "code": "PH-02",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Sói Hòa Bình #79 kích hoạt chặn vote: giữ sự kiện ngày đã thực thi, hủy kỹ năng ngày đang chờ và hủy vote, rồi chuyển đêm.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "VIS-03; JSON #79"
+  },
+  {
+    "code": "PH-03",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Hai lần bỏ lỡ hành động bắt buộc do AFK được cộng dồn trong cùng một ván, không đặt lại khi có hành động hợp lệ xen giữa.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "AFK-01; tài liệu Wolvesville ngoài trận"
+  },
+  {
+    "code": "PH-04",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Lần AFK đầu, nếu tồn tại hành động bắt buộc, hệ thống random trong toàn bộ người còn sống, không phân phe; nếu hành động không tồn tại vì điều kiện kích hoạt không xảy ra (ví dụ Phù Thủy còn bình cứu nhưng không có người chết), bỏ bước đó và không coi là bỏ lỡ hành động bắt buộc.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "AFK-01; PH-03"
+  },
+  {
+    "code": "SK-01",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Hai nguồn x2 đồng thời không cộng dồn; tổng hiệu lực tăng tối đa x2, không x4.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "P04; VH85; JSON #11,#17"
+  },
+  {
+    "code": "SK-02",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED_WITH_OPEN_BOUNDARY",
+    "rule": "Buff x2 áp dụng riêng cho những kỹ năng mà người nhận thực sự sử dụng trong đêm được buff; kỹ năng không sử dụng đêm đó không nhận quyền x2. Ghi chú chưa quy định tiêu hao tài nguyên hữu hạn ngoài các ngoại lệ đã chốt.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "VH05, VH85; QA NV11; P04"
+  },
+  {
+    "code": "SK-03",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Sói Biến Hình #18 khi sao chép bộ kỹ năng thì kế thừa đúng số tài nguyên mục tiêu còn lại tại thời điểm sao chép; giữ phe Sói/điều kiện thắng Sói.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "VH71; JSON #18; VH32 (tham chiếu)"
+  },
+  {
+    "code": "SK-04",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Sói Đạo Tặc #1 cướp lớp bảo vệ hợp lệ có thời điểm tạo sớm nhất trong số các lớp hiện có trên mục tiêu.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "VH72; JSON #1; VH08"
+  },
+  {
+    "code": "SK-05",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Tiên Tri Huyền Bí #74 bị bẫy Sói Kỹ Sư #10 khi soi vai chính xác thì nhận ngẫu nhiên tên một vai giả khác vai thật, do server chọn; không thay đổi vai thật.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "JSON #10, #74; P05"
+  },
+  {
+    "code": "SK-06",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Đòn Sói Điên Cuồng #75 xuyên bẫy Thợ Săn Quái Thú #77 khiến mục tiêu chịu chết; bẫy vẫn kích hoạt phản sát lên kẻ tấn công.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "VH42, VH51; JSON #75, #77"
+  },
+  {
+    "code": "SK-07",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Người đang bị Quản Ngục #24 giam không phải mục tiêu hợp lệ của các đòn tấn công bên ngoài, kể cả đòn xuyên miễn nhiễm; giữ quyền Quản Ngục bắn tù nhân là ngoại lệ kỹ năng gốc.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "JSON #24; VH42; VH79"
+  },
+  {
+    "code": "LIFE-01",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Xạ Thủ Linh Hồn #23 sau cái chết lần đầu đang chờ hồi sinh vẫn có thể chịu đòn tấn công; đòn chí tử tiếp theo làm chết hẳn và hủy hồi sinh đang chờ.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "JSON #23; VH06, VH82"
+  },
+  {
+    "code": "LIFE-02",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Người mang hạt Thần Thảo Hồi Sinh #97 rơi vào trạng thái ngủ đông/giả chết chưa phải chết thật, vì vậy không kích hoạt hiệu ứng chết liên kết (ví dụ Cupid #27).",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "JSON #97,#27; VH03, VH63"
+  },
+  {
+    "code": "LIFE-03",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Điều kiện Sói Khát Máu #21 được tính trên tất cả người chết trong Ngày N, gồm thảo luận và treo cổ; nếu đủ hai thì tăng lượt cắn ở Đêm N+1, theo trần VH74.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "JSON #21; VH33, VH74"
+  },
+  {
+    "code": "REL-01",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED_WITH_OPEN_BOUNDARY",
+    "rule": "Khi hai loại liên kết hợp lệ chưa có quan hệ ưu tiên được xác nhận với nhau, liên kết mới hợp lệ ghi đè liên kết cũ; chưa mặc nhiên xóa ưu tiên cụ thể và luật cùng cấp VH04.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "VH04; các liên kết đã phân tích"
+  },
+  {
+    "code": "REL-02",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Khi liên kết thắng/chết cũ bị ghi đè, vẫn giữ nhóm chat cũ và quyền trao đổi của thành viên theo quyền cũ; không công bố việc đổi liên kết cho nhóm cũ.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "Luật liên kết trước VH; VH57"
+  },
+  {
+    "code": "REL-03",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Khi liên kết ưu tiên B–C kết thúc, liên kết A–B từng bị ghi đè tự khôi phục nếu A và B còn sống; các ngoại lệ liên kết chồng tầng phải được kiểm tra riêng.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "Quyết định mới thay cách hiểu cũ “không tự hồi phục”; VH04"
+  },
+  {
+    "code": "ROOM-01",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Không đặt số người tối thiểu cứng; chủ phòng cấu hình số ghế/người/bot theo thiết kế, có thể bắt đầu từ 1 người thật cộng n bot khi cấu hình và bộ vai hợp lệ.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "Yêu cầu phòng 1–100; SRS Wolvesville"
+  },
+  {
+    "code": "ROOM-02",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED_WITH_OPEN_BOUNDARY",
+    "rule": "Trong một ván, mỗi Character ID chỉ được sử dụng tối đa một lần; không cho phép phân vai ban đầu trùng ID. Phạm vi ràng buộc khi kỹ năng biến đổi vai cần kiểm tra thêm.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "character.json (97 vai); yêu cầu phòng 1–100"
+  },
+  {
+    "code": "ROOM-03",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Quản trò mất kết nối: trận vẫn tiếp tục; quyền điều phối có thể chuyển cho người thật đủ điều kiện, có nhật ký và không chia lại vai. Khi không có ứng viên người thật, server tiếp tục logic hợp lệ mà không tự nâng bot thành quản trò.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "SRS/SAD Wolvesville §16"
+  },
+  {
+    "code": "PRIV-01",
+    "tier": "21_CONFIRMED_V1_2",
+    "status": "USER_CONFIRMED",
+    "rule": "Sau trận người tham gia được xem diễn biến/kết quả/vai trò; nội dung tin nhắn chỉ được xem lại ở các kênh mà chính người đó từng có quyền đọc.",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "prior_refs": "VH62; VH57; VH77–VH79"
+  },
+  {
+    "code": "Q13-01",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "rule": "Mỗi hành động phát sinh do x2 cần đủ charge riêng; buff không sinh charge. Chỉ nhân đôi những kỹ năng thực sự sử dụng đêm đó; kỹ năng không dùng hoặc hết charge không nhận lợi ích. VH05 Phù Thủy là ngoại lệ một bình cứu cho tối đa hai lượt trong đêm.",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "prior_refs": "VH05, VH85, SK-01, SK-02, P04"
+  },
+  {
+    "code": "Q13-02",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "rule": "Ở lần AFK cần random, tập mục tiêu là mọi người đang sống và hợp lệ cho kỹ năng, không phân biệt phe. Tập rỗng thì hành động bắt buộc không phát sinh và không cộng lần AFK đó.",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "prior_refs": "PH-04, PH-03, SK-07"
+  },
+  {
+    "code": "Q13-03",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "rule": "Khi nhiều liên kết cũ hợp lệ có thể phục hồi, trước tiên áp dụng ưu tiên loại liên kết đã chốt; trong tập ứng viên cùng mức còn lại, phục hồi liên kết gần nhất trong lịch sử. Không thay thế nguyên tắc tạo mới VH04.",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "prior_refs": "REL-01, REL-03, VH04"
+  },
+  {
+    "code": "Q13-04",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "rule": "Cấm trùng Character ID trong danh sách phân vai ban đầu. Sau khi bắt đầu, biến đổi hợp lệ có thể tạo currentRoleId trùng mà không phải hủy biến đổi; sao chép kỹ năng theo VH71 không đồng nghĩa đổi phe.",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "prior_refs": "ROOM-02, VH71, VH32"
+  },
+  {
+    "code": "Q13-05",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "rule": "Người ở trạng thái HIBERNATING do hạt Thần Thảo vẫn được tính vào quân số phe lúc đang ngủ đông; tạm ngưng chat, phiếu bầu và mọi kỹ năng đến khi tỉnh/hồi sinh theo điều kiện hợp lệ. Không phát sinh chết thật từ riêng trạng thái giả chết.",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "prior_refs": "LIFE-02, VH06, VH63"
+  },
+  {
+    "code": "Q13-06",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "rule": "Bẫy Sói Kỹ Sư đối với kỹ năng soi vai chính xác chọn ngẫu nhiên một roleId khác roleId thật từ bộ vai đã khóa trước trận; không chọn từ toàn bộ 97 vai. RNG trên server, lưu snapshot tập hợp và lần rút.",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "prior_refs": "SK-05, VH08, JSON#10, JSON#74"
+  },
+  {
+    "code": "Q13-07",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "rule": "Khi có hiệu ứng kéo dài sự sống hợp lệ và hạt Thần Thảo, áp dụng trạng thái sống kéo dài trước; tại mốc kết thúc trạng thái kéo dài mới xét điều kiện kích hoạt hạt ngủ đông, sau khi xử lý những cứu hợp lệ khác theo thứ tự tương ứng.",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "prior_refs": "VH26, VH67, LIFE-02, Q13-05, JSON#51, JSON#95, JSON#97"
+  },
+  {
+    "code": "Q13-08",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "rule": "Giáo Chủ không thể kết nạp một người đã thuộc nhóm/liên kết thắng độc lập; yêu cầu kết nạp không thành công, không đổi nhóm thắng, không cấp quyền chat giáo phái mới. Đây là ngoại lệ cụ thể so với cơ chế ghi đè quan hệ chưa có ưu tiên.",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "prior_refs": "REL-01, VH50, VH59, VH78, JSON#62, JSON#90"
+  },
+  {
+    "code": "Q13-09",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "rule": "Sói Hòa Bình chặn và hủy vote hợp lệ trong ngày mà Kẻ Chết Thay đã có nhiệm vụ: nhiệm vụ thất bại, Đạo Diễn Tử Thần nhận 1 Oscar theo mỗi trường hợp diễn sai hợp lệ. Không tự áp sang vai diễn khác nếu không được quy định.",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "prior_refs": "VH01, PH-02, JSON#6, JSON#79"
+  },
+  {
+    "code": "Q13-10",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "rule": "Khi Sói Điên Cuồng #75 kích hoạt đòn trúng mục tiêu có bảo vệ hợp lệ, những người cấp/tạo lớp bảo vệ đều thuộc tập người bảo vệ có thể bị chết theo, bao gồm chủ chó hoặc người cấp trang bị; phân giải đúng cơ chế tấn công/bảo vệ và tránh chuyển chết trùng.",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "prior_refs": "VH42, VH27, VH51, SK-06, JSON#52, JSON#67, JSON#77"
+  },
+  {
+    "code": "Q13-11",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "rule": "Bẫy Sói Kỹ Sư lên chức năng soi PHÂN LOẠI tạo ngẫu nhiên một kết quả cùng kiểu dữ liệu nhưng khác giá trị thật trong danh sách các giá trị phân loại hợp lệ; không tự thay bằng tên vai hay hào quang. Kết quả soi miễn nhiễu theo VH84 là ngoại lệ.",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "prior_refs": "SK-05, VH84, P05, JSON#10, JSON#81"
+  },
+  {
+    "code": "Q13-12",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "rule": "Nếu người mang hạt Thần Thảo thuộc danh sách chết sơ bộ ban đêm, tên vẫn hiện trong prompt Phù Thủy và có thể được cứu hợp lệ trước khi kích hoạt hạt. Nếu chết được ngăn thì không kích hoạt giả chết do hạt tại sự kiện chết đó. Nếu không được cứu, tiếp tục xét kéo dài sống và hạt theo Q13-07.",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "prior_refs": "LIFE-02, Q13-07, VH05, VH63, PH-01, JSON#29, JSON#97"
+  }
+]

@@ -1,0 +1,12 @@
+E2E_SCHEDULER_WAIT exclusive 39116
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 487
+E2E_RESOURCE start cpu "usage_usec 6134805050\nuser_usec 5178610992\nsystem_usec 956194058\nnice_usec 2171690\nnr_periods 50763\nnr_throttled 4020\nthrottled_usec 192612078\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s15_approved_pin_e2e.py default port 40655 db /tmp/wolvesville-s06-browser-TaTRPo/test.sqlite
+SCENARIO_READY s15-closure-hunter-snow
+SCENARIO_ACTIONS_PASS s15-closure-hunter-snow
+S15_APPROVED_PIN_BROWSER_PASS
+S06_BROWSER_PASS browser_s15_approved_pin_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 6168782167\nuser_usec 5205216744\nsystem_usec 963565422\nnice_usec 2171690\nnr_periods 50891\nnr_throttled 4036\nthrottled_usec 193093090\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

@@ -1,0 +1,45 @@
+TAP version 13
+# Subtest: Breakthrough bounded revival capability accepts interchangeable read-only observers and rejects unsafe compositions
+ok 1 - Breakthrough bounded revival capability accepts interchangeable read-only observers and rejects unsafe compositions
+  ---
+  duration_ms: 1.074022
+  type: 'test'
+  ...
+# Subtest: Breakthrough protection action contracts share actor history, preserve cooldown and do not disclose target role or shield
+ok 2 - Breakthrough protection action contracts share actor history, preserve cooldown and do not disclose target role or shield
+  ---
+  duration_ms: 1.455075
+  type: 'test'
+  ...
+# (node:41176) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# BREAKTHROUGH_MEDIUM_EVIDENCE {"id":26,"deck":[8,26,74],"mediumKilled":false,"completed":true,"privacy":true,"replay":true,"restart":true,"deathCycles":2}
+# Subtest: Breakthrough medium \#26 with \#74: closed death, revival, repeated elimination, PH-01 false
+ok 3 - Breakthrough medium \#26 with \#74: closed death, revival, repeated elimination, PH-01 false
+  ---
+  duration_ms: 1119.50444
+  type: 'test'
+  ...
+# BREAKTHROUGH_MEDIUM_EVIDENCE {"id":26,"deck":[8,26,74],"mediumKilled":true,"completed":true,"privacy":true,"replay":true,"restart":true,"deathCycles":2}
+# Subtest: Breakthrough medium \#26 with \#74: closed death, revival, repeated elimination, PH-01 true
+ok 4 - Breakthrough medium \#26 with \#74: closed death, revival, repeated elimination, PH-01 true
+  ---
+  duration_ms: 1006.797102
+  type: 'test'
+  ...
+# BREAKTHROUGH_MEDIUM_CHAT_EVIDENCE {"id":26,"deck":[8,26,74],"anonymous":true,"privacy":true,"retry":true,"restart":true,"replay":true}
+# Subtest: Breakthrough VH77 medium private chat: authorization, anonymous projections, retry, SQLite restart, phase close and replay
+ok 5 - Breakthrough VH77 medium private chat: authorization, anonymous projections, retry, SQLite restart, phase close and replay
+  ---
+  duration_ms: 825.280169
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3139.858247

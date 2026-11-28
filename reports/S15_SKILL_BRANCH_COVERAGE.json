@@ -1,0 +1,2920 @@
+{
+  "scope": "Historical composite inventory retained; approved atomic coverage separately calculated on 20 source-audited roles. No global denominator certified.",
+  "sourceRows": [
+    {
+      "id": "WV-CH01-S01",
+      "characterId": 1,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#1",
+      "ruleIds": [
+        "SK-04",
+        "VH72"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH02-S01",
+      "characterId": 2,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#2",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH03-S01",
+      "characterId": 3,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#3",
+      "ruleIds": [],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH04-S01",
+      "characterId": 4,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#4",
+      "ruleIds": [
+        "VH83"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH05-S01",
+      "characterId": 5,
+      "label": "Cân Phán Quyết",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#5",
+      "ruleIds": [
+        "VH84"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH05-S02",
+      "characterId": 5,
+      "label": "Công Lý Tuyệt Đối",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#5",
+      "ruleIds": [
+        "VH84"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH06-S01",
+      "characterId": 6,
+      "label": "Đạo Diễn Sân Khấu",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#6",
+      "ruleIds": [
+        "PH-02",
+        "Q13-09",
+        "VH01"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH06-S02",
+      "characterId": 6,
+      "label": "Kẻ Vu Khống",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#6",
+      "ruleIds": [
+        "PH-02",
+        "Q13-09",
+        "VH01"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH06-S03",
+      "characterId": 6,
+      "label": "Kẻ Chết Thay",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#6",
+      "ruleIds": [
+        "PH-02",
+        "Q13-09",
+        "VH01"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH06-S04",
+      "characterId": 6,
+      "label": "Oscar",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#6",
+      "ruleIds": [
+        "PH-02",
+        "Q13-09",
+        "VH01"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH07-S01",
+      "characterId": 7,
+      "label": "Đóng Thế",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#7",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH07-S02",
+      "characterId": 7,
+      "label": "Huyết Tế Sân Khấu",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#7",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH08-S01",
+      "characterId": 8,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#8",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH09-S01",
+      "characterId": 9,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#9",
+      "ruleIds": [],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH10-S01",
+      "characterId": 10,
+      "label": "Đặt bẫy",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#10",
+      "ruleIds": [
+        "Q13-06",
+        "Q13-11",
+        "SK-05"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH11-S01",
+      "characterId": 11,
+      "label": "Nâng cấp",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#11",
+      "ruleIds": [
+        "Q13-01",
+        "SK-01",
+        "SK-02"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH11-S02",
+      "characterId": 11,
+      "label": "Bảo trì",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#11",
+      "ruleIds": [
+        "Q13-01",
+        "SK-01",
+        "SK-02"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH12-S01",
+      "characterId": 12,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#12",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH13-S01",
+      "characterId": 13,
+      "label": "Thần Tượng",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#13",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH13-S02",
+      "characterId": 13,
+      "label": "Khiên bảo vệ",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#13",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH13-S03",
+      "characterId": 13,
+      "label": "Súng trừng phạt",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#13",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH13-S04",
+      "characterId": 13,
+      "label": "Chán Đời",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#13",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH14-S01",
+      "characterId": 14,
+      "label": "trao quà",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#14",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH15-S01",
+      "characterId": 15,
+      "label": "kết tơ hồng",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#15",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH16-S01",
+      "characterId": 16,
+      "label": "Đài Phun Thuốc Độc",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#16",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH16-S02",
+      "characterId": 16,
+      "label": "Bình Thuốc Giải",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#16",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH17-S01",
+      "characterId": 17,
+      "label": "Ánh Sao Báo Thù",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#17",
+      "ruleIds": [
+        "Q13-01",
+        "VH85"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH17-S02",
+      "characterId": 17,
+      "label": "Thiêng Khí Phán Xét",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#17",
+      "ruleIds": [
+        "Q13-01",
+        "VH85"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH18-S01",
+      "characterId": 18,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#18",
+      "ruleIds": [
+        "Q13-04",
+        "SK-03",
+        "VH71"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH19-S01",
+      "characterId": 19,
+      "label": "GIAO DỊCH ẨN DANH",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#19",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH19-S02",
+      "characterId": 19,
+      "label": "Giao kèo Im Lặng",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#19",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH19-S03",
+      "characterId": 19,
+      "label": "Giao kèo Lá Phiếu",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#19",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH19-S04",
+      "characterId": 19,
+      "label": "Giao kèo Che Giấu",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#19",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH19-S05",
+      "characterId": 19,
+      "label": "Giao kèo Thao Túng",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#19",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH19-S06",
+      "characterId": 19,
+      "label": "TRỪNG PHẠT NGẦM",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#19",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH19-S07",
+      "characterId": 19,
+      "label": "GIAO DỊCH BẢN THÂN",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#19",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH20-S01",
+      "characterId": 20,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#20",
+      "ruleIds": [],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH21-S01",
+      "characterId": 21,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#21",
+      "ruleIds": [
+        "LIFE-03",
+        "VH74"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH22-S01",
+      "characterId": 22,
+      "label": "trao đổi chức năng",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#22",
+      "ruleIds": [
+        "VH75",
+        "VH80",
+        "VH81"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH23-S01",
+      "characterId": 23,
+      "label": "khiên",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#23",
+      "ruleIds": [
+        "LIFE-01",
+        "VH82"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH23-S02",
+      "characterId": 23,
+      "label": "hồi sinh",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#23",
+      "ruleIds": [
+        "LIFE-01",
+        "VH82"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH23-S03",
+      "characterId": 23,
+      "label": "2 viên đạn",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#23",
+      "ruleIds": [
+        "LIFE-01",
+        "VH82"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH24-S01",
+      "characterId": 24,
+      "label": "giam",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#24",
+      "ruleIds": [
+        "SK-07",
+        "VH79"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH24-S02",
+      "characterId": 24,
+      "label": "nói chuyện",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#24",
+      "ruleIds": [
+        "SK-07",
+        "VH79"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH25-S01",
+      "characterId": 25,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#25",
+      "ruleIds": [
+        "P05"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH26-S01",
+      "characterId": 26,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#26",
+      "ruleIds": [
+        "VH73",
+        "VH76",
+        "VH77"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH27-S01",
+      "characterId": 27,
+      "label": "ghép cặp",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#27",
+      "ruleIds": [
+        "Q13-03",
+        "REL-01",
+        "REL-02",
+        "REL-03"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH28-S01",
+      "characterId": 28,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#28",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH29-S01",
+      "characterId": 29,
+      "label": "bình để cứu",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#29",
+      "ruleIds": [
+        "Q13-12",
+        "VH05",
+        "VH60",
+        "W04"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH29-S02",
+      "characterId": 29,
+      "label": "bình để giết",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#29",
+      "ruleIds": [
+        "Q13-12",
+        "VH05",
+        "VH60",
+        "W04"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH30-S01",
+      "characterId": 30,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#30",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH31-S01",
+      "characterId": 31,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#31",
+      "ruleIds": [
+        "Q13-10"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH32-S01",
+      "characterId": 32,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#32",
+      "ruleIds": [
+        "VH09"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH33-S01",
+      "characterId": 33,
+      "label": "Ảo ảnh",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#33",
+      "ruleIds": [
+        "VH08"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH33-S02",
+      "characterId": 33,
+      "label": "Thao túng",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#33",
+      "ruleIds": [
+        "VH08"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH34-S01",
+      "characterId": 34,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#34",
+      "ruleIds": [
+        "VH10"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH35-S01",
+      "characterId": 35,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#35",
+      "ruleIds": [
+        "VH11"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH36-S01",
+      "characterId": 36,
+      "label": "cầu lửa",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#36",
+      "ruleIds": [
+        "VH12",
+        "VH13"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH36-S02",
+      "characterId": 36,
+      "label": "khiên hộ vệ",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#36",
+      "ruleIds": [
+        "VH12",
+        "VH13"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH37-S01",
+      "characterId": 37,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#37",
+      "ruleIds": [
+        "VH14",
+        "VH15",
+        "VH56"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH38-S01",
+      "characterId": 38,
+      "label": "hút linh hồn",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#38",
+      "ruleIds": [
+        "VH16"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH38-S02",
+      "characterId": 38,
+      "label": "Linh hồn Sói",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#38",
+      "ruleIds": [
+        "VH16"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH38-S03",
+      "characterId": 38,
+      "label": "Linh hồn Tiên Tri",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#38",
+      "ruleIds": [
+        "VH16"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH38-S04",
+      "characterId": 38,
+      "label": "Linh hồn Bảo Vệ",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#38",
+      "ruleIds": [
+        "VH16"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH38-S05",
+      "characterId": 38,
+      "label": "Linh hồn Dân Khác",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#38",
+      "ruleIds": [
+        "VH16"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH38-S06",
+      "characterId": 38,
+      "label": "Linh hồn Phe Thứ Ba",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#38",
+      "ruleIds": [
+        "VH16"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH39-S01",
+      "characterId": 39,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#39",
+      "ruleIds": [
+        "VH17",
+        "VH18"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH40-S01",
+      "characterId": 40,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#40",
+      "ruleIds": [
+        "VH19"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH41-S01",
+      "characterId": 41,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#41",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH42-S01",
+      "characterId": 42,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#42",
+      "ruleIds": [
+        "VH20"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH43-S01",
+      "characterId": 43,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#43",
+      "ruleIds": [],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH44-S01",
+      "characterId": 44,
+      "label": "làm bánh",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#44",
+      "ruleIds": [
+        "VH21"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH44-S02",
+      "characterId": 44,
+      "label": "tặng bánh",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#44",
+      "ruleIds": [
+        "VH21"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH45-S01",
+      "characterId": 45,
+      "label": "cầu nguyện",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#45",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH46-S01",
+      "characterId": 46,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#46",
+      "ruleIds": [
+        "VH23",
+        "VH76"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH47-S01",
+      "characterId": 47,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#47",
+      "ruleIds": [
+        "VH24",
+        "VH76"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH48-S01",
+      "characterId": 48,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#48",
+      "ruleIds": [
+        "VH74"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH49-S01",
+      "characterId": 49,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#49",
+      "ruleIds": [
+        "VH25"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH50-S01",
+      "characterId": 50,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#50",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH51-S01",
+      "characterId": 51,
+      "label": "nói chuyện ẩn danh",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#51",
+      "ruleIds": [
+        "Q13-07",
+        "VH26",
+        "VH57"
+      ],
+      "sourceStatus": "CONFLICTING",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH51-S02",
+      "characterId": 51,
+      "label": "chở",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#51",
+      "ruleIds": [
+        "Q13-07",
+        "VH26",
+        "VH57"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH52-S01",
+      "characterId": 52,
+      "label": "chó bảo vệ",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#52",
+      "ruleIds": [
+        "Q13-10",
+        "VH27"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH53-S01",
+      "characterId": 53,
+      "label": "bảo vệ",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#53",
+      "ruleIds": [
+        "VH76"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH53-S02",
+      "characterId": 53,
+      "label": "giết 1 người",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#53",
+      "ruleIds": [
+        "VH76"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH54-S01",
+      "characterId": 54,
+      "label": "bắn",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#54",
+      "ruleIds": [
+        "VH28"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH54-S02",
+      "characterId": 54,
+      "label": "tiết lộ",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#54",
+      "ruleIds": [
+        "VH28"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH55-S01",
+      "characterId": 55,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#55",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH56-S01",
+      "characterId": 56,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#56",
+      "ruleIds": [
+        "VH29"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH57-S01",
+      "characterId": 57,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#57",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH58-S01",
+      "characterId": 58,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#58",
+      "ruleIds": [
+        "VH30"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH59-S01",
+      "characterId": 59,
+      "label": "ném viên đá",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#59",
+      "ruleIds": [
+        "VH31"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH60-S01",
+      "characterId": 60,
+      "label": "lựa chọn một dân làng đã chết",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#60",
+      "ruleIds": [
+        "Q13-04",
+        "VH32"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH60-S02",
+      "characterId": 60,
+      "label": "nói chuyện với người chết",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#60",
+      "ruleIds": [
+        "Q13-04",
+        "VH32"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH61-S01",
+      "characterId": 61,
+      "label": "đánh dấu",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#61",
+      "ruleIds": [
+        "VH33"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH61-S02",
+      "characterId": 61,
+      "label": "giết",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#61",
+      "ruleIds": [
+        "VH33"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH62-S01",
+      "characterId": 62,
+      "label": "hội viên",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#62",
+      "ruleIds": [
+        "Q13-08",
+        "REL-01",
+        "VH02"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH62-S02",
+      "characterId": 62,
+      "label": "giết",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#62",
+      "ruleIds": [
+        "Q13-08",
+        "REL-01",
+        "VH02"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH63-S01",
+      "characterId": 63,
+      "label": "bảo vệ",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#63",
+      "ruleIds": [
+        "VH56",
+        "VH61"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH63-S02",
+      "characterId": 63,
+      "label": "chuyển hướng",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#63",
+      "ruleIds": [
+        "VH56",
+        "VH61"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH64-S01",
+      "characterId": 64,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#64",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH65-S01",
+      "characterId": 65,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#65",
+      "ruleIds": [],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH66-S01",
+      "characterId": 66,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#66",
+      "ruleIds": [
+        "VH34"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH67-S01",
+      "characterId": 67,
+      "label": "khiên",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#67",
+      "ruleIds": [
+        "Q13-10",
+        "VH35",
+        "VH70"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH67-S02",
+      "characterId": 67,
+      "label": "kiếm",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#67",
+      "ruleIds": [
+        "Q13-10",
+        "VH35",
+        "VH70"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH68-S01",
+      "characterId": 68,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#68",
+      "ruleIds": [
+        "VH36"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH69-S01",
+      "characterId": 69,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#69",
+      "ruleIds": [
+        "VH37"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH70-S01",
+      "characterId": 70,
+      "label": "giả danh",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#70",
+      "ruleIds": [],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH71-S01",
+      "characterId": 71,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#71",
+      "ruleIds": [
+        "VH38"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH72-S01",
+      "characterId": 72,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#72",
+      "ruleIds": [
+        "VH39"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH73-S01",
+      "characterId": 73,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#73",
+      "ruleIds": [
+        "VH40"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH74-S01",
+      "characterId": 74,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#74",
+      "ruleIds": [
+        "P05",
+        "Q13-06",
+        "SK-05"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH75-S01",
+      "characterId": 75,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#75",
+      "ruleIds": [
+        "Q13-10",
+        "SK-06",
+        "VH42"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH76-S01",
+      "characterId": 76,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#76",
+      "ruleIds": [
+        "VH41"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH77-S01",
+      "characterId": 77,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#77",
+      "ruleIds": [
+        "SK-06",
+        "VH51",
+        "VH54"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH78-S01",
+      "characterId": 78,
+      "label": "trăng non",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#78",
+      "ruleIds": [
+        "VH43"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH78-S02",
+      "characterId": 78,
+      "label": "mưa sao băng",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#78",
+      "ruleIds": [
+        "VH43"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH79-S01",
+      "characterId": 79,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#79",
+      "ruleIds": [
+        "PH-02",
+        "Q13-09"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH80-S01",
+      "characterId": 80,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#80",
+      "ruleIds": [
+        "VH49",
+        "VH53"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH81-S01",
+      "characterId": 81,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#81",
+      "ruleIds": [
+        "Q13-11"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH82-S01",
+      "characterId": 82,
+      "label": "đỏ",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#82",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH82-S02",
+      "characterId": 82,
+      "label": "đen",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#82",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH83-S01",
+      "characterId": 83,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#83",
+      "ruleIds": [
+        "VH44",
+        "VH52"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH84-S01",
+      "characterId": 84,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#84",
+      "ruleIds": [
+        "VH57"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH85-S01",
+      "characterId": 85,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#85",
+      "ruleIds": [
+        "VH45"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH86-S01",
+      "characterId": 86,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#86",
+      "ruleIds": [
+        "VH74"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH87-S01",
+      "characterId": 87,
+      "label": "Bình Thuốc mê",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#87",
+      "ruleIds": [
+        "VH64"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH87-S02",
+      "characterId": 87,
+      "label": "Bình Hồi phục",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#87",
+      "ruleIds": [
+        "VH64"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH88-S01",
+      "characterId": 88,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#88",
+      "ruleIds": [
+        "VH65"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH89-S01",
+      "characterId": 89,
+      "label": "thẻ bài",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#89",
+      "ruleIds": [
+        "VH47",
+        "VH69"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH90-S01",
+      "characterId": 90,
+      "label": "gia nhập giáo phái",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#90",
+      "ruleIds": [
+        "Q13-08",
+        "VH50",
+        "VH55",
+        "VH59",
+        "VH78"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH90-S02",
+      "characterId": 90,
+      "label": "hiến tế",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#90",
+      "ruleIds": [
+        "Q13-08",
+        "VH50",
+        "VH55",
+        "VH59",
+        "VH78"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH91-S01",
+      "characterId": 91,
+      "label": "Huyết Ấn",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#91",
+      "ruleIds": [
+        "V02"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH92-S01",
+      "characterId": 92,
+      "label": "Huyết Thuẫn",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#92",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH92-S02",
+      "characterId": 92,
+      "label": "Huyết Cảm",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#92",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH92-S03",
+      "characterId": 92,
+      "label": "Kẻ Đồ Sát",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#92",
+      "ruleIds": [],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH93-S01",
+      "characterId": 93,
+      "label": "Mô tả kỹ năng gốc (chưa phân tách)",
+      "kind": "NHÃN KIỂM TOÁN/COMPOSITE",
+      "source": "character.json#93",
+      "ruleIds": [
+        "VH57"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH94-S01",
+      "characterId": 94,
+      "label": "Hình Nhân Thế Mạng",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#94",
+      "ruleIds": [
+        "VH56"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH94-S02",
+      "characterId": 94,
+      "label": "Che Giấu Khí Tức",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#94",
+      "ruleIds": [
+        "VH56"
+      ],
+      "sourceStatus": "BLOCKED_BY_RULE",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH95-S01",
+      "characterId": 95,
+      "label": "Thảo dược",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#95",
+      "ruleIds": [
+        "Q13-07",
+        "VH66",
+        "VH67"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH95-S02",
+      "characterId": 95,
+      "label": "Nọc độc",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#95",
+      "ruleIds": [
+        "Q13-07",
+        "VH66",
+        "VH67"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH95-S03",
+      "characterId": 95,
+      "label": "Đắp thuốc",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#95",
+      "ruleIds": [
+        "Q13-07",
+        "VH66",
+        "VH67"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH96-S01",
+      "characterId": 96,
+      "label": "Bình Giải",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#96",
+      "ruleIds": [
+        "VH46",
+        "VH48",
+        "VH67"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH96-S02",
+      "characterId": 96,
+      "label": "Bình Độc",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#96",
+      "ruleIds": [
+        "VH46",
+        "VH48",
+        "VH67"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH96-S03",
+      "characterId": 96,
+      "label": "Bình Khói",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#96",
+      "ruleIds": [
+        "VH46",
+        "VH48",
+        "VH67"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    },
+    {
+      "id": "WV-CH97-S01",
+      "characterId": 97,
+      "label": "hạt giống",
+      "kind": "CỤM TRÍCH TỪ JSON, KHÔNG MẶC ĐỊNH TÊN CHÍNH THỨC",
+      "source": "character.json#97",
+      "ruleIds": [
+        "Q13-05",
+        "Q13-07",
+        "Q13-12",
+        "VH63"
+      ],
+      "sourceStatus": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+      "atomicCertification": "NOT_CERTIFIED"
+    }
+  ],
+  "branches": [
+    {
+      "branchId": "passive.3.seer-aura",
+      "characterId": 3,
+      "ruleSources": [
+        "character.json#3",
+        "S15-OWNER-SEER-01"
+      ],
+      "relatedAuditRows": [
+        "WV-CH03-S01"
+      ],
+      "outcomeScenarios": [
+        "passive.false-aura"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Only passive aura masking implemented; functional inspection, voluntary transformation, last wolf transformation, team bite and victory remain.",
+      "evidence": [
+        {
+          "id": 3,
+          "branch": "passive.false-aura",
+          "skill": "passive.3.seer-aura",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "passive.8.hanging-immunity",
+      "characterId": 8,
+      "ruleSources": [
+        "character.json#8",
+        "VH06"
+      ],
+      "relatedAuditRows": [
+        "WV-CH08-S01"
+      ],
+      "outcomeScenarios": [
+        "hanging.immune.while.wolf"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Hanging immunity verified with living wolf; wolf pack attack, competing defenses and unrestricted victory remain.",
+      "evidence": [
+        {
+          "id": 8,
+          "branch": "hanging.immune.while.wolf",
+          "skill": "passive.8.hanging-immunity",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.15.single-kill",
+      "characterId": 15,
+      "ruleSources": [
+        "character.json#15",
+        "VH03",
+        "WIN-01"
+      ],
+      "relatedAuditRows": [
+        "WV-CH15-S01"
+      ],
+      "outcomeScenarios": [
+        "single.target.lethal",
+        "secret.pair.linked-death"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Single attack, secret pair, hanging-linked death and sole survivor verified; wolf immunity, protected or rescued links and overlapping links remain.",
+      "evidence": [
+        {
+          "id": 15,
+          "branch": "single.target.lethal",
+          "skill": "official.15.single-kill",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 15,
+          "branch": "secret.pair.linked-death",
+          "skill": "official.15.single-kill",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.19.ballot-offer",
+      "characterId": 19,
+      "ruleSources": [
+        "character.json#19",
+        "NV21",
+        "S11-V02",
+        "S11-V03"
+      ],
+      "relatedAuditRows": [
+        "WV-CH19-S01",
+        "WV-CH19-S02",
+        "WV-CH19-S03",
+        "WV-CH19-S04",
+        "WV-CH19-S05",
+        "WV-CH19-S06",
+        "WV-CH19-S07"
+      ],
+      "outcomeScenarios": [
+        "ballot.contract.accept.fulfilled",
+        "ballot.contract.declined.or.breached"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Anonymous ballot contract with acceptance, final valid ballot and hanging immunity verified; three other contracts, punishment, self-contract, victory and same-recipient-as-ballot-target remain.",
+      "evidence": [
+        {
+          "id": 19,
+          "branch": "ballot.contract.accept.fulfilled",
+          "skill": "official.19.ballot-offer",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 19,
+          "branch": "ballot.contract.declined.or.breached",
+          "skill": "official.19.ballot-offer",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "passive.28.hanged-victory",
+      "characterId": 28,
+      "ruleSources": [
+        "character.json#28",
+        "VH03",
+        "S11-V03"
+      ],
+      "relatedAuditRows": [
+        "WV-CH28-S01"
+      ],
+      "outcomeScenarios": [
+        "passive.hanged-victory",
+        "hanging.sole-winner",
+        "cancelled.hanging.no-win",
+        "linked.death.not.hanging",
+        "hanging.with.hunter"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Role-local true hanging, nonfinal death guard, actual night death, PH-02 cancellation, knight and wolf co-win verified. Actual #55/#19 nonlethal hanging protection, #37 hanging transfer and #15 linked-death counterexamples verified; #88 actual hanging follow verified; #33 revenge verified separately in an all-villager-target deck, mixed-faction interaction, stale mark duration and general victory remain; FULL not certified.",
+      "evidence": [
+        {
+          "id": 28,
+          "branch": "passive.hanged-victory",
+          "skill": "passive.28.hanged-victory",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 28,
+          "branch": "hanging.with.hunter",
+          "skill": "passive.28.hanged-victory",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 28,
+          "branch": "hanging.sole-winner",
+          "skill": "passive.28.hanged-victory",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 28,
+          "branch": "cancelled.hanging.no-win",
+          "skill": "passive.28.hanged-victory",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 28,
+          "branch": "linked.death.not.hanging",
+          "skill": "passive.28.hanged-victory",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.29.poison",
+      "characterId": 29,
+      "ruleSources": [
+        "character.json#29",
+        "VH60",
+        "PH-01",
+        "PH-02"
+      ],
+      "relatedAuditRows": [
+        "WV-CH29-S01",
+        "WV-CH29-S02"
+      ],
+      "outcomeScenarios": [
+        "poison.lethal-once",
+        "poison.valid-shield-consumes"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Preliminary-death notice, self/other rescue, both potions in a night and poison with shield verified; x2, linked rescue, multiple attacks, hibernation and team victory remain.",
+      "evidence": [
+        {
+          "id": 29,
+          "branch": "poison.lethal-once",
+          "skill": "official.29.poison",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 29,
+          "branch": "poison.valid-shield-consumes",
+          "skill": "official.29.poison",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.29.rescue",
+      "characterId": 29,
+      "ruleSources": [
+        "character.json#29",
+        "VH60",
+        "PH-01",
+        "PH-02"
+      ],
+      "relatedAuditRows": [
+        "WV-CH29-S01",
+        "WV-CH29-S02"
+      ],
+      "outcomeScenarios": [
+        "rescue.night-victim",
+        "rescue.and.poison",
+        "rescue.self-once"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Preliminary-death notice, self/other rescue, both potions in a night and poison with shield verified; x2, linked rescue, multiple attacks, hibernation and team victory remain.",
+      "evidence": [
+        {
+          "id": 29,
+          "branch": "rescue.night-victim",
+          "skill": "official.29.rescue",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 29,
+          "branch": "rescue.and.poison",
+          "skill": "official.29.rescue",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 29,
+          "branch": "rescue.self-once",
+          "skill": "official.29.rescue",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.33.hanging-revenge",
+      "characterId": 33,
+      "ruleSources": [
+        "character.json#33",
+        "S11-V03",
+        "VH03",
+        "VH65"
+      ],
+      "relatedAuditRows": [
+        "WV-CH33-S01",
+        "WV-CH33-S02"
+      ],
+      "outcomeScenarios": [
+        "post-hanging.revenge",
+        "revenge.hunter.follow"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Post-hanging private response in all-other-villager decks, including Hunter death-follow; mixed-faction eligibility and general village victory unresolved.",
+      "evidence": [
+        {
+          "id": 33,
+          "branch": "revenge.hunter.follow",
+          "skill": "official.33.hanging-revenge",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 33,
+          "branch": "post-hanging.revenge",
+          "skill": "official.33.hanging-revenge",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.36.shield",
+      "characterId": 36,
+      "ruleSources": [
+        "VH12",
+        "VH13",
+        "character.json#36"
+      ],
+      "relatedAuditRows": [
+        "WV-CH36-S01",
+        "WV-CH36-S02"
+      ],
+      "outcomeScenarios": [
+        "shield.success-private"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Both named skills exist; general attack, shield stacking, team victory and arbitrary decks not certified.",
+      "evidence": [
+        {
+          "id": 36,
+          "branch": "shield.success-private",
+          "skill": "official.36.shield",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.37.swap",
+      "characterId": 37,
+      "ruleSources": [
+        "character.json#37",
+        "VH14",
+        "VH15"
+      ],
+      "relatedAuditRows": [
+        "WV-CH37-S01"
+      ],
+      "outcomeScenarios": [
+        "swap.aura.and.hanging"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Aura and hanging transposition verified; night attack and exact-role exchange, multiple overlapping redirects and victory remain.",
+      "evidence": [
+        {
+          "id": 37,
+          "branch": "swap.aura.and.hanging",
+          "skill": "official.37.swap",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.43.shoot",
+      "characterId": 43,
+      "ruleSources": [
+        "character.json#43"
+      ],
+      "relatedAuditRows": [
+        "WV-CH43-S01"
+      ],
+      "outcomeScenarios": [
+        "shoot.day-night"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Only #25 attack target in closed QA decks; faction/team bite and victory not implemented.",
+      "evidence": [
+        {
+          "id": 43,
+          "branch": "shoot.day-night",
+          "skill": "official.43.shoot",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.49.aura-illusion",
+      "characterId": 49,
+      "ruleSources": [
+        "VH25",
+        "character.json#49",
+        "S15-OWNER-SEER-01"
+      ],
+      "relatedAuditRows": [
+        "WV-CH49-S01"
+      ],
+      "outcomeScenarios": [
+        "illusion.global-aura"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Aura-only in QA deck; wolf team attack, exact-role interaction and victory not certified.",
+      "evidence": [
+        {
+          "id": 49,
+          "branch": "illusion.global-aura",
+          "skill": "official.49.aura-illusion",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.54.shoot",
+      "characterId": 54,
+      "ruleSources": [
+        "VH07",
+        "VH28",
+        "character.json#54"
+      ],
+      "relatedAuditRows": [
+        "WV-CH54-S01",
+        "WV-CH54-S02"
+      ],
+      "outcomeScenarios": [
+        "shoot.day-before-vote"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Shot and reveal with same-day exclusion implemented; day 2+ QA timing only, positive hanging and broader interactions not certified.",
+      "evidence": [
+        {
+          "id": 54,
+          "branch": "shoot.day-before-vote",
+          "skill": "official.54.shoot",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.54.reveal",
+      "characterId": 54,
+      "ruleSources": [
+        "VH07",
+        "VH28",
+        "character.json#54"
+      ],
+      "relatedAuditRows": [
+        "WV-CH54-S01",
+        "WV-CH54-S02"
+      ],
+      "outcomeScenarios": [
+        "reveal.public-after-first-vote"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Shot and reveal with same-day exclusion implemented; day 2+ QA timing only, positive hanging and broader interactions not certified.",
+      "evidence": [
+        {
+          "id": 54,
+          "branch": "reveal.public-after-first-vote",
+          "skill": "official.54.reveal",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.55.stone-protection",
+      "characterId": 55,
+      "ruleSources": [
+        "character.json#55",
+        "S11-V03"
+      ],
+      "relatedAuditRows": [
+        "WV-CH55-S01"
+      ],
+      "outcomeScenarios": [
+        "stone.hanging.protect.once",
+        "stone.untriggered.expiration.and.solo"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Single successful hanging protection and ordinary-wolf marker verified; village attacks, overlap, post-death marks and wolf pack action remain.",
+      "evidence": [
+        {
+          "id": 55,
+          "branch": "stone.hanging.protect.once",
+          "skill": "official.55.stone-protection",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 55,
+          "branch": "stone.untriggered.expiration.and.solo",
+          "skill": "official.55.stone-protection",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.58.compare",
+      "characterId": 58,
+      "ruleSources": [
+        "character.json#58",
+        "VH03",
+        "WIN-01"
+      ],
+      "relatedAuditRows": [
+        "WV-CH58-S01"
+      ],
+      "outcomeScenarios": [
+        "same.faction.private",
+        "different.faction.self-exception",
+        "different.faction.two-others"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Same faction, self+other and two other targets of different factions, sole survivor verified; wolf immunity and independent protection of one target remain.",
+      "evidence": [
+        {
+          "id": 58,
+          "branch": "same.faction.private",
+          "skill": "official.58.compare",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 58,
+          "branch": "different.faction.self-exception",
+          "skill": "official.58.compare",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 58,
+          "branch": "different.faction.two-others",
+          "skill": "official.58.compare",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.63.redirect",
+      "characterId": 63,
+      "ruleSources": [
+        "character.json#63",
+        "VH61",
+        "VH56"
+      ],
+      "relatedAuditRows": [
+        "WV-CH63-S01",
+        "WV-CH63-S02"
+      ],
+      "outcomeScenarios": [
+        "redirect.flag"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Redirect tested after night 2 with successful-use budget and cooldown; immune targets, cycles, other attacks and team victory remain.",
+      "evidence": [
+        {
+          "id": 63,
+          "branch": "redirect.flag",
+          "skill": "official.63.redirect",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "passive.66.observe-protected",
+      "characterId": 66,
+      "ruleSources": [
+        "VH34",
+        "character.json#66"
+      ],
+      "relatedAuditRows": [
+        "WV-CH66-S01"
+      ],
+      "outcomeScenarios": [
+        "observe.other-protected"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Observation only with #67 shield; protection types, death and victory outside restricted QA not certified.",
+      "evidence": [
+        {
+          "id": 66,
+          "branch": "observe.other-protected",
+          "skill": "passive.66.observe-protected",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.71.disguise",
+      "characterId": 71,
+      "ruleSources": [
+        "character.json#71",
+        "VH38",
+        "INV-01"
+      ],
+      "relatedAuditRows": [
+        "WV-CH71-S01"
+      ],
+      "outcomeScenarios": [
+        "persistent.aura-disguise"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Persistent aura effect implemented; daytime mass kill, immunity and legitimate removal remain.",
+      "evidence": [
+        {
+          "id": 71,
+          "branch": "persistent.aura-disguise",
+          "skill": "official.71.disguise",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.72.aura-curse",
+      "characterId": 72,
+      "ruleSources": [
+        "VH39",
+        "character.json#72",
+        "S15-OWNER-SEER-01"
+      ],
+      "relatedAuditRows": [
+        "WV-CH72-S01"
+      ],
+      "outcomeScenarios": [
+        "curse.single-aura"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Single-target aura-only QA; exact-role interaction and wolf team victory not certified.",
+      "evidence": [
+        {
+          "id": 72,
+          "branch": "curse.single-aura",
+          "skill": "official.72.aura-curse",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.77.trap",
+      "characterId": 77,
+      "ruleSources": [
+        "character.json#77",
+        "VH51",
+        "VH54"
+      ],
+      "relatedAuditRows": [
+        "WV-CH77-S01"
+      ],
+      "outcomeScenarios": [
+        "trap.lethal-block-counter"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Trap intercept and counter-kill verified for solo knight; pack bite, frenzy, multiple protections and village victory remain.",
+      "evidence": [
+        {
+          "id": 77,
+          "branch": "trap.lethal-block-counter",
+          "skill": "official.77.trap",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.80.compare",
+      "characterId": 80,
+      "ruleSources": [
+        "VH49",
+        "VH53",
+        "character.json#80"
+      ],
+      "relatedAuditRows": [
+        "WV-CH80-S01"
+      ],
+      "outcomeScenarios": [
+        "compare.same-faction",
+        "compare.different-faction"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Death facts only from #8/#32 night attacks in closed decks; revival/transformations and team victory not certified.",
+      "evidence": [
+        {
+          "id": 80,
+          "branch": "compare.different-faction",
+          "skill": "official.80.compare",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 80,
+          "branch": "compare.same-faction",
+          "skill": "official.80.compare",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.85.hypnotize",
+      "characterId": 85,
+      "ruleSources": [
+        "character.json#85",
+        "VH45",
+        "VH56"
+      ],
+      "relatedAuditRows": [
+        "WV-CH85-S01"
+      ],
+      "outcomeScenarios": [
+        "redirect.hypnosis"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Nightly hypnosis and redirect of #8 attack tested; other lethal night sources, overlapping protections and team victory remain.",
+      "evidence": [
+        {
+          "id": 85,
+          "branch": "redirect.hypnosis",
+          "skill": "official.85.hypnotize",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.87.rescue",
+      "characterId": 87,
+      "ruleSources": [
+        "VH57",
+        "VH64",
+        "character.json#87"
+      ],
+      "relatedAuditRows": [
+        "WV-CH87-S01",
+        "WV-CH87-S02"
+      ],
+      "outcomeScenarios": [
+        "rescue.one-bite-victim"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "One-flask rescue of one bite victim (including self) in one-wolf domain verified; other attack/protection combinations and other chat groups remain unsupported.",
+      "evidence": [
+        {
+          "id": 87,
+          "branch": "rescue.one-bite-victim",
+          "skill": "official.87.rescue",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.87.sedative",
+      "characterId": 87,
+      "ruleSources": [
+        "VH57",
+        "VH64",
+        "character.json#87"
+      ],
+      "relatedAuditRows": [
+        "WV-CH87-S01",
+        "WV-CH87-S02"
+      ],
+      "outcomeScenarios": [
+        "sedative.chat-and-vote"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "One-flask rescue of one bite victim (including self) in one-wolf domain verified; other attack/protection combinations and other chat groups remain unsupported.",
+      "evidence": [
+        {
+          "id": 87,
+          "branch": "sedative.chat-and-vote",
+          "skill": "official.87.sedative",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.88.pin",
+      "characterId": 88,
+      "ruleSources": [
+        "character.json#88",
+        "S11-V03",
+        "VH65"
+      ],
+      "relatedAuditRows": [
+        "WV-CH88-S01"
+      ],
+      "outcomeScenarios": [
+        "hanging.follow",
+        "follow.blocked.by.snow"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Night/hanging follow, Hunter killed by revenge and snow shield consumption verified in restricted decks; stale mark duration and other protections unresolved.",
+      "evidence": [
+        {
+          "id": 88,
+          "branch": "follow.blocked.by.snow",
+          "skill": "official.88.pin",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 88,
+          "branch": "hanging.follow",
+          "skill": "official.88.pin",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.93.seal",
+      "characterId": 93,
+      "ruleSources": [
+        "character.json#93",
+        "VH10",
+        "VH57",
+        "VH74",
+        "P04"
+      ],
+      "relatedAuditRows": [
+        "WV-CH93-S01"
+      ],
+      "outcomeScenarios": [
+        "seal.night-chat-vote"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Night skill lock + day chat and vote restriction; alignment change after partner death verified; one-wolf two-target bite verified; multi-wolf consensus, post-conversion aura and skill retention unresolved.",
+      "evidence": [
+        {
+          "id": 93,
+          "branch": "seal.night-chat-vote",
+          "skill": "official.93.seal",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.93.pack-bite",
+      "characterId": 93,
+      "ruleSources": [
+        "character.json#93",
+        "VH10",
+        "VH57",
+        "VH74",
+        "P04"
+      ],
+      "relatedAuditRows": [
+        "WV-CH93-S01"
+      ],
+      "outcomeScenarios": [
+        "pack.double-bite"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Night skill lock + day chat and vote restriction; alignment change after partner death verified; one-wolf two-target bite verified; multi-wolf consensus, post-conversion aura and skill retention unresolved.",
+      "evidence": [
+        {
+          "id": 93,
+          "branch": "pack.double-bite",
+          "skill": "official.93.pack-bite",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "passive.93.alignment",
+      "characterId": 93,
+      "ruleSources": [
+        "character.json#93",
+        "VH10",
+        "VH57",
+        "VH74",
+        "P04"
+      ],
+      "relatedAuditRows": [
+        "WV-CH93-S01"
+      ],
+      "outcomeScenarios": [
+        "alignment.after.partner.death"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Night skill lock + day chat and vote restriction; alignment change after partner death verified; one-wolf two-target bite verified; multi-wolf consensus, post-conversion aura and skill retention unresolved.",
+      "evidence": [
+        {
+          "id": 93,
+          "branch": "alignment.after.partner.death",
+          "skill": "passive.93.alignment",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "passive.94.conceal-aura",
+      "characterId": 94,
+      "ruleSources": [
+        "character.json#94",
+        "S15-OWNER-SEER-01"
+      ],
+      "relatedAuditRows": [
+        "WV-CH94-S01",
+        "WV-CH94-S02"
+      ],
+      "outcomeScenarios": [
+        "passive.conceal-living"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Living partner aura concealment and effigy redirect of knight lethal attack verified; competing redirects and attack families remain.",
+      "evidence": [
+        {
+          "id": 94,
+          "branch": "passive.conceal-living",
+          "skill": "passive.94.conceal-aura",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    },
+    {
+      "branchId": "official.94.effigy",
+      "characterId": 94,
+      "ruleSources": [
+        "character.json#94",
+        "S15-OWNER-SEER-01"
+      ],
+      "relatedAuditRows": [
+        "WV-CH94-S01",
+        "WV-CH94-S02"
+      ],
+      "outcomeScenarios": [
+        "effigy.redirect",
+        "effigy.identity.and.self"
+      ],
+      "implemented": true,
+      "tested": true,
+      "status": "VERIFIED_RESTRICTED",
+      "remaining": "Living partner aura concealment and effigy redirect of knight lethal attack verified; competing redirects and attack families remain.",
+      "evidence": [
+        {
+          "id": 94,
+          "branch": "effigy.redirect",
+          "skill": "official.94.effigy",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 94,
+          "branch": "effigy.identity.and.self",
+          "skill": "official.94.effigy",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    }
+  ],
+  "metricS": {
+    "newVerifiedBranches": 31,
+    "atomicSubset": {
+      "auditedRoles": 20,
+      "verifiedDenominator": 53,
+      "executedTested": 40,
+      "restrictedCoverage": 0.7547169811320755,
+      "globalDenominatorCertified": false,
+      "unresolvedRoleIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        30,
+        31,
+        32,
+        34,
+        35,
+        36,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        56,
+        57,
+        59,
+        60,
+        61,
+        62,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        75,
+        76,
+        77,
+        78,
+        80,
+        81,
+        82,
+        83,
+        84,
+        86,
+        89,
+        90,
+        91,
+        92,
+        95,
+        96,
+        97
+      ]
+    },
+    "exactRatio": null,
+    "verifiedOutcomeVariants": 47,
+    "reason": "Inherited composite rows not an atomic denominator; source-mapped verified adapter/passive IDs and outcome scenarios only; no overall ratio certified"
+  },
+  "approvedAtomicRegistry": "data/rules/s15_approved_atomic_branch_registry.json",
+  "approvedAtomicEvidence": "reports/S15_APPROVED_ATOMIC_COVERAGE.json"
+}

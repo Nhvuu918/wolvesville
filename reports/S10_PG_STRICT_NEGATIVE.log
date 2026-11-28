@@ -1,0 +1,36 @@
+
+> wolvesville-sprint10-gameplay-expansion@1.2.0-s10 test:pg:10
+> npm run build && WV_REQUIRE_POSTGRES=1 node --test tests/postgres-s10.test.mjs
+
+
+> wolvesville-sprint10-gameplay-expansion@1.2.0-s10 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+TAP version 13
+# (node:9193) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S10 PostgreSQL LIVE source-backed nightmare+judgment, ACL, rollback, restart, replay
+not ok 1 - S10 PostgreSQL LIVE source-backed nightmare+judgment, ACL, rollback, restart, replay
+  ---
+  duration_ms: 0.974332
+  type: 'test'
+  location: '/mnt/data/wolvesville_s10_work/tests/postgres-s10.test.mjs:13:1'
+  failureType: 'testCodeFailure'
+  error: 'DATABASE_URL required: strict PostgreSQL acceptance cannot run without server'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/wolvesville_s10_work/tests/postgres-s10.test.mjs:15:16)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 123.486319

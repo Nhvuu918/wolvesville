@@ -1,0 +1,75 @@
+{
+  "historicalCertificatesPreserved": [
+    {
+      "characterId": 28,
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "ruleSources": [
+        "character.json#28",
+        "NV31",
+        "VH03",
+        "S11-V02",
+        "S11-V03",
+        "QD-01",
+        "QD-02",
+        "QD-03"
+      ],
+      "branches": [
+        "WV-A28-HANG-WIN"
+      ],
+      "scope": "Role-local official branch, not arbitrary unsupported room configurations",
+      "mandatoryInteractions": [
+        "actual hanging",
+        "nonhanging death",
+        "cancelled vote",
+        "hanging protection",
+        "contract",
+        "redirect",
+        "linked death",
+        "Hunter follow",
+        "revenge wrong alignment",
+        "pin expiration",
+        "closed ledger",
+        "co-winners"
+      ],
+      "requiredTests": [
+        "S11 real multiplayer: zero, tie, blank, changed ballot, retry, hanging, co-winners, restart and replay",
+        "S08-G01 NEW official #8/#28 closed deck commits real night elimination and legitimate knight win, not hanged-jester win",
+        "S15 deep #28 hanging wins with other contenders alive, non-final trigger cannot win",
+        "S15 deep #28 PH-02 cancelled leading ballot cannot win; actual later hanging can win",
+        "S15 breakthrough #55 protects #28 from actual hanging once; later true hanging and wolf parity co-win",
+        "S15 breakthrough #28 linked death is not hanging; only actual hanging earns co-win",
+        "S15 breakthrough #19 anonymous ballot contract uses final valid ballot; #28 survives fulfilled contract then wins by real hanging",
+        "S15 breakthrough #19 declined or breached contract cannot prevent true hanging",
+        "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28",
+        "S15 final #88 hanging follow kills #28 without Jester win; stable knight victory",
+        "S15 final #88 hanging without mark does not eliminate secondary player; subsequent direct Jester win",
+        "S15 final #88 night follow and #28 non-hanging death are closed before victory",
+        "S15 final #88 hanging follow to Knight does not award Jester a false survivor win",
+        "S15 closure death ledger rejects missing, duplicated and reopened death chains before victory",
+        "QD02 wrong alignment consumes revenge without disclosure or retry; Village and Jester co-win",
+        "QD01 direct Jester hanging with live Hunter mark yields Village and Jester co-winners",
+        "QD03 pin expires at next night before no-repin death, replay and retry"
+      ],
+      "browserEvidence": [
+        "revenge",
+        "pin"
+      ],
+      "remainingExclusions": [],
+      "certified": true,
+      "missingTests": [],
+      "revalidatedOn": "1.7.15-s15-deep-engine-wip",
+      "freshEvidence": [
+        "reports/s15-deep-engine/role28-current.log",
+        "reports/s15-deep-engine/backend.log",
+        "reports/S15_DEEP_ENGINE_BROWSER_RESULTS.json"
+      ],
+      "missingFreshTests": [],
+      "freshRevalidated": true,
+      "freshEvidenceVersion": "1.7.15-s15-deep-engine-wip",
+      "missingFreshBrowser": [],
+      "status": "REVALIDATED_ON_CURRENT_SOURCE"
+    }
+  ],
+  "newCertificates": [],
+  "freshRevalidatedCount": 1
+}

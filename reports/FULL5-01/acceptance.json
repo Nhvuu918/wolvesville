@@ -1,0 +1,115 @@
+{
+  "checkpoint": "FULL5-01",
+  "sourceFingerprint": "f71c79111997a3287531c7cbf960f84ca256900020b93eeb86c3a967476f88ec",
+  "baseFingerprint": "d77300af6c8ac3b1e092e17e3288cf94291ea11959833ab1c5aeea3dd92bbf38",
+  "baseZipSha256": "3b4e6499587350b7ebb2aa3ea8da23223c89971e7cf3b10de47b975ff6316b0e",
+  "targetFull": 5,
+  "historicalF": 1,
+  "newFull": 0,
+  "freshFull": 1,
+  "characterRegistry": 97,
+  "historicalDecisions": 118,
+  "legacySpecifications": 207,
+  "legacyOwnerChoices": 25,
+  "ownerResponses": 48,
+  "clarifications": 2,
+  "knownPendingOwnerClarifications": 0,
+  "normalDecksHistorical": 16,
+  "developmentNormalConfigurations": [
+    [
+      8,
+      25,
+      31
+    ],
+    [
+      8,
+      31,
+      74
+    ],
+    [
+      8,
+      25,
+      31,
+      74
+    ],
+    [
+      8,
+      25,
+      31,
+      64
+    ],
+    [
+      8,
+      31,
+      64,
+      74
+    ],
+    [
+      8,
+      25,
+      31,
+      64,
+      74
+    ]
+  ],
+  "developmentNormalApiVerified": 6,
+  "moduleRoleIds": [
+    8,
+    9,
+    25,
+    27,
+    29,
+    31,
+    64,
+    74,
+    97
+  ],
+  "admissibleCompositionSubsets": 247,
+  "compositionSubsetsNote": "Structural validation, not runtime certification. Candidate roster only for new roles and interactions. No new Normal activation.",
+  "focusedBackend": {
+    "pass": 7,
+    "fail": 0,
+    "scope": "6 composition tests on intermediate defense source, and new unknown-aura test on final source; all included in final monolithic",
+    "logs": [
+      "reports/FULL5-01/focused.log",
+      "reports/FULL5-01/aura-focused.log"
+    ]
+  },
+  "newScenarioTestsInMonolithic": [
+    "FULL5 #74 sees converted Cupid as villager; private feedback, restart, replay",
+    "FULL5 #31/#9 layered protection: renewable guard first, snow retained then consumed, Bell only on true death",
+    "FULL5 #9 shield survives provider death and blocks linked night death once",
+    "FULL5 #25 trapped unknown aura uses typed false aura, consumes once and preserves private replay"
+  ],
+  "monolithic": {
+    "command": "WV_ARCHIVED_RULE_REGRESSION=1 node --test --test-concurrency=4 tests/*.test.mjs",
+    "exitCode": 0,
+    "status": "PASS",
+    "counts": {
+      "tests": 520,
+      "pass": 509,
+      "fail": 0,
+      "skipped": 11,
+      "cancelled": 0
+    },
+    "log": "reports/FULL5-01/backend-full.log"
+  },
+  "freshBrowserPass": [
+    "browser_full5_transformed_inspection_e2e.py",
+    "browser_s15_approved_revenge_e2e.py",
+    "browser_s15_approved_pin_e2e.py",
+    "browser_full50_universal_normal_e2e.py"
+  ],
+  "freshBrowserPassCount": 4,
+  "activeRuleset": "wolvesville-official-v1.3.3",
+  "candidateRuleset": "wolvesville-official-v1.3.4",
+  "competitive": "NO-GO",
+  "activation": "EXISTING_CONDITIONAL_INTERNAL_DEVELOPMENT_ONLY",
+  "limitations": [
+    "No new FULL certificate. Candidate only for new #74 transform, #25 trap unknown, #31/#9 layered defense.",
+    "No new Normal admission; official 16 plus 6 existing development configs.",
+    "Remaining mirror, disguise, transformation, piercing, theft, trap, prolong and full global obligations.",
+    "PostgreSQL live, full browser inventory, Mac native and Human QA not executed.",
+    "Build uses installed Node types and TypeScript, not fresh dependency installation from network."
+  ]
+}

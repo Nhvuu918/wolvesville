@@ -1,0 +1,51 @@
+E2E_SCHEDULER_WAIT exclusive 14264
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 496
+E2E_RESOURCE start cpu "usage_usec 1831096822\nuser_usec 1528535536\nsystem_usec 302561286\nnice_usec 1006738\nnr_periods 23471\nnr_throttled 585\nthrottled_usec 16753265\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s25_visual_e2e.py default port 38585 db /tmp/wolvesville-s06-browser-51JuZh/test.sqlite
+ACTUAL_SCREENSHOT title {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT login {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT register {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT lobby-1920x1080 {'width': 1920, 'height': 1080} 0 []
+ACTUAL_SCREENSHOT lobby-1366x768 {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT lobby-768x1024 {'width': 768, 'height': 1024} 0 []
+ACTUAL_SCREENSHOT lobby-390x844 {'width': 390, 'height': 844} 0 []
+ACTUAL_SCREENSHOT village-lobby {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT create-room {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT room-1920x1080 {'width': 1920, 'height': 1080} 0 []
+ACTUAL_SCREENSHOT room-1366x768 {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT room-768x1024 {'width': 768, 'height': 1024} 0 []
+ACTUAL_SCREENSHOT room-390x844 {'width': 390, 'height': 844} 0 []
+ACTUAL_SCREENSHOT waiting-room {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT configuration {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT private-role {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT night-1920x1080 {'width': 1920, 'height': 1080} 0 []
+ACTUAL_SCREENSHOT night-1366x768 {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT night-768x1024 {'width': 768, 'height': 1024} 0 []
+ACTUAL_SCREENSHOT night-390x844 {'width': 390, 'height': 844} 0 []
+ACTUAL_SCREENSHOT night {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT selected-target {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT submitted {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT day-private-result {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT public-chat {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT voting {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT vote-recorded {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT victory {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT defeat {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT replay-verified {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT reconnect {'width': 1366, 'height': 768} 0 []
+E2E_CONTEXT_CLOSED 0 0.029
+E2E_CONTEXT_CLOSED 1 0.037
+Traceback (most recent call last):
+  File "/tmp/wv35/tests/browser_s25_visual_e2e.py", line 51, in <module>
+    if __name__=='__main__':main(sys.argv[-1] if sys.argv[-1] in ('journey','themes') else 'journey')
+                            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/wv35/tests/browser_s25_visual_e2e.py", line 48, in main
+    seer.locator('.wv-winners').scroll_into_view_if_needed();shot(seer,'09-endgame','victory','self #25');knight.locator('.wv-winners').scroll_into_view_if_needed();shot(knight,'09-endgame','defeat','self #8');assert seer.evaluate('async()=>(await WolvesLive.request(`/api/games/${WolvesLive.gameId}/replay`)).replay.verified');seer.get_by_role('button',name='Kiểm tra Replay',exact=True).click();seer.wait_for_function('WolvesLive.notice.includes("Lịch sử ván chơi đã được đồng bộ")');shot(seer,'10-replay','replay-verified','self #25');seer.evaluate('WolvesLive.disconnect();WolvesLive.connect()');seer.wait_for_function('WolvesLive.connectionState==="online"&&WolvesLive.game.completed');shot(seer,'10-replay','reconnect','self #25');seer.evaluate("go('rooms')");assert seer.evaluate('page==="rooms"');shot(seer,'02-lobby','return-to-lobby','authenticated');assert not be.LOGS,be.LOGS;print('S25_NORMAL_VISUAL_JOURNEY_PASS',flush=True)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError
+Error: E2E failed browser_s25_visual_e2e.py, exit=1, signal=null
+    at file:///tmp/wv35/scripts/run-browser-s06.mjs:70:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+E2E_RESOURCE end cpu "usage_usec 1858348498\nuser_usec 1550937823\nsystem_usec 307410674\nnice_usec 1022637\nnr_periods 23611\nnr_throttled 589\nthrottled_usec 16809083\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

@@ -1,0 +1,2 @@
+# Breakthrough QA — WIP
+See `reports/S15_BREAKTHROUGH_ACCEPTANCE.json` and per-command logs in `reports/s15-breakthrough/`. Backend regression and current metrics are executed, not copied from the previous sprint. Browser PASS only where runner exit 0, success marker, and no cleanup warning. Inherited 29 suite historical PASS not a substitute for current-version acceptance. PostgreSQL live pending. No FULL certificate issued; see readiness matrix for mandatory missing paths. Competitive NO-GO.

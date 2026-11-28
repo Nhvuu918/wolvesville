@@ -1,0 +1,67 @@
+[
+  {
+    "file": "profile.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "viewer": "own disposable account",
+    "mode": "OUT_OF_GAME",
+    "sha256": "8b29b7d0cf4afc61733fbe08a8bc46344bfb5b088bbd8964bc115befc9cd22b9",
+    "result": "CAPTURED"
+  },
+  {
+    "file": "codex-detail.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "viewer": "authenticated",
+    "mode": "OUT_OF_GAME",
+    "sha256": "f9a8d0ff5a91ac9a4fbffa4dda323fe67536ae29be980abf879e6cd2b77fdb85",
+    "result": "CAPTURED"
+  },
+  {
+    "file": "room-directory.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "viewer": "authenticated guest",
+    "mode": "OUT_OF_GAME",
+    "sha256": "0502cb0d0119e2bb350ba1ae8c6fe79c77dd63863cc1dac292f220719b76efc3",
+    "result": "CAPTURED"
+  },
+  {
+    "file": "role-wheel-private.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "viewer": "self role only",
+    "mode": "NORMAL_GAMEPLAY",
+    "sha256": "0f6eae8eca448f5ebb7ea5671edd09e14b5e55da8182a6e9626d23785b846e34",
+    "result": "CAPTURED"
+  },
+  {
+    "file": "elimination-committed.png",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "viewer": "self #25, authorized public elimination",
+    "mode": "NORMAL_GAMEPLAY",
+    "sha256": "3632c01b47be2f084cb287ea1626d4bbc870d397aca48a80109e913db8d50806",
+    "result": "CAPTURED"
+  }
+]

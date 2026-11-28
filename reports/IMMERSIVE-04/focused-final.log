@@ -1,0 +1,258 @@
+TAP version 13
+# (node:15415) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Fate wheel assets served by same-origin allowlist, avatar slot authorization
+ok 1 - Fate wheel assets served by same-origin allowlist, avatar slot authorization
+  ---
+  duration_ms: 401.971922
+  type: 'test'
+  ...
+# Subtest: all landing sectors match across 1–132 entries and prior rotation angles
+ok 2 - all landing sectors match across 1–132 entries and prior rotation angles
+  ---
+  duration_ms: 18.217748
+  type: 'test'
+  ...
+# Subtest: continuous monotonic acceleration, cruise and deceleration
+ok 3 - continuous monotonic acceleration, cruise and deceleration
+  ---
+  duration_ms: 0.678543
+  type: 'test'
+  ...
+# Subtest: crypto rejection sampling avoids modulo bias; bounds and edge cases
+ok 4 - crypto rejection sampling avoids modulo bias; bounds and edge cases
+  ---
+  duration_ms: 9.393079
+  type: 'test'
+  ...
+# Subtest: roster uses IDs, keeps public dead, excludes self and never copies hidden attributes
+ok 5 - roster uses IDs, keeps public dead, excludes self and never copies hidden attributes
+  ---
+  duration_ms: 1.618868
+  type: 'test'
+  ...
+# (node:15417) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: FULL50 candidate: sacrificed follower keeps win entitlement but no live group access
+ok 6 - FULL50 candidate: sacrificed follower keeps win entitlement but no live group access
+  ---
+  duration_ms: 2991.281607
+  type: 'test'
+  ...
+# (node:15448) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Career derived metrics deduplicate and separate scopes, preserve real winner and initial role
+ok 7 - Career derived metrics deduplicate and separate scopes, preserve real winner and initial role
+  ---
+  duration_ms: 2.033414
+  type: 'test'
+  ...
+# Subtest: Five inherited relationship badge thresholds and boundary conditions
+ok 8 - Five inherited relationship badge thresholds and boundary conditions
+  ---
+  duration_ms: 1.029094
+  type: 'test'
+  ...
+# Subtest: Room full notices delivered once to all members, own career empty, unauthorized denied
+ok 9 - Room full notices delivered once to all members, own career empty, unauthorized denied
+  ---
+  duration_ms: 325.16518
+  type: 'test'
+  ...
+# (node:15469) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Immersive: profile, requests, private feed, likes, comments, block and restart
+ok 10 - Immersive: profile, requests, private feed, likes, comments, block and restart
+  ---
+  duration_ms: 486.214711
+  type: 'test'
+  ...
+# Subtest: Immersive: rule lookup uses public sources, no session state or provider claims
+ok 11 - Immersive: rule lookup uses public sources, no session state or provider claims
+  ---
+  duration_ms: 117.089317
+  type: 'test'
+  ...
+# Subtest: Immersive: validated media, persistence and empty history
+ok 12 - Immersive: validated media, persistence and empty history
+  ---
+  duration_ms: 359.047964
+  type: 'test'
+  ...
+# Subtest: ordinary declared choices count latest votes only; no effective ballot, secret weight or voter identity
+ok 13 - ordinary declared choices count latest votes only; no effective ballot, secret weight or voter identity
+  ---
+  duration_ms: 2.759612
+  type: 'test'
+  ...
+# Subtest: scope is opt-in and excludes hidden-vote/unknown roles; old games have no new public data
+ok 14 - scope is opt-in and excludes hidden-vote/unknown roles; old games have no new public data
+  ---
+  duration_ms: 0.30751
+  type: 'test'
+  ...
+# Subtest: phase start is stable across commits, restart and reconnect; no invented deadline
+ok 15 - phase start is stable across commits, restart and reconnect; no invented deadline
+  ---
+  duration_ms: 0.533795
+  type: 'test'
+  ...
+# Subtest: own vote journal records each accepted revision without leaking another player
+ok 16 - own vote journal records each accepted revision without leaking another player
+  ---
+  duration_ms: 0.594811
+  type: 'test'
+  ...
+# (node:15491) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: IMMERSIVE03 ordinary public voting: multi-client changes, restart, journal ACL, tie and reset
+ok 17 - IMMERSIVE03 ordinary public voting: multi-client changes, restart, journal ACL, tie and reset
+  ---
+  duration_ms: 3047.260433
+  type: 'test'
+  ...
+# (node:15521) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Image post ACL, realtime reaction/comment notification, duplicate retry, restart and delete
+ok 18 - Image post ACL, realtime reaction/comment notification, duplicate retry, restart and delete
+  ---
+  duration_ms: 884.196122
+  type: 'test'
+  ...
+# (node:15648) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Owner group-time policy: recruited cult member sends day and night; frozen ACL, WS, restart, replay
+ok 19 - Owner group-time policy: recruited cult member sends day and night; frozen ACL, WS, restart, replay
+  ---
+  duration_ms: 2131.66869
+  type: 'test'
+  ...
+# (node:15661) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: XP thresholds, multi-level remainder, distinct badge thresholds and scope exclusions
+ok 20 - XP thresholds, multi-level remainder, distinct badge thresholds and scope exclusions
+  ---
+  duration_ms: 1.870203
+  type: 'test'
+  ...
+# Subtest: Official Normal two-human completed match grants own persisted XP once; replay/restart no extra rewards
+ok 21 - Official Normal two-human completed match grants own persisted XP once; replay/restart no extra rewards
+  ---
+  duration_ms: 896.980438
+  type: 'test'
+  ...
+# Subtest: S04 KB-01: 118 confirmed decisions with original codes, 145 skill audit branches, and 97 characters
+ok 22 - S04 KB-01: 118 confirmed decisions with original codes, 145 skill audit branches, and 97 characters
+  ---
+  duration_ms: 10.7788
+  type: 'test'
+  ...
+# Subtest: S04 KB-02: original character bytes unchanged and every branch points back to exact official description
+ok 23 - S04 KB-02: original character bytes unchanged and every branch points back to exact official description
+  ---
+  duration_ms: 7.591675
+  type: 'test'
+  ...
+# Subtest: S04 KB-03: all 4656 pairs exist as SCREENING, only three closed-deck pairs have implemented outcomes
+ok 24 - S04 KB-03: all 4656 pairs exist as SCREENING, only three closed-deck pairs have implemented outcomes
+  ---
+  duration_ms: 11.195063
+  type: 'test'
+  ...
+# Subtest: S04 KB-04: 207 legacy specifications are NEVER flagged as executed by this generator
+ok 25 - S04 KB-04: 207 legacy specifications are NEVER flagged as executed by this generator
+  ---
+  duration_ms: 2.197448
+  type: 'test'
+  ...
+# Subtest: S04 KB-05: DERIVED inference never overwritten as CONFIRMED and no global victory assertion
+ok 26 - S04 KB-05: DERIVED inference never overwritten as CONFIRMED and no global victory assertion
+  ---
+  duration_ms: 0.452608
+  type: 'test'
+  ...
+# Subtest: S04 KB-06: source inventory hashes check out for every source available
+ok 27 - S04 KB-06: source inventory hashes check out for every source available
+  ---
+  duration_ms: 3.233607
+  type: 'test'
+  ...
+# (node:15700) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S24 group ACL: muted member, frozen audience, hidden ledger positions, restart and replay
+ok 28 - S24 group ACL: muted member, frozen audience, hidden ledger positions, restart and replay
+  ---
+  duration_ms: 158.489123
+  type: 'test'
+  ...
+# Subtest: S24 group ACL HTTP/WS: trusted grant fixture, no public fallback, restricted refresh, SQLite restart and replay
+ok 29 - S24 group ACL HTTP/WS: trusted grant fixture, no public fallback, restricted refresh, SQLite restart and replay
+  ---
+  duration_ms: 1488.806765
+  type: 'test'
+  ...
+# (node:15712) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S27 cult gameplay: recruitment, mute group ACL, preserved role, private chat, restart and living cult victory
+ok 30 - S27 cult gameplay: recruitment, mute group ACL, preserved role, private chat, restart and living cult victory
+  ---
+  duration_ms: 2308.02097
+  type: 'test'
+  ...
+# Subtest: S27 cult gameplay: independent target failure, single attempt, private generic feedback and leader death chain
+ok 31 - S27 cult gameplay: independent target failure, single attempt, private generic feedback and leader death chain
+  ---
+  duration_ms: 2886.210338
+  type: 'test'
+  ...
+# Subtest: S27 cult gameplay: same-night recruitment before sacrifice, final deaths, no membership restoration or fabricated winner
+ok 32 - S27 cult gameplay: same-night recruitment before sacrifice, final deaths, no membership restoration or fabricated winner
+  ---
+  duration_ms: 1155.578695
+  type: 'test'
+  ...
+# Subtest: STARTUP-01 SQLite launches without DATABASE_URL from a real clean database
+ok 33 - STARTUP-01 SQLite launches without DATABASE_URL from a real clean database
+  ---
+  duration_ms: 657.010179
+  type: 'test'
+  ...
+# Subtest: STARTUP-02 PostgreSQL mode refuses missing URL without opening SQLite or disclosing credentials
+ok 34 - STARTUP-02 PostgreSQL mode refuses missing URL without opening SQLite or disclosing credentials
+  ---
+  duration_ms: 290.257063
+  type: 'test'
+  ...
+# Subtest: STARTUP-03 unknown provider and invalid port fail fast
+ok 35 - STARTUP-03 unknown provider and invalid port fail fast
+  ---
+  duration_ms: 666.9168
+  type: 'test'
+  ...
+# Subtest: STARTUP-04 occupied port returns diagnostic without killing the original server
+ok 36 - STARTUP-04 occupied port returns diagnostic without killing the original server
+  ---
+  duration_ms: 763.490199
+  type: 'test'
+  ...
+# Subtest: STARTUP-05 correct demo env flag, production remains disabled
+ok 37 - STARTUP-05 correct demo env flag, production remains disabled
+  ---
+  duration_ms: 780.186285
+  type: 'test'
+  ...
+# Subtest: STARTUP-06 local .env is read; sqlite does not require a PostgreSQL URL
+ok 38 - STARTUP-06 local .env is read; sqlite does not require a PostgreSQL URL
+  ---
+  duration_ms: 57.262759
+  type: 'test'
+  ...
+1..38
+# tests 38
+# suites 0
+# pass 38
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 13694.203532

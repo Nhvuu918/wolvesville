@@ -1,0 +1,42 @@
+TAP version 13
+# (node:40459) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# BREAKTHROUGH_MEDIUM_EVIDENCE {"id":26,"deck":[8,26,74],"mediumKilled":false,"completed":true,"privacy":true,"replay":true,"restart":true,"deathCycles":2}
+# Subtest: Breakthrough medium \#26 with \#74: closed death, revival, repeated elimination, PH-01 false
+ok 1 - Breakthrough medium \#26 with \#74: closed death, revival, repeated elimination, PH-01 false
+  ---
+  duration_ms: 1387.59898
+  type: 'test'
+  ...
+# BREAKTHROUGH_MEDIUM_EVIDENCE {"id":26,"deck":[8,26,74],"mediumKilled":true,"completed":true,"privacy":true,"replay":true,"restart":true,"deathCycles":2}
+# Subtest: Breakthrough medium \#26 with \#74: closed death, revival, repeated elimination, PH-01 true
+ok 2 - Breakthrough medium \#26 with \#74: closed death, revival, repeated elimination, PH-01 true
+  ---
+  duration_ms: 1163.558135
+  type: 'test'
+  ...
+# (node:40460) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# DEEP_MEDIUM_EVIDENCE {"id":26,"deck":[8,25,26],"mediumKilled":false,"completed":true,"privacy":true,"replay":true,"restart":true,"deathCycles":2}
+# Subtest: Deep medium \#26: closed death, revival, repeated elimination, PH-01 false
+ok 3 - Deep medium \#26: closed death, revival, repeated elimination, PH-01 false
+  ---
+  duration_ms: 1502.652154
+  type: 'test'
+  ...
+# DEEP_MEDIUM_EVIDENCE {"id":26,"deck":[8,25,26],"mediumKilled":true,"completed":true,"privacy":true,"replay":true,"restart":true,"deathCycles":2}
+# Subtest: Deep medium \#26: closed death, revival, repeated elimination, PH-01 true
+ok 4 - Deep medium \#26: closed death, revival, repeated elimination, PH-01 true
+  ---
+  duration_ms: 1145.679961
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2924.141817

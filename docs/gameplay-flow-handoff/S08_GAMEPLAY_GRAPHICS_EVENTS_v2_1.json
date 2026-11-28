@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "graphics-handoff-v2.1-s08-gameplay",
+  "extends": "graphics-handoff-v2.0-s08-addendum",
+  "baseContractPath": "docs/gameplay-flow-handoff/S08_GRAPHICS_READY_CONTRACT.json",
+  "policy": "Additive overlay only; do not alter earlier event names or expose server-internal facts",
+  "runtimeEvents": [
+    {
+      "eventType": "VOTE_OUTCOME_CONFIRMED",
+      "status": "IMPLEMENTED_TESTED_SCOPED",
+      "trigger": "Server-only certified #79 PH-02 effect commits",
+      "authorizedAudience": "ROOM_PUBLIC",
+      "authorizedPayload": [
+        "round",
+        "outcome = CANCELLED_NO_ELIMINATION"
+      ],
+      "privateFieldsForbidden": [
+        "actorId",
+        "targetId",
+        "rawBallots",
+        "seed",
+        "currentCharacterId",
+        "internalAudit"
+      ],
+      "screenState": "DAY_VOTE_CANCELLED",
+      "playerText": "Lượt bỏ phiếu đã bị hủy. Không ai bị treo.",
+      "animationHook": "voting.cancelled.v2",
+      "reducedMotion": "Immediately render full message; no letter streaming",
+      "transition": "NIGHT_COLLECT (server snapshot, round increments)",
+      "reconnect": "Rehydrate from persisted voting.outcome and current phase; never replay the toast as a new outcome",
+      "loading": "Await committed server snapshot",
+      "error": "Keep last authorized state; show retry prompt",
+      "responsive": "Mobile 390px; no horizontal overflow",
+      "assets": "Reuse day/night backdrop and approved typography; no new art prerequisite"
+    },
+    {
+      "eventType": "POST_ELIMINATION_CHAIN_CLOSED",
+      "status": "IMPLEMENTED_TESTED_SCOPED",
+      "trigger": "Certified #8 two-person death-chain closure",
+      "authorizedAudience": "SERVER_INTERNAL",
+      "authorizedPayload": [],
+      "screenState": "NO_PLAYER_VISUAL",
+      "playerText": "NEVER_RENDER",
+      "animationHook": null,
+      "reducedMotion": "No visual",
+      "transition": "Internal victory precondition only",
+      "reconnect": "Never send to clients",
+      "loading": "N/A",
+      "error": "Internal logging only",
+      "responsive": "N/A",
+      "assets": "None"
+    },
+    {
+      "eventType": "PLAYER_ELIMINATED",
+      "status": "IMPLEMENTED_TESTED_SCOPED",
+      "trigger": "Committed #8 attack on #25 or #28 in approved deck",
+      "authorizedAudience": "ROOM_PUBLIC",
+      "authorizedPayload": [
+        "playerId"
+      ],
+      "screenState": "NIGHT_ELIMINATION",
+      "playerText": "Một người chơi đã bị loại.",
+      "animationHook": "night.death.reveal.v1",
+      "reducedMotion": "Render state and text immediately",
+      "transition": "NIGHT_FINALIZE then certified victory check",
+      "reconnect": "Restore from authoritative snapshot; no duplicate new elimination animation",
+      "loading": "Wait for server commit",
+      "error": "Show connection status",
+      "responsive": "Adapt within existing stage",
+      "assets": "Reuse approved death visuals"
+    },
+    {
+      "eventType": "MATCH_COMPLETED",
+      "status": "IMPLEMENTED_TESTED_SCOPED",
+      "trigger": "Certified #8 victory, post-death chain and evidence checked",
+      "authorizedAudience": "ROOM_PUBLIC",
+      "authorizedPayload": [
+        "winnerIds"
+      ],
+      "screenState": "GAME_RESULT",
+      "playerText": "Bạn đã chiến thắng / Ván đấu đã có người chiến thắng",
+      "animationHook": "match.finished.v1",
+      "reducedMotion": "Show full result instantly; no typing effect",
+      "transition": "Return to Lobby by player action",
+      "reconnect": "Rehydrate completed=true and winnerIds; no fake endgame",
+      "loading": "Wait for committed result",
+      "error": "Show error if result unavailable",
+      "responsive": "Responsive overlay",
+      "assets": "Approved Dark Fantasy result stage"
+    }
+  ],
+  "designOnlyStates": [
+    "STANDARD_VOTE_FINAL_TALLY",
+    "GENERAL_HANGING",
+    "GENERAL_POST_VOTE_DEATH",
+    "GENERAL_FACTION_VICTORY"
+  ],
+  "compatibility": "S06/S07/S08 v2.0 event names preserved; only VOTE_OUTCOME_CONFIRMED and internal certificate added"
+}

@@ -1,0 +1,5 @@
+S11_BROWSER_PASS: 3 rounds, zero, tie, blank, vote update, hanging, co-winners, reconnect
+S06_BROWSER_PASS browser_s11_voting_e2e.py
+S11_BROWSER_PASS: real seer skill, official hanging, knight winner, reconnect
+S06_BROWSER_PASS browser_s11_seer_e2e.py
+S06_BROWSER_ALL_2_PASS

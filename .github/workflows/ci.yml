@@ -1,0 +1,43 @@
+name: Wolvesville quality gates
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: wolvesville
+          POSTGRES_PASSWORD: ci_ephemeral_only
+          POSTGRES_DB: wolvesville
+        ports: ['5432:5432']
+        options: --health-cmd "pg_isready -U wolvesville" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://wolvesville:ci_ephemeral_only@127.0.0.1:5432/wolvesville
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install
+        run: if [ -f package-lock.json ]; then npm ci --include=dev --include=optional; else npm install --include=dev --include=optional; fi
+      - run: npm run verify:source
+      - run: npm run build
+      - run: npm run db:migrate && npm run db:migrate
+      - run: npm run test:immersive03
+      - name: All existing backend suites (PostgreSQL mandatory)
+        run: WV_ARCHIVED_RULE_REGRESSION=1 WV_REQUIRE_POSTGRES=1 node --test tests/*.test.mjs
+      - name: Cloud startup smoke
+        run: |
+          NODE_ENV=production WV_DEPLOYMENT_PROFILE=CLOUD_STAGING DB_PROVIDER=postgres PORT=3212 npm start > /tmp/wv-cloud.log 2>&1 &
+          pid=$!
+          trap 'kill "$pid" 2>/dev/null || true' EXIT
+          for i in $(seq 1 30); do curl --fail --silent http://127.0.0.1:3212/ready && exit 0; sleep 1; done
+          cat /tmp/wv-cloud.log
+          exit 1

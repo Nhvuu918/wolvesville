@@ -1,0 +1,482 @@
+[
+  {
+    "screen": "title",
+    "file": "01-landing-auth/title.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "public",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "login",
+    "file": "01-landing-auth/login.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "public",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "register",
+    "file": "01-landing-auth/register.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "public",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "OUT_OF_GAME",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "lobby-1920x1080",
+    "file": "11-responsive/lobby-1920x1080.png",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "lobby-1366x768",
+    "file": "11-responsive/lobby-1366x768.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "lobby-768x1024",
+    "file": "11-responsive/lobby-768x1024.png",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "lobby-390x844",
+    "file": "11-responsive/lobby-390x844.png",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "village-lobby",
+    "file": "02-lobby/village-lobby.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "create-room",
+    "file": "03-room/create-room.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "host",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "room-1920x1080",
+    "file": "11-responsive/room-1920x1080.png",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "viewer": "host",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "room-1366x768",
+    "file": "11-responsive/room-1366x768.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "host",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "room-768x1024",
+    "file": "11-responsive/room-768x1024.png",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "viewer": "host",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "room-390x844",
+    "file": "11-responsive/room-390x844.png",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "viewer": "host",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "waiting-room",
+    "file": "03-room/waiting-room.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "host",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "configuration",
+    "file": "03-room/configuration.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "host",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "private-role",
+    "file": "05-night-gameplay/private-role.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "night-1920x1080",
+    "file": "11-responsive/night-1920x1080.png",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "night-1366x768",
+    "file": "11-responsive/night-1366x768.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "night-768x1024",
+    "file": "11-responsive/night-768x1024.png",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "night-390x844",
+    "file": "11-responsive/night-390x844.png",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "night",
+    "file": "05-night-gameplay/night.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "selected-target",
+    "file": "05-night-gameplay/selected-target.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "submitted",
+    "file": "05-night-gameplay/submitted.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "day-private-result",
+    "file": "06-day-gameplay/day-private-result.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "public-chat",
+    "file": "07-chat/public-chat.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "voting",
+    "file": "08-voting/voting.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "vote-recorded",
+    "file": "08-voting/vote-recorded.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "victory",
+    "file": "09-endgame/victory.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "defeat",
+    "file": "09-endgame/defeat.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #8",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "replay-verified",
+    "file": "10-replay/replay-verified.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "reconnect",
+    "file": "10-replay/reconnect.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "return-to-lobby",
+    "file": "02-lobby/return-to-lobby.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "authenticated",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "real normal knight/aura match",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  }
+]

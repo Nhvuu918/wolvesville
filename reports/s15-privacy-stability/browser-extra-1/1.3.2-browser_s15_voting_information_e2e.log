@@ -1,0 +1,26 @@
+E2E_SCHEDULER_WAIT exclusive 90985
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 60638
+E2E_RESOURCE start cpu "usage_usec 14412326265\nuser_usec 11896982408\nsystem_usec 2515343857\nnice_usec 7997986\nnr_periods 59960\nnr_throttled 25692\nthrottled_usec 1762921834\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 63868\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s15_voting_information_e2e.py sedative port 33617 db /tmp/wolvesville-s06-browser-9HRrid/test.sqlite
+VOTING_INFO_READY s15-sedative
+VOTING_INFO_ASSERTIONS_PASS s15-sedative
+VOTING_INFO_CLEANUP_PASS s15-sedative
+S15_BROWSER_PASS
+S06_BROWSER_CASE_PASS browser_s15_voting_information_e2e.py sedative
+E2E_ISOLATION browser_s15_voting_information_e2e.py reveal port 43395 db /tmp/wolvesville-s06-browser-OS2Ps0/test.sqlite
+VOTING_INFO_READY s15-reveal
+VOTING_INFO_ASSERTIONS_PASS s15-reveal
+VOTING_INFO_CLEANUP_PASS s15-reveal
+S15_BROWSER_PASS
+S06_BROWSER_CASE_PASS browser_s15_voting_information_e2e.py reveal
+E2E_ISOLATION browser_s15_voting_information_e2e.py violin port 39637 db /tmp/wolvesville-s06-browser-HSFDS7/test.sqlite
+VOTING_INFO_READY s15-violin-knight
+VOTING_INFO_ASSERTIONS_PASS s15-violin-knight
+VOTING_INFO_CLEANUP_PASS s15-violin-knight
+S15_BROWSER_PASS
+S06_BROWSER_CASE_PASS browser_s15_voting_information_e2e.py violin
+S06_BROWSER_PASS browser_s15_voting_information_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 14484260555\nuser_usec 11955091202\nsystem_usec 2529169353\nnice_usec 8072772\nnr_periods 60255\nnr_throttled 25711\nthrottled_usec 1763380310\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 63868\noom 0\noom_kill 0\noom_group_kill 0"

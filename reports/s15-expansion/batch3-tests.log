@@ -1,0 +1,48 @@
+TAP version 13
+# (node:55744) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":49,"branch":"illusion.global-aura","skill":"official.49.aura-illusion","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 aura expansion \#49 private distortion, expiry, duplicate and restart
+ok 1 - S15 aura expansion \#49 private distortion, expiry, duplicate and restart
+  ---
+  duration_ms: 1168.517202
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":72,"branch":"curse.single-aura","skill":"official.72.aura-curse","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 aura expansion \#72 private distortion, expiry, duplicate and restart
+ok 2 - S15 aura expansion \#72 private distortion, expiry, duplicate and restart
+  ---
+  duration_ms: 1097.632398
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":54,"branch":"shoot.day-before-vote","skill":"official.54.shoot","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#54 shot before voting, same-day exclusion, next-day reveal, retry and replay
+ok 3 - S15 \#54 shot before voting, same-day exclusion, next-day reveal, retry and replay
+  ---
+  duration_ms: 857.557164
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[8,28,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# S15_EVIDENCE {"id":28,"branch":"passive.hanged-victory","skill":"passive.28.hanged-victory","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 certified complete match 8,28,74
+ok 4 - S15 certified complete match 8,28,74
+  ---
+  duration_ms: 618.428878
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[8,25,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 certified complete match 8,25,74
+ok 5 - S15 certified complete match 8,25,74
+  ---
+  duration_ms: 686.106499
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4638.648992

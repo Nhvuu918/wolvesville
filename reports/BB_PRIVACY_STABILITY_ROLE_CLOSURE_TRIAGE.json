@@ -1,0 +1,783 @@
+{
+  "method": "Sort audited unresolved atomic branch count, then old unclosed finite contract entries; no claim of complete global denominator. Every global FULL obligation retained. #10 approved policy is resolved separately from runtime certification.",
+  "ranked": [
+    {
+      "id": 9,
+      "name": "Thiên Sứ Tuyết",
+      "sourcedInventoryBranches": 1,
+      "unverifiedAtomicBranches": [],
+      "sourceContractUnclosed": [
+        {
+          "id": "WV-A09-SHIELD",
+          "condition": "one attack absorbed",
+          "source": [
+            "character.json#9",
+            "PH-01"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-9-2",
+          "condition": "shield against piercing and theft",
+          "source": [
+            "VH42 / VH72"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-9-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "source": [
+            "character.json#9"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-9-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "source": [
+            "character.json#9"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-9-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "source": [
+            "character.json#9"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        }
+      ],
+      "note": "Historical contract obligations are not a current failure count; retained until resolved by exact scoped evidence. B/B QA is not official 1.3.3 completion."
+    },
+    {
+      "id": 25,
+      "name": "Tiên Tri",
+      "sourcedInventoryBranches": 1,
+      "unverifiedAtomicBranches": [],
+      "sourceContractUnclosed": [
+        {
+          "id": "WV-A25-AURA",
+          "condition": "private aura (not role)",
+          "source": [
+            "character.json#25",
+            "S15-OWNER-SEER-01",
+            "VH39",
+            "VH25",
+            "Q13-11"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-25-2",
+          "condition": "trap on unknown aura; reflection and concealment",
+          "source": [
+            "SYS-25 / character.json#35 / #3"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-25-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "source": [
+            "character.json#25"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-25-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "source": [
+            "character.json#25"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-25-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "source": [
+            "character.json#25"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        }
+      ],
+      "note": "Historical contract obligations are not a current failure count; retained until resolved by exact scoped evidence. B/B QA is not official 1.3.3 completion."
+    },
+    {
+      "id": 26,
+      "name": "Thầy Đồng",
+      "sourcedInventoryBranches": 2,
+      "unverifiedAtomicBranches": [],
+      "sourceContractUnclosed": [
+        {
+          "id": "WV-A26-REVIVE",
+          "condition": "restore original life identity, faction, resources; public minimal PLAYER_REVIVED",
+          "source": [
+            "character.json#26",
+            "VH73",
+            "VH76",
+            "PH-01",
+            "VH03"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-26-2",
+          "condition": "any dead faction and exclusion #46/#47/#53",
+          "source": [
+            "VH73 / VH76"
+          ],
+          "historicalStatus": "NOT_IMPLEMENTED"
+        },
+        {
+          "id": "BT-26-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "source": [
+            "character.json#26"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-26-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "source": [
+            "character.json#26"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-26-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "source": [
+            "character.json#26"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        }
+      ],
+      "note": "Historical contract obligations are not a current failure count; retained until resolved by exact scoped evidence. B/B QA is not official 1.3.3 completion."
+    },
+    {
+      "id": 31,
+      "name": "Bảo Vệ",
+      "sourcedInventoryBranches": 1,
+      "unverifiedAtomicBranches": [],
+      "sourceContractUnclosed": [
+        {
+          "id": "WV-A31-GUARD",
+          "condition": "protection per source",
+          "source": [
+            "character.json#31",
+            "NV34",
+            "VH24",
+            "character.json#48",
+            "Ma_Soi_Quy_Tac_Da_Chot_Va_De_Xuat.xlsx / 04 Char nguon row32"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-31-2",
+          "condition": "trap and piercing interactions",
+          "source": [
+            "character.json#10 / VH42"
+          ],
+          "historicalStatus": "NOT_IMPLEMENTED"
+        },
+        {
+          "id": "BT-31-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "source": [
+            "character.json#31"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-31-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "source": [
+            "character.json#31"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-31-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "source": [
+            "character.json#31"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        }
+      ],
+      "note": "Historical contract obligations are not a current failure count; retained until resolved by exact scoped evidence. B/B QA is not official 1.3.3 completion."
+    },
+    {
+      "id": 64,
+      "name": "Người Rung Chuông",
+      "sourcedInventoryBranches": 1,
+      "unverifiedAtomicBranches": [],
+      "sourceContractUnclosed": [
+        {
+          "id": "WV-A64-PAIR-DEATH-OBSERVATION",
+          "condition": "private role of surviving paired player; if both die in same batch, reveal both",
+          "source": [
+            "character.json#64",
+            "Ma_Soi_Quy_Tac_Da_Chot_Va_De_Xuat.xlsx / 04 Char nguon row 65 (answer present, not marked chốt)"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-64-1",
+          "condition": "marked pair death observations across linked/revival events",
+          "source": [
+            "character.json#64"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-64-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "source": [
+            "character.json#64"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-64-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "source": [
+            "character.json#64"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-64-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "source": [
+            "character.json#64"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        }
+      ],
+      "note": "Historical contract obligations are not a current failure count; retained until resolved by exact scoped evidence. B/B QA is not official 1.3.3 completion."
+    },
+    {
+      "id": 74,
+      "name": "Tiên Tri Huyền Bí",
+      "sourcedInventoryBranches": 1,
+      "unverifiedAtomicBranches": [],
+      "sourceContractUnclosed": [
+        {
+          "id": "WV-A74-EXACT",
+          "condition": "private exact role",
+          "source": [
+            "character.json#74",
+            "S15-OWNER-SEER-01",
+            "SK-05",
+            "Q13-06"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-74-2",
+          "condition": "false-role trap and disguise interactions",
+          "source": [
+            "Q13-06 / character.json#57"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-74-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "source": [
+            "character.json#74"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-74-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "source": [
+            "character.json#74"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-74-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "source": [
+            "character.json#74"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        }
+      ],
+      "note": "Historical contract obligations are not a current failure count; retained until resolved by exact scoped evidence. B/B QA is not official 1.3.3 completion."
+    },
+    {
+      "id": 36,
+      "name": "Pháp Sư",
+      "sourcedInventoryBranches": 3,
+      "unverifiedAtomicBranches": [],
+      "sourceContractUnclosed": [
+        {
+          "id": "WV-A36-FIREBALL",
+          "condition": "lethal attack subject to defense",
+          "source": [
+            "character.json#36",
+            "VH12",
+            "VH13"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "WV-A36-SHIELD",
+          "condition": "one valid protection; consume even if untriggered",
+          "source": [
+            "character.json#36",
+            "VH12"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "WV-A36-SHIELD-REVEAL",
+          "condition": "private exact-role feedback to mage",
+          "source": [
+            "character.json#36"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-36-1",
+          "condition": "same-night fireball and shield, fireball not piercing",
+          "source": [
+            "VH12 / VH13"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-36-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "source": [
+            "character.json#36"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-36-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "source": [
+            "character.json#36"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-36-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "source": [
+            "character.json#36"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        }
+      ],
+      "note": "Historical contract obligations are not a current failure count; retained until resolved by exact scoped evidence. B/B QA is not official 1.3.3 completion."
+    },
+    {
+      "id": 87,
+      "name": "Dược Sĩ",
+      "sourcedInventoryBranches": 2,
+      "unverifiedAtomicBranches": [],
+      "sourceContractUnclosed": [
+        {
+          "id": "WV-A87-RESCUE",
+          "condition": "restore living state",
+          "source": [
+            "character.json#87",
+            "VH64"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "WV-A87-SEDATIVE",
+          "condition": "deny day chat and ballot",
+          "source": [
+            "character.json#87",
+            "VH57"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-87-1",
+          "condition": "wolf victim list and single rescue, self rescue",
+          "source": [
+            "VH64"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-87-2",
+          "condition": "sedative and other authorized chat interactions",
+          "source": [
+            "character.json#87"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-87-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "source": [
+            "character.json#87"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-87-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "source": [
+            "character.json#87"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-87-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "source": [
+            "character.json#87"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        }
+      ],
+      "note": "Historical contract obligations are not a current failure count; retained until resolved by exact scoped evidence. B/B QA is not official 1.3.3 completion."
+    },
+    {
+      "id": 5,
+      "name": "Thẩm Phán Linh Hồn",
+      "sourcedInventoryBranches": 2,
+      "unverifiedAtomicBranches": [
+        {
+          "branch": "WV-A05-JUSTICE",
+          "ruleSources": [
+            "character.json#5",
+            "NV05",
+            "VH84"
+          ],
+          "remainingInteractions": "Only listed test/domain is eligible; other source interactions not certified."
+        }
+      ],
+      "sourceContractUnclosed": [
+        {
+          "id": "WV-A05-WEIGH-SOUL",
+          "condition": "actual faction verdict Thiện/Ác/Không xác định, private",
+          "source": [
+            "character.json#5",
+            "VH84",
+            "NV05"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "WV-A05-JUSTICE",
+          "condition": "protect against hostile faction changes",
+          "source": [
+            "character.json#5",
+            "NV05",
+            "VH84"
+          ],
+          "historicalStatus": "NOT_IMPLEMENTED"
+        },
+        {
+          "id": "BT-5-2",
+          "condition": "justice against faction change",
+          "source": [
+            "character.json#5"
+          ],
+          "historicalStatus": "NOT_IMPLEMENTED"
+        },
+        {
+          "id": "BT-5-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "source": [
+            "character.json#5"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-5-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "source": [
+            "character.json#5"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-5-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "source": [
+            "character.json#5"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        }
+      ],
+      "note": "Historical contract obligations are not a current failure count; retained until resolved by exact scoped evidence. B/B QA is not official 1.3.3 completion."
+    },
+    {
+      "id": 39,
+      "name": "Kẻ Trộm Chó",
+      "sourcedInventoryBranches": 5,
+      "unverifiedAtomicBranches": [
+        {
+          "branch": "WV-A39-THIRD-PARTY-COWIN",
+          "ruleSources": [
+            "character.json#39",
+            "VH17",
+            "VH18"
+          ],
+          "remainingInteractions": "Single wolf/village QA scope only; protection, other third-party faction and co-win outside this deck"
+        }
+      ],
+      "sourceContractUnclosed": [
+        {
+          "id": "WV-A39-CAPTURE",
+          "condition": "Wolf killed and attributed to #39",
+          "source": [
+            "character.json#39",
+            "VH17",
+            "VH18"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "WV-A39-MISS",
+          "condition": "Village target unharmed; miss count +1 and vehicle unavailable next night",
+          "source": [
+            "character.json#39",
+            "VH17",
+            "VH18"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "WV-A39-THIRD-MISS",
+          "condition": "Third miss kills actor",
+          "source": [
+            "character.json#39",
+            "VH17",
+            "VH18"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "WV-A39-MAJORITY-WIN",
+          "condition": "More than half of initial wolves killed by this actor; after closed night ledger",
+          "source": [
+            "character.json#39",
+            "VH17",
+            "VH18"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "WV-A39-THIRD-PARTY-COWIN",
+          "condition": "Win with other third-party winners if own goal unmet",
+          "source": [
+            "character.json#39",
+            "VH17",
+            "VH18"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-39-1",
+          "condition": "initial wolf majority; exactly one night vehicle loss",
+          "source": [
+            "VH17 / VH18"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-39-2",
+          "condition": "third-party co-win",
+          "source": [
+            "character.json#39 / VH03"
+          ],
+          "historicalStatus": "NOT_IMPLEMENTED"
+        },
+        {
+          "id": "BT-39-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "source": [
+            "character.json#39"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-39-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "source": [
+            "character.json#39"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-39-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "source": [
+            "character.json#39"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        }
+      ],
+      "note": "Historical contract obligations are not a current failure count; retained until resolved by exact scoped evidence. B/B QA is not official 1.3.3 completion."
+    },
+    {
+      "id": 10,
+      "name": "Sói Kỹ Sư",
+      "sourcedInventoryBranches": 5,
+      "unverifiedAtomicBranches": [
+        {
+          "branch": "WV-A10-TRAP-PROTECTION",
+          "ruleSources": [
+            "character.json#10"
+          ],
+          "remainingInteractions": "Adapter missing; order/attack/protection and death chain not yet verified."
+        },
+        {
+          "branch": "WV-A10-TRAP-POISON",
+          "ruleSources": [
+            "character.json#10"
+          ],
+          "remainingInteractions": "Adapter missing; order/attack/protection and death chain not yet verified."
+        },
+        {
+          "branch": "WV-A10-TRAP-RESCUE",
+          "ruleSources": [
+            "character.json#10"
+          ],
+          "remainingInteractions": "Adapter missing; order/attack/protection and death chain not yet verified."
+        }
+      ],
+      "sourceContractUnclosed": [
+        {
+          "id": "WV-A10-TRAP-AURA",
+          "condition": "Invert #25 true aura Thiện/Ác",
+          "source": [
+            "character.json#10",
+            "SK-05",
+            "Q13-06",
+            "VH84",
+            "VH08"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "WV-A10-TRAP-ROLE",
+          "condition": "Server RNG draws false exact role from locked deck excluding true",
+          "source": [
+            "character.json#10",
+            "SK-05",
+            "Q13-06",
+            "VH84",
+            "VH08"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "WV-A10-TRAP-PROTECTION",
+          "condition": "Protection reverses into death",
+          "source": [
+            "character.json#10"
+          ],
+          "historicalStatus": "NOT_IMPLEMENTED"
+        },
+        {
+          "id": "WV-A10-TRAP-POISON",
+          "condition": "Poison reverses into no death",
+          "source": [
+            "character.json#10"
+          ],
+          "historicalStatus": "NOT_IMPLEMENTED"
+        },
+        {
+          "id": "WV-A10-TRAP-RESCUE",
+          "condition": "Rescue reverses into death",
+          "source": [
+            "character.json#10"
+          ],
+          "historicalStatus": "NOT_IMPLEMENTED"
+        },
+        {
+          "id": "BT-10-1",
+          "condition": "two unique trap uses and duration",
+          "source": [
+            "character.json#10"
+          ],
+          "historicalStatus": "RULE_DECISION_REQUIRED"
+        },
+        {
+          "id": "BT-10-2",
+          "condition": "inverted protection and poison/rescue",
+          "source": [
+            "character.json#10"
+          ],
+          "historicalStatus": "NOT_IMPLEMENTED"
+        },
+        {
+          "id": "BT-10-GLOBAL-0",
+          "condition": "All applicable authorized phase and target/resource checks across supported compositions",
+          "source": [
+            "character.json#10"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-10-GLOBAL-1",
+          "condition": "Privacy, restart, persistence, replay and frontend browser evidence for all mandatory interaction classes",
+          "source": [
+            "character.json#10"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        },
+        {
+          "id": "BT-10-GLOBAL-2",
+          "condition": "Applicable victory/death-chain interactions",
+          "source": [
+            "character.json#10"
+          ],
+          "historicalStatus": "NOT_TESTED"
+        }
+      ],
+      "note": "Historical contract obligations are not a current failure count; retained until resolved by exact scoped evidence. B/B QA is not official 1.3.3 completion."
+    }
+  ],
+  "newFullCertificates": [],
+  "build": "1.7.25-s15-privacy-stability-wip",
+  "reviewedSourceBlockers": [
+    {
+      "id": 9,
+      "condition": "Shield theft/piercing: VH42/VH72 and source #1/#75",
+      "reason": "Support domain and multi-defense resolution remain restricted; no global FULL."
+    },
+    {
+      "id": 25,
+      "condition": "Source-authorized reflection/concealment (#35/#3) and unknown aura trap",
+      "reason": "Only bounded inspection interactions, no FULL."
+    },
+    {
+      "id": 36,
+      "condition": "Two fireballs over legal targets, shield interactions, source #36 VH12/VH13",
+      "reason": "Expanded directTargetAllowed and isS14DirectDeck for legal non-self targets in [8,25,36]. #23 mandatory secret revival/death-chain is not implemented. Two-fireball lifecycle over a nonterminal shield block is now tested; all sourced protection interactions and #23 mandatory revival remain unverified.",
+      "progressTest": "S15 #36 fireball targets non-seer knight in bounded official QA, independent shield and resource",
+      "backendPass": true,
+      "browserPass": true
+    }
+  ],
+  "newFull": [],
+  "reviewedAdditionalIds": [
+    74,
+    31,
+    26,
+    29,
+    39,
+    10,
+    93
+  ],
+  "progressNote": "No FULL issued. Shared single-defense consumption for direct attacks and strict revival death-cycle closure; #36 two-fireball lifecycle tested. #23 mandatory secret revival and other sourced protection interactions remain incomplete. #93 mixed remains QA-only."
+}

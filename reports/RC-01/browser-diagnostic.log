@@ -1,0 +1,6 @@
+E2E_SCHEDULER_WAIT exclusive 1796
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 531
+E2E_RESOURCE start cpu "usage_usec 77553945\nuser_usec 63154564\nsystem_usec 14399381\nnice_usec 0\nnr_periods 3874\nnr_throttled 6\nthrottled_usec 381850\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s29_life02_e2e.py default port 36905 db /tmp/wolvesville-s06-browser-4VUGqY/test.sqlite
+SCENARIO_READY rc01-life02

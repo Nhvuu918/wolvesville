@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="Thần Thảo Hồi Sinh">
+  <defs>
+    <radialGradient id="bg97" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#223133"/>
+      <stop offset="100%" stop-color="#10171b"/>
+    </radialGradient>
+    <radialGradient id="halo97" cx="50%" cy="46%" r="44%">
+      <stop offset="0%" stop-color="#e4d588" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#e4d588" stop-opacity="0"/>
+    </radialGradient>
+    
+  </defs>
+  <rect width="240" height="240" rx="26" fill="url(#bg97)"/>
+  <path d="M20 226 V96 Q20 20 120 16 Q220 20 220 96 V226 Z" fill="none" stroke="#e4d588" stroke-opacity="0.45" stroke-width="1.8"/>
+  <circle cx="120" cy="112" r="88" fill="url(#halo97)"/>
+  <g class="chibi-sparkle" fill="#e4d588">
+    <path d="M44 48 L46 42 L48 48 L54 50 L48 52 L46 58 L44 52 L38 50 Z"/>
+    <path d="M192 56 L193.5 51 L195 56 L200 57.5 L195 59 L193.5 64 L192 59 L187 57.5 Z"/>
+  </g>
+  
+    <g class="chibi-body">
+      <g class="chibi-prop"><path d="M84 132 Q42 104 38 132 Q54 144 46 154 Q66 154 84 148 Z" fill="#fff7ea" stroke="#1d1424" stroke-width="2.2"/><path d="M156 132 Q198 104 202 132 Q186 144 194 154 Q174 154 156 148 Z" fill="#fff7ea" stroke="#1d1424" stroke-width="2.2"/></g>
+      
+        <path d="M68 88 Q54 126 68 158 Q60 176 84 176 Q120 182 156 176 Q180 176 172 158 Q186 126 172 88 Q164 52 120 50 Q76 52 68 88 Z" fill="#756f4a" stroke="#1d1424" stroke-width="2.8"/>
+      <rect x="103" y="176" width="11" height="22" rx="4" fill="#efe7df" stroke="#1d1424" stroke-width="2.2"/>
+      <rect x="126" y="176" width="11" height="22" rx="4" fill="#efe7df" stroke="#1d1424" stroke-width="2.2"/>
+      <ellipse cx="108" cy="198" rx="8" ry="4.5" fill="#1d1424"/>
+      <ellipse cx="132" cy="198" rx="8" ry="4.5" fill="#1d1424"/>
+      <path d="M100 132 L140 132 L156 178 Q120 186 84 178 Z" fill="#395956" stroke="#1d1424" stroke-width="2.8" stroke-linejoin="round"/>
+      <path d="M84 176 Q93 184 102 177 Q111 185 120 178 Q129 185 138 177 Q147 184 156 176" fill="none" stroke="#f7efe6" stroke-width="3" stroke-linecap="round"/>
+      <path d="M111 134 L129 134 L134 174 L106 174 Z" fill="#213232" stroke="#1d1424" stroke-width="2"/>
+      <path d="M100 136 L76 154 L84 162 L102 148 Z" fill="#395956" stroke="#1d1424" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M140 136 L164 154 L156 162 L138 148 Z" fill="#395956" stroke="#1d1424" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M104 132 Q120 144 136 132 Z" fill="#f7efe6" stroke="#1d1424" stroke-width="2"/>
+      <path d="M112 135 L120 140 L112 145 Z M128 135 L120 140 L128 145 Z" fill="#e4d588" stroke="#1d1424" stroke-width="1.6"/>
+      <ellipse cx="120" cy="96" rx="40" ry="37" fill="#f7ece2" stroke="#1d1424" stroke-width="2.8"/>
+      <ellipse cx="95" cy="108" rx="6.5" ry="3.5" fill="#e88d9c" opacity="0.45"/>
+      <ellipse cx="145" cy="108" rx="6.5" ry="3.5" fill="#e88d9c" opacity="0.45"/>
+      
+        <g class="chibi-eyes">
+          <ellipse cx="102" cy="100" rx="8.8" ry="10.2" fill="#1b1424"/>
+          <ellipse cx="102" cy="101" rx="6.800000000000001" ry="7.799999999999999" fill="#85bda2"/>
+          <circle cx="102" cy="100" r="3" fill="#171022"/><circle cx="99" cy="96" r="2.6" fill="#fff"/>
+          <circle cx="105" cy="104" r="1.4" fill="#fff"/>
+          <ellipse cx="138" cy="100" rx="8.8" ry="10.2" fill="#1b1424"/>
+          <ellipse cx="138" cy="101" rx="6.800000000000001" ry="7.799999999999999" fill="#85bda2"/>
+          <circle cx="138" cy="100" r="3" fill="#171022"/><circle cx="135" cy="96" r="2.6" fill="#fff"/>
+          <circle cx="141" cy="104" r="1.4" fill="#fff"/>
+        </g><path d="M113 114 Q120 121 127 114" fill="none" stroke="#854e5d" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M147 108 L149 104 L151 108 L155 110 L151 112 L149 116 L147 112 L143 110 Z" fill="#e4d588"/>
+      <path d="M80 92 Q86 60 120 58 Q154 60 160 92 Q148 78 136 86 Q128 74 120 86 Q112 74 104 86 Q92 78 80 92 Z" fill="#756f4a" stroke="#1d1424" stroke-width="2.5" stroke-linejoin="round"/>
+      <g class="chibi-sparkle"><ellipse cx="120" cy="36" rx="30" ry="7" fill="none" stroke="#e4d588" stroke-width="3.5"/><ellipse cx="120" cy="36" rx="30" ry="7" fill="none" stroke="#fff7dc" stroke-width="1.4" opacity="0.8"/></g>
+      
+    </g>
+  <rect x="86" y="208" width="68" height="20" rx="10" fill="#120d1f" fill-opacity="0.82" stroke="#e4d588" stroke-opacity="0.55" stroke-width="1.2"/>
+  
+</svg>

@@ -1,0 +1,116 @@
+{
+  "version": "1.7.25-s15-privacy-stability-wip",
+  "sourceFingerprint": "2aaa5dfa1e0067c6bb82beff4c06c18375ed6dd37380b1b5f30c99ec8ff9cec5",
+  "priorFailures": [
+    "reports/s15-gameplay-closure/browser-normal-five/1.3.3-browser_s15_normal_rescue_e2e.log",
+    "reports/s15-gameplay-closure/browser-normal-five/1.3.3-browser_s15_normal_guard_rescue_e2e.log"
+  ],
+  "priorIsolatedEvidence": "reports/s15-gameplay-closure/diagnostic-isolated-five/matrix/matrix.json",
+  "experiments": [
+    {
+      "configuration": "BASELINE_PARALLEL_ISOLATED_NO_BACKEND",
+      "suite": "browser_s15_normal_rescue_e2e.py",
+      "exitCode": 0,
+      "status": "PASS",
+      "log": "reports/s15-privacy-stability/controlled-baseline/rescue.log",
+      "resourceAdmission": {
+        "mode": null,
+        "waitMs": null,
+        "cpuDelta": null
+      }
+    },
+    {
+      "configuration": "BASELINE_PARALLEL_ISOLATED_NO_BACKEND",
+      "suite": "browser_s15_normal_guard_rescue_e2e.py",
+      "exitCode": 0,
+      "status": "PASS",
+      "log": "reports/s15-privacy-stability/controlled-baseline/guard.log",
+      "resourceAdmission": {
+        "mode": null,
+        "waitMs": null,
+        "cpuDelta": null
+      }
+    },
+    {
+      "configuration": "FINAL_PARALLEL_DIAGNOSTIC_NO_BACKEND",
+      "suite": "browser_s15_normal_rescue_e2e.py",
+      "exitCode": 0,
+      "status": "PASS",
+      "log": "reports/s15-privacy-stability/controlled-final-parallel/rescue.log",
+      "resourceAdmission": {
+        "mode": "parallel-diagnostic",
+        "waitMs": 1,
+        "cpuDelta": {
+          "usage_usec": 269715721,
+          "nr_periods": 702,
+          "nr_throttled": 569,
+          "throttled_usec": 33578220
+        }
+      }
+    },
+    {
+      "configuration": "FINAL_PARALLEL_DIAGNOSTIC_NO_BACKEND",
+      "suite": "browser_s15_normal_guard_rescue_e2e.py",
+      "exitCode": 0,
+      "status": "PASS",
+      "log": "reports/s15-privacy-stability/controlled-final-parallel/guard.log",
+      "resourceAdmission": {
+        "mode": "parallel-diagnostic",
+        "waitMs": 2,
+        "cpuDelta": {
+          "usage_usec": 269518585,
+          "nr_periods": 700,
+          "nr_throttled": 569,
+          "throttled_usec": 33578220
+        }
+      }
+    },
+    {
+      "configuration": "PRIMARY_EXCLUSIVE_RESOURCE_ADMISSION",
+      "suite": "browser_s15_normal_rescue_e2e.py",
+      "version": "1.3.3",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-privacy-stability/browser-five-rescue/1.3.3-browser_s15_normal_rescue_e2e.log",
+      "command": "node scripts/run-browser-s06.mjs browser_s15_normal_rescue_e2e.py",
+      "durationMs": 80895,
+      "resourceAdmission": {
+        "mode": "exclusive",
+        "waitMs": 41386,
+        "cpuDelta": {
+          "usage_usec": 107103052,
+          "nr_periods": 393,
+          "nr_throttled": 60,
+          "throttled_usec": 1987181
+        }
+      }
+    },
+    {
+      "configuration": "PRIMARY_EXCLUSIVE_RESOURCE_ADMISSION",
+      "suite": "browser_s15_normal_guard_rescue_e2e.py",
+      "version": "1.3.3",
+      "status": "PASS",
+      "exitCode": 0,
+      "log": "reports/s15-privacy-stability/browser-five-guard/1.3.3-browser_s15_normal_guard_rescue_e2e.log",
+      "command": "node scripts/run-browser-s06.mjs browser_s15_normal_guard_rescue_e2e.py",
+      "durationMs": 41596,
+      "resourceAdmission": {
+        "mode": "exclusive",
+        "waitMs": 691,
+        "cpuDelta": {
+          "usage_usec": 112377002,
+          "nr_periods": 407,
+          "nr_throttled": 62,
+          "throttled_usec": 2383541
+        }
+      }
+    }
+  ],
+  "resourceEvidence": "reports/s15-privacy-stability/controlled-baseline/cpu-before.txt and cpu-after.txt",
+  "cpuQuota": "4 CPUs on measured Linux host",
+  "rootCause": "Load-sensitive timeout; baseline pair passes without simultaneous backend; cgroup throttling observed, not unique root cause. Existing per-case DB/port separation. Exclusive admission avoids competing browser suites; backend is explicitly run separately.",
+  "deadlineMs": 65000,
+  "scheduler": "exclusive cross-process per-user lease, held for suite; queue delay logged separately and excluded from scenario deadline; parallel-diagnostic explicitly non-primary",
+  "primaryFivePass": true,
+  "historicalFailsRetained": true
+}

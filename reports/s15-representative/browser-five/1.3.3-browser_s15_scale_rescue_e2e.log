@@ -1,0 +1,3 @@
+SCENARIO_READY s15-scale-leader-rescue
+Error: E2E timeout browser_s15_scale_rescue_e2e.py: last reported stage unreported; scenario did not finish; not counted PASS
+    at file:///tmp/wv23/scripts/run-browser-s06.mjs:43:10

@@ -1,0 +1,25 @@
+{
+  "zip": "/mnt/data/Wolvesville_v1.7.36_Core_Engine_Rescue_Full_Source.zip",
+  "sha256": "8c78c3b08e804aeece0e7818a074ef65bc75a2e018418ecbde5484bbe308228c",
+  "payloadVerified": 4684,
+  "draftChangedFiles": [
+    "backend/src/engine/effect-dispatch.ts",
+    "backend/src/engine/elimination-chain.ts",
+    "backend/src/engine/replay.ts",
+    "backend/src/engine/service.ts",
+    "backend/src/engine/visibility.ts",
+    "backend/src/game/archive.ts",
+    "backend/src/game/coordinator.ts",
+    "backend/src/multiplayer/server.ts",
+    "backend/src/official/capabilities.ts",
+    "backend/src/official/inspection-rules.ts",
+    "backend/src/official/public-chat-access.ts",
+    "backend/src/official/s13-mechanics.ts",
+    "backend/src/official/victory-resolver.ts",
+    "frontend/integration.js",
+    "package.json",
+    "shared/contracts/index.ts"
+  ],
+  "draftStatus": "UNRELEASED_UNTESTED",
+  "baselineFingerprint": "0edd9aa78cd86efb60bfc56fc22417699ce2b956cfcf0d9a00a17fe9654f8447"
+}

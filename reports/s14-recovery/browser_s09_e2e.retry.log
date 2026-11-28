@@ -1,0 +1,5 @@
+S09_BROWSER_PASS: approved three-player closed deck, server assigned roles and ACL
+S09_BROWSER_PASS: wolf UI submitted official coercion; no early public result
+S09_BROWSER_PASS: 3 real ballots, server locks votes, ACL and reconnect; no fabricated hanging/winner
+S06_BROWSER_PASS browser_s09_e2e.py
+S06_BROWSER_ALL_1_PASS

@@ -1,0 +1,116 @@
+[
+  {
+    "path": "data/character.json",
+    "accessible": true,
+    "sha256": "7a9fc87f979198004260115f512cac9b171322a98b264e59dae9fa3b4d29a9c3",
+    "type": "ARCHITECTURE_OR_TEST"
+  },
+  {
+    "path": "data/rules/official_merged_118.json",
+    "accessible": true,
+    "sha256": "3bd590000aedbe46f5a5a62e43e18c5d247cb3d401ba60f980a050512e8376f3",
+    "type": "OFFICIAL_OR_INHERITED_AUDIT"
+  },
+  {
+    "path": "data/rules/vh01_vh85_UNCHANGED.json",
+    "accessible": true,
+    "sha256": "b7cc91af9a5406d415b5b3a72b56df023b4ce71338d45ad69d615ff9ce4d95a2",
+    "type": "OFFICIAL_OR_INHERITED_AUDIT"
+  },
+  {
+    "path": "data/rules/decisions_21_v1_2_UNCHANGED.json",
+    "accessible": true,
+    "sha256": "42bf24218e3b6c3777c0a315d82d48e93bd0c0184587968b248be52fbd2a5d56",
+    "type": "OFFICIAL_OR_INHERITED_AUDIT"
+  },
+  {
+    "path": "data/rules/q13_12_user_confirmed.json",
+    "accessible": true,
+    "sha256": "e8814132695962a9644bcbb56576c3ee77d1f4ba2ad98f95df87b8f2062ece65",
+    "type": "OFFICIAL_OR_INHERITED_AUDIT"
+  },
+  {
+    "path": "data/rules/skills.json",
+    "accessible": true,
+    "sha256": "0658126f8f897178989c1a7c79edcd8feaff5a19f3408a82355702300aece116",
+    "type": "OFFICIAL_OR_INHERITED_AUDIT"
+  },
+  {
+    "path": "data/rules/tests_207.json",
+    "accessible": true,
+    "sha256": "0a6edd6b086ebe270519493c83a48d73113a80ffff3528aada51282d8f4a1860",
+    "type": "OFFICIAL_OR_INHERITED_AUDIT"
+  },
+  {
+    "path": "data/rules/findings.json",
+    "accessible": true,
+    "sha256": "9d1ed3378b6fe47cd7d6a852a061e8c2ec1d3eba314222306cb2d56da1d72c8b",
+    "type": "OFFICIAL_OR_INHERITED_AUDIT"
+  },
+  {
+    "path": "docs/FINAL_HARDENING_KNOWN_LIMITATIONS.md",
+    "accessible": true,
+    "sha256": "06ba55303d7058e028a36b1f716538ede1b344371a2f9cb57f2758ce9127fb63",
+    "type": "ARCHITECTURE_OR_TEST"
+  },
+  {
+    "path": "backend/src/engine/service.ts",
+    "accessible": true,
+    "sha256": "33c4f01c98c2d866bd36b94ca73522db0c8251068ccce46c8a6068476a3b90c7",
+    "type": "ARCHITECTURE_OR_TEST"
+  },
+  {
+    "path": "backend/src/official/inspection-rules.ts",
+    "accessible": true,
+    "sha256": "5ce104b72f9da24f7103e8dda33f82364bc798836cc066e141081455fcaa846e",
+    "type": "IMPLEMENTATION"
+  },
+  {
+    "path": "backend/src/official/reactive-rules.ts",
+    "accessible": true,
+    "sha256": "b202899a62efefb9208d5f518ddfa252df15af9a09b26e5696da945fb8c752c9",
+    "type": "IMPLEMENTATION"
+  },
+  {
+    "path": "tests/official-rules.test.mjs",
+    "accessible": true,
+    "sha256": "27c90c614a192964f689998e88f9335cd8bed3ed30877d46afab6e087180fd3d",
+    "type": "ARCHITECTURE_OR_TEST"
+  },
+  {
+    "path": "tests/official-reactive.test.mjs",
+    "accessible": true,
+    "sha256": "1e049eeaa77aaee34c5408dd200aacec3eac6a77e342346b0a87dafe62358e18",
+    "type": "ARCHITECTURE_OR_TEST"
+  },
+  {
+    "path": "reference/official_rule_sources_v1_3_1/Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "accessible": true,
+    "sha256": "24824a3ae7a3b1ddf03ac9e58e5bd60d0ecf23b30affea6c6cd42bc5475b4948",
+    "type": "ARCHITECTURE_OR_TEST"
+  },
+  {
+    "path": "reference/official_rule_sources_v1_3_1/Wolvesville_Dac_ta_day_du_QA_Luong_he_thong_VH01-VH85.md",
+    "accessible": true,
+    "sha256": "e52b72cfeb4d95a9851fd39c0ac719e4c393217a22008241f05b6f026e731b8d",
+    "type": "ARCHITECTURE_OR_TEST"
+  },
+  {
+    "path": "reference/official_rule_sources_v1_3_1/01_SO_QUYET_DINH_V1_3_1.md",
+    "accessible": true,
+    "sha256": "5bc5d9c95949187277a124f8ede32387e6ec8a2e35e5602d15fc46f26ccdac77",
+    "type": "ARCHITECTURE_OR_TEST"
+  },
+  {
+    "path": "reference/official_rule_sources_v1_3_1/02_AUDIT_MAU_THUAN.md",
+    "accessible": true,
+    "sha256": "39cc1a52f644499d73a46c11be697cd6388d9db396a4c5fd53107959230c4fd4",
+    "type": "ARCHITECTURE_OR_TEST"
+  },
+  {
+    "path": "reference/official_rule_sources_v1_3_1/03_GAME_ENGINE_DELTA.md",
+    "accessible": true,
+    "sha256": "6d7287032faac4a5e9a906756978892b80e59a8f4fd18dcba486fa40cd0fb844",
+    "type": "ARCHITECTURE_OR_TEST"
+  }
+]

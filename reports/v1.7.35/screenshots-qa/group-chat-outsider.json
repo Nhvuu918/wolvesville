@@ -1,0 +1,12 @@
+{
+  "file": "group-chat-outsider.png",
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  },
+  "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+  "ruleset": "wolvesville-official-v1.3.3",
+  "mode": "TRUSTED_ACL_FIXTURE_ONLY",
+  "viewer": "unauthorized outsider",
+  "sha256": "cd7fdaf6af64755cd5274dff447c94b2bac82d9d6ab1f6654afcf5a72999405b"
+}

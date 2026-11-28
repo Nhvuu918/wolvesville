@@ -1,0 +1,35 @@
+{
+  "sourceFingerprint": "6ac302d005a47c067350a47139d21ac0391addcfcea6ff354bda8ffa490181c2",
+  "historicalCertificate": "reports/S15_SCALEUP_FULL_ROLE_CERTIFICATES.json",
+  "role": 28,
+  "historicalPreserved": true,
+  "freshRevalidated": true,
+  "requiredTests": [
+    "S11 real multiplayer: zero, tie, blank, changed ballot, retry, hanging, co-winners, restart and replay",
+    "S08-G01 NEW official #8/#28 closed deck commits real night elimination and legitimate knight win, not hanged-jester win",
+    "S15 deep #28 hanging wins with other contenders alive, non-final trigger cannot win",
+    "S15 deep #28 PH-02 cancelled leading ballot cannot win; actual later hanging can win",
+    "S15 breakthrough #55 protects #28 from actual hanging once; later true hanging and wolf parity co-win",
+    "S15 breakthrough #28 linked death is not hanging; only actual hanging earns co-win",
+    "S15 breakthrough #19 anonymous ballot contract uses final valid ballot; #28 survives fulfilled contract then wins by real hanging",
+    "S15 breakthrough #19 declined or breached contract cannot prevent true hanging",
+    "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28",
+    "S15 final #88 hanging follow kills #28 without Jester win; stable knight victory",
+    "S15 final #88 hanging without mark does not eliminate secondary player; subsequent direct Jester win",
+    "S15 final #88 night follow and #28 non-hanging death are closed before victory",
+    "S15 final #88 hanging follow to Knight does not award Jester a false survivor win",
+    "S15 closure death ledger rejects missing, duplicated and reopened death chains before victory",
+    "QD02 wrong alignment consumes revenge without disclosure or retry; Village and Jester co-win",
+    "QD01 direct Jester hanging with live Hunter mark yields Village and Jester co-winners",
+    "QD03 pin expires at next night before no-repin death, replay and retry"
+  ],
+  "missingFreshTests": [],
+  "missingFreshBrowser": [],
+  "monolithicPass": true,
+  "newFullCertificates": [],
+  "evidence": [
+    "reports/FULL5-02/backend-full.log",
+    "reports/FULL5-02/browser-jester.log"
+  ],
+  "note": "Historical certificate unchanged. No additional FULL certificate. Backend runtime and JS test sources were stable throughout full regression; only the new Python browser locator was corrected during the run, before browser retry and final fingerprint."
+}

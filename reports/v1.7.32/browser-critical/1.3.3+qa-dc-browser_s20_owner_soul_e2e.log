@@ -1,0 +1,25 @@
+E2E_SCHEDULER_WAIT exclusive 76643
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 749
+E2E_RESOURCE start cpu "usage_usec 16700455329\nuser_usec 13352795972\nsystem_usec 3347659356\nnice_usec 7051419\nnr_periods 84693\nnr_throttled 7847\nthrottled_usec 295238147\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s20_owner_soul_e2e.py default port 33203 db /tmp/wolvesville-s06-browser-opC103/test.sqlite
+SCENARIO_READY s17-soul-lifecycle
+E2E_STAGE action 36 official.36.fireball 23
+E2E_STAGE resolve DAY_DISCUSS
+E2E_STAGE action 36 official.36.shield 25
+E2E_STAGE action 23 official.23.shoot 25
+E2E_STAGE resolve DAY_DISCUSS
+E2E_STAGE action 23 official.23.shoot 25
+E2E_STAGE resolve DAY_DISCUSS
+SCENARIO_ACTIONS_PASS s17-soul-lifecycle
+E2E_STAGE cleanup
+E2E_CONTEXT_CLOSED 0 0.034
+E2E_CONTEXT_CLOSED 1 0.059
+E2E_CONTEXT_CLOSED 2 0.04
+E2E_CONTEXT_CLOSED 3 0.035
+E2E_STAGE cleanup-complete
+S20_OWNER_SOUL_BROWSER_PASS
+S06_BROWSER_PASS browser_s20_owner_soul_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 16762310276\nuser_usec 13400545263\nsystem_usec 3361765013\nnice_usec 7104482\nnr_periods 84908\nnr_throttled 7889\nthrottled_usec 297172167\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

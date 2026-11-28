@@ -1,0 +1,69 @@
+TAP version 13
+# (node:63373) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":3,"branch":"passive.false-aura","skill":"passive.3.seer-aura","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 accelerated \#3 passive aura concealment does not distort exact-role \#74
+ok 1 - S15 accelerated \#3 passive aura concealment does not distort exact-role \#74
+  ---
+  duration_ms: 863.515961
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":29,"branch":"poison.lethal-once","skill":"official.29.poison","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 accelerated \#29 poison consumes one use; death closure, private actor and replay
+ok 2 - S15 accelerated \#29 poison consumes one use; death closure, private actor and replay
+  ---
+  duration_ms: 553.539371
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":93,"branch":"seal.night-chat-vote","skill":"official.93.seal","restart":true,"replay":true,"privacy":true}
+# S15_EVIDENCE {"id":94,"branch":"passive.conceal-living","skill":"passive.94.conceal-aura","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 accelerated \#93 seal and \#94 passive concealment, lock expiry and vote/chat enforcement
+ok 3 - S15 accelerated \#93 seal and \#94 passive concealment, lock expiry and vote/chat enforcement
+  ---
+  duration_ms: 946.806231
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[8,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 accelerated match 8,74
+ok 4 - S15 accelerated match 8,74
+  ---
+  duration_ms: 514.168056
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[8,9,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 accelerated match 8,9,74
+ok 5 - S15 accelerated match 8,9,74
+  ---
+  duration_ms: 925.856337
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[8,25,28,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 accelerated match 8,25,28,74
+ok 6 - S15 accelerated match 8,25,28,74
+  ---
+  duration_ms: 1166.846522
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[8,9,25,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 accelerated match 8,9,25,74
+ok 7 - S15 accelerated match 8,9,25,74
+  ---
+  duration_ms: 1567.262321
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[8,9,28,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 accelerated match 8,9,28,74
+ok 8 - S15 accelerated match 8,9,28,74
+  ---
+  duration_ms: 1864.637612
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8693.936027

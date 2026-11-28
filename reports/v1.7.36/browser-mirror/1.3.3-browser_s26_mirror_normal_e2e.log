@@ -1,0 +1,26 @@
+E2E_SCHEDULER_WAIT exclusive 36413
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 598
+E2E_RESOURCE start cpu "usage_usec 5727813039\nuser_usec 4844926701\nsystem_usec 882886337\nnice_usec 2171690\nnr_periods 49200\nnr_throttled 3825\nthrottled_usec 186160199\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s26_mirror_normal_e2e.py village port 40219 db /tmp/wolvesville-s06-browser-mF5Pfg/test.sqlite
+ACTUAL_SCREENSHOT mobile-night {'width': 390, 'height': 844} 0 []
+ACTUAL_SCREENSHOT mobile-day {'width': 390, 'height': 844} 0 []
+S26_CONTRAST basiclight [{"foreground": "rgb(34, 43, 56)", "background": "rgb(243, 246, 252)", "ratio": 13.190502093380267, "dead": false, "selected": "false"}, {"foreground": "rgb(34, 43, 56)", "background": "rgb(243, 246, 252)", "ratio": 13.190502093380267, "dead": true, "selected": "false"}, {"foreground": "rgb(34, 43, 56)", "background": "rgb(220, 232, 245)", "ratio": 11.494263076013823, "dead": false, "selected": "true"}, {"foreground": "rgb(34, 43, 56)", "background": "rgb(243, 246, 252)", "ratio": 13.190502093380267, "dead": false, "selected": "false"}]
+ACTUAL_SCREENSHOT basiclight-hud {'width': 1366, 'height': 768} 0 []
+S26_CONTRAST cream [{"foreground": "rgb(59, 51, 43)", "background": "rgb(251, 241, 223)", "ratio": 11.06573295280843, "dead": false, "selected": "false"}, {"foreground": "rgb(59, 51, 43)", "background": "rgb(251, 241, 223)", "ratio": 11.06573295280843, "dead": true, "selected": "false"}, {"foreground": "rgb(59, 51, 43)", "background": "rgb(234, 217, 185)", "ratio": 8.926110415269891, "dead": false, "selected": "true"}, {"foreground": "rgb(59, 51, 43)", "background": "rgb(251, 241, 223)", "ratio": 11.06573295280843, "dead": false, "selected": "false"}]
+ACTUAL_SCREENSHOT cream-hud {'width': 1366, 'height': 768} 0 []
+S26_CONTRAST sage [{"foreground": "rgb(40, 56, 48)", "background": "rgb(229, 239, 227)", "ratio": 10.471976999499292, "dead": false, "selected": "false"}, {"foreground": "rgb(40, 56, 48)", "background": "rgb(229, 239, 227)", "ratio": 10.471976999499292, "dead": true, "selected": "false"}, {"foreground": "rgb(40, 56, 48)", "background": "rgb(200, 223, 197)", "ratio": 8.72331603746179, "dead": false, "selected": "true"}, {"foreground": "rgb(40, 56, 48)", "background": "rgb(229, 239, 227)", "ratio": 10.471976999499292, "dead": false, "selected": "false"}]
+ACTUAL_SCREENSHOT sage-hud {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT mirror-first-aura {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT mirror-second-aura {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT endgame {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT replay {'width': 1366, 'height': 768} 0 []
+S26_MIRROR_NORMAL_BROWSER_PASS
+S06_BROWSER_CASE_PASS browser_s26_mirror_normal_e2e.py village
+E2E_ISOLATION browser_s26_mirror_normal_e2e.py wolf port 36069 db /tmp/wolvesville-s06-browser-HjAt6b/test.sqlite
+S26_MIRROR_NORMAL_BROWSER_PASS wolf
+S06_BROWSER_CASE_PASS browser_s26_mirror_normal_e2e.py wolf
+S06_BROWSER_PASS browser_s26_mirror_normal_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 5828521410\nuser_usec 4926752949\nsystem_usec 901768460\nnice_usec 2171690\nnr_periods 49591\nnr_throttled 3861\nthrottled_usec 186953518\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

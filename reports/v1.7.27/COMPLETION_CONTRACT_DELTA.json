@@ -1,0 +1,166 @@
+{
+  "version": "1.7.27",
+  "baseRuleset": "wolvesville-official-v1.3.3",
+  "historicalContract": "reports/BB_PRIVACY_STABILITY_COMPLETION_CONTRACTS.json",
+  "certificateIssued": false,
+  "normalAdmission": false,
+  "scopes": [
+    {
+      "id": "SHARED-23",
+      "scope": [
+        8,
+        23,
+        25,
+        36
+      ],
+      "sources": [
+        "character.json#23",
+        "NV26",
+        "VH06",
+        "VH82",
+        "LIFE-01"
+      ],
+      "implementation": [
+        "backend/src/official/soul-shooter.ts",
+        "backend/src/engine/state.ts",
+        "backend/src/engine/service.ts",
+        "backend/src/official/s13-mechanics.ts",
+        "backend/src/official/stable-death-proof.ts"
+      ],
+      "test": "tests/sprint17-soul-lifecycle.test.mjs",
+      "status": "PARTIAL",
+      "backendCovered": [
+        "first death",
+        "next-night secret revival",
+        "two shots",
+        "shield blocks shot",
+        "vote restriction",
+        "pending faction count",
+        "two accepted lethal attacks",
+        "no duplicate public death",
+        "victory before revival",
+        "retry",
+        "SQLite restart",
+        "authorized event projection",
+        "replay"
+      ],
+      "remaining": [
+        "second death after secret revival via newly selected target",
+        "all target classes and resource/feedback policy",
+        "all protection and attack classes",
+        "death-ledger ordering proof",
+        "comprehensive paired-state privacy",
+        "full browser and contract coverage"
+      ],
+      "browserCovered": {
+        "suite": "browser_s17_soul_e2e.py",
+        "version": "1.3.3",
+        "status": "PASS",
+        "scope": "first death, secret revival, no voting, protected first shot, second shot victory, authorized events and replay"
+      }
+    },
+    {
+      "id": "FULL-36",
+      "scope": [
+        8,
+        23,
+        25,
+        36
+      ],
+      "sources": [
+        "character.json#36",
+        "VH12",
+        "VH13",
+        "LIFE-01"
+      ],
+      "test": "tests/sprint17-soul-lifecycle.test.mjs",
+      "status": "PARTIAL",
+      "backendCovered": [
+        "fire against #23 initial",
+        "fire then competing attack vs pending #23",
+        "shield blocks #23 shot",
+        "victory and non-victory"
+      ],
+      "remaining": [
+        "full target domain",
+        "all defensive layers",
+        "complete #23 death chain",
+        "broader revival and privacy",
+        "FULL certificate obligations"
+      ],
+      "browserCovered": {
+        "suite": "browser_s17_soul_e2e.py",
+        "version": "1.3.3",
+        "status": "PASS",
+        "scope": "first death, secret revival, no voting, protected first shot, second shot victory, authorized events and replay"
+      }
+    },
+    {
+      "id": "TRAP-04",
+      "scope": [
+        8,
+        10,
+        25,
+        26
+      ],
+      "sources": [
+        "DEC-BT-02",
+        "BB-05",
+        "BB-PENDING-03",
+        "VH08"
+      ],
+      "test": "tests/sprint17-trap-revival.test.mjs",
+      "status": "PARTIAL",
+      "backendCovered": [
+        "same-night placement before inspection, independent of submission order",
+        "consume once"
+      ],
+      "remaining": [
+        "already-executed actions",
+        "other same-night inversion classes",
+        "cross-window integration in new deck"
+      ],
+      "browserCovered": {
+        "status": "INCOMPLETE",
+        "scope": "same-night distinct scenario not run via browser"
+      }
+    },
+    {
+      "id": "TRAP-05",
+      "scope": [
+        8,
+        10,
+        25,
+        26
+      ],
+      "sources": [
+        "DEC-BT-02",
+        "VH73",
+        "VH76",
+        "BB-04",
+        "BB-05"
+      ],
+      "test": "tests/sprint17-trap-revival.test.mjs",
+      "status": "PARTIAL",
+      "backendCovered": [
+        "trap retained through death and medium revival",
+        "restart",
+        "later inspection inverted once",
+        "private result",
+        "replay"
+      ],
+      "remaining": [
+        "trap on the revival actor",
+        "all revival classes",
+        "complex death chains",
+        "full paired-state privacy"
+      ],
+      "browserCovered": {
+        "suite": "browser_s17_trap_revival_e2e.py",
+        "version": "1.3.3+qa-bb",
+        "status": "PASS",
+        "scope": "trap retained over death and medium revival, inverted inspection, replay"
+      }
+    }
+  ]
+}

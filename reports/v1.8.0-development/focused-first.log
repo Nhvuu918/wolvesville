@@ -1,0 +1,104 @@
+TAP version 13
+# (node:49356) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S24 group ACL: muted member, frozen audience, hidden ledger positions, restart and replay
+ok 1 - S24 group ACL: muted member, frozen audience, hidden ledger positions, restart and replay
+  ---
+  duration_ms: 60.158751
+  type: 'test'
+  ...
+# Subtest: S24 group ACL HTTP/WS: trusted grant fixture, no public fallback, restricted refresh, SQLite restart and replay
+ok 2 - S24 group ACL HTTP/WS: trusted grant fixture, no public fallback, restricted refresh, SQLite restart and replay
+  ---
+  duration_ms: 962.991208
+  type: 'test'
+  ...
+# (node:49357) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S25 visual: transition uses authorized committed projection, no secret payload or fabricated winner
+ok 3 - S25 visual: transition uses authorized committed projection, no secret payload or fabricated winner
+  ---
+  duration_ms: 2.886759
+  type: 'test'
+  ...
+# Subtest: S25 graphics: 97 illustrated portraits exist, immutable old paths remain available, no active SVG or remote links
+ok 4 - S25 graphics: 97 illustrated portraits exist, immutable old paths remain available, no active SVG or remote links
+  ---
+  duration_ms: 4.747003
+  type: 'test'
+  ...
+# Subtest: S25 cult grant boundary: Q13-08 and wolf rejection before group mutation
+ok 5 - S25 cult grant boundary: Q13-08 and wolf rejection before group mutation
+  ---
+  duration_ms: 29.500674
+  type: 'test'
+  ...
+# Subtest: S26 cult grant: five living followers, duplicate and pre-mutation capacity boundary
+ok 6 - S26 cult grant: five living followers, duplicate and pre-mutation capacity boundary
+  ---
+  duration_ms: 18.56798
+  type: 'test'
+  ...
+# (node:49363) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S27 cult gameplay: recruitment, mute group ACL, preserved role, private chat, restart and living cult victory
+not ok 7 - S27 cult gameplay: recruitment, mute group ACL, preserved role, private chat, restart and living cult victory
+  ---
+  duration_ms: 732.590076
+  type: 'test'
+  location: '/tmp/wv180/tests/sprint27-cult-runtime.test.mjs:42:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    {"status":409,"error":{"code":"RULE_UNRESOLVED","message":"Skill not supported by the persisted game rule pack"}}
+    
+    409 !== 200
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 200
+  actual: 409
+  operator: 'strictEqual'
+  stack: |-
+    ok (file:///tmp/wv180/tests/sprint27-cult-runtime.test.mjs:12:34)
+    Object.act (file:///tmp/wv180/tests/sprint27-cult-runtime.test.mjs:35:66)
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async file:///tmp/wv180/tests/sprint27-cult-runtime.test.mjs:46:71
+    async harness (file:///tmp/wv180/tests/sprint27-cult-runtime.test.mjs:23:20)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: S27 cult gameplay: independent target failure, single attempt, private generic feedback and leader death chain
+not ok 8 - S27 cult gameplay: independent target failure, single attempt, private generic feedback and leader death chain
+  ---
+  duration_ms: 599.858366
+  type: 'test'
+  location: '/tmp/wv180/tests/sprint27-cult-runtime.test.mjs:57:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    {"status":403,"error":{"code":"FORBIDDEN","message":"Wrong phase-control endpoint for match mode"}}
+    
+    403 !== 200
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 200
+  actual: 403
+  operator: 'strictEqual'
+  stack: |-
+    ok (file:///tmp/wv180/tests/sprint27-cult-runtime.test.mjs:12:34)
+    Object.advance (file:///tmp/wv180/tests/sprint27-cult-runtime.test.mjs:36:25)
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async file:///tmp/wv180/tests/sprint27-cult-runtime.test.mjs:60:140
+    async harness (file:///tmp/wv180/tests/sprint27-cult-runtime.test.mjs:23:20)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 6
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1521.551368

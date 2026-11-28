@@ -1,0 +1,14 @@
+
+> wolvesville-sprint06-complete-gameplay@0.8.0 test:browser:06
+> npm run build && node scripts/run-browser-s06.mjs
+
+
+> wolvesville-sprint06-complete-gameplay@0.8.0 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+S06_BROWSER_PASS: UI room host selected official 3-seat peace-wolf deck; private role projections
+S06_BROWSER_PASS: night resolution -> dawn -> vote intake, two realtime clients
+S06_BROWSER_PASS: server accepted private ballot and official #79 skill; no early disclosure
+S06_BROWSER_PASS: PH-02 cancels vote, returns to next night; replay, privacy, reconnect, Codex intact
+S06_BROWSER_PASS browser_s06_e2e.py
+S06_BROWSER_ALL_1_PASS

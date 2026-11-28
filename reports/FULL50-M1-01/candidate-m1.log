@@ -1,0 +1,44 @@
+TAP version 13
+# (node:1047) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: FULL50 candidate: sacrificed follower keeps win entitlement but no live group access
+ok 1 - FULL50 candidate: sacrificed follower keeps win entitlement but no live group access
+  ---
+  duration_ms: 2077.632783
+  type: 'test'
+  ...
+# (node:1048) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: FULL50 candidate: Cupid dead, living pair night chat and pair-only victory
+ok 2 - FULL50 candidate: Cupid dead, living pair night chat and pair-only victory
+  ---
+  duration_ms: 1737.960074
+  type: 'test'
+  ...
+# Subtest: FULL50 M1: linked death puts seeded partner to sleep; both revive next night and publish once
+ok 3 - FULL50 M1: linked death puts seeded partner to sleep; both revive next night and publish once
+  ---
+  duration_ms: 1149.434284
+  type: 'test'
+  ...
+# Subtest: FULL50 M1: sleeping partner dies for real after other partner is hanged; no duplicate public death or wake
+ok 4 - FULL50 M1: sleeping partner dies for real after other partner is hanged; no duplicate public death or wake
+  ---
+  duration_ms: 1743.106934
+  type: 'test'
+  ...
+# Subtest: FULL50 M1: blind Knight attack accepts any public dead seat; cancels sleeper wake without public double death
+ok 5 - FULL50 M1: blind Knight attack accepts any public dead seat; cancels sleeper wake without public double death
+  ---
+  duration_ms: 1725.790063
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6569.752761

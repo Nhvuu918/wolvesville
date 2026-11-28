@@ -1,0 +1,3 @@
+FULL5-01
+Fingerprint: f71c79111997a3287531c7cbf960f84ca256900020b93eeb86c3a967476f88ec
+Baseline payload verified. Verify with verify_delivery_full5_01.py. Manifest and acceptance results in reports/FULL5-01. No new FULL.

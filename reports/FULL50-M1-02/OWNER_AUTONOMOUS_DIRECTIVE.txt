@@ -1,0 +1,544 @@
+# WOLVESVILLE — AUTONOMOUS GAME DIRECTOR
+
+## DEVELOPMENT FREEDOM · RULE INFERENCE · ENGINE COMPLETION · FULL-50 ACCELERATION
+
+**NEW PROJECT OWNER DIRECTIVE**
+
+# I. THAY ĐỔI CƠ CHẾ QUẢN LÝ DỰ ÁN
+
+Tôi đã đọc báo cáo FULL50-M1-01.
+
+Chúng ta đã trải qua rất nhiều phiên bản phát triển.
+
+Tôi đã cung cấp toàn bộ tài liệu nguồn.
+
+Tôi đã trả lời hàng loạt câu hỏi luật.
+
+Tôi đã xác nhận thêm 48 quyết định nghiệp vụ.
+
+Tuy nhiên, F vẫn bằng 1/97.
+
+Tôi nhận thấy cách quản lý quá chặt chẽ trước đây có thể đang hạn chế khả năng chủ động phát triển của bạn.
+
+Vì vậy, từ thời điểm này, tôi chính thức trao cho bạn quyền tự chủ cao hơn.
+
+Bạn không còn chỉ là một lập trình viên thực hiện những yêu cầu được giao.
+
+**BẠN LÀ GAME DIRECTOR, SOFTWARE ARCHITECT VÀ TECHNICAL LEAD CỦA WOLVESVILLE.**
+
+Bạn có quyền chủ động phân tích, suy nghĩ, thiết kế, bổ sung, triển khai và hoàn thiện hệ thống.
+
+Tôi muốn bạn làm việc như một người thực sự chịu trách nhiệm hoàn thành sản phẩm, thay vì liên tục chờ chủ dự án quyết định từng trường hợp nhỏ.
+
+# II. SOURCE BASELINE
+
+Tiếp tục trực tiếp từ:
+
+**Wolvesville FULL50 — Integrated Full Source, checkpoint M1-01.**
+
+SHA-256:
+
+`a54a3096f7513981b58d6dbf90956fffc58ae732d532b89d2cfd5eb8e2cd0125`
+
+Source Fingerprint:
+
+`0d85247e4018e0655b1d4305b4b9b66837b066c969bf887db5d5be3de8fd52ab`
+
+Sử dụng bộ hồ sơ chuyển giao:
+
+`docs/full50-handover/`
+
+Không quay lại RC-01.
+
+Không quay lại Candidate Overlay.
+
+Không khởi tạo lại dự án.
+
+Không làm mất dữ liệu.
+
+Bảo toàn 97 nhân vật, toàn bộ luật, các quyết định lịch sử, 48 câu trả lời mới, tài nguyên đồ họa, source code và bằng chứng đã có.
+
+# III. DELEGATED GAME DESIGN AUTHORITY
+
+Tôi trao quyền cho bạn tự giải quyết những khoảng trống nghiệp vụ thông thường.
+
+Bạn được quyền:
+
+- Suy luận hành vi hợp lý từ mô tả kỹ năng.
+- Bổ sung luật phụ còn thiếu.
+- Xác định thời điểm phân giải.
+- Xác định thời điểm thông báo.
+- Xác định hành vi khi kỹ năng thất bại.
+- Xác định trường hợp biên.
+- Xác định cách xử lý hành động không hợp lệ.
+- Xác định tương tác giữa các kỹ năng.
+- Xác định cách xử lý nhiều hiệu ứng đồng thời.
+- Hoàn thiện quy trình tài nguyên và cooldown.
+- Bổ sung cơ chế chống lặp.
+- Bổ sung quy tắc xử lý trạng thái bất thường.
+- Xác định những chi tiết vận hành chưa được quy định đầy đủ.
+- Thiết kế các phương án hợp lý để hoàn thiện FULL Contracts.
+
+Không cần hỏi tôi về mọi trường hợp biên nhỏ.
+
+Nếu một tình huống chưa được quy định rõ, hãy tự phân tích và lựa chọn phương án hợp lý nhất dựa trên:
+
+1. Luật đã được Owner xác nhận.
+2. Mô tả gốc của nhân vật.
+3. Bản chất kỹ năng.
+4. Tính nhất quán của Game Engine.
+5. Tính công bằng.
+6. Tính bảo mật thông tin.
+7. Khả năng người chơi hiểu được hành vi.
+8. Khả năng triển khai và kiểm thử.
+9. Khả năng tương tác với các nhân vật khác.
+10. Cân bằng gameplay.
+
+Không biến mọi khoảng trống nhỏ thành Owner Blocker.
+
+# IV. RULE INFERENCE POLICY
+
+Khi gặp một tình huống chưa có luật chính xác, hãy làm như sau:
+
+## LEVEL 1 — DIRECT RULE
+
+Nếu đã có luật rõ ràng, thực hiện đúng luật.
+
+## LEVEL 2 — LOGICAL INFERENCE
+
+Nếu có thể suy luận từ các quy tắc hiện hành mà không tạo mâu thuẫn, tự đưa ra kết luận và triển khai.
+
+Không cần hỏi Owner.
+
+## LEVEL 3 — DESIGN DECISION
+
+Nếu có nhiều cách xử lý hợp lý và không có luật cụ thể, bạn được quyền lựa chọn cách phù hợp nhất.
+
+Ghi nhận đây là Game Director Decision được thực hiện theo quyền hạn tôi vừa trao.
+
+Không ghi sai thành quyết định do Owner trực tiếp lựa chọn.
+
+Mỗi quyết định phải có:
+
+- Decision ID.
+- Nội dung.
+- Lý do.
+- Nguồn luật liên quan.
+- Nhân vật bị ảnh hưởng.
+- Phạm vi hiệu lực.
+- Test tương ứng.
+- Khả năng thay đổi nếu Owner muốn điều chỉnh sau này.
+
+Không cần trình tôi phê duyệt từng quyết định thuộc quyền được ủy quyền.
+
+## LEVEL 4 — MAJOR GAME RULE
+
+Chỉ hỏi Owner khi quyết định thực sự thay đổi:
+
+- Bản chất hoặc mục tiêu chính của nhân vật.
+- Điều kiện thắng cốt lõi.
+- Một luật đã được Owner xác nhận rõ ràng.
+- Cân bằng toàn bộ phe.
+- Quyền truy cập thông tin bí mật mang tính nền tảng.
+- Tiêu chuẩn FULL.
+- Chính sách phát hành Competitive Production.
+
+Nếu gặp trường hợp thuộc LEVEL 4, cô lập đúng phạm vi bị chặn và tiếp tục công việc khác.
+
+Không dừng toàn bộ dự án.
+
+# V. GIẢI QUYẾT HAI CÂU HỎI HIỆN TẠI
+
+Tôi chấp thuận phương án đề xuất cho hai nội dung còn lại trong báo cáo M1-01.
+
+## FULL50-CLARIFY-08 — A
+
+Khi Thầy Đồng chọn người không được phép hồi sinh:
+
+- Không tiêu hao lượt hồi sinh.
+- Không tiết lộ thân phận mục tiêu.
+- Thông báo thất bại riêng vào sáng hôm sau.
+- Được chọn người khác từ đêm tiếp theo.
+- Không cho phép liên tục thử nhiều mục tiêu trong cùng đêm để dò thân phận.
+
+## FULL50-CLARIFY-47 — A
+
+Nếu mục tiêu cắn của bầy Sói thay đổi phe hợp lệ trước khi hành động được commit:
+
+- Thu hồi lựa chọn không còn hợp lệ.
+- Giữ các lựa chọn vẫn hợp lệ.
+- Gửi yêu cầu chọn lại riêng cho người có lựa chọn không hợp lệ tại thời điểm chốt.
+- Không công bố lý do, danh tính bí mật hoặc nguồn gây thay đổi.
+- Tiếp tục quy trình đồng thuận của bầy Sói.
+- Không sửa hành động đã commit.
+
+Tôi chấp nhận khả năng suy luận tối thiểu phát sinh từ việc phải chọn lại trong phạm vi quyết định này.
+
+Bạn có quyền thiết kế giao thức phù hợp để giảm tối đa khả năng rò rỉ thông tin.
+
+Không mở rộng ngoại lệ này sang những thông tin bí mật khác.
+
+Hai quyết định trên không cần hỏi lại.
+
+# VI. GENERAL GAMEPLAY PRINCIPLES
+
+Trong phạm vi những hành vi chưa có quy định cụ thể, sử dụng các nguyên tắc mặc định sau.
+
+## 1. Event Ordering
+
+Ưu tiên thứ tự xử lý có tính xác định.
+
+Không phụ thuộc tốc độ mạng hoặc thứ tự request đến server nếu luật không quy định như vậy.
+
+Hành động đã commit không bị sửa ngược tùy tiện.
+
+## 2. Skill Resolution
+
+Kỹ năng chỉ được thực hiện khi đủ điều kiện theo luật.
+
+Phân biệt hành động đã gửi, hành động đang chờ, hành động đã thực thi và hiệu ứng đang tồn tại.
+
+Không mặc định việc khóa kỹ năng sẽ xóa toàn bộ hiệu ứng đã được thiết lập hợp lệ trước đó.
+
+Áp dụng ngoại lệ theo từng nhân vật.
+
+## 3. Resource Management
+
+Không tạo thêm tài nguyên ngoài luật.
+
+Không tiêu hao trùng do retry.
+
+Khi chưa có quy định về hành động thất bại, tự lựa chọn chính sách phù hợp với bản chất kỹ năng và tránh khả năng lợi dụng để dò thông tin.
+
+## 4. Death and Revival
+
+Phân biệt:
+
+- Chết sơ bộ.
+- Chết thật.
+- Giả chết.
+- Ngủ đông.
+- Được cứu.
+- Kéo dài sự sống.
+- Hồi sinh.
+- Thông báo công khai.
+
+Không để một trạng thái hiển thị thay thế trạng thái nghiệp vụ.
+
+Giải quyết đầy đủ chuỗi sự kiện trước khi xét thắng.
+
+## 5. Investigation
+
+Phân biệt vai trò, phe, hào quang, phân loại chức năng và danh tính giả.
+
+Không dùng một loại kết quả thay thế cho tất cả kỹ năng điều tra.
+
+Ưu tiên tính nhất quán và bảo toàn các ngoại lệ đã được xác nhận.
+
+## 6. Privacy
+
+Mặc định chỉ người có quyền mới được nhận thông tin.
+
+Không cung cấp hidden state cho frontend rồi chỉ ẩn bằng giao diện.
+
+Không tự mở rộng quyền xem thông tin bí mật vì thuận tiện implementation.
+
+## 7. Gameplay Consistency
+
+Các nhân vật có thể tương tác với nhau bằng Shared Mechanics.
+
+Không tạo ra một bộ luật hoàn toàn riêng cho mỗi deck.
+
+Những ngoại lệ phải có căn cứ từ kỹ năng, luật hoặc Game Director Decision hợp lệ.
+
+Các nguyên tắc trên chỉ bổ sung khoảng trống, không ghi đè luật Owner đã chốt.
+
+# VII. REMOVE EXCESSIVE DEVELOPMENT RESTRICTIONS
+
+Tôi hủy bỏ các yêu cầu quản lý phát triển quá cứng nhắc trước đây nếu chúng chỉ mang tính định hướng kỹ thuật.
+
+Bạn không bắt buộc phải:
+
+- Luôn chọn #64 làm nhân vật đầu tiên.
+- Luôn hoàn thành từng nhân vật theo thứ tự cố định.
+- Luôn sử dụng cách tổ chức resolver hiện tại.
+- Luôn giữ nguyên kiến trúc nội bộ nếu kiến trúc đó gây cản trở.
+- Luôn tạo thêm một policy V4, V5, V6 để cô lập từng chức năng.
+- Luôn thực hiện từng milestone theo một thứ tự cứng nhắc.
+- Luôn tạo một báo cáo dài trước khi viết code.
+- Luôn chờ Owner phê duyệt từng quyết định phụ.
+- Luôn đóng gói source sau mỗi thay đổi nhỏ.
+
+Bạn có quyền thay đổi phương pháp phát triển nếu phương pháp mới hiệu quả hơn.
+
+Bạn có quyền refactor các phần kiến trúc gây đình trệ.
+
+Bạn có quyền lựa chọn nhiều nhân vật dùng chung cơ chế để hoàn thiện đồng thời.
+
+Bạn có quyền chuyển từ #64 sang một nhóm nhân vật khác nếu điều đó mang lại FULL thực tế nhanh hơn.
+
+Bảo toàn những phần #64 đã triển khai.
+
+Không bỏ phí công việc hiện có.
+
+# VIII. ENGINE SIMPLIFICATION & CONSOLIDATION
+
+Hãy đánh giá xem chính kiến trúc hiện tại có đang làm dự án khó hoàn thiện hay không.
+
+Đặc biệt kiểm tra:
+
+- Quá nhiều phiên bản policy cùng tồn tại.
+- Quá nhiều runtime chỉ chạy trong Candidate.
+- Quá nhiều feature flags.
+- Resolver trùng lặp.
+- Deck-specific implementation.
+- Logic đặc thù cho từng scenario.
+- FULL Contracts thiếu tiêu chí đóng hữu hạn.
+- Dependency graph có vòng lặp.
+- Các bước nghiệm thu bị lặp lại không cần thiết.
+- Các tiêu chí nghiệm thu đang chặn nhau theo vòng tròn.
+
+Nếu phát hiện những vấn đề này, bạn được quyền chủ động đơn giản hóa.
+
+Không bắt buộc giữ nguyên cấu trúc kỹ thuật chỉ vì nó tồn tại từ phiên bản cũ.
+
+Có thể:
+
+- Hợp nhất resolver.
+- Chuẩn hóa event model.
+- Chuẩn hóa state machine.
+- Tách luật khỏi orchestration.
+- Sử dụng rule-specific handlers.
+- Xây dựng shared runtime.
+- Chuẩn hóa data-driven skills.
+- Tự động hóa test.
+- Tự động hóa certificate verification.
+- Tái cấu trúc những module có dependency vòng.
+
+Không viết lại toàn bộ dự án nếu không cần thiết.
+
+Không làm mất khả năng chạy và replay những ván lịch sử sử dụng ruleset cũ.
+
+# IX. AUTONOMOUS DEVELOPMENT ACTIVATION
+
+Tôi cho phép bạn chủ động kích hoạt theo từng phạm vi trong môi trường phát triển và Normal Gameplay thử nghiệm nội bộ, với những điều kiện dưới đây.
+
+Một phạm vi luật có thể được kích hoạt nội bộ khi:
+
+- Luật đã được Owner phê duyệt hoặc thuộc quyền Game Director được ủy quyền.
+- Implementation tương ứng đã hoàn thành.
+- Các dependency bắt buộc đã hoạt động.
+- Focused regression đạt yêu cầu.
+- Integration test đạt yêu cầu.
+- Privacy đã được kiểm tra trong phạm vi kích hoạt.
+- Không có lỗi nghiêm trọng đang mở.
+- Có khả năng rollback.
+- Phạm vi và phiên bản luật được ghi nhận rõ ràng.
+
+Đây là phê duyệt có điều kiện cho môi trường phát triển, thay thế việc phải xin phép tôi riêng từng lần đối với phạm vi đáp ứng đủ các điều kiện trên.
+
+Không cần chờ tất cả 97 nhân vật mới được kích hoạt một nhóm chức năng.
+
+Không biến Candidate QA PASS thành Normal Gameplay PASS.
+
+Sau khi kích hoạt nội bộ hợp lệ, phải thực sự chạy Normal Gameplay, không ép vai hoặc thay đổi GameState trái quy trình.
+
+Chỉ tính FULL nếu đáp ứng đúng định nghĩa chứng nhận hiện hành.
+
+Nếu quy trình chứng nhận còn yêu cầu một bước Official Ruleset Promotion riêng, hãy thực hiện đúng bước đó hoặc trình rõ những điều kiện cần phê duyệt.
+
+Không tự kích hoạt Competitive Production.
+
+Không hạ chuẩn bảo mật hoặc bỏ quality gates.
+
+# X. FULL-50 — FREEDOM OF EXECUTION
+
+Mục tiêu cuối vẫn là:
+
+**F ≥ 50/97.**
+
+Nhưng tôi không yêu cầu bạn phải tuân thủ một phương pháp cố định để đạt mục tiêu.
+
+Bạn có thể tự lựa chọn:
+
+- Nhân vật đơn giản.
+- Nhân vật đã có implementation.
+- Nhân vật thiếu ít obligation.
+- Nhân vật có thể dùng chung resolver.
+- Nhân vật gần đạt FULL.
+- Nhóm nhân vật có dependency tương hỗ.
+- Những ứng viên có khả năng tạo tiến độ lớn nhất.
+
+Hãy tự đánh giá:
+
+- Điểm nghẽn lớn nhất của F là gì?
+- Vì sao rất nhiều nhân vật đã có gameplay nhưng chưa FULL?
+- Có bao nhiêu nhân vật thực sự thiếu code?
+- Có bao nhiêu nhân vật chỉ thiếu nghiệm thu?
+- Có bao nhiêu nhân vật bị chặn bởi ruleset?
+- Có bao nhiêu nhân vật bị chặn bởi dependency kỹ thuật?
+- Có nghĩa vụ nào đang bị tính trùng hoặc diễn giải sai không?
+- Có phương pháp nào đóng nhiều FULL Contracts hiệu quả hơn không?
+
+Sau khi xác định, hãy hành động ngay.
+
+Không chỉ trả lời bằng một bản phân tích.
+
+# XI. DEVELOP AND VERIFY IN BATCHES
+
+Bạn có quyền tổ chức các nhân vật thành từng nhóm hoàn thiện.
+
+Ví dụ:
+
+- Nhóm tấn công.
+- Nhóm phòng thủ.
+- Nhóm điều tra.
+- Nhóm hồi sinh.
+- Nhóm tài nguyên.
+- Nhóm khóa kỹ năng.
+- Nhóm chat.
+- Nhóm biến đổi.
+- Nhóm biểu quyết.
+- Nhóm thắng độc lập.
+
+Có thể phát triển một Shared Mechanic để phục vụ nhiều nhân vật cùng lúc.
+
+Sau đó hoàn thiện các ngoại lệ riêng và nghiệm thu từng FULL Contract.
+
+Không bắt buộc tạo một ván browser độc lập cho mỗi assertion nếu tiêu chuẩn nghiệm thu cho phép tái sử dụng một kịch bản có đủ bằng chứng cho nhiều nghĩa vụ.
+
+Không bỏ bất kỳ nghĩa vụ bắt buộc nào.
+
+Không thay đổi định nghĩa F để làm đẹp kết quả.
+
+# XII. RECOVER CURRENT QUALITY GATES
+
+M1-01 vẫn còn một vấn đề cần xử lý:
+
+Monolithic regression trung gian:
+
+- 491 PASS.
+- 1 FAIL.
+- 11 SKIPPED.
+
+Lỗi đã được báo cáo là sửa xong nhưng chưa chạy lại toàn bộ monolithic trên fingerprint cuối.
+
+Hãy xác minh lỗi đã được sửa thật.
+
+Thực hiện đầy đủ regression cần thiết tại checkpoint nghiệm thu tiếp theo.
+
+Khôi phục Browser Acceptance kế thừa.
+
+Tái nghiệm thu FULL #28.
+
+Không sử dụng kết quả lịch sử để báo cáo Fresh PASS.
+
+Có quyền tối ưu cách chạy test, dùng dữ liệu riêng và song song hóa khi an toàn.
+
+# XIII. MINIMIZE OWNER INTERRUPTIONS
+
+Từ thời điểm này:
+
+Không hỏi tôi về những quyết định mà một Game Director có kinh nghiệm có thể tự giải quyết trong phạm vi được trao quyền.
+
+Không yêu cầu tôi chọn từng trường hợp A/B/C nhỏ.
+
+Không hỏi tôi nên đặt tên hàm nào.
+
+Không hỏi tôi nên chọn kiến trúc nào.
+
+Không hỏi tôi nên hoàn thành nhân vật nào trước.
+
+Không hỏi lại những quyết định đã chốt.
+
+Nếu có những vấn đề quan trọng vượt quyền hạn được ủy quyền, tổng hợp tập trung và giải thích tại sao thực sự cần Owner.
+
+Trong lúc chờ, tiếp tục triển khai những phần khác.
+
+# XIV. NON-NEGOTIABLE CONSTRAINTS
+
+Tôi trao quyền tự chủ về phương pháp phát triển, không trao quyền làm sai sản phẩm.
+
+Bạn vẫn phải:
+
+- Bảo toàn 97 Character IDs.
+- Tôn trọng luật cốt lõi.
+- Bảo toàn toàn bộ dữ liệu.
+- Không thay đổi quyết định Owner đã chốt nếu chưa được phép.
+- Không làm mất chứng nhận hợp lệ.
+- Không giảm tiêu chuẩn FULL.
+- Không giả mạo test.
+- Không hardcode metric.
+- Không rò rỉ thông tin bí mật.
+- Không giả lập gameplay rồi báo cáo là gameplay thật.
+- Không tuyên bố Production Ready khi chưa đủ điều kiện.
+
+Các quyết định mới do bạn tự xác định phải có provenance và có thể truy vết.
+
+# XV. REPORTING SIMPLIFICATION
+
+Tôi không cần báo cáo quá dài.
+
+Tôi muốn nhìn thấy:
+
+1. F trước và sau.
+2. Danh sách FULL mới.
+3. Code thực tế đã hoàn thành.
+4. Shared Mechanics đã hoàn thiện.
+5. Những quyết định Game Director đã tự xử lý.
+6. Những nhóm luật đã được kích hoạt hợp lệ.
+7. Gameplay mới.
+8. Backend và Browser Acceptance.
+9. Những vấn đề thực sự còn thiếu.
+10. Full Source mới nhất.
+11. Hình ảnh website chạy thực tế.
+
+Nếu chưa đạt FULL-50 trong một lần thực thi, bàn giao checkpoint có tiến độ thật.
+
+Không lặp lại toàn bộ lịch sử dự án.
+
+Không tuyên bố sẽ tiếp tục chạy trong nền.
+
+# XVI. FINAL DIRECTIVE
+
+Tôi không muốn bạn tiếp tục hoạt động như một hệ thống chỉ biết chờ chỉ thị.
+
+Tôi muốn bạn tự suy nghĩ.
+
+Tự phân tích.
+
+Tự lựa chọn phương pháp.
+
+Tự giải quyết vấn đề.
+
+Tự bổ sung các quy tắc phụ hợp lý.
+
+Tự hoàn thiện Game Engine.
+
+Tự tổ chức kiểm thử.
+
+Tự đóng FULL Contracts.
+
+Tự tìm cách đẩy nhanh tiến độ.
+
+Tôi trao cho bạn quyền tự chủ trong phạm vi đã quy định.
+
+Bạn không cần chứng minh sự tuân thủ bằng hàng chục bản báo cáo.
+
+Hãy chứng minh năng lực bằng một sản phẩm hoạt động thực tế.
+
+**THINK LIKE A GAME DIRECTOR.**
+
+**ACT LIKE A SENIOR ENGINEER.**
+
+**SOLVE PROBLEMS AUTONOMOUSLY.**
+
+**SIMPLIFY THE ARCHITECTURE WHEN NECESSARY.**
+
+**COMPLETE CHARACTERS, NOT JUST FEATURES.**
+
+**STOP CREATING UNNECESSARY BLOCKERS.**
+
+**F = 1 → 2 → 10 → 25 → 50 → 97.**
+
+**BEGIN AUTONOMOUS DEVELOPMENT NOW.**

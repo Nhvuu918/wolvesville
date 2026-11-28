@@ -1,0 +1,59 @@
+
+> wolvesville-sprint02a-backend-integration@0.2.0 demo:02a
+> npm run build && node scripts/demo-02a.mjs
+
+
+> wolvesville-sprint02a-backend-integration@0.2.0 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+(node:5492) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{
+  "result": "TWO_CLIENTS_SYNCED",
+  "roomId": "79c5e51a-1c0a-452d-a526-d19c58047b9e",
+  "players": [
+    "WV-0EA7A8846A46",
+    "WV-E62BFAD8947A"
+  ],
+  "members": 2,
+  "revision": 3,
+  "events": [
+    {
+      "label": "Alice",
+      "type": "room.snapshot",
+      "roomRevision": 2
+    },
+    {
+      "label": "Alice",
+      "type": "room.updated",
+      "roomRevision": 2
+    },
+    {
+      "label": "Alice",
+      "type": "room.updated",
+      "roomRevision": 2
+    },
+    {
+      "label": "Bob",
+      "type": "room.snapshot",
+      "roomRevision": 2
+    },
+    {
+      "label": "Bob",
+      "type": "room.updated",
+      "roomRevision": 2
+    },
+    {
+      "label": "Alice",
+      "type": "room.updated",
+      "roomRevision": 3
+    },
+    {
+      "label": "Bob",
+      "type": "room.updated",
+      "roomRevision": 3
+    }
+  ],
+  "gameEngine": "NOT_STARTED",
+  "characterSkillsEnabled": 0
+}

@@ -1,0 +1,28 @@
+{
+  "recordId": "WV-RD-BB-2026-01-ADD-01",
+  "decisionId": "BB-REP-NEW-01",
+  "choice": "B",
+  "approvedOn": "2026-11-25",
+  "policyStatus": "OWNER_APPROVED",
+  "source": "Latest owner confirmation WV-RD-BB-2026-01 ADD-01, supersedes earlier A before delivery",
+  "baseDecisionRecord": "owner_bb_final_decisions_20261125.json",
+  "baseRuleset": "wolvesville-official-v1.3.3",
+  "proposedRuleset": "wolvesville-official-v1.3.4",
+  "effectiveAt": null,
+  "officialActivation": false,
+  "rules": [
+    "Server generates one random permutation of all players before match, using separate RNG domain and fixed archive binding.",
+    "Filter order by current legal collective-bite entitlement; first eligible member represents, including converted wolves. No initial wolf priority, no seat or request ordering, no reshuffle.",
+    "SAME/RESOLVE and independent attack count rules unchanged. Historical official and QA archives retain bound policy."
+  ],
+  "references": [
+    "WV-RD-BB-2026-01 Article 3",
+    "BB-PENDING-02=A",
+    "VH54",
+    "VH52",
+    "character.json#93",
+    "character.json#94"
+  ],
+  "releaseStatus": "PENDING_IMPLEMENTATION_AND_ACCEPTANCE",
+  "supersedesChoice": "A"
+}

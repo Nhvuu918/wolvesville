@@ -1,0 +1,57 @@
+TAP version 13
+# Subtest: S19 handoff: accepted snapshot maps seats before auxiliary reads or first paint
+not ok 1 - S19 handoff: accepted snapshot maps seats before auxiliary reads or first paint
+  ---
+  duration_ms: 7.855831
+  type: 'test'
+  location: '/tmp/wv29/tests/sprint19-handoff-ui.test.mjs:13:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + undefined
+    - 'knight'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'knight'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/wv29/tests/sprint19-handoff-ui.test.mjs:15:9)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: S19 handoff: authenticated game navigation precedes delayed feedback
+not ok 2 - S19 handoff: authenticated game navigation precedes delayed feedback
+  ---
+  duration_ms: 4.905696
+  type: 'test'
+  location: '/tmp/wv29/tests/sprint19-handoff-ui.test.mjs:18:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    'rooms' !== 'ingame'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'ingame'
+  actual: 'rooms'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/wv29/tests/sprint19-handoff-ui.test.mjs:20:62)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 0
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 210.503635

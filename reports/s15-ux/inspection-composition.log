@@ -1,0 +1,62 @@
+TAP version 13
+# (node:39714) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: 02C official pack: server assigns 25 and 74; each skill reveals exact current character only to actor
+ok 1 - 02C official pack: server assigns 25 and 74; each skill reveals exact current character only to actor
+  ---
+  duration_ms: 562.035374
+  type: 'test'
+  ...
+# Subtest: 02C skills: wrong character, self-target, duplicate, second use, day phase are server enforced
+ok 2 - 02C skills: wrong character, self-target, duplicate, second use, day phase are server enforced
+  ---
+  duration_ms: 440.068031
+  type: 'test'
+  ...
+# Subtest: 02C official pack rejects fixture, unsupported character set, outsider and production start
+ok 3 - 02C official pack rejects fixture, unsupported character set, outsider and production start
+  ---
+  duration_ms: 580.78773
+  type: 'test'
+  ...
+# Subtest: 02C restricted pack refuses unverified role selection and does not silently run fixture aliases
+ok 4 - 02C restricted pack refuses unverified role selection and does not silently run fixture aliases
+  ---
+  duration_ms: 285.254819
+  type: 'test'
+  ...
+# Subtest: 02C websocket: 2 authenticated clients receive individual official results; no cross-reader leakage
+ok 5 - 02C websocket: 2 authenticated clients receive individual official results; no cross-reader leakage
+  ---
+  duration_ms: 408.540085
+  type: 'test'
+  ...
+# Subtest: 02C official pack: sqlite restart and replay preserve private skill outcome, idempotency
+ok 6 - 02C official pack: sqlite restart and replay preserve private skill outcome, idempotency
+  ---
+  duration_ms: 916.361941
+  type: 'test'
+  ...
+# (node:39715) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S15 UX: both seers reveal exact role privately, public composition has no mapping, restart/replay
+ok 7 - S15 UX: both seers reveal exact role privately, public composition has no mapping, restart/replay
+  ---
+  duration_ms: 936.203228
+  type: 'test'
+  ...
+# Subtest: S15 UX: chat for ordinary approved seer/knight room, day-only, idempotency, outsiders and persistence
+ok 8 - S15 UX: chat for ordinary approved seer/knight room, day-only, idempotency, outsiders and persistence
+  ---
+  duration_ms: 562.967435
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3436.570897

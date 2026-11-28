@@ -1,0 +1,947 @@
+{
+  "recordId": "WV-OWNER-2026-11-27-FULL50",
+  "rows": [
+    {
+      "number": 1,
+      "id": "NV100",
+      "choice": "C",
+      "ownerText": "Đêm 2 A được hồi sinh nhưng tới sáng ngày thứ 2 mới báo A được hồi sinh.",
+      "note": "Đêm 2 A được hồi sinh nhưng tới sáng ngày thứ 2 mới báo A được hồi sinh.",
+      "roleIds": [
+        97
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "IMPLEMENTED_FOCUSED_API_VERIFIED_BOUNDED",
+      "scope": "LIFE02 V3 bounded",
+      "implementationPaths": "life02.ts; engine/service.ts",
+      "focusedTest": "linked death puts seeded partner to sleep",
+      "browserStatus": "SEE_CANDIDATE_EVIDENCE_ONLY"
+    },
+    {
+      "number": 2,
+      "id": "F03",
+      "choice": "A",
+      "ownerText": "Hạt vẫn tồn tại. Lần chết hợp lệ tiếp theo mới kích hoạt.",
+      "note": null,
+      "roleIds": [
+        97,
+        29
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "IMPLEMENTED_FOCUSED_API_VERIFIED_BOUNDED",
+      "scope": "LIFE02 V3 six-player rescue",
+      "implementationPaths": "life02.ts; preliminary-death.ts; s13-mechanics.ts; engine/service.ts",
+      "focusedTest": "witch saves seeded victim",
+      "browserStatus": "SEE_CANDIDATE_EVIDENCE_ONLY"
+    },
+    {
+      "number": 3,
+      "id": "WV-LIFE02-LINK-01",
+      "choice": "A",
+      "ownerText": "A có thể chết thật do liên kết còn hiệu lực, sau khi xét các lớp bảo vệ hợp lệ. Hủy thức tỉnh nếu A chết thật.",
+      "note": null,
+      "roleIds": [
+        27,
+        97,
+        64
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "IMPLEMENTED_FOCUSED_API_VERIFIED_BOUNDED",
+      "scope": "LIFE02 V3 no-defense domain; VH65 integration open",
+      "implementationPaths": "life02.ts; stable-death-proof.ts",
+      "focusedTest": "sleeping partner dies for real",
+      "browserStatus": "SEE_CANDIDATE_EVIDENCE_ONLY"
+    },
+    {
+      "number": 4,
+      "id": "WV-LIFE02-LINK-02",
+      "choice": "C",
+      "ownerText": "A thức tỉnh nên kéo B sống lại",
+      "note": "A thức tỉnh nên kéo B sống lại",
+      "roleIds": [
+        27,
+        97,
+        64
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "integrationCaution": "Apply to A waking after B caused A linked death, within the answered situation. Do not infer revival for unrelated deaths, overridden links or other revival paths.",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "IMPLEMENTED_FOCUSED_API_VERIFIED_BOUNDED",
+      "scope": "LIFE02 V3 active Cupid link",
+      "implementationPaths": "life02.ts; engine/service.ts",
+      "focusedTest": "both revive next night",
+      "browserStatus": "SEE_CANDIDATE_EVIDENCE_ONLY"
+    },
+    {
+      "number": 5,
+      "id": "WV-SOUL-DOMAIN-01",
+      "choice": "A",
+      "ownerText": "Cho phép đạn đêm của #23 và cầu lửa #36 nhắm mục tiêu đã công bố chết, bổ sung bên cạnh #8. Nếu người đó chết thật từ trước thì đòn không có tác dụng nhưng vẫn tiêu tài nguyên hợp lệ.",
+      "note": null,
+      "roleIds": [
+        8,
+        23,
+        36
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 6,
+      "id": "WV-HIBERNATION-ATTACK-01",
+      "choice": "A",
+      "ownerText": "A vẫn có thể bị tấn công chết thật nếu không có bảo vệ hợp lệ. Nếu chết thật thì không thức tỉnh.",
+      "note": null,
+      "roleIds": [
+        8,
+        97
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "IMPLEMENTED_FOCUSED_API_VERIFIED_BOUNDED",
+      "scope": "LIFE02 V3 #8 only, not expanded #23/#36",
+      "implementationPaths": "soul-shooter.ts; life02.ts; engine/service.ts; capabilities.ts",
+      "focusedTest": "blind Knight attack",
+      "browserStatus": "SEE_CANDIDATE_EVIDENCE_ONLY"
+    },
+    {
+      "number": 7,
+      "id": "WV-REVIVAL-PRIVACY-01",
+      "choice": "A",
+      "ownerText": "Hiện các người chết đủ điều kiện về trạng thái. Nếu chọn trúng vai bị cấm, chỉ báo hồi sinh thất bại, không tiết lộ lý do.",
+      "note": "nếu chọn trúng người có thân phận hắc tinh/ bạch sát/ thiên thần thì không trừ lượt",
+      "roleIds": [
+        26,
+        46,
+        47,
+        53
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT",
+      "clarificationStatus": "OWNER_APPROVED; engineering remains",
+      "clarificationId": "FULL50-CLARIFY-08"
+    },
+    {
+      "number": 8,
+      "id": "WV-REVIVAL-FAILED-COST-01",
+      "choice": "B",
+      "ownerText": "Không mất lượt hồi sinh và được chọn người khác.",
+      "note": "nếu đêm chọn hắc tinh thì hệ thống vẫn ghi nhận kết quả, nhưng sáng ra thì hệ thống không thông báo người được hồi sinh",
+      "roleIds": [
+        26,
+        46,
+        47,
+        53
+      ],
+      "policyStatus": "OWNER_APPROVED_PARTIAL",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "integrationCaution": "No resource cost and no public revival event on failure are approved. Private failure notice/reselection timing must not be invented if contradictory; preserve submitted attempt in audit. No immediate retry assumption.",
+      "pending": "Private failure notice and whether re-selection can occur within same night are not fully reconciled with NOTE. No cost and no public revival already approved.",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "PARTIAL_OWNER_APPROVAL_PENDING_SUBPOINT",
+      "clarificationStatus": "OWNER_APPROVED; engineering remains",
+      "clarificationId": "FULL50-CLARIFY-08"
+    },
+    {
+      "number": 9,
+      "id": "WV-BELL-TRAP-01",
+      "choice": "A",
+      "ownerText": "Lần đánh dấu hợp lệ tiêu bẫy, lưu hiệu ứng đảo. Khi phát sinh kết quả thì trả vai giả khác vai thật trong bộ vai đã khóa theo Q13-06.",
+      "note": null,
+      "roleIds": [
+        10,
+        64
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 10,
+      "id": "WV-BELL-LOCK-01",
+      "choice": "A",
+      "ownerText": "Vẫn nhận được thông tin về B vì liên kết quan sát đã tạo hợp lệ từ trước. Không được đặt cặp mới khi bị khóa.",
+      "note": null,
+      "roleIds": [
+        64
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 11,
+      "id": "WV-TRAP84-INVERT-01",
+      "choice": "B",
+      "ownerText": "Đảo hiệu ứng sang chính Phù Thủy Câm. Phù Thủy Câm bị câm thay A.",
+      "note": null,
+      "roleIds": [
+        10,
+        84
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 12,
+      "id": "F02",
+      "choice": "A",
+      "ownerText": "Thông báo chung rằng không thu được kết quả soi. Không lấy vai ngoài bộ vai đã khóa; xử lý tài nguyên theo luật.",
+      "note": null,
+      "roleIds": [
+        10,
+        25,
+        64,
+        74
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 13,
+      "id": "F05",
+      "choice": "A",
+      "ownerText": "Nếu không có ngoại lệ riêng, kỹ năng bị bẫy không phát sinh hiệu ứng có lợi hay có hại; tài nguyên và bẫy xử lý theo lượt hợp lệ. Kỹ năng đa tác dụng giữ các phép đảo đã được định nghĩa cho từng thành phần.",
+      "note": null,
+      "roleIds": [
+        10
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 14,
+      "id": "WV-DOROTHY-PURE-01",
+      "choice": "A",
+      "ownerText": "Vai chỉ có một trong ba nhóm chính vẫn được tính là thuần. Kỹ năng phụ ngoài ba nhóm không làm mất tính thuần. Pháp Sư có giết và vệ nên không thuần.",
+      "note": null,
+      "roleIds": [
+        2
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 15,
+      "id": "NV30",
+      "choice": "B",
+      "ownerText": "Box chat được sử dụng cả ngày lẫn đêm nếu thành viên có quyền chat hợp lệ.",
+      "note": null,
+      "roleIds": [
+        27
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "FOCUSED_CANDIDATE_BACKEND_PASS",
+      "candidateScope": "Opt-in QA with pinned policy; not Normal Gameplay or FULL certification.",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "IMPLEMENTED_FOCUSED_API_VERIFIED_BOUNDED",
+      "scope": "Pinned V2/V3 Cupid QA only",
+      "implementationPaths": "group-chat.ts",
+      "focusedTest": "Cupid dead, living pair night chat",
+      "browserStatus": "SEE_CANDIDATE_EVIDENCE_ONLY"
+    },
+    {
+      "number": 16,
+      "id": "WV-CUPID-WIN-DEAD-01",
+      "choice": "B",
+      "ownerText": "Chỉ A và B thắng. Cupid chết nên không thắng.",
+      "note": null,
+      "roleIds": [
+        27
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "FOCUSED_CANDIDATE_BACKEND_PASS",
+      "candidateScope": "Opt-in QA with pinned policy; not Normal Gameplay or FULL certification.",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "IMPLEMENTED_FOCUSED_API_VERIFIED_BOUNDED",
+      "scope": "Pinned V2/V3 Cupid QA only",
+      "implementationPaths": "victory-resolver.ts",
+      "focusedTest": "pair-only victory",
+      "browserStatus": "SEE_CANDIDATE_EVIDENCE_ONLY"
+    },
+    {
+      "number": 17,
+      "id": "F01",
+      "choice": "A",
+      "ownerText": "Tạo phiên kỹ năng 1–1 ban đêm như Thầy Đồng. Người Lái Đò biết người chết, người chết chỉ thấy bí danh Người Lái Đò.",
+      "note": null,
+      "roleIds": [
+        51
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 18,
+      "id": "WV-MEDIUM60-CHAT-01",
+      "choice": "A",
+      "ownerText": "Phiên chat kỹ năng 1–1 ẩn danh như Thầy Đồng; chỉ sử dụng khi còn là Người Gọi Hồn.",
+      "note": null,
+      "roleIds": [
+        60
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 19,
+      "id": "F14",
+      "choice": "C",
+      "ownerText": "chỉ cấm chat trên box chat chung, còn lại các kênh chat khác (hợp lệ) thì vẫn chat bình thường",
+      "note": "chỉ cấm chat trên box chat chung, còn lại các kênh chat khác (hợp lệ) thì vẫn chat bình thường",
+      "roleIds": [
+        93
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "integrationCaution": "Only chat scope changed; retain original vote prohibition and skill lock.",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 20,
+      "id": "WV-EXILE-PAIR-01",
+      "choice": "B",
+      "ownerText": "Cả ba được chat cả ngày và đêm nếu đủ quyền.",
+      "note": null,
+      "roleIds": [
+        62
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 21,
+      "id": "WV-CULT-DEAD-WIN-01",
+      "choice": "A",
+      "ownerText": "A cũng được tính thắng nếu vẫn thuộc nhóm thắng giáo phái tại thời điểm chết và không có biến đổi hợp lệ khác.",
+      "note": null,
+      "roleIds": [
+        90
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "FOCUSED_CANDIDATE_BACKEND_PASS",
+      "candidateScope": "Opt-in QA with pinned policy; not Normal Gameplay or FULL certification.",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "IMPLEMENTED_FOCUSED_API_VERIFIED_BOUNDED",
+      "scope": "Cult candidate existing bounded domain",
+      "implementationPaths": "victory-resolver.ts",
+      "focusedTest": "sacrificed follower keeps win entitlement",
+      "browserStatus": "SEE_CANDIDATE_EVIDENCE_ONLY"
+    },
+    {
+      "number": 22,
+      "id": "WV-CULT-REVIVAL-FACTION-01",
+      "choice": "C",
+      "ownerText": "tại thời điểm chết nếu người chết thuộc phe nào thì khi hồi sinh vẫn thuộc phe đó",
+      "note": "tại thời điểm chết nếu người chết thuộc phe nào thì khi hồi sinh vẫn thuộc phe đó",
+      "roleIds": [
+        90
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "supersedes": [
+        "DC-CULT-REVIVAL-01"
+      ],
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 23,
+      "id": "WV-CULT-RECRUIT-AGAIN-01",
+      "choice": "C",
+      "ownerText": "khi sống lại vẫn là tín đồ, không cần kết nạp lại",
+      "note": "khi sống lại vẫn là tín đồ, không cần kết nạp lại",
+      "roleIds": [
+        90
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "supersedes": [
+        "DC-CULT-REVIVAL-01"
+      ],
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 24,
+      "id": "WV-FAN-IDOL-SAMEDEATH-01",
+      "choice": "A",
+      "ownerText": "Chỉ biến Fan Cuồng thành Chán Đời nếu Fan còn sống sau khi chuỗi tử vong được xử lý hoàn tất. Cả hai chết thì không tạo chiến thắng Chán Đời mới.",
+      "note": null,
+      "roleIds": [
+        13
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 25,
+      "id": "WV-DIRECTOR-DEAD-WIN-01",
+      "choice": "A",
+      "ownerText": "Chỉ Diễn Viên Sát Nhân được tính thắng theo nhánh ba phân cảnh.",
+      "note": null,
+      "roleIds": [
+        6,
+        7
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 26,
+      "id": "WV-BLACKWHITE-WIN-01",
+      "choice": "B",
+      "ownerText": "Hai vai thắng solo riêng biệt. Chỉ người sống sót cuối cùng thắng; nếu cả hai còn sống phải tiếp tục ván.",
+      "note": null,
+      "roleIds": [
+        46,
+        47
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 27,
+      "id": "F04",
+      "choice": "A",
+      "ownerText": "Tính Kẻ Vu Khống diễn sai và cộng 1 Oscar nếu nhiệm vụ chưa hoàn thành. Không tính lại nếu đã hoàn thành hợp lệ trước khi hủy.",
+      "note": null,
+      "roleIds": [
+        6,
+        7,
+        79
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 28,
+      "id": "WV-GUARD-MULTIHIT-01",
+      "choice": "B",
+      "ownerText": "Bảo Vệ chặn tất cả đòn tấn công thuộc phạm vi bảo vệ trong đêm đó.",
+      "note": null,
+      "roleIds": [
+        31
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "BOUNDED_IMPLEMENTED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "IMPLEMENTED_FOCUSED_API_VERIFIED_BOUNDED",
+      "scope": "7-role LIFE02 V3 QA; Knight, poison, Cupid follow; day hanging excluded",
+      "implementationPaths": "official/life02.ts; official/support-rules.ts; frontend/integration.js",
+      "focusedTest": "tests/full50-cupid-candidate.test.mjs: FULL50 M1-02 (2 scenarios)",
+      "browserStatus": "SEE_M1_02_ACCEPTANCE"
+    },
+    {
+      "number": 29,
+      "id": "WV-DUOCSI-RESCUE-ORDER-01",
+      "choice": "A",
+      "ownerText": "Hỏi Dược Sĩ trước. Nếu đã cứu A thành công thì Phù Thủy không cần được hỏi cứu A, nhưng vẫn có thể cứu A nếu còn nguyên nhân chết khác hợp lệ.",
+      "note": null,
+      "roleIds": [
+        29,
+        87
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 30,
+      "id": "WV-PRAYER-TRIGGER-01",
+      "choice": "A",
+      "ownerText": "Chỉ nhận kỹ năng mới khi A chết thật, dựa trên hào quang thực tế lúc A chết.",
+      "note": null,
+      "roleIds": [
+        45
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 31,
+      "id": "WV-PRAYER-CHARGE-01",
+      "choice": "A",
+      "ownerText": "Kỹ năng mới chỉ có một lượt sử dụng trong ván.",
+      "note": null,
+      "roleIds": [
+        45
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 32,
+      "id": "WV-ROLE89-DEATH-REVEAL-01",
+      "choice": "A",
+      "ownerText": "Công khai vai thật của A và B cho toàn dân.",
+      "note": null,
+      "roleIds": [
+        89
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 33,
+      "id": "WV-STONE-TRANSFORM-01",
+      "choice": "A",
+      "ownerText": "Biến thành Ma Sói thường, giữ phe Sói và điều kiện thắng phe Sói.",
+      "note": null,
+      "roleIds": [
+        55
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 34,
+      "id": "WV-STONE-VOTE-01",
+      "choice": "A",
+      "ownerText": "Sói Thạch chặn một lần treo cổ hợp lệ bất kể người bỏ phiếu thuộc phe nào.",
+      "note": null,
+      "roleIds": [
+        55
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 35,
+      "id": "WV-FORBIDDEN-POISON-01",
+      "choice": "A",
+      "ownerText": "Xét phe tại đúng thời điểm độc phát tác. Nếu đã bị khóa hợp lệ thì chuyển Dân sau đó không tự giải khóa trong đêm.",
+      "note": null,
+      "roleIds": [
+        16
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 36,
+      "id": "WV-NUMB-LOCK-SILENCE-01",
+      "choice": "B",
+      "ownerText": "Cả hai tác động đều thất bại vì kỹ năng Gây Tê đã bị kháng ở thành phần khóa.",
+      "note": null,
+      "roleIds": [
+        50
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 37,
+      "id": "WV-JUDGE-CHANGE-01",
+      "choice": "A",
+      "ownerText": "Bảo vệ A vẫn giữ cho đến khi Thẩm Phán quyết định thu hồi tại cửa sổ kỹ năng hợp lệ.",
+      "note": null,
+      "roleIds": [
+        5
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 38,
+      "id": "WV-PACT-MISSION-01",
+      "choice": "A",
+      "ownerText": "Hệ thống chọn ngẫu nhiên một người sống khác Kẻ Mặc Cả và gửi nhiệm vụ riêng.",
+      "note": null,
+      "roleIds": [
+        19
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 39,
+      "id": "WV-PACT-SURVIVOR-01",
+      "choice": "A",
+      "ownerText": "Hệ thống chọn người còn sống và chưa từng chết thật từ đầu ván. Người đó phải tiếp tục sống đến lúc kết thúc.",
+      "note": null,
+      "roleIds": [
+        19
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 40,
+      "id": "WV-PACT-SURVIVOR-WIN-01",
+      "choice": "B",
+      "ownerText": "Chỉ Kẻ Mặc Cả thắng. Xác lập ngoại lệ riêng cho nhiệm vụ này, ưu tiên hơn đồng thắng.",
+      "note": null,
+      "roleIds": [
+        19
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 41,
+      "id": "WV-PACT-SILENCE-01",
+      "choice": "A",
+      "ownerText": "Người nhận phải không gửi bất kỳ tin chat công khai nào trong ngày hôm đó mới hoàn thành giao kèo.",
+      "note": null,
+      "roleIds": [
+        19
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 42,
+      "id": "WV-BLOOD-MARK-REVIVAL-01",
+      "choice": "B",
+      "ownerText": "Việc Huyết Bộc chết đã chấm dứt tác dụng điều khiển. Hồi sinh không tự khôi phục tác dụng này.",
+      "note": null,
+      "roleIds": [
+        91,
+        92
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 43,
+      "id": "WV-BLOOD-INSPECTION-01",
+      "choice": "A",
+      "ownerText": "Trả đúng hai loại Dân và Không phải Dân. Sói và phe Ba đều thuộc Không phải Dân.",
+      "note": null,
+      "roleIds": [
+        92
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 44,
+      "id": "WV-MEDIUM60-COPY-01",
+      "choice": "B",
+      "ownerText": "Có thể chọn người chết thuộc các phe; chỉ sao chép thành công Dân. Nếu chọn nhầm phe thì thất bại và mất quyền sao chép hai đêm, vẫn được gọi hồn.",
+      "note": null,
+      "roleIds": [
+        60
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 45,
+      "id": "WV-DOLL-FIRST-WIN-01",
+      "choice": "A",
+      "ownerText": "Không xét nhánh thắng này trước khi có ít nhất một lần chuyển búp bê thành công. Sau đó áp điều kiện thắng gốc tại checkpoint hợp lệ.",
+      "note": null,
+      "roleIds": [
+        12
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 46,
+      "id": "WV-PUMPKIN-BULLET-01",
+      "choice": "A",
+      "ownerText": "Có thể bắn ngay trong ngày nhận và được giữ viên đạn cho các giai đoạn ngày sau nếu chưa dùng.",
+      "note": null,
+      "roleIds": [
+        4
+      ],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "NOT_COMPLETED_IN_THIS_CHECKPOINT"
+    },
+    {
+      "number": 47,
+      "id": "DC-PACK-PRIVACY-BOUNDARY",
+      "choice": "C",
+      "ownerText": "ngay tại thời điểm X bị chuyển thành phe khác, hệ thống sẽ đưa X vào box chat của phe đó",
+      "note": "ngay tại thời điểm X bị chuyển thành phe khác, hệ thống sẽ đưa X vào box chat của phe đó",
+      "roleIds": [],
+      "policyStatus": "OWNER_APPROVED_PARTIAL",
+      "active": false,
+      "implementation": "NOT_REVALIDATED",
+      "pending": "Selection already submitted for a target who changes faction: invalidation/reselection protocol and privacy boundary not decided. Do not activate mixed pack.",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "PARTIAL_OWNER_APPROVAL_PENDING_SUBPOINT",
+      "clarificationStatus": "OWNER_APPROVED; engineering remains",
+      "clarificationId": "FULL50-CLARIFY-47"
+    },
+    {
+      "number": 48,
+      "id": "WV-RELEASE-ACTIVATION-01",
+      "choice": "A",
+      "ownerText": "Cho phép chuẩn bị hồ sơ kích hoạt theo phạm vi đã nghiệm thu. Mỗi phạm vi có version, bằng chứng và phải trình Owner phê duyệt trước khi ACTIVE.",
+      "note": null,
+      "roleIds": [],
+      "policyStatus": "OWNER_APPROVED",
+      "active": false,
+      "implementation": "POLICY_APPROVED_ONLY",
+      "ownerResponsePreserved": true,
+      "sourceVerified": "OWNER_RECORD_VERIFIED; semantic rule mapping not exhaustively reviewed",
+      "fullCertificates": [],
+      "integrationStatus": "NOT_CERTIFIED",
+      "status": "POLICY_APPROVED_ONLY"
+    }
+  ],
+  "note": "Scope-level acceptance only; no new ACTIVE rule. Existing code may overlap unresolved rows but not counted as implementation verification."
+}

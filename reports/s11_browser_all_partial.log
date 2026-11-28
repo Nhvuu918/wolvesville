@@ -1,0 +1,15 @@
+
+> wolvesville-sprint11-official-voting@1.3.0-s11 test:browser:11:all
+> npm run build && node scripts/run-browser-s06.mjs browser_s11_voting_e2e.py browser_s11_seer_e2e.py browser_s10_gameplay_e2e.py browser_s09_e2e.py browser_s08_gameplay_e2e.py browser_s07_e2e.py browser_s06_e2e.py browser_s05_e2e.py browser_lobby_e2e.py browser_codex_e2e.py browser_demo_e2e.py browser_e2e.py browser_ux_e2e.py
+
+
+> wolvesville-sprint11-official-voting@1.3.0-s11 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+S11_BROWSER_PASS: 3 rounds, zero, tie, blank, vote update, hanging, co-winners, reconnect
+S06_BROWSER_PASS browser_s11_voting_e2e.py
+S11_BROWSER_PASS: real seer skill, official hanging, knight winner, reconnect
+S06_BROWSER_PASS browser_s11_seer_e2e.py
+S10_BROWSER_PASS: 3 distinct accounts, certified deck, role assignment ACL
+S10_BROWSER_PASS: private verdict, night lock cancellation/notice, reconnect, real UI, no invented death
+S06_BROWSER_PASS browser_s10_gameplay_e2e.py

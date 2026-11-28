@@ -1,0 +1,1682 @@
+{
+  "closure": {
+    "priorVersion": "1.7.7-s15-final-breakthrough-wip",
+    "priorR": 47,
+    "priorA": 35,
+    "priorB": 27,
+    "delta": {
+      "beforeIds": [
+        3,
+        5,
+        8,
+        9,
+        11,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24,
+        25,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        43,
+        49,
+        50,
+        52,
+        54,
+        55,
+        58,
+        59,
+        63,
+        66,
+        67,
+        68,
+        71,
+        72,
+        74,
+        76,
+        77,
+        78,
+        79,
+        80,
+        84,
+        85,
+        87,
+        88,
+        93,
+        94
+      ],
+      "afterIds": [
+        3,
+        5,
+        8,
+        9,
+        11,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24,
+        25,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        43,
+        49,
+        50,
+        52,
+        54,
+        55,
+        58,
+        59,
+        63,
+        66,
+        67,
+        68,
+        71,
+        72,
+        74,
+        76,
+        77,
+        78,
+        79,
+        80,
+        84,
+        85,
+        87,
+        88,
+        93,
+        94
+      ],
+      "addedIds": [],
+      "removedIds": [],
+      "evidence": [
+        {
+          "id": 88,
+          "branch": "follow.blocked.by.snow",
+          "skill": "official.88.pin",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 33,
+          "branch": "revenge.hunter.follow",
+          "skill": "official.33.hanging-revenge",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    }
+  },
+  "finalBreakthrough": {
+    "priorVersion": "1.7.6-s15-breakthrough-wip",
+    "priorR": 47,
+    "priorA": 30,
+    "priorB": 24,
+    "delta": {
+      "beforeIds": [
+        3,
+        5,
+        8,
+        9,
+        11,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24,
+        25,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        43,
+        49,
+        50,
+        52,
+        54,
+        55,
+        58,
+        59,
+        63,
+        66,
+        67,
+        68,
+        71,
+        72,
+        74,
+        76,
+        77,
+        78,
+        79,
+        80,
+        84,
+        85,
+        87,
+        88,
+        93,
+        94
+      ],
+      "afterIds": [
+        3,
+        5,
+        8,
+        9,
+        11,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24,
+        25,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        43,
+        49,
+        50,
+        52,
+        54,
+        55,
+        58,
+        59,
+        63,
+        66,
+        67,
+        68,
+        71,
+        72,
+        74,
+        76,
+        77,
+        78,
+        79,
+        80,
+        84,
+        85,
+        87,
+        88,
+        93,
+        94
+      ],
+      "addedIds": [],
+      "removedIds": [],
+      "evidence": [
+        {
+          "id": 88,
+          "branch": "hanging.follow",
+          "skill": "official.88.pin",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 28,
+          "branch": "hanging.with.hunter",
+          "skill": "passive.28.hanged-victory",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 33,
+          "branch": "post-hanging.revenge",
+          "skill": "official.33.hanging-revenge",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 93,
+          "branch": "pack.double-bite",
+          "skill": "official.93.pack-bite",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 87,
+          "branch": "rescue.one-bite-victim",
+          "skill": "official.87.rescue",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    }
+  },
+  "breakthrough": {
+    "priorVersion": "1.7.5-s15-deep-wip",
+    "priorR": 44,
+    "priorA": 24,
+    "priorB": 18,
+    "delta": {
+      "beforeIds": [
+        3,
+        5,
+        8,
+        9,
+        11,
+        15,
+        16,
+        17,
+        20,
+        23,
+        24,
+        25,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        36,
+        43,
+        49,
+        50,
+        52,
+        54,
+        58,
+        59,
+        63,
+        66,
+        67,
+        68,
+        71,
+        72,
+        74,
+        76,
+        77,
+        78,
+        79,
+        80,
+        84,
+        85,
+        87,
+        88,
+        93,
+        94
+      ],
+      "afterIds": [
+        3,
+        5,
+        8,
+        9,
+        11,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24,
+        25,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        43,
+        49,
+        50,
+        52,
+        54,
+        55,
+        58,
+        59,
+        63,
+        66,
+        67,
+        68,
+        71,
+        72,
+        74,
+        76,
+        77,
+        78,
+        79,
+        80,
+        84,
+        85,
+        87,
+        88,
+        93,
+        94
+      ],
+      "addedIds": [
+        19,
+        37,
+        55
+      ],
+      "removedIds": [],
+      "evidence": [
+        {
+          "id": 55,
+          "branch": "stone.hanging.protect.once",
+          "skill": "official.55.stone-protection",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 8,
+          "branch": "hanging.immune.while.wolf",
+          "skill": "passive.8.hanging-immunity",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 55,
+          "branch": "stone.untriggered.expiration.and.solo",
+          "skill": "official.55.stone-protection",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 94,
+          "branch": "effigy.redirect",
+          "skill": "official.94.effigy",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 93,
+          "branch": "alignment.after.partner.death",
+          "skill": "passive.93.alignment",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 94,
+          "branch": "effigy.identity.and.self",
+          "skill": "official.94.effigy",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 28,
+          "branch": "linked.death.not.hanging",
+          "skill": "passive.28.hanged-victory",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 19,
+          "branch": "ballot.contract.accept.fulfilled",
+          "skill": "official.19.ballot-offer",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 19,
+          "branch": "ballot.contract.declined.or.breached",
+          "skill": "official.19.ballot-offer",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 37,
+          "branch": "swap.aura.and.hanging",
+          "skill": "official.37.swap",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    }
+  },
+  "deep": {
+    "priorVersion": "1.7.4-s15-accelerated-wip",
+    "priorR": 42,
+    "priorA": 17,
+    "priorB": 13,
+    "delta": {
+      "beforeIds": [
+        3,
+        5,
+        8,
+        9,
+        11,
+        15,
+        16,
+        17,
+        20,
+        23,
+        24,
+        25,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        36,
+        43,
+        49,
+        50,
+        52,
+        54,
+        58,
+        59,
+        66,
+        67,
+        68,
+        71,
+        72,
+        74,
+        76,
+        77,
+        78,
+        79,
+        80,
+        84,
+        87,
+        88,
+        93,
+        94
+      ],
+      "afterIds": [
+        3,
+        5,
+        8,
+        9,
+        11,
+        15,
+        16,
+        17,
+        20,
+        23,
+        24,
+        25,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        36,
+        43,
+        49,
+        50,
+        52,
+        54,
+        58,
+        59,
+        63,
+        66,
+        67,
+        68,
+        71,
+        72,
+        74,
+        76,
+        77,
+        78,
+        79,
+        80,
+        84,
+        85,
+        87,
+        88,
+        93,
+        94
+      ],
+      "addedIds": [
+        63,
+        85
+      ],
+      "removedIds": [],
+      "evidence": [
+        {
+          "id": 29,
+          "branch": "rescue.night-victim",
+          "skill": "official.29.rescue",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 29,
+          "branch": "rescue.and.poison",
+          "skill": "official.29.rescue",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 29,
+          "branch": "rescue.self-once",
+          "skill": "official.29.rescue",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 85,
+          "branch": "redirect.hypnosis",
+          "skill": "official.85.hypnotize",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 63,
+          "branch": "redirect.flag",
+          "skill": "official.63.redirect",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 15,
+          "branch": "secret.pair.linked-death",
+          "skill": "official.15.single-kill",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 58,
+          "branch": "different.faction.two-others",
+          "skill": "official.58.compare",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 28,
+          "branch": "hanging.sole-winner",
+          "skill": "passive.28.hanged-victory",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        },
+        {
+          "id": 28,
+          "branch": "cancelled.hanging.no-win",
+          "skill": "passive.28.hanged-victory",
+          "restart": true,
+          "replay": true,
+          "privacy": true
+        }
+      ]
+    }
+  },
+  "acceleration": {
+    "priorVersion": "1.7.3-s15-expansion-wip",
+    "priorR": 34,
+    "addedIds": [
+      3,
+      15,
+      29,
+      58,
+      71,
+      77,
+      93,
+      94
+    ],
+    "removedIds": [],
+    "priorA": 10,
+    "priorB": 8
+  },
+  "historicalCorrection": {
+    "reportedR31": 31,
+    "correctedR31": 32,
+    "omissionIds": [
+      28
+    ],
+    "source": "S12 durable metric tests assert #28 winner upon hanging; not an implementation delta"
+  },
+  "continuation": {
+    "priorVersion": "1.7.2-s15-ux-wip",
+    "priorR": 31,
+    "priorF": 0,
+    "priorA": 8,
+    "priorB": 6,
+    "priorC": 0,
+    "addedIds": [
+      3,
+      15,
+      19,
+      28,
+      29,
+      37,
+      49,
+      55,
+      58,
+      63,
+      71,
+      72,
+      77,
+      85,
+      93,
+      94
+    ],
+    "priorMetricSource": "Archived v1.7.2 report (reference only); current evidence reexecuted"
+  },
+  "version": "1.7.8-s15-closure-wip",
+  "scope": "Restricted QA sessions; competitive NO-GO",
+  "metricR": {
+    "baseline": 27,
+    "executableCharacters": 47,
+    "totalCharacters": 97,
+    "ids": [
+      3,
+      5,
+      8,
+      9,
+      11,
+      15,
+      16,
+      17,
+      19,
+      20,
+      23,
+      24,
+      25,
+      28,
+      29,
+      31,
+      32,
+      33,
+      34,
+      36,
+      37,
+      43,
+      49,
+      50,
+      52,
+      54,
+      55,
+      58,
+      59,
+      63,
+      66,
+      67,
+      68,
+      71,
+      72,
+      74,
+      76,
+      77,
+      78,
+      79,
+      80,
+      84,
+      85,
+      87,
+      88,
+      93,
+      94
+    ],
+    "newCharacters": [
+      3,
+      15,
+      19,
+      28,
+      29,
+      37,
+      43,
+      49,
+      54,
+      55,
+      58,
+      63,
+      71,
+      72,
+      77,
+      80,
+      85,
+      87,
+      93,
+      94
+    ]
+  },
+  "metricF": {
+    "fullyImplemented": 0,
+    "certified": false
+  },
+  "metricS": {
+    "newVerifiedBranches": 31,
+    "atomicSubset": {
+      "auditedRoles": 19,
+      "verifiedDenominator": 52,
+      "executedTested": 39,
+      "restrictedCoverage": 0.75,
+      "unresolvedRoleIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        30,
+        31,
+        32,
+        34,
+        35,
+        36,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        56,
+        57,
+        59,
+        60,
+        61,
+        62,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        75,
+        76,
+        77,
+        78,
+        80,
+        81,
+        82,
+        83,
+        84,
+        86,
+        89,
+        90,
+        91,
+        92,
+        95,
+        96,
+        97
+      ],
+      "globalDenominatorCertified": false
+    },
+    "exactRatio": null,
+    "verifiedOutcomeVariants": 47,
+    "reason": "Inherited composite rows not an atomic denominator; source-mapped verified adapter/passive IDs and outcome scenarios only; no overall ratio certified"
+  },
+  "metricA": 36,
+  "completedDecks": [
+    "8,25",
+    "8,28",
+    "8,9,25",
+    "8,9,28",
+    "8,25,28",
+    "8,9,25,28",
+    "8,74",
+    "8,9,74",
+    "8,25,28,74",
+    "8,9,25,74",
+    "8,9,28,74",
+    "15,25",
+    "25,58,74",
+    "8,28,74",
+    "8,25,74",
+    "25,28,55",
+    "8,25,55",
+    "8,25,28,55",
+    "15,25,28",
+    "19,25,28",
+    "25,28,37",
+    "8,9,28,88",
+    "8,25,29",
+    "8,25,85",
+    "15,25,74",
+    "25,28,58",
+    "8,9",
+    "8,9,25,28,74",
+    "25,28,79",
+    "8,28,88",
+    "25,28,88",
+    "8,25,28,88",
+    "74,84,93,94",
+    "74,84,87,93,94",
+    "8,25,68",
+    "8,25,88"
+  ],
+  "metricB": 28,
+  "metricC": 0,
+  "evidence": [
+    {
+      "id": 3,
+      "branch": "passive.false-aura",
+      "skill": "passive.3.seer-aura",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 29,
+      "branch": "poison.lethal-once",
+      "skill": "official.29.poison",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 93,
+      "branch": "seal.night-chat-vote",
+      "skill": "official.93.seal",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 94,
+      "branch": "passive.conceal-living",
+      "skill": "passive.94.conceal-aura",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 29,
+      "branch": "poison.valid-shield-consumes",
+      "skill": "official.29.poison",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 71,
+      "branch": "persistent.aura-disguise",
+      "skill": "official.71.disguise",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 15,
+      "branch": "single.target.lethal",
+      "skill": "official.15.single-kill",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 58,
+      "branch": "same.faction.private",
+      "skill": "official.58.compare",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 58,
+      "branch": "different.faction.self-exception",
+      "skill": "official.58.compare",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 77,
+      "branch": "trap.lethal-block-counter",
+      "skill": "official.77.trap",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 49,
+      "branch": "illusion.global-aura",
+      "skill": "official.49.aura-illusion",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 72,
+      "branch": "curse.single-aura",
+      "skill": "official.72.aura-curse",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 54,
+      "branch": "shoot.day-before-vote",
+      "skill": "official.54.shoot",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 28,
+      "branch": "passive.hanged-victory",
+      "skill": "passive.28.hanged-victory",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 88,
+      "branch": "follow.blocked.by.snow",
+      "skill": "official.88.pin",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 33,
+      "branch": "revenge.hunter.follow",
+      "skill": "official.33.hanging-revenge",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 88,
+      "branch": "hanging.follow",
+      "skill": "official.88.pin",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 28,
+      "branch": "hanging.with.hunter",
+      "skill": "passive.28.hanged-victory",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 33,
+      "branch": "post-hanging.revenge",
+      "skill": "official.33.hanging-revenge",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 93,
+      "branch": "pack.double-bite",
+      "skill": "official.93.pack-bite",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 87,
+      "branch": "rescue.one-bite-victim",
+      "skill": "official.87.rescue",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 36,
+      "branch": "shield.success-private",
+      "skill": "official.36.shield",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 66,
+      "branch": "observe.other-protected",
+      "skill": "passive.66.observe-protected",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 43,
+      "branch": "shoot.day-night",
+      "skill": "official.43.shoot",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 87,
+      "branch": "sedative.chat-and-vote",
+      "skill": "official.87.sedative",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 54,
+      "branch": "reveal.public-after-first-vote",
+      "skill": "official.54.reveal",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 80,
+      "branch": "compare.different-faction",
+      "skill": "official.80.compare",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 80,
+      "branch": "compare.same-faction",
+      "skill": "official.80.compare",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 29,
+      "branch": "rescue.night-victim",
+      "skill": "official.29.rescue",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 29,
+      "branch": "rescue.and.poison",
+      "skill": "official.29.rescue",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 29,
+      "branch": "rescue.self-once",
+      "skill": "official.29.rescue",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 85,
+      "branch": "redirect.hypnosis",
+      "skill": "official.85.hypnotize",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 63,
+      "branch": "redirect.flag",
+      "skill": "official.63.redirect",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 15,
+      "branch": "secret.pair.linked-death",
+      "skill": "official.15.single-kill",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 58,
+      "branch": "different.faction.two-others",
+      "skill": "official.58.compare",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 28,
+      "branch": "hanging.sole-winner",
+      "skill": "passive.28.hanged-victory",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 28,
+      "branch": "cancelled.hanging.no-win",
+      "skill": "passive.28.hanged-victory",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 55,
+      "branch": "stone.hanging.protect.once",
+      "skill": "official.55.stone-protection",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 8,
+      "branch": "hanging.immune.while.wolf",
+      "skill": "passive.8.hanging-immunity",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 55,
+      "branch": "stone.untriggered.expiration.and.solo",
+      "skill": "official.55.stone-protection",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 94,
+      "branch": "effigy.redirect",
+      "skill": "official.94.effigy",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 93,
+      "branch": "alignment.after.partner.death",
+      "skill": "passive.93.alignment",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 94,
+      "branch": "effigy.identity.and.self",
+      "skill": "official.94.effigy",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 28,
+      "branch": "linked.death.not.hanging",
+      "skill": "passive.28.hanged-victory",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 19,
+      "branch": "ballot.contract.accept.fulfilled",
+      "skill": "official.19.ballot-offer",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 19,
+      "branch": "ballot.contract.declined.or.breached",
+      "skill": "official.19.ballot-offer",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 37,
+      "branch": "swap.aura.and.hanging",
+      "skill": "official.37.swap",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    }
+  ],
+  "matchEvidence": [
+    {
+      "ids": [
+        8,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        9,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        25,
+        28,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        9,
+        25,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        9,
+        28,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        15,
+        25
+      ],
+      "completed": true,
+      "voteChain": false,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        25,
+        58,
+        74
+      ],
+      "completed": true,
+      "voteChain": false,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        28,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        25,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        25,
+        28,
+        55
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        25,
+        55
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        25,
+        28,
+        55
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        15,
+        25,
+        28
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        19,
+        25,
+        28
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        25,
+        28,
+        37
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        9,
+        28,
+        88
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        25,
+        29
+      ],
+      "completed": true,
+      "voteChain": false,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        25,
+        85
+      ],
+      "completed": true,
+      "voteChain": false,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        15,
+        25,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        25,
+        28,
+        58
+      ],
+      "completed": true,
+      "voteChain": false,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        25,
+        28,
+        58
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        9
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        9,
+        25,
+        28,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        25,
+        28,
+        79
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        28,
+        88
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        25,
+        28,
+        88
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        25,
+        28,
+        88
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        74,
+        84,
+        93,
+        94
+      ],
+      "completed": true,
+      "voteChain": false,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        74,
+        84,
+        87,
+        93,
+        94
+      ],
+      "completed": true,
+      "voteChain": false,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    }
+  ],
+  "qa": {
+    "exit": 0
+  }
+}

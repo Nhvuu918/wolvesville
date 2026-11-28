@@ -1,0 +1,18 @@
+TAP version 13
+# (node:88024) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S08 PostgreSQL LIVE isolated schema: certified early match, idempotency, ACL, restart, replay
+ok 1 - S08 PostgreSQL LIVE isolated schema: certified early match, idempotency, ACL, restart, replay # SKIP DATABASE_URL absent — PostgreSQL not tested (NOT PASS)
+  ---
+  duration_ms: 0.688696
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 0
+# cancelled 0
+# skipped 1
+# todo 0
+# duration_ms 226.525882

@@ -1,0 +1,29 @@
+TAP version 13
+# (node:16137) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# GROWTH_NIGHT_PERMUTATIONS 48
+# Subtest: Growth dual-seer: all six submission permutations for every legal complete night choice
+ok 1 - Growth dual-seer: all six submission permutations for every legal complete night choice
+  ---
+  duration_ms: 4266.754375
+  type: 'test'
+  ...
+# (node:16147) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# GROWTH_NORMAL_RESCUE_EVIDENCE {"deck":[9,25,48,74,87],"side":"village","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# GROWTH_NORMAL_RESCUE_EVIDENCE {"deck":[9,25,48,74,87],"side":"wolf","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# Subtest: Growth normal five-human snow and pharmacist: protected and rescued bite, both victory routes, restart and replay
+ok 2 - Growth normal five-human snow and pharmacist: protected and rescued bite, both victory routes, restart and replay
+  ---
+  duration_ms: 5889.172693
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6252.002464

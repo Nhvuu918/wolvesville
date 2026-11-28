@@ -1,0 +1,38 @@
+{
+  "build": "1.7.22-s15-stability-completion-wip",
+  "sourceFingerprint": "35a5c2302d5f68a3c35978cf9ec2171c1d357cb16842d4a84512b9ca7f439853",
+  "ownerEvidence": "PENDING",
+  "tasks": [
+    {
+      "id": "QA-REL-01",
+      "status": "PENDING",
+      "actual": null,
+      "evidence": [],
+      "bugId": null,
+      "retest": null
+    },
+    {
+      "id": "QA-REL-04",
+      "status": "PENDING",
+      "actual": null,
+      "evidence": [],
+      "bugId": null,
+      "retest": null
+    },
+    {
+      "id": "QA-STAB-01",
+      "status": "PENDING",
+      "actual": null,
+      "evidence": [],
+      "bugId": null,
+      "retest": null
+    }
+  ],
+  "allowedResults": [
+    "PASS",
+    "FAIL",
+    "KHÁC KỲ VỌNG",
+    "CHƯA RÕ",
+    "CẦN CẢI THIỆN UX"
+  ]
+}

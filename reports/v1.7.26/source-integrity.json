@@ -1,0 +1,65 @@
+{
+  "files": {
+    "expected": 850,
+    "unchanged": 841,
+    "changed": [
+      {
+        "file": "README.md",
+        "before": "8cd310dbdc5b0fa2285f8081a9352c4ed85e5a9efcc7dec9da6ce745d37bb5c8",
+        "after": "35e6d7b86823a98583eaab2de46345dd95fcbd190c74712a3fb44f876df42c4a"
+      },
+      {
+        "file": "backend/src/engine/visibility.ts",
+        "before": "c67d166a0aa5377e33faf6fe8b8847f9067f4d88ea2348ad08af0e7fd34adc05",
+        "after": "4bdcd734a765aff6875deb516cecc3e6f1fb05a8c00a58b1d4e92804194b95b7"
+      },
+      {
+        "file": "backend/src/experimental/owner-bb-v2/pack.ts",
+        "before": "f4dc69f78f83f0800f16ca3efd557fd87833d6b8bf63f2a9f1ec228736a62d39",
+        "after": "714086766161320b7c803bca6a0002b101ba0b9d10b62e95ef5045edb618ba13"
+      },
+      {
+        "file": "backend/src/game/coordinator.ts",
+        "before": "5adda5659cee7172c20872ed5e2d1db531ae004d2e52ce382d4a9683d387769f",
+        "after": "fdb98fd4ff325902e44cbce9c7ce2af28fc7f4e771b20cf4549701733786cd83"
+      },
+      {
+        "file": "backend/src/multiplayer/server.ts",
+        "before": "cd5ef3068c1e22339c11777f4c7e4c6f96ab7c30f15889d9ee435fadd6626391",
+        "after": "1725bda05c95ffd1cc70b7509833243e8b4f344f1eede17bd30159938b737f2c"
+      },
+      {
+        "file": "frontend/integration.js",
+        "before": "7f7b7fd2bbda9e312e0119c8e6b9eabb8538d61e68fa091903f43116a593f83d",
+        "after": "182a1b80f7fa6ca0c2da2a3a7dcb0465a49148efaa7583d264c3b9cf866a38a3"
+      },
+      {
+        "file": "package.json",
+        "before": "532b106660c5ec1814d539422b0ef326237bd148b4e4a54f689dd0bf5fcc7fb6",
+        "after": "0b7ba2b3454438c1fd71667988b1fdbf7c73e96c2a967f1f2299049ebf82bb9b"
+      },
+      {
+        "file": "tests/sprint15-bb-live.test.mjs",
+        "before": "37a9c1b0bc319ac3c90e6fb9a4c939a58bd272072aad7f59223781ab50871133",
+        "after": "58353eda2a9a75e74594a1b6c2efb52c162ae061156d83e943d8746c64c082fb"
+      },
+      {
+        "file": "tests/sprint15-owner-bb-v2.test.mjs",
+        "before": "adbda7674e8cfaaf9b9dd52bd047ddc78247896c7f4a53a807f7bb37e0a2abee",
+        "after": "b8f346294327b24fff56ffa4a2c37023079efededdde1d6f4294bc498b9625cb"
+      }
+    ]
+  },
+  "reportFiles": {
+    "expected": 2830,
+    "unchanged": 2830,
+    "changed": []
+  },
+  "baselineVerifiedBeforeEditing": {
+    "files": 850,
+    "reportFiles": 2830,
+    "mismatches": 0
+  },
+  "inputZipSha256": "f0789adb7014e21e599098331ce40e476f130f48915ceb4f6aa33604dd9ce96a",
+  "sourceFingerprint": "1415b2aa3e9579830a12fc82878506527c3519ea32ed1c1bc688ec52cafb9e4d"
+}

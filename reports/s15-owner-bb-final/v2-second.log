@@ -1,0 +1,84 @@
+TAP version 13
+# (node:57766) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: BBv2 01 wait for all responses, no random target, KEEP previous valid selection
+ok 1 - BBv2 01 wait for all responses, no random target, KEEP previous valid selection
+  ---
+  duration_ms: 12.42333
+  type: 'test'
+  ...
+# Subtest: BBv2 02 all respond but first blank or divergent sets, no bite even common target
+ok 2 - BBv2 02 all respond but first blank or divergent sets, no bite even common target
+  ---
+  duration_ms: 2.87724
+  type: 'test'
+  ...
+# Subtest: BBv2 03 canonical set agreement and same representative for two bites; retry and privacy
+ok 3 - BBv2 03 canonical set agreement and same representative for two bites; retry and privacy
+  ---
+  duration_ms: 0.848646
+  type: 'test'
+  ...
+# Subtest: BBv2 04 membership at lock: revoked wolf ignored, new wolf must respond, fixed order cannot change
+ok 4 - BBv2 04 membership at lock: revoked wolf ignored, new wolf must respond, fixed order cannot change
+  ---
+  duration_ms: 1.617481
+  type: 'test'
+  ...
+# Subtest: BBv2 05 two attacks: first counter kills representative, second still executes, no duplicate deaths
+ok 5 - BBv2 05 two attacks: first counter kills representative, second still executes, no duplicate deaths
+  ---
+  duration_ms: 1.878557
+  type: 'test'
+  ...
+# Subtest: BBv2 06 pack protection shared consumption; unsupported stack fails closed
+ok 6 - BBv2 06 pack protection shared consumption; unsupported stack fails closed
+  ---
+  duration_ms: 1.520457
+  type: 'test'
+  ...
+# Subtest: BBv2 07 group BB05=B all executed inspections inverted once; blocked action not trigger; RNG/private
+ok 7 - BBv2 07 group BB05=B all executed inspections inverted once; blocked action not trigger; RNG/private
+  ---
+  duration_ms: 3.357339
+  type: 'test'
+  ...
+# Subtest: BBv2 08 BB04=B guard inverse bypasses shield, no protection consumption, direct death once
+ok 8 - BBv2 08 BB04=B guard inverse bypasses shield, no protection consumption, direct death once
+  ---
+  duration_ms: 1.04679
+  type: 'test'
+  ...
+# Subtest: BBv2 09 inverse rescue finalizes preliminary death exactly once, ignores other shield; poison suppressed
+ok 9 - BBv2 09 inverse rescue finalizes preliminary death exactly once, ignores other shield; poison suppressed
+  ---
+  duration_ms: 1.783748
+  type: 'test'
+  ...
+# Subtest: BBv2 10 unknown effect or death reaction aborts whole group with waiting mark, no partial mutation
+ok 10 - BBv2 10 unknown effect or death reaction aborts whole group with waiting mark, no partial mutation
+  ---
+  duration_ms: 1.459632
+  type: 'test'
+  ...
+# Subtest: BBv2 11 journal commits candidate pack atomically, persists waiting then lock, restart and replay, v1 isolation
+ok 11 - BBv2 11 journal commits candidate pack atomically, persists waiting then lock, restart and replay, v1 isolation
+  ---
+  duration_ms: 62.680574
+  type: 'test'
+  ...
+# Subtest: BBv2 12 journal trap commit and group replay, private RNG, failed group has no effect
+ok 12 - BBv2 12 journal trap commit and group replay, private RNG, failed group has no effect
+  ---
+  duration_ms: 24.190094
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 214.105551

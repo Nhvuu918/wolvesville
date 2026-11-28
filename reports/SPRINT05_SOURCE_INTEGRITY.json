@@ -1,0 +1,37 @@
+{
+  "data/character.json": {
+    "unchanged": true,
+    "sha256": "7a9fc87f979198004260115f512cac9b171322a98b264e59dae9fa3b4d29a9c3",
+    "bytes": 59410
+  },
+  "data/rules/official_merged_118.json": {
+    "unchanged": true,
+    "sha256": "3bd590000aedbe46f5a5a62e43e18c5d247cb3d401ba60f980a050512e8376f3",
+    "bytes": 43496
+  },
+  "data/rules/tests_207.json": {
+    "unchanged": true,
+    "sha256": "0a6edd6b086ebe270519493c83a48d73113a80ffff3528aada51282d8f4a1860",
+    "bytes": 97825
+  },
+  "approved_frontend_original": {
+    "count": 107,
+    "sameAsSprint04": true
+  },
+  "backend/src/persistence/migrations/002_multiplayer_postgresql.sql": {
+    "unchanged": true,
+    "sha256": "158496c00eca96b559c516ddfde22c7ab542fe2d50da1fe1caf3b0b898245572"
+  },
+  "backend/src/persistence/migrations/004_game_sessions_postgresql.sql": {
+    "unchanged": true,
+    "sha256": "c79d51381d21f3177acf9e9784dfe0b9ed35d1a0cd3bfa82ac99f59705886a39"
+  },
+  "backend/src/persistence/migrations/005_official_rule_pack_postgresql.sql": {
+    "unchanged": true,
+    "sha256": "79ab61a6fab8bba9c83e3d901f8ef395b6efe288b2d5d73884840aefa369f9b0"
+  },
+  "backend/src/persistence/migrations/006_demo_auth_postgresql.sql": {
+    "unchanged": true,
+    "sha256": "f306f32ef59048924aeb8961a75144630e3dad15972c3ca5697242afddfd242a"
+  }
+}

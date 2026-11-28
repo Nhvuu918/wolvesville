@@ -1,0 +1,83 @@
+{
+  "parentVersion": "1.7.14-s15-verified-growth-wip",
+  "parentZipSha256": "ae1a5887c3addb89727d838ff26b03da19419c089c07999b9fb4ddf4dbbce426",
+  "verifiedParentHashes": 770,
+  "version": "1.7.15-s15-deep-engine-wip",
+  "changedExistingPayloadPaths": [
+    "README.md",
+    "backend/src/engine/service.ts",
+    "backend/src/game/archive.ts",
+    "backend/src/game/coordinator.ts",
+    "backend/src/game/normal-decks.ts",
+    "backend/src/official/capabilities.ts",
+    "backend/src/official/death-interactions.ts",
+    "backend/src/official/final-pack.ts",
+    "backend/src/official/hanging-follow.ts",
+    "backend/src/official/inspection-effects.ts",
+    "backend/src/official/inspection-rules.ts",
+    "backend/src/official/judgment-rules.ts",
+    "backend/src/official/s13-mechanics.ts",
+    "backend/src/official/stable-death-proof.ts",
+    "backend/src/official/victory-resolver.ts",
+    "data/rule-intelligence/source_inventory.json",
+    "frontend/integration.js",
+    "package.json",
+    "scripts/run-browser-s06.mjs"
+  ],
+  "addedPayloadPaths": [
+    "backend/src/engine/effect-dispatch.ts",
+    "backend/src/official/engineer-trap.ts",
+    "backend/src/official/protection-consumption.ts",
+    "backend/src/official/revival.ts",
+    "docs/SPRINT15_DEEP_ENGINE_CHANGELOG.md",
+    "scripts/s15-deep-engine-browser-matrix.mjs",
+    "tests/browser_s15_deep_engineer_e2e.py",
+    "tests/browser_s15_deep_medium_e2e.py",
+    "tests/browser_s15_deep_normal_knight_snow_aura_e2e.py",
+    "tests/browser_s15_deep_normal_knight_snow_dual_e2e.py",
+    "tests/browser_s15_deep_normal_knight_snow_e2e.py",
+    "tests/browser_s15_deep_normal_knight_snow_role_e2e.py",
+    "tests/browser_s15_deep_normal_leader_e2e.py",
+    "tests/browser_s15_deep_normal_leader_snow_e2e.py",
+    "tests/deep_normal_browser.py",
+    "tests/sprint15-deep-engineer.test.mjs",
+    "tests/sprint15-deep-medium.test.mjs",
+    "tests/sprint15-deep-normal-expansion.test.mjs"
+  ],
+  "removedPayloadPaths": [],
+  "contracts": [
+    {
+      "contract": "official effect routing, REST authorization",
+      "tests": [
+        "tests/sprint15-deep-engineer.test.mjs",
+        "tests/sprint15-deep-medium.test.mjs",
+        "tests/sprint15-deep-normal-expansion.test.mjs",
+        "full inherited backend matrix"
+      ]
+    },
+    {
+      "contract": "defense consumption, death ledger, replay",
+      "tests": [
+        "tests/sprint15-deep-medium.test.mjs",
+        "full inherited backend matrix",
+        "browser_s15_deep_medium_e2e.py"
+      ]
+    },
+    {
+      "contract": "normal rooms and frontend target eligibility",
+      "tests": [
+        "tests/sprint15-deep-normal-expansion.test.mjs",
+        "six browser_s15_deep_normal_* suites",
+        "legacy browser obligations"
+      ]
+    },
+    {
+      "contract": "browser source-scoped checkpointing",
+      "tests": [
+        "reports/s15-deep-engine/final-browser/matrix.json",
+        "reports/s15-deep-engine/final-browser-history/matrix.json"
+      ]
+    }
+  ],
+  "note": "Historical archive and official source rule data retained. No schema migration needed for new JSON event records; PostgreSQL live pending."
+}

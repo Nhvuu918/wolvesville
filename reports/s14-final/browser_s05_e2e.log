@@ -1,0 +1,6 @@
+PASS Browser S05: 5 unique real identities, room membership synchronized
+PASS Browser S05: exactly five locked roles assigned, private role projection
+S05_BROWSER_FAILED TimeoutError('Page.wait_for_function: Timeout 18000ms exceeded.') PAGE_ERRORS []
+Error: E2E failed browser_s05_e2e.py, exit=1, signal=null
+    at file:///mnt/data/s14work/scripts/run-browser-s06.mjs:37:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

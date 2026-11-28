@@ -1,0 +1,60 @@
+{
+  "version": "1.7.2-s15-ux-wip",
+  "effectiveRule": "S15-OWNER-SEER-01",
+  "ruleset": "wolvesville-official-v1.3.2",
+  "legacyRuleset": "wolvesville-official-v1.3.1",
+  "sourceIntegrity": "PASS",
+  "typescriptBuild": "PASS",
+  "rulesBuild": "PASS",
+  "backend": {
+    "total": 249,
+    "pass": 238,
+    "fail": 0,
+    "skipped": 11,
+    "exit": 0
+  },
+  "targeted": {
+    "pass": 19,
+    "fail": 0,
+    "exit": 0
+  },
+  "browserCurrent": [
+    {
+      "suite": "browser_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-seer-correction/clean/browser_e2e.log"
+    },
+    {
+      "suite": "browser_s10_gameplay_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-seer-correction/clean/browser_s10_gameplay_e2e.log"
+    },
+    {
+      "suite": "browser_s11_seer_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-seer-correction/clean/browser_s11_seer_e2e.log"
+    },
+    {
+      "suite": "browser_s15_gameplay_ux_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-seer-correction/clean/browser_s15_gameplay_ux_e2e.log"
+    }
+  ],
+  "browserOtherSuites": "NOT_RERUN after this targeted correction; historical reports are not current evidence",
+  "metrics": {
+    "R": 31,
+    "F": 0,
+    "A": 8,
+    "B": 6,
+    "C": 0,
+    "S": "overall ratio not certified",
+    "exit": 0
+  },
+  "postgresql": "PENDING",
+  "cleanExtractionCandidate": "PASS",
+  "scope": "Owner requested only Seer rule correction. All other UX/gameplay inherited. Native Mac unverified. Final release NO-GO."
+}

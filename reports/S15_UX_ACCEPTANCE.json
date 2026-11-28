@@ -1,0 +1,128 @@
+{
+  "version": "1.7.1-s15-ux-wip",
+  "scope": "Historical before S15-OWNER-SEER-01; NOT new release evidence",
+  "browser": [
+    {
+      "suite": "browser_codex_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_codex_e2e.log"
+    },
+    {
+      "suite": "browser_demo_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_demo_e2e.log"
+    },
+    {
+      "suite": "browser_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_e2e.log"
+    },
+    {
+      "suite": "browser_lobby_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_lobby_e2e.log"
+    },
+    {
+      "suite": "browser_s05_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_s05_e2e.log"
+    },
+    {
+      "suite": "browser_s06_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_s06_e2e.log"
+    },
+    {
+      "suite": "browser_s07_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_s07_e2e.log"
+    },
+    {
+      "suite": "browser_s08_gameplay_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_s08_gameplay_e2e.log"
+    },
+    {
+      "suite": "browser_s09_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_s09_e2e.log"
+    },
+    {
+      "suite": "browser_s10_gameplay_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_s10_gameplay_e2e.log"
+    },
+    {
+      "suite": "browser_s11_seer_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_s11_seer_e2e.log"
+    },
+    {
+      "suite": "browser_s11_voting_e2e",
+      "exit": 1,
+      "status": "NOT_CLEAN_PASS",
+      "log": "reports/s15-ux/final-clean/browser_s11_voting_e2e.log"
+    },
+    {
+      "suite": "browser_s12_attack_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_s12_attack_e2e.log"
+    },
+    {
+      "suite": "browser_s13_skills_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_s13_skills_e2e.log"
+    },
+    {
+      "suite": "browser_s14_gameplay_e2e",
+      "exit": 1,
+      "status": "NOT_CLEAN_PASS",
+      "log": "reports/s15-ux/final-clean/browser_s14_gameplay_e2e.log"
+    },
+    {
+      "suite": "browser_s14_transport_regression",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_s14_transport_regression.log"
+    },
+    {
+      "suite": "browser_s15_gameplay_ux_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_s15_gameplay_ux_e2e.log"
+    },
+    {
+      "suite": "browser_s15_protection_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_s15_protection_e2e.log"
+    },
+    {
+      "suite": "browser_s15_voting_information_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_s15_voting_information_e2e.log"
+    },
+    {
+      "suite": "browser_ux_e2e",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-ux/final-clean/browser_ux_e2e.log"
+    }
+  ],
+  "backend_log": "reports/s15-ux/final-clean/backend.log",
+  "backend_exit": 0
+}

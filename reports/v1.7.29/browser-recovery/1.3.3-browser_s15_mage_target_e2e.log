@@ -1,0 +1,37 @@
+E2E_SCHEDULER_WAIT exclusive 33681
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 993
+E2E_RESOURCE start cpu "usage_usec 7693121362\nuser_usec 6165936349\nsystem_usec 1527185012\nnice_usec 1567829\nnr_periods 39474\nnr_throttled 3689\nthrottled_usec 138319850\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s15_mage_target_e2e.py single port 35387 db /tmp/wolvesville-s06-browser-qNFgiy/test.sqlite
+SCENARIO_READY s15-mage-shield
+E2E_STAGE action 36 official.36.shield 25
+E2E_STAGE action 36 official.36.fireball 8
+E2E_STAGE resolve GAME_COMPLETED
+SCENARIO_ACTIONS_PASS s15-mage-shield
+E2E_STAGE cleanup
+E2E_CONTEXT_CLOSED 0 0.045
+E2E_CONTEXT_CLOSED 1 0.086
+E2E_CONTEXT_CLOSED 2 0.24
+E2E_STAGE cleanup-complete
+S15_MAGE_TARGET_BROWSER_PASS
+S06_BROWSER_CASE_PASS browser_s15_mage_target_e2e.py single
+E2E_ISOLATION browser_s15_mage_target_e2e.py two-nights port 41313 db /tmp/wolvesville-s06-browser-MUtNQJ/test.sqlite
+SCENARIO_READY s15-mage-shield
+E2E_STAGE action 36 official.36.shield 25
+E2E_STAGE action 36 official.36.fireball 25
+E2E_STAGE resolve DAY_DISCUSS
+E2E_STAGE resolve NIGHT_COLLECT
+E2E_STAGE action 36 official.36.fireball 8
+E2E_STAGE resolve GAME_COMPLETED
+SCENARIO_ACTIONS_PASS s15-mage-shield
+E2E_STAGE cleanup
+E2E_CONTEXT_CLOSED 0 0.022
+E2E_CONTEXT_CLOSED 1 0.043
+E2E_CONTEXT_CLOSED 2 0.032
+E2E_STAGE cleanup-complete
+S15_MAGE_TARGET_BROWSER_PASS
+S06_BROWSER_CASE_PASS browser_s15_mage_target_e2e.py two-nights
+S06_BROWSER_PASS browser_s15_mage_target_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 7765055197\nuser_usec 6219629837\nsystem_usec 1545425360\nnice_usec 1630183\nnr_periods 39764\nnr_throttled 3724\nthrottled_usec 139617010\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

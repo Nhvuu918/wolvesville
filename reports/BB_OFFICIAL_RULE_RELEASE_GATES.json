@@ -1,0 +1,90 @@
+{
+  "version": "1.7.21-s15-official-bb-wip",
+  "proposedRuleVersion": "wolvesville-official-v1.3.4",
+  "state": "CANDIDATE",
+  "active": false,
+  "ownerPolicyApproved": true,
+  "readyForApproval": false,
+  "gates": [
+    {
+      "gate": "Owner decisions",
+      "status": "PASS",
+      "evidence": "13 owner-approved choices; no effective date"
+    },
+    {
+      "gate": "Rule consistency",
+      "status": "PARTIAL",
+      "evidence": "Source-backed bounded mappings; zero eligible/revoked target and future conversion not admitted"
+    },
+    {
+      "gate": "Cross-window Engine",
+      "status": "PASS_BOUNDED",
+      "evidence": "Actual #29 distinct rescue and poison windows; not arbitrary cross-phase or revival"
+    },
+    {
+      "gate": "Representative order",
+      "status": "PASS_BOUNDED",
+      "evidence": "Server RNG initial order/tape, replay, filtered ranked eligible members; no new unranked conversion"
+    },
+    {
+      "gate": "Consensus wait",
+      "status": "PASS_BOUNDED",
+      "evidence": "Indefinite wait; no auto votes/AFK deadline"
+    },
+    {
+      "gate": "Trap consumption/resource/cooldown",
+      "status": "PASS_BOUNDED",
+      "evidence": "Group ledger, distinct windows, one mark; unsupported mappings fail closed"
+    },
+    {
+      "gate": "Death chain/victory",
+      "status": "PARTIAL",
+      "evidence": "PH-01 and deferred death tested; revival and linked death domains incomplete"
+    },
+    {
+      "gate": "REST/WS/UI",
+      "status": "PASS_BOUNDED",
+      "evidence": "Local QA controls only"
+    },
+    {
+      "gate": "SQLite restart/replay/privacy",
+      "status": "PASS_BOUNDED",
+      "evidence": "Targeted live tests; historical regression tracked separately"
+    },
+    {
+      "gate": "Legacy backend",
+      "status": "PASS_SPLIT",
+      "evidence": "See backend report"
+    },
+    {
+      "gate": "Critical browser",
+      "status": "PASS",
+      "evidence": "Six B/B obligations"
+    },
+    {
+      "gate": "Previous two browser failures",
+      "status": "PASS_RETEST",
+      "evidence": "No timeout change; original root cause not uniquely reproduced"
+    },
+    {
+      "gate": "Human QA",
+      "status": "PENDING",
+      "evidence": "Await actual owner feedback"
+    },
+    {
+      "gate": "Full project browser",
+      "status": "INCOMPLETE_OR_FAIL",
+      "evidence": "Full matrix required for competitive production"
+    },
+    {
+      "gate": "PostgreSQL live",
+      "status": "PENDING",
+      "evidence": "No real live PG acceptance"
+    },
+    {
+      "gate": "Version release authorization",
+      "status": "PENDING",
+      "evidence": "Owner approved policy, not activation"
+    }
+  ]
+}

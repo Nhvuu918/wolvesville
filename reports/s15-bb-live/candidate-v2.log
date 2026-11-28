@@ -1,0 +1,134 @@
+TAP version 13
+# (node:68565) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# OWNER_BB_V2_GATEWAY_CANDIDATE_COMMIT_ARCHIVE_UNCHANGED_PASS
+# Subtest: BBv2 13 authenticated candidate pack resolution: real independent accounts, persisted QA Game Session, reconnect/restart, no official archive mutation
+ok 1 - BBv2 13 authenticated candidate pack resolution: real independent accounts, persisted QA Game Session, reconnect/restart, no official archive mutation
+  ---
+  duration_ms: 3194.325357
+  type: 'test'
+  ...
+# (node:68567) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# BBV2_TRAP_ENGINE_QUEUE_ARCHIVE_ISOLATION_PASS 25
+# Subtest: BBv2 real accepted engineer queue: trap on 25, typed result, atomic journal, old archive unchanged
+ok 2 - BBv2 real accepted engineer queue: trap on 25, typed result, atomic journal, old archive unchanged
+  ---
+  duration_ms: 2944.630933
+  type: 'test'
+  ...
+# BBV2_TRAP_ENGINE_QUEUE_ARCHIVE_ISOLATION_PASS 74
+# Subtest: BBv2 real accepted engineer queue: trap on 74, typed result, atomic journal, old archive unchanged
+ok 3 - BBv2 real accepted engineer queue: trap on 74, typed result, atomic journal, old archive unchanged
+  ---
+  duration_ms: 3723.467981
+  type: 'test'
+  ...
+# BBV2_TRAP_ENGINE_QUEUE_ARCHIVE_ISOLATION_PASS 5
+# Subtest: BBv2 real accepted engineer queue: trap on 5, typed result, atomic journal, old archive unchanged
+ok 4 - BBv2 real accepted engineer queue: trap on 5, typed result, atomic journal, old archive unchanged
+  ---
+  duration_ms: 3034.499931
+  type: 'test'
+  ...
+# (node:68577) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: BBv2 01 wait for all responses, no random target, KEEP previous valid selection
+ok 5 - BBv2 01 wait for all responses, no random target, KEEP previous valid selection
+  ---
+  duration_ms: 39.431523
+  type: 'test'
+  ...
+# Subtest: BBv2 02 all respond but first blank or divergent sets, no bite even common target
+ok 6 - BBv2 02 all respond but first blank or divergent sets, no bite even common target
+  ---
+  duration_ms: 2.11043
+  type: 'test'
+  ...
+# Subtest: BBv2 03 canonical set agreement and same representative for two bites; retry and privacy
+ok 7 - BBv2 03 canonical set agreement and same representative for two bites; retry and privacy
+  ---
+  duration_ms: 1.965232
+  type: 'test'
+  ...
+# Subtest: BBv2 04 membership at lock: revoked wolf ignored, new wolf must respond, fixed order cannot change
+ok 8 - BBv2 04 membership at lock: revoked wolf ignored, new wolf must respond, fixed order cannot change
+  ---
+  duration_ms: 2.230318
+  type: 'test'
+  ...
+# Subtest: BBv2 05 two attacks: first counter kills representative, second still executes, no duplicate deaths
+ok 9 - BBv2 05 two attacks: first counter kills representative, second still executes, no duplicate deaths
+  ---
+  duration_ms: 3.473007
+  type: 'test'
+  ...
+# Subtest: BBv2 06 pack protection shared consumption; unsupported stack fails closed
+ok 10 - BBv2 06 pack protection shared consumption; unsupported stack fails closed
+  ---
+  duration_ms: 3.660556
+  type: 'test'
+  ...
+# Subtest: BBv2 07 group BB05=B all executed inspections inverted once; blocked action not trigger; RNG/private
+ok 11 - BBv2 07 group BB05=B all executed inspections inverted once; blocked action not trigger; RNG/private
+  ---
+  duration_ms: 16.209225
+  type: 'test'
+  ...
+# Subtest: BBv2 08 BB04=B guard inverse bypasses shield, no protection consumption, direct death once
+ok 12 - BBv2 08 BB04=B guard inverse bypasses shield, no protection consumption, direct death once
+  ---
+  duration_ms: 3.458563
+  type: 'test'
+  ...
+# Subtest: BBv2 09 inverse rescue finalizes preliminary death exactly once, ignores other shield; poison suppressed
+ok 13 - BBv2 09 inverse rescue finalizes preliminary death exactly once, ignores other shield; poison suppressed
+  ---
+  duration_ms: 1.241972
+  type: 'test'
+  ...
+# Subtest: BBv2 10 unknown effect or death reaction aborts whole group with waiting mark, no partial mutation
+ok 14 - BBv2 10 unknown effect or death reaction aborts whole group with waiting mark, no partial mutation
+  ---
+  duration_ms: 5.982558
+  type: 'test'
+  ...
+# Subtest: BBv2 11 journal commits candidate pack atomically, persists waiting then lock, restart and replay, v1 isolation
+ok 15 - BBv2 11 journal commits candidate pack atomically, persists waiting then lock, restart and replay, v1 isolation
+  ---
+  duration_ms: 208.264456
+  type: 'test'
+  ...
+# Subtest: BBv2 12 journal trap commit and group replay, private RNG, failed group has no effect
+ok 16 - BBv2 12 journal trap commit and group replay, private RNG, failed group has no effect
+  ---
+  duration_ms: 80.623222
+  type: 'test'
+  ...
+# Subtest: BBv2 14 no execution keeps mark through multiple nights, second placement and duplicate target constraints
+ok 17 - BBv2 14 no execution keeps mark through multiple nights, second placement and duplicate target constraints
+  ---
+  duration_ms: 6.548695
+  type: 'test'
+  ...
+# Subtest: BBv2 15 old candidate journal remains replayable beside new profile; disabled by default
+ok 18 - BBv2 15 old candidate journal remains replayable beside new profile; disabled by default
+  ---
+  duration_ms: 60.758042
+  type: 'test'
+  ...
+# Subtest: BBv2 16 direct inversion does not bypass unsupported death chains or create partial journal commit
+ok 19 - BBv2 16 direct inversion does not bypass unsupported death chains or create partial journal commit
+  ---
+  duration_ms: 35.596795
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 10800.150051

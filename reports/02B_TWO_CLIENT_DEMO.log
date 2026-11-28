@@ -1,0 +1,16 @@
+
+> wolvesville-sprint02b-room-game-integration@0.2.1 demo:02b
+> npm run build && node scripts/demo-02b.mjs
+
+
+> wolvesville-sprint02b-room-game-integration@0.2.1 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+(node:8151) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+TWO CLIENTS: 2 members; private self roles (dev only): 31 25
+ISOLATION: PASS
+ACTION: ACCEPTED revision 3
+RESOLVE: 1 effects; phase DAY_DISCUSS
+REPLAY: PASS events 15 assignment draws 2 verified true
+MODE: INTEGRATION_TEST (not competitive; 97 official role skills remain disabled)

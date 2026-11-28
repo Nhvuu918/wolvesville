@@ -1,0 +1,54 @@
+TAP version 13
+# (node:25687) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S12 durable metric evidence 8,25
+ok 1 - S12 durable metric evidence 8,25
+  ---
+  duration_ms: 431.508272
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,25],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,28
+ok 2 - S12 durable metric evidence 8,28
+  ---
+  duration_ms: 414.947916
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,9,25
+ok 3 - S12 durable metric evidence 8,9,25
+  ---
+  duration_ms: 712.56835
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,9,25],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,9,28
+ok 4 - S12 durable metric evidence 8,9,28
+  ---
+  duration_ms: 508.085069
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,9,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,25,28
+ok 5 - S12 durable metric evidence 8,25,28
+  ---
+  duration_ms: 486.079393
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,25,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,9,25,28
+ok 6 - S12 durable metric evidence 8,9,25,28
+  ---
+  duration_ms: 935.723408
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,9,25,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3623.075125

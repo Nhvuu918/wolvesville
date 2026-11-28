@@ -1,0 +1,200 @@
+{
+  "sourceFingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+  "images": [
+    {
+      "file": "bell-leader-endgame.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "viewer": "#64",
+      "mode": "NORMAL_GAMEPLAY",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "versionTag": "1.3.3",
+      "sourceFingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+      "scenario": "[25,48,64,74] double bite",
+      "suite": "browser_s28_bell_normal_e2e.py",
+      "result": "CAPTURED_DURING_PASS",
+      "sha256": "11e3a2acf7e3396174e83707ed244cbd0edc9f9ace3b0dd4ea9c7b69782745e8"
+    },
+    {
+      "file": "bell-leader-pair.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "viewer": "#64",
+      "mode": "NORMAL_GAMEPLAY",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "versionTag": "1.3.3",
+      "sourceFingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+      "scenario": "[25,48,64,74] double bite",
+      "suite": "browser_s28_bell_normal_e2e.py",
+      "result": "CAPTURED_DURING_PASS",
+      "sha256": "f9077a01bd368dd08c194529f40dc556802019fdf10a7f139cf79c862228424b"
+    },
+    {
+      "file": "bell-linked-endgame.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "viewer": "#64",
+      "mode": "NORMAL_GAMEPLAY",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "versionTag": "1.3.3",
+      "sourceFingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+      "scenario": "[15,25,64,74] linked death",
+      "suite": "browser_s28_bell_normal_e2e.py",
+      "result": "CAPTURED_DURING_PASS",
+      "sha256": "b94edabde3ab96ee9389c25dff56430eba1b1b4428d3bdb2ba2acb6d42bd4811"
+    },
+    {
+      "file": "bell-linked-observed.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "viewer": "#64",
+      "mode": "NORMAL_GAMEPLAY",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "versionTag": "1.3.3",
+      "sourceFingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+      "scenario": "[15,25,64,74] linked death",
+      "suite": "browser_s28_bell_normal_e2e.py",
+      "result": "CAPTURED_DURING_PASS",
+      "sha256": "4c64bc914d9c3c13f65438eedf901f9a1a948a670b31460383f4d3d18baa34c2"
+    },
+    {
+      "file": "bell-linked-pair.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "viewer": "#64",
+      "mode": "NORMAL_GAMEPLAY",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "versionTag": "1.3.3",
+      "sourceFingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+      "scenario": "[15,25,64,74] linked death",
+      "suite": "browser_s28_bell_normal_e2e.py",
+      "result": "CAPTURED_DURING_PASS",
+      "sha256": "fe4189b699324e0caeb331346eb6dcca9c572637a7c6ea529859d6838ee1a6ce"
+    },
+    {
+      "file": "bell-revival-endgame.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "viewer": "#64",
+      "mode": "NORMAL_GAMEPLAY",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "versionTag": "1.3.3",
+      "sourceFingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+      "scenario": "[8,25,26,64] revived target",
+      "suite": "browser_s28_bell_normal_e2e.py",
+      "result": "CAPTURED_DURING_PASS",
+      "sha256": "8cd843d5723a3ba46728b145348db8b692ee982c662cee22cd09635009c180f4"
+    },
+    {
+      "file": "bell-revival-observed.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "viewer": "#64",
+      "mode": "NORMAL_GAMEPLAY",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "versionTag": "1.3.3",
+      "sourceFingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+      "scenario": "[8,25,26,64] revived target",
+      "suite": "browser_s28_bell_normal_e2e.py",
+      "result": "CAPTURED_DURING_PASS",
+      "sha256": "26c9003119484212bc3b1a010b606dff277a3f8ed704f11eff467cdc4463d9b1"
+    },
+    {
+      "file": "bell-revival-pair.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "viewer": "#64",
+      "mode": "NORMAL_GAMEPLAY",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "versionTag": "1.3.3",
+      "sourceFingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+      "scenario": "[8,25,26,64] revived target",
+      "suite": "browser_s28_bell_normal_e2e.py",
+      "result": "CAPTURED_DURING_PASS",
+      "sha256": "043a2d0b96c690700bc2995b4ba3195720a888122badcdba7edf9eeb14bb39be"
+    },
+    {
+      "file": "cult-muted-group.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "viewer": "#25",
+      "mode": "CANDIDATE_QA",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "versionTag": "1.3.3+qa-cult",
+      "sourceFingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+      "scenario": "live recruit/mute/group chat/living victory [25,74,84,90]",
+      "suite": "browser_s27_cult_e2e.py",
+      "result": "CAPTURED_DURING_PASS",
+      "sha256": "3f0dcbe8c0f7edad428dfa225d5c4a12fd09d861c9e6f3afce5b5931c20a911a"
+    },
+    {
+      "file": "cult-outsider.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "viewer": "#74",
+      "mode": "CANDIDATE_QA",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "versionTag": "1.3.3+qa-cult",
+      "sourceFingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+      "scenario": "live recruit/mute/group chat/living victory [25,74,84,90]",
+      "suite": "browser_s27_cult_e2e.py",
+      "result": "CAPTURED_DURING_PASS",
+      "sha256": "88721cc1da78c3d5b1017e521ab86a3562972dc5d6ccc4d9d5fa9c793a38d4c9"
+    },
+    {
+      "file": "cult-recruit-success.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "viewer": "#90",
+      "mode": "CANDIDATE_QA",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "versionTag": "1.3.3+qa-cult",
+      "sourceFingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+      "scenario": "live recruit/mute/group chat/living victory [25,74,84,90]",
+      "suite": "browser_s27_cult_e2e.py",
+      "result": "CAPTURED_DURING_PASS",
+      "sha256": "80d604706c745c97e54ca98e927ac76d2f09efdfe4f0a80c68d84fbcbca7310c"
+    },
+    {
+      "file": "cult-victory.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "viewer": "#90",
+      "mode": "CANDIDATE_QA",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "versionTag": "1.3.3+qa-cult",
+      "sourceFingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+      "scenario": "live recruit/mute/group chat/living victory [25,74,84,90]",
+      "suite": "browser_s27_cult_e2e.py",
+      "result": "CAPTURED_DURING_PASS",
+      "sha256": "b07c07ab0a80dc24b4126d3f5b6ac94aa1b87049cf0acdf18229a63c3bb24a77"
+    }
+  ],
+  "excluded": [
+    "cult-night.png: transition frame; not visual evidence"
+  ]
+}

@@ -1,0 +1,11 @@
+import {spawnSync} from 'node:child_process';
+import {writeFileSync,mkdirSync} from 'node:fs';
+const run=spawnSync(process.execPath,['--test','tests/sprint12-metrics.test.mjs'],{encoding:'utf8',maxBuffer:8*1024*1024});
+process.stdout.write(run.stdout||'');process.stderr.write(run.stderr||'');
+if(run.status!==0)throw Error(`Metric proof failed: ${run.status}`);
+const evidence=(run.stdout||'').split('\n').filter(s=>s.startsWith('# METRIC_EVIDENCE ')).map(s=>JSON.parse(s.slice('# METRIC_EVIDENCE '.length)));
+if(!evidence.length)throw Error('Missing executed evidence');
+const qualified=e=>e.restartReplay&&e.privacy&&e.multiClient;
+const count=predicate=>new Set(evidence.filter(predicate).map(e=>[...e.ids].sort((a,b)=>a-b).join(','))).size;
+const report={scope:'Restricted official rule test mode; not competitive certification',metricA:count(e=>qualified(e)&&e.completed),metricB:count(e=>qualified(e)&&e.voteChain),metricC:count(e=>qualified(e)&&e.branchComplete),evidence};
+mkdirSync('reports',{recursive:true});writeFileSync('reports/S12_METRICS.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));

@@ -1,0 +1,87 @@
+[
+  {
+    "characterId": 25,
+    "skillId": "official.25.inspect-role",
+    "type": "ACTIVE",
+    "sources": [
+      "character.json#25"
+    ],
+    "testIds": [
+      "tests/official-rules.test.mjs"
+    ]
+  },
+  {
+    "characterId": 74,
+    "skillId": "official.74.inspect-role",
+    "type": "ACTIVE",
+    "sources": [
+      "character.json#74"
+    ],
+    "testIds": [
+      "tests/official-rules.test.mjs"
+    ]
+  },
+  {
+    "characterId": 20,
+    "skillId": "OFFICIAL_CHAR_20_REACTIVE_INSPECTION",
+    "type": "PASSIVE_INSPECTED",
+    "sources": [
+      "character.json#20"
+    ],
+    "testIds": [
+      "tests/official-reactive.test.mjs"
+    ]
+  },
+  {
+    "characterId": 34,
+    "skillId": "official.34.night-block",
+    "type": "ACTIVE",
+    "sources": [
+      "character.json#34",
+      "VH08",
+      "VH10",
+      "VH24"
+    ],
+    "testIds": [
+      "tests/official-support.test.mjs"
+    ]
+  },
+  {
+    "characterId": 31,
+    "skillId": "official.31.guard",
+    "type": "ACTIVE",
+    "sources": [
+      "character.json#31"
+    ],
+    "testIds": [
+      "tests/official-support.test.mjs"
+    ]
+  },
+  {
+    "characterId": 9,
+    "skillId": "official.9.snow-protection",
+    "type": "ACTIVE",
+    "sources": [
+      "character.json#9"
+    ],
+    "testIds": [
+      "tests/official-support.test.mjs"
+    ]
+  },
+  {
+    "characterId": 79,
+    "skillId": "official.79.cancel-vote-reveal",
+    "type": "ACTIVE",
+    "sources": [
+      "character.json#79",
+      "PH-02",
+      "Q13-09"
+    ],
+    "testIds": [
+      "tests/sprint06-lifecycle.test.mjs:S06-07",
+      "tests/browser_s06_e2e.py"
+    ],
+    "rulesetScope": "RESTRICTED_ONLY_25_74_79_ONE_WOLF",
+    "competitive": false
+  }
+]

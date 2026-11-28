@@ -1,0 +1,11 @@
+"""Append bounded S22 evidence to copies of the existing obligations, never relax FULL."""
+from pathlib import Path
+import json
+p=Path('reports/v1.7.32'); load=lambda name:json.loads(Path(name).read_text()); prior=load('reports/BREAKTHROUGH_COMPLETION_CONTRACTS.json'); base={r['characterId']:r for r in prior['roles']}; atomic=load('reports/BB_PRIVACY_STABILITY_ATOMIC_COVERAGE.json')['branches']; a=load(p/'acceptance.json'); browser=load(p/'browser-results.json')['runs']; ranks=load(p/'FULL_ROLE_RANKING.json'); source=a['sourceFingerprint']; output=[]
+for r in ranks['ranking']:
+ if r['id'] not in ranks['wave1']:continue
+ i=r['id']; n=r['newBackend']; b=r['newBrowser']; bt=a['backend']['results'].get(n); fresh=[x for x in browser if x['suite']==b]; role=base.get(i)
+ existing=role['obligations'] if role else [dict(id=x['branchId'],condition=x['effect'],scope=x.get('remainingInteractions'),ruleSources=x.get('ruleProvenance'),status='HISTORICAL_ATOMIC_PASS' if x['historicalEvidenceRetained'] else 'UNCERTIFIED',requiredTests=x['requiredPassTests']) for x in atomic if x['characterId']==i]
+ scope='Approved v1.3.3 QA [8,25,26,28]: third-faction night death, revival with original identity and faction, actual hanging; minimal public event and replay' if i==26 else 'Approved v1.3.3 QA [25,28,37,74]: typed private inspection through one transposition; expiry, no public result, later actual hanging; SQLite and replay'
+ output.append(dict(characterId=i,ruleVersion='wolvesville-official-v1.3.3',contractVersion='1+S22-supplement',certification='PARTIAL',originalContractPreserved=True,originalObligations=existing,scopeAcceptance=[dict(id=f'S22-{i}-QA',scope=scope,code=r['code'],ruleSources=r['ruleSource'],backendTest=n,backendStatus=bt or 'MONOLITHIC_NOT_RECORDED',focusedEvidence='reports/v1.7.32/focused.log',browser=fresh,sourceFingerprint=source,fullCredit=False)],remaining=r['missing'],globalObligationsRetained=True,officialNormalGameplayPromotion=False))
+(p/'COMPLETION_CONTRACT_DELTA.json').write_text(json.dumps(dict(version='1.7.32',policy='Supplemental bounded QA evidence; inherited original obligations unchanged. No FULL or atomic certificate promotion.',roles=output),ensure_ascii=False,indent=2)+'\n')

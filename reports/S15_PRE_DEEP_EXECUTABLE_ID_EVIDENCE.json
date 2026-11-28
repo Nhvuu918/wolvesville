@@ -1,0 +1,851 @@
+{
+  "version": "1.7.4-s15-accelerated-wip",
+  "ids": [
+    {
+      "id": 3,
+      "name": "Sói Tiên Tri",
+      "reportedR31": false,
+      "correctedR31": false,
+      "reportedR34": false,
+      "newThisBatch": true,
+      "executedSkillIds": [
+        "passive.3.seer-aura"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 accelerated #3 passive aura concealment does not distort exact-role #74"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 5,
+      "name": "Thẩm Phán Linh Hồn",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.5.weigh-soul"
+      ],
+      "matrixEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S10-01 #5 source VH84 returns private unmodified verdict; #20 injures investigator in following night",
+        "S10-02 #5 two match-wide uses, deterministic replay and SQLite restart; cannot infer hanging"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 8,
+      "name": "Kỵ Sĩ Không Đầu",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.8.night-kill"
+      ],
+      "matrixEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S07-01 certified #8 night kill commits legitimate #8 sole-survivor match end, replay and ACL",
+        "S07-04 SQLite restart persists certified endgame, action, and player-facing result"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 9,
+      "name": "Thiên Sứ Tuyết",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.9.snow-protection"
+      ],
+      "matrixEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S05-04 #9 snow protection lasts two nights and cannot repeat any of three targets",
+        "S12 shield survives creator death and absorbs in following night; knight wins after hanging"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 11,
+      "name": "Thợ Rèn Cơ Khí",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.11.maintenance"
+      ],
+      "matrixEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S13-01 #11 maintenance protects #25 from #76 nightmare in a real game session"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 15,
+      "name": "Thần Tình Yêu Hắc Ám",
+      "reportedR31": false,
+      "correctedR31": false,
+      "reportedR34": false,
+      "newThisBatch": true,
+      "executedSkillIds": [
+        "official.15.single-kill"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 #15 single-target lethal branch commits official sole-survivor winner without binding"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 16,
+      "name": "Phù Thủy Cấm Kỵ",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.16.delayed-poison",
+        "official.16.antidote"
+      ],
+      "matrixEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S13-02 #16 antidote absorbs real #8 night attack; poison triggers next-night skill lock",
+        "S14 #16 two poison targets consume one use, faction-specific next-night effect"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 17,
+      "name": "Nữ Tu Huyết Thệ",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.17.day-judgment"
+      ],
+      "matrixEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S13-07 #17 public judgment reveals only the certified wolf and permanently disables the skill",
+        "S14 #17 judgment on villager causes persistent public-chat mute but no vote denial"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 20,
+      "name": "Sói Gai Độc",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "OFFICIAL_CHAR_20_REACTIVE_INSPECTION"
+      ],
+      "matrixEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S04 OFF20 inspected by both official seers: aura/role results private and next-night injury for each investigator",
+        "S04 OFF20 persists an injury through SQLite restart and duplicate action cannot double-apply it"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 23,
+      "name": "Xạ Thủ Linh Hồn",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.23.shield"
+      ],
+      "matrixEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S14 #23 one shield absorbs #36 fireball, then expires; persistence and private events"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 24,
+      "name": "Quản Ngục",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.24.jail"
+      ],
+      "matrixEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S13-03 #24 jail blocks inspection and absorbs a night attack; rule-private events"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 25,
+      "name": "Tiên Tri",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.25.inspect-role"
+      ],
+      "matrixEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)",
+        "tests/sprint15-gameplay-ux.test.mjs",
+        "tests/sprint15-seer-version.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "02C official pack: server assigns 25 and 74; each skill reveals only its approved aura or exact role to actor",
+        "02C official pack: sqlite restart and replay preserve private skill outcome, idempotency",
+        "S15 UX: seer aura and mystical seer exact role privately, public composition has no mapping, restart/replay"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 28,
+      "name": "Thằng Ngố",
+      "reportedR31": false,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "passive.28.hanged-victory"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-aura-expansion.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S11 real multiplayer: zero, tie, blank, changed ballot, retry, hanging, co-winners, restart and replay",
+        "S12 [8,25,28] night attack then hanging: simultaneous winners",
+        "S12 durable metric evidence 8,28"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 29,
+      "name": "Phù Thủy",
+      "reportedR31": false,
+      "correctedR31": false,
+      "reportedR34": false,
+      "newThisBatch": true,
+      "executedSkillIds": [
+        "official.29.poison"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 accelerated #29 poison consumes one use; death closure, private actor and replay",
+        "S15 #29 poison versus #67 shield: VH60 charges even when valid shield absorbs"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 31,
+      "name": "Bảo Vệ",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.31.guard"
+      ],
+      "matrixEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S05-03 #31 guard cannot select same target in consecutive nights but can after a gap",
+        "S05-06 SQLite restart preserves layer provenance, action status and deterministic replay"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 32,
+      "name": "Xạ Thủ",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.32.shoot"
+      ],
+      "matrixEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S14 #32 authoritative attack, retry, privacy and restart",
+        "S14 #32 day shot permitted, night shot in same round denied after shielded shot"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 33,
+      "name": "Sói Lừa Gạt",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.33.force-vote"
+      ],
+      "matrixEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S09-01 certified #33 server-side directive transforms a ballot with private audit but never hangs a player",
+        "S09-04 replay and frozen ACL remain valid after SQLite restart"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 34,
+      "name": "Sói Mộng Du",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.34.night-block"
+      ],
+      "matrixEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S05-01 #34 blocks accepted #9 action but not #25 Tiên Tri or #31 Bảo Vệ (VH10/VH24)",
+        "S05-02 #34 targeting #25/#31 does not lock protected named roles; #74 can be locked"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 36,
+      "name": "Pháp Sư",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.36.fireball",
+        "official.36.shield"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S14 #36 authoritative attack, retry, privacy and restart",
+        "S15 #36 shield absorbs knight attack, role feedback private, once per match",
+        "S15 #36 fire and unused shield may both be spent in one night, no false reveal"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 43,
+      "name": "Sói Bắn Tỉa",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.43.shoot"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 #43 two rounds two bullets, blocked then day shot, retry privacy restart"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 49,
+      "name": "Sói Ảo Ảnh",
+      "reportedR31": false,
+      "correctedR31": false,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.49.aura-illusion"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-aura-expansion.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 aura expansion #49 private distortion, expiry, duplicate and restart"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 50,
+      "name": "Sói Gây Tê",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.50.numb"
+      ],
+      "matrixEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S14 #50 public chat mute, WS/HTTP ACL, restart, expiry"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 52,
+      "name": "Chó Canh Gác",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.52.solo-dog"
+      ],
+      "matrixEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S14 #52 solo dog consumes protection and expires"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 54,
+      "name": "Người Canh Gác",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.54.shoot",
+        "official.54.reveal"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-aura-expansion.test.mjs",
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 #54 shot before voting, same-day exclusion, next-day reveal, retry and replay",
+        "S15 #54 true role reveal only after first completed vote; once, public minimal payload, replay"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 58,
+      "name": "Thám Tử Ác Ma",
+      "reportedR31": false,
+      "correctedR31": false,
+      "reportedR34": false,
+      "newThisBatch": true,
+      "executedSkillIds": [
+        "official.58.compare"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 #58 compares same faction privately, then self plus different faction kills only other"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 59,
+      "name": "Ná Thủ",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.59.stone"
+      ],
+      "matrixEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S13-06 #59 day injury prevents next-night action and cannot silently kill on repeat",
+        "S14 #59 second stone kills and reveals Ná Thủ only after second hit"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 66,
+      "name": "Người Gác Đêm",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.66.night-guard",
+        "passive.66.observe-protected"
+      ],
+      "matrixEvidence": [
+        "tests/sprint13-character-implementation.test.mjs",
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S13-04 #66 guard blocks lethal attack, persists and expires, uses 3 charges max",
+        "S15 #66 sees only other protection recipients, not source or own protection"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 67,
+      "name": "Thợ Rèn",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.67.shield",
+        "official.67.sword"
+      ],
+      "matrixEvidence": [
+        "tests/sprint13-character-implementation.test.mjs",
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S13-05 #67 shield blocks real attack; exactly two shields per game",
+        "S14 #67 authoritative attack, retry, privacy and restart",
+        "S14 #67 shield and sword both accepted in same night, valid shield blocks sword"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 68,
+      "name": "Sói Trẻ",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.68.mark"
+      ],
+      "matrixEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S14 #68 death-follow chain commits before certified knight victory",
+        "S14 #68 no preselected target means no secondary death (VH36)"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 71,
+      "name": "Sát Nhân Ảnh Thuật",
+      "reportedR31": false,
+      "correctedR31": false,
+      "reportedR34": false,
+      "newThisBatch": true,
+      "executedSkillIds": [
+        "official.71.disguise"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 #71 persistent disguise on living target changes aura only, next night still active"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 72,
+      "name": "Sói Pháp Sư",
+      "reportedR31": false,
+      "correctedR31": false,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.72.aura-curse"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-aura-expansion.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 aura expansion #72 private distortion, expiry, duplicate and restart"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 74,
+      "name": "Tiên Tri Huyền Bí",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.74.inspect-role"
+      ],
+      "matrixEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "02C official pack: server assigns 25 and 74; each skill reveals only its approved aura or exact role to actor",
+        "02C official pack: sqlite restart and replay preserve private skill outcome, idempotency",
+        "S15 UX: seer aura and mystical seer exact role privately, public composition has no mapping, restart/replay"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 76,
+      "name": "Sói Ác Mộng",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.76.nightmare"
+      ],
+      "matrixEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S10-03 #76 current-night nightmare cancels queued skills, privately informs victim, consumes only two match uses"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 77,
+      "name": "Thợ Săn Quái Thú",
+      "reportedR31": false,
+      "correctedR31": false,
+      "reportedR34": false,
+      "newThisBatch": true,
+      "executedSkillIds": [
+        "official.77.trap"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 #77 VH51 trap absorbs one lethal attack and counter kills knight without public cause"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 78,
+      "name": "Nhà Thiên Văn Học",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.78.meteor"
+      ],
+      "matrixEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S14 #78 authoritative attack, retry, privacy and restart"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 79,
+      "name": "Sói Hòa Bình",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.79.cancel-vote-reveal"
+      ],
+      "matrixEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S06-07 #79 cancels ongoing day vote, reveals target only to wolf, phase returns to next night (PH-02)",
+        "S08-G08 cancelled day flows to round two, skill #79 never becomes available again, no fabricated elimination"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 80,
+      "name": "Nghệ Sĩ Vĩ Cầm",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.80.compare"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 #80 Không Tiếc Thương, previous-night death only, private relation, restart",
+        "S15 #80 Tiếc Thương, previous-night death only, private relation, restart"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 84,
+      "name": "Phù Thủy Câm",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.84.silence"
+      ],
+      "matrixEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S14 #84 public chat mute, WS/HTTP ACL, restart, expiry"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 87,
+      "name": "Dược Sĩ",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.87.sedative"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 #87 sedative denies chat and ballot intake, expires next day, blank tally is official"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 88,
+      "name": "Thợ Săn",
+      "reportedR31": true,
+      "correctedR31": true,
+      "reportedR34": true,
+      "newThisBatch": false,
+      "executedSkillIds": [
+        "official.88.pin"
+      ],
+      "matrixEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S14 #88 death-follow chain commits before certified knight victory"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 93,
+      "name": "Sói Lưu Đày",
+      "reportedR31": false,
+      "correctedR31": false,
+      "reportedR34": false,
+      "newThisBatch": true,
+      "executedSkillIds": [
+        "official.93.seal"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 accelerated #93 seal and #94 passive concealment, lock expiry and vote/chat enforcement"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    },
+    {
+      "id": 94,
+      "name": "Kẻ Giải Nguyền",
+      "reportedR31": false,
+      "correctedR31": false,
+      "reportedR34": false,
+      "newThisBatch": true,
+      "executedSkillIds": [
+        "passive.94.conceal-aura"
+      ],
+      "matrixEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "cleanBackendPassedCaseNames": [
+        "S15 accelerated #93 seal and #94 passive concealment, lock expiry and vote/chat enforcement"
+      ],
+      "proofLog": "reports/s15-accelerated/clean-full.log",
+      "scope": "RESTRICTED; test names are evidence index, not full role certificate"
+    }
+  ]
+}

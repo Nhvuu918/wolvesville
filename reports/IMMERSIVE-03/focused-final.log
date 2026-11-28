@@ -1,0 +1,140 @@
+TAP version 13
+# (node:8255) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Career derived metrics deduplicate and separate scopes, preserve real winner and initial role
+ok 1 - Career derived metrics deduplicate and separate scopes, preserve real winner and initial role
+  ---
+  duration_ms: 8.307541
+  type: 'test'
+  ...
+# Subtest: Five inherited relationship badge thresholds and boundary conditions
+ok 2 - Five inherited relationship badge thresholds and boundary conditions
+  ---
+  duration_ms: 11.029251
+  type: 'test'
+  ...
+# Subtest: Room full notices delivered once to all members, own career empty, unauthorized denied
+ok 3 - Room full notices delivered once to all members, own career empty, unauthorized denied
+  ---
+  duration_ms: 1307.809778
+  type: 'test'
+  ...
+# (node:8257) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Immersive: profile, requests, private feed, likes, comments, block and restart
+ok 4 - Immersive: profile, requests, private feed, likes, comments, block and restart
+  ---
+  duration_ms: 2515.886637
+  type: 'test'
+  ...
+# Subtest: Immersive: rule lookup uses public sources, no session state or provider claims
+ok 5 - Immersive: rule lookup uses public sources, no session state or provider claims
+  ---
+  duration_ms: 403.787967
+  type: 'test'
+  ...
+# Subtest: Immersive: validated media, persistence and empty history
+ok 6 - Immersive: validated media, persistence and empty history
+  ---
+  duration_ms: 1740.680784
+  type: 'test'
+  ...
+# Subtest: ordinary declared choices count latest votes only; no effective ballot, secret weight or voter identity
+ok 7 - ordinary declared choices count latest votes only; no effective ballot, secret weight or voter identity
+  ---
+  duration_ms: 10.329659
+  type: 'test'
+  ...
+# Subtest: scope is opt-in and excludes hidden-vote/unknown roles; old games have no new public data
+ok 8 - scope is opt-in and excludes hidden-vote/unknown roles; old games have no new public data
+  ---
+  duration_ms: 0.294477
+  type: 'test'
+  ...
+# Subtest: phase start is stable across commits, restart and reconnect; no invented deadline
+ok 9 - phase start is stable across commits, restart and reconnect; no invented deadline
+  ---
+  duration_ms: 12.864829
+  type: 'test'
+  ...
+# Subtest: own vote journal records each accepted revision without leaking another player
+ok 10 - own vote journal records each accepted revision without leaking another player
+  ---
+  duration_ms: 8.542693
+  type: 'test'
+  ...
+# (node:8296) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: IMMERSIVE03 ordinary public voting: multi-client changes, restart, journal ACL, tie and reset
+ok 11 - IMMERSIVE03 ordinary public voting: multi-client changes, restart, journal ACL, tie and reset
+  ---
+  duration_ms: 7160.074838
+  type: 'test'
+  ...
+# (node:8333) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Cloud configuration binds hosting port, fails closed for QA, demo, sqlite, unapproved release and bad URLs
+ok 12 - Cloud configuration binds hosting port, fails closed for QA, demo, sqlite, unapproved release and bad URLs
+  ---
+  duration_ms: 2.031457
+  type: 'test'
+  ...
+# Subtest: Readiness probe runs a real database check and returns only generic state
+ok 13 - Readiness probe runs a real database check and returns only generic state
+  ---
+  duration_ms: 78.876827
+  type: 'test'
+  ...
+# (node:8368) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Image post ACL, realtime reaction/comment notification, duplicate retry, restart and delete
+ok 14 - Image post ACL, realtime reaction/comment notification, duplicate retry, restart and delete
+  ---
+  duration_ms: 2354.512036
+  type: 'test'
+  ...
+# Subtest: STARTUP-01 SQLite launches without DATABASE_URL from a real clean database
+ok 15 - STARTUP-01 SQLite launches without DATABASE_URL from a real clean database
+  ---
+  duration_ms: 1484.365616
+  type: 'test'
+  ...
+# Subtest: STARTUP-02 PostgreSQL mode refuses missing URL without opening SQLite or disclosing credentials
+ok 16 - STARTUP-02 PostgreSQL mode refuses missing URL without opening SQLite or disclosing credentials
+  ---
+  duration_ms: 705.202767
+  type: 'test'
+  ...
+# Subtest: STARTUP-03 unknown provider and invalid port fail fast
+ok 17 - STARTUP-03 unknown provider and invalid port fail fast
+  ---
+  duration_ms: 1709.786477
+  type: 'test'
+  ...
+# Subtest: STARTUP-04 occupied port returns diagnostic without killing the original server
+ok 18 - STARTUP-04 occupied port returns diagnostic without killing the original server
+  ---
+  duration_ms: 2404.366014
+  type: 'test'
+  ...
+# Subtest: STARTUP-05 correct demo env flag, production remains disabled
+ok 19 - STARTUP-05 correct demo env flag, production remains disabled
+  ---
+  duration_ms: 2437.850054
+  type: 'test'
+  ...
+# Subtest: STARTUP-06 local .env is read; sqlite does not require a PostgreSQL URL
+ok 20 - STARTUP-06 local .env is read; sqlite does not require a PostgreSQL URL
+  ---
+  duration_ms: 195.906805
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 18860.756289

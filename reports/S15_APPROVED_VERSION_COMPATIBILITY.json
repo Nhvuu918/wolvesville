@@ -1,0 +1,12 @@
+{
+  "newGameDefault": "wolvesville-official-v1.3.3",
+  "previousVersion": "wolvesville-official-v1.3.2",
+  "legacySeerVersion": "wolvesville-official-v1.3.1",
+  "versionBoundAtStart": true,
+  "historicalEventReinterpretation": false,
+  "testEvidence": [
+    "QD01 historical active game stays 1.3.2 after restart; old winner behavior and replay unchanged",
+    "S15 owner correction: historical v1.3.1 sessions retain exact role and valid replay; new sessions use aura"
+  ],
+  "scope": "Actual SQLite games and replay verified for these supported versions; no production PostgreSQL migration certification. Archived suite run with server-only WV_ARCHIVED_RULE_REGRESSION=1; default new version acceptance uses separate tests."
+}

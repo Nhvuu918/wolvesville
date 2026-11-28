@@ -1,0 +1,24 @@
+TAP version 13
+# (node:64671) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S22 \#25/\#74/\#37: shared transposition preserves typed private inspection, expiry, restart and actual hanging
+ok 1 - S22 \#25/\#74/\#37: shared transposition preserves typed private inspection, expiry, restart and actual hanging
+  ---
+  duration_ms: 880.009138
+  type: 'test'
+  ...
+# Subtest: S22 VH73 \#26: third faction \#28 night death, revival, real hanging victory and closed death ledger
+ok 2 - S22 VH73 \#26: third faction \#28 night death, revival, real hanging victory and closed death ledger
+  ---
+  duration_ms: 776.592047
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1841.601065

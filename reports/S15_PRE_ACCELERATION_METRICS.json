@@ -1,0 +1,213 @@
+{
+  "continuation": {
+    "priorVersion": "1.7.2-s15-ux-wip",
+    "priorR": 31,
+    "priorF": 0,
+    "priorA": 8,
+    "priorB": 6,
+    "priorC": 0,
+    "addedIds": [
+      28,
+      49,
+      72
+    ],
+    "priorMetricSource": "Archived v1.7.2 report (reference only); current evidence reexecuted"
+  },
+  "version": "1.7.3-s15-expansion-wip",
+  "scope": "Restricted QA sessions; competitive NO-GO",
+  "metricR": {
+    "baseline": 27,
+    "executableCharacters": 34,
+    "totalCharacters": 97,
+    "ids": [
+      5,
+      8,
+      9,
+      11,
+      16,
+      17,
+      20,
+      23,
+      24,
+      25,
+      28,
+      31,
+      32,
+      33,
+      34,
+      36,
+      43,
+      49,
+      50,
+      52,
+      54,
+      59,
+      66,
+      67,
+      68,
+      72,
+      74,
+      76,
+      78,
+      79,
+      80,
+      84,
+      87,
+      88
+    ],
+    "newCharacters": [
+      28,
+      43,
+      49,
+      54,
+      72,
+      80,
+      87
+    ]
+  },
+  "metricF": {
+    "fullyImplemented": 0,
+    "certified": false
+  },
+  "metricS": {
+    "newVerifiedBranches": 10,
+    "exactRatio": null,
+    "reason": "Inherited composite rows not an atomic denominator; source-mapped new skills/passive branches only; no overall ratio certified"
+  },
+  "metricA": 10,
+  "completedDecks": [
+    "8,25",
+    "8,28",
+    "8,9,25",
+    "8,9,28",
+    "8,25,28",
+    "8,9,25,28",
+    "8,28,74",
+    "8,25,74",
+    "8,25,68",
+    "8,25,88"
+  ],
+  "metricB": 8,
+  "metricC": 0,
+  "evidence": [
+    {
+      "id": 49,
+      "branch": "illusion.global-aura",
+      "skill": "official.49.aura-illusion",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 72,
+      "branch": "curse.single-aura",
+      "skill": "official.72.aura-curse",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 54,
+      "branch": "shoot.day-before-vote",
+      "skill": "official.54.shoot",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 28,
+      "branch": "passive.hanged-victory",
+      "skill": "passive.28.hanged-victory",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 36,
+      "branch": "shield.success-private",
+      "skill": "official.36.shield",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 66,
+      "branch": "observe.other-protected",
+      "skill": "passive.66.observe-protected",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 43,
+      "branch": "shoot.day-night",
+      "skill": "official.43.shoot",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 87,
+      "branch": "sedative.chat-and-vote",
+      "skill": "official.87.sedative",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 54,
+      "branch": "reveal.public-after-first-vote",
+      "skill": "official.54.reveal",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 80,
+      "branch": "compare.different-faction",
+      "skill": "official.80.compare",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    },
+    {
+      "id": 80,
+      "branch": "compare.same-faction",
+      "skill": "official.80.compare",
+      "restart": true,
+      "replay": true,
+      "privacy": true
+    }
+  ],
+  "matchEvidence": [
+    {
+      "ids": [
+        8,
+        28,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    },
+    {
+      "ids": [
+        8,
+        25,
+        74
+      ],
+      "completed": true,
+      "voteChain": true,
+      "restartReplay": true,
+      "privacy": true,
+      "multiClient": true,
+      "branchComplete": false
+    }
+  ],
+  "qa": {
+    "exit": 0
+  }
+}

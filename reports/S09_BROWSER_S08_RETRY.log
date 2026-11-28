@@ -1,0 +1,13 @@
+
+> wolvesville-sprint09-voting-multiround@1.1.0-s09 test:browser:08:gameplay
+> npm run build && node scripts/run-browser-s06.mjs browser_s08_gameplay_e2e.py
+
+
+> wolvesville-sprint09-voting-multiround@1.1.0-s09 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+S08_GAMEPLAY_BROWSER_PASS: two official roles server-assigned, private projections, real skill capability
+S08_GAMEPLAY_BROWSER_PASS: action accepted but not shown as resolved or winner
+S08_GAMEPLAY_BROWSER_PASS: certified elimination and winner after commit; UI, WS, reconnect, winner ACL
+S06_BROWSER_PASS browser_s08_gameplay_e2e.py
+S06_BROWSER_ALL_1_PASS

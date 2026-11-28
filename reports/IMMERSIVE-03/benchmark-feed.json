@@ -1,0 +1,21 @@
+{
+  "workload": "50 posts, 500 comments; SQLite in-memory, same fixture, 20 warmup + 100 interleaved runs/version; repository only, not browser/network",
+  "result": [
+    {
+      "version": "IMMERSIVE-02",
+      "queriesPerRequest": [
+        51
+      ],
+      "medianMs": 3.823,
+      "p95Ms": 11.293
+    },
+    {
+      "version": "IMMERSIVE-03",
+      "queriesPerRequest": [
+        2
+      ],
+      "medianMs": 3.094,
+      "p95Ms": 7.406
+    }
+  ]
+}

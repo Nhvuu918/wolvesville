@@ -1,0 +1,50 @@
+E2E_SCHEDULER_WAIT exclusive 21717
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 973
+E2E_RESOURCE start cpu "usage_usec 6237764898\nuser_usec 5294149463\nsystem_usec 943615434\nnice_usec 1167608\nnr_periods 39108\nnr_throttled 8648\nthrottled_usec 518581501\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_full5_prolongation_e2e.py default port 41083 db /tmp/wolvesville-s06-browser-v9e5wh/test.sqlite
+SCENARIO_READY full5-ferry
+Traceback (most recent call last):
+  File "/tmp/wv6/tests/browser_full5_prolongation_e2e.py", line 58, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/tmp/wv6/tests/browser_full5_prolongation_e2e.py", line 55, in run
+    scenario('full5-ferry',[8,25,51,64,97],case)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/wv6/tests/browser_full5_prolongation_e2e.py", line 35, in scenario
+    print('SCENARIO_READY',deck,flush=True);fn(roles,action,resolve,host);print('SCENARIO_ACTIONS_PASS',deck,flush=True)
+                                            ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/wv6/tests/browser_full5_prolongation_e2e.py", line 48, in case
+    a.locator('.hud-slot.active-role .muted').filter(has_text='Được kéo dài sự sống').wait_for();a.screenshot(path=str(shots/'ferry-prolonged.png'))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 18080, in wait_for
+    self._sync(self._impl_obj.wait_for(timeout=timeout, state=state))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_locator.py", line 710, in wait_for
+    await self._frame.wait_for_selector(
+        self._selector, strict=True, timeout=timeout, state=state
+    )
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_text("Được kéo dài sự sống", exact=True).first to be visible
+
+Error: E2E failed browser_full5_prolongation_e2e.py, exit=1, signal=null
+    at file:///tmp/wv6/scripts/run-browser-s06.mjs:70:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+E2E_RESOURCE end cpu "usage_usec 6498355875\nuser_usec 5514062977\nsystem_usec 984292898\nnice_usec 1197419\nnr_periods 39760\nnr_throttled 9287\nthrottled_usec 564039131\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

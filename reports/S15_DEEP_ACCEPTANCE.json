@@ -1,0 +1,425 @@
+{
+  "version": "1.7.5-s15-deep-wip",
+  "baseline": {
+    "version": "1.7.4-s15-accelerated-wip",
+    "zipFiles": 1342,
+    "zipSHA256": "76972990f224597e4dbec2c32c3d89f487bc5c0309a73728dd8a55b02c887542",
+    "crc": "PASS",
+    "backend": {
+      "exitCode": 0,
+      "log": "reports/s15-deep/baseline-backend.log",
+      "tests": 267,
+      "pass": 256,
+      "fail": 0,
+      "skipped": 11,
+      "cancelled": 0,
+      "status": "PASS"
+    }
+  },
+  "sourceIntegrity": 0,
+  "build": 0,
+  "rulesBuild": 0,
+  "cleanBackend": {
+    "exitCode": 0,
+    "log": "reports/s15-deep/clean-backend.log",
+    "tests": 278,
+    "pass": 267,
+    "fail": 0,
+    "skipped": 11,
+    "cancelled": 0,
+    "status": "PASS"
+  },
+  "cleanMetrics": {
+    "exitCode": 0,
+    "log": "reports/s15-deep/clean-metrics.log",
+    "tests": 103,
+    "pass": 103,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "status": "PASS"
+  },
+  "newIntegration": {
+    "pass": 11,
+    "fail": 0,
+    "log": "reports/s15-deep/integration4.log"
+  },
+  "metrics": {
+    "R": 44,
+    "F": 0,
+    "S_identified": 21,
+    "S_atomicSubset": {
+      "auditedRoles": 11,
+      "verifiedDenominator": 24,
+      "executedTested": 21,
+      "restrictedCoverage": 0.875,
+      "unresolvedRoleIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        59,
+        60,
+        61,
+        62,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        75,
+        76,
+        77,
+        78,
+        80,
+        81,
+        82,
+        83,
+        84,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "globalDenominatorCertified": false
+    },
+    "A": 24,
+    "B": 18,
+    "C": 0
+  },
+  "browserManifest": 29,
+  "browserCounts": {
+    "PASS": 29,
+    "FAIL": 0,
+    "UNCLEAN": 0,
+    "INCOMPLETE": 0,
+    "NOT_RUN": 0
+  },
+  "browserSuites": [
+    {
+      "suite": "browser_s12_attack_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s12_attack_e2e.py.log"
+    },
+    {
+      "suite": "browser_s11_voting_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s11_voting_e2e.py.log"
+    },
+    {
+      "suite": "browser_s11_seer_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s11_seer_e2e.py.log"
+    },
+    {
+      "suite": "browser_s10_gameplay_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s10_gameplay_e2e.py.log"
+    },
+    {
+      "suite": "browser_s09_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s09_e2e.py.log"
+    },
+    {
+      "suite": "browser_s08_gameplay_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s08_gameplay_e2e.py.log"
+    },
+    {
+      "suite": "browser_s07_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s07_e2e.py.log"
+    },
+    {
+      "suite": "browser_s06_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s06_e2e.py.log"
+    },
+    {
+      "suite": "browser_s05_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s05_e2e.py.log"
+    },
+    {
+      "suite": "browser_lobby_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_lobby_e2e.py.log"
+    },
+    {
+      "suite": "browser_codex_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_codex_e2e.py.log"
+    },
+    {
+      "suite": "browser_demo_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_demo_e2e.py.log"
+    },
+    {
+      "suite": "browser_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_e2e.py.log"
+    },
+    {
+      "suite": "browser_ux_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_ux_e2e.py.log"
+    },
+    {
+      "suite": "browser_s13_skills_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s13_skills_e2e.py.log"
+    },
+    {
+      "suite": "browser_s14_gameplay_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s14_gameplay_e2e.py.log"
+    },
+    {
+      "suite": "browser_s14_transport_regression.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s14_transport_regression.py.log"
+    },
+    {
+      "suite": "browser_s15_protection_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s15_protection_e2e.py.log"
+    },
+    {
+      "suite": "browser_s15_voting_information_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s15_voting_information_e2e.py.log"
+    },
+    {
+      "suite": "browser_s15_gameplay_ux_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s15_gameplay_ux_e2e.py.log"
+    },
+    {
+      "suite": "browser_s15_aura_expansion_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s15_aura_expansion_e2e.py.log"
+    },
+    {
+      "suite": "browser_s15_guard_shot_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s15_guard_shot_e2e.py.log"
+    },
+    {
+      "suite": "browser_s15_accelerated_witch_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s15_accelerated_witch_e2e.py.log"
+    },
+    {
+      "suite": "browser_s15_accelerated_exile_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s15_accelerated_exile_e2e.py.log"
+    },
+    {
+      "suite": "browser_s15_accelerated_combat_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s15_accelerated_combat_e2e.py.log"
+    },
+    {
+      "suite": "browser_s15_deep_rescue_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s15_deep_rescue_e2e.py.log"
+    },
+    {
+      "suite": "browser_s15_deep_redirect_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s15_deep_redirect_e2e.py.log"
+    },
+    {
+      "suite": "browser_s15_deep_pair_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s15_deep_pair_e2e.py.log"
+    },
+    {
+      "suite": "browser_s15_deep_jester_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/browser/browser_s15_deep_jester_e2e.py.log"
+    }
+  ],
+  "cleanBrowserSpotChecks": [
+    {
+      "suite": "browser_s15_deep_rescue_e2e.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/clean-browser_s15_deep_rescue_e2e.py.log"
+    },
+    {
+      "suite": "browser_s14_transport_regression.py",
+      "status": "PASS",
+      "exitCode": 0,
+      "cleanupWarning": false,
+      "completionMarker": true,
+      "log": "reports/s15-deep/clean-browser_s14_transport_regression.py.log"
+    }
+  ],
+  "immutableVerified": [
+    "data/character.json",
+    "frontend/character.json",
+    "data/rules/official_merged_118.json",
+    "data/rules/tests_207.json",
+    "data/rules/sprint15_owner_seer_correction.json"
+  ],
+  "payloadFiles": 343,
+  "candidateApplicationAndTestsDiffs": [],
+  "reportOnlyCorrection": "Historical acceleration delta field pinned to archived 1.7.4 evidence; metrics rerun on clean candidate with corrected reporting script; backend and browser source unchanged.",
+  "postgresql": "PENDING — 11 skipped; no live environment configured",
+  "competitive": "NO-GO",
+  "fullRole": "NOT_CERTIFIED",
+  "branchComplete": "NOT_CERTIFIED",
+  "scope": "Restricted official QA configurations, not unrestricted competitive matches. All-browser evidence on same payload with isolated SQLite in dev workspace; clean candidate spot checks separate."
+}

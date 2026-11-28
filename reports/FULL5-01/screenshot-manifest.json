@@ -1,0 +1,93 @@
+[
+  {
+    "path": "reports/FULL5-01/browser-inspection/mystic-converted-villager.png",
+    "sha256": "82209db5bab4e21c0acf30c70a11c538f9fb7752982e2dccf68fa7356a8ff57b",
+    "sourceFingerprint": "f71c79111997a3287531c7cbf960f84ca256900020b93eeb86c3a967476f88ec",
+    "scenario": "browser_full5_transformed_inspection_e2e.py",
+    "mode": "INTEGRATION_TEST",
+    "characterIds": [
+      8,
+      25,
+      27,
+      64,
+      74
+    ],
+    "suiteStatus": "PASS",
+    "note": "Actual Chromium screenshot; exact private result verified via DOM assertion in suite."
+  },
+  {
+    "path": "reports/FULL5-01/browser-normal/normal-bell-private.png",
+    "sha256": "664b59268e3619d0d02da1f360ca8b7c2000766991392268b8fe100be6906663",
+    "sourceFingerprint": "f71c79111997a3287531c7cbf960f84ca256900020b93eeb86c3a967476f88ec",
+    "scenario": "browser_full50_universal_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "characterIds": [
+      8,
+      25,
+      31,
+      64
+    ],
+    "suiteStatus": "PASS",
+    "note": "Actual Chromium screenshot; exact private result verified via DOM assertion in suite."
+  },
+  {
+    "path": "reports/FULL5-01/browser-normal/normal-config.png",
+    "sha256": "23cabde44dcdf07c6bd34db6e915699831ec3d790ae324249df710e0ae7d9a74",
+    "sourceFingerprint": "f71c79111997a3287531c7cbf960f84ca256900020b93eeb86c3a967476f88ec",
+    "scenario": "browser_full50_universal_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "characterIds": [
+      8,
+      25,
+      31,
+      64
+    ],
+    "suiteStatus": "PASS",
+    "note": "Actual Chromium screenshot; exact private result verified via DOM assertion in suite."
+  },
+  {
+    "path": "reports/FULL5-01/browser-normal/normal-endgame.png",
+    "sha256": "baabd04ec6589439b5eb63adf03b3695594ecb47e8bf7ec851aa73064672a0cc",
+    "sourceFingerprint": "f71c79111997a3287531c7cbf960f84ca256900020b93eeb86c3a967476f88ec",
+    "scenario": "browser_full50_universal_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "characterIds": [
+      8,
+      25,
+      31,
+      64
+    ],
+    "suiteStatus": "PASS",
+    "note": "Actual Chromium screenshot; exact private result verified via DOM assertion in suite."
+  },
+  {
+    "path": "reports/FULL5-01/browser-normal/normal-guard-action.png",
+    "sha256": "f82f61076e37b08fb54b2879dd9adbe765185cfd1c7b23cb0079fcfbac632461",
+    "sourceFingerprint": "f71c79111997a3287531c7cbf960f84ca256900020b93eeb86c3a967476f88ec",
+    "scenario": "browser_full50_universal_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "characterIds": [
+      8,
+      25,
+      31,
+      64
+    ],
+    "suiteStatus": "PASS",
+    "note": "Actual Chromium screenshot; exact private result verified via DOM assertion in suite."
+  },
+  {
+    "path": "reports/FULL5-01/browser-normal/normal-guard-no-bell.png",
+    "sha256": "5e47686638181e6847d20f753088b93b31fa51ff8ed52f0c7e5ca05e1272b43d",
+    "sourceFingerprint": "f71c79111997a3287531c7cbf960f84ca256900020b93eeb86c3a967476f88ec",
+    "scenario": "browser_full50_universal_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "characterIds": [
+      8,
+      25,
+      31,
+      64
+    ],
+    "suiteStatus": "PASS",
+    "note": "Actual Chromium screenshot; exact private result verified via DOM assertion in suite."
+  }
+]

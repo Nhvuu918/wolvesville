@@ -1,0 +1,97 @@
+{
+  "version": "1.7.6-s15-breakthrough-wip",
+  "nodes": [
+    {
+      "id": "hanging-immunity",
+      "implementedFor": [
+        8,
+        19,
+        55
+      ],
+      "status": "RESTRICTED",
+      "missing": [
+        "competing modifiers",
+        "village attacks",
+        "post-death stone"
+      ]
+    },
+    {
+      "id": "swap",
+      "implementedFor": [
+        37
+      ],
+      "status": "RESTRICTED",
+      "missing": [
+        "exact-role swap",
+        "night attacks",
+        "cycles/overlap"
+      ]
+    },
+    {
+      "id": "alignment",
+      "implementedFor": [
+        93,
+        94
+      ],
+      "status": "RESTRICTED",
+      "missing": [
+        "pack action",
+        "post-conversion aura",
+        "group ACL",
+        "general victory"
+      ]
+    },
+    {
+      "id": "preliminary-rescue",
+      "implementedFor": [
+        29
+      ],
+      "status": "INHERITED_RESTRICTED",
+      "missing": [
+        "multiple attacks",
+        "linked rescue",
+        "resource x2"
+      ]
+    },
+    {
+      "id": "victory",
+      "implementedFor": [
+        8,
+        15,
+        28,
+        58,
+        55,
+        79
+      ],
+      "status": "RESTRICTED",
+      "missing": [
+        "village predicate",
+        "dead wolf winners",
+        "post-hanging #88/#33",
+        "general simultaneous closure"
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "hanging-immunity",
+      "victory"
+    ],
+    [
+      "swap",
+      "hanging-immunity"
+    ],
+    [
+      "swap",
+      "victory"
+    ],
+    [
+      "alignment",
+      "victory"
+    ],
+    [
+      "preliminary-rescue",
+      "victory"
+    ]
+  ]
+}

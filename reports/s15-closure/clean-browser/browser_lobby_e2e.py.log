@@ -1,0 +1,9 @@
+PASS Lobby pointer: center/label/icon/padding each opens correct room details in ONE click without joining
+PASS Lobby keyboard: Enter and Space activate the semantic room marker
+PASS Lobby repeated click: double-activation never changes room membership
+PASS Lobby locked room: visible but Join disabled; unlock refresh restores action
+PASS Lobby join: explicit Join mutates backend membership and both WebSocket clients synchronize
+PASS Lobby mobile tap: one tap opens FULL room, Join disabled, no horizontal overflow
+PASS Lobby stable marker identity after refresh; no page JavaScript errors
+S06_BROWSER_PASS browser_lobby_e2e.py
+S06_BROWSER_ALL_1_PASS

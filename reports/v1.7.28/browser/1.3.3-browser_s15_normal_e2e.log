@@ -1,0 +1,56 @@
+E2E_SCHEDULER_WAIT exclusive 14157
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 764
+E2E_RESOURCE start cpu "usage_usec 3531505920\nuser_usec 2884481381\nsystem_usec 647024539\nnice_usec 149411\nnr_periods 21968\nnr_throttled 1733\nthrottled_usec 66727429\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s15_normal_e2e.py aura-village port 42821 db /tmp/wolvesville-s06-browser-KZYrki/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS aura-village
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py aura-village
+E2E_ISOLATION browser_s15_normal_e2e.py aura-knight port 45641 db /tmp/wolvesville-s06-browser-4ns0yn/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS aura-knight
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py aura-knight
+E2E_ISOLATION browser_s15_normal_e2e.py role-village port 43669 db /tmp/wolvesville-s06-browser-7eypbP/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS role-village
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py role-village
+E2E_ISOLATION browser_s15_normal_e2e.py role-knight port 35499 db /tmp/wolvesville-s06-browser-8QeYLe/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS role-knight
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py role-knight
+E2E_ISOLATION browser_s15_normal_e2e.py aura-handoff-village port 42113 db /tmp/wolvesville-s06-browser-EWTcG8/test.sqlite
+Traceback (most recent call last):
+  File "/tmp/wv28/tests/browser_s15_normal_e2e.py", line 81, in <module>
+    if __name__=='__main__':run(sys.argv[1])
+                            ~~~^^^^^^^^^^^^^
+  File "/tmp/wv28/tests/browser_s15_normal_e2e.py", line 67, in run
+    host.get_by_role('button',name='Mở lượt ghi nhận phiếu').click();seer.wait_for_function('WolvesLive.game.phase==="DAY_VOTE_COLLECT"');seer.wait_for_function('!WolvesLive.working');tid=knight.evaluate('WolvesLive.profile.id');seer.evaluate('(id)=>WolvesLive.chooseTarget(11000+WolvesLive.localSeatToId.indexOf(id))',tid);seer.wait_for_function('(id)=>WolvesLive.selectedTarget===id',arg=tid);seer.get_by_role('button',name='Gửi / đổi phiếu').click();seer.wait_for_function('(id)=>!WolvesLive.working&&WolvesLive.game.voting.ownBallot?.targetId===id',arg=tid);host.wait_for_function('!WolvesLive.working');host.get_by_role('button',name='Khóa phiếu và xét kết quả').click();winner=seer
+                                                                                                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 11595, in wait_for_function
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.wait_for_function(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_page.py", line 1110, in wait_for_function
+    return await self._main_frame.wait_for_function(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 878, in wait_for_function
+    await self._channel.send("waitForFunction", self._timeout, params)
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_function: Timeout 30000ms exceeded.
+Error: E2E failed browser_s15_normal_e2e.py, exit=1, signal=null
+    at file:///tmp/wv28/scripts/run-browser-s06.mjs:70:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+E2E_RESOURCE end cpu "usage_usec 3719472126\nuser_usec 3029249291\nsystem_usec 690222834\nnice_usec 149411\nnr_periods 22829\nnr_throttled 1790\nthrottled_usec 68519071\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

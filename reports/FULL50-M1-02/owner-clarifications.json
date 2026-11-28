@@ -1,0 +1,18 @@
+[
+  {
+    "id": "FULL50-CLARIFY-08",
+    "choice": "A",
+    "status": "OWNER_APPROVED_IMPLEMENTATION_OPEN",
+    "source": "reports/FULL50-M1-02/OWNER_AUTONOMOUS_DIRECTIVE.txt",
+    "exact": "Khi Thầy Đồng chọn người không được phép hồi sinh:\n\n- Không tiêu hao lượt hồi sinh.\n- Không tiết lộ thân phận mục tiêu.\n- Thông báo thất bại riêng vào sáng hôm sau.\n- Được chọn người khác từ đêm tiếp theo.\n- Không cho phép liên tục thử nhiều mục tiêu trong cùng đêm để dò thân phận.",
+    "active": false
+  },
+  {
+    "id": "FULL50-CLARIFY-47",
+    "choice": "A",
+    "status": "OWNER_APPROVED_IMPLEMENTATION_OPEN",
+    "source": "reports/FULL50-M1-02/OWNER_AUTONOMOUS_DIRECTIVE.txt",
+    "exact": "Nếu mục tiêu cắn của bầy Sói thay đổi phe hợp lệ trước khi hành động được commit:\n\n- Thu hồi lựa chọn không còn hợp lệ.\n- Giữ các lựa chọn vẫn hợp lệ.\n- Gửi yêu cầu chọn lại riêng cho người có lựa chọn không hợp lệ tại thời điểm chốt.\n- Không công bố lý do, danh tính bí mật hoặc nguồn gây thay đổi.\n- Tiếp tục quy trình đồng thuận của bầy Sói.\n- Không sửa hành động đã commit.\n\nTôi chấp nhận khả năng suy luận tối thiểu phát sinh từ việc phải chọn lại trong phạm vi quyết định này.\n\nBạn có quyền thiết kế giao thức phù hợp để giảm tối đa khả năng rò rỉ thông tin.\n\nKhông mở rộng ngoại lệ này sang những thông tin bí mật khác.\n\nHai quyết định trên không cần hỏi lại.",
+    "active": false
+  }
+]

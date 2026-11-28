@@ -1,0 +1,159 @@
+{
+  "recordId": "WV-RD-BB-2026-01",
+  "approvedOn": "2026-11-25",
+  "policyStatus": "OWNER_APPROVED",
+  "releaseStatus": "PENDING_IMPLEMENTATION_AND_ACCEPTANCE",
+  "baseRuleset": "wolvesville-official-v1.3.3",
+  "proposedRuleset": "wolvesville-official-v1.3.4",
+  "effectiveAt": null,
+  "officialActivation": false,
+  "source": "Owner record in current conversation, 8 articles, 25/11/2026",
+  "supersedesPreparation": "owner_bb_release_readiness_draft.json",
+  "decisions": [
+    {
+      "id": "DEC-BT-01",
+      "choice": "B",
+      "text": "Bầy Sói phải đồng thuận tuyệt đối về mục tiêu cắn.",
+      "refs": [
+        "VH54",
+        "VH74",
+        "P04",
+        "VH52"
+      ]
+    },
+    {
+      "id": "DEC-BT-02",
+      "choice": "B",
+      "text": "Bẫy tồn tại đến lần sử dụng kỹ năng hợp lệ tiếp theo.",
+      "refs": [
+        "character.json#10",
+        "SK-05",
+        "Q13-06",
+        "Q13-11",
+        "VH08",
+        "VH84"
+      ]
+    },
+    {
+      "id": "BB-01",
+      "choice": "B",
+      "text": "Giữ cửa sổ chọn mục tiêu đến khi đủ phản hồi.",
+      "refs": [
+        "DEC-BT-01",
+        "PH-04"
+      ]
+    },
+    {
+      "id": "BB-01-BLANK",
+      "choice": "KEEP",
+      "text": "Phiếu trống giữ lựa chọn hợp lệ cuối cùng."
+    },
+    {
+      "id": "BB-02",
+      "choice": "A",
+      "text": "Đồng thuận toàn bộ tập mục tiêu; khác tập thì không cắn.",
+      "refs": [
+        "DEC-BT-01",
+        "VH74"
+      ]
+    },
+    {
+      "id": "BB-03",
+      "choice": "A",
+      "text": "Cập nhật danh sách đủ quyền khi chốt; đại diện theo thứ tự cố định trước ván.",
+      "refs": [
+        "VH54",
+        "VH52",
+        "VH10",
+        "VH41"
+      ]
+    },
+    {
+      "id": "BB-03-REPRESENTATIVE",
+      "choice": "SAME",
+      "text": "Cùng một đại diện hợp lệ cho hai đòn cắn."
+    },
+    {
+      "id": "BB-03-SECOND-ATTACK",
+      "choice": "RESOLVE",
+      "text": "Đòn thứ hai đã chốt vẫn phân giải nếu đại diện bị phản sát bởi đòn đầu.",
+      "refs": [
+        "VH51",
+        "VH54",
+        "VH74"
+      ]
+    },
+    {
+      "id": "BB-04",
+      "choice": "B",
+      "text": "Đảo bảo vệ và cứu thành chết trực tiếp, không qua phòng thủ hoặc cứu khác.",
+      "refs": [
+        "character.json#10",
+        "Q13-11",
+        "SK-05",
+        "VH08",
+        "VH03"
+      ]
+    },
+    {
+      "id": "BB-05",
+      "choice": "B",
+      "text": "Đảo toàn bộ nhóm hành động được nộp trong lượt đó.",
+      "refs": [
+        "DEC-BT-02",
+        "VH08",
+        "VH85",
+        "SYS-07"
+      ]
+    },
+    {
+      "id": "BB-PENDING-01",
+      "choice": "A",
+      "text": "Tiếp tục chờ; không tạo phiếu, random, deadline, xử thua hoặc hủy trận vì thiếu phản hồi. Đủ phản hồi nhưng bất đồng: không cắn.",
+      "refs": [
+        "WV-RD-BB-2026-01 Điều 2",
+        "BB-01",
+        "DEC-BT-01"
+      ]
+    },
+    {
+      "id": "BB-PENDING-02",
+      "choice": "A",
+      "text": "Server tạo thứ tự ngẫu nhiên trước trận, lưu cố định; chọn thành viên đủ quyền đầu tiên; không xáo lại.",
+      "refs": [
+        "WV-RD-BB-2026-01 Điều 3",
+        "VH54",
+        "BB-03",
+        "SAME",
+        "RESOLVE"
+      ]
+    },
+    {
+      "id": "BB-PENDING-03",
+      "choice": "B",
+      "text": "Gom toàn bộ hành động hợp lệ thuộc phạm vi bẫy của cùng người trong cùng đêm, kể cả nhiều cửa sổ. Tài nguyên theo từng kỹ năng, bẫy tiêu hao một lần.",
+      "refs": [
+        "WV-RD-BB-2026-01 Điều 4–6",
+        "BB-05",
+        "DEC-BT-02",
+        "PH-01"
+      ]
+    }
+  ],
+  "derivedDetails": [
+    "#48 two bites only if sole living wolf unless another proven grant",
+    "Separate rescue then poison is supported by character.json#29; no new inversion mapping",
+    "Previously accepted valid poison survives actor death per PH-01; new submission after death remains prohibited"
+  ],
+  "technicalDetails": [
+    "Representative RNG is HMAC domain-separated from role assignment and gameplay tape",
+    "Persist open night group in official Game Session archive, close at NIGHT_FINALIZE, internal events only",
+    "No schema migration; historical QA without policy binding retains earlier behavior"
+  ],
+  "unresolvedImplementationOrRuleCoverage": [
+    "Revoked target or zero eligible wolves: fail closed; no fallback approved",
+    "New wolf not in initial order after conversion: no reshuffle; not admitted in current QA",
+    "Cross-phase groups beyond supported skill mappings, revival, same-night trap ordering require source-backed coverage",
+    "Release gates and approval still pending"
+  ]
+}

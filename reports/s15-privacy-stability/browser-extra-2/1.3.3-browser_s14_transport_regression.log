@@ -1,0 +1,11 @@
+E2E_SCHEDULER_WAIT exclusive 88932
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 13051
+E2E_RESOURCE start cpu "usage_usec 14048527953\nuser_usec 11600480424\nsystem_usec 2448047529\nnice_usec 7715049\nnr_periods 58462\nnr_throttled 25571\nthrottled_usec 1759673204\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 63868\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s14_transport_regression.py default port 46483 db /tmp/wolvesville-s06-browser-bjtD5u/test.sqlite
+IDLE_SERVER NIGHT_COLLECT 2 GUEST {'phase': 'NIGHT_COLLECT', 'revision': 2, 'connection': 'online'}
+S14_IDLE_TRANSPORT_PASS
+S06_BROWSER_PASS browser_s14_transport_regression.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 14072010747\nuser_usec 11620385579\nsystem_usec 2451625167\nnice_usec 7723049\nnr_periods 58591\nnr_throttled 25574\nthrottled_usec 1759738924\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 63868\noom 0\noom_kill 0\noom_group_kill 0"

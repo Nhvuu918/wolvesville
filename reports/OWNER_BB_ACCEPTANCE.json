@@ -1,0 +1,48 @@
+{
+  "version": "1.7.17-s15-owner-bb-wip",
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "sourceFingerprint": "6b5b55ce62e36b59c844b4bac5ed5c4604ad59ed52e9723f016a71ca71da3f83",
+  "officialActivation": false,
+  "decisionRecord": "data/rules/owner_bb_candidate_decisions.json",
+  "backendGate": "PASS_MONOLITHIC",
+  "backend": {
+    "tests": 399,
+    "pass": 388,
+    "fail": 0,
+    "skipped": 11,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "candidateTests": 20,
+  "candidateScope": "Isolated sidecar journal and authenticated read-only bridge, not official resolution; no new web endpoint.",
+  "guardFresh": true,
+  "browser": {
+    "total": 63,
+    "PASS": 14,
+    "FAIL": 0,
+    "INCOMPLETE": 49
+  },
+  "matrix": {
+    "total": 98,
+    "PASS": 14,
+    "FAIL": 0,
+    "INCOMPLETE": 84
+  },
+  "freshCertificates": {
+    "F": 1,
+    "qaC": 2,
+    "playableC": 4,
+    "S_pass": 78
+  },
+  "fullManifestAccepted": false,
+  "postgreSQLLive": "PENDING",
+  "competitiveProduction": "NO_GO",
+  "legacySourceChecksumChanged": [
+    "README.md",
+    "package.json"
+  ],
+  "legacyReportsUnchanged": 2026,
+  "ownerQA": "PENDING",
+  "newFull": [],
+  "newPlayable": []
+}

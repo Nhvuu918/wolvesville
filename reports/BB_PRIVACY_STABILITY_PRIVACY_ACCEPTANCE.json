@@ -1,0 +1,44 @@
+{
+  "version": "1.7.25-s15-privacy-stability-wip",
+  "sourceFingerprint": "2aaa5dfa1e0067c6bb82beff4c06c18375ed6dd37380b1b5f30c99ec8ff9cec5",
+  "scope": "Mixed pack pre-resolution direct data surfaces; not entire release privacy",
+  "backend": [
+    {
+      "test": "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+      "status": "PASS"
+    },
+    {
+      "test": "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events",
+      "status": "PASS"
+    }
+  ],
+  "browser": {
+    "suite": "browser_s15_bb_mixed_e2e.py",
+    "version": "1.3.3+qa-bb",
+    "status": "PASS",
+    "exitCode": 0,
+    "log": "reports/s15-privacy-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_mixed_e2e.log",
+    "command": "node scripts/run-browser-s06.mjs browser_s15_bb_mixed_e2e.py",
+    "durationMs": 33107
+  },
+  "directProjectionGate": "PASS_BOUNDED",
+  "releasePrivacy": "PARTIAL",
+  "serverFiles": [
+    "backend/src/experimental/owner-bb-v2/pack.ts",
+    "backend/src/experimental/owner-bb-v2/live-profile.ts",
+    "backend/src/experimental/owner-bb-v2/runtime.ts"
+  ],
+  "frontendFile": "frontend/integration.js",
+  "interpretation": "A public-valid request is a response but not a valid selection if secret-ineligible; KEEP retains last valid target. All responded without unanimous valid choices => no bite. No client indication of secret validation before resolution.",
+  "remaining": [
+    "Observable attack outcomes may imply target eligibility; no new redirection or target eligibility rule authorized",
+    "All post-conversion and live membership changes beyond bounded QA, event timing and side-channel acceptance remain incomplete"
+  ],
+  "releaseReady": false,
+  "counterexampleBefore": "reports/s15-privacy-stability/privacy-counterexample-baseline.log",
+  "counterexampleAfter": "reports/s15-privacy-stability/privacy-counterexample-final.log",
+  "legacyMixedArchiveCompatibility": {
+    "exitCode": 0,
+    "log": "reports/s15-privacy-stability/mixed-archive-compatibility.log"
+  }
+}

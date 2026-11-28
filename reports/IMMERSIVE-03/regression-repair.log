@@ -1,0 +1,510 @@
+TAP version 13
+# (node:8031) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: 02B: locked room creates unique official roles, with two private projections and durable replay
+ok 1 - 02B: locked room creates unique official roles, with two private projections and durable replay
+  ---
+  duration_ms: 583.532389
+  type: 'test'
+  ...
+# Subtest: 02B: server validation prevents outsider access and forged client actor, role, seed
+ok 2 - 02B: server validation prevents outsider access and forged client actor, role, seed
+  ---
+  duration_ms: 603.529118
+  type: 'test'
+  ...
+# Subtest: 02B: 2 realtime clients get individual game snapshots, game updates and private skill is hidden
+ok 3 - 02B: 2 realtime clients get individual game snapshots, game updates and private skill is hidden
+  ---
+  duration_ms: 831.899308
+  type: 'test'
+  ...
+# Subtest: 02B: start rejects invalid role lists, unlocked rooms and start/join races
+ok 4 - 02B: start rejects invalid role lists, unlocked rooms and start/join races
+  ---
+  duration_ms: 343.031413
+  type: 'test'
+  ...
+# Subtest: 02B: fixture throw rolls back phase, action, event and revision atomically
+ok 5 - 02B: fixture throw rolls back phase, action, event and revision atomically
+  ---
+  duration_ms: 472.428853
+  type: 'test'
+  ...
+# Subtest: 02B: restart retains session, roles, logged events and replay
+ok 6 - 02B: restart retains session, roles, logged events and replay
+  ---
+  duration_ms: 1259.841536
+  type: 'test'
+  ...
+# Subtest: 02B: default mode rejects game start safely, never enables fixtures
+ok 7 - 02B: default mode rejects game start safely, never enables fixtures
+  ---
+  duration_ms: 534.583715
+  type: 'test'
+  ...
+# Subtest: 02B: action stale revision rejected, duplicate with stale revision is idempotent; changed payload conflicts
+ok 8 - 02B: action stale revision rejected, duplicate with stale revision is idempotent; changed payload conflicts
+  ---
+  duration_ms: 561.891572
+  type: 'test'
+  ...
+# Subtest: 02B: start key reused with different role selection is conflict
+ok 9 - 02B: start key reused with different role selection is conflict
+  ---
+  duration_ms: 440.061427
+  type: 'test'
+  ...
+# Subtest: 02B: two concurrent accepted actions are persisted and replay remains valid
+ok 10 - 02B: two concurrent accepted actions are persisted and replay remains valid
+  ---
+  duration_ms: 491.398739
+  type: 'test'
+  ...
+# Subtest: 02B: one-human room may start test game without a hard minimum; no competitive start
+ok 11 - 02B: one-human room may start test game without a hard minimum; no competitive start
+  ---
+  duration_ms: 390.548146
+  type: 'test'
+  ...
+# Subtest: 02B: outsider/non-host cannot resolve; nonmember game WebSocket subscription is rejected
+ok 12 - 02B: outsider/non-host cannot resolve; nonmember game WebSocket subscription is rejected
+  ---
+  duration_ms: 726.835777
+  type: 'test'
+  ...
+# Subtest: 02B: server stores non-public role draws and unique initial assignments, not WS payload
+ok 13 - 02B: server stores non-public role draws and unique initial assignments, not WS payload
+  ---
+  duration_ms: 1234.330528
+  type: 'test'
+  ...
+# Subtest: 02B: game WebSocket reconnect restores updated private snapshot and cannot read another role
+ok 14 - 02B: game WebSocket reconnect restores updated private snapshot and cannot read another role
+  ---
+  duration_ms: 1163.252344
+  type: 'test'
+  ...
+# Subtest: 02B: initial and committed Engine events are projected into relational game_events, not lost
+ok 15 - 02B: initial and committed Engine events are projected into relational game_events, not lost
+  ---
+  duration_ms: 1097.247646
+  type: 'test'
+  ...
+# (node:8033) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: source: 97 unique roles unchanged; 118 decision registry, 207 separate legacy specs
+ok 16 - source: 97 unique roles unchanged; 118 decision registry, 207 separate legacy specs
+  ---
+  duration_ms: 19.371735
+  type: 'test'
+  ...
+# Subtest: state machine rejects invalid transitions, advances round only after day
+ok 17 - state machine rejects invalid transitions, advances round only after day
+  ---
+  duration_ms: 28.157099
+  type: 'test'
+  ...
+# Subtest: rejects duplicated/unknown initial character IDs; allows 1 human and rejects >97 unique slots
+ok 18 - rejects duplicated/unknown initial character IDs; allows 1 human and rejects >97 unique slots
+  ---
+  duration_ms: 6.89327
+  type: 'test'
+  ...
+# Subtest: validator rejects phase mismatch, non-member, forbidden target, exhausted resources
+ok 19 - validator rejects phase mismatch, non-member, forbidden target, exhausted resources
+  ---
+  duration_ms: 21.361251
+  type: 'test'
+  ...
+# Subtest: idempotency: same action retry is no-op, conflicting payload is rejected
+ok 20 - idempotency: same action retry is no-op, conflicting payload is rejected
+  ---
+  duration_ms: 11.41116
+  type: 'test'
+  ...
+# Subtest: permission: production registry refuses unregistered role skills and opt-in fixtures
+ok 21 - permission: production registry refuses unregistered role skills and opt-in fixtures
+  ---
+  duration_ms: 38.273852
+  type: 'test'
+  ...
+# Subtest: queued actions do not resolve before phase close and priority beats request order
+ok 22 - queued actions do not resolve before phase close and priority beats request order
+  ---
+  duration_ms: 22.744316
+  type: 'test'
+  ...
+# Subtest: PH-01: submitted action still runs after sender dies, unless locked
+ok 23 - PH-01: submitted action still runs after sender dies, unless locked
+  ---
+  duration_ms: 20.379978
+  type: 'test'
+  ...
+# Subtest: VH10/VH41-like fixture: valid lock cancels accepted action without charging resources
+ok 24 - VH10/VH41-like fixture: valid lock cancels accepted action without charging resources
+  ---
+  duration_ms: 41.488009
+  type: 'test'
+  ...
+# Subtest: atomic rollback on adapter throw: no half state or events or charges committed
+ok 25 - atomic rollback on adapter throw: no half state or events or charges committed
+  ---
+  duration_ms: 22.604158
+  type: 'test'
+  ...
+# Subtest: unknown adapter at resolution leaves accepted action queued and state untouched
+ok 26 - unknown adapter at resolution leaves accepted action queued and state untouched
+  ---
+  duration_ms: 13.827541
+  type: 'test'
+  ...
+# Subtest: RNG: deterministic, conditioned domain, empty domain fail-closed, event tape replay
+ok 27 - RNG: deterministic, conditioned domain, empty domain fail-closed, event tape replay
+  ---
+  duration_ms: 25.150094
+  type: 'test'
+  ...
+# Subtest: RNG empty at effect stage triggers full rollback, no random fallback
+ok 28 - RNG empty at effect stage triggers full rollback, no random fallback
+  ---
+  duration_ms: 52.058459
+  type: 'test'
+  ...
+# Subtest: ACL: player projections omit hidden roles, seed, other resources and internal events
+ok 29 - ACL: player projections omit hidden roles, seed, other resources and internal events
+  ---
+  duration_ms: 13.712429
+  type: 'test'
+  ...
+# Subtest: snapshot + replay survives SQLite restart
+ok 30 - snapshot + replay survives SQLite restart
+  ---
+  duration_ms: 78.243104
+  type: 'test'
+  ...
+# Subtest: replay detects tampered event even when persisted state remains unchanged
+ok 31 - replay detects tampered event even when persisted state remains unchanged
+  ---
+  duration_ms: 39.685075
+  type: 'test'
+  ...
+# Subtest: unimplemented domain effect fails closed without partial state write
+ok 32 - unimplemented domain effect fails closed without partial state write
+  ---
+  duration_ms: 12.541564
+  type: 'test'
+  ...
+# Subtest: admission seals phase and historical ruleVersion mismatch cannot be accepted
+ok 33 - admission seals phase and historical ruleVersion mismatch cannot be accepted
+  ---
+  duration_ms: 8.582813
+  type: 'test'
+  ...
+# Subtest: revalidation: target dead before accepted hit is resolved fails closed and rolls back whole batch
+ok 34 - revalidation: target dead before accepted hit is resolved fails closed and rolls back whole batch
+  ---
+  duration_ms: 8.233304
+  type: 'test'
+  ...
+# Subtest: resource ledger: successful resolved fixture spends one charge and does not double-spend on retry
+ok 35 - resource ledger: successful resolved fixture spends one charge and does not double-spend on retry
+  ---
+  duration_ms: 27.938648
+  type: 'test'
+  ...
+# Subtest: faction/group event cannot leak to a later joiner when historical audience is missing
+ok 36 - faction/group event cannot leak to a later joiner when historical audience is missing
+  ---
+  duration_ms: 8.201557
+  type: 'test'
+  ...
+# Subtest: replay converges to same final state when unrelated commands arrive in opposite request order
+ok 37 - replay converges to same final state when unrelated commands arrive in opposite request order
+  ---
+  duration_ms: 26.881245
+  type: 'test'
+  ...
+# Subtest: new idempotency key cannot reuse same actionId; payload must be a dictionary
+ok 38 - new idempotency key cannot reuse same actionId; payload must be a dictionary
+  ---
+  duration_ms: 6.330167
+  type: 'test'
+  ...
+# Subtest: complete match is blocked until confirmed victory predicates exist
+ok 39 - complete match is blocked until confirmed victory predicates exist
+  ---
+  duration_ms: 4.510197
+  type: 'test'
+  ...
+# Subtest: S04 KB-01: 118 confirmed decisions with original codes, 145 skill audit branches, and 97 characters
+ok 40 - S04 KB-01: 118 confirmed decisions with original codes, 145 skill audit branches, and 97 characters
+  ---
+  duration_ms: 23.287425
+  type: 'test'
+  ...
+# Subtest: S04 KB-02: original character bytes unchanged and every branch points back to exact official description
+ok 41 - S04 KB-02: original character bytes unchanged and every branch points back to exact official description
+  ---
+  duration_ms: 12.810804
+  type: 'test'
+  ...
+# Subtest: S04 KB-03: all 4656 pairs exist as SCREENING, only three closed-deck pairs have implemented outcomes
+ok 42 - S04 KB-03: all 4656 pairs exist as SCREENING, only three closed-deck pairs have implemented outcomes
+  ---
+  duration_ms: 30.54128
+  type: 'test'
+  ...
+# Subtest: S04 KB-04: 207 legacy specifications are NEVER flagged as executed by this generator
+ok 43 - S04 KB-04: 207 legacy specifications are NEVER flagged as executed by this generator
+  ---
+  duration_ms: 4.080496
+  type: 'test'
+  ...
+# Subtest: S04 KB-05: DERIVED inference never overwritten as CONFIRMED and no global victory assertion
+ok 44 - S04 KB-05: DERIVED inference never overwritten as CONFIRMED and no global victory assertion
+  ---
+  duration_ms: 0.958523
+  type: 'test'
+  ...
+# Subtest: S04 KB-06: source inventory hashes check out for every source available
+ok 45 - S04 KB-06: source inventory hashes check out for every source available
+  ---
+  duration_ms: 2.959422
+  type: 'test'
+  ...
+# (node:8121) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S06-01 night→dawn→vote intake→close is committed; no invented elimination/endgame
+ok 46 - S06-01 night→dawn→vote intake→close is committed; no invented elimination/endgame
+  ---
+  duration_ms: 1615.081552
+  type: 'test'
+  ...
+# Subtest: S06-02 authorized audience sees own ballot only, outsider denied, no server seed
+ok 47 - S06-02 authorized audience sees own ballot only, outsider denied, no server seed
+  ---
+  duration_ms: 928.408294
+  type: 'test'
+  ...
+# Subtest: S06-03 duplicate vote exactly once, changes fail closed, stale revision not accepted
+ok 48 - S06-03 duplicate vote exactly once, changes fail closed, stale revision not accepted
+  ---
+  duration_ms: 718.992642
+  type: 'test'
+  ...
+# Subtest: S06-04 vote intake denies phase errors, self-forged actor ignored, voting closes once
+ok 49 - S06-04 vote intake denies phase errors, self-forged actor ignored, voting closes once
+  ---
+  duration_ms: 818.341327
+  type: 'test'
+  ...
+# Subtest: S06-05 vote state survives SQLite restart, event chain and ACL remain intact
+ok 50 - S06-05 vote state survives SQLite restart, event chain and ACL remain intact
+  ---
+  duration_ms: 1283.021345
+  type: 'test'
+  ...
+# Subtest: S06-06 \#8 sole survivor fact is partial; \#8 hanging immunity while wolves counted alive
+ok 51 - S06-06 \#8 sole survivor fact is partial; \#8 hanging immunity while wolves counted alive
+  ---
+  duration_ms: 0.374235
+  type: 'test'
+  ...
+# Subtest: S06-07 \#79 cancels ongoing day vote, reveals target only to wolf, phase returns to next night (PH-02)
+ok 52 - S06-07 \#79 cancels ongoing day vote, reveals target only to wolf, phase returns to next night (PH-02)
+  ---
+  duration_ms: 1179.849969
+  type: 'test'
+  ...
+# Subtest: S06-08 no PH-02 skill: attempting generic vote resolution rolls back phase and event ledger
+ok 53 - S06-08 no PH-02 skill: attempting generic vote resolution rolls back phase and event ledger
+  ---
+  duration_ms: 1156.332842
+  type: 'test'
+  ...
+# Subtest: S06-09 vote submissions from two independent authenticated clients are serialized without dropping a ballot
+ok 54 - S06-09 vote submissions from two independent authenticated clients are serialized without dropping a ballot
+  ---
+  duration_ms: 670.158937
+  type: 'test'
+  ...
+# (node:8132) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S08-G01 NEW official \#8/\#28 closed deck commits real night elimination and legitimate knight win, not hanged-jester win
+ok 55 - S08-G01 NEW official \#8/\#28 closed deck commits real night elimination and legitimate knight win, not hanged-jester win
+  ---
+  duration_ms: 631.15938
+  type: 'test'
+  ...
+# Subtest: S08-G02 elimination + victory decisions survive SQLite restart with private role and event ACL
+ok 56 - S08-G02 elimination + victory decisions survive SQLite restart with private role and event ACL
+  ---
+  duration_ms: 1341.467176
+  type: 'test'
+  ...
+# Subtest: S08-G03 PH-02 cannot be stranded by closing voting while an accepted day skill is queued
+ok 57 - S08-G03 PH-02 cannot be stranded by closing voting while an accepted day skill is queued
+  ---
+  duration_ms: 1277.584745
+  type: 'test'
+  ...
+# Subtest: S08-G04 vote-close with unique raw leader stays unresolved; no winner, no public tally or elimination
+ok 58 - S08-G04 vote-close with unique raw leader stays unresolved; no winner, no public tally or elimination
+  ---
+  duration_ms: 394.681348
+  type: 'test'
+  ...
+# Subtest: S08-G05 source-grounded vote adjudicator never promotes raw votes to an official hanging target
+ok 59 - S08-G05 source-grounded vote adjudicator never promotes raw votes to an official hanging target
+  ---
+  duration_ms: 0.788005
+  type: 'test'
+  ...
+# Subtest: S08-G06 death chain and match winner cannot be certified without exact deck and valid source-specific audit
+ok 60 - S08-G06 death chain and match winner cannot be certified without exact deck and valid source-specific audit
+  ---
+  duration_ms: 0.471485
+  type: 'test'
+  ...
+# Subtest: S08-G07 concurrency: one voter cannot submit two independent ballots, no double events or uncommitted winner
+ok 61 - S08-G07 concurrency: one voter cannot submit two independent ballots, no double events or uncommitted winner
+  ---
+  duration_ms: 352.019171
+  type: 'test'
+  ...
+# Subtest: S08-G08 cancelled day flows to round two, skill \#79 never becomes available again, no fabricated elimination
+ok 62 - S08-G08 cancelled day flows to round two, skill \#79 never becomes available again, no fabricated elimination
+  ---
+  duration_ms: 525.679654
+  type: 'test'
+  ...
+# (node:8176) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S11 real multiplayer: zero, tie, blank, changed ballot, retry, hanging, co-winners, restart and replay
+ok 63 - S11 real multiplayer: zero, tie, blank, changed ballot, retry, hanging, co-winners, restart and replay
+  ---
+  duration_ms: 2620.137798
+  type: 'test'
+  ...
+# Subtest: S11 second certified configuration: real seer skill, concurrent vote revision, hanging and knight victory
+ok 64 - S11 second certified configuration: real seer skill, concurrent vote revision, hanging and knight victory
+  ---
+  duration_ms: 2236.41119
+  type: 'test'
+  ...
+# Subtest: S11 V02 terminal invalidation survives certified coercion; missing controller and overlapping controls fail closed
+ok 65 - S11 V02 terminal invalidation survives certified coercion; missing controller and overlapping controls fail closed
+  ---
+  duration_ms: 1.205967
+  type: 'test'
+  ...
+# Subtest: S11 muted voter eligibility and dead target fail-closed (pure policy unit, not gameplay proof)
+ok 66 - S11 muted voter eligibility and dead target fail-closed (pure policy unit, not gameplay proof)
+  ---
+  duration_ms: 0.302174
+  type: 'test'
+  ...
+# (node:8310) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S12 real HTTP: shield absorbs once, retry, next attack kills, restart replay
+ok 67 - S12 real HTTP: shield absorbs once, retry, next attack kills, restart replay
+  ---
+  duration_ms: 3330.293058
+  type: 'test'
+  ...
+# Subtest: S12 shield survives creator death and absorbs in following night; knight wins after hanging
+ok 68 - S12 shield survives creator death and absorbs in following night; knight wins after hanging
+  ---
+  duration_ms: 2554.515929
+  type: 'test'
+  ...
+# Subtest: S12 shield expires after two nights without attack
+ok 69 - S12 shield expires after two nights without attack
+  ---
+  duration_ms: 1152.185336
+  type: 'test'
+  ...
+# Subtest: S12 [8,9,28] knight hanging continues with a living independent contender, Jester hanging completes
+ok 70 - S12 [8,9,28] knight hanging continues with a living independent contender, Jester hanging completes
+  ---
+  duration_ms: 1075.034318
+  type: 'test'
+  ...
+# Subtest: S12 [8,9,25] knight hanging blocks missing faction predicate, no artificial winner, retry rollback
+ok 71 - S12 [8,9,25] knight hanging blocks missing faction predicate, no artificial winner, retry rollback
+  ---
+  duration_ms: 1359.952948
+  type: 'test'
+  ...
+# Subtest: S12 [8,25,28] night attack then hanging: simultaneous winners
+ok 72 - S12 [8,25,28] night attack then hanging: simultaneous winners
+  ---
+  duration_ms: 1128.941652
+  type: 'test'
+  ...
+# Subtest: S12 [8,9,25,28] multi-round night deaths and hanging, closed chains and private events
+ok 73 - S12 [8,9,25,28] multi-round night deaths and hanging, closed chains and private events
+  ---
+  duration_ms: 2608.448644
+  type: 'test'
+  ...
+# Subtest: S12 pending chain / pending actions cannot be classified as continuation (unit, no gameplay metric)
+ok 74 - S12 pending chain / pending actions cannot be classified as continuation (unit, no gameplay metric)
+  ---
+  duration_ms: 0.319272
+  type: 'test'
+  ...
+# (node:8354) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S12 durable metric evidence 8,25
+ok 75 - S12 durable metric evidence 8,25
+  ---
+  duration_ms: 1681.754021
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,25],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,28
+ok 76 - S12 durable metric evidence 8,28
+  ---
+  duration_ms: 1841.239416
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,9,25
+ok 77 - S12 durable metric evidence 8,9,25
+  ---
+  duration_ms: 3093.184937
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,9,25],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,9,28
+ok 78 - S12 durable metric evidence 8,9,28
+  ---
+  duration_ms: 3870.393459
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,9,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,25,28
+ok 79 - S12 durable metric evidence 8,25,28
+  ---
+  duration_ms: 3463.720883
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,25,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,9,25,28
+ok 80 - S12 durable metric evidence 8,9,25,28
+  ---
+  duration_ms: 5183.429055
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,9,25,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+1..80
+# tests 80
+# suites 0
+# pass 80
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 31153.495311

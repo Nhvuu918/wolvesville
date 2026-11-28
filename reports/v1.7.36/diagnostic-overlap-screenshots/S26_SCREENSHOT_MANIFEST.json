@@ -1,0 +1,172 @@
+{
+  "version": "1.7.36",
+  "sourceFingerprint": "0edd9aa78cd86efb60bfc56fc22417699ce2b956cfcf0d9a00a17fe9654f8447",
+  "mode": "NORMAL_GAMEPLAY",
+  "ruleset": "wolvesville-official-v1.3.3",
+  "scenario": "[25,31,35,74] actual normal match / authorized self #25",
+  "screenshots": [
+    {
+      "screen": "mobile-night",
+      "file": "s26-polish/mobile-night.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "normal mirror [25,31,35,74]",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_DURING_PASSING_SUITE",
+      "sourceFingerprint": "0edd9aa78cd86efb60bfc56fc22417699ce2b956cfcf0d9a00a17fe9654f8447",
+      "browserSuite": "browser_s26_mirror_normal_e2e.py",
+      "sha256": "4f59c2bd039f6188899ee0ed97ed73f2076873233eec3d9bbf847cd2af897961"
+    },
+    {
+      "screen": "mobile-day",
+      "file": "s26-polish/mobile-day.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "normal mirror [25,31,35,74]",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_DURING_PASSING_SUITE",
+      "sourceFingerprint": "0edd9aa78cd86efb60bfc56fc22417699ce2b956cfcf0d9a00a17fe9654f8447",
+      "browserSuite": "browser_s26_mirror_normal_e2e.py",
+      "sha256": "541e8a1b31b83ac210638760a22ef9084f07ee709cb70bfdf977b8b49bc0dc86"
+    },
+    {
+      "screen": "basiclight-hud",
+      "file": "s26-polish/basiclight-hud.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "normal mirror [25,31,35,74]",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_DURING_PASSING_SUITE",
+      "sourceFingerprint": "0edd9aa78cd86efb60bfc56fc22417699ce2b956cfcf0d9a00a17fe9654f8447",
+      "browserSuite": "browser_s26_mirror_normal_e2e.py",
+      "sha256": "b76e8aa24db5be64c5e160732e1f5af4367fc097b02fbd05b21a77de5ece6c26"
+    },
+    {
+      "screen": "cream-hud",
+      "file": "s26-polish/cream-hud.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "normal mirror [25,31,35,74]",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_DURING_PASSING_SUITE",
+      "sourceFingerprint": "0edd9aa78cd86efb60bfc56fc22417699ce2b956cfcf0d9a00a17fe9654f8447",
+      "browserSuite": "browser_s26_mirror_normal_e2e.py",
+      "sha256": "32c888bc07ad23e687f9ff9b02748fc17496081e8c9697a2ca5cb8f8d77f18bb"
+    },
+    {
+      "screen": "sage-hud",
+      "file": "s26-polish/sage-hud.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "normal mirror [25,31,35,74]",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_DURING_PASSING_SUITE",
+      "sourceFingerprint": "0edd9aa78cd86efb60bfc56fc22417699ce2b956cfcf0d9a00a17fe9654f8447",
+      "browserSuite": "browser_s26_mirror_normal_e2e.py",
+      "sha256": "eee3bbe2d6af72f188a71f77ea51335d6a1deb657be6bd4e5179ecaeba2960c1"
+    },
+    {
+      "screen": "mirror-first-aura",
+      "file": "s26-polish/mirror-first-aura.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "normal mirror [25,31,35,74]",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_DURING_PASSING_SUITE",
+      "sourceFingerprint": "0edd9aa78cd86efb60bfc56fc22417699ce2b956cfcf0d9a00a17fe9654f8447",
+      "browserSuite": "browser_s26_mirror_normal_e2e.py",
+      "sha256": "1a09272dd49244a1b3a67f5e2c0057c21c69f7e910f189e579111014960a4919"
+    },
+    {
+      "screen": "mirror-second-aura",
+      "file": "s26-polish/mirror-second-aura.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "normal mirror [25,31,35,74]",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_DURING_PASSING_SUITE",
+      "sourceFingerprint": "0edd9aa78cd86efb60bfc56fc22417699ce2b956cfcf0d9a00a17fe9654f8447",
+      "browserSuite": "browser_s26_mirror_normal_e2e.py",
+      "sha256": "769632012d1152484f47d6a037dc5ca749eb08e94b7788c28a04acc1a9e68501"
+    },
+    {
+      "screen": "endgame",
+      "file": "s26-polish/endgame.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "normal mirror [25,31,35,74]",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_DURING_PASSING_SUITE",
+      "sourceFingerprint": "0edd9aa78cd86efb60bfc56fc22417699ce2b956cfcf0d9a00a17fe9654f8447",
+      "browserSuite": "browser_s26_mirror_normal_e2e.py",
+      "sha256": "8ca53e7ac4eea8638d9c6caa1c67a20a354eede6305a2085b0acbf062c250800"
+    },
+    {
+      "screen": "replay",
+      "file": "s26-polish/replay.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "normal mirror [25,31,35,74]",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_DURING_PASSING_SUITE",
+      "sourceFingerprint": "0edd9aa78cd86efb60bfc56fc22417699ce2b956cfcf0d9a00a17fe9654f8447",
+      "browserSuite": "browser_s26_mirror_normal_e2e.py",
+      "sha256": "87cbfddd074a589427fa7c35cfd2b99de7722d094c118fad48baf7f407a9017a"
+    }
+  ],
+  "scope": "9 screenshots from passing S26 village scenario, not FULL, no QA or fixture"
+}

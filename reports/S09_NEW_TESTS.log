@@ -1,0 +1,48 @@
+TAP version 13
+# (node:98343) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S09-01 certified \#33 server-side directive transforms a ballot with private audit but never hangs a player
+ok 1 - S09-01 certified \#33 server-side directive transforms a ballot with private audit but never hangs a player
+  ---
+  duration_ms: 561.535782
+  type: 'test'
+  ...
+# Subtest: S09-02 coercion is once-per-match and all retries preserve idempotency and revision
+ok 2 - S09-02 coercion is once-per-match and all retries preserve idempotency and revision
+  ---
+  duration_ms: 328.290858
+  type: 'test'
+  ...
+# Subtest: S09-03 never fabricate an effective ballot if controller or target has not voted
+ok 3 - S09-03 never fabricate an effective ballot if controller or target has not voted
+  ---
+  duration_ms: 333.387156
+  type: 'test'
+  ...
+# Subtest: S09-04 replay and frozen ACL remain valid after SQLite restart
+ok 4 - S09-04 replay and frozen ACL remain valid after SQLite restart
+  ---
+  duration_ms: 564.125334
+  type: 'test'
+  ...
+# Subtest: S09-05 private audit never authorizes hanging, including tied votes and transformed unique leader
+ok 5 - S09-05 private audit never authorizes hanging, including tied votes and transformed unique leader
+  ---
+  duration_ms: 0.769989
+  type: 'test'
+  ...
+# Subtest: S09-06 character.json\#23 explicitly disables the Soul Gunner ballot; no event/revision changes
+ok 6 - S09-06 character.json\#23 explicitly disables the Soul Gunner ballot; no event/revision changes
+  ---
+  duration_ms: 5.156119
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2012.788575

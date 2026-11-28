@@ -1,0 +1,1538 @@
+# WOLVESVILLE — IMMERSIVE-05
+
+## CONNECTED WORLD & PERSISTENT PLAYER EXPERIENCE
+
+### GLOBAL GAME ALERTS · CUSTOM DECK BUILDER · ACCOUNT PERSISTENCE · SOCIAL POLISH · CLOUD DATABASE · PRODUCTION EXPERIENCE
+
+**PROJECT OWNER DIRECTIVE**
+
+# 1. SOURCE BASELINE
+
+Tiếp tục trực tiếp từ:
+
+**Wolvesville IMMERSIVE-04 — Gameplay & Player Progression Edition.**
+
+Thông tin baseline theo báo cáo:
+
+- Full Source: 195,53 MB.
+- Tổng số tệp: 5.448.
+- Character Registry: 97/97.
+- Historical Decisions: 118/118.
+- Legacy Specifications: 207/207.
+- Focused Regression: 38 PASS, 0 FAIL, 0 SKIPPED.
+- Migration 011.
+- Reward Policy WV-XP-1.
+- Group Chat Policy WV-GROUP-DAY-NIGHT-1.
+- 36 định nghĩa huy hiệu cá nhân.
+- 5 định nghĩa huy hiệu quan hệ.
+- Wheel of Fate đã được Owner chấp thuận.
+- Hệ thống XP, Level, Title và Achievement đã được tích hợp.
+
+Source fingerprint được báo cáo:
+
+`00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b`
+
+Xác minh source thực tế trước khi chỉnh sửa.
+
+Không khởi tạo lại dự án.
+
+Không làm mất các chức năng đã triển khai.
+
+Không tiếp tục tăng F.
+
+FULL-5 và FULL-50 tiếp tục được đóng băng.
+
+# 2. PRODUCT OWNER AUTHORITY
+
+Sau khi trực tiếp trải nghiệm website, tôi có các yêu cầu mới:
+
+1. Thông báo quan trọng liên quan đến phòng chơi phải nổi bật cả khi người chơi đang ở bên ngoài phòng.
+2. Xóa chữ DEV nội bộ và các thuật ngữ kỹ thuật không cần thiết khỏi giao diện người chơi.
+3. Chủ phòng phải được tự thêm, xóa và xây dựng bộ vai thủ công.
+4. Toàn bộ dữ liệu tài khoản phải được lưu thật trong database.
+5. Khi đăng xuất và đăng nhập lại, dữ liệu phải được khôi phục.
+6. Khi đổi thiết bị, dữ liệu tài khoản vẫn phải được đồng bộ.
+7. Khi cập nhật website, không được làm mất dữ liệu người chơi.
+8. Chủ động hoàn thiện những chức năng sản phẩm còn thiếu.
+
+Tôi trao quyền tự chủ về thiết kế, kiến trúc kỹ thuật, trải nghiệm người dùng và các tiện ích hợp lý.
+
+Không cần hỏi tôi về từng quyết định nhỏ.
+
+Tuy nhiên, không được âm thầm thay đổi luật nhân vật, điều kiện thắng, quyền bảo mật hoặc cơ chế gameplay đã được chốt.
+
+# 3. GLOBAL GAME ALERT SYSTEM
+
+Thông báo phòng chơi không chỉ xuất hiện bên trong Game Room.
+
+Tôi muốn toàn bộ website có khả năng thông báo realtime khi phòng chơi hoặc trận đấu cần sự chú ý của người dùng.
+
+Áp dụng trên:
+
+- Trang chủ.
+- Sảnh làng.
+- Hồ sơ.
+- Sự nghiệp.
+- Bạn bè.
+- Newsfeed.
+- Bách khoa nhân vật.
+- Lịch sử.
+- Huy hiệu.
+- Chatbot.
+- Cài đặt.
+- Các trang khác thuộc App Shell.
+
+Không yêu cầu người chơi phải luôn mở phòng chơi để biết diễn biến quan trọng.
+
+# 4. GLOBAL NOTIFICATION PRIORITY
+
+Phân loại thông báo theo mức độ quan trọng.
+
+## LEVEL 1 — NORMAL
+
+Các thông báo thông thường:
+
+- Bạn bè online.
+- Reaction.
+- Bình luận.
+- Cập nhật hồ sơ.
+- Thông báo xã hội.
+
+Hiển thị Toast, Notification Center hoặc badge phù hợp.
+
+## LEVEL 2 — IMPORTANT ROOM EVENT
+
+Các sự kiện liên quan phòng chơi:
+
+- Lời mời vào phòng.
+- Phòng đã đủ người.
+- Người chơi rời phòng khiến phòng thiếu người.
+- Chủ phòng cập nhật cấu hình.
+- Đến bước xác nhận sẵn sàng.
+- Tất cả người chơi đã ready.
+- Trận đấu đã bắt đầu.
+- Phòng đang chờ tiếp tục.
+- Trận đấu đã kết thúc.
+
+Sử dụng Banner nổi bật hơn thông báo xã hội thông thường.
+
+## LEVEL 3 — ACTION REQUIRED
+
+Các sự kiện cần hành động ngay:
+
+- Người dùng cần xác nhận sẵn sàng.
+- Đến lượt người dùng lựa chọn kỹ năng.
+- Người dùng cần biểu quyết.
+- Người dùng cần chọn lại mục tiêu.
+- Quản trò cần xác nhận để tiếp tục.
+- Người dùng mất kết nối với trận đang diễn ra.
+- Có trận đấu chưa hoàn thành cần tiếp tục.
+
+Sử dụng thông báo lớn, dễ nhìn, có nút thao tác trực tiếp.
+
+Không tự ẩn khi nghĩa vụ vẫn còn hiệu lực.
+
+# 5. GLOBAL GAME ALERT UI
+
+Tạo một Global Alert Area tại App Shell.
+
+Ưu tiên vùng phía trên nội dung chính, gần thanh điều hướng hoặc Game HUD.
+
+Mỗi thông báo quan trọng có:
+
+- Icon.
+- Tiêu đề lớn.
+- Tên phòng.
+- Mã phòng nếu phù hợp.
+- Nội dung ngắn gọn.
+- Trạng thái hiện tại.
+- Nút thực hiện thao tác.
+- Thời gian hoặc deadline nếu có dữ liệu thật.
+- Âm thanh thông báo nếu được bật.
+
+Ví dụ:
+
+**PHÒNG ĐÃ ĐỦ NGƯỜI!**
+
+“Phòng Làng Sương Mù đã đủ thành viên. Hãy quay lại để xác nhận sẵn sàng.”
+
+Nút:
+
+**QUAY LẠI PHÒNG**
+
+Ví dụ:
+
+**TẤT CẢ ĐÃ XÁC NHẬN!**
+
+“Hệ thống đang chờ bạn điều phối bước tiếp theo.”
+
+Nút:
+
+**ĐẾN PHÒNG CHƠI**
+
+Không cần mở Notification Center mới nhìn thấy thông báo quan trọng.
+
+Không chỉ hiển thị chấm đỏ trên biểu tượng chuông.
+
+# 6. GLOBAL ROOM INVITATION
+
+Khi nhận lời mời vào phòng:
+
+Hiển thị:
+
+- Avatar người mời.
+- Tên người mời.
+- Tên phòng.
+- Số người hiện tại.
+- Trạng thái phòng.
+- Thời gian hiệu lực nếu có.
+
+Các nút:
+
+- Chấp nhận.
+- Từ chối.
+- Xem phòng.
+
+Nếu phòng đã đầy hoặc lời mời hết hiệu lực, cập nhật trạng thái rõ ràng.
+
+Không cho phép tham gia phòng trái quyền.
+
+Không tự động đưa người dùng vào phòng khi chưa xác nhận.
+
+# 7. PERSISTENT ACTION ALERTS
+
+Thông báo cần hành động phải được duy trì theo trạng thái backend.
+
+Khi người chơi chuyển trang, thông báo vẫn còn.
+
+Khi refresh, khôi phục thông báo từ server.
+
+Khi reconnect, kiểm tra lại nghĩa vụ hiện tại.
+
+Khi đăng nhập lại, kiểm tra xem người chơi có phòng hoặc trận đang diễn ra hay không.
+
+Khi người chơi đã hoàn thành yêu cầu, cập nhật hoặc loại bỏ thông báo cũ.
+
+Không giữ nút thao tác của pha trước.
+
+Không tự phát sinh thông báo dựa trên dữ liệu cache đã hết hạn.
+
+Không cho phép frontend tự quyết định tất cả người chơi đã xác nhận.
+
+# 8. GLOBAL NOTIFICATION BACKEND
+
+Tận dụng Notification Service hiện có.
+
+Không tạo hệ thống thông báo thứ hai trùng chức năng.
+
+Hoàn thiện khả năng nhận event trên toàn website.
+
+Không chỉ subscribe WebSocket khi người dùng đang mở Game Room.
+
+Sử dụng kết nối theo tài khoản hoặc cơ chế subscription phù hợp.
+
+Đảm bảo:
+
+- Đúng recipient.
+- Đúng Match ID.
+- Đúng Room ID.
+- Đúng Phase ID.
+- Đúng visibility.
+- Chống trùng.
+- Read state.
+- Action required state.
+- Expiration.
+- Deep link.
+- Reconnect recovery.
+
+Thông báo được gửi sau khi trạng thái chính thức được commit.
+
+Không phát lại âm thanh cũ khi refresh.
+
+Không gửi dữ liệu bí mật của trận đấu cho người ngoài.
+
+Nếu trình duyệt đang ở tab khác, có thể sử dụng Browser Notification hoặc cập nhật tiêu đề tab khi người dùng đã cấp quyền.
+
+Không tự yêu cầu quyền thông báo liên tục.
+
+Không tuyên bố thông báo hoạt động khi trình duyệt đã đóng nếu chưa có Web Push thực tế.
+
+# 9. RESUME GAME — TIẾP TỤC TRẬN ĐẤU
+
+Khi người chơi đăng nhập, hệ thống kiểm tra:
+
+- Có đang thuộc phòng nào không?
+- Có trận đấu nào đang diễn ra không?
+- Có nghĩa vụ nào chưa hoàn thành không?
+- Có lời mời nào còn hiệu lực không?
+- Có kết quả chưa đọc không?
+
+Nếu đang tham gia trận hợp lệ, hiển thị một khu vực nổi bật:
+
+**TRẬN ĐẤU CỦA BẠN ĐANG DIỄN RA**
+
+Nút:
+
+**TIẾP TỤC TRẬN ĐẤU**
+
+Khôi phục:
+
+- Vai trò.
+- Phe theo quyền.
+- Vị trí ghế.
+- Quyền chat.
+- Tài nguyên kỹ năng.
+- Trạng thái hành động.
+- Deadline hiện tại.
+- Phiếu biểu quyết.
+- Kết quả riêng.
+- Nhật ký.
+
+Không phân vai lại.
+
+Không reset timer.
+
+Không tạo trận mới.
+
+Không cấp lại kỹ năng đã sử dụng.
+
+Không vượt qua quy định AFK hoặc timeout.
+
+# 10. CLEAN PLAYER-FACING LANGUAGE
+
+Tôi không muốn người chơi bình thường nhìn thấy chữ:
+
+- DEV nội bộ.
+- Normal DEV.
+- Candidate QA.
+- FULL-5.
+- FULL-50.
+- Atomic Coverage.
+- R/A/B/C/F.
+- Runtime Contract.
+- Debug.
+- Internal Fixture.
+
+Các thuật ngữ này thuộc môi trường phát triển và nghiệm thu.
+
+Xóa hoặc thay thế chúng khỏi giao diện người dùng thông thường.
+
+Áp dụng tại:
+
+- Bộ vai gợi ý.
+- Tạo phòng.
+- Danh sách phòng.
+- Hồ sơ.
+- Sự nghiệp.
+- Lịch sử.
+- Huy hiệu.
+- Bách khoa.
+- Game Room.
+- Thông báo.
+- Error messages.
+
+Sử dụng ngôn ngữ dễ hiểu.
+
+Ví dụ:
+
+- Bộ vai tiêu chuẩn.
+- Bộ vai tùy chỉnh.
+- Bộ vai thử nghiệm.
+- Bộ vai yêu thích.
+- Chưa khả dụng.
+- Không hỗ trợ tổ hợp này.
+- Trận không tính thành tích.
+
+Không hiển thị mã lỗi kỹ thuật thay cho thông báo dễ hiểu.
+
+Giữ mã lỗi và thông tin chẩn đoán trong log hoặc trang quản trị được bảo vệ.
+
+# 11. PRESERVE INTERNAL CLASSIFICATION
+
+Việc xóa nhãn DEV nội bộ khỏi giao diện không đồng nghĩa với việc thay đổi trạng thái gameplay.
+
+Backend vẫn phải lưu và sử dụng các metadata kỹ thuật cần thiết.
+
+Không tự chuyển:
+
+- DEV thành Normal chính thức.
+- Candidate thành Competitive.
+- Demo thành trận hợp lệ.
+- Trận kiểm thử thành trận người dùng.
+
+Nếu một đội hình được phép chơi thử nhưng không tính XP cạnh tranh, trình bày rõ bằng ngôn ngữ người dùng.
+
+Ví dụ:
+
+“Bộ vai thử nghiệm — không tính thành tích chính thức.”
+
+Nếu đội hình chưa đủ điều kiện chơi, hiển thị trong catalog với trạng thái chưa khả dụng hoặc ẩn khỏi danh sách tạo phòng tùy chính sách.
+
+Không cấp chứng nhận gameplay mới chỉ để loại bỏ nhãn kỹ thuật.
+
+# 12. CUSTOM DECK BUILDER
+
+Đây là yêu cầu bắt buộc.
+
+Tôi muốn chủ phòng có thể tự xây dựng bộ vai thủ công, không bị giới hạn vào bộ vai gợi ý có sẵn.
+
+Khi tạo phòng, cung cấp các lựa chọn:
+
+## A. Bộ vai gợi ý
+
+Sử dụng các đội hình đã có trong hệ thống.
+
+## B. Tùy chỉnh bộ vai
+
+Tự thêm hoặc loại bỏ nhân vật.
+
+## C. Bộ vai của tôi
+
+Sử dụng những bộ vai đã lưu trong tài khoản.
+
+## D. Nhân bản bộ vai
+
+Sao chép một bộ vai gợi ý hoặc bộ vai đã lưu để chỉnh sửa.
+
+Không bắt người dùng chọn một preset cố định trong mọi trận.
+
+# 13. CUSTOM DECK BUILDER INTERFACE
+
+Thiết kế giao diện chọn vai đẹp, trực quan.
+
+Ưu tiên sử dụng artwork nhân vật của đội đồ họa.
+
+Bố cục đề xuất:
+
+## Khu vực 1 — Character Library
+
+Hiển thị các nhân vật theo catalog hiện hành:
+
+- Artwork.
+- Tên.
+- Phe.
+- Mô tả ngắn.
+- Kỹ năng.
+- Trạng thái khả dụng.
+- Nút thêm.
+
+Hỗ trợ:
+
+- Tìm kiếm theo tên.
+- Lọc theo phe.
+- Lọc theo nhóm kỹ năng.
+- Lọc nhân vật khả dụng.
+- Nhân vật yêu thích.
+- Xem chi tiết.
+
+Có thể hiển thị toàn bộ 97 nhân vật để tra cứu.
+
+Nhân vật chưa được runtime hỗ trợ không được tự động đưa vào trận chính thức.
+
+## Khu vực 2 — Selected Deck
+
+Hiển thị bộ vai đang xây dựng:
+
+- Danh sách nhân vật.
+- Số lượng từng vai.
+- Tổng số vai.
+- Sức chứa phòng.
+- Số người thực sự được phân vai theo workflow.
+- Phân bổ phe.
+- Số vị trí còn thiếu.
+- Cảnh báo tương thích.
+
+Mỗi nhân vật có:
+
+- Nút thêm.
+- Nút giảm.
+- Nút xóa.
+- Nút xem chi tiết.
+
+Có thể bổ sung drag-and-drop nếu phù hợp.
+
+## Khu vực 3 — Deck Validation
+
+Hiển thị:
+
+- Đủ hoặc thiếu số vai.
+- Giới hạn số lượng từng vai.
+- Điều kiện bắt buộc.
+- Xung đột.
+- Trạng thái hỗ trợ của tổ hợp.
+- Phạm vi sử dụng.
+- Điều kiện tính thành tích.
+
+Phân biệt lỗi chặn bắt đầu với cảnh báo cân bằng mang tính tham khảo.
+
+Không tự đặt thêm điều kiện thắng hoặc quy tắc cân bằng chưa được chốt.
+
+# 14. ROLE ADDITION AND REMOVAL
+
+Chủ phòng có thể:
+
+- Thêm từng vai thủ công.
+- Xóa từng vai.
+- Tăng số lượng vai nếu luật cho phép.
+- Giảm số lượng vai.
+- Thay thế một vai.
+- Xóa toàn bộ bộ vai.
+- Khôi phục bộ vai gợi ý.
+- Sắp xếp.
+- Sao chép bộ vai.
+- Lưu bộ vai.
+
+Không giới hạn mỗi nhân vật chỉ xuất hiện một lần nếu luật cho phép nhiều bản sao.
+
+Ngược lại, không cho phép thêm trùng một vai độc nhất nếu luật không cho phép.
+
+Sử dụng Character Registry, constraints và runtime capabilities làm nguồn kiểm tra.
+
+Không hardcode giới hạn theo suy đoán.
+
+# 15. ROOM OWNER AND MODERATOR PERMISSIONS
+
+Tôi xác nhận rằng chủ phòng phải có quyền tự xây dựng bộ vai thủ công trước khi khóa cấu hình.
+
+Phân biệt:
+
+- Người tạo phòng.
+- Chủ phòng.
+- Quản trò.
+- Người chơi.
+- Admin.
+
+Bổ sung quyền chỉnh sửa bộ vai cho chủ phòng trong giai đoạn phù hợp.
+
+Nếu workflow hiện hành còn yêu cầu quản trò kiểm tra hoặc xác nhận cấu hình, tiếp tục bảo toàn bước đó.
+
+Không biến quyền thêm vai thành quyền chọn vai cụ thể cho từng tài khoản.
+
+Không cho chủ phòng xem kết quả phân vai bí mật.
+
+Không thay đổi cơ chế random phân vai.
+
+Sau khi bộ vai đã được khóa hoặc trận đã bắt đầu, không cho chỉnh sửa trực tiếp nếu luật không cho phép.
+
+Khi thay đổi bộ vai sau một lượt ready, cập nhật hoặc yêu cầu xác nhận lại theo quy trình phù hợp để người chơi không bắt đầu với cấu hình khác cấu hình họ đã đồng ý.
+
+# 16. SERVER-SIDE DECK VALIDATION
+
+Không chỉ kiểm tra bộ vai bằng JavaScript frontend.
+
+Backend phải kiểm tra lại trước khi:
+
+- Lưu cấu hình phòng.
+- Khóa bộ vai.
+- Ready.
+- Bắt đầu trận.
+- Phân vai.
+
+Kiểm tra:
+
+- Role ID hợp lệ.
+- Số lượng.
+- Sức chứa.
+- Số người được phân vai.
+- Giới hạn từng nhân vật.
+- Điều kiện phụ thuộc.
+- Tổ hợp kỹ năng.
+- Ruleset.
+- Runtime compatibility.
+- Quyền chỉnh sửa.
+- Revision của cấu hình.
+
+Không tự coi mọi tổ hợp từ 97 nhân vật là có thể chơi.
+
+Không mở rộng chương trình FULL chỉ để cho phép bộ vai tùy chỉnh.
+
+Nếu tổ hợp chưa được hỗ trợ, thông báo rõ ràng bằng ngôn ngữ dễ hiểu.
+
+Ví dụ:
+
+“Hiện tại tổ hợp nhân vật này chưa thể sử dụng trong cùng một trận. Hãy thay đổi các vai được đánh dấu.”
+
+Có thể cho phép lưu bộ vai dưới dạng bản nháp ngay cả khi chưa đủ điều kiện bắt đầu.
+
+# 17. DECK SUGGESTION IMPROVEMENT
+
+Cải thiện bộ vai gợi ý.
+
+Mỗi bộ vai hiển thị:
+
+- Tên.
+- Số người phù hợp.
+- Danh sách nhân vật.
+- Phân bổ phe.
+- Mô tả trải nghiệm.
+- Độ phức tạp nếu có phương pháp phân loại rõ ràng.
+- Trạng thái khả dụng.
+- Điều kiện tính thành tích.
+
+Không sử dụng tên kỹ thuật làm tên bộ vai.
+
+Được tự sáng tạo tên phù hợp với thế giới Wolvesville.
+
+Ví dụ:
+
+- Khởi đầu tại Làng Sương Mù.
+- Bí ẩn dưới ánh trăng.
+- Hội đồng bóng đêm.
+- Lời nguyền cổ xưa.
+- Đêm hội định mệnh.
+
+Đây là tên hiển thị, không phải bộ luật hoặc deck mới tự tạo.
+
+Cho phép xem chi tiết và chỉnh sửa từ preset.
+
+Không tuyên bố bộ vai cân bằng nếu chưa có căn cứ.
+
+# 18. SAVED DECK COLLECTION
+
+Tạo phân hệ Bộ vai của tôi.
+
+Người chơi có thể lưu bộ vai vào tài khoản.
+
+Mỗi bộ vai có:
+
+- Deck ID.
+- Owner ID.
+- Tên.
+- Mô tả.
+- Danh sách Role ID và số lượng.
+- Ruleset.
+- Sức chứa.
+- Ngày tạo.
+- Ngày chỉnh sửa.
+- Trạng thái yêu thích.
+- Trạng thái tương thích.
+
+Các thao tác:
+
+- Tạo.
+- Lưu.
+- Chỉnh sửa.
+- Đổi tên.
+- Nhân bản.
+- Xóa.
+- Đánh dấu yêu thích.
+- Sử dụng để tạo phòng mới.
+
+Dữ liệu phải lưu trong database thật.
+
+Khi đăng nhập trên thiết bị khác, bộ vai vẫn tồn tại.
+
+Không chỉ lưu bằng localStorage.
+
+Có thể bổ sung chia sẻ bộ vai với bạn bè nếu không làm phức tạp hệ thống.
+
+Khi ruleset thay đổi, kiểm tra lại tương thích nhưng không tự xóa bộ vai cũ.
+
+# 19. ACCOUNT PERSISTENCE — YÊU CẦU CỐT LÕI
+
+Tôi muốn Wolvesville hoạt động như một nền tảng tài khoản thực sự.
+
+Người dùng đăng ký một lần.
+
+Sau đó, mỗi lần đăng nhập lại, toàn bộ dữ liệu hợp lệ của tài khoản vẫn phải tồn tại.
+
+Không được sử dụng tài khoản chỉ lưu tạm trong session hoặc frontend.
+
+Không được reset tài khoản mỗi lần khởi động backend.
+
+Không được yêu cầu người dùng đăng ký lại sau khi cập nhật source.
+
+Mọi dữ liệu chính thức phải được lưu bền vững trong database hoặc media storage phù hợp.
+
+# 20. USER DATA INVENTORY
+
+Kiểm tra toàn bộ các loại dữ liệu.
+
+## A. Authentication
+
+- User ID.
+- Email hoặc username.
+- Password hash.
+- Player ID.
+- Account status.
+- Sessions theo chính sách bảo mật.
+- Ngày đăng ký.
+- Lịch sử bảo mật phù hợp.
+
+## B. Profile
+
+- Tên hiển thị.
+- Avatar.
+- Ảnh bìa.
+- Bio.
+- Ghi chú.
+- Trạng thái.
+- Quyền riêng tư.
+- Danh hiệu đang sử dụng.
+- Huy hiệu ghim.
+
+## C. Social
+
+- Bạn bè.
+- Lời mời.
+- Người bị chặn.
+- Bài viết.
+- Ảnh.
+- Reaction.
+- Bình luận.
+- Phản hồi.
+- Báo cáo.
+
+## D. Player Career
+
+- XP.
+- Level.
+- Title.
+- XP transactions.
+- Level history.
+- Huy hiệu.
+- Ngày mở khóa.
+- Tiến độ.
+- Thống kê.
+- Top 5 Bạn thân.
+- Thành tích quan hệ.
+
+## E. Gameplay
+
+- Phòng đang tham gia.
+- Game membership.
+- Vai trò theo quyền.
+- Tài nguyên.
+- Action receipts.
+- Vote.
+- Game events.
+- Kết quả trận.
+- Nhật ký.
+- Lịch sử.
+- Replay.
+
+## F. Preferences
+
+- Theme.
+- Âm lượng.
+- Mute.
+- Reduced Motion.
+- Tùy chọn thông báo.
+- Cài đặt giao diện.
+- Nhân vật yêu thích.
+- Bộ vai yêu thích.
+- Bộ vai đã lưu.
+
+## G. Notifications
+
+- Notification ID.
+- Recipient.
+- Nội dung được phép xem.
+- Read state.
+- Action status.
+- Deep link.
+- Thời gian.
+- Trạng thái hết hiệu lực.
+
+Xác định dữ liệu nào đã lưu database, dữ liệu nào còn lưu cục bộ và dữ liệu nào chưa được lưu.
+
+Chủ động bổ sung phần còn thiếu.
+
+# 21. DATABASE AS SOURCE OF TRUTH
+
+Database là nguồn dữ liệu chính thức cho tài khoản.
+
+Frontend cache chỉ được sử dụng để tăng tốc hoặc lưu trạng thái giao diện tạm thời.
+
+Không sử dụng localStorage làm nguồn chân lý cho:
+
+- XP.
+- Level.
+- Huy hiệu.
+- Danh hiệu.
+- Bạn bè.
+- Match history.
+- Game results.
+- Quyền hạn.
+- Bộ vai đã lưu.
+- Hồ sơ.
+
+Đối với Wheel of Fate đã được duyệt, giữ cơ chế riêng tư hiện hành.
+
+Không bắt buộc đưa lịch sử quay hoặc danh sách suy luận riêng lên server chỉ vì yêu cầu lưu tài khoản.
+
+Nếu bổ sung đồng bộ tiện ích riêng tư, phải bảo vệ theo User ID và Match ID, không công khai cho người khác.
+
+# 22. LOGIN EXPERIENCE
+
+Khi người dùng đăng nhập thành công:
+
+1. Xác thực tài khoản.
+2. Lấy hồ sơ.
+3. Lấy cài đặt.
+4. Lấy notification chưa đọc.
+5. Kiểm tra phòng hoặc trận đang diễn ra.
+6. Khôi phục quyền hiện tại.
+7. Tải Career summary.
+8. Tải các dữ liệu cần thiết theo từng màn hình.
+
+Không tải toàn bộ lịch sử, ảnh và event ledger ngay tại thời điểm đăng nhập nếu không cần thiết.
+
+Sử dụng lazy loading phù hợp.
+
+Khi đăng xuất:
+
+- Thu hồi hoặc kết thúc phiên theo chính sách.
+- Dọn dữ liệu nhạy cảm khỏi frontend.
+- Ngắt subscription.
+- Không xóa dữ liệu tài khoản trong database.
+- Không làm mất thành tích.
+
+Khi đăng nhập lại, khôi phục dữ liệu từ server.
+
+# 23. CROSS-DEVICE SYNCHRONIZATION
+
+Nghiệm thu bằng hai thiết bị hoặc hai browser profile độc lập.
+
+Thiết bị A:
+
+- Đăng nhập.
+- Cập nhật avatar.
+- Đổi theme.
+- Kết bạn.
+- Tạo bài viết.
+- Lưu bộ vai.
+- Hoàn thành một trận hợp lệ.
+- Nhận XP và huy hiệu.
+
+Thiết bị B:
+
+- Đăng nhập cùng tài khoản.
+- Kiểm tra toàn bộ dữ liệu trên.
+
+Dữ liệu phải được đồng bộ theo quyền và trạng thái chính thức.
+
+Không cấp lại XP chỉ vì đăng nhập thiết bị khác.
+
+Đối với thao tác gameplay đồng thời trên nhiều thiết bị, sử dụng revision, idempotency và quyền phiên phù hợp để tránh gửi hành động trùng hoặc xung đột.
+
+# 24. ACCOUNT SECURITY & RECOVERY
+
+Hoàn thiện các chức năng tài khoản còn thiếu:
+
+- Đổi mật khẩu.
+- Quên mật khẩu.
+- Khôi phục mật khẩu.
+- Xác minh email nếu hệ thống hỗ trợ.
+- Quản lý phiên đăng nhập.
+- Đăng xuất khỏi thiết bị khác.
+- Thông báo bảo mật phù hợp.
+- Rate limiting.
+- Chống brute-force.
+
+Nếu cần dịch vụ gửi email, chuẩn bị adapter và cấu hình SMTP hoặc provider phù hợp.
+
+Không báo cáo email recovery hoạt động thật nếu chưa cấu hình và nghiệm thu dịch vụ gửi email.
+
+Không yêu cầu người dùng cung cấp mật khẩu hoặc secrets trực tiếp trong chat.
+
+Không lưu mật khẩu dạng plaintext.
+
+# 25. PLAYER CAREER COMPLETION
+
+Bảo toàn Reward Policy WV-XP-1.
+
+Giữ hệ thống cấp độ và huy hiệu đã triển khai.
+
+Hoàn thiện những phần IMMERSIVE-04 còn thiếu:
+
+- Hiển thị huy hiệu ghim trên profile.
+- Khung cấp độ.
+- Danh hiệu.
+- Hiệu ứng lên cấp.
+- Hiệu ứng nhận huy hiệu.
+- Âm thanh nhận thưởng.
+- Chia sẻ thành tích.
+- Huy hiệu chuyên môn nhân vật có căn cứ.
+- XP history.
+- Thu hồi XP từ trận không hợp lệ.
+- Backfill lịch sử có kiểm soát.
+- Rebuild projection.
+- Chống cộng trùng.
+
+Không tự thay đổi mức thưởng đã duyệt.
+
+Giữ nguyên năm huy hiệu quan hệ.
+
+Không cấp XP cho Demo, QA hoặc DEV trái chính sách.
+
+Đối với bộ vai tùy chỉnh, xác định eligibility dựa trên ruleset, runtime và kết quả kiểm tra chính thức.
+
+Không mặc định một bộ vai tùy chỉnh là trận cạnh tranh hợp lệ hoặc không hợp lệ chỉ vì nó được người dùng tạo thủ công.
+
+# 26. GROUP CHAT COMPLETION
+
+IMMERSIVE-04 đã cập nhật policy ngày và đêm.
+
+Tuy nhiên, nhóm Sói chưa hoàn thiện runtime cấp quyền.
+
+Tiếp tục hoàn thiện:
+
+- Nhóm Sói.
+- Nhóm Cupid.
+- Nhóm Giáo phái.
+- Các nhóm chức năng đã được phép.
+- Unread count.
+- WebSocket delivery.
+- Reconnect.
+- ACL.
+- Chat history.
+
+Đặc biệt kiểm tra Group Chat ban đêm.
+
+Không tạo thành viên giả.
+
+Không mở quyền nhóm cho toàn bộ người chơi.
+
+Không mở chat công khai ban đêm trái luật.
+
+Không thay đổi cơ chế chat đặc biệt của Thầy Đồng và Quản Ngục.
+
+Nếu một nhóm chưa thể vận hành vì gameplay runtime chưa hỗ trợ, xác định blocker chính xác.
+
+Không quay lại chương trình phát triển F.
+
+# 27. GAMEPLAY NOTIFICATION AND RESULT COMPLETION
+
+Bảo toàn thiết kế thông báo lớn của IMMERSIVE-04.
+
+Mở rộng khả năng hỗ trợ các checkpoint đã có runtime tương thích.
+
+Hoàn thiện:
+
+- Thông báo quản trò.
+- Xác nhận thủ công.
+- Trạng thái chờ.
+- Result Queue.
+- Xác nhận đã đọc.
+- Kết quả riêng.
+- Nhật ký.
+- Tổng kết ngày.
+- Tổng kết đêm.
+
+Không đánh đồng tiếp nhận hành động với phân giải thành công.
+
+Không công khai dữ liệu kỹ năng bí mật.
+
+Không tạo thêm điều kiện gameplay chỉ vì người chơi chưa đóng thông báo kết quả.
+
+# 28. PERSONAL PLAYER UTILITIES
+
+Được phép chủ động bổ sung các tiện ích phù hợp:
+
+- Nhân vật yêu thích.
+- Ghi chú suy luận cá nhân.
+- Người chơi vừa gặp.
+- Bộ vai gần đây.
+- Bộ vai yêu thích.
+- Lịch sử phòng gần đây.
+- Hướng dẫn nhanh cho người chơi mới.
+- Tooltip.
+- Phím tắt.
+- Tiếp tục trận.
+- Tự lưu bản nháp cấu hình phòng.
+
+Không làm thay đổi luật trận.
+
+Không biến ghi chú cá nhân thành cơ chế tự động phát hiện vai bí mật.
+
+Giữ nguyên Wheel of Fate đã được chấp thuận.
+
+# 29. DATABASE MIGRATION AND UPGRADE SAFETY
+
+Kiểm tra migration từ phiên bản IMMERSIVE-04.
+
+Tất cả migration mới phải tương thích với dữ liệu người dùng hiện có.
+
+Không được yêu cầu xóa database để cập nhật.
+
+Không tự reset schema khi khởi động production.
+
+Không tạo User ID mới cho tài khoản cũ.
+
+Không làm mất XP hoặc huy hiệu.
+
+Không làm mất avatar và ảnh bìa.
+
+Không làm mất lịch sử.
+
+Quy trình:
+
+BACKUP
+
+→ VERIFY EXISTING DATABASE
+
+→ APPLY MIGRATION
+
+→ VALIDATE DATA
+
+→ START APPLICATION
+
+→ POST-MIGRATION CHECK.
+
+Kiểm thử:
+
+- Database hoàn toàn mới.
+- Database từ IMMERSIVE-04.
+- Database có tài khoản và dữ liệu xã hội.
+- Database có trận đã hoàn thành.
+- Database có XP và huy hiệu.
+- Database có trận đang diễn ra nếu nâng cấp được hỗ trợ.
+
+Nếu nâng cấp giữa trận không an toàn, cung cấp chế độ bảo trì và quy trình hoàn tất trận trước khi nâng cấp.
+
+Không âm thầm hủy trận hoặc mất dữ liệu.
+
+# 30. POSTGRESQL LIVE — ƯU TIÊN TRIỂN KHAI
+
+SQLite đã có nghiệm thu local, nhưng PostgreSQL chưa được nghiệm thu live.
+
+Tôi không muốn dữ liệu người dùng chỉ phụ thuộc vào file SQLite nằm trong thư mục source.
+
+Hoàn thiện PostgreSQL integration.
+
+Kiểm tra:
+
+- Migration.
+- Connection pooling.
+- Transactions.
+- Concurrent writes.
+- Foreign keys.
+- Unique constraints.
+- Indexes.
+- Idempotency.
+- Account persistence.
+- Profile.
+- Media.
+- Notifications.
+- Saved decks.
+- Game sessions.
+- Statistics.
+- XP.
+- Achievements.
+- Replay.
+
+Chạy PostgreSQL thật bằng local service, Docker hoặc cloud nếu môi trường cho phép.
+
+Không chỉ kiểm tra một câu lệnh SELECT rồi tuyên bố toàn bộ database integration PASS.
+
+Thực hiện các hành trình người dùng thực tế trên PostgreSQL.
+
+Giữ SQLite cho local development.
+
+Cloud production phải có cấu hình database rõ ràng.
+
+Không âm thầm fallback sang database tạm khi kết nối PostgreSQL thất bại.
+
+# 31. CLOUD DEPLOYMENT AND GITHUB
+
+Tiếp tục yêu cầu triển khai trực tuyến đã chốt.
+
+Ưu tiên:
+
+- GitHub.
+- Railway.
+- PostgreSQL.
+- Persistent media storage.
+- HTTPS.
+- WSS.
+- CI/CD.
+
+Tôi muốn quy trình:
+
+PUSH SOURCE LÊN GITHUB
+
+→ BUILD
+
+→ TEST
+
+→ MIGRATION
+
+→ DEPLOY
+
+→ HEALTH CHECK.
+
+Khi cập nhật website, giữ nguyên:
+
+- Domain.
+- Tài khoản.
+- Player ID.
+- Database.
+- Media.
+- XP.
+- Huy hiệu.
+- Bạn bè.
+- Bộ vai.
+- Lịch sử trận.
+
+Không đóng gói database người dùng vào source ZIP.
+
+Không commit database credentials.
+
+Không đưa secrets lên GitHub.
+
+Không lưu media quan trọng trong filesystem tạm của container.
+
+Hoàn thiện production startup.
+
+Không phụ thuộc browser transport bridge hoặc localhost.
+
+Không bật QA và Demo Auth công khai.
+
+Các tính năng giao diện đã được phép sử dụng phải có cấu hình triển khai rõ ràng.
+
+Không yêu cầu người dùng thông thường tự bật các biến môi trường kỹ thuật để sử dụng website.
+
+# 32. BACKUP AND RECOVERY
+
+Chuẩn bị cơ chế backup database.
+
+Bao gồm:
+
+- Hướng dẫn backup thủ công.
+- Backup định kỳ nếu dịch vụ hỗ trợ.
+- Restore.
+- Đối soát sau restore.
+- Migration rollback hoặc phương án khôi phục an toàn.
+- Backup media storage.
+- Kiểm tra tính toàn vẹn dữ liệu.
+
+Không chỉ sao lưu source code.
+
+Source code và dữ liệu người chơi là hai thành phần độc lập.
+
+Nếu dịch vụ hosting chưa có backup tự động, báo cáo rõ và cung cấp phương án phù hợp.
+
+Không tự triển khai dịch vụ trả phí khi chưa được phép.
+
+# 33. ADMIN AND OPERATIONS
+
+Tạo hoặc hoàn thiện khu vực quản trị được bảo vệ.
+
+Các chức năng phù hợp:
+
+- Quản lý tài khoản.
+- Tìm kiếm người dùng.
+- Quản lý trạng thái tài khoản.
+- Quản lý phòng.
+- Theo dõi trận đang diễn ra.
+- Báo cáo lỗi.
+- Báo cáo vi phạm.
+- Kiểm tra database health.
+- Kiểm tra WebSocket.
+- Kiểm tra AI provider.
+- Audit log.
+- Kiểm tra tiến trình cấp XP.
+- Xử lý giao dịch thành tích không hợp lệ.
+
+Phân quyền rõ ràng.
+
+Không biến trang admin thành công cụ cho phép người chơi hoặc quản trò xem vai bí mật.
+
+Không ghi secrets hoặc mật khẩu trong log.
+
+Mọi thao tác ảnh hưởng dữ liệu người dùng phải có audit trail.
+
+# 34. AI RULE ASSISTANT CONTINUITY
+
+Tiếp tục hoàn thiện Người Giữ Luật.
+
+Bao gồm:
+
+- Effective Knowledge Index.
+- Quyết định Owner.
+- Luật superseded.
+- Ruleset.
+- Cập nhật Group Chat Policy mới.
+- Trích dẫn.
+- Provider adapter.
+- Privacy.
+- Fallback.
+- Rate limiting.
+
+AI phải giải thích đúng bộ vai và luật của hệ thống.
+
+Nếu được bổ sung chức năng hỗ trợ xây dựng đội hình, AI chỉ được đề xuất trong phạm vi nhân vật và tổ hợp đã có dữ liệu tương thích.
+
+Không tự thay đổi bộ vai.
+
+Không bỏ qua server-side validation.
+
+Không gửi hidden GameState cho provider.
+
+AI không được tự quyết định người chơi nên chọn mục tiêu dựa trên thông tin bí mật.
+
+# 35. VISUAL & PRODUCT POLISH
+
+Giữ định hướng hình ảnh đã được Owner chấp thuận.
+
+Premium Dark Fantasy.
+
+Gothic Fantasy.
+
+Modern Multiplayer Game UI.
+
+Sân Khấu Cổ Tích Đen.
+
+Làng Sương Mù.
+
+Giữ:
+
+- Artwork.
+- Âm thanh.
+- Theme.
+- Wheel of Fate.
+- Game Room.
+
+Chủ động cải thiện:
+
+- Điều hướng.
+- Thông báo.
+- Nút thao tác.
+- Typography.
+- Empty states.
+- Loading states.
+- Error states.
+- Responsive.
+- Keyboard.
+- Accessibility.
+- Reduced Motion.
+- Performance.
+
+Không thêm hiệu ứng nếu làm giao diện giật hoặc gây khó thao tác.
+
+Không để thiết kế mới phá vỡ những màn hình đã được Owner duyệt.
+
+# 36. AUTONOMOUS PRODUCT GAP AUDIT
+
+Tôi yêu cầu bạn tự kiểm tra toàn bộ sản phẩm từ góc nhìn người dùng thật.
+
+Thực hiện hành trình:
+
+ĐĂNG KÝ
+
+→ ĐĂNG NHẬP
+
+→ HỒ SƠ
+
+→ BẠN BÈ
+
+→ TẠO PHÒNG
+
+→ XÂY DỰNG BỘ VAI
+
+→ MỜI NGƯỜI CHƠI
+
+→ THÔNG BÁO
+
+→ READY
+
+→ PHÂN VAI
+
+→ GAMEPLAY
+
+→ GROUP CHAT
+
+→ BIỂU QUYẾT
+
+→ KẾT QUẢ
+
+→ XP
+
+→ HUY HIỆU
+
+→ LỊCH SỬ
+
+→ ĐĂNG XUẤT
+
+→ ĐĂNG NHẬP LẠI.
+
+Tìm những bất tiện, lỗi, chức năng còn thiếu và thao tác dư thừa.
+
+Được chủ động sửa các vấn đề kỹ thuật và bổ sung tiện ích cần thiết.
+
+Ưu tiên hoàn thiện hành trình đang sử dụng.
+
+Không mở rộng thêm hàng loạt chức năng không liên quan.
+
+Không chỉ lập backlog rồi báo cáo rằng sẽ làm sau.
+
+Nếu phát hiện vấn đề về luật cốt lõi hoặc quyền bảo mật chưa có quyết định, ghi rõ và không tự suy diễn.
+
+# 37. ACCEPTANCE — GLOBAL NOTIFICATIONS
+
+Kiểm thử:
+
+- Người chơi đang ở trang Sự nghiệp khi phòng đủ người.
+- Người chơi đang xem Newsfeed khi được mời.
+- Người chơi đang ở Profile khi trận bắt đầu.
+- Quản trò đang ở bên ngoài Game Room khi cần xác nhận.
+- Thông báo nổi bật đúng tài khoản.
+- Nút quay lại phòng hoạt động.
+- Thông báo không tự biến mất khi vẫn cần hành động.
+- Thông báo hết hiệu lực được xử lý.
+- Refresh không làm mất thông báo hợp lệ.
+- Reconnect không gửi trùng.
+- Người ngoài không nhận dữ liệu bí mật.
+
+# 38. ACCEPTANCE — CUSTOM DECK
+
+Kiểm thử:
+
+- Tạo bộ vai từ đầu.
+- Thêm vai.
+- Xóa vai.
+- Thay đổi số lượng.
+- Chỉnh sửa từ preset.
+- Lưu bộ vai.
+- Đăng xuất.
+- Đăng nhập lại.
+- Khôi phục bộ vai.
+- Sử dụng bộ vai trên thiết bị khác.
+- Từ chối vai hoặc tổ hợp chưa hỗ trợ.
+- Từ chối thao tác trái quyền.
+- Khóa cấu hình.
+- Phân vai ngẫu nhiên.
+- Bắt đầu trận từ một bộ vai tùy chỉnh hợp lệ.
+
+Kiểm tra thực tế rằng chủ phòng không biết kết quả phân vai trước.
+
+Không sử dụng fixture làm bằng chứng gameplay chính thức.
+
+# 39. ACCEPTANCE — ACCOUNT PERSISTENCE
+
+Tạo tài khoản kiểm thử độc lập.
+
+Thực hiện:
+
+- Đăng ký.
+- Cập nhật profile.
+- Avatar.
+- Cover.
+- Kết bạn.
+- Đăng bài.
+- Đổi theme.
+- Lưu bộ vai.
+- Hoàn thành trận.
+- Nhận XP.
+- Nhận huy hiệu.
+- Ghim huy hiệu.
+- Xem lịch sử.
+
+Sau đó lần lượt:
+
+1. Refresh.
+2. Đăng xuất.
+3. Đóng trình duyệt.
+4. Đăng nhập lại.
+5. Sử dụng browser profile khác.
+6. Restart backend.
+7. Restart database trong môi trường kiểm thử.
+8. Nâng cấp phiên bản.
+9. Redeploy cloud nếu đã có môi trường thật.
+
+Đối soát dữ liệu trước và sau.
+
+Không chỉ xác minh XP.
+
+Phải xác minh cả hồ sơ, social, bộ vai, notifications, media, cài đặt và lịch sử.
+
+# 40. QUALITY AND REGRESSION
+
+Hoàn thiện các nghĩa vụ hồi quy còn thiếu.
+
+Bảo toàn toàn bộ test inventory cần thiết.
+
+Không bỏ test để đạt PASS.
+
+Không sử dụng kết quả lịch sử làm Fresh Acceptance.
+
+Xử lý monolithic timeout theo phương pháp đã đề xuất.
+
+Kiểm tra:
+
+- Backend.
+- Browser.
+- Database.
+- Privacy.
+- Group Chat.
+- Notifications.
+- Game Room.
+- Wheel of Fate.
+- Live Voting.
+- Result Center.
+- Career.
+- Saved decks.
+- Authentication.
+- Cloud startup.
+- Performance.
+
+Không cần tăng chỉ số F.
+
+Không tạo thêm hàng loạt tiêu chí chỉ để báo cáo tiến độ.
+
+# 41. REAL WEBSITE EVIDENCE
+
+Cung cấp ảnh hoặc video website chạy thật.
+
+Ưu tiên:
+
+1. Thông báo phòng đủ người khi đang ở trang Sự nghiệp.
+2. Lời mời phòng khi đang ở Newsfeed.
+3. Thông báo quản trò bên ngoài phòng.
+4. Nút quay lại phòng.
+5. Bộ vai gợi ý không còn chữ DEV nội bộ.
+6. Custom Deck Builder.
+7. Thêm và xóa nhân vật.
+8. Cảnh báo tổ hợp không hợp lệ.
+9. Bộ vai đã lưu.
+10. Đăng nhập lại vẫn có bộ vai.
+11. Hồ sơ trước và sau restart.
+12. XP và huy hiệu trước và sau restart.
+13. Đăng nhập trên thiết bị khác.
+14. Group Chat ban đêm.
+15. Career và Profile hoàn chỉnh.
+16. Website cloud nếu đã triển khai thật.
+
+Không dùng ảnh AI hoặc mockup làm bằng chứng.
+
+Nếu có video, ưu tiên hành trình tạo bộ vai thủ công, chơi trận và đăng nhập lại.
+
+# 42. FULL SOURCE AND DEPLOYMENT DELIVERY
+
+Bàn giao:
+
+`Wolvesville_IMMERSIVE-05_Full_Source.zip`
+
+Tích hợp toàn bộ chức năng mới.
+
+Không chỉ giao patch.
+
+Không yêu cầu tôi tự ghép code.
+
+Cung cấp:
+
+- Full Source.
+- README.
+- Human QA.
+- Deployment Guide.
+- Railway Guide.
+- PostgreSQL Guide.
+- Database Migration Guide.
+- Backup & Restore Guide.
+- Account Persistence Report.
+- Screenshot Evidence.
+- Product Acceptance.
+- Changelog.
+- Delivery Verification.
+
+Nếu Full Source chứa nhiều tài liệu và lịch sử, chuẩn bị thêm cây thư mục deployment phù hợp để đưa lên GitHub.
+
+Không làm mất lịch sử dự án.
+
+Xác minh:
+
+- ZIP CRC.
+- SHA-256.
+- Payload manifest.
+- Clean extraction.
+- Clean build.
+- Migration.
+- Production startup.
+
+Chỉ báo cáo cloud deployment thành công khi có URL thật và bằng chứng thực tế.
+
+# 43. FINAL REPORT
+
+Tôi muốn báo cáo tập trung vào:
+
+- Những gì tôi có thể sử dụng.
+- Những gì đã được hoàn thiện.
+- Những lỗi đã sửa.
+- Thông báo ngoài phòng.
+- Bộ vai thủ công.
+- Bộ vai đã lưu.
+- Dữ liệu tài khoản.
+- Khả năng đăng nhập lại.
+- Khả năng đồng bộ thiết bị.
+- Database.
+- Website trực tuyến.
+- Những chức năng còn thiếu.
+
+Ghi rõ những quyết định bạn tự đưa ra.
+
+Không che giấu blocker.
+
+Không hứa làm việc ngầm sau khi kết thúc phản hồi.
+
+Không cần tạo thêm chương trình tăng chỉ số.
+
+# FINAL PROJECT OWNER COMMAND
+
+Tôi muốn Wolvesville trở thành một nền tảng game hoàn chỉnh mà người dùng có thể đăng ký, sử dụng lâu dài và quay lại bất cứ lúc nào.
+
+Thông báo phải nổi bật dù người chơi đang ở bên trong hay bên ngoài phòng.
+
+Chủ phòng phải có quyền tự xây dựng bộ vai.
+
+Giao diện người dùng không được chứa các thuật ngữ kỹ thuật khó hiểu.
+
+Mọi dữ liệu tài khoản chính thức phải được lưu thật.
+
+Đăng nhập lại vẫn còn dữ liệu.
+
+Đổi thiết bị vẫn còn dữ liệu.
+
+Restart backend vẫn còn dữ liệu.
+
+Cập nhật website vẫn còn dữ liệu.
+
+Tôi trao quyền cho bạn chủ động kiểm tra, phát hiện và hoàn thiện những chức năng hợp lý còn thiếu.
+
+Giữ toàn bộ luật đã chốt.
+
+Giữ Wheel of Fate.
+
+Giữ artwork, theme và âm thanh.
+
+Giữ XP, cấp độ và huy hiệu.
+
+Không quay lại chương trình tăng F.
+
+**BUILD GLOBAL GAME ALERTS.**
+
+**MAKE IMPORTANT ROOM NOTIFICATIONS IMPOSSIBLE TO MISS.**
+
+**REMOVE INTERNAL DEVELOPER LABELS FROM PLAYER UI.**
+
+**BUILD THE CUSTOM DECK EDITOR.**
+
+**ALLOW ROOM OWNERS TO ADD ROLES MANUALLY.**
+
+**BUILD SAVED DECK COLLECTIONS.**
+
+**PERSIST ALL ACCOUNT DATA.**
+
+**ENABLE CROSS-DEVICE SYNCHRONIZATION.**
+
+**ENABLE SAFE MATCH RESUME.**
+
+**COMPLETE POSTGRESQL INTEGRATION.**
+
+**PREPARE REAL CLOUD DEPLOYMENT.**
+
+**PROACTIVELY COMPLETE MISSING PRODUCT FEATURES.**
+
+**DELIVER A BEAUTIFUL, RELIABLE AND PERSISTENT ONLINE MULTIPLAYER GAME.**
+
+**BEGIN IMMERSIVE-05 IMPLEMENTATION NOW.**

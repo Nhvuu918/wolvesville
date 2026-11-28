@@ -1,0 +1,8 @@
+PASS Browser: two real Demo CTA clicks create distinct backend accounts and Lobby sessions
+PASS Browser: two independent demo sessions create/join same room through real backend
+PASS Browser: authenticated WebSocket connectivity and server-authorized room membership
+PASS Browser: fresh document reconnects an existing Demo session without shared credentials
+PASS Browser: logout removes only the current demo session
+PASS Browser: demo WebSocket reconnect
+S06_BROWSER_PASS browser_demo_e2e.py
+S06_BROWSER_ALL_1_PASS

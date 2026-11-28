@@ -1,0 +1,141 @@
+TAP version 13
+# (node:16325) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_BREAK_EVIDENCE {"id":55,"branch":"stone.hanging.protect.once","skill":"official.55.stone-protection","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[25,28,55],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 breakthrough \#55 protects \#28 from actual hanging once; later true hanging and wolf parity co-win
+ok 1 - S15 breakthrough \#55 protects \#28 from actual hanging once; later true hanging and wolf parity co-win
+  ---
+  duration_ms: 780.447064
+  type: 'test'
+  ...
+# S15_BREAK_EVIDENCE {"id":28,"branch":"linked.death.not.hanging","skill":"passive.28.hanged-victory","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[15,25,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 breakthrough \#28 linked death is not hanging; only actual hanging earns co-win
+ok 2 - S15 breakthrough \#28 linked death is not hanging; only actual hanging earns co-win
+  ---
+  duration_ms: 841.204916
+  type: 'test'
+  ...
+# S15_BREAK_EVIDENCE {"id":19,"branch":"ballot.contract.accept.fulfilled","skill":"official.19.ballot-offer","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[19,25,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 breakthrough \#19 anonymous ballot contract uses final valid ballot; \#28 survives fulfilled contract then wins by real hanging
+ok 3 - S15 breakthrough \#19 anonymous ballot contract uses final valid ballot; \#28 survives fulfilled contract then wins by real hanging
+  ---
+  duration_ms: 600.816036
+  type: 'test'
+  ...
+# S15_BREAK_EVIDENCE {"id":19,"branch":"ballot.contract.declined.or.breached","skill":"official.19.ballot-offer","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 breakthrough \#19 declined or breached contract cannot prevent true hanging
+ok 4 - S15 breakthrough \#19 declined or breached contract cannot prevent true hanging
+  ---
+  duration_ms: 950.164193
+  type: 'test'
+  ...
+# S15_BREAK_EVIDENCE {"id":37,"branch":"swap.aura.and.hanging","skill":"official.37.swap","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[25,28,37],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 breakthrough \#37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed \#28
+ok 5 - S15 breakthrough \#37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed \#28
+  ---
+  duration_ms: 948.748789
+  type: 'test'
+  ...
+# (node:16326) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":88,"branch":"follow.blocked.by.snow","skill":"official.88.pin","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[8,9,28,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester
+ok 6 - S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester
+  ---
+  duration_ms: 917.069973
+  type: 'test'
+  ...
+# Subtest: S15 closure night-only snow protection cannot block daytime Hunter follow
+ok 7 - S15 closure night-only snow protection cannot block daytime Hunter follow
+  ---
+  duration_ms: 727.394326
+  type: 'test'
+  ...
+# (node:16332) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_DEEP_EVIDENCE {"id":28,"branch":"hanging.sole-winner","skill":"passive.28.hanged-victory","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[25,28,58],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 deep \#28 hanging wins with other contenders alive, non-final trigger cannot win
+ok 8 - S15 deep \#28 hanging wins with other contenders alive, non-final trigger cannot win
+  ---
+  duration_ms: 596.015031
+  type: 'test'
+  ...
+# S15_DEEP_EVIDENCE {"id":28,"branch":"cancelled.hanging.no-win","skill":"passive.28.hanged-victory","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[25,28,79],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 deep \#28 PH-02 cancelled leading ballot cannot win; actual later hanging can win
+ok 9 - S15 deep \#28 PH-02 cancelled leading ballot cannot win; actual later hanging can win
+  ---
+  duration_ms: 626.089567
+  type: 'test'
+  ...
+# (node:16358) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":88,"branch":"hanging.follow","skill":"official.88.pin","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[8,28,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 final \#88 hanging follow kills \#28 without Jester win; stable knight victory
+ok 10 - S15 final \#88 hanging follow kills \#28 without Jester win; stable knight victory
+  ---
+  duration_ms: 606.62058
+  type: 'test'
+  ...
+# Subtest: S15 final \#28 direct hanging remains winning despite a live Hunter mark
+not ok 11 - S15 final \#28 direct hanging remains winning despite a live Hunter mark
+  ---
+  duration_ms: 385.690369
+  type: 'test'
+  location: '/mnt/data/s15approved/tests/sprint15-final-breakthrough.test.mjs:74:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+        'f56d11f5-650f-4ce7-8db0-44ac940cef18',
+    +   'a339fbb6-ced5-437d-8204-cc2c71cb0c5e',
+    +   'addacc96-3199-43a3-a400-6c1edab2ac2a'
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 'f56d11f5-650f-4ce7-8db0-44ac940cef18'
+  actual:
+    0: 'f56d11f5-650f-4ce7-8db0-44ac940cef18'
+    1: 'a339fbb6-ced5-437d-8204-cc2c71cb0c5e'
+    2: 'addacc96-3199-43a3-a400-6c1edab2ac2a'
+  operator: 'deepStrictEqual'
+  stack: |-
+    file:///mnt/data/s15approved/tests/sprint15-final-breakthrough.test.mjs:75:206
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async durable (file:///mnt/data/s15approved/tests/sprint15-final-breakthrough.test.mjs:55:26)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# S15_MATCH_EVIDENCE {"ids":[8,25,28,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 final \#88 hanging without mark does not eliminate secondary player; subsequent direct Jester win
+ok 12 - S15 final \#88 hanging without mark does not eliminate secondary player; subsequent direct Jester win
+  ---
+  duration_ms: 763.568078
+  type: 'test'
+  ...
+# Subtest: S15 final \#88 night follow and \#28 non-hanging death are closed before victory
+ok 13 - S15 final \#88 night follow and \#28 non-hanging death are closed before victory
+  ---
+  duration_ms: 404.187294
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 12
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4402.642023

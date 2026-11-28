@@ -1,0 +1,46 @@
+{
+  "certificates": [
+    {
+      "deck": [
+        8,
+        25
+      ],
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "scope": "Both possible night commands independently optional; all 16 terminal ballot combinations; two winning sides; authorized UI/reconnect/replay; no other skill or protection can occur within this composition.",
+      "requiredTests": [
+        "QD01 [8,25] Village victory after valid hanging; no vote, tie, retry, change, phase, privacy, replay",
+        "QD01 [8,25] knight night victory with seer action before death; both choices private",
+        "QD01 [8,25] Knight wins by hanging, Village cannot win with contender alive",
+        "QD01 [8,25] all 16 final ballot combinations including self, abstention and explicit blank",
+        "QD01 [8,25] night kill without inspection, terminal phase rejects actions"
+      ],
+      "browserEvidence": [
+        "village",
+        "knight"
+      ],
+      "certified": true
+    }
+  ],
+  "candidates": [
+    {
+      "deck": [
+        8,
+        25
+      ],
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "scope": "Both possible night commands independently optional; all 16 terminal ballot combinations; two winning sides; authorized UI/reconnect/replay; no other skill or protection can occur within this composition.",
+      "requiredTests": [
+        "QD01 [8,25] Village victory after valid hanging; no vote, tie, retry, change, phase, privacy, replay",
+        "QD01 [8,25] knight night victory with seer action before death; both choices private",
+        "QD01 [8,25] Knight wins by hanging, Village cannot win with contender alive",
+        "QD01 [8,25] all 16 final ballot combinations including self, abstention and explicit blank",
+        "QD01 [8,25] night kill without inspection, terminal phase rejects actions"
+      ],
+      "browserEvidence": [
+        "village",
+        "knight"
+      ],
+      "certified": true
+    }
+  ]
+}

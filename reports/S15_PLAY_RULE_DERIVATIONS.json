@@ -1,0 +1,104 @@
+{
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "decisions": [
+    {
+      "id": "PLAY-01",
+      "classification": "ENGINEERING_INTERPRETATION",
+      "sources": [
+        "ROOM-01",
+        "ROOM-02",
+        "QD-01",
+        "V02",
+        "V03"
+      ],
+      "conclusion": "Normal admission is limited to the two implemented distinct-role compositions; not a new minimum player rule.",
+      "implementation": [
+        "backend/src/game/normal-decks.ts",
+        "backend/src/game/coordinator.ts",
+        "backend/src/multiplayer/server.ts"
+      ],
+      "counterexamples": [
+        "not ready",
+        "not host",
+        "invalid deck",
+        "QA fixture in normal",
+        "QA resolve on normal"
+      ],
+      "evidence": [
+        "tests/sprint15-normal.test.mjs",
+        "tests/browser_s15_normal_e2e.py"
+      ]
+    },
+    {
+      "id": "PLAY-02",
+      "classification": "VERIFIED_RULE + ENGINEERING_INTERPRETATION",
+      "sources": [
+        "ROOM-03"
+      ],
+      "conclusion": "An authenticated connected eligible human may take over when coordinator offline, with audit and no reassignment. A TCP EOF releases presence.",
+      "implementation": [
+        "backend/src/multiplayer/ws.ts",
+        "backend/src/game/coordinator.ts",
+        "backend/src/persistence/migrations/008_normal_coordination_sqlite.sql",
+        "frontend/integration.js"
+      ],
+      "counterexamples": [
+        "claim with online coordinator",
+        "outsider",
+        "stale revision",
+        "old coordinator closes phase"
+      ],
+      "evidence": [
+        "tests/sprint15-normal.test.mjs",
+        "tests/browser_s15_normal_e2e.py"
+      ]
+    },
+    {
+      "id": "PLAY-03",
+      "classification": "VERIFIED_RULE + ENGINEERING_INTERPRETATION",
+      "sources": [
+        "character.json#31",
+        "VH74",
+        "P04"
+      ],
+      "conclusion": "Existing valid guard layer blocks a bite in admitted deck; no invented layer priority.",
+      "implementation": [
+        "backend/src/official/final-pack.ts",
+        "backend/src/official/s13-mechanics.ts"
+      ],
+      "counterexamples": [
+        "same target consecutive night",
+        "unverified layers"
+      ],
+      "evidence": [
+        "tests/sprint15-play-guard.test.mjs",
+        "tests/browser_s15_play_guard_e2e.py"
+      ]
+    },
+    {
+      "id": "PLAY-04",
+      "classification": "PROPOSED_GAMEPLAY_EXTENSION_NOT_ACTIVATED",
+      "sources": [
+        "VH54",
+        "VH74",
+        "P04"
+      ],
+      "conclusion": "Confidential current-wolf ballots, unique plurality, tie no bite; independent fixed representative rule. These are proposals, not confirmed.",
+      "blocker": "Sources do not select one of leader, consensus, plurality; abstention, tie, second bite and representative selection need a decision.",
+      "officialRuntime": false
+    },
+    {
+      "id": "PLAY-05",
+      "classification": "VERIFIED_RULE_BOUNDARY",
+      "sources": [
+        "VH06",
+        "VH82"
+      ],
+      "conclusion": "Count pending revival for numerical balance as specified; ledger commitment and life transition remain separate. Non-revival domains only certified.",
+      "implementation": [
+        "backend/src/official/stable-death-proof.ts"
+      ],
+      "officialRuntime": "No new revival implementation"
+    }
+  ]
+}

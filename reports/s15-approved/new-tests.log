@@ -1,0 +1,119 @@
+TAP version 13
+# (node:17514) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_APPROVED_MATCH {"ids":[8,25],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 [8,25] Village victory after valid hanging; no vote, tie, retry, change, phase, privacy, replay
+ok 1 - QD01 [8,25] Village victory after valid hanging; no vote, tie, retry, change, phase, privacy, replay
+  ---
+  duration_ms: 677.672599
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[8,25],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 [8,25] knight night victory with seer action before death; both choices private
+ok 2 - QD01 [8,25] knight night victory with seer action before death; both choices private
+  ---
+  duration_ms: 296.661109
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[8,25],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 [8,25] Knight wins by hanging, Village cannot win with contender alive
+ok 3 - QD01 [8,25] Knight wins by hanging, Village cannot win with contender alive
+  ---
+  duration_ms: 292.364939
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[8,9,25],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 dead Village teammate wins by current faction; opposite direction [8,9,25]
+ok 4 - QD01 dead Village teammate wins by current faction; opposite direction [8,9,25]
+  ---
+  duration_ms: 456.86597
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[25,28,33,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD02 wrong alignment consumes revenge without disclosure or retry; Village and Jester co-win
+ok 5 - QD02 wrong alignment consumes revenge without disclosure or retry; Village and Jester co-win
+  ---
+  duration_ms: 744.796398
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[25,33,74,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD02 valid revenge after hanging, Hunter follow completes before dead Village teammates win
+ok 6 - QD02 valid revenge after hanging, Hunter follow completes before dead Village teammates win
+  ---
+  duration_ms: 627.123251
+  type: 'test'
+  ...
+# Subtest: QD03 pin expires at next night before no-repin death, replay and retry
+ok 7 - QD03 pin expires at next night before no-repin death, replay and retry
+  ---
+  duration_ms: 685.402248
+  type: 'test'
+  ...
+# Subtest: QD03 pin reselect same target or change target, daytime follow still valid
+ok 8 - QD03 pin reselect same target or change target, daytime follow still valid
+  ---
+  duration_ms: 779.079209
+  type: 'test'
+  ...
+# Subtest: QD01 historical active game stays 1.3.2 after restart; old winner behavior and replay unchanged
+ok 9 - QD01 historical active game stays 1.3.2 after restart; old winner behavior and replay unchanged
+  ---
+  duration_ms: 300.172698
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[25,48,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_APPROVED_EVIDENCE {"id":48,"skill":"official.48.pack-bite","restart":true,"replay":true,"privacy":true}
+# Subtest: QD01 \#48 two victims via shared pack, retry, target limits, authorized projection and replay
+ok 10 - QD01 \#48 two victims via shared pack, retry, target limits, authorized projection and replay
+  ---
+  duration_ms: 432.515586
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[25,48,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 \#48 sole wolf blocks Village victory until true hanging
+ok 11 - QD01 \#48 sole wolf blocks Village victory until true hanging
+  ---
+  duration_ms: 383.16988
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[25,28,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 direct Jester hanging with live Hunter mark yields Village and Jester co-winners
+ok 12 - QD01 direct Jester hanging with live Hunter mark yields Village and Jester co-winners
+  ---
+  duration_ms: 400.264806
+  type: 'test'
+  ...
+# S15_APPROVED_MATCH {"ids":[25,33,74,84],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: QD01 revenge skip after true hanging closes chain and Village wins
+ok 13 - QD01 revenge skip after true hanging closes chain and Village wins
+  ---
+  duration_ms: 494.481041
+  type: 'test'
+  ...
+# Subtest: QD01 [8,25] all 16 final ballot combinations including self, abstention and explicit blank
+ok 14 - QD01 [8,25] all 16 final ballot combinations including self, abstention and explicit blank
+  ---
+  duration_ms: 4135.819431
+  type: 'test'
+  ...
+# Subtest: QD01 [8,25] night kill without inspection, terminal phase rejects actions
+ok 15 - QD01 [8,25] night kill without inspection, terminal phase rejects actions
+  ---
+  duration_ms: 262.491677
+  type: 'test'
+  ...
+# Subtest: QD01 current alignment and pending-life counterexamples on a real session snapshot
+ok 16 - QD01 current alignment and pending-life counterexamples on a real session snapshot
+  ---
+  duration_ms: 307.076822
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11425.564246

@@ -1,0 +1,52 @@
+{
+  "sprint": "08-gameplay-implementation",
+  "baseline": "08-acceptance-foundation-v0.9.1",
+  "version": "1.0.0-s08-gameplay",
+  "automated": {
+    "tests": 178,
+    "pass": 169,
+    "fail": 0,
+    "skipped": 9,
+    "exitCode": 0,
+    "log": "reports/SPRINT08_GAMEPLAY_FULL_REGRESSION.log"
+  },
+  "browser": {
+    "suitesPassed": 9,
+    "suitesFailed": 0,
+    "exitCode": 0,
+    "mode": "real Chromium contexts -> real backend SQLite via test bridge",
+    "log": "reports/SPRINT08_GAMEPLAY_BROWSER_ALL.log"
+  },
+  "sourceIntegrity": "PASS",
+  "typescriptBuild": "PASS",
+  "characterCount": 97,
+  "confirmedRuleDecisions": 118,
+  "legacyTestSpecs": 207,
+  "matchMetrics": {
+    "A_before": 1,
+    "A_after": 2,
+    "B_before": 0,
+    "B_after": 0,
+    "configurationsA": [
+      [
+        8,
+        25
+      ],
+      [
+        8,
+        28
+      ]
+    ]
+  },
+  "postgresql": {
+    "status": "PENDING_NOT_RUN",
+    "liveServerAvailable": false,
+    "skippedTests": 9,
+    "mandatoryMissingConfig": "FAIL_EXIT_1",
+    "newTest": "tests/postgres-s08-gameplay.test.mjs"
+  },
+  "competitive": "NO_GO",
+  "genericVoteToElimination": "BLOCKED_BY_UNCONFIRMED_V02_V03",
+  "rulePack": "Restricted official test only",
+  "changesAreServerAuthoritative": true
+}

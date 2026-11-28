@@ -1,0 +1,73 @@
+TAP version 13
+# (node:37074) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S20 DC-SOUL-02: friendly shot spends one bullet, shield blocks, unshielded villager dies, retry and restart
+ok 1 - S20 DC-SOUL-02: friendly shot spends one bullet, shield blocks, unshielded villager dies, retry and restart
+  ---
+  duration_ms: 930.556762
+  type: 'test'
+  ...
+# Subtest: S20 DC-SOUL-02: friendly kill then enemy kill, victory after second shot; legacy policy remains pinned
+not ok 2 - S20 DC-SOUL-02: friendly kill then enemy kill, victory after second shot; legacy policy remains pinned
+  ---
+  duration_ms: 681.036905
+  type: 'test'
+  location: '/tmp/wv30/tests/sprint20-owner-decisions.test.mjs:73:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+    + Set(3) {
+    +   '31f6223b-b5f4-425c-8fb9-6f02d232fa5c',
+    - Set(2) {
+        '32464ae8-2bed-429b-b342-6437a6e74bb3',
+        'd9d48985-e5af-46f0-83d4-ef73876dc87d'
+      }
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/wv30/tests/sprint20-owner-decisions.test.mjs:74:365)
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: S20 DC-TRAP-02: trapped medium fails revival, consumes mark and use once; invalid action and restart
+ok 3 - S20 DC-TRAP-02: trapped medium fails revival, consumes mark and use once; invalid action and restart
+  ---
+  duration_ms: 665.128032
+  type: 'test'
+  ...
+# Subtest: S20 DC-TRAP-02: same-night placement precedes accepted revival; no duplicate death or revival
+ok 4 - S20 DC-TRAP-02: same-night placement precedes accepted revival; no duplicate death or revival
+  ---
+  duration_ms: 534.600937
+  type: 'test'
+  ...
+# (node:37075) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S20 DC-PACK-KEEP: revoked latest selection stays revoked through blank, restored eligibility and restart; explicit replacement only
+ok 5 - S20 DC-PACK-KEEP: revoked latest selection stays revoked through blank, restored eligibility and restart; explicit replacement only
+  ---
+  duration_ms: 26.948404
+  type: 'test'
+  ...
+# Subtest: S20 DC-PACK-KEEP: blinded own receipt is unchanged when target becomes secretly invalid (before lock only)
+ok 6 - S20 DC-PACK-KEEP: blinded own receipt is unchanged when target becomes secretly invalid (before lock only)
+  ---
+  duration_ms: 4.172807
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 5
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3158.029694

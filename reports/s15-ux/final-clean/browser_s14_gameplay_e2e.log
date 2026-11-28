@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/mnt/data/s15uxfinal/tests/browser_s14_gameplay_e2e.py", line 65, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/mnt/data/s15uxfinal/tests/browser_s14_gameplay_e2e.py", line 59, in run
+    scenario('s14-silence',[25,84],chat)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/s15uxfinal/tests/browser_s14_gameplay_e2e.py", line 31, in scenario
+    fn(roles,action,resolve)
+    ~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/s15uxfinal/tests/browser_s14_gameplay_e2e.py", line 41, in chat
+    assert seer.locator('#wv-chat-input').count()==0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Error: E2E failed browser_s14_gameplay_e2e.py, exit=1, signal=null
+    at file:///mnt/data/s15uxfinal/scripts/run-browser-s06.mjs:37:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

@@ -1,0 +1,137 @@
+[
+  {
+    "screen": "mobile-night",
+    "file": "s26-polish/mobile-night.png",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "normal mirror [25,31,35,74]",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "mobile-day",
+    "file": "s26-polish/mobile-day.png",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "normal mirror [25,31,35,74]",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "basiclight-hud",
+    "file": "s26-polish/basiclight-hud.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "normal mirror [25,31,35,74]",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "cream-hud",
+    "file": "s26-polish/cream-hud.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "normal mirror [25,31,35,74]",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "sage-hud",
+    "file": "s26-polish/sage-hud.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "normal mirror [25,31,35,74]",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "mirror-first-aura",
+    "file": "s26-polish/mirror-first-aura.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "normal mirror [25,31,35,74]",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "mirror-second-aura",
+    "file": "s26-polish/mirror-second-aura.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "normal mirror [25,31,35,74]",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "endgame",
+    "file": "s26-polish/endgame.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "normal mirror [25,31,35,74]",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  },
+  {
+    "screen": "replay",
+    "file": "s26-polish/replay.png",
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "viewer": "self #25",
+    "ruleset": "wolvesville-official-v1.3.3",
+    "mode": "NORMAL_GAMEPLAY",
+    "scenario": "normal mirror [25,31,35,74]",
+    "horizontalOverflow": 0,
+    "brokenVisibleImages": [],
+    "result": "CAPTURED"
+  }
+]

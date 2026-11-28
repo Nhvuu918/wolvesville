@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/tmp/wv22/tests/browser_s15_normal_e2e.py", line 81, in <module>
+    if __name__=='__main__':run(sys.argv[1])
+                            ~~~^^^^^^^^^^^^^
+  File "/tmp/wv22/tests/browser_s15_normal_e2e.py", line 48, in run
+    assert guest.locator('.wv-winners').count()==1, 'TERMINAL_REST_RENDER_GAP: completed projection accepted while auxiliary feedback is pending'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: TERMINAL_REST_RENDER_GAP: completed projection accepted while auxiliary feedback is pending

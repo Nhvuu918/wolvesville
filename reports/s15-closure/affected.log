@@ -1,0 +1,214 @@
+TAP version 13
+# (node:1241) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":88,"branch":"follow.blocked.by.snow","skill":"official.88.pin","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[8,9,28,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester
+ok 1 - S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester
+  ---
+  duration_ms: 900.091983
+  type: 'test'
+  ...
+# Subtest: S15 closure primary shield prevents Hunter death and follow; next night mark may be renewed
+ok 2 - S15 closure primary shield prevents Hunter death and follow; next night mark may be renewed
+  ---
+  duration_ms: 810.276551
+  type: 'test'
+  ...
+# Subtest: S15 closure snow shield persists after owner dies; expires or is consumed only once
+ok 3 - S15 closure snow shield persists after owner dies; expires or is consumed only once
+  ---
+  duration_ms: 751.100418
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":33,"branch":"revenge.hunter.follow","skill":"official.33.hanging-revenge","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 closure revenge kills Hunter and follows pinned villager before closing original chain
+ok 4 - S15 closure revenge kills Hunter and follows pinned villager before closing original chain
+  ---
+  duration_ms: 611.596381
+  type: 'test'
+  ...
+# Subtest: S15 closure Hunter hanging pulls wolf as secondary without opening revenge or duplicating death
+ok 5 - S15 closure Hunter hanging pulls wolf as secondary without opening revenge or duplicating death
+  ---
+  duration_ms: 501.786696
+  type: 'test'
+  ...
+# (node:1242) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_DEEP_EVIDENCE {"id":29,"branch":"rescue.night-victim","skill":"official.29.rescue","restart":true,"replay":true,"privacy":true}
+# S15_DEEP_EVIDENCE {"id":29,"branch":"rescue.and.poison","skill":"official.29.rescue","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 deep \#29 preliminary rescue + poison in same night, private notice and exact-once resources
+ok 6 - S15 deep \#29 preliminary rescue + poison in same night, private notice and exact-once resources
+  ---
+  duration_ms: 879.621542
+  type: 'test'
+  ...
+# S15_DEEP_EVIDENCE {"id":29,"branch":"rescue.self-once","skill":"official.29.rescue","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[8,25,29],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 deep \#29 self rescue per NV32, second use rejected, no-rescue deaths close before winner
+ok 7 - S15 deep \#29 self rescue per NV32, second use rejected, no-rescue deaths close before winner
+  ---
+  duration_ms: 738.722719
+  type: 'test'
+  ...
+# S15_DEEP_EVIDENCE {"id":85,"branch":"redirect.hypnosis","skill":"official.85.hypnotize","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[8,25,85],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 deep \#85 redirect actual victim, consecutive target forbidden, durable winner
+ok 8 - S15 deep \#85 redirect actual victim, consecutive target forbidden, durable winner
+  ---
+  duration_ms: 656.72216
+  type: 'test'
+  ...
+# S15_DEEP_EVIDENCE {"id":63,"branch":"redirect.flag","skill":"official.63.redirect","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 deep \#63 redirect begins night two, unsuccessful mark free, cooldown and actual recipient
+ok 9 - S15 deep \#63 redirect begins night two, unsuccessful mark free, cooldown and actual recipient
+  ---
+  duration_ms: 963.386171
+  type: 'test'
+  ...
+# S15_DEEP_EVIDENCE {"id":15,"branch":"secret.pair.linked-death","skill":"official.15.single-kill","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[15,25,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 deep \#15 secret link once per target, vote death chain closes before sole winner
+ok 10 - S15 deep \#15 secret link once per target, vote death chain closes before sole winner
+  ---
+  duration_ms: 657.011032
+  type: 'test'
+  ...
+# S15_DEEP_EVIDENCE {"id":58,"branch":"different.faction.two-others","skill":"official.58.compare","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[25,28,58],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 deep \#58 two other factions die, Jester killed at night does not win
+ok 11 - S15 deep \#58 two other factions die, Jester killed at night does not win
+  ---
+  duration_ms: 492.659184
+  type: 'test'
+  ...
+# S15_DEEP_EVIDENCE {"id":28,"branch":"hanging.sole-winner","skill":"passive.28.hanged-victory","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[25,28,58],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 deep \#28 hanging wins with other contenders alive, non-final trigger cannot win
+ok 12 - S15 deep \#28 hanging wins with other contenders alive, non-final trigger cannot win
+  ---
+  duration_ms: 359.708473
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[8,9],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 deep two-seat snow protects self, blank vote, knight wins by hanging
+ok 13 - S15 deep two-seat snow protects self, blank vote, knight wins by hanging
+  ---
+  duration_ms: 336.686921
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[8,9,25,28,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 deep five-seat mixed inspection, protection, knight and Jester co-win by vote
+ok 14 - S15 deep five-seat mixed inspection, protection, knight and Jester co-win by vote
+  ---
+  duration_ms: 1187.592681
+  type: 'test'
+  ...
+# S15_DEEP_EVIDENCE {"id":28,"branch":"cancelled.hanging.no-win","skill":"passive.28.hanged-victory","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[25,28,79],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 deep \#28 PH-02 cancelled leading ballot cannot win; actual later hanging can win
+ok 15 - S15 deep \#28 PH-02 cancelled leading ballot cannot win; actual later hanging can win
+  ---
+  duration_ms: 561.535728
+  type: 'test'
+  ...
+# Subtest: S15 deep C boundary: knight hanging without a verified village predicate must not invent a winner
+ok 16 - S15 deep C boundary: knight hanging without a verified village predicate must not invent a winner
+  ---
+  duration_ms: 301.74684
+  type: 'test'
+  ...
+# (node:1248) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":88,"branch":"hanging.follow","skill":"official.88.pin","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[8,28,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 final \#88 hanging follow kills \#28 without Jester win; stable knight victory
+ok 17 - S15 final \#88 hanging follow kills \#28 without Jester win; stable knight victory
+  ---
+  duration_ms: 810.122183
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":28,"branch":"hanging.with.hunter","skill":"passive.28.hanged-victory","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[25,28,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 final \#28 direct hanging remains winning despite a live Hunter mark
+ok 18 - S15 final \#28 direct hanging remains winning despite a live Hunter mark
+  ---
+  duration_ms: 477.535535
+  type: 'test'
+  ...
+# S15_MATCH_EVIDENCE {"ids":[8,25,28,88],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 final \#88 hanging without mark does not eliminate secondary player; subsequent direct Jester win
+ok 19 - S15 final \#88 hanging without mark does not eliminate secondary player; subsequent direct Jester win
+  ---
+  duration_ms: 718.981874
+  type: 'test'
+  ...
+# Subtest: S15 final \#88 night follow and \#28 non-hanging death are closed before victory
+ok 20 - S15 final \#88 night follow and \#28 non-hanging death are closed before victory
+  ---
+  duration_ms: 447.774718
+  type: 'test'
+  ...
+# Subtest: S15 final \#88 hanging follow to Knight does not award Jester a false survivor win
+ok 21 - S15 final \#88 hanging follow to Knight does not award Jester a false survivor win
+  ---
+  duration_ms: 498.729875
+  type: 'test'
+  ...
+# Subtest: S15 final \#88 already dead marked target is not eliminated twice
+ok 22 - S15 final \#88 already dead marked target is not eliminated twice
+  ---
+  duration_ms: 840.968743
+  type: 'test'
+  ...
+# Subtest: S15 final \#88 stale mark without renewed choice fails atomically rather than inventing duration
+ok 23 - S15 final \#88 stale mark without renewed choice fails atomically rather than inventing duration
+  ---
+  duration_ms: 679.538462
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":33,"branch":"post-hanging.revenge","skill":"official.33.hanging-revenge","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 final \#33 actual hanging opens private post-death response; choice commits secondary before victory
+ok 24 - S15 final \#33 actual hanging opens private post-death response; choice commits secondary before victory
+  ---
+  duration_ms: 613.8411
+  type: 'test'
+  ...
+# Subtest: S15 final \#33 decline revenge closes chain without secondary death and no invented winner
+ok 25 - S15 final \#33 decline revenge closes chain without secondary death and no invented winner
+  ---
+  duration_ms: 494.382387
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":93,"branch":"pack.double-bite","skill":"official.93.pack-bite","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[74,84,93,94],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 final \#93 current faction grants one-wolf two-target pack action after \#94 hanging
+ok 26 - S15 final \#93 current faction grants one-wolf two-target pack action after \#94 hanging
+  ---
+  duration_ms: 712.589812
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":87,"branch":"rescue.one-bite-victim","skill":"official.87.rescue","restart":true,"replay":true,"privacy":true}
+# S15_MATCH_EVIDENCE {"ids":[74,84,87,93,94],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S15 final \#87 privately receives both bite victims and rescues only one before wolf parity
+ok 27 - S15 final \#87 privately receives both bite victims and rescues only one before wolf parity
+  ---
+  duration_ms: 1100.370861
+  type: 'test'
+  ...
+# Subtest: S15 final \#87 may use its single rescue on itself while preliminarily bitten
+ok 28 - S15 final \#87 may use its single rescue on itself while preliminarily bitten
+  ---
+  duration_ms: 803.418701
+  type: 'test'
+  ...
+1..28
+# tests 28
+# suites 0
+# pass 28
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8439.615302

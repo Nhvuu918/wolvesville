@@ -1,0 +1,9 @@
+# WOLVESVILLE — IMMERSIVE-03 WHEEL OF FATE
+
+Personal decision aid integrated in latest verified IMMERSIVE-03 (base SHA-256 `40ebfcbd2e7f004966c3589855edcaf52f3816c05f499fba00cdf1f73e754b57`; source fingerprint `23c938f72f5ff76dc9919658194369af00b99ee7d9eee7872eb97fe98d1cab8c`). All 5352 base payload hashes and CRC verified before extracting.
+
+Frontend files fate-wheel.js/css; integration hooks in live HUD, expiry, game change, logout and navigation. Existing shared WebAudio context with short cancellable SFX; fixed central pointer and SVG rotating disc. Actual account avatar retrieved read-only using slot-filtered existing media endpoint and ACL, neutral initials fallback. Static routes explicitly allow new assets. No new game resolver, rules, normal/candidate deck, migration, or FULL metric.
+
+Focused test set 21 pass, 0 fail, 0 skipped (includes 5 new tests). Browser actual 4 users Normal DEV: PASS. Browser checked default list, customization, real rotation and exact landing, immutable game revision during spin, no other client modal, audio invocation, light/dark/mobile, 16 themes smoke, mute and close mid-spin, day/vote, reduced motion, explicit target selection and manual vote submission. Raw Chromium CDP capture has 114 frames, timestamps preserved in evidence, MP4 visual capture only (no audio track). GIF from actual sampled PNG frames. User account test avatar is solid gold square created for API testing (not secret role). Direct Chromium navigation blocked; bridge uses actual backend/SQLite but not native storage. Full regression not rerun, no fresh FULL certification. Existing cloud gates remain pending. See acceptance checklist for tests not completed. No background processes at handoff.
+
+Final source fingerprint: `f48b954d3798933bb997536c51816c2d59d574a7a3a805779c8bb2657d54b8fe`.

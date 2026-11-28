@@ -1,0 +1,6 @@
+DEEP_NORMAL_BROWSER_PASS s15-deep-leader village
+S06_BROWSER_CASE_PASS browser_s15_deep_normal_leader_e2e.py village
+DEEP_NORMAL_BROWSER_PASS s15-deep-leader enemy
+S06_BROWSER_CASE_PASS browser_s15_deep_normal_leader_e2e.py enemy
+S06_BROWSER_PASS browser_s15_deep_normal_leader_e2e.py
+S06_BROWSER_ALL_1_PASS

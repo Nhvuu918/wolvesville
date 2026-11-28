@@ -1,0 +1,131 @@
+TAP version 13
+# (node:29551) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Deep engineer \#10: first-night trap on 25, typed inspection, private RNG and durable replay
+not ok 1 - Deep engineer \#10: first-night trap on 25, typed inspection, private RNG and durable replay
+  ---
+  duration_ms: 886.529981
+  type: 'test'
+  location: '/tmp/wvdeep/tests/sprint15-deep-engineer.test.mjs:50:31'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    409 !== 200
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 200
+  actual: 409
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/wvdeep/tests/sprint15-deep-engineer.test.mjs:54:159)
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: Deep engineer \#10: first-night trap on 74, typed inspection, private RNG and durable replay
+not ok 2 - Deep engineer \#10: first-night trap on 74, typed inspection, private RNG and durable replay
+  ---
+  duration_ms: 825.851538
+  type: 'test'
+  location: '/tmp/wvdeep/tests/sprint15-deep-engineer.test.mjs:50:31'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    409 !== 200
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 200
+  actual: 409
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/wvdeep/tests/sprint15-deep-engineer.test.mjs:54:159)
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: Deep engineer \#10: first-night trap on 5, typed inspection, private RNG and durable replay
+not ok 3 - Deep engineer \#10: first-night trap on 5, typed inspection, private RNG and durable replay
+  ---
+  duration_ms: 703.669507
+  type: 'test'
+  location: '/tmp/wvdeep/tests/sprint15-deep-engineer.test.mjs:50:31'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    409 !== 200
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 200
+  actual: 409
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/wvdeep/tests/sprint15-deep-engineer.test.mjs:54:159)
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# (node:29552) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# DEEP_NORMAL_EVIDENCE {"deck":"s15-deep-leader","ids":[25,48,74],"side":"village","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# DEEP_NORMAL_EVIDENCE {"deck":"s15-deep-leader","ids":[25,48,74],"side":"enemy","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# Subtest: Deep normal s15-deep-leader: both factions, real protection, chat, private observations, SQLite restart and replay
+ok 4 - Deep normal s15-deep-leader: both factions, real protection, chat, private observations, SQLite restart and replay
+  ---
+  duration_ms: 2713.5814
+  type: 'test'
+  ...
+# DEEP_NORMAL_EVIDENCE {"deck":"s15-deep-leader-snow","ids":[9,25,48,74],"side":"village","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# DEEP_NORMAL_EVIDENCE {"deck":"s15-deep-leader-snow","ids":[9,25,48,74],"side":"enemy","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# Subtest: Deep normal s15-deep-leader-snow: both factions, real protection, chat, private observations, SQLite restart and replay
+ok 5 - Deep normal s15-deep-leader-snow: both factions, real protection, chat, private observations, SQLite restart and replay
+  ---
+  duration_ms: 3146.74865
+  type: 'test'
+  ...
+# DEEP_NORMAL_EVIDENCE {"deck":"s15-deep-knight-snow","ids":[8,9],"side":"village","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# DEEP_NORMAL_EVIDENCE {"deck":"s15-deep-knight-snow","ids":[8,9],"side":"enemy","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# Subtest: Deep normal s15-deep-knight-snow: both factions, real protection, chat, private observations, SQLite restart and replay
+ok 6 - Deep normal s15-deep-knight-snow: both factions, real protection, chat, private observations, SQLite restart and replay
+  ---
+  duration_ms: 1812.376182
+  type: 'test'
+  ...
+# DEEP_NORMAL_EVIDENCE {"deck":"s15-deep-knight-snow-aura","ids":[8,9,25],"side":"village","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# DEEP_NORMAL_EVIDENCE {"deck":"s15-deep-knight-snow-aura","ids":[8,9,25],"side":"enemy","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# Subtest: Deep normal s15-deep-knight-snow-aura: both factions, real protection, chat, private observations, SQLite restart and replay
+ok 7 - Deep normal s15-deep-knight-snow-aura: both factions, real protection, chat, private observations, SQLite restart and replay
+  ---
+  duration_ms: 3168.29682
+  type: 'test'
+  ...
+# DEEP_NORMAL_EVIDENCE {"deck":"s15-deep-knight-snow-role","ids":[8,9,74],"side":"village","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# DEEP_NORMAL_EVIDENCE {"deck":"s15-deep-knight-snow-role","ids":[8,9,74],"side":"enemy","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# Subtest: Deep normal s15-deep-knight-snow-role: both factions, real protection, chat, private observations, SQLite restart and replay
+ok 8 - Deep normal s15-deep-knight-snow-role: both factions, real protection, chat, private observations, SQLite restart and replay
+  ---
+  duration_ms: 3388.928195
+  type: 'test'
+  ...
+# DEEP_NORMAL_EVIDENCE {"deck":"s15-deep-knight-snow-dual","ids":[8,9,25,74],"side":"village","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# DEEP_NORMAL_EVIDENCE {"deck":"s15-deep-knight-snow-dual","ids":[8,9,25,74],"side":"enemy","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# Subtest: Deep normal s15-deep-knight-snow-dual: both factions, real protection, chat, private observations, SQLite restart and replay
+ok 9 - Deep normal s15-deep-knight-snow-dual: both factions, real protection, chat, private observations, SQLite restart and replay
+  ---
+  duration_ms: 4766.632782
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 6
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 19206.858585

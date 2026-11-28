@@ -1,0 +1,12 @@
+E2E_SCHEDULER_WAIT exclusive 88068
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 512
+E2E_RESOURCE start cpu "usage_usec 13911904933\nuser_usec 11489439823\nsystem_usec 2422465109\nnice_usec 7586549\nnr_periods 57924\nnr_throttled 25513\nthrottled_usec 1758314891\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 63868\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s15_growth_dog_thief_e2e.py default port 36513 db /tmp/wolvesville-s06-browser-6AVvL5/test.sqlite
+SCENARIO_READY s15-growth-dog-thief
+SCENARIO_ACTIONS_PASS s15-growth-dog-thief
+S15_GROWTH_DOG_THIEF_BROWSER_PASS
+S06_BROWSER_PASS browser_s15_growth_dog_thief_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 13930797437\nuser_usec 11504625192\nsystem_usec 2426172244\nnice_usec 7624825\nnr_periods 58007\nnr_throttled 25518\nthrottled_usec 1758439578\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 63868\noom 0\noom_kill 0\noom_group_kill 0"

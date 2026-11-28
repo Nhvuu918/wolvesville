@@ -1,0 +1,176 @@
+{
+  "version": "1.7.3-s15-expansion-wip",
+  "status": "WIP",
+  "baseline": {
+    "version": "1.7.2-s15-ux-wip",
+    "zipEntries": 1154,
+    "crc": "PASS",
+    "immutableSource": "PASS"
+  },
+  "currentBackend": {
+    "pass": 243,
+    "fail": 0,
+    "skipped": 11,
+    "total": 254,
+    "exit": 0,
+    "scope": "clean candidate; application and TS test payload byte-identical to final; Python cleanup harness changed afterward"
+  },
+  "sourceIntegrity": {
+    "exit": 0
+  },
+  "typescriptBuild": {
+    "exit": 0
+  },
+  "rulesBuild": {
+    "exit": 0
+  },
+  "metricsVerification": {
+    "exit": 0,
+    "cases": 42,
+    "R": 34,
+    "F": 0,
+    "A": 10,
+    "B": 8,
+    "C": 0,
+    "S": {
+      "newVerifiedBranches": 10,
+      "exactRatio": null,
+      "reason": "Inherited composite rows not an atomic denominator; source-mapped new skills/passive branches only; no overall ratio certified"
+    }
+  },
+  "browserManifest": [
+    {
+      "suite": "browser_s12_attack_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-expansion/clean/browser_s12_attack_e2e-cleanup-retry.log"
+    },
+    {
+      "suite": "browser_s11_voting_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_s11_seer_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_s10_gameplay_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_s09_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_s08_gameplay_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_s07_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-expansion/clean/after-cleanup/browser_s07_e2e.log"
+    },
+    {
+      "suite": "browser_s06_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_s05_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_lobby_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_codex_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_demo_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_ux_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_s13_skills_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_s14_gameplay_e2e.py",
+      "exit": null,
+      "status": "NOT_RERUN"
+    },
+    {
+      "suite": "browser_s14_transport_regression.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-expansion/clean/after-cleanup/browser_s14_transport_regression.log"
+    },
+    {
+      "suite": "browser_s15_protection_e2e.py",
+      "exit": 0,
+      "status": "PASS",
+      "log": "reports/s15-expansion/clean/after-cleanup/browser_s15_protection_e2e-retry.log"
+    },
+    {
+      "suite": "browser_s15_voting_information_e2e.py",
+      "exit": null,
+      "status": "INCOMPLETE_TOOL_INTERRUPTION",
+      "log": "reports/s15-expansion/clean/after-cleanup/browser_s15_voting_information_e2e.log"
+    },
+    {
+      "suite": "browser_s15_gameplay_ux_e2e.py",
+      "exit": 0,
+      "status": "PASS_BEFORE_PYTHON_CLEANUP_CHANGE",
+      "log": "reports/s15-expansion/clean/browser_s15_gameplay_ux_e2e.log"
+    },
+    {
+      "suite": "browser_s15_aura_expansion_e2e.py",
+      "exit": 0,
+      "status": "PASS_BEFORE_PYTHON_CLEANUP_CHANGE",
+      "log": "reports/s15-expansion/clean/browser_s15_aura_expansion_e2e.log"
+    },
+    {
+      "suite": "browser_s15_guard_shot_e2e.py",
+      "exit": 0,
+      "status": "PASS_BEFORE_PYTHON_CLEANUP_CHANGE",
+      "log": "reports/s15-expansion/clean/browser_s15_guard_shot_e2e-retry.log"
+    }
+  ],
+  "postgresql": "PENDING_ENVIRONMENT",
+  "competitive": "NO-GO",
+  "finalRelease": "NO-GO",
+  "cleanup": {
+    "observed": "Sprint12 TargetClosedError after gameplay assertions",
+    "change": "wait for Playwright route handlers before context close; catch only HTTP request errors in route handler",
+    "confirmed": "Sprint12 clean retry, Sprint07 clean retry, transport and protection pass",
+    "rootCause": "route lifecycle fix correlated with clean retry; exact historical timeout root causes not established"
+  },
+  "remaining": [
+    "F=0; mandatory interactions outside restricted decks not certified",
+    "Overall S denominator not certified",
+    "Browser manifest incomplete; not all suites rerun after Python harness change",
+    "Wolf pack attack, healing, revival, full team victory and role dependencies remain incomplete"
+  ]
+}

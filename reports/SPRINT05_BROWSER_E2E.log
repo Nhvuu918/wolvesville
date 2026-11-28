@@ -1,0 +1,57 @@
+PASS Browser S05: 5 unique real identities, room membership synchronized
+PASS Browser S05: exactly five locked roles assigned, private role projection
+DEBUG SKILL CONTROLS {'page': 'ingame', 'phase': 'NIGHT_COLLECT', 'cap': [{'skillId': 'official.74.inspect-role', 'label': 'Soi thân phận', 'phase': 'NIGHT_COLLECT', 'available': True}], 'html': '✦ Soi thân phận người đã chọn', 'skillBtn': True}
+DEBUG AFTER ACTION {'working': False, 'feedback': 1, 'notice': 'Đã nhận hành động. Kết quả sẽ có sau khi lượt được xử lý.', 'selected': '83d673b8-8cfe-49f0-a2f1-e0eeb6466319', 'phase': 'NIGHT_COLLECT', 'revision': 3}
+DEBUG SKILL CONTROLS {'page': 'ingame', 'phase': 'NIGHT_COLLECT', 'cap': [{'skillId': 'official.34.night-block', 'label': 'Đi lang thang', 'phase': 'NIGHT_COLLECT', 'available': True}], 'html': '✦ Đi lang thang người đã chọn', 'skillBtn': True}
+DEBUG AFTER ACTION {'working': False, 'feedback': 1, 'notice': 'Đã nhận hành động. Kết quả sẽ có sau khi lượt được xử lý.', 'selected': '65978da3-2e54-4001-90b5-b63a926ac2cb', 'phase': 'NIGHT_COLLECT', 'revision': 4}
+PASS Browser S05: official skills submitted in two contexts, resolved/possibly cancelled with actor-specific feedback
+PASS Browser S05: replay/reconnect, Codex 97 preserved, no internal support events leaked
+S05_BROWSER_PASS browser_s05_e2e.py
+PASS Lobby pointer: center/label/icon/padding each opens correct room details in ONE click without joining
+PASS Lobby keyboard: Enter and Space activate the semantic room marker
+PASS Lobby repeated click: double-activation never changes room membership
+PASS Lobby locked room: visible but Join disabled; unlock refresh restores action
+PASS Lobby join: explicit Join mutates backend membership and both WebSocket clients synchronize
+PASS Lobby mobile tap: one tap opens FULL room, Join disabled, no horizontal overflow
+PASS Lobby stable marker identity after refresh; no page JavaScript errors
+S05_BROWSER_PASS browser_lobby_e2e.py
+PASS Browser: Demo login, Codex wheel, dynamic 97-role count and 12 visible orbit cards
+PASS Browser: Wheel keyboard navigation changes selection exactly once
+PASS Browser: Grid displays 97 unique official cards without technical ID labels
+PASS Browser: Diacritic insensitive search, no-result state, clear filters
+PASS Browser: Official team filters, role detail has no JSON, debug, ID or fabricated examples
+PASS Browser: Selection persists across Wheel/Grid switches
+PASS Browser: Responsive grid is 4/3/2 columns across desktop/tablet/mobile
+PASS Browser: Broken portrait displays presentation fallback without changing character data
+PASS Browser: Reduced motion disables hover transitions
+PASS Browser: Session reconnect, Lobby navigation and logout unaffected
+PASS Browser: No page errors, Codex 97 E2E complete
+S05_BROWSER_PASS browser_codex_e2e.py
+PASS Browser: two real Demo CTA clicks create distinct backend accounts and Lobby sessions
+PASS Browser: two independent demo sessions create/join same room through real backend
+PASS Browser: authenticated WebSocket connectivity and server-authorized room membership
+PASS Browser: fresh document reconnects an existing Demo session without shared credentials
+PASS Browser: logout removes only the current demo session
+PASS Browser: demo WebSocket reconnect
+S05_BROWSER_PASS browser_demo_e2e.py
+PASS Browser: two independent accounts authenticate via backend
+PASS Browser: Room created and joined by two independently authenticated contexts
+PASS Browser: server game session, private role projections, official 97-role catalog and WebSocket notification
+PASS Browser: accepted skill has pending notification, no premature or cross-client result
+PASS Browser: resolved private result only to actor; both clients sync phase
+PASS Browser: fresh document restores authorized game and private result from server
+PASS Browser: reconnect preserves one durable result and complete immediate text
+PAGE ERRORS []
+S05_BROWSER_PASS browser_e2e.py
+PASS Browser UX: independently authenticated real sessions have simple navigation, no unsupported mock links
+PASS Browser UX: approved 97-character Wheel/Grid unchanged, player-facing labels simplified
+PASS Browser UX: settings show actual local preferences without prototype data reset/import
+PASS Browser UX: real lobby across 1920/1366/768 widths, no horizontal overflow
+PASS Browser UX: world-map lobby uses backend room count, not three prototype rooms
+PASS Browser UX: two clients join server room, room states translated, host permissions intact
+PASS Browser UX: disconnect banner and reconnect state reconciliation
+Browser UX mobile viewport metrics: {'scroll': 390, 'client': 390}
+PASS Browser UX: logout expires only own session, preserves other client
+PASS Browser UX: no page JavaScript errors
+S05_BROWSER_PASS browser_ux_e2e.py
+S05_BROWSER_ALL_6_PASS

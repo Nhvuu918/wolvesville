@@ -1,0 +1,3659 @@
+[
+  {
+    "ruleId": "VH01",
+    "characterId": null,
+    "name": "VH01",
+    "exactRule": "Phải nhận ít nhất 2 phiếu hợp lệ cuối cùng sau khi áp dụng các hiệu ứng thao túng phiếu.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH01"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH06-S01",
+      "WV-CH06-S02",
+      "WV-CH06-S03",
+      "WV-CH06-S04"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-15",
+      "T-MC-21",
+      "T-MC-27",
+      "T-MC-36",
+      "PROP-16",
+      "PROP-20",
+      "T131-B11"
+    ]
+  },
+  {
+    "ruleId": "VH02",
+    "characterId": null,
+    "name": "VH02",
+    "exactRule": "Chọn lại ngẫu nhiên trong tập ứng viên hợp lệ; nếu không đủ hai hội viên thì không kích hoạt liên kết.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH02"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH62-S01",
+      "WV-CH62-S02"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH03",
+    "characterId": null,
+    "name": "VH03",
+    "exactRule": "Hoàn tất toàn bộ chuỗi sự kiện hiện tại, sau đó xét đồng thời điều kiện thắng và công nhận đồng thắng.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH03"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "T-MC-30",
+      "T-COV-02",
+      "T-COV-28",
+      "T-COV-30",
+      "PROP-02",
+      "PROP-11",
+      "PROP-17",
+      "T131-B16"
+    ]
+  },
+  {
+    "ruleId": "VH04",
+    "characterId": null,
+    "name": "VH04",
+    "exactRule": "Ưu tiên liên kết hợp lệ được tạo trước; nếu đồng thời thì dùng thứ tự phân giải ổn định xác định trước ván.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH04"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "T-SC-20",
+      "T-MC-10",
+      "T-MC-11",
+      "T131-B05"
+    ]
+  },
+  {
+    "ruleId": "VH05",
+    "characterId": null,
+    "name": "VH05",
+    "exactRule": "x2 cho phép dùng một bình cứu tối đa hai lượt trong cùng đêm; sau đó bình hết.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH05"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH29-S01",
+      "WV-CH29-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-37",
+      "T131-B01"
+    ]
+  },
+  {
+    "ruleId": "VH06",
+    "characterId": null,
+    "name": "VH06",
+    "exactRule": "Người chờ hồi sinh vẫn tính vào quân số theo E03; nếu điều kiện thắng đã thỏa sau chuỗi hiện tại thì kết thúc ván, không mở lượt mới để hồi sinh.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH06"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH07",
+    "characterId": null,
+    "name": "VH07",
+    "exactRule": "Kỹ năng công khai vai trò mặc định công khai vai trò thật, trừ ngoại lệ được mô tả rõ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH07"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "T-SC-19",
+      "T-COV-54"
+    ]
+  },
+  {
+    "ruleId": "VH08",
+    "characterId": null,
+    "name": "VH08",
+    "exactRule": "Cùng pha/cùng mức tác động: xét phụ thuộc, ưu tiên kỹ năng, thứ tự kích hoạt hợp lệ; nếu thực sự đồng thời thì dùng thứ tự ổn định xác định trước ván.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH08"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH33-S01",
+      "WV-CH33-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-11",
+      "T-MC-08",
+      "T-MC-09",
+      "T-MC-18",
+      "T-COV-16",
+      "PROP-01",
+      "PROP-08",
+      "PROP-19"
+    ]
+  },
+  {
+    "ruleId": "VH09",
+    "characterId": null,
+    "name": "VH09",
+    "exactRule": "Tối đa 1 viên trong một giai đoạn ngày hoặc đêm, trừ nâng cấp hợp lệ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH09"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH32-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-22",
+      "T-MC-29"
+    ]
+  },
+  {
+    "ruleId": "VH10",
+    "characterId": null,
+    "name": "VH10",
+    "exactRule": "Khóa kỹ năng đêm hiện tại; lệnh đã nộp nhưng chưa thực thi cũng bị hủy.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH10"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH34-S01"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH11",
+    "characterId": null,
+    "name": "VH11",
+    "exactRule": "Giữ hào quang phản chiếu gần nhất nếu đã từng phản chiếu; nếu chưa từng thì hiện hào quang thật.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH11"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH35-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-35"
+    ]
+  },
+  {
+    "ruleId": "VH12",
+    "characterId": null,
+    "name": "VH12",
+    "exactRule": "Có thể dùng cầu lửa và khiên hộ vệ trong cùng đêm; mỗi kỹ năng tiêu hao tài nguyên riêng.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH12"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH36-S01",
+      "WV-CH36-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-36"
+    ]
+  },
+  {
+    "ruleId": "VH13",
+    "characterId": null,
+    "name": "VH13",
+    "exactRule": "Không xuyên qua bảo vệ hợp lệ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH13"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH36-S01",
+      "WV-CH36-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-36"
+    ]
+  },
+  {
+    "ruleId": "VH14",
+    "characterId": null,
+    "name": "VH14",
+    "exactRule": "Tráo đổi kéo dài từ đêm kích hoạt đến hết ngày hôm sau.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH14"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH37-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-08"
+    ]
+  },
+  {
+    "ruleId": "VH15",
+    "characterId": null,
+    "name": "VH15",
+    "exactRule": "Tráo đổi từng đòn tấn công giữa A và B; nếu cả hai cùng chịu đòn chí mạng thì cả hai chết.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH15"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH37-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-08",
+      "T-MC-38"
+    ]
+  },
+  {
+    "ruleId": "VH16",
+    "characterId": null,
+    "name": "VH16",
+    "exactRule": "Hút tối đa một linh hồn mỗi đêm.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH16"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH38-S01",
+      "WV-CH38-S02",
+      "WV-CH38-S03",
+      "WV-CH38-S04",
+      "WV-CH38-S05",
+      "WV-CH38-S06"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-38"
+    ]
+  },
+  {
+    "ruleId": "VH17",
+    "characterId": null,
+    "name": "VH17",
+    "exactRule": "Phải tự giết nhiều hơn một nửa số Sói đầu ván; ngưỡng cố định.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH17"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH39-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-39"
+    ]
+  },
+  {
+    "ruleId": "VH18",
+    "characterId": null,
+    "name": "VH18",
+    "exactRule": "Bắt nhầm Dân thì mất xe đúng 1 đêm tiếp theo, sau đó tự động lấy lại.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH18"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH39-S01"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH19",
+    "characterId": null,
+    "name": "VH19",
+    "exactRule": "Người bị hỏi mà không trả lời đúng hạn sẽ chết.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH19"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH40-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-40"
+    ]
+  },
+  {
+    "ruleId": "VH20",
+    "characterId": null,
+    "name": "VH20",
+    "exactRule": "Người còn lại của cặp đôi cũ được tố cáo cả ngày lẫn đêm; xử lý theo thứ tự sự kiện hợp lệ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH20"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH42-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-42"
+    ]
+  },
+  {
+    "ruleId": "VH21",
+    "characterId": null,
+    "name": "VH21",
+    "exactRule": "Được làm bánh và tặng bánh trong cùng một đêm; làm trước, tặng sau.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH21"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH44-S01",
+      "WV-CH44-S02"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH22",
+    "characterId": null,
+    "name": "VH22",
+    "exactRule": "Ghi nhận hào quang thực sự của người chết.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH22"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH23",
+    "characterId": null,
+    "name": "VH23",
+    "exactRule": "Khi Hắc Tinh chết, phe Sói mất toàn bộ kỹ năng, bao gồm quyền cắn chung của bầy.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH23"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH46-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-17",
+      "T-MC-15",
+      "T-COV-30",
+      "T-COV-73"
+    ]
+  },
+  {
+    "ruleId": "VH24",
+    "characterId": null,
+    "name": "VH24",
+    "exactRule": "Ngoại lệ miễn khóa áp dụng theo đúng tên vai trò Tiên Tri, Bảo Vệ/Hộ Vệ được nêu trong luật; không mở rộng theo kỹ năng tương tự.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH24"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH47-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-18",
+      "T-MC-15"
+    ]
+  },
+  {
+    "ruleId": "VH25",
+    "characterId": null,
+    "name": "VH25",
+    "exactRule": "Có tổng cộng 2 lần kích hoạt ảo ảnh trong cả ván; mỗi lần áp dụng cho đêm kích hoạt.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH25"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH49-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-49"
+    ]
+  },
+  {
+    "ruleId": "VH26",
+    "characterId": null,
+    "name": "VH26",
+    "exactRule": "Người được kéo dài sự sống được tính vào quân số phe khi xét thắng cho đến khi trở về nghĩa địa.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH26"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH51-S01",
+      "WV-CH51-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-31",
+      "T-MC-38",
+      "T-MC-40",
+      "T131-B09"
+    ]
+  },
+  {
+    "ruleId": "VH27",
+    "characterId": null,
+    "name": "VH27",
+    "exactRule": "Được dùng cả hai chó bảo vệ cùng một người trong cùng đêm; mỗi chó chặn đúng loại tấn công.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH27"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH52-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-52",
+      "T-COV-66"
+    ]
+  },
+  {
+    "ruleId": "VH28",
+    "characterId": null,
+    "name": "VH28",
+    "exactRule": "Tiết lộ công khai vai trò thật của mục tiêu cho cả làng.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH28"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH54-S01",
+      "WV-CH54-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-54"
+    ]
+  },
+  {
+    "ruleId": "VH29",
+    "characterId": null,
+    "name": "VH29",
+    "exactRule": "Có thể được bảo vệ hợp lệ cứu khỏi cái chết do ghé thăm mục tiêu nguy hiểm.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH29"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH56-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-56"
+    ]
+  },
+  {
+    "ruleId": "VH30",
+    "characterId": null,
+    "name": "VH30",
+    "exactRule": "Gây chết độc lập lên từng mục tiêu khác phe; bảo vệ một người không cứu người còn lại.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH30"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH58-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-58"
+    ]
+  },
+  {
+    "ruleId": "VH31",
+    "characterId": null,
+    "name": "VH31",
+    "exactRule": "Chấn thương khóa hành động trong giai đoạn ngày hiện tại và đêm kế tiếp.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH31"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH59-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-22"
+    ]
+  },
+  {
+    "ruleId": "VH32",
+    "characterId": null,
+    "name": "VH32",
+    "exactRule": "Kế thừa đúng tài nguyên còn lại của người chết.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH32"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH60-S01",
+      "WV-CH60-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-26"
+    ]
+  },
+  {
+    "ruleId": "VH33",
+    "characterId": null,
+    "name": "VH33",
+    "exactRule": "Một cặp đêm–ngày được tính là một ngày; đêm đầu là Đêm 1 và sáng sau là Ngày 1. Thiện xạ đánh dấu Đêm 1 có thể bắn ngay trong sáng Ngày 1.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH33"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH61-S01",
+      "WV-CH61-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-10",
+      "T-COV-61"
+    ]
+  },
+  {
+    "ruleId": "VH34",
+    "characterId": null,
+    "name": "VH34",
+    "exactRule": "Chỉ biết danh tính những người được người khác bảo vệ; không biết ai là người bảo vệ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH34"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH66-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-66"
+    ]
+  },
+  {
+    "ruleId": "VH35",
+    "characterId": null,
+    "name": "VH35",
+    "exactRule": "Có sẵn 2 khiên và 1 kiếm; sử dụng trực tiếp lên mục tiêu, không cần lượt chế tạo.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH35"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH67-S01",
+      "WV-CH67-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-67"
+    ]
+  },
+  {
+    "ruleId": "VH36",
+    "characterId": null,
+    "name": "VH36",
+    "exactRule": "Phải chọn sẵn mục tiêu khi còn sống; nếu chưa chọn thì khi chết không kéo theo ai.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH36"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH68-S01"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH37",
+    "characterId": null,
+    "name": "VH37",
+    "exactRule": "Khi chuyển một Dân làng sang phe Sói thành công, chỉ người bị chuyển nhận thông báo riêng.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH37"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH69-S01"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH38",
+    "characterId": null,
+    "name": "VH38",
+    "exactRule": "Ảo ảnh duy trì qua nhiều ngày cho đến khi mục tiêu chết hoặc được giải trừ hợp lệ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH38"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH71-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-06"
+    ]
+  },
+  {
+    "ruleId": "VH39",
+    "characterId": null,
+    "name": "VH39",
+    "exactRule": "Yểm hào quang Ác chỉ có hiệu lực trong đêm kích hoạt.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH39"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH72-S01"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH40",
+    "characterId": null,
+    "name": "VH40",
+    "exactRule": "Tối đa 2 lượt phong ấn vĩnh viễn trong cả ván; mở khóa lần lượt theo mốc 1 và 2 Sói chết.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH40"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH73-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-73"
+    ]
+  },
+  {
+    "ruleId": "VH41",
+    "characterId": null,
+    "name": "VH41",
+    "exactRule": "Chọn mục tiêu ban đêm và khóa kỹ năng ngay trong đêm đó, theo thứ tự xử lý hợp lệ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH41"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH76-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-76"
+    ]
+  },
+  {
+    "ruleId": "VH42",
+    "characterId": null,
+    "name": "VH42",
+    "exactRule": "Xuyên cả bảo vệ và miễn nhiễm sát thương; gây chết mục tiêu và những người bảo vệ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH42"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH75-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-03",
+      "T-SC-12",
+      "T-MC-01",
+      "T-MC-02",
+      "T-COV-09",
+      "T-COV-52",
+      "T-COV-66"
+    ]
+  },
+  {
+    "ruleId": "VH43",
+    "characterId": null,
+    "name": "VH43",
+    "exactRule": "Được dùng Trăng non và Mưa sao băng trong cùng đêm; mỗi quyền năng tiêu hao một lượt.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH43"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH78-S01",
+      "WV-CH78-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-78"
+    ]
+  },
+  {
+    "ruleId": "VH44",
+    "characterId": null,
+    "name": "VH44",
+    "exactRule": "Chỉ hồi sinh thành công một Sói trong cả ván.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH44"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH83-S01"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH45",
+    "characterId": null,
+    "name": "VH45",
+    "exactRule": "Nếu bị tấn công gây chết trong đêm, người bị thôi miên chịu chết thay; Thầy Thôi Miên sống nếu chuyển hướng hợp lệ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH45"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH85-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-85"
+    ]
+  },
+  {
+    "ruleId": "VH46",
+    "characterId": null,
+    "name": "VH46",
+    "exactRule": "Bình vừa chế tạo được sử dụng ngay trong cùng đêm nếu hợp lệ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH46"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH96-S01",
+      "WV-CH96-S02",
+      "WV-CH96-S03"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-18",
+      "T-MC-19",
+      "T-MC-35"
+    ]
+  },
+  {
+    "ruleId": "VH47",
+    "characterId": null,
+    "name": "VH47",
+    "exactRule": "Thẻ được người nhận sử dụng cả ban ngày lẫn ban đêm.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH47"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH89-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-89"
+    ]
+  },
+  {
+    "ruleId": "VH48",
+    "characterId": null,
+    "name": "VH48",
+    "exactRule": "Người nhận bình được thông báo riêng loại bình đã nhận; không mặc định biết người tặng.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH48"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH96-S01",
+      "WV-CH96-S02",
+      "WV-CH96-S03"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-19",
+      "T-MC-35"
+    ]
+  },
+  {
+    "ruleId": "VH49",
+    "characterId": null,
+    "name": "VH49",
+    "exactRule": "So sánh phe thực tế: người chết lấy phe lúc chết; người sống lấy phe tại thời điểm kiểm tra.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH49"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH80-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-14",
+      "T-MC-34"
+    ]
+  },
+  {
+    "ruleId": "VH50",
+    "characterId": null,
+    "name": "VH50",
+    "exactRule": "Được kết nạp và hiến tế trong cùng một đêm nếu đủ điều kiện.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH50"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH90-S01",
+      "WV-CH90-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-17"
+    ]
+  },
+  {
+    "ruleId": "VH51",
+    "characterId": null,
+    "name": "VH51",
+    "exactRule": "Bẫy chặn đòn gây chết và phản sát kẻ tấn công; mục tiêu sống nếu chuyển hướng/bảo vệ hợp lệ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH51"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH77-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-03",
+      "T-MC-02",
+      "PROP-10"
+    ]
+  },
+  {
+    "ruleId": "VH52",
+    "characterId": null,
+    "name": "VH52",
+    "exactRule": "Sói được hồi sinh có thể tham gia cắn ngay trong cùng đêm nếu hành động cắn của bầy chưa được xử lý.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH52"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH83-S01"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH53",
+    "characterId": null,
+    "name": "VH53",
+    "exactRule": "Chỉ đối chiếu người đã chết trong đêm trước và vẫn đang chết tại thời điểm kiểm tra.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH53"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH80-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-14",
+      "T-MC-34",
+      "T-MC-40"
+    ]
+  },
+  {
+    "ruleId": "VH54",
+    "characterId": null,
+    "name": "VH54",
+    "exactRule": "Bẫy chỉ phản sát một Sói đại diện cho lượt cắn tập thể; đại diện được xác định bằng quy tắc cố định trước ván.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH54"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH77-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T131-B12"
+    ]
+  },
+  {
+    "ruleId": "VH55",
+    "characterId": null,
+    "name": "VH55",
+    "exactRule": "Có thể hiến tế tín đồ vừa kết nạp trong cùng đêm nếu kết nạp đã xử lý thành công trước.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH55"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH90-S01",
+      "WV-CH90-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-17",
+      "T131-B10"
+    ]
+  },
+  {
+    "ruleId": "VH56",
+    "characterId": null,
+    "name": "VH56",
+    "exactRule": "Mỗi đòn không được chuyển hướng trở lại mục tiêu đã đi qua; bỏ qua lần chuyển hướng gây vòng lặp và xử lý tại mục tiêu hiện tại.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH56"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH37-S01",
+      "WV-CH63-S01",
+      "WV-CH63-S02",
+      "WV-CH94-S01",
+      "WV-CH94-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-11",
+      "T-MC-08",
+      "T-MC-09",
+      "PROP-09"
+    ]
+  },
+  {
+    "ruleId": "VH57",
+    "characterId": null,
+    "name": "VH57",
+    "exactRule": "Câm chỉ chặn chat công khai; vẫn cho phép chat nhóm hợp lệ. Không có chat riêng 1–1 thông thường; chỉ chat công khai và nhóm hệ thống tạo.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH57"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH51-S01",
+      "WV-CH51-S02",
+      "WV-CH84-S01",
+      "WV-CH93-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-13",
+      "T-MC-20",
+      "T-MC-21",
+      "T-COV-40",
+      "T-COV-50"
+    ]
+  },
+  {
+    "ruleId": "VH58",
+    "characterId": null,
+    "name": "VH58",
+    "exactRule": "Không kết thúc theo quân số khi còn nhân vật độc lập sống và có khả năng tranh chấp thắng; tiếp tục ván.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH58"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "PROP-17",
+      "T131-B16"
+    ]
+  },
+  {
+    "ruleId": "VH59",
+    "characterId": null,
+    "name": "VH59",
+    "exactRule": "Người được kết nạp thành công nhận thông báo riêng và có quyền vào nhóm chat giáo phái nếu hệ thống cho phép.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH59"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH90-S01",
+      "WV-CH90-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-17",
+      "T-MC-35"
+    ]
+  },
+  {
+    "ruleId": "VH60",
+    "characterId": null,
+    "name": "VH60",
+    "exactRule": "Bình độc bị chặn bởi lớp bảo vệ hợp lệ áp dụng cho sát thương gây chết; bình vẫn tiêu hao.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH60"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH29-S01",
+      "WV-CH29-S02"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH61",
+    "characterId": null,
+    "name": "VH61",
+    "exactRule": "Chuyển hướng thành công sang mục tiêu miễn nhiễm vẫn tiêu hao một lượt và bị khóa kỹ năng đêm tiếp theo.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH61"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH63-S01",
+      "WV-CH63-S02"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH62",
+    "characterId": null,
+    "name": "VH62",
+    "exactRule": "Trong ván chỉ quản trị viên có thẩm quyền xem; sau ván tất cả người tham gia được xem lịch sử đầy đủ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH62"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "PROP-07"
+    ]
+  },
+  {
+    "ruleId": "VH63",
+    "characterId": null,
+    "name": "VH63",
+    "exactRule": "Mỗi người chỉ mang tối đa một hạt giống chưa kích hoạt tại một thời điểm.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH63"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH97-S01"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH64",
+    "characterId": null,
+    "name": "VH64",
+    "exactRule": "Biết tất cả nạn nhân bị Sói cắn trong đêm; một Bình Hồi phục chỉ cứu một người.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH64"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH87-S01",
+      "WV-CH87-S02"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH65",
+    "characterId": null,
+    "name": "VH65",
+    "exactRule": "Hiệu ứng chết theo có thể bị lớp bảo vệ hoặc miễn nhiễm hợp lệ ngăn chặn.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH65"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH88-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-08",
+      "T-MC-13",
+      "T-MC-32"
+    ]
+  },
+  {
+    "ruleId": "VH66",
+    "characterId": null,
+    "name": "VH66",
+    "exactRule": "Được xem tồn kho nguyên liệu chung hiện tại nhưng không biết danh tính Thầy Thuốc.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH66"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH95-S01",
+      "WV-CH95-S02",
+      "WV-CH95-S03"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-18",
+      "T-MC-35"
+    ]
+  },
+  {
+    "ruleId": "VH67",
+    "characterId": null,
+    "name": "VH67",
+    "exactRule": "Khi Thầy Thuốc chết, kỹ năng Đắp thuốc thay thế kỹ năng thu thập nguyên liệu.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH67"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH95-S01",
+      "WV-CH95-S02",
+      "WV-CH95-S03",
+      "WV-CH96-S01",
+      "WV-CH96-S02",
+      "WV-CH96-S03"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH68",
+    "characterId": null,
+    "name": "VH68",
+    "exactRule": "Mặc định không thông báo cho mục tiêu khi kỹ năng không quy định; ngoại lệ khi luật yêu cầu hoặc cần thông tin để thực hiện hành động được cấp quyền.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH68"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "T-MC-33",
+      "PROP-06"
+    ]
+  },
+  {
+    "ruleId": "VH69",
+    "characterId": null,
+    "name": "VH69",
+    "exactRule": "Vai trò người dùng thẻ chọn tiết lộ chỉ gửi riêng cho Người Khai Mệnh.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH69"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH89-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-89"
+    ]
+  },
+  {
+    "ruleId": "VH70",
+    "characterId": null,
+    "name": "VH70",
+    "exactRule": "Tối đa một khiên và một kiếm trong cùng một đêm; giới hạn tổng tài nguyên cả ván vẫn là 2 khiên, 1 kiếm.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH70"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH67-S01",
+      "WV-CH67-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-67"
+    ]
+  },
+  {
+    "ruleId": "VH71",
+    "characterId": null,
+    "name": "VH71",
+    "exactRule": "Sao chép kỹ năng nhưng giữ phe Sói và điều kiện thắng của phe Sói.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH71"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH18-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-06",
+      "T-MC-26",
+      "PROP-18",
+      "T131-B06"
+    ]
+  },
+  {
+    "ruleId": "VH72",
+    "characterId": null,
+    "name": "VH72",
+    "exactRule": "Chỉ được cướp thành công một lớp bảo vệ trong cả ván.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH72"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH01-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-07"
+    ]
+  },
+  {
+    "ruleId": "VH73",
+    "characterId": null,
+    "name": "VH73",
+    "exactRule": "Được hồi sinh bất kỳ người chết nào, không giới hạn phe hoặc thời điểm chết, một lần mỗi ván.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH73"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH26-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-16",
+      "T-MC-34"
+    ]
+  },
+  {
+    "ruleId": "VH74",
+    "characterId": null,
+    "name": "VH74",
+    "exactRule": "Giữ P04: hiệu ứng tăng lượt cắn của bầy Sói không cộng dồn; tối đa 2 mục tiêu mỗi đêm.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH74"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH21-S01",
+      "WV-CH48-S01",
+      "WV-CH86-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-10",
+      "T-MC-07",
+      "T-COV-78",
+      "T-COV-93",
+      "PROP-15",
+      "T131-B02"
+    ]
+  },
+  {
+    "ruleId": "VH75",
+    "characterId": null,
+    "name": "VH75",
+    "exactRule": "Chỉ giao dịch thành công với phe Dân; giao dịch với Sói hoặc phe Ba không thành công.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH75"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH22-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-22"
+    ]
+  },
+  {
+    "ruleId": "VH76",
+    "characterId": null,
+    "name": "VH76",
+    "exactRule": "Không thể hồi sinh Hắc Tinh ID 46, Bạch Sát ID 47 và Thiên Thần ID 53.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH76"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH26-S01",
+      "WV-CH46-S01",
+      "WV-CH47-S01",
+      "WV-CH53-S01",
+      "WV-CH53-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-16"
+    ]
+  },
+  {
+    "ruleId": "VH77",
+    "characterId": null,
+    "name": "VH77",
+    "exactRule": "Mở chat ẩn danh 1–1 giữa Thầy Đồng và người chết; Thầy Đồng biết danh tính người chết, người chết không biết Thầy Đồng.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH77"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH26-S01"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH78",
+    "characterId": null,
+    "name": "VH78",
+    "exactRule": "Chỉ trao đổi trong nhóm chat giáo phái chung vào ban ngày; không chat riêng 1–1.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH78"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH90-S01",
+      "WV-CH90-S02"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH79",
+    "characterId": null,
+    "name": "VH79",
+    "exactRule": "Mở chat riêng ẩn danh 1–1 với tù nhân vào ban đêm; Quản Ngục biết tù nhân, tù nhân không biết Quản Ngục.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH79"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH24-S01",
+      "WV-CH24-S02"
+    ],
+    "relatedTestSpecIds": []
+  },
+  {
+    "ruleId": "VH80",
+    "characterId": null,
+    "name": "VH80",
+    "exactRule": "Mỗi lần chọn trúng Sói hoặc phe Ba bị trừ 1 viên đạn; nếu sau 2 lần chọn trúng Sói/phe Ba thì mất quyền giao dịch. Giao dịch thành công chỉ với Dân.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH80"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH22-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-22"
+    ]
+  },
+  {
+    "ruleId": "VH81",
+    "characterId": null,
+    "name": "VH81",
+    "exactRule": "Ngân sách ban đầu 2 viên đạn tiềm năng; mỗi lần chọn trúng Sói/phe Ba trừ 1. Khi giao dịch thành công, người nhận nhận số đạn còn lại.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH81"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH22-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-COV-22"
+    ]
+  },
+  {
+    "ruleId": "VH82",
+    "characterId": null,
+    "name": "VH82",
+    "exactRule": "Vẫn tính quân số phe Dân khi chờ hồi sinh theo VH06; nếu điều kiện thắng đã đạt sau chuỗi hiện tại thì kết thúc, không mở lượt mới.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH82"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH23-S01",
+      "WV-CH23-S02",
+      "WV-CH23-S03"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-08",
+      "T-MC-14",
+      "T-MC-40"
+    ]
+  },
+  {
+    "ruleId": "VH83",
+    "characterId": null,
+    "name": "VH83",
+    "exactRule": "Cái chết 10% phát sinh ban ngày không được Phù Thủy cứu; áp dụng quy tắc chung.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH83"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH04-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T-MC-23",
+      "T-COV-55",
+      "T131-B15"
+    ]
+  },
+  {
+    "ruleId": "VH84",
+    "characterId": null,
+    "name": "VH84",
+    "exactRule": "Trả chính xác Thiện, Ác hoặc Không xác định riêng biệt; không bị nhiễu; theo câu trả lời Excel.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH84"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH05-S01",
+      "WV-CH05-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-02",
+      "T-MC-05",
+      "T-COV-49",
+      "T131-B08"
+    ]
+  },
+  {
+    "ruleId": "VH85",
+    "characterId": null,
+    "name": "VH85",
+    "exactRule": "Nhân đôi số lượt sử dụng kỹ năng trong đêm theo câu trả lời Excel; người nhận biết mình được ban phước; không vượt tài nguyên hữu hạn và không phá P04 về cắn chung.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "VH01-85",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "VH85"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH17-S01",
+      "WV-CH17-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T-SC-05",
+      "T-MC-29",
+      "PROP-14",
+      "PROP-20",
+      "T131-B01"
+    ]
+  },
+  {
+    "ruleId": "PH-01",
+    "characterId": null,
+    "name": "PH-01",
+    "exactRule": "Kỹ năng đã nộp khi còn sống tiếp tục phân giải sau khi người thực hiện chết; chỉ ngừng nhận hành động mới, trừ ngoại lệ kỹ năng.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "PH-01"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "TC-01",
+      "TC-02",
+      "T-SC-12",
+      "T-COV-20",
+      "T-COV-45",
+      "PROP-02",
+      "PROP-19",
+      "T131-B13"
+    ]
+  },
+  {
+    "ruleId": "PH-02",
+    "characterId": null,
+    "name": "PH-02",
+    "exactRule": "Sói Hòa Bình #79 kích hoạt chặn vote: giữ sự kiện ngày đã thực thi, hủy kỹ năng ngày đang chờ và hủy vote, rồi chuyển đêm.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "PH-02"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH06-S01",
+      "WV-CH06-S02",
+      "WV-CH06-S03",
+      "WV-CH06-S04",
+      "WV-CH79-S01"
+    ],
+    "relatedTestSpecIds": [
+      "TC-03",
+      "T-SC-12",
+      "T-SC-16",
+      "T-MC-21",
+      "T-MC-22",
+      "T-MC-36",
+      "T-COV-28",
+      "PROP-16"
+    ]
+  },
+  {
+    "ruleId": "PH-03",
+    "characterId": null,
+    "name": "PH-03",
+    "exactRule": "Hai lần bỏ lỡ hành động bắt buộc do AFK được cộng dồn trong cùng một ván, không đặt lại khi có hành động hợp lệ xen giữa.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "PH-03"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "TC-04",
+      "TC-32",
+      "PROP-12",
+      "T131-B04"
+    ]
+  },
+  {
+    "ruleId": "PH-04",
+    "characterId": null,
+    "name": "PH-04",
+    "exactRule": "Lần AFK đầu, nếu tồn tại hành động bắt buộc, hệ thống random trong toàn bộ người còn sống, không phân phe; nếu hành động không tồn tại vì điều kiện kích hoạt không xảy ra (ví dụ Phù Thủy còn bình cứu nhưng không có người chết), bỏ bước đó và không coi là bỏ lỡ hành động bắt buộc.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "PH-04"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "TC-05",
+      "TC-06",
+      "PROP-13"
+    ]
+  },
+  {
+    "ruleId": "SK-01",
+    "characterId": null,
+    "name": "SK-01",
+    "exactRule": "Hai nguồn x2 đồng thời không cộng dồn; tổng hiệu lực tăng tối đa x2, không x4.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "SK-01"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH11-S01",
+      "WV-CH11-S02"
+    ],
+    "relatedTestSpecIds": [
+      "TC-07",
+      "TC-33",
+      "T-SC-05",
+      "T-MC-01",
+      "T-MC-29",
+      "T-MC-37",
+      "PROP-14"
+    ]
+  },
+  {
+    "ruleId": "SK-02",
+    "characterId": null,
+    "name": "SK-02",
+    "exactRule": "Buff x2 áp dụng riêng cho những kỹ năng mà người nhận thực sự sử dụng trong đêm được buff; kỹ năng không sử dụng đêm đó không nhận quyền x2. Ghi chú chưa quy định tiêu hao tài nguyên hữu hạn ngoài các ngoại lệ đã chốt.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "SK-02"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH11-S01",
+      "WV-CH11-S02"
+    ],
+    "relatedTestSpecIds": [
+      "TC-08",
+      "TC-09",
+      "T-SC-05",
+      "T-MC-01",
+      "T-MC-29"
+    ]
+  },
+  {
+    "ruleId": "SK-03",
+    "characterId": null,
+    "name": "SK-03",
+    "exactRule": "Sói Biến Hình #18 khi sao chép bộ kỹ năng thì kế thừa đúng số tài nguyên mục tiêu còn lại tại thời điểm sao chép; giữ phe Sói/điều kiện thắng Sói.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "SK-03"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH18-S01"
+    ],
+    "relatedTestSpecIds": [
+      "TC-10",
+      "T-SC-06",
+      "T-MC-26",
+      "PROP-18"
+    ]
+  },
+  {
+    "ruleId": "SK-04",
+    "characterId": null,
+    "name": "SK-04",
+    "exactRule": "Sói Đạo Tặc #1 cướp lớp bảo vệ hợp lệ có thời điểm tạo sớm nhất trong số các lớp hiện có trên mục tiêu.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "SK-04"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH01-S01"
+    ],
+    "relatedTestSpecIds": [
+      "TC-11",
+      "TC-35",
+      "T-SC-07"
+    ]
+  },
+  {
+    "ruleId": "SK-05",
+    "characterId": null,
+    "name": "SK-05",
+    "exactRule": "Tiên Tri Huyền Bí #74 bị bẫy Sói Kỹ Sư #10 khi soi vai chính xác thì nhận ngẫu nhiên tên một vai giả khác vai thật, do server chọn; không thay đổi vai thật.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "SK-05"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH10-S01",
+      "WV-CH74-S01"
+    ],
+    "relatedTestSpecIds": [
+      "TC-12",
+      "TC-13",
+      "T-SC-01",
+      "T-MC-06",
+      "T-COV-81",
+      "PROP-08"
+    ]
+  },
+  {
+    "ruleId": "SK-06",
+    "characterId": null,
+    "name": "SK-06",
+    "exactRule": "Đòn Sói Điên Cuồng #75 xuyên bẫy Thợ Săn Quái Thú #77 khiến mục tiêu chịu chết; bẫy vẫn kích hoạt phản sát lên kẻ tấn công.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "SK-06"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH75-S01",
+      "WV-CH77-S01"
+    ],
+    "relatedTestSpecIds": [
+      "TC-14",
+      "T-SC-03",
+      "T-MC-02",
+      "T131-B12"
+    ]
+  },
+  {
+    "ruleId": "SK-07",
+    "characterId": null,
+    "name": "SK-07",
+    "exactRule": "Người đang bị Quản Ngục #24 giam không phải mục tiêu hợp lệ của các đòn tấn công bên ngoài, kể cả đòn xuyên miễn nhiễm; giữ quyền Quản Ngục bắn tù nhân là ngoại lệ kỹ năng gốc.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "SK-07"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH24-S01",
+      "WV-CH24-S02"
+    ],
+    "relatedTestSpecIds": [
+      "TC-15",
+      "TC-16",
+      "T-SC-04",
+      "T-MC-03",
+      "PROP-05",
+      "T131-B03"
+    ]
+  },
+  {
+    "ruleId": "LIFE-01",
+    "characterId": null,
+    "name": "LIFE-01",
+    "exactRule": "Xạ Thủ Linh Hồn #23 sau cái chết lần đầu đang chờ hồi sinh vẫn có thể chịu đòn tấn công; đòn chí tử tiếp theo làm chết hẳn và hủy hồi sinh đang chờ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "LIFE-01"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH23-S01",
+      "WV-CH23-S02",
+      "WV-CH23-S03"
+    ],
+    "relatedTestSpecIds": [
+      "TC-17",
+      "T-SC-08",
+      "T-MC-13",
+      "T-MC-40"
+    ]
+  },
+  {
+    "ruleId": "LIFE-02",
+    "characterId": null,
+    "name": "LIFE-02",
+    "exactRule": "Người mang hạt Thần Thảo Hồi Sinh #97 rơi vào trạng thái ngủ đông/giả chết chưa phải chết thật, vì vậy không kích hoạt hiệu ứng chết liên kết (ví dụ Cupid #27).",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "LIFE-02"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "TC-18",
+      "T-SC-09",
+      "T-MC-12",
+      "T-MC-23",
+      "T-MC-32",
+      "T-MC-38",
+      "T-COV-12",
+      "T-COV-64",
+      "T-COV-82",
+      "PROP-21"
+    ]
+  },
+  {
+    "ruleId": "LIFE-03",
+    "characterId": null,
+    "name": "LIFE-03",
+    "exactRule": "Điều kiện Sói Khát Máu #21 được tính trên tất cả người chết trong Ngày N, gồm thảo luận và treo cổ; nếu đủ hai thì tăng lượt cắn ở Đêm N+1, theo trần VH74.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "LIFE-03"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH21-S01"
+    ],
+    "relatedTestSpecIds": [
+      "TC-19",
+      "TC-34",
+      "T-SC-10",
+      "T-MC-07"
+    ]
+  },
+  {
+    "ruleId": "REL-01",
+    "characterId": null,
+    "name": "REL-01",
+    "exactRule": "Khi hai loại liên kết hợp lệ chưa có quan hệ ưu tiên được xác nhận với nhau, liên kết mới hợp lệ ghi đè liên kết cũ; chưa mặc nhiên xóa ưu tiên cụ thể và luật cùng cấp VH04.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "REL-01"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH27-S01",
+      "WV-CH62-S01",
+      "WV-CH62-S02"
+    ],
+    "relatedTestSpecIds": [
+      "TC-20",
+      "TC-21",
+      "T-SC-20",
+      "T-MC-10",
+      "T-MC-11",
+      "T-MC-17",
+      "T-MC-25",
+      "T-MC-28",
+      "T-MC-39",
+      "T131-B05"
+    ]
+  },
+  {
+    "ruleId": "REL-02",
+    "characterId": null,
+    "name": "REL-02",
+    "exactRule": "Khi liên kết thắng/chết cũ bị ghi đè, vẫn giữ nhóm chat cũ và quyền trao đổi của thành viên theo quyền cũ; không công bố việc đổi liên kết cho nhóm cũ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "REL-02"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH27-S01"
+    ],
+    "relatedTestSpecIds": [
+      "TC-22",
+      "T-MC-10",
+      "T-COV-42"
+    ]
+  },
+  {
+    "ruleId": "REL-03",
+    "characterId": null,
+    "name": "REL-03",
+    "exactRule": "Khi liên kết ưu tiên B–C kết thúc, liên kết A–B từng bị ghi đè tự khôi phục nếu A và B còn sống; các ngoại lệ liên kết chồng tầng phải được kiểm tra riêng.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "REL-03"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH27-S01"
+    ],
+    "relatedTestSpecIds": [
+      "TC-23",
+      "TC-24",
+      "T-MC-10",
+      "T-COV-42"
+    ]
+  },
+  {
+    "ruleId": "ROOM-01",
+    "characterId": null,
+    "name": "ROOM-01",
+    "exactRule": "Không đặt số người tối thiểu cứng; chủ phòng cấu hình số ghế/người/bot theo thiết kế, có thể bắt đầu từ 1 người thật cộng n bot khi cấu hình và bộ vai hợp lệ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "ROOM-01"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "TC-25"
+    ]
+  },
+  {
+    "ruleId": "ROOM-02",
+    "characterId": null,
+    "name": "ROOM-02",
+    "exactRule": "Trong một ván, mỗi Character ID chỉ được sử dụng tối đa một lần; không cho phép phân vai ban đầu trùng ID. Phạm vi ràng buộc khi kỹ năng biến đổi vai cần kiểm tra thêm.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "ROOM-02"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "TC-26",
+      "TC-27",
+      "T-MC-26",
+      "PROP-04"
+    ]
+  },
+  {
+    "ruleId": "ROOM-03",
+    "characterId": null,
+    "name": "ROOM-03",
+    "exactRule": "Quản trò mất kết nối: trận vẫn tiếp tục; quyền điều phối có thể chuyển cho người thật đủ điều kiện, có nhật ký và không chia lại vai. Khi không có ứng viên người thật, server tiếp tục logic hợp lệ mà không tự nâng bot thành quản trò.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "ROOM-03"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "TC-28",
+      "TC-29"
+    ]
+  },
+  {
+    "ruleId": "PRIV-01",
+    "characterId": null,
+    "name": "PRIV-01",
+    "exactRule": "Sau trận người tham gia được xem diễn biến/kết quả/vai trò; nội dung tin nhắn chỉ được xem lại ở các kênh mà chính người đó từng có quyền đọc.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "21_CONFIRMED_V1_2",
+    "source": {
+      "type": "USER_CONFIRMED_RULE_REGISTER",
+      "document": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "PRIV-01"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "TC-30",
+      "TC-31",
+      "PROP-06",
+      "PROP-07",
+      "PROP-22"
+    ]
+  },
+  {
+    "ruleId": "Q13-01",
+    "characterId": null,
+    "name": "Q13-01",
+    "exactRule": "Mỗi hành động phát sinh do x2 cần đủ charge riêng; buff không sinh charge. Chỉ nhân đôi những kỹ năng thực sự sử dụng đêm đó; kỹ năng không dùng hoặc hết charge không nhận lợi ích. VH05 Phù Thủy là ngoại lệ một bình cứu cho tối đa hai lượt trong đêm.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "source": {
+      "type": "USER_CONFIRMED",
+      "document": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "Q13-01"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH11-S01",
+      "WV-CH11-S02",
+      "WV-CH17-S01",
+      "WV-CH17-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T131-01-01",
+      "T131-01-02",
+      "T131-01-03",
+      "T131-B01",
+      "T131-B02"
+    ]
+  },
+  {
+    "ruleId": "Q13-02",
+    "characterId": null,
+    "name": "Q13-02",
+    "exactRule": "Ở lần AFK cần random, tập mục tiêu là mọi người đang sống và hợp lệ cho kỹ năng, không phân biệt phe. Tập rỗng thì hành động bắt buộc không phát sinh và không cộng lần AFK đó.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "source": {
+      "type": "USER_CONFIRMED",
+      "document": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "Q13-02"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [],
+    "relatedTestSpecIds": [
+      "T131-02-01",
+      "T131-02-02",
+      "T131-02-03",
+      "T131-B03",
+      "T131-B04"
+    ]
+  },
+  {
+    "ruleId": "Q13-03",
+    "characterId": null,
+    "name": "Q13-03",
+    "exactRule": "Khi nhiều liên kết cũ hợp lệ có thể phục hồi, trước tiên áp dụng ưu tiên loại liên kết đã chốt; trong tập ứng viên cùng mức còn lại, phục hồi liên kết gần nhất trong lịch sử. Không thay thế nguyên tắc tạo mới VH04.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "source": {
+      "type": "USER_CONFIRMED",
+      "document": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "Q13-03"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH27-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T131-03-01",
+      "T131-03-02",
+      "T131-03-03",
+      "T131-B05"
+    ]
+  },
+  {
+    "ruleId": "Q13-04",
+    "characterId": null,
+    "name": "Q13-04",
+    "exactRule": "Cấm trùng Character ID trong danh sách phân vai ban đầu. Sau khi bắt đầu, biến đổi hợp lệ có thể tạo currentRoleId trùng mà không phải hủy biến đổi; sao chép kỹ năng theo VH71 không đồng nghĩa đổi phe.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "source": {
+      "type": "USER_CONFIRMED",
+      "document": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "Q13-04"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH18-S01",
+      "WV-CH60-S01",
+      "WV-CH60-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T131-04-01",
+      "T131-04-02",
+      "T131-04-03",
+      "T131-B06"
+    ]
+  },
+  {
+    "ruleId": "Q13-05",
+    "characterId": null,
+    "name": "Q13-05",
+    "exactRule": "Người ở trạng thái HIBERNATING do hạt Thần Thảo vẫn được tính vào quân số phe lúc đang ngủ đông; tạm ngưng chat, phiếu bầu và mọi kỹ năng đến khi tỉnh/hồi sinh theo điều kiện hợp lệ. Không phát sinh chết thật từ riêng trạng thái giả chết.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "source": {
+      "type": "USER_CONFIRMED",
+      "document": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "Q13-05"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH97-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T131-05-01",
+      "T131-05-02",
+      "T131-05-03",
+      "T131-B07",
+      "T131-B16"
+    ]
+  },
+  {
+    "ruleId": "Q13-06",
+    "characterId": null,
+    "name": "Q13-06",
+    "exactRule": "Bẫy Sói Kỹ Sư đối với kỹ năng soi vai chính xác chọn ngẫu nhiên một roleId khác roleId thật từ bộ vai đã khóa trước trận; không chọn từ toàn bộ 97 vai. RNG trên server, lưu snapshot tập hợp và lần rút.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "source": {
+      "type": "USER_CONFIRMED",
+      "document": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "Q13-06"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH10-S01",
+      "WV-CH74-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T131-06-01",
+      "T131-06-02",
+      "T131-06-03",
+      "T131-B08",
+      "T131-B14"
+    ]
+  },
+  {
+    "ruleId": "Q13-07",
+    "characterId": null,
+    "name": "Q13-07",
+    "exactRule": "Khi có hiệu ứng kéo dài sự sống hợp lệ và hạt Thần Thảo, áp dụng trạng thái sống kéo dài trước; tại mốc kết thúc trạng thái kéo dài mới xét điều kiện kích hoạt hạt ngủ đông, sau khi xử lý những cứu hợp lệ khác theo thứ tự tương ứng.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "source": {
+      "type": "USER_CONFIRMED",
+      "document": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "Q13-07"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH51-S01",
+      "WV-CH51-S02",
+      "WV-CH95-S01",
+      "WV-CH95-S02",
+      "WV-CH95-S03",
+      "WV-CH97-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T131-07-01",
+      "T131-07-02",
+      "T131-07-03",
+      "T131-B09"
+    ]
+  },
+  {
+    "ruleId": "Q13-08",
+    "characterId": null,
+    "name": "Q13-08",
+    "exactRule": "Giáo Chủ không thể kết nạp một người đã thuộc nhóm/liên kết thắng độc lập; yêu cầu kết nạp không thành công, không đổi nhóm thắng, không cấp quyền chat giáo phái mới. Đây là ngoại lệ cụ thể so với cơ chế ghi đè quan hệ chưa có ưu tiên.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "source": {
+      "type": "USER_CONFIRMED",
+      "document": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "Q13-08"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH62-S01",
+      "WV-CH62-S02",
+      "WV-CH90-S01",
+      "WV-CH90-S02"
+    ],
+    "relatedTestSpecIds": [
+      "T131-08-01",
+      "T131-08-02",
+      "T131-08-03",
+      "T131-B10"
+    ]
+  },
+  {
+    "ruleId": "Q13-09",
+    "characterId": null,
+    "name": "Q13-09",
+    "exactRule": "Sói Hòa Bình chặn và hủy vote hợp lệ trong ngày mà Kẻ Chết Thay đã có nhiệm vụ: nhiệm vụ thất bại, Đạo Diễn Tử Thần nhận 1 Oscar theo mỗi trường hợp diễn sai hợp lệ. Không tự áp sang vai diễn khác nếu không được quy định.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "source": {
+      "type": "USER_CONFIRMED",
+      "document": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "Q13-09"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH06-S01",
+      "WV-CH06-S02",
+      "WV-CH06-S03",
+      "WV-CH06-S04",
+      "WV-CH79-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T131-09-01",
+      "T131-09-02",
+      "T131-09-03",
+      "T131-B11"
+    ]
+  },
+  {
+    "ruleId": "Q13-10",
+    "characterId": null,
+    "name": "Q13-10",
+    "exactRule": "Khi Sói Điên Cuồng #75 kích hoạt đòn trúng mục tiêu có bảo vệ hợp lệ, những người cấp/tạo lớp bảo vệ đều thuộc tập người bảo vệ có thể bị chết theo, bao gồm chủ chó hoặc người cấp trang bị; phân giải đúng cơ chế tấn công/bảo vệ và tránh chuyển chết trùng.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "source": {
+      "type": "USER_CONFIRMED",
+      "document": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "Q13-10"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH31-S01",
+      "WV-CH52-S01",
+      "WV-CH67-S01",
+      "WV-CH67-S02",
+      "WV-CH75-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T131-10-01",
+      "T131-10-02",
+      "T131-10-03",
+      "T131-B12",
+      "T131-B13"
+    ]
+  },
+  {
+    "ruleId": "Q13-11",
+    "characterId": null,
+    "name": "Q13-11",
+    "exactRule": "Bẫy Sói Kỹ Sư lên chức năng soi PHÂN LOẠI tạo ngẫu nhiên một kết quả cùng kiểu dữ liệu nhưng khác giá trị thật trong danh sách các giá trị phân loại hợp lệ; không tự thay bằng tên vai hay hào quang. Kết quả soi miễn nhiễu theo VH84 là ngoại lệ.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "source": {
+      "type": "USER_CONFIRMED",
+      "document": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "Q13-11"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH10-S01",
+      "WV-CH81-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T131-11-01",
+      "T131-11-02",
+      "T131-11-03",
+      "T131-B08",
+      "T131-B14"
+    ]
+  },
+  {
+    "ruleId": "Q13-12",
+    "characterId": null,
+    "name": "Q13-12",
+    "exactRule": "Nếu người mang hạt Thần Thảo thuộc danh sách chết sơ bộ ban đêm, tên vẫn hiện trong prompt Phù Thủy và có thể được cứu hợp lệ trước khi kích hoạt hạt. Nếu chết được ngăn thì không kích hoạt giả chết do hạt tại sự kiện chết đó. Nếu không được cứu, tiếp tục xét kéo dài sống và hạt theo Q13-07.",
+    "verificationStatus": "CONFIRMED",
+    "implementationStatus": "NOT_FULLY_IMPLEMENTED",
+    "tier": "12_CONFIRMED_V1_3_1",
+    "source": {
+      "type": "USER_CONFIRMED",
+      "document": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+      "localMirror": "data/rules/official_merged_118.json",
+      "lookupKey": "Q13-12"
+    },
+    "activation": null,
+    "phase": null,
+    "targetDomain": null,
+    "resourceLimit": null,
+    "priority": null,
+    "effect": null,
+    "invalidation": null,
+    "visibility": null,
+    "linkedSkillBranchIds": [
+      "WV-CH29-S01",
+      "WV-CH29-S02",
+      "WV-CH97-S01"
+    ],
+    "relatedTestSpecIds": [
+      "T131-12-01",
+      "T131-12-02",
+      "T131-12-03",
+      "T131-B07",
+      "T131-B09",
+      "T131-B15"
+    ]
+  }
+]

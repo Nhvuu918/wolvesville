@@ -1,0 +1,71 @@
+{
+  "version": "1.7.22-s15-stability-completion-wip",
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "sourceFingerprint": "35a5c2302d5f68a3c35978cf9ec2171c1d357cb16842d4a84512b9ca7f439853",
+  "backendGate": "PASS",
+  "backend": {
+    "tests": 435,
+    "pass": 424,
+    "fail": 0,
+    "skipped": 11,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "browser": {
+    "total": 69,
+    "PASS": 31,
+    "FAIL": 1,
+    "INCOMPLETE": 37
+  },
+  "matrix": {
+    "total": 104,
+    "PASS": 37,
+    "FAIL": 1,
+    "INCOMPLETE": 66
+  },
+  "winnerRegression": "FIXED_RETEST_PASS",
+  "liveBackend": {
+    "B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL": "PASS",
+    "B/B live trap: delayed valid use, private typed results, two placements, consumption and restart": "PASS",
+    "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged": "PASS",
+    "B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay": "PASS",
+    "B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory": "PASS",
+    "B/B live Witch: poison-only consumes trap and potion, later rescue is normal": "PASS",
+    "B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)": "PASS",
+    "B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay": "PASS",
+    "B/B owner final: separate rescue and poison windows persist one nightly trap group": "PASS",
+    "B/B owner final: representative RNG is server-bound and waiting survives restart": "PASS",
+    "B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn": "PASS",
+    "B/B owner final: ranked eligible members are filtered without reshuffle": "PASS",
+    "Stability BB: empty split windows retain mark, later poison-only window consumes once": "PASS"
+  },
+  "liveBrowser": {
+    "pack": "PASS",
+    "trap": "PASS",
+    "guard": "PASS",
+    "witch": "PASS",
+    "retaliation": "PASS",
+    "cross_window": "PASS"
+  },
+  "freshCertificates": {
+    "F": 1,
+    "qaC": 2,
+    "playableC": 5,
+    "S_pass": 78
+  },
+  "newFull": [],
+  "newPlayable": [],
+  "officialActivation": false,
+  "ownerQA": "PENDING",
+  "postgreSQLLive": "PENDING",
+  "competitiveProduction": "NO_GO",
+  "legacySourceChecksumChanged": [
+    "README.md",
+    "frontend/integration.js",
+    "package.json",
+    "tests/browser_s15_normal_e2e.py",
+    "tests/sprint15-bb-live.test.mjs",
+    "tests/sprint15-normal.test.mjs"
+  ],
+  "legacyReportsUnchanged": 2347
+}

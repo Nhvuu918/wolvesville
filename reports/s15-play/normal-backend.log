@@ -1,0 +1,45 @@
+TAP version 13
+# (node:57941) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Normal gameplay real authenticated session: readiness, QA isolation, private aura, chat, vote, restart, reconnect and Village victory
+not ok 1 - Normal gameplay real authenticated session: readiness, QA isolation, private aura, chat, vote, restart, reconnect and Village victory
+  ---
+  duration_ms: 657.078149
+  type: 'test'
+  location: '/mnt/data/s15play/tests/sprint15-normal.test.mjs:33:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    {"status":409,"error":{"code":"REVISION_CONFLICT","message":"A ballot change requires the latest revision"}}
+    
+    409 !== 200
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 200
+  actual: 409
+  operator: 'strictEqual'
+  stack: |-
+    ok (file:///mnt/data/s15play/tests/sprint15-normal.test.mjs:12:34)
+    Object.vote (file:///mnt/data/s15play/tests/sprint15-normal.test.mjs:30:130)
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async file:///mnt/data/s15play/tests/sprint15-normal.test.mjs:38:45
+    async harness (file:///mnt/data/s15play/tests/sprint15-normal.test.mjs:23:20)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# NORMAL_PLAY_EVIDENCE {"deck":[8,74],"mode":"NORMAL_GAMEPLAY","ruleVersion":"wolvesville-official-v1.3.3","victory":"KNIGHT","restart":true,"replay":true,"privacy":true}
+# Subtest: Normal gameplay exact-role seer, night kill, dead player actions denied and persisted Knight victory
+ok 2 - Normal gameplay exact-role seer, night kill, dead player actions denied and persisted Knight victory
+  ---
+  duration_ms: 417.464639
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 1
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1212.502631

@@ -1,0 +1,12 @@
+{
+  "proposedRuleset": "wolvesville-official-v1.3.4",
+  "baseRuleset": "wolvesville-official-v1.3.3",
+  "status": "DRAFT",
+  "officialActivation": false,
+  "approvedDecisionSource": "data/rules/owner_bb_candidate_v2_decisions.json",
+  "approvedDecisionIds": ["DEC-BT-01", "DEC-BT-02", "BB-01", "BB-01-BLANK", "BB-02", "BB-03", "BB-03-REPRESENTATIVE", "BB-03-SECOND-ATTACK", "BB-04", "BB-05"],
+  "pending": ["BB-PENDING-01", "BB-PENDING-02", "BB-PENDING-03", "revoked target or zero eligible wolves at lock"],
+  "migration": {"historicalArchives": "retain bound ruleset and profile unchanged", "schema": "none for bounded live QA expansion", "newOfficialMatches": "disabled until approved release and implementation", "qaProfiles": "no promotion of historical QA archives"},
+  "gates": ["owner policy decisions", "complete interaction coverage", "official version registry and binding", "backend and browser acceptance", "privacy and replay", "owner QA and release approval"],
+  "scope": "Preparation only; not loaded as an effective official ruleset."
+}

@@ -1,0 +1,5 @@
+
+> wolvesville-sprint01-engine-kernel@0.1.0 verify:source
+> node scripts/verify-sources.mjs
+
+OK: 97 official characters, 118 decisions, 207 source test specs, 107 unchanged approved frontend files.

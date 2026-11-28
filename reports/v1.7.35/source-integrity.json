@@ -1,0 +1,31 @@
+{
+  "inputFiles": 4228,
+  "inputCRC": "PASS",
+  "inputPayloadVerified": 4227,
+  "inputSHA256": "2b77938cea4b53c8bb37ae46eeee62a51166134bb4e8355457222c2afa5f72d6",
+  "graphicsSHA256": "f2f9df3287ca3b5b3f2cba05a2ced0d642177cb3362a6e5f73cdc3e2e2fee140",
+  "graphicsCRC": "PASS",
+  "historicalReportsUnchanged": 3350,
+  "rulesAndCharactersUnchanged": 29,
+  "inheritedFilesPresent": 4228,
+  "changedInherited": [
+    "README.md",
+    "backend/src/official/group-chat.ts",
+    "frontend/app.js",
+    "frontend/index.html",
+    "frontend/integration.css",
+    "frontend/integration.js",
+    "frontend/player-ux.js",
+    "package.json",
+    "scripts/run-browser-s06.mjs"
+  ],
+  "addedPortraits": 97,
+  "originalPortraitsPreserved": 97,
+  "characterIds": 97,
+  "historicalDecisions": 118,
+  "legacySpecs": 207,
+  "ownerChoices": 18,
+  "activeRule": "wolvesville-official-v1.3.3",
+  "candidateRule": "wolvesville-official-v1.3.4",
+  "activationAuthorized": false
+}

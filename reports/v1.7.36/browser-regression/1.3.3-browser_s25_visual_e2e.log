@@ -1,0 +1,44 @@
+E2E_SCHEDULER_WAIT exclusive 47346
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 509
+E2E_RESOURCE start cpu "usage_usec 7194514667\nuser_usec 6035406277\nsystem_usec 1159108389\nnice_usec 2171690\nnr_periods 55070\nnr_throttled 4355\nthrottled_usec 201634927\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s25_visual_e2e.py default port 37871 db /tmp/wolvesville-s06-browser-zBDmrX/test.sqlite
+ACTUAL_SCREENSHOT title {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT login {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT register {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT lobby-1920x1080 {'width': 1920, 'height': 1080} 0 []
+ACTUAL_SCREENSHOT lobby-1366x768 {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT lobby-768x1024 {'width': 768, 'height': 1024} 0 []
+ACTUAL_SCREENSHOT lobby-390x844 {'width': 390, 'height': 844} 0 []
+ACTUAL_SCREENSHOT village-lobby {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT create-room {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT room-1920x1080 {'width': 1920, 'height': 1080} 0 []
+ACTUAL_SCREENSHOT room-1366x768 {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT room-768x1024 {'width': 768, 'height': 1024} 0 []
+ACTUAL_SCREENSHOT room-390x844 {'width': 390, 'height': 844} 0 []
+ACTUAL_SCREENSHOT waiting-room {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT configuration {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT private-role {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT night-1920x1080 {'width': 1920, 'height': 1080} 0 []
+ACTUAL_SCREENSHOT night-1366x768 {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT night-768x1024 {'width': 768, 'height': 1024} 0 []
+ACTUAL_SCREENSHOT night-390x844 {'width': 390, 'height': 844} 0 []
+ACTUAL_SCREENSHOT night {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT selected-target {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT submitted {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT day-private-result {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT public-chat {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT voting {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT vote-recorded {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT victory {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT defeat {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT replay-verified {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT reconnect {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT return-to-lobby {'width': 1366, 'height': 768} 0 []
+S25_NORMAL_VISUAL_JOURNEY_PASS
+E2E_CONTEXT_CLOSED 0 0.031
+E2E_CONTEXT_CLOSED 1 0.029
+S06_BROWSER_PASS browser_s25_visual_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 7221794519\nuser_usec 6058044623\nsystem_usec 1163749895\nnice_usec 2171690\nnr_periods 55212\nnr_throttled 4358\nthrottled_usec 201662913\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

@@ -1,0 +1,84 @@
+TAP version 13
+# (node:4205) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL
+ok 1 - B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL
+  ---
+  duration_ms: 1575.378118
+  type: 'test'
+  ...
+# Subtest: B/B live trap: delayed valid use, private typed results, two placements, consumption and restart
+ok 2 - B/B live trap: delayed valid use, private typed results, two placements, consumption and restart
+  ---
+  duration_ms: 826.595099
+  type: 'test'
+  ...
+# Subtest: B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged
+ok 3 - B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged
+  ---
+  duration_ms: 781.813082
+  type: 'test'
+  ...
+# Subtest: B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay
+ok 4 - B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay
+  ---
+  duration_ms: 738.159313
+  type: 'test'
+  ...
+# Subtest: B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory
+ok 5 - B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory
+  ---
+  duration_ms: 1219.030819
+  type: 'test'
+  ...
+# Subtest: B/B live Witch: poison-only consumes trap and potion, later rescue is normal
+ok 6 - B/B live Witch: poison-only consumes trap and potion, later rescue is normal
+  ---
+  duration_ms: 701.197333
+  type: 'test'
+  ...
+# Subtest: B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)
+ok 7 - B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)
+  ---
+  duration_ms: 583.476226
+  type: 'test'
+  ...
+# Subtest: B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay
+ok 8 - B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay
+  ---
+  duration_ms: 533.096901
+  type: 'test'
+  ...
+# Subtest: B/B owner final: separate rescue and poison windows persist one nightly trap group
+ok 9 - B/B owner final: separate rescue and poison windows persist one nightly trap group
+  ---
+  duration_ms: 966.771324
+  type: 'test'
+  ...
+# Subtest: B/B owner final: representative RNG is server-bound and waiting survives restart
+ok 10 - B/B owner final: representative RNG is server-bound and waiting survives restart
+  ---
+  duration_ms: 643.194933
+  type: 'test'
+  ...
+# Subtest: B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn
+ok 11 - B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn
+  ---
+  duration_ms: 699.981645
+  type: 'test'
+  ...
+# Subtest: B/B owner final: ranked eligible members are filtered without reshuffle
+ok 12 - B/B owner final: ranked eligible members are filtered without reshuffle
+  ---
+  duration_ms: 510.556468
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 9942.657139

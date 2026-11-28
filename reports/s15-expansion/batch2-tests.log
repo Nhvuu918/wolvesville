@@ -1,0 +1,90 @@
+TAP version 13
+# (node:55577) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":49,"branch":"illusion.global-aura","skill":"official.49.aura-illusion","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 aura expansion \#49 private distortion, expiry, duplicate and restart
+ok 1 - S15 aura expansion \#49 private distortion, expiry, duplicate and restart
+  ---
+  duration_ms: 1294.061868
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":72,"branch":"curse.single-aura","skill":"official.72.aura-curse","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 aura expansion \#72 private distortion, expiry, duplicate and restart
+ok 2 - S15 aura expansion \#72 private distortion, expiry, duplicate and restart
+  ---
+  duration_ms: 1113.261141
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":54,"branch":"shoot.day-before-vote","skill":"official.54.shoot","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#54 shot before voting, same-day exclusion, next-day reveal, retry and replay
+ok 3 - S15 \#54 shot before voting, same-day exclusion, next-day reveal, retry and replay
+  ---
+  duration_ms: 896.39053
+  type: 'test'
+  ...
+# (node:55578) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":36,"branch":"shield.success-private","skill":"official.36.shield","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#36 shield absorbs knight attack, role feedback private, once per match
+ok 4 - S15 \#36 shield absorbs knight attack, role feedback private, once per match
+  ---
+  duration_ms: 1291.424627
+  type: 'test'
+  ...
+# Subtest: S15 \#36 fire and unused shield may both be spent in one night, no false reveal
+ok 5 - S15 \#36 fire and unused shield may both be spent in one night, no false reveal
+  ---
+  duration_ms: 689.390068
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":66,"branch":"observe.other-protected","skill":"passive.66.observe-protected","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#66 sees only other protection recipients, not source or own protection
+ok 6 - S15 \#66 sees only other protection recipients, not source or own protection
+  ---
+  duration_ms: 817.02084
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":43,"branch":"shoot.day-night","skill":"official.43.shoot","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#43 two rounds two bullets, blocked then day shot, retry privacy restart
+ok 7 - S15 \#43 two rounds two bullets, blocked then day shot, retry privacy restart
+  ---
+  duration_ms: 940.062916
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":87,"branch":"sedative.chat-and-vote","skill":"official.87.sedative","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#87 sedative denies chat and ballot intake, expires next day, blank tally is official
+ok 8 - S15 \#87 sedative denies chat and ballot intake, expires next day, blank tally is official
+  ---
+  duration_ms: 770.667951
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":54,"branch":"reveal.public-after-first-vote","skill":"official.54.reveal","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#54 true role reveal only after first completed vote; once, public minimal payload, replay
+ok 9 - S15 \#54 true role reveal only after first completed vote; once, public minimal payload, replay
+  ---
+  duration_ms: 757.922036
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":80,"branch":"compare.different-faction","skill":"official.80.compare","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#80 Không Tiếc Thương, previous-night death only, private relation, restart
+ok 10 - S15 \#80 Không Tiếc Thương, previous-night death only, private relation, restart
+  ---
+  duration_ms: 787.312275
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":80,"branch":"compare.same-faction","skill":"official.80.compare","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#80 Tiếc Thương, previous-night death only, private relation, restart
+ok 11 - S15 \#80 Tiếc Thương, previous-night death only, private relation, restart
+  ---
+  duration_ms: 737.258033
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 7072.386893

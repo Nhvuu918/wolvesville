@@ -1,0 +1,230 @@
+TAP version 13
+# (node:1003) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL
+ok 1 - B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL
+  ---
+  duration_ms: 2344.474453
+  type: 'test'
+  ...
+# Subtest: B/B live trap: delayed valid use, private typed results, two placements, consumption and restart
+ok 2 - B/B live trap: delayed valid use, private typed results, two placements, consumption and restart
+  ---
+  duration_ms: 1093.870182
+  type: 'test'
+  ...
+# Subtest: B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged
+ok 3 - B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged
+  ---
+  duration_ms: 992.043543
+  type: 'test'
+  ...
+# Subtest: B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay
+ok 4 - B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay
+  ---
+  duration_ms: 1117.622068
+  type: 'test'
+  ...
+# Subtest: B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory
+ok 5 - B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory
+  ---
+  duration_ms: 1562.782343
+  type: 'test'
+  ...
+# Subtest: B/B live Witch: poison-only consumes trap and potion, later rescue is normal
+ok 6 - B/B live Witch: poison-only consumes trap and potion, later rescue is normal
+  ---
+  duration_ms: 924.308579
+  type: 'test'
+  ...
+# Subtest: B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)
+ok 7 - B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)
+  ---
+  duration_ms: 905.634928
+  type: 'test'
+  ...
+# Subtest: B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay
+ok 8 - B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay
+  ---
+  duration_ms: 821.321365
+  type: 'test'
+  ...
+# Subtest: B/B owner final: separate rescue and poison windows persist one nightly trap group
+ok 9 - B/B owner final: separate rescue and poison windows persist one nightly trap group
+  ---
+  duration_ms: 1517.119425
+  type: 'test'
+  ...
+# Subtest: B/B owner final: representative RNG is server-bound and waiting survives restart
+ok 10 - B/B owner final: representative RNG is server-bound and waiting survives restart
+  ---
+  duration_ms: 934.378407
+  type: 'test'
+  ...
+# Subtest: B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn
+ok 11 - B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn
+  ---
+  duration_ms: 853.490655
+  type: 'test'
+  ...
+# Subtest: B/B owner final: ranked eligible members are filtered without reshuffle
+ok 12 - B/B owner final: ranked eligible members are filtered without reshuffle
+  ---
+  duration_ms: 621.985051
+  type: 'test'
+  ...
+# Subtest: Stability BB: empty split windows retain mark, later poison-only window consumes once
+ok 13 - Stability BB: empty split windows retain mark, later poison-only window consumes once
+  ---
+  duration_ms: 1158.580462
+  type: 'test'
+  ...
+# Subtest: BB-REP-NEW-01 B: live \#93 conversion uses original all-player order, entitlement, restart and victory
+ok 14 - BB-REP-NEW-01 B: live \#93 conversion uses original all-player order, entitlement, restart and victory
+  ---
+  duration_ms: 1011.370529
+  type: 'test'
+  ...
+# Subtest: BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority
+ok 15 - BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority
+  ---
+  duration_ms: 0.614806
+  type: 'test'
+  ...
+# Subtest: B/B mixed pack: lawful \#93 conversion, shared entitlement, KEEP, retry, restart and wolf victory
+ok 16 - B/B mixed pack: lawful \#93 conversion, shared entitlement, KEEP, retry, restart and wolf victory
+  ---
+  duration_ms: 1498.555044
+  type: 'test'
+  ...
+# Subtest: B/B mixed pack: converted \#93 and \#48 lock two bites, retaliation keeps same representative
+ok 17 - B/B mixed pack: converted \#93 and \#48 lock two bites, retaliation keeps same representative
+  ---
+  duration_ms: 1160.832353
+  type: 'test'
+  ...
+# Subtest: Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt
+ok 18 - Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt
+  ---
+  duration_ms: 126.945678
+  type: 'test'
+  ...
+# Subtest: Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events
+ok 19 - Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events
+  ---
+  duration_ms: 1762.970236
+  type: 'test'
+  ...
+# Subtest: v1.7.26 mixed privacy: authorized event ordinals, replay counts, resolution receipts and restart
+ok 20 - v1.7.26 mixed privacy: authorized event ordinals, replay counts, resolution receipts and restart
+  ---
+  duration_ms: 1224.45193
+  type: 'test'
+  ...
+# (node:1004) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: BBv2 01 wait for all responses, no random target, KEEP previous valid selection
+ok 21 - BBv2 01 wait for all responses, no random target, KEEP previous valid selection
+  ---
+  duration_ms: 13.863092
+  type: 'test'
+  ...
+# Subtest: BBv2 02 all respond but first blank or divergent sets, no bite even common target
+ok 22 - BBv2 02 all respond but first blank or divergent sets, no bite even common target
+  ---
+  duration_ms: 1.989449
+  type: 'test'
+  ...
+# Subtest: BBv2 03 canonical set agreement and same representative for two bites; retry and privacy
+ok 23 - BBv2 03 canonical set agreement and same representative for two bites; retry and privacy
+  ---
+  duration_ms: 1.849758
+  type: 'test'
+  ...
+# Subtest: BBv2 04 membership at lock: revoked wolf ignored, new wolf must respond, fixed order cannot change
+ok 24 - BBv2 04 membership at lock: revoked wolf ignored, new wolf must respond, fixed order cannot change
+  ---
+  duration_ms: 0.981892
+  type: 'test'
+  ...
+# Subtest: BBv2 05 two attacks: first counter kills representative, second still executes, no duplicate deaths
+ok 25 - BBv2 05 two attacks: first counter kills representative, second still executes, no duplicate deaths
+  ---
+  duration_ms: 2.466046
+  type: 'test'
+  ...
+# Subtest: BBv2 06 pack protection shared consumption; unsupported stack fails closed
+ok 26 - BBv2 06 pack protection shared consumption; unsupported stack fails closed
+  ---
+  duration_ms: 1.40176
+  type: 'test'
+  ...
+# Subtest: BBv2 07 group BB05=B all executed inspections inverted once; blocked action not trigger; RNG/private
+ok 27 - BBv2 07 group BB05=B all executed inspections inverted once; blocked action not trigger; RNG/private
+  ---
+  duration_ms: 5.784556
+  type: 'test'
+  ...
+# Subtest: BBv2 08 BB04=B guard inverse bypasses shield, no protection consumption, direct death once
+ok 28 - BBv2 08 BB04=B guard inverse bypasses shield, no protection consumption, direct death once
+  ---
+  duration_ms: 1.443382
+  type: 'test'
+  ...
+# Subtest: BBv2 09 inverse rescue finalizes preliminary death exactly once, ignores other shield; poison suppressed
+ok 29 - BBv2 09 inverse rescue finalizes preliminary death exactly once, ignores other shield; poison suppressed
+  ---
+  duration_ms: 1.816842
+  type: 'test'
+  ...
+# Subtest: BBv2 10 unknown effect or death reaction aborts whole group with waiting mark, no partial mutation
+ok 30 - BBv2 10 unknown effect or death reaction aborts whole group with waiting mark, no partial mutation
+  ---
+  duration_ms: 2.329443
+  type: 'test'
+  ...
+# Subtest: BBv2 11 journal commits candidate pack atomically, persists waiting then lock, restart and replay, v1 isolation
+ok 31 - BBv2 11 journal commits candidate pack atomically, persists waiting then lock, restart and replay, v1 isolation
+  ---
+  duration_ms: 62.068103
+  type: 'test'
+  ...
+# Subtest: BBv2 12 journal trap commit and group replay, private RNG, failed group has no effect
+ok 32 - BBv2 12 journal trap commit and group replay, private RNG, failed group has no effect
+  ---
+  duration_ms: 22.657488
+  type: 'test'
+  ...
+# Subtest: BBv2 14 no execution keeps mark through multiple nights, second placement and duplicate target constraints
+ok 33 - BBv2 14 no execution keeps mark through multiple nights, second placement and duplicate target constraints
+  ---
+  duration_ms: 1.781224
+  type: 'test'
+  ...
+# Subtest: BBv2 15 old candidate journal remains replayable beside new profile; disabled by default
+ok 34 - BBv2 15 old candidate journal remains replayable beside new profile; disabled by default
+  ---
+  duration_ms: 10.362778
+  type: 'test'
+  ...
+# Subtest: BBv2 16 direct inversion does not bypass unsupported death chains or create partial journal commit
+ok 35 - BBv2 16 direct inversion does not bypass unsupported death chains or create partial journal commit
+  ---
+  duration_ms: 66.248045
+  type: 'test'
+  ...
+# Subtest: v1.7.26 BB membership invariant: current pending count, lost entitlement, new member, KEEP and fixed representative
+ok 36 - v1.7.26 BB membership invariant: current pending count, lost entitlement, new member, KEEP and fixed representative
+  ---
+  duration_ms: 2.319572
+  type: 'test'
+  ...
+1..36
+# tests 36
+# suites 0
+# pass 36
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 21886.744872

@@ -1,0 +1,95 @@
+TAP version 13
+# (node:2219) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# DEEP_MEDIUM_EVIDENCE {"id":26,"deck":[8,25,26],"mediumKilled":false,"completed":true,"privacy":true,"replay":true,"restart":true,"deathCycles":2}
+# Subtest: Deep medium \#26: closed death, revival, repeated elimination, PH-01 false
+ok 1 - Deep medium \#26: closed death, revival, repeated elimination, PH-01 false
+  ---
+  duration_ms: 1245.177652
+  type: 'test'
+  ...
+# DEEP_MEDIUM_EVIDENCE {"id":26,"deck":[8,25,26],"mediumKilled":true,"completed":true,"privacy":true,"replay":true,"restart":true,"deathCycles":2}
+# Subtest: Deep medium \#26: closed death, revival, repeated elimination, PH-01 true
+ok 2 - Deep medium \#26: closed death, revival, repeated elimination, PH-01 true
+  ---
+  duration_ms: 939.327275
+  type: 'test'
+  ...
+# (node:2220) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":36,"branch":"shield.success-private","skill":"official.36.shield","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#36 shield absorbs knight attack, role feedback private, once per match
+ok 3 - S15 \#36 shield absorbs knight attack, role feedback private, once per match
+  ---
+  duration_ms: 1063.717346
+  type: 'test'
+  ...
+# Subtest: S15 \#36 fire and unused shield may both be spent in one night, no false reveal
+ok 4 - S15 \#36 fire and unused shield may both be spent in one night, no false reveal
+  ---
+  duration_ms: 565.489767
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":66,"branch":"observe.other-protected","skill":"passive.66.observe-protected","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#66 sees only other protection recipients, not source or own protection
+ok 5 - S15 \#66 sees only other protection recipients, not source or own protection
+  ---
+  duration_ms: 659.78324
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":43,"branch":"shoot.day-night","skill":"official.43.shoot","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#43 two rounds two bullets, blocked then day shot, retry privacy restart
+ok 6 - S15 \#43 two rounds two bullets, blocked then day shot, retry privacy restart
+  ---
+  duration_ms: 700.731164
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":87,"branch":"sedative.chat-and-vote","skill":"official.87.sedative","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#87 sedative denies chat and ballot intake, expires next day, blank tally is official
+ok 7 - S15 \#87 sedative denies chat and ballot intake, expires next day, blank tally is official
+  ---
+  duration_ms: 917.324587
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":54,"branch":"reveal.public-after-first-vote","skill":"official.54.reveal","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#54 true role reveal only after first completed vote; once, public minimal payload, replay
+ok 8 - S15 \#54 true role reveal only after first completed vote; once, public minimal payload, replay
+  ---
+  duration_ms: 810.041647
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":80,"branch":"compare.different-faction","skill":"official.80.compare","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#80 Không Tiếc Thương, previous-night death only, private relation, restart
+ok 9 - S15 \#80 Không Tiếc Thương, previous-night death only, private relation, restart
+  ---
+  duration_ms: 740.271614
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":80,"branch":"compare.same-faction","skill":"official.80.compare","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#80 Tiếc Thương, previous-night death only, private relation, restart
+ok 10 - S15 \#80 Tiếc Thương, previous-night death only, private relation, restart
+  ---
+  duration_ms: 688.300903
+  type: 'test'
+  ...
+# Subtest: S15 \#36 fireball targets non-seer knight in bounded official QA, independent shield and resource
+ok 11 - S15 \#36 fireball targets non-seer knight in bounded official QA, independent shield and resource
+  ---
+  duration_ms: 546.252776
+  type: 'test'
+  ...
+# Subtest: Privacy stability \#36: shield consumes one fireball, second night fireball, resource and restart
+ok 12 - Privacy stability \#36: shield consumes one fireball, second night fireball, resource and restart
+  ---
+  duration_ms: 692.986394
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 7746.340896

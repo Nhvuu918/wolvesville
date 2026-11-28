@@ -1,0 +1,6 @@
+BASELINE_SHA256 2e482d70167676b619b3ca982b46154f2bb5ec6d7a0099a3d14b654104c39e26
+CRC PASS 3279
+files 840 PASS
+reportFiles 2438 PASS
+package version 1.7.22-s15-stability-completion-wip
+baseline metrics {'R': 52, 'F': 1, 'A': 48, 'B': 37, 'qaC': 2, 'playableC': 5, 'S_auditedRoles': 48, 'S_pass': 79, 'S_total': 108, 'normalDecks': 12}

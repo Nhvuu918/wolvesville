@@ -1,0 +1,85 @@
+{
+  "build": "1.7.25-s15-privacy-stability-wip",
+  "defects": [
+    {
+      "id": "WV-BR-2026-1125-01",
+      "status": "REVALIDATED_PASS",
+      "evidence": {
+        "suite": "browser_s15_normal_e2e.py",
+        "version": "1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-privacy-stability/browser-critical/1.3.3-browser_s15_normal_e2e.log",
+        "command": "node scripts/run-browser-s06.mjs browser_s15_normal_e2e.py",
+        "durationMs": 54431
+      }
+    },
+    {
+      "id": "WV-BR-2026-1125-02",
+      "status": "RETEST_PASS_AFTER_HELPER_FIX",
+      "rootCauseEvidence": "Helper called chooseTarget without waiting for working=false; production function intentionally returns during working. Wait for idle, select, assert selectedTarget, then submit. Original race not uniquely reproduced, no gameplay assertion removed or deadline changed.",
+      "priorFailure": "reports/BB_STABILITY_BROWSER_DEFECTS.json",
+      "diagnostic": "reports/s15-representative/revival-diagnostic.log",
+      "after": {
+        "suite": "browser_s15_deep_medium_e2e.py",
+        "version": "1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-privacy-stability/browser-critical/1.3.3-browser_s15_deep_medium_e2e.log",
+        "command": "node scripts/run-browser-s06.mjs browser_s15_deep_medium_e2e.py",
+        "durationMs": 27603
+      },
+      "assertionsPreserved": true
+    },
+    {
+      "id": "WV-BR-2026-1125-03",
+      "status": "RETEST_NOT_PASS",
+      "rootCauseEvidence": "Prior log stopped after SCENARIO_READY; helper selected target without waiting for working=false. Added wait and selection assertion, stage tracing and shared context quiescence; diagnostic completed all contexts. Cannot prove unique historical root cause.",
+      "priorFailure": "reports/BB_REPRESENTATIVE_BROWSER_DEFECTS.json",
+      "diagnostic": "reports/s15-privacy-stability/rescue-diagnostic.log",
+      "after": {
+        "suite": "browser_s15_scale_rescue_e2e.py",
+        "version": "1.3.3",
+        "status": "INCOMPLETE",
+        "exitCode": null,
+        "log": null
+      },
+      "assertionsPreserved": true
+    },
+    {
+      "id": "WV-BR-2026-1125-04A",
+      "status": "PRIMARY_SCHEDULED_RETEST_PASS",
+      "previous": "reports/BB_GAMEPLAY_CLOSURE_BROWSER_DEFECTS.json",
+      "current": {
+        "suite": "browser_s15_normal_rescue_e2e.py",
+        "version": "1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-privacy-stability/browser-five-rescue/1.3.3-browser_s15_normal_rescue_e2e.log",
+        "command": "node scripts/run-browser-s06.mjs browser_s15_normal_rescue_e2e.py",
+        "durationMs": 80895
+      },
+      "controlledEvidence": "reports/BB_PRIVACY_STABILITY_CONCURRENCY_ACCEPTANCE.json",
+      "rootCause": "Load-sensitive; no unique causal proof. Shared browser admission controls contention, not a gameplay rule change.",
+      "assertionsPreserved": true
+    },
+    {
+      "id": "WV-BR-2026-1125-04B",
+      "status": "PRIMARY_SCHEDULED_RETEST_PASS",
+      "previous": "reports/BB_GAMEPLAY_CLOSURE_BROWSER_DEFECTS.json",
+      "current": {
+        "suite": "browser_s15_normal_guard_rescue_e2e.py",
+        "version": "1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-privacy-stability/browser-five-guard/1.3.3-browser_s15_normal_guard_rescue_e2e.log",
+        "command": "node scripts/run-browser-s06.mjs browser_s15_normal_guard_rescue_e2e.py",
+        "durationMs": 41596
+      },
+      "controlledEvidence": "reports/BB_PRIVACY_STABILITY_CONCURRENCY_ACCEPTANCE.json",
+      "rootCause": "Load-sensitive; no unique causal proof. Shared browser admission controls contention, not a gameplay rule change.",
+      "assertionsPreserved": true
+    }
+  ],
+  "newFailures": []
+}

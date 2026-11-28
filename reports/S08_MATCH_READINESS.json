@@ -1,0 +1,208 @@
+{
+  "schemaVersion": "s08-acceptance-v1",
+  "evidenceGeneratedAt": "2026-11-24T09:41:49.163Z",
+  "sourceBaseline": "Sprint 07 v0.9.0",
+  "officialCharacters": 97,
+  "metricACompletedOfficialMatchConfigurations": 1,
+  "metricBVoteToEliminationConfigurations": 0,
+  "postgres": "PENDING_NOT_RUN",
+  "browser": "NOT_EXECUTED_BY_THIS_COMMAND",
+  "metricAProof": "one real committed #8/#25 night-end match, HTTP events, role privacy, restart and replay",
+  "metricBNonProof": "night/day/vote recorded in #25/#74, but no official vote resolution or elimination; correctly counts zero",
+  "configurations": [
+    {
+      "key": "closed-knight-seer",
+      "characters": [
+        8,
+        25
+      ],
+      "players": 2,
+      "description": "Đêm đầu: Kỵ Sĩ Không Đầu #8 loại Tiên Tri #25",
+      "roleSource": "data/character.json#8,#25",
+      "interactions": [
+        "official.8.night-kill versus accepted official.25.inspect-role (same night)"
+      ],
+      "skillAdapters": [
+        "official.8.night-kill",
+        "official.25.inspect-role"
+      ],
+      "evidence": {
+        "config": "closed-knight-seer",
+        "result": "PASS",
+        "mode": "REAL_BACKEND_SQLITE",
+        "backendRunVerified": true,
+        "eventLogVerified": true,
+        "winnerCommitted": true,
+        "gameCompleted": true,
+        "eliminated": true,
+        "victoryEvaluated": true,
+        "throughNight": true,
+        "throughDay": false,
+        "throughVoting": false,
+        "voteResolved": false,
+        "eliminationFromVote": false,
+        "privateAclVerified": true,
+        "restartReplayVerified": true,
+        "source": "data/character.json#8 and docs/SPRINT07_RULE_BLOCKER_DIAGNOSIS.md"
+      },
+      "throughDay": false,
+      "throughVoting": false,
+      "voteResolved": false,
+      "eliminationFromVote": false,
+      "victoryEvaluated": true,
+      "gameCompleted": true,
+      "restartReplay": true,
+      "browserE2E": "NOT_EXECUTED_BY_THIS_COMMAND",
+      "postgresqlAcceptance": "PENDING_EXTERNAL_DB",
+      "metricA": true,
+      "metricB": false,
+      "readiness": "GO_RESTRICTED_BACKEND_TEST"
+    },
+    {
+      "key": "seer-pair",
+      "characters": [
+        25,
+        74
+      ],
+      "players": 2,
+      "description": "Cặp soi vai; có đêm/ngày, chưa chốt vote",
+      "interactions": [
+        "independent role inspections; no general vote adjudication"
+      ],
+      "skillAdapters": [
+        "official.25.inspect-role",
+        "official.74.inspect-role"
+      ],
+      "evidence": {
+        "config": "seer-pair",
+        "result": "PASS_PARTIAL_PATH",
+        "mode": "REAL_BACKEND_SQLITE",
+        "backendRunVerified": true,
+        "eventLogVerified": true,
+        "throughNight": true,
+        "throughDay": true,
+        "throughVoting": true,
+        "voteResolved": false,
+        "eliminationFromVote": false,
+        "gameCompleted": false,
+        "privateAclVerified": true,
+        "source": "docs/SPRINT07_RULE_BLOCKER_DIAGNOSIS.md#S07-V02/S07-V03"
+      },
+      "throughDay": true,
+      "throughVoting": true,
+      "voteResolved": false,
+      "eliminationFromVote": false,
+      "victoryEvaluated": false,
+      "gameCompleted": false,
+      "restartReplay": false,
+      "browserE2E": "NOT_EXECUTED_BY_THIS_COMMAND",
+      "postgresqlAcceptance": "PENDING_EXTERNAL_DB",
+      "metricA": false,
+      "metricB": false,
+      "readiness": "PARTIAL"
+    },
+    {
+      "key": "thorn-inspection",
+      "characters": [
+        20,
+        25,
+        74
+      ],
+      "players": 3,
+      "description": "Phản ứng Sói Gai Độc; chưa chốt vote",
+      "interactions": [
+        "20 reactive injury when inspected by 25/74; next-night skill disabled"
+      ],
+      "skillAdapters": [
+        "OFFICIAL_CHAR_20_REACTIVE_INSPECTION",
+        "official.25.inspect-role",
+        "official.74.inspect-role"
+      ],
+      "evidence": {
+        "result": "NOT_EXECUTED_IN_THIS_RUN"
+      },
+      "throughDay": null,
+      "throughVoting": null,
+      "voteResolved": false,
+      "eliminationFromVote": false,
+      "victoryEvaluated": false,
+      "gameCompleted": false,
+      "restartReplay": false,
+      "browserE2E": "NOT_EXECUTED_BY_THIS_COMMAND",
+      "postgresqlAcceptance": "PENDING_EXTERNAL_DB",
+      "metricA": false,
+      "metricB": false,
+      "readiness": "PARTIAL"
+    },
+    {
+      "key": "peace-voting-cancel",
+      "characters": [
+        25,
+        74,
+        79
+      ],
+      "players": 3,
+      "description": "Sói Hòa Bình hủy biểu quyết; không có người bị loại",
+      "interactions": [
+        "79 cancels vote under PH-02; no adjudicated hanging"
+      ],
+      "skillAdapters": [
+        "official.25.inspect-role",
+        "official.74.inspect-role",
+        "official.79.peace"
+      ],
+      "evidence": {
+        "result": "NOT_EXECUTED_IN_THIS_RUN"
+      },
+      "throughDay": null,
+      "throughVoting": null,
+      "voteResolved": false,
+      "eliminationFromVote": false,
+      "victoryEvaluated": false,
+      "gameCompleted": false,
+      "restartReplay": false,
+      "browserE2E": "NOT_EXECUTED_BY_THIS_COMMAND",
+      "postgresqlAcceptance": "PENDING_EXTERNAL_DB",
+      "metricA": false,
+      "metricB": false,
+      "readiness": "PARTIAL"
+    },
+    {
+      "key": "five-skill-pack",
+      "characters": [
+        9,
+        25,
+        31,
+        34,
+        74
+      ],
+      "players": 5,
+      "description": "Bảo vệ, soi, khóa; chưa chốt vote",
+      "interactions": [
+        "9 and 31 protection ledgers; 34 supported night-block; investigation; generic attack unresolved"
+      ],
+      "skillAdapters": [
+        "official.9.snow-protection",
+        "official.25.inspect-role",
+        "official.31.guard",
+        "official.34.night-block",
+        "official.74.inspect-role"
+      ],
+      "evidence": {
+        "result": "NOT_EXECUTED_IN_THIS_RUN"
+      },
+      "throughDay": null,
+      "throughVoting": null,
+      "voteResolved": false,
+      "eliminationFromVote": false,
+      "victoryEvaluated": false,
+      "gameCompleted": false,
+      "restartReplay": false,
+      "browserE2E": "NOT_EXECUTED_BY_THIS_COMMAND",
+      "postgresqlAcceptance": "PENDING_EXTERNAL_DB",
+      "metricA": false,
+      "metricB": false,
+      "readiness": "PARTIAL"
+    }
+  ]
+}

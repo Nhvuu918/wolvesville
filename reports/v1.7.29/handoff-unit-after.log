@@ -1,0 +1,22 @@
+TAP version 13
+# Subtest: S19 handoff: accepted snapshot maps seats before auxiliary reads or first paint
+ok 1 - S19 handoff: accepted snapshot maps seats before auxiliary reads or first paint
+  ---
+  duration_ms: 3.551868
+  type: 'test'
+  ...
+# Subtest: S19 handoff: authenticated game navigation precedes delayed feedback
+ok 2 - S19 handoff: authenticated game navigation precedes delayed feedback
+  ---
+  duration_ms: 4.965434
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 93.541268

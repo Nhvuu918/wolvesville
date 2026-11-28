@@ -1,0 +1,1943 @@
+[
+  {
+    "ruleId": "VH01",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Phải nhận ít nhất 2 phiếu hợp lệ cuối cùng sau khi áp dụng các hiệu ứng thao túng phiếu.",
+    "linkedRoles": [
+      6
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH06-S01",
+      "WV-CH06-S02",
+      "WV-CH06-S03",
+      "WV-CH06-S04"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH02",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Chọn lại ngẫu nhiên trong tập ứng viên hợp lệ; nếu không đủ hai hội viên thì không kích hoạt liên kết.",
+    "linkedRoles": [
+      62
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH62-S01",
+      "WV-CH62-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH03",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Hoàn tất toàn bộ chuỗi sự kiện hiện tại, sau đó xét đồng thời điều kiện thắng và công nhận đồng thắng.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH04",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Ưu tiên liên kết hợp lệ được tạo trước; nếu đồng thời thì dùng thứ tự phân giải ổn định xác định trước ván.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH05",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "x2 cho phép dùng một bình cứu tối đa hai lượt trong cùng đêm; sau đó bình hết.",
+    "linkedRoles": [
+      29
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH29-S01",
+      "WV-CH29-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH06",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Người chờ hồi sinh vẫn tính vào quân số theo E03; nếu điều kiện thắng đã thỏa sau chuỗi hiện tại thì kết thúc ván, không mở lượt mới để hồi sinh.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH07",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Kỹ năng công khai vai trò mặc định công khai vai trò thật, trừ ngoại lệ được mô tả rõ.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH08",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Cùng pha/cùng mức tác động: xét phụ thuộc, ưu tiên kỹ năng, thứ tự kích hoạt hợp lệ; nếu thực sự đồng thời thì dùng thứ tự ổn định xác định trước ván.",
+    "linkedRoles": [
+      33
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH33-S01",
+      "WV-CH33-S02"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH09",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Tối đa 1 viên trong một giai đoạn ngày hoặc đêm, trừ nâng cấp hợp lệ.",
+    "linkedRoles": [
+      32
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH32-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH10",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Khóa kỹ năng đêm hiện tại; lệnh đã nộp nhưng chưa thực thi cũng bị hủy.",
+    "linkedRoles": [
+      34
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH34-S01"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH11",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Giữ hào quang phản chiếu gần nhất nếu đã từng phản chiếu; nếu chưa từng thì hiện hào quang thật.",
+    "linkedRoles": [
+      35
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH35-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH12",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Có thể dùng cầu lửa và khiên hộ vệ trong cùng đêm; mỗi kỹ năng tiêu hao tài nguyên riêng.",
+    "linkedRoles": [
+      36
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH36-S01",
+      "WV-CH36-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH13",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Không xuyên qua bảo vệ hợp lệ.",
+    "linkedRoles": [
+      36
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH36-S01",
+      "WV-CH36-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH14",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Tráo đổi kéo dài từ đêm kích hoạt đến hết ngày hôm sau.",
+    "linkedRoles": [
+      37
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH37-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH15",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Tráo đổi từng đòn tấn công giữa A và B; nếu cả hai cùng chịu đòn chí mạng thì cả hai chết.",
+    "linkedRoles": [
+      37
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH37-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH16",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Hút tối đa một linh hồn mỗi đêm.",
+    "linkedRoles": [
+      38
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH38-S01",
+      "WV-CH38-S02",
+      "WV-CH38-S03",
+      "WV-CH38-S04",
+      "WV-CH38-S05",
+      "WV-CH38-S06"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH17",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Phải tự giết nhiều hơn một nửa số Sói đầu ván; ngưỡng cố định.",
+    "linkedRoles": [
+      39
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH39-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH18",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Bắt nhầm Dân thì mất xe đúng 1 đêm tiếp theo, sau đó tự động lấy lại.",
+    "linkedRoles": [
+      39
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH39-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH19",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Người bị hỏi mà không trả lời đúng hạn sẽ chết.",
+    "linkedRoles": [
+      40
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH40-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH20",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Người còn lại của cặp đôi cũ được tố cáo cả ngày lẫn đêm; xử lý theo thứ tự sự kiện hợp lệ.",
+    "linkedRoles": [
+      42
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH42-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH21",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Được làm bánh và tặng bánh trong cùng một đêm; làm trước, tặng sau.",
+    "linkedRoles": [
+      44
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH44-S01",
+      "WV-CH44-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH22",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Ghi nhận hào quang thực sự của người chết.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH23",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Khi Hắc Tinh chết, phe Sói mất toàn bộ kỹ năng, bao gồm quyền cắn chung của bầy.",
+    "linkedRoles": [
+      46
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH46-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH24",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Ngoại lệ miễn khóa áp dụng theo đúng tên vai trò Tiên Tri, Bảo Vệ/Hộ Vệ được nêu trong luật; không mở rộng theo kỹ năng tương tự.",
+    "linkedRoles": [
+      47
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH47-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH25",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Có tổng cộng 2 lần kích hoạt ảo ảnh trong cả ván; mỗi lần áp dụng cho đêm kích hoạt.",
+    "linkedRoles": [
+      49
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH49-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH26",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Người được kéo dài sự sống được tính vào quân số phe khi xét thắng cho đến khi trở về nghĩa địa.",
+    "linkedRoles": [
+      51
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH51-S01",
+      "WV-CH51-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH27",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Được dùng cả hai chó bảo vệ cùng một người trong cùng đêm; mỗi chó chặn đúng loại tấn công.",
+    "linkedRoles": [
+      52
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH52-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH28",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Tiết lộ công khai vai trò thật của mục tiêu cho cả làng.",
+    "linkedRoles": [
+      54
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH54-S01",
+      "WV-CH54-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH29",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Có thể được bảo vệ hợp lệ cứu khỏi cái chết do ghé thăm mục tiêu nguy hiểm.",
+    "linkedRoles": [
+      56
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH56-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH30",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Gây chết độc lập lên từng mục tiêu khác phe; bảo vệ một người không cứu người còn lại.",
+    "linkedRoles": [
+      58
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH58-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH31",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Chấn thương khóa hành động trong giai đoạn ngày hiện tại và đêm kế tiếp.",
+    "linkedRoles": [
+      59
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH59-S01"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH32",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Kế thừa đúng tài nguyên còn lại của người chết.",
+    "linkedRoles": [
+      60
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH60-S01",
+      "WV-CH60-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH33",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Một cặp đêm–ngày được tính là một ngày; đêm đầu là Đêm 1 và sáng sau là Ngày 1. Thiện xạ đánh dấu Đêm 1 có thể bắn ngay trong sáng Ngày 1.",
+    "linkedRoles": [
+      61
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH61-S01",
+      "WV-CH61-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH34",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Chỉ biết danh tính những người được người khác bảo vệ; không biết ai là người bảo vệ.",
+    "linkedRoles": [
+      66
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH66-S01"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH35",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Có sẵn 2 khiên và 1 kiếm; sử dụng trực tiếp lên mục tiêu, không cần lượt chế tạo.",
+    "linkedRoles": [
+      67
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH67-S01",
+      "WV-CH67-S02"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH36",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Phải chọn sẵn mục tiêu khi còn sống; nếu chưa chọn thì khi chết không kéo theo ai.",
+    "linkedRoles": [
+      68
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH68-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH37",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Khi chuyển một Dân làng sang phe Sói thành công, chỉ người bị chuyển nhận thông báo riêng.",
+    "linkedRoles": [
+      69
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH69-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH38",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Ảo ảnh duy trì qua nhiều ngày cho đến khi mục tiêu chết hoặc được giải trừ hợp lệ.",
+    "linkedRoles": [
+      71
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH71-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH39",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Yểm hào quang Ác chỉ có hiệu lực trong đêm kích hoạt.",
+    "linkedRoles": [
+      72
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH72-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH40",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Tối đa 2 lượt phong ấn vĩnh viễn trong cả ván; mở khóa lần lượt theo mốc 1 và 2 Sói chết.",
+    "linkedRoles": [
+      73
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH73-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH41",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Chọn mục tiêu ban đêm và khóa kỹ năng ngay trong đêm đó, theo thứ tự xử lý hợp lệ.",
+    "linkedRoles": [
+      76
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH76-S01"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH42",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Xuyên cả bảo vệ và miễn nhiễm sát thương; gây chết mục tiêu và những người bảo vệ.",
+    "linkedRoles": [
+      75
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH75-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH43",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Được dùng Trăng non và Mưa sao băng trong cùng đêm; mỗi quyền năng tiêu hao một lượt.",
+    "linkedRoles": [
+      78
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH78-S01",
+      "WV-CH78-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH44",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Chỉ hồi sinh thành công một Sói trong cả ván.",
+    "linkedRoles": [
+      83
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH83-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH45",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Nếu bị tấn công gây chết trong đêm, người bị thôi miên chịu chết thay; Thầy Thôi Miên sống nếu chuyển hướng hợp lệ.",
+    "linkedRoles": [
+      85
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH85-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH46",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Bình vừa chế tạo được sử dụng ngay trong cùng đêm nếu hợp lệ.",
+    "linkedRoles": [
+      96
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH96-S01",
+      "WV-CH96-S02",
+      "WV-CH96-S03"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH47",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Thẻ được người nhận sử dụng cả ban ngày lẫn ban đêm.",
+    "linkedRoles": [
+      89
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH89-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH48",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Người nhận bình được thông báo riêng loại bình đã nhận; không mặc định biết người tặng.",
+    "linkedRoles": [
+      96
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH96-S01",
+      "WV-CH96-S02",
+      "WV-CH96-S03"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH49",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "So sánh phe thực tế: người chết lấy phe lúc chết; người sống lấy phe tại thời điểm kiểm tra.",
+    "linkedRoles": [
+      80
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH80-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH50",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Được kết nạp và hiến tế trong cùng một đêm nếu đủ điều kiện.",
+    "linkedRoles": [
+      90
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH90-S01",
+      "WV-CH90-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH51",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Bẫy chặn đòn gây chết và phản sát kẻ tấn công; mục tiêu sống nếu chuyển hướng/bảo vệ hợp lệ.",
+    "linkedRoles": [
+      77
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH77-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH52",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Sói được hồi sinh có thể tham gia cắn ngay trong cùng đêm nếu hành động cắn của bầy chưa được xử lý.",
+    "linkedRoles": [
+      83
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH83-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH53",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Chỉ đối chiếu người đã chết trong đêm trước và vẫn đang chết tại thời điểm kiểm tra.",
+    "linkedRoles": [
+      80
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH80-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH54",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Bẫy chỉ phản sát một Sói đại diện cho lượt cắn tập thể; đại diện được xác định bằng quy tắc cố định trước ván.",
+    "linkedRoles": [
+      77
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH77-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH55",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Có thể hiến tế tín đồ vừa kết nạp trong cùng đêm nếu kết nạp đã xử lý thành công trước.",
+    "linkedRoles": [
+      90
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH90-S01",
+      "WV-CH90-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH56",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Mỗi đòn không được chuyển hướng trở lại mục tiêu đã đi qua; bỏ qua lần chuyển hướng gây vòng lặp và xử lý tại mục tiêu hiện tại.",
+    "linkedRoles": [
+      37,
+      63,
+      94
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH37-S01",
+      "WV-CH63-S01",
+      "WV-CH63-S02",
+      "WV-CH94-S01",
+      "WV-CH94-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH57",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Câm chỉ chặn chat công khai; vẫn cho phép chat nhóm hợp lệ. Không có chat riêng 1–1 thông thường; chỉ chat công khai và nhóm hệ thống tạo.",
+    "linkedRoles": [
+      51,
+      84,
+      93
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH51-S01",
+      "WV-CH51-S02",
+      "WV-CH84-S01",
+      "WV-CH93-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH58",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Không kết thúc theo quân số khi còn nhân vật độc lập sống và có khả năng tranh chấp thắng; tiếp tục ván.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH59",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Người được kết nạp thành công nhận thông báo riêng và có quyền vào nhóm chat giáo phái nếu hệ thống cho phép.",
+    "linkedRoles": [
+      90
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH90-S01",
+      "WV-CH90-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH60",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Bình độc bị chặn bởi lớp bảo vệ hợp lệ áp dụng cho sát thương gây chết; bình vẫn tiêu hao.",
+    "linkedRoles": [
+      29
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH29-S01",
+      "WV-CH29-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH61",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Chuyển hướng thành công sang mục tiêu miễn nhiễm vẫn tiêu hao một lượt và bị khóa kỹ năng đêm tiếp theo.",
+    "linkedRoles": [
+      63
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH63-S01",
+      "WV-CH63-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH62",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Trong ván chỉ quản trị viên có thẩm quyền xem; sau ván tất cả người tham gia được xem lịch sử đầy đủ.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH63",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Mỗi người chỉ mang tối đa một hạt giống chưa kích hoạt tại một thời điểm.",
+    "linkedRoles": [
+      97
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH97-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH64",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Biết tất cả nạn nhân bị Sói cắn trong đêm; một Bình Hồi phục chỉ cứu một người.",
+    "linkedRoles": [
+      87
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH87-S01",
+      "WV-CH87-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH65",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Hiệu ứng chết theo có thể bị lớp bảo vệ hoặc miễn nhiễm hợp lệ ngăn chặn.",
+    "linkedRoles": [
+      88
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH88-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH66",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Được xem tồn kho nguyên liệu chung hiện tại nhưng không biết danh tính Thầy Thuốc.",
+    "linkedRoles": [
+      95
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH95-S01",
+      "WV-CH95-S02",
+      "WV-CH95-S03"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH67",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Khi Thầy Thuốc chết, kỹ năng Đắp thuốc thay thế kỹ năng thu thập nguyên liệu.",
+    "linkedRoles": [
+      95,
+      96
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH95-S01",
+      "WV-CH95-S02",
+      "WV-CH95-S03",
+      "WV-CH96-S01",
+      "WV-CH96-S02",
+      "WV-CH96-S03"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH68",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Mặc định không thông báo cho mục tiêu khi kỹ năng không quy định; ngoại lệ khi luật yêu cầu hoặc cần thông tin để thực hiện hành động được cấp quyền.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH69",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Vai trò người dùng thẻ chọn tiết lộ chỉ gửi riêng cho Người Khai Mệnh.",
+    "linkedRoles": [
+      89
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH89-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH70",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Tối đa một khiên và một kiếm trong cùng một đêm; giới hạn tổng tài nguyên cả ván vẫn là 2 khiên, 1 kiếm.",
+    "linkedRoles": [
+      67
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH67-S01",
+      "WV-CH67-S02"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH71",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Sao chép kỹ năng nhưng giữ phe Sói và điều kiện thắng của phe Sói.",
+    "linkedRoles": [
+      18
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH18-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH72",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Chỉ được cướp thành công một lớp bảo vệ trong cả ván.",
+    "linkedRoles": [
+      1
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH01-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH73",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Được hồi sinh bất kỳ người chết nào, không giới hạn phe hoặc thời điểm chết, một lần mỗi ván.",
+    "linkedRoles": [
+      26
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH26-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH74",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Giữ P04: hiệu ứng tăng lượt cắn của bầy Sói không cộng dồn; tối đa 2 mục tiêu mỗi đêm.",
+    "linkedRoles": [
+      21,
+      48,
+      86
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH21-S01",
+      "WV-CH48-S01",
+      "WV-CH86-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH75",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Chỉ giao dịch thành công với phe Dân; giao dịch với Sói hoặc phe Ba không thành công.",
+    "linkedRoles": [
+      22
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH22-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH76",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Không thể hồi sinh Hắc Tinh ID 46, Bạch Sát ID 47 và Thiên Thần ID 53.",
+    "linkedRoles": [
+      26,
+      46,
+      47,
+      53
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH26-S01",
+      "WV-CH46-S01",
+      "WV-CH47-S01",
+      "WV-CH53-S01",
+      "WV-CH53-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH77",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Mở chat ẩn danh 1–1 giữa Thầy Đồng và người chết; Thầy Đồng biết danh tính người chết, người chết không biết Thầy Đồng.",
+    "linkedRoles": [
+      26
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH26-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH78",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Chỉ trao đổi trong nhóm chat giáo phái chung vào ban ngày; không chat riêng 1–1.",
+    "linkedRoles": [
+      90
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH90-S01",
+      "WV-CH90-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH79",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Mở chat riêng ẩn danh 1–1 với tù nhân vào ban đêm; Quản Ngục biết tù nhân, tù nhân không biết Quản Ngục.",
+    "linkedRoles": [
+      24
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH24-S01",
+      "WV-CH24-S02"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH80",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Mỗi lần chọn trúng Sói hoặc phe Ba bị trừ 1 viên đạn; nếu sau 2 lần chọn trúng Sói/phe Ba thì mất quyền giao dịch. Giao dịch thành công chỉ với Dân.",
+    "linkedRoles": [
+      22
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH22-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH81",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Ngân sách ban đầu 2 viên đạn tiềm năng; mỗi lần chọn trúng Sói/phe Ba trừ 1. Khi giao dịch thành công, người nhận nhận số đạn còn lại.",
+    "linkedRoles": [
+      22
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH22-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH82",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Vẫn tính quân số phe Dân khi chờ hồi sinh theo VH06; nếu điều kiện thắng đã đạt sau chuỗi hiện tại thì kết thúc, không mở lượt mới.",
+    "linkedRoles": [
+      23
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH23-S01",
+      "WV-CH23-S02",
+      "WV-CH23-S03"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH83",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Cái chết 10% phát sinh ban ngày không được Phù Thủy cứu; áp dụng quy tắc chung.",
+    "linkedRoles": [
+      4
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH04-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH84",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Trả chính xác Thiện, Ác hoặc Không xác định riêng biệt; không bị nhiễu; theo câu trả lời Excel.",
+    "linkedRoles": [
+      5
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH05-S01",
+      "WV-CH05-S02"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "VH85",
+    "source": "Wolvesville_Bao_cao_tong_hop_quyet_dinh_VH01-VH85.docx",
+    "status": "CONFIRMED_2026-11-21",
+    "ruleText": "Nhân đôi số lượt sử dụng kỹ năng trong đêm theo câu trả lời Excel; người nhận biết mình được ban phước; không vượt tài nguyên hữu hạn và không phá P04 về cắn chung.",
+    "linkedRoles": [
+      17
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH17-S01",
+      "WV-CH17-S02"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "PH-01",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Kỹ năng đã nộp khi còn sống tiếp tục phân giải sau khi người thực hiện chết; chỉ ngừng nhận hành động mới, trừ ngoại lệ kỹ năng.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "PH-02",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Sói Hòa Bình #79 kích hoạt chặn vote: giữ sự kiện ngày đã thực thi, hủy kỹ năng ngày đang chờ và hủy vote, rồi chuyển đêm.",
+    "linkedRoles": [
+      6,
+      79
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH06-S01",
+      "WV-CH06-S02",
+      "WV-CH06-S03",
+      "WV-CH06-S04",
+      "WV-CH79-S01"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "PH-03",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Hai lần bỏ lỡ hành động bắt buộc do AFK được cộng dồn trong cùng một ván, không đặt lại khi có hành động hợp lệ xen giữa.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "PH-04",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Lần AFK đầu, nếu tồn tại hành động bắt buộc, hệ thống random trong toàn bộ người còn sống, không phân phe; nếu hành động không tồn tại vì điều kiện kích hoạt không xảy ra (ví dụ Phù Thủy còn bình cứu nhưng không có người chết), bỏ bước đó và không coi là bỏ lỡ hành động bắt buộc.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "SK-01",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Hai nguồn x2 đồng thời không cộng dồn; tổng hiệu lực tăng tối đa x2, không x4.",
+    "linkedRoles": [
+      11
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH11-S01",
+      "WV-CH11-S02"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "SK-02",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED_WITH_OPEN_BOUNDARY",
+    "ruleText": "Buff x2 áp dụng riêng cho những kỹ năng mà người nhận thực sự sử dụng trong đêm được buff; kỹ năng không sử dụng đêm đó không nhận quyền x2. Ghi chú chưa quy định tiêu hao tài nguyên hữu hạn ngoài các ngoại lệ đã chốt.",
+    "linkedRoles": [
+      11
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH11-S01",
+      "WV-CH11-S02"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "SK-03",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Sói Biến Hình #18 khi sao chép bộ kỹ năng thì kế thừa đúng số tài nguyên mục tiêu còn lại tại thời điểm sao chép; giữ phe Sói/điều kiện thắng Sói.",
+    "linkedRoles": [
+      18
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH18-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "SK-04",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Sói Đạo Tặc #1 cướp lớp bảo vệ hợp lệ có thời điểm tạo sớm nhất trong số các lớp hiện có trên mục tiêu.",
+    "linkedRoles": [
+      1
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH01-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "SK-05",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Tiên Tri Huyền Bí #74 bị bẫy Sói Kỹ Sư #10 khi soi vai chính xác thì nhận ngẫu nhiên tên một vai giả khác vai thật, do server chọn; không thay đổi vai thật.",
+    "linkedRoles": [
+      10,
+      74
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH10-S01",
+      "WV-CH74-S01"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "SK-06",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Đòn Sói Điên Cuồng #75 xuyên bẫy Thợ Săn Quái Thú #77 khiến mục tiêu chịu chết; bẫy vẫn kích hoạt phản sát lên kẻ tấn công.",
+    "linkedRoles": [
+      75,
+      77
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH75-S01",
+      "WV-CH77-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "SK-07",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Người đang bị Quản Ngục #24 giam không phải mục tiêu hợp lệ của các đòn tấn công bên ngoài, kể cả đòn xuyên miễn nhiễm; giữ quyền Quản Ngục bắn tù nhân là ngoại lệ kỹ năng gốc.",
+    "linkedRoles": [
+      24
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH24-S01",
+      "WV-CH24-S02"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "LIFE-01",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Xạ Thủ Linh Hồn #23 sau cái chết lần đầu đang chờ hồi sinh vẫn có thể chịu đòn tấn công; đòn chí tử tiếp theo làm chết hẳn và hủy hồi sinh đang chờ.",
+    "linkedRoles": [
+      23
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH23-S01",
+      "WV-CH23-S02",
+      "WV-CH23-S03"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "LIFE-02",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Người mang hạt Thần Thảo Hồi Sinh #97 rơi vào trạng thái ngủ đông/giả chết chưa phải chết thật, vì vậy không kích hoạt hiệu ứng chết liên kết (ví dụ Cupid #27).",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "LIFE-03",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Điều kiện Sói Khát Máu #21 được tính trên tất cả người chết trong Ngày N, gồm thảo luận và treo cổ; nếu đủ hai thì tăng lượt cắn ở Đêm N+1, theo trần VH74.",
+    "linkedRoles": [
+      21
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH21-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "REL-01",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED_WITH_OPEN_BOUNDARY",
+    "ruleText": "Khi hai loại liên kết hợp lệ chưa có quan hệ ưu tiên được xác nhận với nhau, liên kết mới hợp lệ ghi đè liên kết cũ; chưa mặc nhiên xóa ưu tiên cụ thể và luật cùng cấp VH04.",
+    "linkedRoles": [
+      27,
+      62
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH27-S01",
+      "WV-CH62-S01",
+      "WV-CH62-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "REL-02",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Khi liên kết thắng/chết cũ bị ghi đè, vẫn giữ nhóm chat cũ và quyền trao đổi của thành viên theo quyền cũ; không công bố việc đổi liên kết cho nhóm cũ.",
+    "linkedRoles": [
+      27
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH27-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "REL-03",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Khi liên kết ưu tiên B–C kết thúc, liên kết A–B từng bị ghi đè tự khôi phục nếu A và B còn sống; các ngoại lệ liên kết chồng tầng phải được kiểm tra riêng.",
+    "linkedRoles": [
+      27
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH27-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "ROOM-01",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Không đặt số người tối thiểu cứng; chủ phòng cấu hình số ghế/người/bot theo thiết kế, có thể bắt đầu từ 1 người thật cộng n bot khi cấu hình và bộ vai hợp lệ.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "ROOM-02",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED_WITH_OPEN_BOUNDARY",
+    "ruleText": "Trong một ván, mỗi Character ID chỉ được sử dụng tối đa một lần; không cho phép phân vai ban đầu trùng ID. Phạm vi ràng buộc khi kỹ năng biến đổi vai cần kiểm tra thêm.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "ROOM-03",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Quản trò mất kết nối: trận vẫn tiếp tục; quyền điều phối có thể chuyển cho người thật đủ điều kiện, có nhật ký và không chia lại vai. Khi không có ứng viên người thật, server tiếp tục logic hợp lệ mà không tự nâng bot thành quản trò.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "PRIV-01",
+    "source": "Tin nhắn xác nhận 21 quyết định, 2026-11-24",
+    "status": "USER_CONFIRMED",
+    "ruleText": "Sau trận người tham gia được xem diễn biến/kết quả/vai trò; nội dung tin nhắn chỉ được xem lại ở các kênh mà chính người đó từng có quyền đọc.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "Q13-01",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "ruleText": "Mỗi hành động phát sinh do x2 cần đủ charge riêng; buff không sinh charge. Chỉ nhân đôi những kỹ năng thực sự sử dụng đêm đó; kỹ năng không dùng hoặc hết charge không nhận lợi ích. VH05 Phù Thủy là ngoại lệ một bình cứu cho tối đa hai lượt trong đêm.",
+    "linkedRoles": [
+      11,
+      17
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH11-S01",
+      "WV-CH11-S02",
+      "WV-CH17-S01",
+      "WV-CH17-S02"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "Q13-02",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "ruleText": "Ở lần AFK cần random, tập mục tiêu là mọi người đang sống và hợp lệ cho kỹ năng, không phân biệt phe. Tập rỗng thì hành động bắt buộc không phát sinh và không cộng lần AFK đó.",
+    "linkedRoles": [],
+    "linkedAuditSkillIds": [],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "Q13-03",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "ruleText": "Khi nhiều liên kết cũ hợp lệ có thể phục hồi, trước tiên áp dụng ưu tiên loại liên kết đã chốt; trong tập ứng viên cùng mức còn lại, phục hồi liên kết gần nhất trong lịch sử. Không thay thế nguyên tắc tạo mới VH04.",
+    "linkedRoles": [
+      27
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH27-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "Q13-04",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "ruleText": "Cấm trùng Character ID trong danh sách phân vai ban đầu. Sau khi bắt đầu, biến đổi hợp lệ có thể tạo currentRoleId trùng mà không phải hủy biến đổi; sao chép kỹ năng theo VH71 không đồng nghĩa đổi phe.",
+    "linkedRoles": [
+      18,
+      60
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH18-S01",
+      "WV-CH60-S01",
+      "WV-CH60-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "Q13-05",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "ruleText": "Người ở trạng thái HIBERNATING do hạt Thần Thảo vẫn được tính vào quân số phe lúc đang ngủ đông; tạm ngưng chat, phiếu bầu và mọi kỹ năng đến khi tỉnh/hồi sinh theo điều kiện hợp lệ. Không phát sinh chết thật từ riêng trạng thái giả chết.",
+    "linkedRoles": [
+      97
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH97-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "Q13-06",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "ruleText": "Bẫy Sói Kỹ Sư đối với kỹ năng soi vai chính xác chọn ngẫu nhiên một roleId khác roleId thật từ bộ vai đã khóa trước trận; không chọn từ toàn bộ 97 vai. RNG trên server, lưu snapshot tập hợp và lần rút.",
+    "linkedRoles": [
+      10,
+      74
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH10-S01",
+      "WV-CH74-S01"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "Q13-07",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "ruleText": "Khi có hiệu ứng kéo dài sự sống hợp lệ và hạt Thần Thảo, áp dụng trạng thái sống kéo dài trước; tại mốc kết thúc trạng thái kéo dài mới xét điều kiện kích hoạt hạt ngủ đông, sau khi xử lý những cứu hợp lệ khác theo thứ tự tương ứng.",
+    "linkedRoles": [
+      51,
+      95,
+      97
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH51-S01",
+      "WV-CH51-S02",
+      "WV-CH95-S01",
+      "WV-CH95-S02",
+      "WV-CH95-S03",
+      "WV-CH97-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "Q13-08",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "ruleText": "Giáo Chủ không thể kết nạp một người đã thuộc nhóm/liên kết thắng độc lập; yêu cầu kết nạp không thành công, không đổi nhóm thắng, không cấp quyền chat giáo phái mới. Đây là ngoại lệ cụ thể so với cơ chế ghi đè quan hệ chưa có ưu tiên.",
+    "linkedRoles": [
+      62,
+      90
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH62-S01",
+      "WV-CH62-S02",
+      "WV-CH90-S01",
+      "WV-CH90-S02"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "Q13-09",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "ruleText": "Sói Hòa Bình chặn và hủy vote hợp lệ trong ngày mà Kẻ Chết Thay đã có nhiệm vụ: nhiệm vụ thất bại, Đạo Diễn Tử Thần nhận 1 Oscar theo mỗi trường hợp diễn sai hợp lệ. Không tự áp sang vai diễn khác nếu không được quy định.",
+    "linkedRoles": [
+      6,
+      79
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH06-S01",
+      "WV-CH06-S02",
+      "WV-CH06-S03",
+      "WV-CH06-S04",
+      "WV-CH79-S01"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "Q13-10",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "ruleText": "Khi Sói Điên Cuồng #75 kích hoạt đòn trúng mục tiêu có bảo vệ hợp lệ, những người cấp/tạo lớp bảo vệ đều thuộc tập người bảo vệ có thể bị chết theo, bao gồm chủ chó hoặc người cấp trang bị; phân giải đúng cơ chế tấn công/bảo vệ và tránh chuyển chết trùng.",
+    "linkedRoles": [
+      31,
+      52,
+      67,
+      75
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH31-S01",
+      "WV-CH52-S01",
+      "WV-CH67-S01",
+      "WV-CH67-S02",
+      "WV-CH75-S01"
+    ],
+    "codeCoverage": "POTENTIALLY_PARTIAL_ONLY_NEEDS_RULE_LEVEL_AUDIT",
+    "executedEvidence": "See restricted official role tests and original source",
+    "missingImplementation": "No 1:1 rule-to-branch proof; possible partial",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "Q13-11",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "ruleText": "Bẫy Sói Kỹ Sư lên chức năng soi PHÂN LOẠI tạo ngẫu nhiên một kết quả cùng kiểu dữ liệu nhưng khác giá trị thật trong danh sách các giá trị phân loại hợp lệ; không tự thay bằng tên vai hay hào quang. Kết quả soi miễn nhiễu theo VH84 là ngoại lệ.",
+    "linkedRoles": [
+      10,
+      81
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH10-S01",
+      "WV-CH81-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  },
+  {
+    "ruleId": "Q13-12",
+    "source": "Xác nhận trực tiếp 12 quyết định Wolvesville v1.3 trong hội thoại ngày 24/11/2026",
+    "status": "USER_CONFIRMED_2026-11-24",
+    "ruleText": "Nếu người mang hạt Thần Thảo thuộc danh sách chết sơ bộ ban đêm, tên vẫn hiện trong prompt Phù Thủy và có thể được cứu hợp lệ trước khi kích hoạt hạt. Nếu chết được ngăn thì không kích hoạt giả chết do hạt tại sự kiện chết đó. Nếu không được cứu, tiếp tục xét kéo dài sống và hạt theo Q13-07.",
+    "linkedRoles": [
+      29,
+      97
+    ],
+    "linkedAuditSkillIds": [
+      "WV-CH29-S01",
+      "WV-CH29-S02",
+      "WV-CH97-S01"
+    ],
+    "codeCoverage": "NO_VERIFIED_DIRECT_RULE_TO_CODE_LINK",
+    "executedEvidence": "NOT_PROVEN_BY_TEST",
+    "missingImplementation": "Requires explicit adapter and exact branch test or documented system policy",
+    "genuineRuleGap": false
+  }
+]

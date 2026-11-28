@@ -1,0 +1,44 @@
+{
+  "version": "1.7.25-s15-privacy-stability-wip",
+  "sourceFingerprint": "2aaa5dfa1e0067c6bb82beff4c06c18375ed6dd37380b1b5f30c99ec8ff9cec5",
+  "code": [
+    "backend/src/official/s13-mechanics.ts",
+    "backend/src/official/stable-death-proof.ts"
+  ],
+  "scope": "Reuse single-defense selection/consumption for S14 direct attacks. Strict closed death cycles in existing revival evidence. No new shield priority, #23 secret revival or trap mapping.",
+  "twoFireballTest": "PASS",
+  "mageBrowser": {
+    "suite": "browser_s15_mage_target_e2e.py",
+    "version": "1.3.3",
+    "status": "PASS",
+    "exitCode": 0,
+    "log": "reports/s15-privacy-stability/browser-bb/1.3.3-browser_s15_mage_target_e2e.log",
+    "command": "node scripts/run-browser-s06.mjs browser_s15_mage_target_e2e.py",
+    "durationMs": 24720
+  },
+  "revivalTests": [
+    {
+      "test": "Deep medium #26: closed death, revival, repeated elimination, PH-01 false",
+      "status": "PASS"
+    },
+    {
+      "test": "Deep medium #26: closed death, revival, repeated elimination, PH-01 true",
+      "status": "PASS"
+    }
+  ],
+  "fullRoleIssued": false,
+  "sourceRefs": [
+    "character.json#36",
+    "VH12",
+    "VH13",
+    "character.json#23",
+    "VH03",
+    "VH73",
+    "VH76"
+  ],
+  "remaining": [
+    "#23 secret self-revival and shoot/death-chain",
+    "#36 other defenses and affected roles",
+    "Trap + revival and same-night order"
+  ]
+}

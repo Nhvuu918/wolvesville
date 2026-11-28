@@ -1,0 +1,50 @@
+TAP version 13
+# (node:11255) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S17 \#23 live session: private revival, two bullets, protection, vote ban, retry, restart, replay
+ok 1 - S17 \#23 live session: private revival, two bullets, protection, vote ban, retry, restart, replay
+  ---
+  duration_ms: 1449.108638
+  type: 'test'
+  ...
+# Subtest: S17 LIFE-01: two accepted night attacks finalize pending soul without duplicate public death
+ok 2 - S17 LIFE-01: two accepted night attacks finalize pending soul without duplicate public death
+  ---
+  duration_ms: 644.058352
+  type: 'test'
+  ...
+# Subtest: S17 VH82: village victory while soul waits, no extra night or ammunition
+ok 3 - S17 VH82: village victory while soul waits, no extra night or ammunition
+  ---
+  duration_ms: 522.760357
+  type: 'test'
+  ...
+# Subtest: S18 LIFE-01: fresh blind knight attempt after secret revival, then identical dead-seat retry without duplicate death
+ok 4 - S18 LIFE-01: fresh blind knight attempt after secret revival, then identical dead-seat retry without duplicate death
+  ---
+  duration_ms: 923.650581
+  type: 'test'
+  ...
+# (node:11256) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S17 TRAP-05: mark persists through death, public medium revival, next-night inspection and restart
+ok 5 - S17 TRAP-05: mark persists through death, public medium revival, next-night inspection and restart
+  ---
+  duration_ms: 1191.189608
+  type: 'test'
+  ...
+# Subtest: S17 TRAP-04: placement before same-night inspection uses existing phase priority and consumes once
+ok 6 - S17 TRAP-04: placement before same-night inspection uses existing phase priority and consumes once
+  ---
+  duration_ms: 674.821976
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3761.296853

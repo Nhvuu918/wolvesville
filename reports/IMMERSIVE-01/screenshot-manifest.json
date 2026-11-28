@@ -1,0 +1,79 @@
+[
+  {
+    "file": "reports/IMMERSIVE-01/browser/feed.png",
+    "sha256": "a5a2dd95e40ca47b932e30418f4d26a31d2b3fd4a46c93523f105149324872b7",
+    "transport": "repository HTTP/WS bridge",
+    "scenario": "Social product browser",
+    "sourceFingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a"
+  },
+  {
+    "file": "reports/IMMERSIVE-01/browser/friends.png",
+    "sha256": "725e07838965677a1fe5462b80ce82bcf61bf0d4832131fabb1374cec7ad6d4f",
+    "transport": "repository HTTP/WS bridge",
+    "scenario": "Social product browser",
+    "sourceFingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a"
+  },
+  {
+    "file": "reports/IMMERSIVE-01/browser/mobile-profile.png",
+    "sha256": "e207d18488c537ca57c2d63304ec31746ab2a71ecbcdb3b80e2234468b70d22b",
+    "transport": "repository HTTP/WS bridge",
+    "scenario": "Social product browser",
+    "sourceFingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a"
+  },
+  {
+    "file": "reports/IMMERSIVE-01/browser/notifications.png",
+    "sha256": "0ef9c2854a0bf9b45d425892e32519ba3c19b0704792fd5c81e2092122e788d8",
+    "transport": "repository HTTP/WS bridge",
+    "scenario": "Social product browser",
+    "sourceFingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a"
+  },
+  {
+    "file": "reports/IMMERSIVE-01/browser/profile.png",
+    "sha256": "a5577a40aba50fe1b91c13b379c480c8096ac2b8d21a910838e6f7487682b2f6",
+    "transport": "repository HTTP/WS bridge",
+    "scenario": "Social product browser",
+    "sourceFingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a"
+  },
+  {
+    "file": "reports/IMMERSIVE-01/browser/rule-lookup.png",
+    "sha256": "f7d7415567ef46bee951377b86ca8c0c7b8aa0c5ebdab23d5e9a17f3213ad3fc",
+    "transport": "repository HTTP/WS bridge",
+    "scenario": "Social product browser",
+    "sourceFingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a"
+  },
+  {
+    "file": "reports/IMMERSIVE-01/normal-browser/normal-bell-private.png",
+    "sha256": "a3915fe70425f6c5c4355eb64f42c8e292f28f401596d4ba7daaf65fa1a881bf",
+    "transport": "repository HTTP/WS bridge",
+    "scenario": "Development Normal 8,25,31,64",
+    "sourceFingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a"
+  },
+  {
+    "file": "reports/IMMERSIVE-01/normal-browser/normal-config.png",
+    "sha256": "9951c3103dfffceb3bd4d5bf7d3c2e58f0c45d90152a63995214017bb3b8e45a",
+    "transport": "repository HTTP/WS bridge",
+    "scenario": "Development Normal 8,25,31,64",
+    "sourceFingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a"
+  },
+  {
+    "file": "reports/IMMERSIVE-01/normal-browser/normal-endgame.png",
+    "sha256": "f50def8c59062e8df9396aed75b482276859b5eb51fbf15725d317ae57a1d3c8",
+    "transport": "repository HTTP/WS bridge",
+    "scenario": "Development Normal 8,25,31,64",
+    "sourceFingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a"
+  },
+  {
+    "file": "reports/IMMERSIVE-01/normal-browser/normal-guard-action.png",
+    "sha256": "4973acad51e9847727763fed2165f1116b530b674b2604b45b54c086f44a981a",
+    "transport": "repository HTTP/WS bridge",
+    "scenario": "Development Normal 8,25,31,64",
+    "sourceFingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a"
+  },
+  {
+    "file": "reports/IMMERSIVE-01/normal-browser/normal-guard-no-bell.png",
+    "sha256": "c3a4791e6855b622ba602d9cb9b1de390b2c5d6e4177a552b10198a8d73c8312",
+    "transport": "repository HTTP/WS bridge",
+    "scenario": "Development Normal 8,25,31,64",
+    "sourceFingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a"
+  }
+]

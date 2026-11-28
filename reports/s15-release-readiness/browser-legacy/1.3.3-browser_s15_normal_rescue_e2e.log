@@ -1,0 +1,4 @@
+GROWTH_NORMAL_RESCUE_BROWSER_PASS village
+S06_BROWSER_CASE_PASS browser_s15_normal_rescue_e2e.py village
+Error: E2E timeout browser_s15_normal_rescue_e2e.py: cleanup did not finish; not counted PASS
+    at file:///tmp/wv20/scripts/run-browser-s06.mjs:43:10

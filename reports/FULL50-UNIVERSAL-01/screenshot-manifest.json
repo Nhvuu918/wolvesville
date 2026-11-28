@@ -1,0 +1,82 @@
+[
+  {
+    "path": "reports/FULL50-UNIVERSAL-01/browser-normal/normal-bell-private.png",
+    "sha256": "5bcc830d549e48c83a751b90b6b1126486f8dc37965a6b4f6301da69b3fc46bd",
+    "scenario": "browser_full50_universal_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "scope": "LIFE-MODULES-1-GUARD-OBSERVATION (internal development only)",
+    "characterIds": [
+      8,
+      25,
+      31,
+      64
+    ],
+    "ruleVersion": "wolvesville-official-v1.3.3 + persisted development profile",
+    "sourceFingerprint": "d77300af6c8ac3b1e092e17e3288cf94291ea11959833ab1c5aeea3dd92bbf38",
+    "suiteStatus": "PASS"
+  },
+  {
+    "path": "reports/FULL50-UNIVERSAL-01/browser-normal/normal-config.png",
+    "sha256": "b9a0d19fe504dad0cda5c0b4c633d2fe0a5e7c01eaae784f6d74a160f29547ab",
+    "scenario": "browser_full50_universal_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "scope": "LIFE-MODULES-1-GUARD-OBSERVATION (internal development only)",
+    "characterIds": [
+      8,
+      25,
+      31,
+      64
+    ],
+    "ruleVersion": "wolvesville-official-v1.3.3 + persisted development profile",
+    "sourceFingerprint": "d77300af6c8ac3b1e092e17e3288cf94291ea11959833ab1c5aeea3dd92bbf38",
+    "suiteStatus": "PASS"
+  },
+  {
+    "path": "reports/FULL50-UNIVERSAL-01/browser-normal/normal-endgame.png",
+    "sha256": "2c984824d219f73045d58c674983e2cd5c0b074bbcb2f4793a8a278378cc5ddf",
+    "scenario": "browser_full50_universal_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "scope": "LIFE-MODULES-1-GUARD-OBSERVATION (internal development only)",
+    "characterIds": [
+      8,
+      25,
+      31,
+      64
+    ],
+    "ruleVersion": "wolvesville-official-v1.3.3 + persisted development profile",
+    "sourceFingerprint": "d77300af6c8ac3b1e092e17e3288cf94291ea11959833ab1c5aeea3dd92bbf38",
+    "suiteStatus": "PASS"
+  },
+  {
+    "path": "reports/FULL50-UNIVERSAL-01/browser-normal/normal-guard-action.png",
+    "sha256": "6c730f9a1b23638351b665366fc8d998cc20432a0a767a30346db7c803660e6f",
+    "scenario": "browser_full50_universal_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "scope": "LIFE-MODULES-1-GUARD-OBSERVATION (internal development only)",
+    "characterIds": [
+      8,
+      25,
+      31,
+      64
+    ],
+    "ruleVersion": "wolvesville-official-v1.3.3 + persisted development profile",
+    "sourceFingerprint": "d77300af6c8ac3b1e092e17e3288cf94291ea11959833ab1c5aeea3dd92bbf38",
+    "suiteStatus": "PASS"
+  },
+  {
+    "path": "reports/FULL50-UNIVERSAL-01/browser-normal/normal-guard-no-bell.png",
+    "sha256": "dcaeb8425452caa346aae95adb2442e83b21b455a1097431f5920c62d2873aa0",
+    "scenario": "browser_full50_universal_normal_e2e.py",
+    "mode": "NORMAL_GAMEPLAY",
+    "scope": "LIFE-MODULES-1-GUARD-OBSERVATION (internal development only)",
+    "characterIds": [
+      8,
+      25,
+      31,
+      64
+    ],
+    "ruleVersion": "wolvesville-official-v1.3.3 + persisted development profile",
+    "sourceFingerprint": "d77300af6c8ac3b1e092e17e3288cf94291ea11959833ab1c5aeea3dd92bbf38",
+    "suiteStatus": "PASS"
+  }
+]

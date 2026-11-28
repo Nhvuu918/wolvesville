@@ -1,0 +1,264 @@
+[
+  {
+    "baselineFixture": "career",
+    "source": "IMMERSIVE-04 historical test database, no user production data",
+    "oldTables": 29,
+    "rowsPreserved": 78,
+    "tables": {
+      "auth_sessions": {
+        "rows": 2,
+        "sha256": "920b1c801972bdadc613747ebcb882b7c6dbb2df0ea24c2d14be6d8193a2d790"
+      },
+      "demo_account_meta": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "game_actions": {
+        "rows": 2,
+        "sha256": "0042785910aa5cbef2d06ac04d5f907db6f11aa248a3ca9ac204bd96f3706869"
+      },
+      "game_assignment_draws": {
+        "rows": 2,
+        "sha256": "faae6e67c6439194ac523745b3f88090b564aa9b3b9fc9966f41ee35310fdd5d"
+      },
+      "game_events": {
+        "rows": 22,
+        "sha256": "375a3f3c860a06f36f4d3132f53b63a5bc8181903a5598a98da9eb324b45f1e3"
+      },
+      "game_participants": {
+        "rows": 2,
+        "sha256": "1c3d60398f4e3ddd88e68db58e5ce285d03e7fea92530c1e660c44a0d62e283b"
+      },
+      "game_random_draws": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "game_sessions": {
+        "rows": 1,
+        "sha256": "430f9196bf95a6ee8743b707f62350141f4ac7c5cb37e2978f3cd69f606e5dfc"
+      },
+      "game_snapshots": {
+        "rows": 9,
+        "sha256": "81a2ce9289786889e9829bcae8c3d00632f66a10e276f60756c1b111d268f973"
+      },
+      "lobby_members": {
+        "rows": 2,
+        "sha256": "b322fd671745edec5d641ba3682dddc1536c5fb81c7bfe8e73204e04b68da459"
+      },
+      "lobby_rooms": {
+        "rows": 1,
+        "sha256": "2430deac27e7ee00341350497cc063b7d8eeae36bac644febb0e89efc72dedc1"
+      },
+      "normal_coordination_log": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "player_level_history": {
+        "rows": 3,
+        "sha256": "67e07d3c9447549d644515619f7c03b7d337562dc9f2907efd4c166dfaa0fc49"
+      },
+      "player_progression": {
+        "rows": 2,
+        "sha256": "72c67407ca05e077632937858ac132f8f0094459113844a0704dac73eff7ac04"
+      },
+      "room_game_links": {
+        "rows": 1,
+        "sha256": "42606ff7de0b136cb46a733493b4745f08c5585e5f4f9542ead9ed99f3398800"
+      },
+      "social_blocks": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_comments": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_friends": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_likes": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_media": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_notice_keys": {
+        "rows": 5,
+        "sha256": "a146687d1811d3a4e9d6c537ea1fcaf3b81a2208e7db652c44a2fda0b7aacf92"
+      },
+      "social_notifications": {
+        "rows": 7,
+        "sha256": "be11e78b0589eb513d51cb23dc00752c8335d0e0d09ee24849e3261cda13d58d"
+      },
+      "social_post_media": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_posts": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_profiles": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "user_accounts": {
+        "rows": 2,
+        "sha256": "71ba7b353b00ed013e8c6892752baa28bf95fc476dbc75dc876945448209f8b7"
+      },
+      "user_achievements": {
+        "rows": 4,
+        "sha256": "8bdddebbd24303af0abcaec2880f660008b9a9eebaa2d022fd3acf3a487d867b"
+      },
+      "user_titles": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "xp_transactions": {
+        "rows": 11,
+        "sha256": "2b8b3cffa154620f482602d46bae28b3421571fd60b5e1eefaeaedb88bfdc9d4"
+      }
+    },
+    "addedTables": [
+      "account_preferences",
+      "saved_decks"
+    ],
+    "twoStartupMigrations": "PASS",
+    "foreignKeyCheck": "PASS",
+    "integrityCheck": "PASS"
+  },
+  {
+    "baselineFixture": "browser",
+    "source": "IMMERSIVE-04 historical test database, no user production data",
+    "oldTables": 29,
+    "rowsPreserved": 134,
+    "tables": {
+      "auth_sessions": {
+        "rows": 4,
+        "sha256": "9ef3b0c4370703457dd96a8e9a84cd9be78a9905dba2df00af33fc431ca81485"
+      },
+      "demo_account_meta": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "game_actions": {
+        "rows": 5,
+        "sha256": "1b3921fe10be5ce8254146848b3ef489c92381ded9ceb18fa32827799d2aa6f2"
+      },
+      "game_assignment_draws": {
+        "rows": 4,
+        "sha256": "2789c6b20336cb8d788b01a4cc4cae40f275ba0a5e09af407b2454f724fc6b48"
+      },
+      "game_events": {
+        "rows": 61,
+        "sha256": "8b2ff38748d53399919bcef0bd67764db8e05efb6a8291f3bce4accdfbd94306"
+      },
+      "game_participants": {
+        "rows": 4,
+        "sha256": "89e9d7aaf3f1c48896cac161ccbcd9744d20ba31ad4cf10ee050103eeb846339"
+      },
+      "game_random_draws": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "game_sessions": {
+        "rows": 1,
+        "sha256": "5d7a46f7080bc1c0916614bef2669173666da1213c98d84645428ff37ee8fc9b"
+      },
+      "game_snapshots": {
+        "rows": 21,
+        "sha256": "a83cebe55c57593d453b533ce158ef6394f13c450243c3f14ec337728187bdaf"
+      },
+      "lobby_members": {
+        "rows": 4,
+        "sha256": "c3500fd3cc84dab1537363cebda6dee3051f7078e8fa57d02d0b14bf81429902"
+      },
+      "lobby_rooms": {
+        "rows": 1,
+        "sha256": "243d299f2bc035a69315f27a04dbd7d1158787834ca8e76cd0f4b20f7d532e67"
+      },
+      "normal_coordination_log": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "player_level_history": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "player_progression": {
+        "rows": 4,
+        "sha256": "7fc143e25190fd864b3e0b2fd0305d61b2960c72e513436e6a04fa01a8811f84"
+      },
+      "room_game_links": {
+        "rows": 1,
+        "sha256": "16397c9ab1d30d13b45b492cdc838f286c3c4f2cec77190dc4d89ecd69b8e5c9"
+      },
+      "social_blocks": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_comments": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_friends": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_likes": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_media": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_notice_keys": {
+        "rows": 10,
+        "sha256": "bc82d4c0c868bf3b8e2e596882a80d86c6718233789682f403fcb37e6df62377"
+      },
+      "social_notifications": {
+        "rows": 10,
+        "sha256": "daf402fc86c5fd1fb25eeb1ad4864b76199e15494f912c239b9694b350737d2d"
+      },
+      "social_post_media": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_posts": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "social_profiles": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "user_accounts": {
+        "rows": 4,
+        "sha256": "da7d254df6ef1eb86ee24cbaa31f8c361f1816ed4bf3f3b3d1a5477d59dea364"
+      },
+      "user_achievements": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "user_titles": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "xp_transactions": {
+        "rows": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "addedTables": [
+      "account_preferences",
+      "saved_decks"
+    ],
+    "twoStartupMigrations": "PASS",
+    "foreignKeyCheck": "PASS",
+    "integrityCheck": "PASS"
+  }
+]

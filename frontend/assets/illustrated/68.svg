@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="Sói Trẻ">
+  <defs>
+    <radialGradient id="bg68" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#3b2c2e"/>
+      <stop offset="100%" stop-color="#161117"/>
+    </radialGradient>
+    <radialGradient id="halo68" cx="50%" cy="46%" r="44%">
+      <stop offset="0%" stop-color="#f0a75b" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#f0a75b" stop-opacity="0"/>
+    </radialGradient>
+    
+  </defs>
+  <rect width="240" height="240" rx="26" fill="url(#bg68)"/>
+  <path d="M20 226 V96 Q20 20 120 16 Q220 20 220 96 V226 Z" fill="none" stroke="#f0a75b" stroke-opacity="0.45" stroke-width="1.8"/>
+  <circle cx="120" cy="112" r="88" fill="url(#halo68)"/>
+  <g class="chibi-sparkle" fill="#f0a75b">
+    <path d="M44 48 L46 42 L48 48 L54 50 L48 52 L46 58 L44 52 L38 50 Z"/>
+    <path d="M192 56 L193.5 51 L195 56 L200 57.5 L195 59 L193.5 64 L192 59 L187 57.5 Z"/>
+  </g>
+  
+    <g class="chibi-body">
+      <path d="M84 176 Q52 178 58 156 Q68 164 84 164 Z" fill="#221e29" stroke="#1d1424" stroke-width="2.6"/>
+      <path d="M90 132 Q84 178 96 190 L108 190 L114 178 L126 178 L132 190 L144 190 Q156 178 150 132 Z" fill="#eddcd5" stroke="#1d1424" stroke-width="2.8" stroke-linejoin="round"/>
+      <line x1="120" y1="138" x2="120" y2="176" stroke="#1d1424" stroke-width="1.8" stroke-dasharray="3 3"/>
+      <path d="M115 148 H125 M115 158 H125 M115 168 H125" stroke="#1d1424" stroke-width="1.6"/>
+      <path d="M90 138 Q68 148 74 160 Q84 162 94 152 Z" fill="#221e29" stroke="#1d1424" stroke-width="2.6"/>
+      <path d="M150 138 Q172 148 166 160 Q156 162 146 152 Z" fill="#221e29" stroke="#1d1424" stroke-width="2.6"/>
+      
+      <path d="M108 134 L120 140 L108 146 Z M132 134 L120 140 L132 146 Z" fill="#a82436" stroke="#1d1424" stroke-width="2"/>
+      <circle cx="120" cy="140" r="3.8" fill="#f0a75b" stroke="#1d1424" stroke-width="1.6"/>
+      <g class="chibi-ears">
+        <path d="M82 82 L72 40 L106 66 Z" fill="#221e29" stroke="#1d1424" stroke-width="2.8" stroke-linejoin="round"/>
+        <path d="M158 82 L168 40 L134 66 Z" fill="#221e29" stroke="#1d1424" stroke-width="2.8" stroke-linejoin="round"/>
+      </g>
+      <path d="M76 96 Q74 62 120 60 Q166 62 164 96 Q164 134 120 136 Q76 134 76 96 Z" fill="#241e26" stroke="#1d1424" stroke-width="2.8"/>
+      
+      
+      <line x1="120" y1="62" x2="120" y2="86" stroke="#1d1424" stroke-width="1.8" opacity="0.65"/>
+      
+            <g class="chibi-eyes">
+              <circle cx="100" cy="96" r="7.5" fill="#f76b45" stroke="#1d1424" stroke-width="2"/>
+              <circle cx="98" cy="94" r="2.2" fill="#fff"/>
+              <circle cx="140" cy="96" r="7.5" fill="#f76b45" stroke="#1d1424" stroke-width="2"/>
+              <circle cx="138" cy="94" r="2.2" fill="#fff"/>
+            </g>
+            <path d="M110 117 Q115 123 120 118 Q125 123 130 117" fill="none" stroke="#f5ebd8" stroke-width="2.2" stroke-linecap="round"/>
+      <rect x="139" y="106" width="13" height="6" rx="2" transform="rotate(-14 145 109)" fill="#f5ede0" stroke="#9e8c78" stroke-width="1.4"/>
+      
+      <g class="chibi-prop"><path d="M164 134 Q176 146 188 164" stroke="#ff4d63" stroke-width="4" stroke-linecap="round"/><path d="M172 128 Q184 140 194 156" stroke="#ff99a6" stroke-width="3" stroke-linecap="round"/></g>
+    </g>
+  <rect x="86" y="208" width="68" height="20" rx="10" fill="#120d1f" fill-opacity="0.82" stroke="#f0a75b" stroke-opacity="0.55" stroke-width="1.2"/>
+  
+</svg>

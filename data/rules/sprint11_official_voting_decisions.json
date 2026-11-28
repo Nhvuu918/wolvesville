@@ -1,0 +1,98 @@
+{
+  "version": "S11_OFFICIAL_V1",
+  "source": "Owner-confirmed Sprint 11",
+  "date": "2026-11-24",
+  "historicalDecisionsUnchanged": true,
+  "decisions": [
+    {
+      "id": "S11-V02",
+      "rule": "Invalidated ballot cannot be restored during same vote",
+      "tests": [
+        "tests/sprint11-voting.test.mjs"
+      ],
+      "scope": "official voting; enabled for new restricted [8,25] and [8,28] matches",
+      "dependencies": [
+        "VH01",
+        "VH03",
+        "VH57",
+        "character.json"
+      ],
+      "compatibility": "additive policy in initial game state; no retrofit of archived games"
+    },
+    {
+      "id": "S11-V03",
+      "rule": "Unique positive highest valid tally authorizes hanging; tie or zero means no hanging",
+      "tests": [
+        "tests/sprint11-voting.test.mjs"
+      ],
+      "scope": "official voting; enabled for new restricted [8,25] and [8,28] matches",
+      "dependencies": [
+        "VH01",
+        "VH03",
+        "VH57",
+        "character.json"
+      ],
+      "compatibility": "additive policy in initial game state; no retrofit of archived games"
+    },
+    {
+      "id": "S11-V03-QUORUM",
+      "rule": "No quorum; one valid ballot is sufficient",
+      "tests": [
+        "tests/sprint11-voting.test.mjs"
+      ],
+      "scope": "official voting; enabled for new restricted [8,25] and [8,28] matches",
+      "dependencies": [
+        "VH01",
+        "VH03",
+        "VH57",
+        "character.json"
+      ],
+      "compatibility": "additive policy in initial game state; no retrofit of archived games"
+    },
+    {
+      "id": "S11-V03-BLANK",
+      "rule": "Blank contributes no candidate vote",
+      "tests": [
+        "tests/sprint11-voting.test.mjs"
+      ],
+      "scope": "official voting; enabled for new restricted [8,25] and [8,28] matches",
+      "dependencies": [
+        "VH01",
+        "VH03",
+        "VH57",
+        "character.json"
+      ],
+      "compatibility": "additive policy in initial game state; no retrofit of archived games"
+    },
+    {
+      "id": "S11-V03-MUTE",
+      "rule": "Silence alone does not remove voting rights",
+      "tests": [
+        "tests/sprint11-voting.test.mjs"
+      ],
+      "scope": "official voting; enabled for new restricted [8,25] and [8,28] matches",
+      "dependencies": [
+        "VH01",
+        "VH03",
+        "VH57",
+        "character.json"
+      ],
+      "compatibility": "additive policy in initial game state; no retrofit of archived games"
+    },
+    {
+      "id": "S11-V03-CHANGE",
+      "rule": "Last accepted choice before lock only; invalidation persists",
+      "tests": [
+        "tests/sprint11-voting.test.mjs"
+      ],
+      "scope": "official voting; enabled for new restricted [8,25] and [8,28] matches",
+      "dependencies": [
+        "VH01",
+        "VH03",
+        "VH57",
+        "character.json"
+      ],
+      "compatibility": "additive policy in initial game state; no retrofit of archived games"
+    }
+  ]
+}

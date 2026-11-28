@@ -1,0 +1,55 @@
+{
+  "type": "DEVELOPMENT_OVERLAY_NOT_RELEASE",
+  "baseZipSha256": "3ee17a5bfc6dd57c9c4e4f8ab69ca7076a740b45662bc84a8f65b32e04d900df",
+  "baseFingerprint": "1f5046bf9d7187957af2b48f550bd088f79711c8dbf315d66bc3ad2a2d2b53a3",
+  "overlayFingerprint": "555e8810807f9eb31891dec65ee9ce63f23f1f164d8b1201ea88274f52334c1d",
+  "files": {
+    "shared/contracts/index.ts": {
+      "baseSha256": "23c4187b1b4e1da3e1f3fbf3de033a7b80776a09635cafffa2885fd1797239a7",
+      "patchSha256": "9595a4d0d0dc2b3b35e46314c90f1b58145d342d943bfd74443746d6c71ff45c"
+    },
+    "backend/src/engine/service.ts": {
+      "baseSha256": "63635ef58a665a9d2c930c4a68dfe167820f866d4d95e32b446de516c82c5c52",
+      "patchSha256": "546ff5121bcd5125de352d7dd282004fccc44654500f1a628d806d181846e731"
+    },
+    "backend/src/official/life02.ts": {
+      "baseSha256": "284f24dc5aa34364608ac4c55d3456c298a8cd0b6267ae9930d00fd290458f51",
+      "patchSha256": "90c90a8082d7f2f7b97f208fed826d596a20310ffc6c6543735167f7ad58a5b5"
+    },
+    "backend/src/official/group-chat.ts": {
+      "baseSha256": "8b336d0936e87e128753d7868155f8cd874cae36d2e97ddf09cafa9482f4e709",
+      "patchSha256": "419d79002d8d672d2baea343058c9046bfda482cb1b9bf4cb60d1686b52c109d"
+    },
+    "backend/src/official/cult-recruitment.ts": {
+      "baseSha256": "80996e5df0db2e5291fb6305476410ed1c750a093dfe68edfd44b633373b0c08",
+      "patchSha256": "7c73051013e744c3845b9fe68cc2a79e844b667b766845aab44db3e9a1c4d6f0"
+    },
+    "backend/src/official/victory-resolver.ts": {
+      "baseSha256": "be307ce99dd8c853eb405acc1d7b8f3f23ffd72647259965cd2ed762aa9273a7",
+      "patchSha256": "1b4d435740ca1e0e9613483e17ba182f137c02db0e32160c6242059a75608d8a"
+    },
+    "data/rules/owner_full50_decisions_20261127.json": {
+      "baseSha256": null,
+      "patchSha256": "520bfe33bce65853a4b338cda4a5385979b4b79a57b15ed9022d1cea1f8d340d"
+    },
+    "tests/full50-cupid-candidate.test.mjs": {
+      "baseSha256": null,
+      "patchSha256": "811b392120eb55b34b15de04fd33cd378c4d5cd5eb061885e68d239cf3538203"
+    },
+    "tests/full50-cult-candidate.test.mjs": {
+      "baseSha256": null,
+      "patchSha256": "25ea5e1bd0e7701c1841599bc0ea52c74cc097dd893e84f0acf1e40f19b86571"
+    }
+  },
+  "freshFocusedBackend": {
+    "pass": 7,
+    "fail": 0,
+    "skipped": 0
+  },
+  "newFull": 0,
+  "fullHistorical": 1,
+  "fullFresh": 0,
+  "officialActivation": false,
+  "freshBrowser": "NOT_RUN",
+  "fullBackendRegression": "NOT_RUN"
+}

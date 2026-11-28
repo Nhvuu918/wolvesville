@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: S04 RUNTIME-01: rule lookups carry source and defensive copies do not mutate register
+ok 1 - S04 RUNTIME-01: rule lookups carry source and defensive copies do not mutate register
+  ---
+  duration_ms: 16.586871
+  type: 'test'
+  ...
+# Subtest: S04 RUNTIME-02: closed deck only allows registered active skills and \#20 passive without elevating competitive
+ok 2 - S04 RUNTIME-02: closed deck only allows registered active skills and \#20 passive without elevating competitive
+  ---
+  duration_ms: 12.626076
+  type: 'test'
+  ...
+# Subtest: S04 RUNTIME-03: pair evidence is separate from resolved outcome, no implicit skills
+ok 3 - S04 RUNTIME-03: pair evidence is separate from resolved outcome, no implicit skills
+  ---
+  duration_ms: 11.12835
+  type: 'test'
+  ...
+# Subtest: S04 KB-01: 118 confirmed decisions with original codes, 145 skill audit branches, and 97 characters
+ok 4 - S04 KB-01: 118 confirmed decisions with original codes, 145 skill audit branches, and 97 characters
+  ---
+  duration_ms: 7.316319
+  type: 'test'
+  ...
+# Subtest: S04 KB-02: original character bytes unchanged and every branch points back to exact official description
+ok 5 - S04 KB-02: original character bytes unchanged and every branch points back to exact official description
+  ---
+  duration_ms: 5.607177
+  type: 'test'
+  ...
+# Subtest: S04 KB-03: all 4656 pairs exist as SCREENING, only three closed-deck pairs have implemented outcomes
+ok 6 - S04 KB-03: all 4656 pairs exist as SCREENING, only three closed-deck pairs have implemented outcomes
+  ---
+  duration_ms: 8.146491
+  type: 'test'
+  ...
+# Subtest: S04 KB-04: 207 legacy specifications are NEVER flagged as executed by this generator
+ok 7 - S04 KB-04: 207 legacy specifications are NEVER flagged as executed by this generator
+  ---
+  duration_ms: 2.004344
+  type: 'test'
+  ...
+# Subtest: S04 KB-05: DERIVED inference never overwritten as CONFIRMED and no global victory assertion
+ok 8 - S04 KB-05: DERIVED inference never overwritten as CONFIRMED and no global victory assertion
+  ---
+  duration_ms: 0.444489
+  type: 'test'
+  ...
+# Subtest: S04 KB-06: source inventory hashes check out for every source available
+ok 9 - S04 KB-06: source inventory hashes check out for every source available
+  ---
+  duration_ms: 2.092833
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 128.346573

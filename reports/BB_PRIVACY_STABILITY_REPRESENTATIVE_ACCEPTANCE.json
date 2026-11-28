@@ -1,0 +1,86 @@
+{
+  "version": "1.7.25-s15-privacy-stability-wip",
+  "decision": "BB-REP-NEW-01=B",
+  "policy": "OWNER_APPROVED",
+  "officialActivation": false,
+  "scope": "Live QA sole #93 and mixed [48,74,77,84,93,94], lawful day conversion, same fixed representative, #93 grant cap two. Unsupported live mid-window eligibility change remains fail-closed.",
+  "cases": [
+    {
+      "id": "REP-01",
+      "status": "PASS_LIVE",
+      "evidence": "Two initial wolves; five-player permutation, fixed order, restart, live browser"
+    },
+    {
+      "id": "REP-02",
+      "status": "PASS_BOUNDED_LIVE",
+      "evidence": "Live lawful mixed pack checks fixed order, selector covers both rank cases; no forced ranks or exhaustive live order sampling"
+    },
+    {
+      "id": "REP-03",
+      "status": "PASS_LIVE",
+      "evidence": "#93 before #94 death denied; after legal transition eligible"
+    },
+    {
+      "id": "REP-04",
+      "status": "PASS_STATE_FILTER_ONLY",
+      "evidence": "Real archived state cloned for skill lock; no mixed live revocation certified"
+    },
+    {
+      "id": "REP-05",
+      "status": "PASS_LIVE",
+      "evidence": "Sole leader plus mixed converted pack backend tests; same dead representative, second still resolves"
+    },
+    {
+      "id": "REP-06",
+      "status": "PASS_LIVE",
+      "evidence": "Client forged order ignored at actual match start"
+    },
+    {
+      "id": "REP-07",
+      "status": "PASS_LIVE",
+      "evidence": "SQLite restart, identical order"
+    },
+    {
+      "id": "REP-08",
+      "status": "PASS_LIVE",
+      "evidence": "Verify stored tape and archive; v1.7.24 QA archive opened and resolved by v1.7.25"
+    },
+    {
+      "id": "REP-09",
+      "status": "PASS_LIVE",
+      "evidence": "Reconnect #93 preserves pending targets and terminal result"
+    },
+    {
+      "id": "REP-10",
+      "status": "PASS_REGRESSION",
+      "evidence": "Official unchanged paths; cross-build QA archive compatibility"
+    },
+    {
+      "id": "REP-11",
+      "status": "PASS_CANDIDATE_ONLY",
+      "evidence": "Selector and candidate membership-at-lock test require new member response; live mid-window conversion not supported"
+    },
+    {
+      "id": "REP-12",
+      "status": "PASS_LIVE",
+      "evidence": "Retry reordered targets, stale revision denied, exactly three deaths incl. hanging"
+    }
+  ],
+  "liveTest": "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+  "selectorTest": "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+  "legacyArchiveCompatibility": true,
+  "legacyLog": "reports/s15-privacy-stability/legacy-qa-archive-compatibility.log",
+  "mixedTests": [
+    "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+    "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative"
+  ],
+  "mixedBackend": true,
+  "mixedBrowser": true,
+  "remaining": [
+    "Live revocation and mid-window change of eligible members",
+    "All rank patterns and post-retaliation victory with dead wolves",
+    "Outcome-based inference and third-party death redirection remain unverified; direct pre-resolution projections now use public seats and indistinguishable receipts",
+    "General extra-bite grants #17/#21/#86",
+    "Trap revival and same-night mapping"
+  ]
+}

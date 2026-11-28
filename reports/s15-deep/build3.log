@@ -1,0 +1,5 @@
+
+> wolvesville-sprint15-role-completeness@1.7.4-s15-accelerated-wip build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+backend/src/engine/elimination-chain.ts(20,20): error TS2322: Type '"S11-V03"' is not assignable to type '"OFFICIAL_CHAR_8_NIGHT_KILL"'.

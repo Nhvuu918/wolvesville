@@ -1,0 +1,147 @@
+{
+  "sourceFingerprint": "6ac302d005a47c067350a47139d21ac0391addcfcea6ff354bda8ffa490181c2",
+  "acceptance": "reports/FULL5-02/acceptance.json",
+  "ownerTrace": "docs/full50-handover/OWNER_DECISION_TRACE_48.json",
+  "directorDecisions": "docs/full50-handover/GAME_DIRECTOR_DECISIONS.json",
+  "screenshots": [
+    {
+      "path": "reports/FULL5-02/browser-normal/normal-bell-private.png",
+      "sha256": "7351c4a1b0682673ffe764c90adffc329129000a3e38708355c8261ad53a5925",
+      "sourceFingerprint": "6ac302d005a47c067350a47139d21ac0391addcfcea6ff354bda8ffa490181c2",
+      "scenario": "browser_full50_universal_normal_e2e.py",
+      "mode": "NORMAL_GAMEPLAY",
+      "characterIds": [
+        8,
+        25,
+        31,
+        64
+      ],
+      "suiteStatus": "PASS",
+      "note": "Actual Chromium capture, not a generated mockup."
+    },
+    {
+      "path": "reports/FULL5-02/browser-normal/normal-config.png",
+      "sha256": "81a3a97db75715d745e76cf36f89ba66b5e4a6412ba1cf122d8354e921034be9",
+      "sourceFingerprint": "6ac302d005a47c067350a47139d21ac0391addcfcea6ff354bda8ffa490181c2",
+      "scenario": "browser_full50_universal_normal_e2e.py",
+      "mode": "NORMAL_GAMEPLAY",
+      "characterIds": [
+        8,
+        25,
+        31,
+        64
+      ],
+      "suiteStatus": "PASS",
+      "note": "Actual Chromium capture, not a generated mockup."
+    },
+    {
+      "path": "reports/FULL5-02/browser-normal/normal-endgame.png",
+      "sha256": "6140f5d89cbb020b3384d336c68c20f15169ba8ca5284e098b3451499838b2e6",
+      "sourceFingerprint": "6ac302d005a47c067350a47139d21ac0391addcfcea6ff354bda8ffa490181c2",
+      "scenario": "browser_full50_universal_normal_e2e.py",
+      "mode": "NORMAL_GAMEPLAY",
+      "characterIds": [
+        8,
+        25,
+        31,
+        64
+      ],
+      "suiteStatus": "PASS",
+      "note": "Actual Chromium capture, not a generated mockup."
+    },
+    {
+      "path": "reports/FULL5-02/browser-normal/normal-guard-action.png",
+      "sha256": "8198dd74c0d14f18fc10615e342795a570afa9dff7ac2da1a82de3e23d0b013f",
+      "sourceFingerprint": "6ac302d005a47c067350a47139d21ac0391addcfcea6ff354bda8ffa490181c2",
+      "scenario": "browser_full50_universal_normal_e2e.py",
+      "mode": "NORMAL_GAMEPLAY",
+      "characterIds": [
+        8,
+        25,
+        31,
+        64
+      ],
+      "suiteStatus": "PASS",
+      "note": "Actual Chromium capture, not a generated mockup."
+    },
+    {
+      "path": "reports/FULL5-02/browser-normal/normal-guard-no-bell.png",
+      "sha256": "6362cd104b4b61d88b22d8296d4127d9f80b934cd58f687e531cce0c539c117a",
+      "sourceFingerprint": "6ac302d005a47c067350a47139d21ac0391addcfcea6ff354bda8ffa490181c2",
+      "scenario": "browser_full50_universal_normal_e2e.py",
+      "mode": "NORMAL_GAMEPLAY",
+      "characterIds": [
+        8,
+        25,
+        31,
+        64
+      ],
+      "suiteStatus": "PASS",
+      "note": "Actual Chromium capture, not a generated mockup."
+    },
+    {
+      "path": "reports/FULL5-02/browser-prolong/ferry-prolonged.png",
+      "sha256": "3d7e45625cfb426fa8c3136a37f8c58262ce20b7c4b85cb401436e3eddf33a31",
+      "sourceFingerprint": "6ac302d005a47c067350a47139d21ac0391addcfcea6ff354bda8ffa490181c2",
+      "scenario": "browser_full5_prolongation_e2e.py",
+      "mode": "INTEGRATION_TEST",
+      "characterIds": [
+        8,
+        25,
+        51,
+        64,
+        97
+      ],
+      "suiteStatus": "PASS",
+      "note": "Actual Chromium capture, not a generated mockup."
+    },
+    {
+      "path": "reports/FULL5-02/browser-prolong/ferry-seed-expiry.png",
+      "sha256": "2a302119710bbd8e41eaac0babdc0296aaa545569897d2d95c6637782f2cebc2",
+      "sourceFingerprint": "6ac302d005a47c067350a47139d21ac0391addcfcea6ff354bda8ffa490181c2",
+      "scenario": "browser_full5_prolongation_e2e.py",
+      "mode": "INTEGRATION_TEST",
+      "characterIds": [
+        8,
+        25,
+        51,
+        64,
+        97
+      ],
+      "suiteStatus": "PASS",
+      "note": "Actual Chromium capture, not a generated mockup."
+    },
+    {
+      "path": "reports/FULL5-02/browser-prolong/ferry-voting.png",
+      "sha256": "1e380e0782958f9ebbda5ab9ba31331fd930bdb5e151e0a186274043c15e3418",
+      "sourceFingerprint": "6ac302d005a47c067350a47139d21ac0391addcfcea6ff354bda8ffa490181c2",
+      "scenario": "browser_full5_prolongation_e2e.py",
+      "mode": "INTEGRATION_TEST",
+      "characterIds": [
+        8,
+        25,
+        51,
+        64,
+        97
+      ],
+      "suiteStatus": "PASS",
+      "note": "Actual Chromium capture, not a generated mockup."
+    }
+  ],
+  "logs": [
+    "reports/FULL5-02/backend-full.log",
+    "reports/FULL5-02/browser-jester.log",
+    "reports/FULL5-02/browser-normal.log",
+    "reports/FULL5-02/browser-prolong-first.log",
+    "reports/FULL5-02/browser-prolong.log",
+    "reports/FULL5-02/build.log",
+    "reports/FULL5-02/chat-focused.log",
+    "reports/FULL5-02/composition-audit.log",
+    "reports/FULL5-02/prolong-first.log",
+    "reports/FULL5-02/prolong-second.log",
+    "reports/FULL5-02/prolong-third.log",
+    "reports/FULL5-02/rules-build.log",
+    "reports/FULL5-02/source-verify.log"
+  ],
+  "historicalIndex": "reports/FULL5-02/baseline-EVIDENCE_INDEX.json"
+}

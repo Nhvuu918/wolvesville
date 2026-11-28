@@ -1,0 +1,34 @@
+PASS Browser: two independent accounts authenticate via backend
+PASS Browser: Room created and joined by two independently authenticated contexts
+PASS Browser: server game session, private role projections, official 97-role catalog and WebSocket notification
+PASS Browser: accepted skill has pending notification, no premature or cross-client result
+PASS Browser: resolved private result only to actor; both clients sync phase
+PASS Browser: fresh document restores authorized game and private result from server
+PASS Browser: reconnect preserves one durable result and complete immediate text
+PAGE ERRORS []
+Task exception was never retrieved
+future: <Task finished name='Task-807' coro=<Channel.send() done, defined at /opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py:61> exception=TargetClosedError('Channel.send: Target page, context or browser has been closed')>
+Traceback (most recent call last):
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Channel.send: Target page, context or browser has been closed
+Task exception was never retrieved
+future: <Task finished name='Task-808' coro=<Channel.send() done, defined at /opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py:61> exception=TargetClosedError('Channel.send: Target page, context or browser has been closed')>
+Traceback (most recent call last):
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Channel.send: Target page, context or browser has been closed
+S06_BROWSER_PASS browser_e2e.py
+S06_BROWSER_ALL_1_PASS

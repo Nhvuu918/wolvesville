@@ -1,0 +1,227 @@
+{
+  "version": "1.7.29",
+  "baseRuleset": "wolvesville-official-v1.3.3",
+  "historicalContract": "reports/BB_PRIVACY_STABILITY_COMPLETION_CONTRACTS.json",
+  "certificateIssued": false,
+  "normalAdmission": false,
+  "scopes": [
+    {
+      "id": "SHARED-23",
+      "scope": [
+        8,
+        23,
+        25,
+        36
+      ],
+      "sources": [
+        "character.json#23",
+        "NV26",
+        "VH06",
+        "VH82",
+        "LIFE-01"
+      ],
+      "implementation": [
+        "backend/src/official/soul-shooter.ts",
+        "backend/src/engine/state.ts",
+        "backend/src/engine/service.ts",
+        "backend/src/official/s13-mechanics.ts",
+        "backend/src/official/stable-death-proof.ts",
+        "backend/src/engine/validate.ts",
+        "backend/src/official/solo-rules.ts",
+        "backend/src/official/capabilities.ts"
+      ],
+      "test": "tests/sprint17-soul-lifecycle.test.mjs",
+      "status": "PARTIAL",
+      "backendCovered": [
+        "first death",
+        "next-night secret revival",
+        "two shots",
+        "shield blocks shot",
+        "vote restriction",
+        "pending faction count",
+        "two accepted lethal attacks",
+        "no duplicate public death",
+        "victory before revival",
+        "retry",
+        "SQLite restart",
+        "authorized event projection",
+        "replay",
+        "S18: fresh #8 blind attack on secretly revived #23, inert accepted attack on final-dead #25, retry/restart/replay, no repeated public death",
+        "S19: #23 self shield against mage fire; first death by hanging; next-night secret revival; second death by existing QA #8; restart and replay"
+      ],
+      "remaining": [
+        "all target classes and resource/feedback policy",
+        "all protection and attack classes",
+        "death-ledger ordering proof",
+        "comprehensive paired-state privacy",
+        "full browser and contract coverage",
+        "fresh second death by other attack classes; general blind-target rule not owner-approved",
+        "wrong-faction shot / ammo oracle, no third shot in a still-running match",
+        "global revision, timing and post-resolution privacy"
+      ],
+      "historicalBrowserCovered": {
+        "suite": "browser_s17_soul_e2e.py",
+        "version": "1.3.3",
+        "status": "PASS",
+        "scope": "first death, secret revival, no voting, protected first shot, second shot victory, authorized events and replay"
+      },
+      "freshBrowserEvidence": "browser-results.json (exact fingerprint only)",
+      "freshBackendEvidence": "focused.log; acceptance.json",
+      "newCode": false,
+      "technicalDecision": "QA-only blind #8 free attempt; not a general owner-approved rule.",
+      "implementationDelta": "No new gameplay code; source-backed QA branch revalidated by new real-session test."
+    },
+    {
+      "id": "FULL-36",
+      "scope": [
+        8,
+        23,
+        25,
+        36
+      ],
+      "sources": [
+        "character.json#36",
+        "VH12",
+        "VH13",
+        "LIFE-01"
+      ],
+      "test": "tests/sprint17-soul-lifecycle.test.mjs",
+      "status": "PARTIAL",
+      "backendCovered": [
+        "fire against #23 initial",
+        "fire then competing attack vs pending #23",
+        "shield blocks #23 shot",
+        "victory and non-victory"
+      ],
+      "remaining": [
+        "full target domain",
+        "all defensive layers",
+        "complete #23 death chain",
+        "broader revival and privacy",
+        "FULL certificate obligations",
+        "S18 covers bounded #8 second attack, not all mage death-chain classes"
+      ],
+      "historicalBrowserCovered": {
+        "suite": "browser_s17_soul_e2e.py",
+        "version": "1.3.3",
+        "status": "PASS",
+        "scope": "first death, secret revival, no voting, protected first shot, second shot victory, authorized events and replay"
+      },
+      "freshBrowserEvidence": "browser-results.json (exact fingerprint only)",
+      "freshBackendEvidence": "focused.log; acceptance.json",
+      "newCode": false
+    },
+    {
+      "id": "TRAP-04",
+      "scope": [
+        8,
+        10,
+        25,
+        26
+      ],
+      "sources": [
+        "DEC-BT-02",
+        "BB-05",
+        "BB-PENDING-03",
+        "VH08"
+      ],
+      "test": "tests/sprint17-trap-revival.test.mjs",
+      "status": "PARTIAL",
+      "backendCovered": [
+        "same-night placement before inspection, independent of submission order",
+        "consume once"
+      ],
+      "remaining": [
+        "already-executed actions",
+        "other same-night inversion classes",
+        "cross-window integration in new deck",
+        "No new inversion implementation in this version; existing tests re-executed."
+      ],
+      "historicalBrowserCovered": {
+        "status": "INCOMPLETE",
+        "scope": "same-night distinct scenario not run via browser"
+      },
+      "freshBrowserEvidence": "browser-results.json (exact fingerprint only)",
+      "freshBackendEvidence": "focused.log; acceptance.json",
+      "newCode": false
+    },
+    {
+      "id": "TRAP-05",
+      "scope": [
+        8,
+        10,
+        25,
+        26
+      ],
+      "sources": [
+        "DEC-BT-02",
+        "VH73",
+        "VH76",
+        "BB-04",
+        "BB-05"
+      ],
+      "test": "tests/sprint17-trap-revival.test.mjs",
+      "status": "PARTIAL",
+      "backendCovered": [
+        "trap retained through death and medium revival",
+        "restart",
+        "later inspection inverted once",
+        "private result",
+        "replay"
+      ],
+      "remaining": [
+        "trap on the revival actor",
+        "all revival classes",
+        "complex death chains",
+        "full paired-state privacy",
+        "No new inversion implementation in this version; existing tests re-executed."
+      ],
+      "historicalBrowserCovered": {
+        "suite": "browser_s17_trap_revival_e2e.py",
+        "version": "1.3.3+qa-bb",
+        "status": "PASS",
+        "scope": "trap retained over death and medium revival, inverted inspection, replay"
+      },
+      "freshBrowserEvidence": "browser-results.json (exact fingerprint only)",
+      "freshBackendEvidence": "focused.log; acceptance.json",
+      "newCode": false
+    },
+    {
+      "id": "NORMAL-HANDOFF",
+      "scope": [
+        [
+          8,
+          25
+        ],
+        [
+          8,
+          74
+        ]
+      ],
+      "sources": [
+        "ROOM-03",
+        "V02",
+        "V03"
+      ],
+      "implementation": [
+        "frontend/integration.js"
+      ],
+      "test": [
+        "tests/sprint19-handoff-ui.test.mjs",
+        "tests/sprint15-normal.test.mjs",
+        "tests/browser_s15_normal_e2e.py"
+      ],
+      "status": "CLOSED_TESTED_SCOPE",
+      "evidence": [
+        "handoff-unit-before.log",
+        "handoff-unit-after.log",
+        "focused.log",
+        "browser-normal/1.3.3-browser_s15_normal_e2e.log"
+      ],
+      "remaining": [
+        "Native Mac and Human QA pending; exact historical intermittent failure did not reproduce on uncontrolled rerun."
+      ]
+    }
+  ],
+  "sourceFingerprint": "f8bb5fc5c9b8357900ad83988b3664302fbd69b3f137f0c07de97877c4452a50"
+}

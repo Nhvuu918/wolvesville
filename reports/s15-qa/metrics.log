@@ -1,0 +1,272 @@
+TAP version 13
+# (node:31985) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S12 durable metric evidence 8,25
+ok 1 - S12 durable metric evidence 8,25
+  ---
+  duration_ms: 1386.837676
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,25],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,28
+ok 2 - S12 durable metric evidence 8,28
+  ---
+  duration_ms: 812.958505
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,9,25
+ok 3 - S12 durable metric evidence 8,9,25
+  ---
+  duration_ms: 1391.095583
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,9,25],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,9,28
+ok 4 - S12 durable metric evidence 8,9,28
+  ---
+  duration_ms: 751.065193
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,9,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,25,28
+ok 5 - S12 durable metric evidence 8,25,28
+  ---
+  duration_ms: 1327.079225
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,25,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# Subtest: S12 durable metric evidence 8,9,25,28
+ok 6 - S12 durable metric evidence 8,9,25,28
+  ---
+  duration_ms: 2162.016968
+  type: 'test'
+  ...
+# METRIC_EVIDENCE {"ids":[8,9,25,28],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true,"branchComplete":false}
+# (node:31986) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# \# S13_CHARACTER_EVIDENCE {"characterIds":[11],"source":"character.json\#11, VH08","skill":"maintenance-vs-nightmare","authoritative":true,"replay":true}
+# Subtest: S13-01 \#11 maintenance protects \#25 from \#76 nightmare in a real game session
+ok 7 - S13-01 \#11 maintenance protects \#25 from \#76 nightmare in a real game session
+  ---
+  duration_ms: 1178.137413
+  type: 'test'
+  ...
+# \# S13_CHARACTER_EVIDENCE {"characterIds":[16],"source":"character.json\#16","skill":"antidote","authoritative":true,"replay":true}
+# \# S13_CHARACTER_EVIDENCE {"characterIds":[16],"source":"character.json\#16","skill":"delayed-poison","authoritative":true,"replay":true}
+# Subtest: S13-02 \#16 antidote absorbs real \#8 night attack; poison triggers next-night skill lock
+ok 8 - S13-02 \#16 antidote absorbs real \#8 night attack; poison triggers next-night skill lock
+  ---
+  duration_ms: 1377.902871
+  type: 'test'
+  ...
+# \# S13_CHARACTER_EVIDENCE {"characterIds":[24],"source":"character.json\#24,VH79","skill":"jail-block-and-defense","authoritative":true,"replay":true}
+# Subtest: S13-03 \#24 jail blocks inspection and absorbs a night attack; rule-private events
+ok 9 - S13-03 \#24 jail blocks inspection and absorbs a night attack; rule-private events
+  ---
+  duration_ms: 797.795806
+  type: 'test'
+  ...
+# \# S13_CHARACTER_EVIDENCE {"characterIds":[66],"source":"character.json\#66,VH34","skill":"three-use-guard-attack-defense","authoritative":true,"replay":true}
+# Subtest: S13-04 \#66 guard blocks lethal attack, persists and expires, uses 3 charges max
+ok 10 - S13-04 \#66 guard blocks lethal attack, persists and expires, uses 3 charges max
+  ---
+  duration_ms: 704.532669
+  type: 'test'
+  ...
+# \# S13_CHARACTER_EVIDENCE {"characterIds":[67],"source":"character.json\#67,VH35,VH70","skill":"two-shield-defense","authoritative":true,"replay":true}
+# Subtest: S13-05 \#67 shield blocks real attack; exactly two shields per game
+ok 11 - S13-05 \#67 shield blocks real attack; exactly two shields per game
+  ---
+  duration_ms: 762.99638
+  type: 'test'
+  ...
+# \# S13_CHARACTER_EVIDENCE {"characterIds":[59],"source":"character.json\#59,VH31","skill":"day-injury-next-night-lock","authoritative":true,"replay":true}
+# Subtest: S13-06 \#59 day injury prevents next-night action and cannot silently kill on repeat
+ok 12 - S13-06 \#59 day injury prevents next-night action and cannot silently kill on repeat
+  ---
+  duration_ms: 955.223075
+  type: 'test'
+  ...
+# \# S13_CHARACTER_EVIDENCE {"characterIds":[17],"source":"character.json\#17,SYS-10,VH57","skill":"public-day-judgment-wolf-permanent-lock","authoritative":true,"replay":true}
+# Subtest: S13-07 \#17 public judgment reveals only the certified wolf and permanently disables the skill
+ok 13 - S13-07 \#17 public judgment reveals only the certified wolf and permanently disables the skill
+  ---
+  duration_ms: 712.054507
+  type: 'test'
+  ...
+# (node:32227) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S14_EVIDENCE {"id":32,"skill":"official.32.shoot","restart":true,"replay":true}
+# Subtest: S14 \#32 authoritative attack, retry, privacy and restart
+ok 14 - S14 \#32 authoritative attack, retry, privacy and restart
+  ---
+  duration_ms: 916.557724
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":36,"skill":"official.36.fireball","restart":true,"replay":true}
+# Subtest: S14 \#36 authoritative attack, retry, privacy and restart
+ok 15 - S14 \#36 authoritative attack, retry, privacy and restart
+  ---
+  duration_ms: 719.910403
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":67,"skill":"official.67.sword","restart":true,"replay":true}
+# Subtest: S14 \#67 authoritative attack, retry, privacy and restart
+ok 16 - S14 \#67 authoritative attack, retry, privacy and restart
+  ---
+  duration_ms: 749.843167
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":78,"skill":"official.78.meteor","restart":true,"replay":true}
+# Subtest: S14 \#78 authoritative attack, retry, privacy and restart
+ok 17 - S14 \#78 authoritative attack, retry, privacy and restart
+  ---
+  duration_ms: 626.749608
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":52,"skill":"official.52.solo-dog","restart":true,"replay":true}
+# Subtest: S14 \#52 solo dog consumes protection and expires
+ok 18 - S14 \#52 solo dog consumes protection and expires
+  ---
+  duration_ms: 1056.052366
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":23,"skill":"official.23.shield","restart":true,"replay":true}
+# Subtest: S14 \#23 one shield absorbs \#36 fireball, then expires; persistence and private events
+ok 19 - S14 \#23 one shield absorbs \#36 fireball, then expires; persistence and private events
+  ---
+  duration_ms: 1048.934223
+  type: 'test'
+  ...
+# Subtest: S14 \#16 two poison targets consume one use, faction-specific next-night effect
+ok 20 - S14 \#16 two poison targets consume one use, faction-specific next-night effect
+  ---
+  duration_ms: 725.517404
+  type: 'test'
+  ...
+# Subtest: S14 \#32 day shot permitted, night shot in same round denied after shielded shot
+ok 21 - S14 \#32 day shot permitted, night shot in same round denied after shielded shot
+  ---
+  duration_ms: 925.67535
+  type: 'test'
+  ...
+# Subtest: S14 \#67 shield and sword both accepted in same night, valid shield blocks sword
+ok 22 - S14 \#67 shield and sword both accepted in same night, valid shield blocks sword
+  ---
+  duration_ms: 1108.587331
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":84,"skill":"official.84.silence","restart":true,"replay":true}
+# Subtest: S14 \#84 public chat mute, WS/HTTP ACL, restart, expiry
+ok 23 - S14 \#84 public chat mute, WS/HTTP ACL, restart, expiry
+  ---
+  duration_ms: 1369.656425
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":50,"skill":"official.50.numb","restart":true,"replay":true}
+# Subtest: S14 \#50 public chat mute, WS/HTTP ACL, restart, expiry
+ok 24 - S14 \#50 public chat mute, WS/HTTP ACL, restart, expiry
+  ---
+  duration_ms: 1578.413956
+  type: 'test'
+  ...
+# Subtest: S14 \#17 judgment on villager causes persistent public-chat mute but no vote denial
+ok 25 - S14 \#17 judgment on villager causes persistent public-chat mute but no vote denial
+  ---
+  duration_ms: 1131.609459
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":68,"skill":"official.68.mark","restart":true,"replay":true,"completedDeck":[8,25,68]}
+# Subtest: S14 \#68 death-follow chain commits before certified knight victory
+ok 26 - S14 \#68 death-follow chain commits before certified knight victory
+  ---
+  duration_ms: 1100.947705
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":88,"skill":"official.88.pin","restart":true,"replay":true,"completedDeck":[8,25,88]}
+# Subtest: S14 \#88 death-follow chain commits before certified knight victory
+ok 27 - S14 \#88 death-follow chain commits before certified knight victory
+  ---
+  duration_ms: 842.626246
+  type: 'test'
+  ...
+# Subtest: S14 \#68 no preselected target means no secondary death (VH36)
+ok 28 - S14 \#68 no preselected target means no secondary death (VH36)
+  ---
+  duration_ms: 668.412292
+  type: 'test'
+  ...
+# Subtest: S14 \#59 second stone kills and reveals Ná Thủ only after second hit
+ok 29 - S14 \#59 second stone kills and reveals Ná Thủ only after second hit
+  ---
+  duration_ms: 643.498768
+  type: 'test'
+  ...
+# (node:32264) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S15_EVIDENCE {"id":36,"branch":"shield.success-private","skill":"official.36.shield","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#36 shield absorbs knight attack, role feedback private, once per match
+ok 30 - S15 \#36 shield absorbs knight attack, role feedback private, once per match
+  ---
+  duration_ms: 1383.226263
+  type: 'test'
+  ...
+# Subtest: S15 \#36 fire and unused shield may both be spent in one night, no false reveal
+ok 31 - S15 \#36 fire and unused shield may both be spent in one night, no false reveal
+  ---
+  duration_ms: 909.637826
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":66,"branch":"observe.other-protected","skill":"passive.66.observe-protected","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#66 sees only other protection recipients, not source or own protection
+ok 32 - S15 \#66 sees only other protection recipients, not source or own protection
+  ---
+  duration_ms: 1110.33209
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":43,"branch":"shoot.day-night","skill":"official.43.shoot","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#43 two rounds two bullets, blocked then day shot, retry privacy restart
+ok 33 - S15 \#43 two rounds two bullets, blocked then day shot, retry privacy restart
+  ---
+  duration_ms: 1152.987881
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":87,"branch":"sedative.chat-and-vote","skill":"official.87.sedative","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#87 sedative denies chat and ballot intake, expires next day, blank tally is official
+ok 34 - S15 \#87 sedative denies chat and ballot intake, expires next day, blank tally is official
+  ---
+  duration_ms: 1682.39804
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":54,"branch":"reveal.public-after-first-vote","skill":"official.54.reveal","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#54 true role reveal only after first completed vote; once, public minimal payload, replay
+ok 35 - S15 \#54 true role reveal only after first completed vote; once, public minimal payload, replay
+  ---
+  duration_ms: 1411.17806
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":80,"branch":"compare.different-faction","skill":"official.80.compare","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#80 Không Tiếc Thương, previous-night death only, private relation, restart
+ok 36 - S15 \#80 Không Tiếc Thương, previous-night death only, private relation, restart
+  ---
+  duration_ms: 1716.676751
+  type: 'test'
+  ...
+# S15_EVIDENCE {"id":80,"branch":"compare.same-faction","skill":"official.80.compare","restart":true,"replay":true,"privacy":true}
+# Subtest: S15 \#80 Tiếc Thương, previous-night death only, private relation, restart
+ok 37 - S15 \#80 Tiếc Thương, previous-night death only, private relation, restart
+  ---
+  duration_ms: 1791.713794
+  type: 'test'
+  ...
+1..37
+# tests 37
+# suites 0
+# pass 37
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 22331.824603
+S15_METRICS {"version":"1.7.0-s15-wip","scope":"Restricted QA sessions; competitive NO-GO","metricR":{"baseline":27,"executableCharacters":31,"totalCharacters":97,"ids":[5,8,9,11,16,17,20,23,24,25,31,32,33,34,36,43,50,52,54,59,66,67,68,74,76,78,79,80,84,87,88],"newCharacters":[43,54,80,87]},"metricF":{"fullyImplemented":0,"certified":false},"metricS":{"newVerifiedBranches":6,"exactRatio":null,"reason":"Inherited composite rows not an atomic denominator; 6 source-mapped new skills/passive branches only; no overall ratio certified"},"metricA":8,"completedDecks":["8,25","8,28","8,9,25","8,9,28","8,25,28","8,9,25,28","8,25,68","8,25,88"],"metricB":6,"metricC":0,"evidence":[{"id":36,"branch":"shield.success-private","skill":"official.36.shield","restart":true,"replay":true,"privacy":true},{"id":66,"branch":"observe.other-protected","skill":"passive.66.observe-protected","restart":true,"replay":true,"privacy":true},{"id":43,"branch":"shoot.day-night","skill":"official.43.shoot","restart":true,"replay":true,"privacy":true},{"id":87,"branch":"sedative.chat-and-vote","skill":"official.87.sedative","restart":true,"replay":true,"privacy":true},{"id":54,"branch":"reveal.public-after-first-vote","skill":"official.54.reveal","restart":true,"replay":true,"privacy":true},{"id":80,"branch":"compare.different-faction","skill":"official.80.compare","restart":true,"replay":true,"privacy":true},{"id":80,"branch":"compare.same-faction","skill":"official.80.compare","restart":true,"replay":true,"privacy":true}],"qa":{"exit":0}}

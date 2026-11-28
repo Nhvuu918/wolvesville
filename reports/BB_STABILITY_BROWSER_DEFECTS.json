@@ -1,0 +1,38 @@
+{
+  "build": "1.7.22-s15-stability-completion-wip",
+  "defects": [
+    {
+      "id": "WV-BR-2026-1125-01",
+      "status": "FIXED_RETEST_PASS",
+      "reproducedCause": "REST completed projection assigned before auxiliary feedback/event fetch finishes; terminal DOM not rendered until fetch resolves. Original incident exact path not independently proven.",
+      "before": "reports/s15-stability/diagnostic-winner-before.log",
+      "after": {
+        "suite": "browser_s15_normal_e2e.py",
+        "version": "1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-stability/browser-cert/1.3.3-browser_s15_normal_e2e.log"
+      },
+      "assertionPreserved": true
+    },
+    {
+      "id": "WV-BR-2026-1125-02",
+      "suite": "browser_s15_deep_medium_e2e.py",
+      "status": "OPEN_FAIL",
+      "observed": "Round 2 revival capability and target were present; submit button disabled, initially working=true then invalid target; click timeout.",
+      "suspectedCause": "action helper calls chooseTarget without waiting for !working; frontend chooseTarget returns immediately during working. The failed run does not record selectedTarget/host role; not uniquely established. No test/source edit after freeze and no retry promotion.",
+      "evidence": {
+        "suite": "browser_s15_deep_medium_e2e.py",
+        "version": "1.3.3",
+        "status": "FAIL",
+        "exitCode": 1,
+        "log": "reports/s15-stability/browser-atomic/1.3.3-browser_s15_deep_medium_e2e.log"
+      },
+      "releaseBlocking": true
+    }
+  ],
+  "baselineTimeouts": {
+    "browser_s15_normal_rescue_e2e.py": "PASS",
+    "browser_s15_normal_guard_rescue_e2e.py": "PASS"
+  }
+}

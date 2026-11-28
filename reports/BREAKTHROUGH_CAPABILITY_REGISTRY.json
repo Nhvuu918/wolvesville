@@ -1,0 +1,10 @@
+{
+  "version": "1.7.16-s15-breakthrough-wip",
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "capabilities": [
+    {"id":"REVIVAL_WITH_SOLO_AND_READ_ONLY_INSPECTION","readiness":"READY_BOUNDED","requiredRoles":[8,26],"oneReadOnlyInvestigator":[25,74],"supportedCompositions":[[8,25,26],[8,26,74]],"mode":"QA_ONLY","constraints":["three unique initial roles","approved ruleset","no links or transformations","life ALIVE or DEAD_FINAL"],"dependencies":["stable death proof","night finalize","read-only investigation","victory","event ledger"],"ruleSources":["VH73","VH76","PH-01","VH03","QD-01"],"runtime":"backend/src/official/revival-capability.ts","evidence":["tests/sprint15-breakthrough-capability.test.mjs","tests/sprint15-breakthrough-medium.test.mjs","tests/browser_s15_breakthrough_medium_e2e.py"],"excluded":"General revival, pending counted states, other factions, normal gameplay approval"},
+    {"id":"MEDIUM_ANONYMOUS_CHAT","readiness":"READY_BOUNDED","dependsOn":["REVIVAL_WITH_SOLO_AND_READ_ONLY_INSPECTION","private event projection","authenticated game membership"],"ruleSources":["VH77"],"runtime":"backend/src/official/medium-chat.ts","actionContract":"server mediumChat projection; channel MEDIUM, targetId for medium or opaque sessionId for dead player","evidence":["tests/sprint15-breakthrough-medium.test.mjs","tests/browser_s15_breakthrough_medium_e2e.py"],"excluded":"Any identity inference from public composition; other unsupported combinations"},
+    {"id":"PROTECTION_ACTOR_TARGET_HISTORY","readiness":"READY_BOUNDED","roles":[9,31],"runtime":"backend/src/official/support-rules.ts","actionContract":"actor-local eligibleTargetIds, unavailable target excluded, existing resource limits","ruleSources":["character.json#9","character.json#31"],"evidence":["tests/sprint15-breakthrough-capability.test.mjs","tests/sprint15-breakthrough-snow.test.mjs"],"excluded":"General multi-layer precedence"}
+  ],
+  "note":"These are runtime-backed bounded capabilities, not automatic authorization of every deck. Existing normal registry remains unchanged."
+}

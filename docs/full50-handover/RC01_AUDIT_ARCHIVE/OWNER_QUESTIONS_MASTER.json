@@ -1,0 +1,936 @@
+[
+  {
+    "id": "NV100",
+    "priority": "P0",
+    "group": "02 Sống chết",
+    "roles": [
+      97,
+      64,
+      27
+    ],
+    "source": "JSON#97; workbook 04 Char nguon r98; Q13-05/07/12; RC-01/RC01_REPORT.md",
+    "issue": "“Sáng hôm sau” chưa phân biệt đêm gây chết với ngày công bố chết.",
+    "example": "A bị đánh Đêm 1, công bố chết Sáng 1. A tỉnh Sáng 1 hay Sáng 2? Nếu chết ban ngày Ngày 1 thì sao?",
+    "options": {
+      "A": "Công bố chết Ngày N, tỉnh bình minh Ngày N+1; chết ban ngày N cũng tỉnh Ngày N+1.",
+      "B": "Chết Đêm N thì tỉnh ngay bình minh Ngày N sau thông báo chết; chết Ngày N thì tỉnh Ngày N+1."
+    },
+    "recommendation": "A",
+    "reason": "Có một khoảng ngủ đông thực tế, phù hợp candidate; không suy rộng quyền đã chốt.",
+    "impact": "BT-64-1, BT-64-GLOBAL-2, T-COV-64; #97 WV-CH97-S01; #27 WV-CH27-S01.",
+    "module": "life02.ts; phase scheduler; victory-resolver.ts",
+    "dependencies": "F03, WV-LIFE02-LINK-01/02",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      64
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "F03",
+    "priority": "P0",
+    "group": "02 Sống chết",
+    "roles": [
+      97,
+      29,
+      64,
+      27
+    ],
+    "source": "Q13-12; findings.json F03; audit v1.3.1 AUD-14; VH63",
+    "issue": "Cứu trước hạt đã chốt; chưa rõ hạt còn trên người hay mất khi được cứu.",
+    "example": "B mang hạt, bị cắn đêm 1, Phù Thủy cứu B. Đêm 2 B chết không được cứu.",
+    "options": {
+      "A": "Hạt chưa kích hoạt vẫn giữ; lần chết thực sau mới xét ngủ đông.",
+      "B": "Hạt mất ngay dù lần chết được cứu; không hoàn lại lượt trồng."
+    },
+    "recommendation": "A",
+    "reason": "Cứu thành công không phải chết thật, không tự tiêu hiệu ứng chưa kích hoạt.",
+    "impact": "T-COV-64, BT-64-1, BT-64-GLOBAL-2; #97/#29 skill domain.",
+    "module": "preliminary-death.ts; life02.ts; service.ts",
+    "dependencies": "NV100",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      64
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-LIFE02-LINK-01",
+    "priority": "P0",
+    "group": "02 Sống chết",
+    "roles": [
+      27,
+      97,
+      64
+    ],
+    "source": "LIFE-02; Q13-05; VH65; RC01_REPORT.md; life02.ts resolveLife02Lethal",
+    "issue": "Khi A đã ngủ đông và B là người liên kết với A chết thật, chưa có quy tắc cho đòn chết theo tới A đang ngủ.",
+    "example": "A công bố chết và ngủ đông. Ngày sau B bị treo cổ khi A chưa thức tỉnh.",
+    "options": {
+      "A": "Xét chết theo như đòn hợp lệ, nếu không có phòng vệ hợp lệ thì A chết chính thức, hủy thức tỉnh.",
+      "B": "A không nhận chết theo trong ngủ đông; duy trì sự kiện chờ, khi A thức tỉnh mới xét chết theo theo phòng vệ hợp lệ."
+    },
+    "recommendation": "A",
+    "reason": "Tránh trạng thái liên kết còn hiệu lực nhưng không thể giải quyết; cần Owner quyết định ngoại lệ ngủ đông.",
+    "impact": "BT-64-1, BT-64-GLOBAL-2, T-COV-64; LIFE-02/Cupid.",
+    "module": "life02.ts; elimination-chain.ts",
+    "dependencies": "NV100; WV-LIFE02-LINK-02",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      64
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-LIFE02-LINK-02",
+    "priority": "P0",
+    "group": "02 Sống chết",
+    "roles": [
+      27,
+      97,
+      64
+    ],
+    "source": "JSON#27/#97; LIFE-02; VH65; RC01_REPORT.md",
+    "issue": "Nếu B chết thật và đòn chết theo lên A kích hoạt hạt, sau khi A thức tỉnh liên kết với B đã chết xử lý thế nào?",
+    "example": "B chết; A có hạt nên chỉ ngủ đông từ đòn chết theo.",
+    "options": {
+      "A": "Đòn chết theo đã được xử lý một lần; A tỉnh và không tự chết lại vì cùng sự kiện B.",
+      "B": "Giữ nghĩa vụ chết theo chưa hoàn tất; khi A thức tỉnh, xét lại một lần theo quy tắc phòng vệ."
+    },
+    "recommendation": "A",
+    "reason": "Tách kết quả đòn đã giải quyết khỏi trigger mới; tránh vòng lặp. Không tự sửa ưu tiên liên kết thắng.",
+    "impact": "BT-64-1/GLOBAL-2, T-COV-64, LIFE-02.",
+    "module": "life02.ts; death ledger; deep-links.ts",
+    "dependencies": "WV-LIFE02-LINK-01",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      64
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-BELL-TRAP-01",
+    "priority": "P0",
+    "group": "05 Khóa và tài nguyên",
+    "roles": [
+      64,
+      10
+    ],
+    "source": "DEC-BT-02=B; BB-05=B; BB-PENDING-03=B; Q13-06; RC01_REPORT.md",
+    "issue": "#64 đặt cặp đêm 1, trả thông tin nhiều ngày sau; chưa định nghĩa đảo hiệu ứng và thời điểm bẫy tiêu.",
+    "example": "Sói Kỹ Sư bẫy #64 trước khi #64 chọn A/B; A chết thật ngày 2.",
+    "options": {
+      "A": "Lần đặt cặp hợp lệ tiêu bẫy, lưu dấu đảo; khi trigger đến, trả role giả đúng miền Q13-06 cho từng kết quả đáng lẽ nhận.",
+      "B": "Đặt cặp không kích hoạt bẫy; bẫy chỉ tác động nếu một hành động chủ động khác có phép đảo đã định nghĩa. Quan sát thụ động không đảo."
+    },
+    "recommendation": "A",
+    "reason": "Phù hợp bẫy kỹ năng chủ động theo lượt đặt cặp, không tiêu lần hai ở lúc quan sát.",
+    "impact": "WV-A64-PAIR-DEATH-OBSERVATION, BT-64-GLOBAL-0/1; #10 WV-CH10-S01.",
+    "module": "bell-rules.ts; engineer-trap.ts; inspection-rules.ts",
+    "dependencies": "WV-BELL-LOCK-01",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      10,
+      64
+    ],
+    "finiteContractCountMapped": 2,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-BELL-LOCK-01",
+    "priority": "P0",
+    "group": "05 Khóa và tài nguyên",
+    "roles": [
+      64,
+      34,
+      76,
+      10
+    ],
+    "source": "PH-01; VH10/VH41; RC01_REPORT.md BT-64-GLOBAL-0",
+    "issue": "Khóa khi đặt cặp đã có luật; chưa rõ khóa mới trong đêm có chặn quan sát trì hoãn từ cặp đã commit đêm trước không.",
+    "example": "Đêm 1 #64 đặt cặp. Đêm 2 bị khóa, một thành viên chết thật.",
+    "options": {
+      "A": "Kết quả vẫn phát vì cặp đã commit; không cho đặt cặp mới khi bị khóa.",
+      "B": "Khóa làm mất kết quả quan sát trong đêm đó; cặp đã kích hoạt coi như đã dùng, không trả bù."
+    },
+    "recommendation": "A",
+    "reason": "Tôn trọng hiệu lực đã commit và tránh biến khóa thành xóa trạng thái lịch sử.",
+    "impact": "BT-64-GLOBAL-0/1, WV-A64-PAIR-DEATH-OBSERVATION.",
+    "module": "bell-rules.ts; capabilities.ts; service.ts",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      10,
+      64
+    ],
+    "finiteContractCountMapped": 2,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "NV30",
+    "priority": "P0",
+    "group": "07 Chat và Privacy",
+    "roles": [
+      27,
+      64,
+      97
+    ],
+    "source": "JSON#27; workbook 04 Char nguon r28; REL-02; RC01_REPORT.md",
+    "issue": "Thời gian mở group Cupid không được xác định. Quyền tạo nhóm, thành viên và tự ghép đã có nguồn.",
+    "example": "Cupid ghép A/B Đêm 1. A/B muốn chat ngay sau khi ghép.",
+    "options": {
+      "A": "Chỉ ngày, từ thảo luận đến khi chốt vote.",
+      "B": "Cả ngày và đêm khi các thành viên có quyền sống/chat; vẫn cấm ngủ đông."
+    },
+    "recommendation": "A",
+    "reason": "Giữ phạm vi candidate nhỏ, không tạo chat đêm ngoài quyền đã xác nhận.",
+    "impact": "BT-64-GLOBAL-1, T-COV-64; WV-CH27-S01; #84 group ACL.",
+    "module": "group-chat.ts; life02.ts; coordinator.ts; frontend/integration.js",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      64
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-CUPID-WIN-DEAD-01",
+    "priority": "P0",
+    "group": "01 Điều kiện thắng",
+    "roles": [
+      27,
+      64
+    ],
+    "source": "JSON#27; RC01_REPORT.md; life02Winners; VH03; QD-01 chỉ cho Dân",
+    "issue": "Cupid chết ngoài cặp, nhưng cặp còn sống và loại hết người khác: điều kiện nhóm và ghi nhận thắng cá nhân chưa rõ.",
+    "example": "Cupid C ghép A/B rồi C chết. Cuối ván chỉ A/B sống.",
+    "options": {
+      "A": "A/B thắng; C được ghi thắng cùng cặp dù chết, nếu liên kết không bị thay thế hợp lệ.",
+      "B": "A/B thắng nhưng C đã chết không được ghi thắng."
+    },
+    "recommendation": "A",
+    "reason": "Mô tả “thắng cùng Cupid” phù hợp nhóm thắng, nhưng cần Owner chốt vì QD-01 không áp tự động sang phe Ba.",
+    "impact": "BT-64-GLOBAL-2, T-COV-64; #27 victory predicate.",
+    "module": "life02.ts; victory-resolver.ts",
+    "dependencies": "NV30",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      64
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "DC-PACK-PRIVACY-BOUNDARY",
+    "priority": "P0",
+    "group": "07 Chat và Privacy",
+    "roles": [
+      48,
+      79,
+      93,
+      35,
+      77,
+      9,
+      31,
+      87
+    ],
+    "source": "reports/v1.7.31/PACK_PRIVACY_DECISION_CARD.md; DC-PACK-KEEP=A; BB-PENDING-01=A; VH68",
+    "issue": "Bí mật mục tiêu đổi phe khiến hai tình huống có receipt giống nhau nhưng một tình huống chốt được còn tình huống khác phải chờ.",
+    "example": "W1/W2 cùng chọn X. X bí mật thành Sói trước lock, lựa chọn không còn hợp lệ; ván phải chờ thay mục tiêu.",
+    "options": {
+      "A": "Cho đúng Sói có lựa chọn bị thu hồi biết thông báo chung “Cần chọn lại” tại lock; không nêu lý do, ghế lỗi, phe, vai, lựa chọn người khác hoặc RNG. Chấp nhận rò rỉ tối thiểu rằng tập mục tiêu cũ không thể dùng.",
+      "B": "Giữ strict noninterference kể cả lock; không kích hoạt mixed-pack hiện tại cho đến khi có luật tương thích mới."
+    },
+    "recommendation": "A",
+    "reason": "Bảo toàn KEEP, đồng thuận tuyệt đối và không timeout; chỉ cho phép thông tin tối thiểu không tránh được khi phải thay lựa chọn. Chấp nhận giới hạn privacy một cách minh bạch.",
+    "impact": "#48/#93 pack contract; #79 79-03 có ACL liên quan nhưng không bắt buộc dùng leak; các deck bầy Sói nhiều thành viên; ảnh hưởng phòng vệ/retaliation, không coi tất cả FULL bị chặn.",
+    "module": "experimental/owner-bb-v2/pack.ts; owner-dc-policy.ts; capabilities/visibility; game transport",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      9,
+      31,
+      79,
+      87
+    ],
+    "finiteContractCountMapped": 4,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-CULT-DEAD-WIN-01",
+    "priority": "P0",
+    "group": "01 Điều kiện thắng",
+    "roles": [
+      90,
+      84
+    ],
+    "source": "DC-CULT-WIN-01 ownerText; DC-CULT-REVIVAL-01; v1.8.0-development/COMPLETION_CONTRACT_DELTA.md",
+    "issue": "Điều kiện thắng tập thể đã chốt; chưa rõ người từng là tín đồ chết chính thức có được ghi thắng không.",
+    "example": "Tín đồ A bị hiến tế, Giáo Chủ và các tín đồ còn lại đạt điều kiện thắng.",
+    "options": {
+      "A": "A thắng cùng giáo phái nếu là tín đồ hợp lệ lúc chết và chưa chuyển nhóm thắng hợp lệ sau đó.",
+      "B": "Chỉ Giáo Chủ và tín đồ sống thuộc giáo phái tại checkpoint được ghi thắng."
+    },
+    "recommendation": "A",
+    "reason": "Tách thu hồi membership/quyền chat khỏi lịch sử nhóm thắng; tránh thiệt cho người bị hiến tế theo luật.",
+    "impact": "WV-CH90-S01/S02; #84 84-07 liên quan endgame.",
+    "module": "cult-recruitment.ts; victory-resolver.ts",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      84
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-CULT-REVIVAL-FACTION-01",
+    "priority": "P0",
+    "group": "06 Biến đổi",
+    "roles": [
+      90,
+      26,
+      83
+    ],
+    "source": "DC-CULT-REVIVAL-01 B ownerText; VH73/VH76; v1.8.0-development/OWNER_DECISION_INTEGRATION_REPORT.md",
+    "issue": "Không tự hồi membership đã chốt; phe và nhóm thắng của tín đồ sau hồi sinh vẫn thiếu.",
+    "example": "B vốn Dân, bị tuyển, chết thật rồi được Thầy Đồng hồi sinh.",
+    "options": {
+      "A": "Khôi phục phe/nhóm thắng hợp lệ ngay trước lần kết nạp, không khôi phục membership; tôn trọng các biến đổi khác đã commit.",
+      "B": "Giữ phe giáo phái nhưng không có membership/quyền chat; không được tính là tín đồ cho điều kiện thắng nếu chưa tái tuyển."
+    },
+    "recommendation": "A",
+    "reason": "Trạng thái phe và membership nhất quán, không tự cấp quyền bí mật.",
+    "impact": "WV-CH90-S01/S02; BT-26-2/GLOBAL-2; #84 84-06/07.",
+    "module": "revival.ts; cult-recruitment.ts; victory-resolver.ts",
+    "dependencies": "WV-CULT-DEAD-WIN-01",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      26
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-REVIVAL-PRIVACY-01",
+    "priority": "P0",
+    "group": "07 Chat và Privacy",
+    "roles": [
+      26,
+      46,
+      47,
+      53
+    ],
+    "source": "VH73/VH76; v1.7.32 matrix role26 ownerDecisionPending; VH68",
+    "issue": "Không cho hồi sinh ba vai cấm đã chốt. Danh sách mục tiêu nếu lọc theo vai bí mật sẽ tạo oracle.",
+    "example": "Thầy Đồng nhìn danh sách người chết A/B, B là Hắc Tinh bí mật.",
+    "options": {
+      "A": "Hiện mọi ghế chết công khai hợp lệ theo trạng thái; yêu cầu nhắm vai cấm thất bại chung, không lộ nguyên nhân; không đổi trạng thái.",
+      "B": "Chỉ hiện ghế được hồi sinh, chấp nhận Thầy Đồng biết một ghế bị loại dù không biết vai cụ thể."
+    },
+    "recommendation": "A",
+    "reason": "Tránh lộ thông tin từ action capabilities. Việc mất lượt ở attempt thất bại là quyết định riêng.",
+    "impact": "BT-26-2, BT-26-GLOBAL-0/1.",
+    "module": "revival-capability.ts; revival.ts; visibility.ts",
+    "dependencies": "WV-REVIVAL-FAILED-COST-01",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      26
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-CULT-RECRUIT-AGAIN-01",
+    "priority": "P1",
+    "group": "06 Biến đổi",
+    "roles": [
+      90,
+      26
+    ],
+    "source": "DC-CULT-REVIVAL-01 B; DC-CULT-KILLER-DOMAIN-01; Q13-08",
+    "issue": "Owner đã cấm tự khôi phục membership, chưa xác định việc tái tuyển theo lịch sử từng gia nhập.",
+    "example": "B từng là tín đồ, đã chết rồi hồi sinh hợp lệ, hiện không có liên kết độc lập.",
+    "options": {
+      "A": "Có thể tuyển lại nếu đủ điều kiện hiện tại và chưa vượt 5 tín đồ sống.",
+      "B": "Không thể tuyển lại người đã từng chết chính thức khi là tín đồ."
+    },
+    "recommendation": "A",
+    "reason": "Dùng điều kiện hiện hành thay vì thêm hạn chế lịch sử chưa được mô tả.",
+    "impact": "WV-CH90-S01; BT-26-2 liên quan.",
+    "module": "cult-recruitment.ts; target validator",
+    "dependencies": "WV-CULT-REVIVAL-FACTION-01",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      26
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-REVIVAL-FAILED-COST-01",
+    "priority": "P1",
+    "group": "05 Khóa và tài nguyên",
+    "roles": [
+      26
+    ],
+    "source": "VH73/VH76; R01 theo từng skill; DC-TRAP-02 áp riêng bẫy",
+    "issue": "Nếu Thầy Đồng chọn ghế chết là vai cấm mà không biết, có mất lượt hồi sinh không?",
+    "example": "A chọn Hắc Tinh bị cấm. Không bị bẫy; mục tiêu chết thật.",
+    "options": {
+      "A": "Mất lượt một lần khi attempt cú pháp hợp lệ nhưng target bí mật bị cấm; không tiết lộ lý do.",
+      "B": "Không mất lượt và có thể chọn lại, chấp nhận suy luận từ việc thử nhiều mục tiêu."
+    },
+    "recommendation": "A",
+    "reason": "Ngăn oracle retry và giữ quy tắc tiêu một lần đối với attempt đã phân giải; không áp lên lỗi mạng/duplicate.",
+    "impact": "BT-26-2, BT-26-GLOBAL-0/1.",
+    "module": "revival.ts; resource ledger",
+    "dependencies": "WV-REVIVAL-PRIVACY-01",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      26
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-SOUL-DOMAIN-01",
+    "priority": "P1",
+    "group": "03 Tấn công",
+    "roles": [
+      8,
+      23,
+      36,
+      97
+    ],
+    "source": "DC-SOUL-01=A; owner_dc_decisions_20261125.json scope/notAuthorized; v1.7.29/DECISION_CARDS.md",
+    "issue": "Luật blind hit được chốt cho skill chỉ định, nhưng chưa chỉ định đầy đủ skill hữu hạn.",
+    "example": "Xạ Thủ Linh Hồn #23 hoặc Pháp Sư #36 muốn nhắm ghế chết công khai, có thể là người sống bí mật.",
+    "options": {
+      "A": "Bổ sung đúng #23 đạn đêm và #36 cầu lửa vào scope bên cạnh #8, tiêu tài nguyên hợp lệ kể cả ghế chết thật; không áp các vai khác.",
+      "B": "Giữ chỉ #8 như scope hiện có; #23/#36 chỉ nhắm người còn sống công khai; các kỹ năng khác cần quyết định riêng nếu đề xuất."
+    },
+    "recommendation": "A",
+    "reason": "Tạo miền hữu hạn cụ thể và dùng đúng quy tắc DC-SOUL-01, không mở blanket cho 97 vai.",
+    "impact": "WV-A23-REVIVAL/REVIVED-SHOOT; BT-36-GLOBAL-0/1; LIFE-01; không tự mở #97.",
+    "module": "soul-shooter.ts; solo-rules.ts; capabilities.ts; validate.ts",
+    "dependencies": "WV-HIBERNATION-ATTACK-01",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      36
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-HIBERNATION-ATTACK-01",
+    "priority": "P1",
+    "group": "02 Sống chết",
+    "roles": [
+      97,
+      23,
+      8,
+      36,
+      64
+    ],
+    "source": "LIFE-01 chỉ #23; LIFE-02/Q13-05; life02.ts rejects non-ALIVE lethal",
+    "issue": "Chưa có luật đánh ghế ngủ đông do hạt, khác với #23 chết lần đầu.",
+    "example": "A mang hạt đang ngủ đông, #8 dùng một đòn blind hợp lệ vào A.",
+    "options": {
+      "A": "Đòn có quyền nhắm ghế chết công khai được xét phòng vệ; nếu chí tử thì A chết thật và hủy thức tỉnh.",
+      "B": "Ngủ đông miễn nhiễm đòn blind trong thời gian chờ; đòn vẫn tiêu tài nguyên theo kỹ năng."
+    },
+    "recommendation": "A",
+    "reason": "Nhất quán với gameplay blind target nhưng không tự áp LIFE-01 sang #97 khi chưa chốt.",
+    "impact": "BT-64-1/GLOBAL-2; WV-CH97-S01; #23/#8 attack domain.",
+    "module": "life02.ts; damage pipeline",
+    "dependencies": "WV-SOUL-DOMAIN-01",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      36,
+      64
+    ],
+    "finiteContractCountMapped": 2,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "F04",
+    "priority": "P1",
+    "group": "08 Biểu quyết",
+    "roles": [
+      6,
+      7,
+      79
+    ],
+    "source": "Q13-09 chỉ Kẻ Chết Thay; F04; workbook NV06 có trả lời khóa vote cá nhân, không hủy toàn phiên",
+    "issue": "Kẻ Vu Khống chưa thể vote vì Sói Hòa Bình hủy toàn bộ phiên: Oscar chưa rõ.",
+    "example": "A phải vote đầu tiên; #79 hủy vote trước khi A có cơ hội vote.",
+    "options": {
+      "A": "Tính diễn sai, +1 Oscar nếu nhiệm vụ chưa hoàn thành; không tính lại nếu đã có vote đầu tiên hợp lệ trước hủy.",
+      "B": "Không đánh giá nhiệm vụ vì phiên bị hủy; không Oscar từ A."
+    },
+    "recommendation": "A",
+    "reason": "Nhất quán Q13-09 cho trường hợp bất khả thi, nhưng không tự mở rộng nếu chưa chốt.",
+    "impact": "WV-CH06-S01..S04; #7 Oscar; 79-04 vẫn có nghĩa vụ Kẻ Chết Thay đã chốt riêng.",
+    "module": "peace-rules.ts; vote-adjudicator.ts; Oscar ledger",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      79
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "F01",
+    "priority": "P1",
+    "group": "07 Chat và Privacy",
+    "roles": [
+      51
+    ],
+    "source": "JSON#51; VH57/VH77/VH79; findings F01",
+    "issue": "JSON cho chat ẩn danh người chết, VH57 giới hạn hệ thống; chưa có profile riêng cho #51.",
+    "example": "Người Lái Đò muốn nói chuyện với A đã chết trong đêm.",
+    "options": {
+      "A": "Tạo phiên kỹ năng 1–1 ẩn danh giống profile #26: #51 biết A, A chỉ thấy bí danh; chỉ đêm.",
+      "B": "Dùng nhóm người chết do hệ thống tạo, #51 ẩn danh với nhóm; không có phiên DM riêng."
+    },
+    "recommendation": "A",
+    "reason": "Bảo toàn khả năng gốc và phạm vi tối thiểu; không cấp DM chung.",
+    "impact": "WV-CH51-S01; #51 chưa có FULL contract hữu hạn; chat ACL.",
+    "module": "group-chat.ts; medium-chat.ts; visibility.ts",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [],
+    "finiteContractCountMapped": 0,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-MEDIUM60-CHAT-01",
+    "priority": "P1",
+    "group": "07 Chat và Privacy",
+    "roles": [
+      60,
+      26,
+      51
+    ],
+    "source": "JSON#60; VH57/VH77/VH79; workbook NV63",
+    "issue": "#60 có quyền nói chuyện với người chết ban đêm khi còn vai gốc nhưng thiếu phạm vi nhóm/danh tính.",
+    "example": "Người Gọi Hồn đêm 1 chọn người chết A để hỏi về tình hình.",
+    "options": {
+      "A": "Dùng phiên 1–1 ẩn danh như Thầy Đồng, chỉ khi còn đúng vai #60.",
+      "B": "Dùng nhóm người chết có quyền đọc/ghi riêng, không mở DM; #60 hiện bí danh."
+    },
+    "recommendation": "A",
+    "reason": "Hạn chế phạm vi quyền, không làm lộ vai sống cho nhiều người chết.",
+    "impact": "WV-CH60-S01/S02; chưa có finite FULL riêng.",
+    "module": "medium-chat.ts; group-chat.ts; capability registry",
+    "dependencies": "F01",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      26
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "F14",
+    "priority": "P1",
+    "group": "07 Chat và Privacy",
+    "roles": [
+      93,
+      84
+    ],
+    "source": "JSON#93 “hoàn toàn bị cấm chat”; VH57; findings F14",
+    "issue": "Khóa chat do Sói Lưu Đày là câm thường hay cấm tất cả kênh chức năng ban ngày?",
+    "example": "A là tín đồ, bị #93 khóa, đến Ngày N vẫn thuộc nhóm giáo phái.",
+    "options": {
+      "A": "Đây là hiệu ứng riêng: chặn mọi kênh chat ban ngày, đồng thời vote bị khóa theo JSON.",
+      "B": "Câm theo VH57: chỉ chặn chat chung, vẫn giữ nhóm chức năng; vote vẫn bị khóa."
+    },
+    "recommendation": "A",
+    "reason": "Mô tả riêng “hoàn toàn” khác câm thường; cần chốt ngoại lệ rõ.",
+    "impact": "#93 WV-CH93-S01; #84 84-03/06 khi status giao nhau; pack privacy chỉ liên quan nếu group bầy.",
+    "module": "public-chat-access.ts; group-chat.ts; status engine",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      84
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-TRAP84-INVERT-01",
+    "priority": "P1",
+    "group": "05 Khóa và tài nguyên",
+    "roles": [
+      10,
+      84
+    ],
+    "source": "JSON#10; DEC-BT-02; BB-04/05; v1.7.33 FULL_CONTRACT_CLOSURE.md 84-06",
+    "issue": "Chưa có phép đảo câm của #84: không thể suy từ đảo bảo vệ/soi.",
+    "example": "Sói Kỹ Sư đặt bẫy #84, #84 chọn A câm ngày mai.",
+    "options": {
+      "A": "Kỹ năng hợp lệ thất bại, A không câm; tiêu bẫy và lượt theo luật.",
+      "B": "Chuyển hiệu ứng câm sang chính #84, A không bị câm; tiêu bẫy và lượt theo luật."
+    },
+    "recommendation": "B",
+    "reason": "Phản tác dụng lên người sử dụng, không thêm sát thương hoặc mở khóa status khác.",
+    "impact": "84-06; WV-CH10-S01; BB-05 nhóm hành động.",
+    "module": "engineer-trap.ts; s13-mechanics.ts; public-chat-access.ts",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      10,
+      84
+    ],
+    "finiteContractCountMapped": 2,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-GUARD-MULTIHIT-01",
+    "priority": "P1",
+    "group": "03 Tấn công",
+    "roles": [
+      31,
+      9,
+      1,
+      75,
+      77
+    ],
+    "source": "JSON#31; workbook NV34 r32 chưa trả lời cap; VH72/SK-04; VH42; JSON#9 explicit once",
+    "issue": "Bảo Vệ #31 mô tả bảo vệ một người, không nói lớp chặn một đòn hay mọi đòn trong đêm. Không suy từ #9.",
+    "example": "A được #31 bảo vệ, bị một đòn Sói và một đòn phe Ba độc lập cùng đêm.",
+    "options": {
+      "A": "Một lớp #31 chặn một đòn hợp lệ; đòn sau xét các lớp còn lại.",
+      "B": "Lớp #31 chặn mọi đòn hợp lệ trong đêm; không chặn đòn xuyên theo luật."
+    },
+    "recommendation": "A",
+    "reason": "Hợp với ledger lớp bảo vệ và cướp lớp, không thay ngoại lệ kỹ năng khác.",
+    "impact": "BT-31-GLOBAL-0/2; BT-9-2 tương tác lớp; #1/#75.",
+    "module": "protection-consumption.ts; service.ts; attack ledger",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      9,
+      31
+    ],
+    "finiteContractCountMapped": 2,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-DUOCSI-RESCUE-ORDER-01",
+    "priority": "P1",
+    "group": "03 Tấn công",
+    "roles": [
+      87,
+      29,
+      97
+    ],
+    "source": "VH64; workbook NV90 r88; Q13-12; VH08; Phù Thủy W04",
+    "issue": "Cứu của Dược Sĩ và Phù Thủy cùng nhắm nạn nhân cắn: chưa có thứ tự prompt/tiêu tài nguyên khi nạn nhân đã được cứu bởi người kia.",
+    "example": "A bị cắn; cả #87 và #29 còn bình cứu.",
+    "options": {
+      "A": "Dược Sĩ xét trước đối với nạn nhân cắn; Phù Thủy nhận chết sơ bộ sau khi cứu của Dược Sĩ được áp dụng.",
+      "B": "Thu lựa chọn cứu theo snapshot riêng của từng vai; xử lý theo thứ tự ổn định, mỗi lựa chọn hợp lệ đã commit tiêu tài nguyên theo luật, không tạo hồi sinh trùng."
+    },
+    "recommendation": "A",
+    "reason": "Tránh phí bình cứu từ thông tin trễ, giữ quyền Phù Thủy cứu nguyên nhân khác.",
+    "impact": "#87 BT-87-GLOBAL-0/2; T-COV-64 khi hạt và cứu phối hợp.",
+    "module": "preliminary-death.ts; support-rules.ts; phase scheduler",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      87
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-RELEASE-ACTIVATION-01",
+    "priority": "P1",
+    "group": "10 Release Policy",
+    "roles": [],
+    "source": "owner_v1_3_4_effective_registry_preview_s27.json; RC-01 gates; Owner directive XX–XXIII",
+    "issue": "Quyền kích hoạt từng phần candidate đã đủ điều kiện hay phải chờ toàn bộ 25 quyết định đủ nghiệm thu chưa được cấp. Không yêu cầu kích hoạt ngay.",
+    "example": "LIFE-02 và #64 đủ test/contract nhưng mixed pack vẫn còn privacy debt.",
+    "options": {
+      "A": "Cho chuẩn bị hồ sơ activation phạm vi riêng, versioned và tương thích archive; từng phạm vi cần Owner phê duyệt cụ thể sau khi đủ gate; không tự ACTIVE.",
+      "B": "Chỉ trình activation một lần khi toàn bộ v1.3.4 và các gate bắt buộc đều đạt; không tách scope."
+    },
+    "recommendation": "A",
+    "reason": "Cho phép tiến độ có chứng nhận từng miền mà vẫn giữ quyền phê duyệt và không hạ chuẩn FULL.",
+    "impact": "Release policy, Normal Gameplay eligibility, FULL #64/#90/#35; không phải rule gap cho code đã rõ.",
+    "module": "ruleset binding; normal-decks.ts; acceptance scripts",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [],
+    "finiteContractCountMapped": 0,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-DOROTHY-PURE-01",
+    "priority": "P2",
+    "group": "09 Kỹ năng đặc biệt",
+    "roles": [
+      2,
+      25,
+      29,
+      31,
+      5,
+      36,
+      87
+    ],
+    "source": "JSON#2; workbook NV02; skills.json WV-CH02-S01",
+    "issue": "Phân loại “thuần soi/giết/vệ” có ví dụ nhưng thiếu quy tắc đối với vai có bị động hay kỹ năng phụ.",
+    "example": "Thẩm Phán có soi và chống đổi phe; Pháp Sư có giết và khiên; Phù Thủy cứu + độc được nêu thuần giết.",
+    "options": {
+      "A": "Chỉ tính vai có đúng một loại trong ba nhóm soi/giết/vệ; kỹ năng phụ không thuộc ba nhóm không làm mất thuần; Phù Thủy giữ ngoại lệ gốc, Pháp Sư không thuần.",
+      "B": "Chỉ tính danh sách vai thuần do Owner chỉ định cụ thể; mọi vai khác không cho đặc điểm đến khi bổ sung danh sách."
+    },
+    "recommendation": "A",
+    "reason": "Tạo tiêu chí có thể ánh xạ từ registry, không tự coi mọi nhãn kỹ thuật là luật.",
+    "impact": "WV-CH02-S01; chưa có finite FULL riêng; shared classifier.",
+    "module": "rule-intelligence; inspection pipeline; death links",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      5,
+      25,
+      31,
+      36,
+      87
+    ],
+    "finiteContractCountMapped": 5,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-FAN-IDOL-SAMEDEATH-01",
+    "priority": "P2",
+    "group": "01 Điều kiện thắng",
+    "roles": [
+      13,
+      28
+    ],
+    "source": "JSON#13; VH03; skills WV-CH13-S01..04",
+    "issue": "Nếu Fan và Thần Tượng cùng chết trong một chuỗi, có biến Fan đã chết thành Chán Đời để xét thắng do treo không?",
+    "example": "Thần Tượng bị giết trong chuỗi treo cổ Fan; cả hai chết tại checkpoint.",
+    "options": {
+      "A": "Chỉ chuyển Chán Đời nếu Fan còn sống sau closure; cả hai chết không phát sinh thắng Chán Đời mới.",
+      "B": "Fan chuyển ngay khi thần tượng chết; nếu cái chết do treo cổ của Fan sau đó hợp lệ thì xét thắng Chán Đời."
+    },
+    "recommendation": "A",
+    "reason": "Không tạo điều kiện thắng retroactive giữa chuỗi; cần xác định rõ ngoại lệ role transform.",
+    "impact": "WV-CH13-S01..04; #28 predicate tham chiếu, không tự thay đổi FULL #28.",
+    "module": "victory-resolver.ts; role transitions",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [
+      28
+    ],
+    "finiteContractCountMapped": 1,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-DIRECTOR-DEAD-WIN-01",
+    "priority": "P2",
+    "group": "01 Điều kiện thắng",
+    "roles": [
+      6,
+      7
+    ],
+    "source": "JSON#6/#7; VH03; skills WV-CH07-S01/S02",
+    "issue": "#7 có thể thắng ba phân cảnh sau khi #6 chết, chưa nói #6 đã chết có đồng thắng không.",
+    "example": "Đạo Diễn chết; Diễn Viên hoàn thành đủ ba cảnh.",
+    "options": {
+      "A": "Chỉ Diễn Viên thắng ở nhánh ba phân cảnh; Đạo Diễn không được ghi thắng nhánh này.",
+      "B": "Cả hai thắng nếu Diễn Viên hoàn thành ba phân cảnh, kể cả Đạo Diễn chết."
+    },
+    "recommendation": "A",
+    "reason": "Mô tả nhánh riêng chỉ nói Diễn Viên vẫn có thể giành chiến thắng; không suy rộng co-win.",
+    "impact": "WV-CH06-S01..04, WV-CH07-S01/S02.",
+    "module": "victory-predicates.ts; Oscar ledger",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [],
+    "finiteContractCountMapped": 0,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-BLACKWHITE-WIN-01",
+    "priority": "P2",
+    "group": "01 Điều kiện thắng",
+    "roles": [
+      46,
+      47
+    ],
+    "source": "JSON#46/#47; VH23/24/76; VH03/VH58; SMU53 chỉ phân loại",
+    "issue": "Mô tả quy định khóa phe và quyền giết nhưng không nêu predicate thắng nhóm Hắc Bạch Sát Tinh.",
+    "example": "Cả hai còn sống cuối ván, hoặc chỉ Hắc Tinh sống sau khi Bạch Sát chết.",
+    "options": {
+      "A": "Nhóm thắng khi toàn bộ người sống còn lại thuộc Hắc Bạch Sát Tinh; thành viên đã chết không được ghi thắng nếu không có quyết định riêng.",
+      "B": "Mỗi vai là solo độc lập; chỉ người cuối cùng sống thắng, hai vai không đồng thắng."
+    },
+    "recommendation": "A",
+    "reason": "Đi chung và trao quyền cho nhau gợi ý nhóm; Owner phải chốt, SMU solo giết không tự quyết win group.",
+    "impact": "WV-CH46-S01, WV-CH47-S01; chưa có finite FULL riêng.",
+    "module": "victory-predicates.ts; winLinks",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [],
+    "finiteContractCountMapped": 0,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-PRAYER-TRIGGER-01",
+    "priority": "P2",
+    "group": "09 Kỹ năng đặc biệt",
+    "roles": [
+      45
+    ],
+    "source": "JSON#45; workbook 04 Char nguon r46 có câu trả lời cũ chưa chốt; không thấy VH riêng",
+    "issue": "JSON yêu cầu mục tiêu chết mới nhận kỹ năng; Excel cũ nói nhận ngay khi cầu nguyện để cứu mục tiêu.",
+    "example": "A được #45 cầu nguyện và vẫn sống đêm này.",
+    "options": {
+      "A": "Giữ JSON: chỉ nhận kỹ năng mới khi A chết thật, theo hào quang tại lúc chết.",
+      "B": "Dùng câu trả lời Excel: nhận kỹ năng ngay khi chọn A theo hào quang tại thời điểm đó."
+    },
+    "recommendation": "A",
+    "reason": "Không tự mở rộng khả năng trước trigger chết trong registry hiện hành.",
+    "impact": "WV-CH45-S01; chưa có finite FULL riêng.",
+    "module": "effect-dispatch.ts; role transformation; resource policy",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [],
+    "finiteContractCountMapped": 0,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-PRAYER-CHARGE-01",
+    "priority": "P2",
+    "group": "05 Khóa và tài nguyên",
+    "roles": [
+      45
+    ],
+    "source": "JSON#45; WV-CH45-S01; R01",
+    "issue": "Kỹ năng nhận sau cầu nguyện chưa có số lượt dùng cụ thể.",
+    "example": "A chết hào quang Ác; #45 nhận kỹ năng giết bất kỳ giai đoạn.",
+    "options": {
+      "A": "Mỗi kỹ năng mới chỉ dùng một lần trong ván.",
+      "B": "Kỹ năng mới có thể dùng mỗi vòng trong pha hợp lệ, tối đa một lần mỗi vòng."
+    },
+    "recommendation": "A",
+    "reason": "Tránh tăng sức mạnh vô hạn khi mô tả không nêu số lượt; đây là đề xuất không phải luật.",
+    "impact": "WV-CH45-S01; finite contract chưa có.",
+    "module": "capabilities.ts; resource ledger",
+    "dependencies": "WV-PRAYER-TRIGGER-01",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [],
+    "finiteContractCountMapped": 0,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-EXILE-PAIR-01",
+    "priority": "P2",
+    "group": "07 Chat và Privacy",
+    "roles": [
+      62,
+      27,
+      44
+    ],
+    "source": "JSON#62 gửi tin riêng; workbook NV65 r63 nói box 3 người; VH57, REL-02, Q13-03",
+    "issue": "Kẻ Xúi Giục có box 3 người, nhưng chưa có thời gian mở và quyền gửi rõ theo luật mới.",
+    "example": "Hội viên là Dân và Sói muốn nói với nhau trong đêm.",
+    "options": {
+      "A": "Chat nhóm 3 người chỉ ban ngày, cả ba gửi được.",
+      "B": "Chat nhóm 3 người cả ngày và đêm, cả ba gửi được nếu đủ quyền."
+    },
+    "recommendation": "A",
+    "reason": "Giữ nhóm hệ thống và không tạo DM; đồng thời giới hạn phối hợp đêm tương tự đề xuất Cupid.",
+    "impact": "WV-CH62-S01/S02; shared ACL.",
+    "module": "group-chat.ts; winLinks",
+    "dependencies": "NV30",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [],
+    "finiteContractCountMapped": 0,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-ROLE89-DEATH-REVEAL-01",
+    "priority": "P2",
+    "group": "07 Chat và Privacy",
+    "roles": [
+      89
+    ],
+    "source": "JSON#89; VH69 chỉ áp thẻ được chủ động sử dụng; VH07/VH68",
+    "issue": "Khi Người Khai Mệnh chết, thẻ chưa dùng lộ vai thật; chưa rõ đối tượng nhận thông tin vì người cấp đã chết.",
+    "example": "A giữ thẻ chưa dùng. #89 chết ban đêm.",
+    "options": {
+      "A": "Công khai vai thật A cho cả làng, như hiệu ứng reveal đặc biệt.",
+      "B": "Chỉ ghi log nội bộ và cho #89 đọc riêng sau chết; người sống không được biết."
+    },
+    "recommendation": "A",
+    "reason": "Giữ tác dụng của thẻ chưa dùng khi người cấp chết nhưng phải chốt phạm vi ngoại lệ.",
+    "impact": "WV-CH89-S01; finite contract chưa có.",
+    "module": "visibility.ts; death-interactions.ts; replay ACL",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [],
+    "finiteContractCountMapped": 0,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-PACT-MISSION-01",
+    "priority": "P2",
+    "group": "09 Kỹ năng đặc biệt",
+    "roles": [
+      19
+    ],
+    "source": "JSON#19 GIAO DỊCH BẢN THÂN; workbook NV21 r20; VH68; server authoritative",
+    "issue": "Nhiệm vụ 2 do quản trò chỉ định mục tiêu nhưng quản trò là người chơi không có quyền nhìn role bí mật; chưa rõ ai chọn.",
+    "example": "Kẻ Mặc Cả chọn nhiệm vụ khiến một người bị treo cổ.",
+    "options": {
+      "A": "Server random một ghế sống khác #19, giao nhiệm vụ riêng; lưu RNG và mục tiêu.",
+      "B": "Cho #19 tự chọn một người sống khác mình làm mục tiêu, không cho quản trò biết."
+    },
+    "recommendation": "A",
+    "reason": "Bảo toàn tính thử thách từ mục tiêu được chỉ định, không lộ thông tin qua quản trò.",
+    "impact": "WV-CH19-S01..S07; mission state machine.",
+    "module": "game/coordinator.ts; rng.ts; victory-predicates.ts",
+    "dependencies": "",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [],
+    "finiteContractCountMapped": 0,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  },
+  {
+    "id": "WV-PACT-SURVIVOR-01",
+    "priority": "P2",
+    "group": "09 Kỹ năng đặc biệt",
+    "roles": [
+      19
+    ],
+    "source": "JSON#19 nhiệm vụ 3; workbook NV21; VH03",
+    "issue": "Nhiệm vụ bảo vệ người cụ thể “từ đầu đến hết game” chỉ được chọn sau hai đêm thất bại; thiếu cách xác định mục tiêu và thắng khi ván kết thúc.",
+    "example": "Ngày 3 #19 chọn nhiệm vụ 3; B đã sống từ đầu ván, còn C đã từng chết và hồi sinh.",
+    "options": {
+      "A": "Server chọn người sống từ đầu chưa từng chết thật; #19 đồng thắng nhiệm vụ nếu người đó còn sống lúc endgame chính thức.",
+      "B": "Cho #19 chọn bất kỳ người hiện sống; chỉ theo dõi từ lúc nhận nhiệm vụ, xét ở endgame."
+    },
+    "recommendation": "A",
+    "reason": "Giữ nghĩa “từ đầu” và không đòi kéo dài ván chỉ vì nhiệm vụ.",
+    "impact": "WV-CH19-S01..S07.",
+    "module": "mission ledger; victory-resolver.ts",
+    "dependencies": "WV-PACT-MISSION-01",
+    "status": "OWNER_DECISION_REQUIRED",
+    "finiteContractRoleIds": [],
+    "finiteContractCountMapped": 0,
+    "countCaveat": "Số vai có contract/hồ sơ bổ sung trong danh sách tác động; không phải số contract chắc chắn đóng. Impact ghi ID cụ thể hoặc skill spec. Số obligation thực sự đóng chưa thể tính trước code/test."
+  }
+]

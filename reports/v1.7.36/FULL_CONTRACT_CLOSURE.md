@@ -1,0 +1,22 @@
+# FULL contract delta — v1.7.36
+
+PRIMARY #25, SECONDARY #74. F vẫn 1 (#28 duy nhất). Không cấp chứng nhận FULL mới. Bảng sau là delta có bằng chứng cụ thể, không thay Completion Contract gốc.
+
+| Contract | Code / evidence bổ sung | Nghĩa vụ chưa đóng |
+|---|---|---|
+| BT-25-2 / #35 | `mirror-investigation.ts`; `inspection-rules.ts`; `inspection-effects.ts`; `final-pack.ts`; `s13-mechanics.ts`; `capabilities.ts`; `engine/service.ts`; `elimination-chain.ts`; `victory-resolver.ts`; normal deck `s26-mirror-guard`; `sprint26-mirror-normal.test.mjs`; `browser_s26_mirror_normal_e2e.py` | Chưa đóng cả BT-25-2: #3 biến thành Sói thường khi là Sói cuối hoặc bỏ chức năng; hiện `officialSeerAura` fail closed nếu #49 chết; multi-wolf last victim và P05 compound effect order chưa đủ; không tự bỏ nghĩa vụ trap/lock khác. |
+| BT-25-GLOBAL-0/1/2 | S26 both victory routes, guarded/unblocked bite, first scan before any victim, memory retention, second scan, invalid two-target/wrong actor, retry, real HTTP/WS, restart/replay, private projections | Tất cả tổ hợp mục tiêu, nhánh đòn, chuyển vai, phản chiếu multiwolf và hệ thống nhiễu toàn miền chưa đủ evidence. |
+| BT-74-1/2 | Exact-role #74 remains #35, not aura; action accepted while alive still resolves before death; private event tested in S26. | #57 role camouflage, #18 copy/death transformation, transformed role lookup (current `officialInspectedRole` fail-closed), combined disguise and false-role trap not implemented fully. |
+| #35 / WV-CH35-S01 | Scoped active-rule Normal Gameplay one wolf/one bite, no links, no transforms, true aura fallback, committed last victim, first #25 observation then true aura, QD/victory and both browser routes. | General pack integration, multi-victim ordering, multi-source effects, transformed role and all role-wide finite obligations. Not FULL or new Playable C. |
+| #84 84-03/05/06/07 | `group-chat.ts` living follower cap, Q13-08 pre-mutation guard retained; S26 grant-cap test in `sprint25-visual.test.mjs` | Still no live #90 recruitment/sacrifice producer. Group ACL positive grant remains trusted fixture. Need cult rights/win decisions, solo killer classification, death/revival and lock/mute combinations. |
+| #90 WV-CH90-S01/S02 | Cap five living followers (excluding leader), duplicate and pre-mutation check tested; dead follower frees capacity in grant test. | No runtime recruitment, no role conversion, private recruit notification, sacrifice or linked death closure; no Normal admission. See owner decisions. |
+| #79 79-02/03/04 | No new code; old PH-02 regression preserved when evidence available | Co-queued legal day skills, authorized audience for every entitled wolf, Q13-09 #6/#7 mission and Oscar integrated Game Session. Engineering blockers; no new decision needed for Q13-09. |
+| #36 / #23 / #26 / #37 | No new resolver beyond shared inspection integration for #25/#74 | DC-SOUL-01 finite attack allowlist; full attack/protection, secret lifecycle and trap/revival across all applicable roles; #26 VH76 exclusions in real game and privacy; #37 VH15 damage swap and competing redirects. |
+
+# Source authority and decisions
+
+- #35/VH11: only an actual committed unblocked bite death updates memory; no new victim => preserve prior; no memory => true aura; second committed aura observation => true aura. #74's exact role is distinct; interpretation scoped to #25 aura scans, not a general statement about all investigations. No new rule approval. `isApprovedRuleVersion` and fixed deck/immutable initial/current role/faction/no links ensure new path cannot silently affect historical rules or unrelated decks.
+- #35 base pack bite one victim in a one-wolf ordinary composition; this is a bounded use of existing shared attack/protection resolver. No consensus/representative/KEEP modifications or candidate activation. No claims for multiple simultaneous victims.
+- `S13` generic `sourceRule` fields restored verbatim after diff detected accidental substitution during editing. Diagnostic browser/logs retained, excluded from fresh evidence; final fingerprint rerun.
+- #90 cap is a permission-grant boundary only: no trusted fixture is claimed as live gameplay. New cap guard does not resolve revival-overflow policy or killer classification. No extra rights to a client.
+- P0 `sprint25-visual.test.mjs` explicitly removes archive variable in per-file child process, checks active fixture, and keeps all old assertions. New cap test runs in same active context.

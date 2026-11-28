@@ -1,0 +1,87 @@
+{
+  "version": "1.7.23-s15-representative-order-wip",
+  "sourceFingerprint": "288abf2f367554e34d9ed717089f58d5cba9a265ad3333bbb4cad60aee74a244",
+  "gates": [
+    {
+      "gate": "Monolithic Backend",
+      "baseline": "PASS",
+      "result": "PASS",
+      "evidence": "reports/BB_REPRESENTATIVE_BACKEND_REGRESSION.json"
+    },
+    {
+      "gate": "Browser FAIL",
+      "baseline": 1,
+      "result": 1,
+      "evidence": "reports/BB_REPRESENTATIVE_BROWSER_RESULTS.json"
+    },
+    {
+      "gate": "Browser INCOMPLETE",
+      "baseline": 37,
+      "result": 32,
+      "evidence": "reports/BB_REPRESENTATIVE_BROWSER_RESULTS.json"
+    },
+    {
+      "gate": "FULL Revalidation",
+      "baseline": "1/1",
+      "result": "1/1",
+      "evidence": "reports/BB_REPRESENTATIVE_FULL_ROLE_CERTIFICATES.json"
+    },
+    {
+      "gate": "QA C Revalidation",
+      "baseline": "2/2",
+      "result": "2/2",
+      "evidence": "reports/BB_REPRESENTATIVE_BRANCH_COMPLETE_MATRIX.json"
+    },
+    {
+      "gate": "Playable C Revalidation",
+      "baseline": "5/5",
+      "result": "6/6",
+      "evidence": "reports/BB_REPRESENTATIVE_BRANCH_COMPLETE_MATRIX.json"
+    },
+    {
+      "gate": "Atomic Revalidation",
+      "baseline": "78/79",
+      "result": "79/79",
+      "evidence": "reports/BB_REPRESENTATIVE_ATOMIC_COVERAGE.json"
+    },
+    {
+      "gate": "B/B Live Browser",
+      "baseline": "6/6",
+      "result": "7/7",
+      "evidence": "reports/BB_REPRESENTATIVE_BROWSER_RESULTS.json"
+    },
+    {
+      "gate": "Official v1.3.4",
+      "baseline": "CANDIDATE",
+      "result": "CANDIDATE",
+      "evidence": "reports/BB_REPRESENTATIVE_RELEASE_SCOPE.json"
+    },
+    {
+      "gate": "Human QA",
+      "baseline": "PENDING",
+      "result": "PENDING",
+      "evidence": "reports/BB_REPRESENTATIVE_HUMAN_QA_PACK.md"
+    }
+  ],
+  "accumulatedCertificates": {
+    "FULL": 1,
+    "QA_C": 2,
+    "Playable_C": 6
+  },
+  "currentRevalidated": {
+    "F": 1,
+    "qaC": 2,
+    "playableC": 6,
+    "S_pass": 79
+  },
+  "newCertificates": [
+    [
+      25,
+      31,
+      48,
+      74,
+      87
+    ]
+  ],
+  "competitiveProduction": "NO_GO"
+}

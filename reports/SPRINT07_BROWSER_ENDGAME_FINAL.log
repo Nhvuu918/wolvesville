@@ -1,0 +1,13 @@
+
+> wolvesville-sprint07-full-match@0.9.0 test:browser:07
+> npm run build && node scripts/run-browser-s06.mjs browser_s07_e2e.py
+
+
+> wolvesville-sprint07-full-match@0.9.0 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+S07_BROWSER_PASS: two official roles server-assigned, private projections, real skill capability
+S07_BROWSER_PASS: action accepted but not shown as resolved or winner
+S07_BROWSER_PASS: certified elimination and winner after commit; UI, WS, reconnect, winner ACL
+S06_BROWSER_PASS browser_s07_e2e.py
+S06_BROWSER_ALL_1_PASS

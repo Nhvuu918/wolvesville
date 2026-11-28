@@ -1,0 +1,941 @@
+{
+  "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+  "ruleset": "wolvesville-official-v1.3.3",
+  "originalPNGCount": 51,
+  "captureSuites": {
+    "browser_s25_visual_e2e.py": "PASS",
+    "browser_s25_themes_e2e.py": "PASS"
+  },
+  "screenshots": [
+    {
+      "screen": "title",
+      "file": "01-landing-auth/title.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "public",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "09ddea3bbf6bc16974bcf84d230e7385c057c0fd775c7292124852ded65a70d1"
+    },
+    {
+      "screen": "login",
+      "file": "01-landing-auth/login.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "public",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "d017e6d77b6cef5e753425c6ceb3f03e17b82b4e23b0f540a452d5e887568c81"
+    },
+    {
+      "screen": "register",
+      "file": "01-landing-auth/register.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "public",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "0c81e362ef1178c001fe782ee2c953d3aa2b2d2535154253a9b9086da39169eb"
+    },
+    {
+      "screen": "lobby-1920x1080",
+      "file": "11-responsive/lobby-1920x1080.png",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "7dd39f6391995b808aa442b846823dee7b07b89fad2d1915dd60f22e77549351"
+    },
+    {
+      "screen": "lobby-1366x768",
+      "file": "11-responsive/lobby-1366x768.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "98afb139feaae399c6943c1ebc2d39a3acd4aec8573d28ccd1e23b164178c064"
+    },
+    {
+      "screen": "lobby-768x1024",
+      "file": "11-responsive/lobby-768x1024.png",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "9a6e8bb851c58dc1c9651a5bcb2f969dff00bb8cc53e62b647e6ae745c462d32"
+    },
+    {
+      "screen": "lobby-390x844",
+      "file": "11-responsive/lobby-390x844.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "0c339dbd5308a0dd2777d22caafe5a044d272f9109343ad1f9f233ddc8664333"
+    },
+    {
+      "screen": "village-lobby",
+      "file": "02-lobby/village-lobby.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "5d7478990424a445630b256047804d1bf9f972a075e66a1c8a722057d231ce56"
+    },
+    {
+      "screen": "create-room",
+      "file": "03-room/create-room.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "host",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "c43ba24040923b0e19e8dbfa583ab87db0066431449da2e94171daf12668d3c1"
+    },
+    {
+      "screen": "room-1920x1080",
+      "file": "11-responsive/room-1920x1080.png",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "viewer": "host",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "e8b52f204a192229d39bde7ef5505bd4d4eb050309c5028423b08407af3a24e8"
+    },
+    {
+      "screen": "room-1366x768",
+      "file": "11-responsive/room-1366x768.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "host",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "0b0265d055e8bd786f48884c87646019594218d98392709aefe0597d10375345"
+    },
+    {
+      "screen": "room-768x1024",
+      "file": "11-responsive/room-768x1024.png",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "viewer": "host",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "b078d4512c53cf8890cc2d404bedec310133656e835f6d75c3ac4eedf084912e"
+    },
+    {
+      "screen": "room-390x844",
+      "file": "11-responsive/room-390x844.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "viewer": "host",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "bc425cf8f985c73d6d93723a89d82c3cbd051598be945440c9287414b7b23104"
+    },
+    {
+      "screen": "waiting-room",
+      "file": "03-room/waiting-room.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "host",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "0b0265d055e8bd786f48884c87646019594218d98392709aefe0597d10375345"
+    },
+    {
+      "screen": "configuration",
+      "file": "03-room/configuration.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "host",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "b9b1509909074a09dce302ca6cffd17a7ef48943b198ba8949fc590d3c01b89b"
+    },
+    {
+      "screen": "private-role",
+      "file": "05-night-gameplay/private-role.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "3e4826ab78982441c2a8b3f8ed1f5abcf77caf3b2da8430aad249bb39b405155",
+      "note": "Thẻ vai riêng trong HUD; không phải ảnh modal reveal riêng."
+    },
+    {
+      "screen": "night-1920x1080",
+      "file": "11-responsive/night-1920x1080.png",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "025e19c1c7b3bc80cb92aa29f4d6a0ebf7211dcff4e0d2bee2e118a22ad49cd8"
+    },
+    {
+      "screen": "night-1366x768",
+      "file": "11-responsive/night-1366x768.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "3e4826ab78982441c2a8b3f8ed1f5abcf77caf3b2da8430aad249bb39b405155"
+    },
+    {
+      "screen": "night-768x1024",
+      "file": "11-responsive/night-768x1024.png",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "c18eab8deb0970c71c8a9eb207ebb9810c7c2119fe249ced95c22c82adfb2afe"
+    },
+    {
+      "screen": "night-390x844",
+      "file": "11-responsive/night-390x844.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "37061d65410dec7c63661f520f1c42141581fbaf0ebc1c26e04b5c53b2022ba6",
+      "note": "Banner pha bị cắt ở mobile; nút thao tác chính vẫn thấy. Responsive PARTIAL."
+    },
+    {
+      "screen": "night",
+      "file": "05-night-gameplay/night.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "3e4826ab78982441c2a8b3f8ed1f5abcf77caf3b2da8430aad249bb39b405155"
+    },
+    {
+      "screen": "selected-target",
+      "file": "05-night-gameplay/selected-target.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "25c2610d92b85e02ea5ed9aa64da4c20269249d983174dc9347605f956e78940"
+    },
+    {
+      "screen": "submitted",
+      "file": "05-night-gameplay/submitted.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "f181e622d123671a595903b6f908f47854e70231d67b62c630092484b314d5c1"
+    },
+    {
+      "screen": "day-private-result",
+      "file": "06-day-gameplay/day-private-result.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "9984a82aff9db2a156eb11725775f9d431239e792bb9b214c365b29a9874752b"
+    },
+    {
+      "screen": "public-chat",
+      "file": "07-chat/public-chat.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "d744acd30134cc7854b1ec21a66f40b467e01884dec4936755daa3b00f0e45f1"
+    },
+    {
+      "screen": "voting",
+      "file": "08-voting/voting.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "ee161cfe2a52417050d5a0a27c5c430bb7b5a3176f67b308bd66f40edf0e5d24"
+    },
+    {
+      "screen": "vote-recorded",
+      "file": "08-voting/vote-recorded.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "9c32b994aceac616397a4d37cb2fa642c01e72f60d9749b41853ab37890053a5"
+    },
+    {
+      "screen": "victory",
+      "file": "09-endgame/victory.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "6ca10ce28fd5d20aaa1ebe7c34f37f55e4fe6433c36d918aada3a1e3615ec081"
+    },
+    {
+      "screen": "defeat",
+      "file": "09-endgame/defeat.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #8",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "9a7a89ac54d8126a3f586e3e368c3619ef6f289e07648e64ea2ae75da60226c6"
+    },
+    {
+      "screen": "replay-verified",
+      "file": "10-replay/replay-verified.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "d904389a26aec0fcf8c50c9c897cec3788647b6032d289bafaa949d71f706261"
+    },
+    {
+      "screen": "reconnect",
+      "file": "10-replay/reconnect.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "self #25",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "1eada964e45aaf6ad9b37711a501381ea3073d147d4c445ffa301ba67d00eee8"
+    },
+    {
+      "screen": "return-to-lobby",
+      "file": "02-lobby/return-to-lobby.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "dc12ca69bf99a6b60d1b5075dd72262598501b716d8ca6db0bda0cdc2cfab22b"
+    },
+    {
+      "screen": "wheel",
+      "file": "04-codex/wheel.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "0d2675f826acbf251c0e1a23da23065f98766967618697c9e9491dbb84fcd3d2"
+    },
+    {
+      "screen": "grid",
+      "file": "04-codex/grid.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "0bce3b0fb3c75b332743cc96ef221abc59213b728fc005c21da5b1f767fdf82d"
+    },
+    {
+      "screen": "character-detail",
+      "file": "04-codex/character-detail.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "real normal knight/aura match",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_GRID_WITH_ROLE_SELECTED_DETAIL_NOT_VISIBLE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "7b387e034b96981152978ebbb98fc50ecdcf0f8a7fad2225a29c9a23515ea3a8",
+      "note": "Chi tiết ở dưới vùng nhìn; chưa có ảnh riêng của nội dung chi tiết."
+    },
+    {
+      "screen": "moon",
+      "file": "12-themes/moon.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "7b387e034b96981152978ebbb98fc50ecdcf0f8a7fad2225a29c9a23515ea3a8"
+    },
+    {
+      "screen": "gothic",
+      "file": "12-themes/gothic.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "45918550e148145482791fcb3c7e5c4f0dc59fd1e4edae82a9dee867a8629fd1"
+    },
+    {
+      "screen": "classic",
+      "file": "12-themes/classic.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "f4e1b3052f55b014c080bc15716ff4e802025a1e5804b082d16ed77e8c9bd31d"
+    },
+    {
+      "screen": "basicdark",
+      "file": "12-themes/basicdark.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "abe28dfd2f12cba0e70f4aad25a7cbf32e3fcf478ee4f14689241ee0d1063fa2"
+    },
+    {
+      "screen": "basiclight",
+      "file": "12-themes/basiclight.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "3baf540f92990fa72c6137734635edc384f9d2c7f47e0e099be936ffdadfbc64"
+    },
+    {
+      "screen": "cream",
+      "file": "12-themes/cream.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "14c721ee9d066424f758136bcd4043f6337ce3241561cfab51ae1019939555eb"
+    },
+    {
+      "screen": "sage",
+      "file": "12-themes/sage.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "fa0a928419dff0ed3e787c4774e2b63a1fd4f721ab8ac5227f083f0f4df2dce8"
+    },
+    {
+      "screen": "europe",
+      "file": "12-themes/europe.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "939677278fd60091e62bf6b7d788ef76ea927a1011cead3f04537ab225e2f72e"
+    },
+    {
+      "screen": "eastasia",
+      "file": "12-themes/eastasia.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "bf2000c1b4139bd196fbaf9adceebe4772b086e9a0a6c5d1edce79347037420b"
+    },
+    {
+      "screen": "jade",
+      "file": "12-themes/jade.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "29743e2081745a2ae5af7453b983d75e72473bbeedb7eee4e4d14228f941e492"
+    },
+    {
+      "screen": "sakura",
+      "file": "12-themes/sakura.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "f7b8888f25411d585d8529242ba4032e66e2d12556346336a9a2c268918e5642"
+    },
+    {
+      "screen": "loli",
+      "file": "12-themes/loli.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "6f11459149c5f2bfb5e7e2fb9e6e24edffbb9d351274ad0be2137a2013973580"
+    },
+    {
+      "screen": "frost",
+      "file": "12-themes/frost.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "f0773ce8b7387a10a21c60e355b89a4792063ed6007e133d562d16108b795871"
+    },
+    {
+      "screen": "bloodmoon",
+      "file": "12-themes/bloodmoon.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "c8faa8815399117cd4172a5dc40cbbc705ccbd0aad77a33d4d524d43cdfc4caf"
+    },
+    {
+      "screen": "forest",
+      "file": "12-themes/forest.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "6a60b0a3680a038d199491973b5324fffd920251feef195aac47b833af142c2e"
+    },
+    {
+      "screen": "royal",
+      "file": "12-themes/royal.png",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "viewer": "authenticated",
+      "ruleset": "wolvesville-official-v1.3.3",
+      "mode": "OUT_OF_GAME",
+      "scenario": "theme preview",
+      "horizontalOverflow": 0,
+      "brokenVisibleImages": [],
+      "result": "CAPTURED_ON_PASSING_SUITE",
+      "sourceFingerprint": "aff57845d025a893b8504743b631d16b54347c84d378eaf2a7b481d8eb109221",
+      "transport": "Chromium / Playwright / existing HTTP-WS transport bridge to actual local backend",
+      "sha256": "fa5537b9bc9c9903d1f9460c4fe51816dc2f4d74e4d2f5878ead761744a59885"
+    }
+  ],
+  "limitations": [
+    "Native Chromium loopback navigation blocked by environment; real backend used through project bridge.",
+    "No new live cult recruitment/group chat or new FULL role.",
+    "No before/after matched run.",
+    "No separate profile/history screenshot or full replay timeline; screenshot verifies replay receipt.",
+    "16 theme Codex previews only, no full per-theme all-screen acceptance.",
+    "Mobile phase banner clips; overall responsive partial.",
+    "Contrast audit, keyboard traversal and acoustic testing not completed."
+  ]
+}

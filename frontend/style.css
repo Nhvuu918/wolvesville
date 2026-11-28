@@ -1,0 +1,4303 @@
+/* ==========================================================================
+   MA SÓI NHẬP VAI — Sân Khấu Cổ Tích Đen (Out-of-Game UI Design System)
+   Quy chuẩn Style, Palette & Typography 3 tầng đồng bộ BaoCao_DoHoa_AmThanh.docx
+   ========================================================================== */
+
+:root {
+  /* Core Dark Fairytale Stage Palette */
+  --bg: #0E0C1D;
+  --bg-moon: #2A1B47;
+  --panel: #18152C;
+  --panel2: #221D3D;
+
+  /* Viền trầm dịu, giảm độ sáng ngà để không gây gắt mắt */
+  --line: #34294D;
+  --border-gold-soft: rgba(196, 161, 98, 0.30);
+  --border-gold-hover: rgba(212, 176, 108, 0.44);
+
+  --text: #F4EEFA;
+  --muted: #B5A8C9;
+  --gold: #F3D38B;
+  --gold-deep: #D4AC5D;
+  --crimson: #7A2438;
+  --crimson-bright: #9E304A;
+  --accent: #A97BFF;
+  --glow: rgba(169, 123, 255, 0.22);
+
+  /* Faction Status Colors (viền dịu, không chói) */
+  --team-dan-bg: #16443E;
+  --team-dan-border: rgba(54, 138, 125, 0.45);
+  --team-dan-text: #C7F9EE;
+  --team-soi-bg: #581D2D;
+  --team-soi-border: rgba(150, 52, 78, 0.48);
+  --team-soi-text: #FFD9E2;
+  --team-phe3-bg: #3F2761;
+  --team-phe3-border: rgba(118, 79, 173, 0.45);
+  --team-phe3-text: #EAD9FF;
+
+  /* Geometry & Rhythm */
+  --radius-card: 16px;
+  --radius-card-sm: 14px;
+  --radius-control: 10px;
+  --gap: 16px;
+  --wv-sidebar-width: 232px;
+
+  /* Hệ thống Font 3 tầng hỗ trợ tiếng Việt tốt */
+  /* 1. Tiêu đề sân khấu, Opening / Ending, Tên vai lớn (24px–48px) */
+  --stage-font: 'Playfair Display', 'Cormorant Garamond', 'Cinzel Decorative', Georgia, serif;
+  --script-font: 'Charm', 'Cormorant Garamond', Georgia, serif;
+  /* 2. Tên nhân vật trên thẻ / Khung cổ điển (Serif sang trọng, dễ quét mắt) */
+  --card-serif-font: 'Cormorant Garamond', 'Lora', 'Playfair Display', Georgia, serif;
+  /* 3. Mô tả kỹ năng, UI, Nút bấm, Chat (Sans-serif hiện đại rõ nét) */
+  --body-font: 'Be Vietnam Pro', 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --title-font: var(--stage-font);
+  --shadow-card: 0 12px 32px rgba(5, 3, 14, 0.55);
+  --stage-text-shadow: 0 2px 14px rgba(0, 0, 0, 0.68);
+}
+
+/* ==========================================================================
+   16 Theme Variations (Preserved & Harmonized with Softened Borders)
+   ========================================================================== */
+body[data-theme='moon'] {
+  --bg: #0E0C1D; --bg-moon: #2A1B47; --panel: #18152C; --panel2: #221D3D;
+  --line: #34294D; --text: #F4EEFA; --muted: #B5A8C9; --gold: #F3D38B;
+  --crimson: #7A2438; --accent: #A97BFF; --glow: rgba(169, 123, 255, 0.22);
+}
+body[data-theme='gothic'] {
+  --bg: #0B080E; --bg-moon: #2E1326; --panel: #1B101C; --panel2: #2C192E;
+  --line: #4C2D49; --text: #F6E7ED; --muted: #C8AEBA; --gold: #E7BB9A;
+  --crimson: #85223B; --accent: #CF5F94; --glow: rgba(200, 64, 117, 0.26);
+}
+body[data-theme='classic'] {
+  --bg: #101114; --bg-moon: #23262E; --panel: #181A20; --panel2: #242830;
+  --line: #323640; --text: #F2F0EB; --muted: #B5B4B0; --gold: #DFC28A;
+  --crimson: #6E2534; --accent: #9F9DA9; --glow: rgba(140, 139, 150, 0.18);
+}
+body[data-theme='europe'] {
+  --bg: #15120F; --bg-moon: #36281B; --panel: #241C15; --panel2: #33271D;
+  --line: #543E28; --text: #F7EDD7; --muted: #D4C4A8; --gold: #F2D18C;
+  --crimson: #7A2828; --accent: #BD8C50; --glow: rgba(186, 133, 61, 0.22);
+}
+body[data-theme='eastasia'] {
+  --bg: #110F11; --bg-moon: #331F27; --panel: #211A20; --panel2: #32242B;
+  --line: #573A43; --text: #F9EEE7; --muted: #D2BBB7; --gold: #E8C99C;
+  --crimson: #822732; --accent: #D56B73; --glow: rgba(169, 71, 83, 0.24);
+}
+body[data-theme='jade'] {
+  --bg: #081513; --bg-moon: #163B32; --panel: #102821; --panel2: #1B3B31;
+  --line: #2C5747; --text: #E9F6E9; --muted: #B4D0C2; --gold: #E7D59D;
+  --crimson: #6E2639; --accent: #67C4A0; --glow: rgba(75, 213, 167, 0.22);
+}
+body[data-theme='sakura'] {
+  --bg: #1D121C; --bg-moon: #42243E; --panel: #2F1F33; --panel2: #422B47;
+  --line: #694964; --text: #FFF0F8; --muted: #E2C7DA; --gold: #FFE0AC;
+  --crimson: #8B2B4B; --accent: #F3A2CF; --glow: rgba(245, 155, 204, 0.26);
+}
+body[data-theme='loli'] {
+  --bg: #18122E; --bg-moon: #3B2763; --panel: #281F45; --panel2: #3E2D5E;
+  --line: #6B538A; --text: #FFF1FF; --muted: #DEC9F2; --gold: #FFE4A8;
+  --crimson: #842952; --accent: #FFACD9; --glow: rgba(255, 155, 231, 0.26);
+}
+body[data-theme='frost'] {
+  --bg: #091724; --bg-moon: #193C54; --panel: #102838; --panel2: #1A3C50;
+  --line: #335566; --text: #EDF9FF; --muted: #BAD6E3; --gold: #F3D99B;
+  --crimson: #6C273D; --accent: #79D7F5; --glow: rgba(105, 207, 255, 0.24);
+}
+body[data-theme='bloodmoon'] {
+  --bg: #14080B; --bg-moon: #3D121C; --panel: #261015; --panel2: #3B1A22;
+  --line: #612E35; --text: #FFF0E9; --muted: #DABBB5; --gold: #EFC48D;
+  --crimson: #8E202E; --accent: #E35A63; --glow: rgba(219, 52, 75, 0.26);
+}
+body[data-theme='forest'] {
+  --bg: #0B130C; --bg-moon: #1F3621; --panel: #172318; --panel2: #253626;
+  --line: #3B5233; --text: #EDF5E8; --muted: #BDCBB6; --gold: #E8D7A3;
+  --crimson: #6E2733; --accent: #9ABB76; --glow: rgba(129, 182, 93, 0.22);
+}
+body[data-theme='royal'] {
+  --bg: #0D1021; --bg-moon: #232F5C; --panel: #171D38; --panel2: #252F54;
+  --line: #3F4C75; --text: #EEF0FF; --muted: #C3CBE8; --gold: #F6D98F;
+  --crimson: #7A243C; --accent: #94AAF5; --glow: rgba(104, 134, 255, 0.24);
+}
+body[data-theme='basicdark'] {
+  --bg: #15191F; --bg-moon: #262E38; --panel: #20262E; --panel2: #2C343E;
+  --line: #38414B; --text: #E6EAF0; --muted: #B2BBC6; --gold: #E2C785;
+  --crimson: #732A3B; --accent: #8BA7BB; --glow: rgba(139, 167, 187, 0.16);
+}
+body[data-theme='basiclight'] {
+  --bg: #F3F4F8; --bg-moon: #E3E7F2; --panel: #FFFFFF; --panel2: #EAEFF5;
+  --line: #D5DCE6; --border-gold-soft: rgba(138, 93, 27, 0.25); --border-gold-hover: rgba(138, 93, 27, 0.4);
+  --text: #222B38; --muted: #5C6B7E; --gold: #8A5D1B;
+  --gold-deep: #724A10; --crimson: #8C283E; --accent: #5D7996;
+  --glow: rgba(93, 121, 150, 0.15); --shadow-card: 0 8px 24px rgba(24, 34, 50, 0.08);
+  --stage-text-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  color-scheme: light;
+}
+body[data-theme='cream'] {
+  --bg: #F4EFE6; --bg-moon: #E7DEC9; --panel: #FFFAF2; --panel2: #ECE3D5;
+  --line: #DCD0BE; --border-gold-soft: rgba(135, 92, 30, 0.25); --border-gold-hover: rgba(135, 92, 30, 0.4);
+  --text: #3B332B; --muted: #706559; --gold: #875C1E;
+  --gold-deep: #6E4812; --crimson: #852938; --accent: #8F7A5E;
+  --glow: rgba(143, 122, 94, 0.16); --shadow-card: 0 8px 24px rgba(55, 42, 26, 0.08);
+  --stage-text-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  color-scheme: light;
+}
+body[data-theme='sage'] {
+  --bg: #E9EFE9; --bg-moon: #D7E4D8; --panel: #F8FAF7; --panel2: #DFE8DF;
+  --line: #CAD6CC; --border-gold-soft: rgba(115, 87, 28, 0.25); --border-gold-hover: rgba(115, 87, 28, 0.4);
+  --text: #283830; --muted: #5B6E62; --gold: #73571C;
+  --gold-deep: #5C4311; --crimson: #802B3B; --accent: #608571;
+  --glow: rgba(96, 133, 113, 0.16); --shadow-card: 0 8px 24px rgba(32, 52, 42, 0.08);
+  --stage-text-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  color-scheme: light;
+}
+
+/* ==========================================================================
+   Base Reset & Global Elements (Tầng 3: Sans-serif hiện đại rõ nét)
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  background:
+    radial-gradient(circle at 78% 0%, var(--bg-moon) 0%, transparent 45%),
+    radial-gradient(circle at 18% 12%, rgba(122, 36, 56, 0.18) 0%, transparent 38%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--body-font);
+  font-size: 14px;
+  line-height: 1.58;
+  letter-spacing: 0.005em;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tầng 1: Tiêu đề sân khấu, Opening / Ending, Tên vai lớn (24px–48px) */
+h1, h2, .stage-title {
+  font-family: var(--stage-font);
+  letter-spacing: 0.02em;
+  text-shadow: var(--stage-text-shadow);
+}
+
+/* Tầng 2: Tên nhân vật trên thẻ / Khung cổ điển (Serif sang trọng dễ đọc) */
+h3, h4, .serif-title, .role-item-title, .room-item-card strong, .role-picker-item .info strong, .stage-deal-card strong {
+  font-family: var(--card-serif-font);
+  letter-spacing: 0.015em;
+}
+
+/* Tầng 3: UI, Nút bấm, Ô nhập, Chat */
+button, input, select, textarea {
+  font-family: var(--body-font);
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.18s ease, border-color 0.18s ease, transform 0.15s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.07);
+}
+
+button:active:not(:disabled) {
+  transform: scale(0.985);
+}
+
+button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--border-gold-hover);
+  outline-offset: 2px;
+}
+
+/* Common Buttons & Inputs (10px radius, viền dịu không dùng màu ngà sáng) */
+.btn-gold, .gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(180deg, #F5DA96 0%, #E5C175 55%, #C99E4E 100%);
+  color: #1A120B;
+  border: 1px solid rgba(186, 144, 68, 0.45);
+  border-radius: var(--radius-control);
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 13.5px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.32);
+  text-decoration: none;
+}
+
+.btn-crimson {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(180deg, var(--crimson-bright) 0%, var(--crimson) 100%);
+  color: #FFF4F6;
+  border: 1px solid rgba(168, 62, 86, 0.45);
+  border-radius: var(--radius-control);
+  padding: 10px 16px;
+  font-weight: 600;
+  font-size: 13.5px;
+  box-shadow: 0 4px 16px rgba(122, 36, 56, 0.35);
+}
+
+.btn-secondary, .action, .chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  background: var(--panel2);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-control);
+  padding: 9px 14px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.chip.active, .btn-secondary.active {
+  border-color: var(--border-gold-hover);
+  color: var(--gold);
+  background: linear-gradient(180deg, var(--panel2), rgba(243, 211, 139, 0.10));
+  box-shadow: inset 0 0 12px rgba(243, 211, 139, 0.08);
+}
+
+.input-field, .search, .row input, .row select {
+  background: var(--panel2);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-control);
+  padding: 10px 14px;
+  min-height: 40px;
+  font-size: 13.5px;
+}
+
+.input-field::placeholder, .search::placeholder {
+  color: var(--muted);
+  opacity: 0.8;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* ==========================================================================
+   ① Màn hình Đăng nhập / Cổng vào làng (Auth Gate)
+   ========================================================================== */
+.auth-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background:
+    radial-gradient(circle at 72% 16%, rgba(122, 36, 56, 0.28) 0%, transparent 38%),
+    radial-gradient(circle at 25% 15%, #2A1B47 0%, transparent 48%),
+    linear-gradient(135deg, #090714 0%, #0E0C1D 55%, #16112B 100%);
+  overflow-y: auto;
+}
+
+.auth-screen[hidden] {
+  display: none !important;
+}
+
+.auth-shell {
+  width: min(1020px, 100%);
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.82);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Gothic Arch & Misty Night Forest Visual Panel */
+.auth-art {
+  position: relative;
+  padding: 36px 34px;
+  background:
+    radial-gradient(circle at 50% 24%, rgba(243, 211, 139, 0.12) 0%, rgba(42, 27, 71, 0.65) 45%, #0B0919 100%);
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 580px;
+  overflow: hidden;
+}
+
+.auth-gothic-arch {
+  position: absolute;
+  inset: 14px;
+  border: 1px solid rgba(132, 108, 168, 0.22);
+  border-radius: 180px 180px 14px 14px;
+  pointer-events: none;
+  box-shadow: inset 0 0 40px rgba(122, 36, 56, 0.25);
+}
+
+.auth-brand {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.auth-moon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #FAE5B0, var(--gold) 60%, #9E7432 100%);
+  color: #161126;
+  font-size: 30px;
+  box-shadow: 0 0 26px rgba(243, 211, 139, 0.35);
+  margin-bottom: 12px;
+}
+
+.auth-brand-kicker {
+  display: block;
+  font-size: 11.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.auth-brand h1 {
+  margin: 6px 0 4px;
+  font-family: var(--stage-font);
+  font-size: clamp(26px, 2.7vw, 34px);
+  letter-spacing: 0.03em;
+  color: var(--text);
+  line-height: 1.22;
+  text-shadow: var(--stage-text-shadow);
+}
+
+.auth-brand-sub {
+  margin: 0;
+  color: var(--gold);
+  font-family: var(--script-font);
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  text-shadow: var(--stage-text-shadow);
+}
+
+.auth-forest-svg {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 370px;
+  margin: 12px auto;
+  display: block;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.6));
+}
+
+.auth-lore {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background: rgba(14, 12, 29, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px;
+  backdrop-filter: blur(6px);
+}
+
+.auth-lore p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--muted);
+  font-family: var(--card-serif-font);
+}
+
+.auth-lore strong {
+  color: var(--gold);
+  font-size: 15px;
+}
+
+/* Auth Form Column */
+.auth-form-pane {
+  padding: 36px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  background: var(--panel);
+}
+
+.auth-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  background: #120F24;
+  padding: 5px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+.auth-tabs button {
+  border-radius: 8px;
+  padding: 9px 12px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.auth-tabs button.active {
+  background: var(--panel2);
+  color: var(--gold);
+  border-color: var(--border-gold-soft);
+}
+
+.auth-header h2 {
+  margin: 4px 0 2px;
+  font-family: var(--stage-font);
+  color: var(--gold);
+  font-size: 27px;
+  letter-spacing: 0.02em;
+  text-shadow: var(--stage-text-shadow);
+}
+
+.auth-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.auth-form {
+  display: grid;
+  gap: 11px;
+}
+
+.auth-field {
+  display: grid;
+  gap: 5px;
+}
+
+.auth-field label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.auth-field input {
+  width: 100%;
+  min-height: 42px;
+  background: #110E22;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-control);
+  color: var(--text);
+  padding: 10px 13px;
+}
+
+.auth-error {
+  color: #FF9AA8;
+  font-size: 12.5px;
+  min-height: 18px;
+}
+
+.auth-quick-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 4px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.demo-account-box {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border-gold-soft);
+  background: linear-gradient(135deg, rgba(122, 36, 56, 0.25), rgba(34, 29, 61, 0.7));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.demo-account-meta {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.demo-account-meta strong {
+  display: block;
+  color: var(--gold);
+  font-size: 13px;
+}
+
+.demo-account-meta code {
+  background: rgba(14, 12, 29, 0.8);
+  color: var(--text);
+  padding: 1px 6px;
+  border-radius: 5px;
+}
+
+.auth-foot {
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.45;
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   ② Khung điều hướng chung (App Shell — Sidebar & Topbar)
+   ========================================================================== */
+.app {
+  display: grid;
+  grid-template-columns: var(--wv-sidebar-width, 232px) minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+/* Sidebar trái (220px–240px, thu gọn được trên mobile) */
+.sidebar {
+  background: linear-gradient(180deg, #151229 0%, #0E0C1D 65%, #1A1330 100%);
+  border-right: 1px solid var(--line);
+  padding: 18px 12px 18px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow-y: auto;
+  z-index: 30;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 8px 10px 14px;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.sidebar-moon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--crimson), #2A1B47);
+  border: 1px solid var(--border-gold-soft);
+  display: grid;
+  place-items: center;
+  font-size: 21px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.sidebar-brand-text strong {
+  display: block;
+  font-family: var(--stage-font);
+  color: var(--gold);
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  text-shadow: var(--stage-text-shadow);
+}
+
+.sidebar-brand-text small {
+  display: block;
+  color: var(--muted);
+  font-family: var(--card-serif-font);
+  font-size: 12px;
+  font-style: italic;
+}
+
+.nav-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.nav-group-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  padding: 0 10px 4px;
+}
+
+.nav-list {
+  display: grid;
+  gap: 4px;
+}
+
+.nav-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 9px 10px;
+  border-radius: var(--radius-control);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.nav-btn-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.nav-icon {
+  width: 20px;
+  text-align: center;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.nav-badge {
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  color: var(--gold);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.nav-btn:hover {
+  background: var(--panel2);
+  border-color: var(--line);
+}
+
+.nav-btn.active {
+  background: linear-gradient(90deg, rgba(122, 36, 56, 0.55), var(--panel2));
+  border-color: var(--border-gold-hover);
+  color: var(--gold);
+  box-shadow: inset 0 0 14px rgba(122, 36, 56, 0.25);
+}
+
+.sidebar-resize {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 8px;
+  height: 100%;
+  cursor: col-resize;
+  z-index: 35;
+  touch-action: none;
+}
+
+.sidebar-resize:hover, .sidebar-resize.resizing {
+  background: var(--border-gold-soft);
+}
+
+/* Main Content Wrapper & Topbar */
+.main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 25;
+  min-height: 64px;
+  padding: 10px 24px;
+  background: rgba(24, 21, 44, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.mobile-menu-btn {
+  display: none;
+  padding: 8px 11px;
+  border-radius: var(--radius-control);
+  background: var(--panel2);
+  border: 1px solid var(--line);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+
+.breadcrumb-root {
+  color: var(--muted);
+}
+
+.breadcrumb-sep {
+  opacity: 0.5;
+}
+
+.breadcrumb-current {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Music Box / Piano BGM Toggle */
+.bgm-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: var(--radius-control);
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  font-size: 12.5px;
+  color: var(--text);
+}
+
+.bgm-toggle.playing {
+  border-color: var(--border-gold-hover);
+  color: var(--gold);
+  background: linear-gradient(90deg, rgba(122, 36, 56, 0.45), var(--panel2));
+}
+
+.bgm-bars {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 12px;
+}
+
+.bgm-bars span {
+  width: 2.5px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 2px;
+}
+
+.bgm-toggle.playing .bgm-bars span:nth-child(1) {
+  animation: eqBar 0.7s infinite ease-in-out alternate;
+}
+.bgm-toggle.playing .bgm-bars span:nth-child(2) {
+  animation: eqBar 0.5s 0.15s infinite ease-in-out alternate;
+}
+.bgm-toggle.playing .bgm-bars span:nth-child(3) {
+  animation: eqBar 0.8s 0.3s infinite ease-in-out alternate;
+}
+
+@keyframes eqBar {
+  0% { height: 3px; }
+  100% { height: 12px; }
+}
+
+/* Account Strip in Topbar */
+.account-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.account-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 5px 11px 5px 6px;
+  border-radius: var(--radius-control);
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.account-pill:hover {
+  border-color: var(--border-gold-hover);
+}
+
+.account-chibi {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--border-gold-soft);
+  background: #2A1B47;
+}
+
+.account-meta {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.account-meta strong {
+  display: block;
+  font-size: 12.5px;
+  color: var(--text);
+}
+
+.account-meta small {
+  font-size: 11px;
+  color: var(--gold);
+}
+
+/* Page Viewport Container */
+.content {
+  padding: 20px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Common Card Surfaces (14px–16px radius, 16px spacing, viền trầm dịu)
+   ========================================================================== */
+.card, .panel, .section, .stat-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.section {
+  padding: 18px 20px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.section-header h2, .section-header h3, .section h3 {
+  margin: 0;
+  color: var(--gold);
+  font-family: var(--card-serif-font);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   ③ Trang Tổng quan / Sảnh chính (Overview Hub)
+   ========================================================================== */
+.hero-stage {
+  position: relative;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 75% 35%, rgba(243, 211, 139, 0.14) 0%, rgba(42, 27, 71, 0.78) 45%, #0E0C1D 95%);
+  overflow: hidden;
+  padding: 32px 32px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 24px;
+  box-shadow: var(--shadow-card), inset 0 0 60px rgba(122, 36, 56, 0.35);
+}
+
+/* Velvet Curtains (#7A2438) framing the Hero Banner */
+.hero-stage::before,
+.hero-stage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 46px;
+  background: repeating-linear-gradient(
+    90deg,
+    #591627 0px,
+    var(--crimson) 12px,
+    #942D45 22px,
+    #4E1221 32px
+  );
+  opacity: 0.42;
+  pointer-events: none;
+}
+
+.hero-stage::before {
+  left: 0;
+  border-right: 1px solid rgba(168, 128, 86, 0.22);
+}
+
+.hero-stage::after {
+  right: 0;
+  border-left: 1px solid rgba(168, 128, 86, 0.22);
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
+  padding-left: 18px;
+}
+
+.hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(122, 36, 56, 0.55);
+  border: 1px solid rgba(168, 128, 86, 0.28);
+  color: var(--gold);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Tầng 1: Tiêu đề sân khấu lớn (24px–48px), giãn chữ 0.02em, bóng đổ nhẹ */
+.hero-copy h1 {
+  margin: 0 0 12px;
+  font-family: var(--stage-font);
+  font-size: clamp(28px, 3.2vw, 42px);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--gold);
+  line-height: 1.2;
+  text-shadow: var(--stage-text-shadow);
+}
+
+.hero-copy p {
+  margin: 0 0 20px;
+  color: var(--text);
+  font-size: 14.5px;
+  max-width: 560px;
+  opacity: 0.92;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-artwork {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-curtain-svg {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.65));
+}
+
+/* 4 Thẻ chỉ số nhanh */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--gap);
+}
+
+.metric-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
+}
+
+.metric-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--crimson), rgba(243, 211, 139, 0.55));
+}
+
+.metric-label {
+  font-size: 12.5px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.metric-value {
+  font-family: var(--stage-font);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--gold);
+  line-height: 1.2;
+  text-shadow: var(--stage-text-shadow);
+}
+
+.metric-sub {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* 3 Thẻ lối tắt trải nghiệm */
+.shortcuts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--gap);
+}
+
+.shortcut-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.shortcut-card:hover {
+  background: var(--panel2);
+  border-color: var(--border-gold-hover);
+  transform: translateY(-2px);
+}
+
+.shortcut-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.shortcut-card h3 {
+  margin: 0;
+  font-family: var(--card-serif-font);
+  font-size: 20px;
+  color: var(--text);
+}
+
+.shortcut-card p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--muted);
+  flex: 1;
+}
+
+.shortcut-card .btn-gold,
+.shortcut-card .btn-secondary {
+  margin-top: 6px;
+  align-self: flex-start;
+}
+
+/* ==========================================================================
+   ④ Kho Thân Phận (Role Encyclopedia)
+   ========================================================================== */
+.role-toolbar {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: var(--shadow-card);
+}
+
+.role-toolbar-top {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.role-search-wrap {
+  flex: 1;
+  min-width: 240px;
+  position: relative;
+}
+
+.role-search-wrap input {
+  width: 100%;
+}
+
+.deck-scope-toggle {
+  display: inline-flex;
+  background: #120F24;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-control);
+  padding: 3px;
+  gap: 4px;
+}
+
+.deck-scope-toggle button {
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  padding: 6px 12px;
+  border-radius: 7px;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.deck-scope-toggle button.active {
+  background: var(--crimson);
+  color: #FFF;
+  border-color: rgba(196, 161, 98, 0.35);
+}
+
+.role-toolbar-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* 2-Column Resizable Role Encyclopedia Layout */
+.layout.resizable-roles {
+  --role-left: 36%;
+  display: grid;
+  grid-template-columns: minmax(260px, var(--role-left)) 10px minmax(340px, 1fr);
+  gap: 8px;
+  align-items: stretch;
+  min-height: 680px;
+}
+
+.role-list-panel {
+  display: flex;
+  flex-direction: column;
+  height: 720px;
+  overflow: hidden;
+}
+
+.panelhead {
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.role-list-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.role-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  padding: 9px 11px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+}
+
+.role-item:hover {
+  background: var(--panel2);
+  border-color: var(--line);
+}
+
+.role-item.selected {
+  background: linear-gradient(90deg, rgba(122, 36, 56, 0.45), var(--panel2));
+  border-color: var(--border-gold-hover);
+  box-shadow: inset 0 0 14px rgba(122, 36, 56, 0.25);
+}
+
+.portrait {
+  width: 54px;
+  height: 54px;
+  border-radius: 11px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+.role-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Tầng 2: Tên nhân vật trên thẻ — Serif cổ điển sang trọng dễ đọc */
+.role-item-title {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-family: var(--card-serif-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.role-id-badge {
+  color: var(--gold);
+  font-family: var(--body-font);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 4px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--body-font);
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 2px 9px;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+
+.tag.dan {
+  background: var(--team-dan-bg);
+  border-color: var(--team-dan-border);
+  color: var(--team-dan-text);
+}
+
+.tag.soi {
+  background: var(--team-soi-bg);
+  border-color: var(--team-soi-border);
+  color: var(--team-soi-text);
+}
+
+.tag.phe3 {
+  background: var(--team-phe3-bg);
+  border-color: var(--team-phe3-border);
+  color: var(--team-phe3-text);
+}
+
+.tag.set52 {
+  border-color: var(--border-gold-soft);
+  color: var(--gold);
+}
+
+.role-divider {
+  cursor: col-resize;
+  touch-action: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+}
+
+.role-divider::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(180deg, transparent, var(--line) 20%, var(--border-gold-hover) 50%, var(--line) 80%, transparent);
+  opacity: 0.75;
+}
+
+.role-divider::after {
+  content: "⋮";
+  position: absolute;
+  font-size: 18px;
+  color: var(--muted);
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 2px;
+}
+
+/* Role Detail Right Column */
+.role-detail-panel {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  height: 720px;
+  overflow-y: auto;
+}
+
+.role-hero-card {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 16px;
+  border-radius: var(--radius-card-sm);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(ellipse at right, rgba(122, 36, 56, 0.35), transparent 68%),
+    var(--panel2);
+  flex-wrap: wrap;
+}
+
+.role-hero-portrait {
+  width: 104px;
+  height: 104px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-gold-soft);
+  object-fit: cover;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
+}
+
+.role-hero-meta {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Tầng 1: Tên vai lớn ở trang Chi tiết (24px–48px, letter-spacing 0.02em, bóng đổ nhẹ) */
+.role-hero-meta h2 {
+  margin: 0 0 8px;
+  font-family: var(--stage-font);
+  font-size: clamp(26px, 2.6vw, 34px);
+  letter-spacing: 0.02em;
+  color: var(--gold);
+  text-shadow: var(--stage-text-shadow);
+}
+
+.role-hero-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+/* 4 Ô thông số nhanh */
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.fact-box {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.fact-box span {
+  display: block;
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.fact-box strong {
+  display: block;
+  font-size: 13.5px;
+  color: var(--gold);
+}
+
+.detail-block {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card-sm);
+  padding: 16px 18px;
+}
+
+.detail-block h3 {
+  margin: 0 0 10px;
+  font-family: var(--card-serif-font);
+  color: var(--gold);
+  font-size: 19px;
+}
+
+.detail-block p {
+  margin: 0;
+  font-family: var(--body-font);
+  white-space: pre-line;
+  line-height: 1.68;
+}
+
+.detail-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+.detail-warning {
+  border-color: var(--border-gold-soft);
+  background: linear-gradient(135deg, rgba(122, 36, 56, 0.18), var(--panel2));
+}
+
+/* ==========================================================================
+   ⑤ Sảnh Đấu & Cấu hình Phòng chơi (Lobby & Room Setup)
+   ========================================================================== */
+.lobby-grid {
+  display: grid;
+  grid-template-columns: minmax(310px, 38%) minmax(0, 1fr);
+  gap: var(--gap);
+  align-items: start;
+}
+
+.room-cards-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.room-item-card {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card-sm);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  transition: border-color 0.18s ease, transform 0.15s ease;
+}
+
+.room-item-card:hover {
+  border-color: var(--border-gold-hover);
+}
+
+.room-item-card.active {
+  border-color: var(--border-gold-hover);
+  background: linear-gradient(135deg, rgba(122, 36, 56, 0.35), var(--panel2));
+  box-shadow: inset 0 0 16px rgba(122, 36, 56, 0.25);
+}
+
+.room-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.room-code {
+  font-family: monospace;
+  font-weight: 700;
+  color: var(--gold);
+  background: rgba(14, 12, 29, 0.65);
+  padding: 2px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+
+.room-status {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 999px;
+}
+
+.room-status.waiting {
+  background: rgba(23, 75, 68, 0.7);
+  border: 1px solid var(--team-dan-border);
+  color: var(--team-dan-text);
+}
+
+.room-status.playing {
+  background: rgba(122, 36, 56, 0.75);
+  border: 1px solid var(--team-soi-border);
+  color: var(--team-soi-text);
+}
+
+.staging-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  margin: 14px 0;
+}
+
+.staging-box {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card-sm);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.staging-box-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.staging-box-head h4 {
+  margin: 0;
+  font-family: var(--card-serif-font);
+  color: var(--gold);
+  font-size: 18px;
+}
+
+.player-chip-list, .deck-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: 270px;
+  overflow-y: auto;
+  padding: 4px 0;
+}
+
+.player-pill, .deck-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: var(--radius-control);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  font-size: 12.5px;
+}
+
+.player-pill b {
+  color: var(--gold);
+  font-family: monospace;
+}
+
+.pill-remove {
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  padding: 0 3px;
+  font-size: 13px;
+}
+
+.pill-remove:hover {
+  color: #FF8E9E;
+}
+
+.stage-launch-bar {
+  margin-top: 8px;
+  padding: 18px 20px;
+  border-radius: var(--radius-card-sm);
+  border: 1px solid var(--border-gold-soft);
+  background: linear-gradient(90deg, rgba(122, 36, 56, 0.48), rgba(34, 29, 61, 0.85));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.stage-progress-track {
+  width: 100%;
+  height: 8px;
+  background: rgba(14, 12, 29, 0.75);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.stage-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--crimson-bright), var(--gold));
+  transition: width 0.25s ease;
+}
+
+.btn-start-show {
+  font-size: 15px;
+  padding: 13px 24px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45);
+}
+
+/* ==========================================================================
+   Hiệu ứng Kéo Rèm Nhung & Sân Khấu Trong Trận (Stage Curtain Overlay)
+   ========================================================================== */
+.curtain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 950;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.curtain-overlay.active {
+  pointer-events: auto;
+}
+
+.curtain-panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 51%;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      #4A101F 0px,
+      var(--crimson) 24px,
+      #962D46 44px,
+      #3D0C19 64px
+    );
+  border-bottom: 4px solid rgba(212, 172, 93, 0.45);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.9);
+  transition: transform 0.85s cubic-bezier(0.65, 0, 0.35, 1);
+  z-index: 2;
+}
+
+.curtain-left {
+  left: 0;
+  border-right: 2px solid rgba(212, 172, 93, 0.45);
+  transform: translateX(-102%);
+}
+
+.curtain-right {
+  right: 0;
+  border-left: 2px solid rgba(212, 172, 93, 0.45);
+  transform: translateX(102%);
+}
+
+.curtain-overlay.closing .curtain-left,
+.curtain-overlay.closed .curtain-left {
+  transform: translateX(0);
+}
+
+.curtain-overlay.closing .curtain-right,
+.curtain-overlay.closed .curtain-right {
+  transform: translateX(0);
+}
+
+.stage-play-modal {
+  position: relative;
+  z-index: 3;
+  width: min(920px, calc(100vw - 32px));
+  max-height: 88vh;
+  background: var(--panel);
+  border: 1px solid var(--border-gold-hover);
+  border-radius: 20px;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.94);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.curtain-overlay.show-stage .stage-play-modal {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.stage-play-header {
+  padding: 18px 22px;
+  background: linear-gradient(90deg, var(--crimson), #2A1B47);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.stage-play-header h3 {
+  margin: 0;
+  font-family: var(--stage-font);
+  color: var(--gold);
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  text-shadow: var(--stage-text-shadow);
+}
+
+.stage-play-body {
+  padding: 20px 22px;
+  overflow-y: auto;
+  display: grid;
+  gap: 16px;
+}
+
+.stage-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.stage-deal-card {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.stage-deal-card:hover {
+  border-color: var(--border-gold-hover);
+}
+
+.stage-deal-card img {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  border: 1px solid var(--border-gold-soft);
+}
+
+/* ==========================================================================
+   Modal Bảng chọn nhanh nhân vật (Role Picker Modal)
+   ========================================================================== */
+.role-picker-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  display: grid;
+  place-items: center;
+  background: rgba(8, 6, 18, 0.82);
+  backdrop-filter: blur(6px);
+  padding: 16px;
+}
+
+.role-picker-modal {
+  width: min(800px, 100%);
+  height: min(700px, 90dvh);
+  display: flex;
+  flex-direction: column;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  box-shadow: 0 25px 90px rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+}
+
+.role-picker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--panel2);
+  border-bottom: 1px solid var(--line);
+}
+
+.role-picker-header h3 {
+  margin: 0;
+  color: var(--gold);
+  font-family: var(--card-serif-font);
+  font-size: 20px;
+}
+
+.role-picker-controls {
+  padding: 12px 18px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+}
+
+.role-picker-controls input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.role-picker-results {
+  overflow-y: auto;
+  flex: 1;
+  padding: 10px 16px;
+  display: grid;
+  gap: 6px;
+}
+
+.role-picker-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 12px;
+  border-radius: 11px;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+}
+
+.role-picker-item img {
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.role-picker-item .info {
+  flex: 1;
+  min-width: 0;
+}
+
+.role-picker-item .info strong {
+  display: block;
+  font-family: var(--card-serif-font);
+  font-size: 16.5px;
+}
+
+.role-picker-item .info small {
+  color: var(--muted);
+}
+
+.role-picker-footer {
+  border-top: 1px solid var(--line);
+  padding: 12px 18px;
+  background: var(--panel2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ==========================================================================
+   Cá nhân & Cộng đồng (Hồ sơ cá nhân, Lịch sử đấu, Bảng xếp hạng)
+   ========================================================================== */
+.social-cover {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  background: var(--panel);
+}
+
+.cover-banner {
+  height: 145px;
+  background:
+    radial-gradient(circle at 78% 28%, rgba(243, 211, 139, 0.22) 0%, transparent 25%),
+    linear-gradient(120deg, #16122C 0%, var(--crimson) 52%, #1A1433 100%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 20px 28px;
+  color: var(--gold);
+  font-size: 24px;
+  letter-spacing: 14px;
+}
+
+.social-identity {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 24px 18px;
+  flex-wrap: wrap;
+}
+
+.social-avatar {
+  width: 96px;
+  height: 96px;
+  margin-top: -42px;
+  border: 2px solid var(--border-gold-soft);
+  border-radius: 20px;
+  background: var(--panel2);
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.social-identity h2 {
+  margin: 0;
+  font-family: var(--stage-font);
+  color: var(--gold);
+  font-size: 27px;
+  letter-spacing: 0.02em;
+  text-shadow: var(--stage-text-shadow);
+}
+
+.social-identity p {
+  margin: 3px 0;
+  color: var(--muted);
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: minmax(250px, 32%) minmax(0, 1fr);
+  gap: var(--gap);
+  align-items: start;
+}
+
+.profile-side, .profile-main {
+  display: grid;
+  gap: var(--gap);
+}
+
+.profile-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.kpi {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card-sm);
+  padding: 15px;
+}
+
+.kpi span {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.kpi b {
+  display: block;
+  margin-top: 6px;
+  font-size: 25px;
+  color: var(--gold);
+  font-family: var(--stage-font);
+  letter-spacing: 0.02em;
+  text-shadow: var(--stage-text-shadow);
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+.bars {
+  display: flex;
+  gap: 10px;
+  height: 150px;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+.barcol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  flex: 1;
+  max-width: 42px;
+}
+
+.bartrack {
+  flex: 1;
+  width: 100%;
+  border-radius: 7px;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.barfill {
+  width: 100%;
+  background: linear-gradient(0deg, var(--crimson), var(--gold));
+  border-radius: 6px 6px 0 0;
+}
+
+.donut-wrap {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.donut {
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.donut > div {
+  background: var(--panel);
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--gold);
+}
+
+.fav-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.fav-card {
+  border: 1px solid var(--line);
+  background: var(--panel2);
+  border-radius: 12px;
+  padding: 8px;
+  width: 88px;
+  display: grid;
+  gap: 6px;
+  text-align: center;
+  font-family: var(--card-serif-font);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fav-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.badge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.achievement {
+  background: var(--panel2);
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+/* Tables & Forms */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.table th {
+  color: var(--gold);
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.empty {
+  padding: 28px;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* Settings Grid */
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap);
+}
+
+.slider-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 12px 0;
+}
+
+.slider-row input[type="range"] {
+  flex: 1;
+  accent-color: var(--gold);
+}
+
+/* ==========================================================================
+   Trợ lý Cô Bé Quàng Khăn Đỏ & Theme Studio
+   ========================================================================== */
+.bot {
+  position: fixed;
+  left: calc(100vw - 96px);
+  top: calc(100vh - 108px);
+  z-index: 60;
+  touch-action: none;
+  user-select: none;
+  cursor: grab;
+  transition: left 0.28s cubic-bezier(0.22, 1, 0.36, 1), top 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bot.dragging {
+  cursor: grabbing;
+  transition: none;
+}
+
+.botavatar {
+  display: block;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid var(--border-gold-soft);
+  background: var(--crimson);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.65);
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.chat {
+  position: fixed;
+  width: min(365px, calc(100vw - 24px));
+  height: min(460px, calc(100vh - 110px));
+  z-index: 59;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.8);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat.open {
+  display: flex;
+}
+
+.chatheader {
+  background: linear-gradient(90deg, var(--crimson), var(--panel2));
+  padding: 13px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px;
+}
+
+.bubble {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin: 8px 0;
+  white-space: pre-line;
+  font-size: 13px;
+}
+
+.bubble.me {
+  background: rgba(122, 36, 56, 0.55);
+  border-color: var(--border-gold-soft);
+  margin-left: 32px;
+}
+
+.chatinput {
+  display: flex;
+  padding: 10px;
+  gap: 6px;
+  border-top: 1px solid var(--line);
+  background: var(--panel2);
+}
+
+.chatinput input {
+  flex: 1;
+  min-width: 0;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--line);
+  padding: 9px 12px;
+  border-radius: var(--radius-control);
+}
+
+.theme-studio {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid var(--line);
+  background: var(--panel2);
+  border-radius: var(--radius-control);
+  padding: 9px 10px;
+}
+
+.theme-studio label {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 11.5px;
+  white-space: nowrap;
+}
+
+.theme-studio select {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 8px;
+  width: 100%;
+  font-size: 12px;
+}
+
+/* ==========================================================================
+   Responsive Design (Tablet & Mobile)
+   ========================================================================== */
+@media (max-width: 1120px) {
+  .metrics-grid, .profile-kpis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .shortcuts-grid, .lobby-grid, .staging-columns, .chart-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-stage {
+    grid-template-columns: 1fr;
+  }
+  .hero-artwork {
+    display: none;
+  }
+  .layout.resizable-roles {
+    grid-template-columns: 1fr;
+  }
+  .role-divider {
+    display: none;
+  }
+  .role-list-panel {
+    height: 360px;
+  }
+  .role-detail-panel {
+    height: auto;
+  }
+  .facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 780px) {
+  .auth-shell {
+    grid-template-columns: 1fr;
+  }
+  .auth-art {
+    min-height: 220px;
+    padding: 24px 20px;
+  }
+  .auth-forest-svg {
+    max-width: 220px;
+  }
+  .app {
+    grid-template-columns: 1fr !important;
+  }
+  .mobile-menu-btn {
+    display: inline-flex;
+  }
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    transform: translateX(-105%);
+    transition: transform 0.25s ease;
+    box-shadow: 16px 0 45px rgba(0, 0, 0, 0.75);
+  }
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+  .sidebar-resize {
+    display: none;
+  }
+  .theme-studio {
+    left: 14px;
+  }
+  .profile-grid, .detail-duo {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    padding: 16px 14px 72px;
+  }
+  .topbar {
+    padding: 10px 14px;
+  }
+}
+
+/* ==========================================================================
+   KIẾN TRÚC 3 MÀN HÌNH CHUẨN "GAME THỰC THỤ" (INDIE GAME EXPERIENCE)
+   1. Khóa bôi đen thừa (user-select: none) & Chuyển cảnh Fade-to-Black (0.4s)
+   ========================================================================== */
+.title-screen,
+.sidebar,
+.topbar,
+.world-map-stage,
+.ingame-stage-wrap,
+button,
+.tag,
+.room-code,
+.nav-badge {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.scene-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: #05050C;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scene-transition.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scene-transition-crest {
+  font-size: 46px;
+  color: var(--gold);
+  filter: drop-shadow(0 0 22px rgba(243, 211, 139, 0.55));
+  transform: scale(0.88);
+  transition: transform 0.38s ease;
+}
+
+.scene-transition.active .scene-transition-crest {
+  transform: scale(1.06);
+}
+
+/* Landing page */
+.title-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: #151322;
+  color: #fae9d7;
+}
+
+.title-screen[hidden] { display: none; }
+.title-screen:not([hidden]) ~ .auth-screen { z-index: 1300; }
+
+.landing-hero {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  background: #1c263e;
+}
+
+.landing-village, .particle-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.landing-village { z-index: -3; }
+.particle-canvas { z-index: -1; }
+
+.landing-hero::before, .landing-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.landing-hero::before {
+  z-index: -2;
+  background: linear-gradient(#080c1a99, transparent 25%, transparent 65%, #151322);
+}
+
+.landing-hero::after {
+  z-index: -2;
+  background: radial-gradient(ellipse at 50% 47%, transparent 34%, #100d1f69 100%);
+}
+
+.landing-header {
+  position: absolute;
+  z-index: 2;
+  top: clamp(14px, 3vw, 32px);
+  inset-inline: clamp(16px, 5vw, 76px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.landing-brand {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  color: #f8e4cd;
+  font: 700 clamp(15px, 2vw, 21px)/1.2 var(--stage-font);
+  letter-spacing: .13em;
+  text-shadow: 0 2px 12px #090b15;
+}
+
+.landing-brand span { color: #ffd298; font-size: 1.38em; }
+.landing-nav {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px;
+  border: 1px solid #e7b88b55;
+  border-radius: 24px;
+  background: #171626ed;
+}
+
+.landing-disclosure { position: relative; }
+.landing-nav-control {
+  display: grid;
+  place-items: center;
+  min-height: 40px;
+  padding: 6px clamp(9px, 1.3vw, 16px);
+  border: 0;
+  border-radius: 19px;
+  background: transparent;
+  color: #f9e7d4;
+  cursor: pointer;
+  font: 500 13px/1.25 var(--body-font);
+  white-space: nowrap;
+  list-style: none;
+}
+
+.landing-nav-control::-webkit-details-marker { display: none; }
+.landing-nav-control:hover, .landing-disclosure[open] > summary { background: #574055; color: #ffe0ac; }
+
+.landing-popover {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  max-width: min(228px, 65vw);
+  padding: 11px 14px;
+  border: 1px solid #ae7e6d;
+  border-radius: 13px;
+  background: #272035;
+  color: #f9e7d4;
+  box-shadow: 0 12px 25px #100b19aa;
+  font-size: 13px;
+}
+
+.landing-popover p { margin: 0; }
+.landing-community { display: grid; gap: 2px; }
+.landing-community button {
+  text-align: left;
+  padding: 8px 5px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+.landing-community button:hover { color: #ffd298; }
+
+.landing-action {
+  position: relative;
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+}
+
+.landing-cta {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(7px, 1.3vw, 14px);
+  padding: clamp(11px, 1.4vw, 15px) clamp(14px, 2.5vw, 30px);
+  border: 1px solid #d8a77d66;
+  border-radius: 13px;
+  background: #4a2b6866;
+  color: #ffe9c3e6;
+  font: 700 clamp(17px, 2.1vw, 27px)/1.2 var(--stage-font);
+  text-shadow: 0 1px 4px #18121e, 0 2px 10px #18121e;
+}
+
+.landing-cta span { color: #e6b37f; font-size: .53em; }
+.landing-cta:hover { background: #4a2b6899; color: #ffe9c3; }
+.landing-scroll {
+  position: absolute;
+  bottom: 19px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  color: #ffdca9;
+  font-size: 32px;
+  line-height: 1;
+  text-decoration: none;
+  border: 1px solid #ffdca955;
+  border-radius: 50%;
+}
+
+.landing-story {
+  padding: clamp(38px, 7vw, 100px) clamp(20px, 8vw, 115px);
+  background: radial-gradient(ellipse at 30% 46%, #352238, #171523 64%);
+}
+
+.landing-story-inner {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(18px, 6vw, 84px);
+  margin: auto;
+  max-width: 1100px;
+}
+
+.landing-story-art svg { display: block; width: 100%; max-height: 470px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .story-red-breath { animation: story-red-breathe 4.4s ease-in-out infinite; }
+  .story-red-cape { transform-origin: 205px 309px; animation: story-red-sway 6.7s -2s ease-in-out infinite; }
+  .story-red-hood { transform-origin: 217px 276px; animation: story-red-sway 8.1s -3s ease-in-out infinite reverse; }
+  .story-red-head { transform-origin: 221px 275px; animation: story-red-look 13.7s -2s ease-in-out infinite; }
+  .story-red-attention { transform-origin: 221px 275px; transition: transform .42s ease; }
+  .story-red-eyes { transform-origin: 221px 238px; animation: story-red-blink 15s -1s linear infinite; }
+  .story-red-lantern { transform-origin: 302px 337px; animation: story-red-swing 5.9s -1.1s ease-in-out infinite; }
+  .story-red-glow { animation: story-red-glimmer 3.8s -.8s ease-in-out infinite; }
+  .story-red-light { transform-origin: 302px 366px; transition: transform .48s ease; }
+  .landing-story-art:not(.is-animating) [class^="story-red-"] { animation-play-state: paused; }
+}
+
+@keyframes story-red-breathe {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-1.6px); }
+}
+@keyframes story-red-sway {
+  0%, 100% { transform: rotate(-.65deg); }
+  50% { transform: rotate(.65deg); }
+}
+@keyframes story-red-look {
+  0%, 19%, 54%, 100% { transform: rotate(0); }
+  33%, 41% { transform: rotate(-1.3deg); }
+  72%, 79% { transform: rotate(1.2deg); }
+}
+@keyframes story-red-blink {
+  0%, 26%, 28%, 63%, 65%, 88%, 90%, 100% { transform: scaleY(1); }
+  26.8%, 27.1%, 63.8%, 64.1%, 88.8%, 89.1% { transform: scaleY(.16); }
+}
+@keyframes story-red-swing {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+@keyframes story-red-glimmer {
+  0%, 100% { opacity: .82; }
+  54% { opacity: 1; }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .landing-story-art:hover .story-red-light { opacity: 1; }
+  .story-red-light { opacity: .8; transition: opacity .48s ease; }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .landing-story-art:hover .story-red-attention { transform: rotate(3deg); }
+  .landing-story-art:hover .story-red-light { transform: scale(1.16); }
+  .story-red-light { transition: transform .48s ease, opacity .48s ease; }
+}
+
+.landing-story-copy h2 { margin: 0 0 24px; color: #f7d8aa; font-size: clamp(31px, 5vw, 59px); line-height: 1.12; }
+.landing-story-copy p { max-width: 52ch; color: #ebd9df; line-height: 1.75; }
+.landing-story-copy p:last-child { color: #f7d8aa; }
+
+.landing-auth-close {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 12px;
+}
+.title-screen:not([hidden]) ~ .auth-screen .landing-auth-close { display: inline-flex; }
+.title-screen:not([hidden]) ~ .auth-screen:not([hidden]) { padding-top: 60px; }
+
+@media (max-width: 630px) {
+  .landing-header { flex-direction: column; inset-inline: 8px; gap: 10px; }
+  .landing-nav { gap: 0; max-width: 100%; }
+  .landing-nav-control { font-size: 12px; padding-inline: 8px; }
+  .landing-story-inner { grid-template-columns: minmax(0, 1fr); }
+  .landing-story-art svg { max-height: 340px; }
+  .landing-story-copy { max-width: 440px; margin-inline: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .title-screen button { transition: none; }
+}
+
+/* ==========================================================================
+   ② SẢNH CHỜ DẠNG BẢN ĐỒ LÀNG (WORLD MAP LOBBY — Cảm hứng Ảnh 4)
+   ========================================================================== */
+.world-map-card {
+  border: 1px solid #b9987955;
+  border-radius: var(--radius-card);
+  background: #1e2130;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.world-map-stage {
+  position: relative;
+  isolation: isolate;
+  container-type: inline-size;
+  min-height: 570px;
+  aspect-ratio: 1200 / 780;
+  color: #f8e5c8;
+}
+
+.world-map-svg, .village-fx {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.village-fx { z-index: 1; }
+.village-fx * { pointer-events: none; }
+
+.village-fx-house { animation: village-lights 7s ease-in-out infinite alternate; }
+.village-fx-lamp { animation: village-lights 4.5s -2s ease-in-out infinite alternate; }
+.village-fx-fog { animation: village-fog 20s ease-in-out infinite alternate; }
+.village-fx-fog-reverse { animation-direction: alternate-reverse; animation-duration: 26s; }
+.village-fx-ripples { animation: village-ripples 7s ease-in-out infinite alternate; }
+.village-fx-ripples-delayed { animation-delay: -4s; }
+.village-fx-firefly {
+  animation: village-firefly var(--flight-time) var(--flight-delay) ease-in-out infinite;
+}
+
+body:not(.village-fx-live) .village-fx * { animation-play-state: paused; }
+
+@keyframes village-lights {
+  from { opacity: .54; }
+  to { opacity: .94; }
+}
+
+@keyframes village-fog {
+  from { transform: translate(-31px, 0); opacity: .56; }
+  to { transform: translate(34px, -9px); opacity: .9; }
+}
+
+@keyframes village-ripples {
+  from { transform: translate(0, 0); opacity: .12; }
+  to { transform: translate(7px, 3px); opacity: .43; }
+}
+
+@keyframes village-firefly {
+  0%, 100% { transform: translate(0, 0); opacity: .14; }
+  52% { transform: translate(var(--flight-x), -21px); opacity: .9; }
+}
+
+.world-map-header {
+  position: absolute;
+  z-index: 2;
+  top: 3%;
+  left: 6%;
+  text-shadow: 0 2px 9px #151321, 0 1px 2px #151321;
+}
+
+.world-map-header h2 {
+  margin: 0;
+  color: #f4d19c;
+  font-size: clamp(20px, 4cqw, 48px);
+  line-height: 1.12;
+}
+
+.world-map-header p {
+  margin: 5px 0 0;
+  color: #f3dfce;
+  font-size: clamp(11px, 1.5cqw, 15px);
+}
+
+.map-hotspot {
+  position: absolute;
+  z-index: 2;
+  top: var(--pin-y);
+  left: var(--pin-x);
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: max-content;
+  max-width: 23.5%;
+  min-height: 48px;
+  padding: 5px 10px;
+  border: 1px solid #cc9d765e;
+  border-radius: 10px;
+  background: #242034f2;
+  color: #f8e3c2;
+  cursor: pointer;
+  touch-action: manipulation;
+  box-shadow: 0 3px 10px #131321aa;
+  transition: border-color .18s ease, background .18s ease, box-shadow .18s ease;
+}
+
+.map-hotspot::after {
+  content: '';
+  position: absolute;
+  inset: -5px -4px;
+}
+
+.map-hotspot::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  height: 8px;
+  border-left: 1px solid #d7ad88a8;
+  pointer-events: none;
+}
+
+.map-hotspot:hover, .map-hotspot:focus-visible, .map-hotspot.active {
+  z-index: 3;
+  border-color: #f8cb97;
+  background: #4d304b;
+  box-shadow: 0 0 16px #e4a36d78;
+}
+
+.map-hotspot:active {
+  border-color: #ffe4bd;
+  background: #65405e;
+  transition: none;
+}
+
+.village-pin-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e0b3896b;
+  border-radius: 50%;
+  color: #f8cf92;
+  background: #382840;
+  font-size: 15px;
+  transition: transform .16s ease, opacity .16s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .map-hotspot:hover .village-pin-icon { transform: translateY(-2px); }
+}
+
+.map-hotspot:active .village-pin-icon { transform: scale(.88); }
+
+.village-pin-icon.playing { color: #ffb1b5; }
+.village-pin-icon.waiting { color: #c1edce; }
+.hotspot-info { text-align: left; line-height: 1.2; overflow-wrap: anywhere; }
+.hotspot-info strong {
+  display: block;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font: 700 clamp(13px, 2cqw, 21px)/1.03 var(--card-serif-font);
+}
+.hotspot-info small { display: block; margin-top: 4px; font-size: clamp(9px, 1.18cqw, 12px); color: #e7cec0; }
+
+.village-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 700;
+  display: flex;
+  justify-content: flex-end;
+  background: #0c091c99;
+}
+
+.village-drawer {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 640px);
+  background: var(--panel);
+  color: var(--text);
+  border-inline-start: 1px solid var(--border-gold-hover);
+  box-shadow: -16px 0 56px #0b071b99;
+}
+
+.village-drawer.entering {
+  animation: village-drawer-in .22s ease-out;
+}
+
+@keyframes village-drawer-in {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.village-drawer-header {
+  padding: 15px clamp(16px, 4vw, 26px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.village-drawer-header h2 { margin: 0; font-size: clamp(21px, 4vw, 31px); color: var(--gold); overflow-wrap: anywhere; }
+.village-drawer-header button { flex: none; min-width: 42px; min-height: 42px; }
+.village-drawer-body { min-height: 0; overflow: auto; overscroll-behavior: contain; padding: 18px clamp(16px, 4vw, 26px) 28px; }
+.village-create-form { display: grid; gap: 10px; }
+.village-create-form button { justify-self: start; margin-top: 8px; }
+.village-room-link { width: 100%; text-align: left; }
+.village-room-link strong { display: block; color: var(--gold); overflow-wrap: anywhere; }
+.village-room-summary { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-bottom: 16px; }
+.village-room-summary button { margin-inline-start: auto; }
+.village-drawer .staging-columns { grid-template-columns: minmax(0, 1fr); }
+.village-drawer .stage-launch-bar > div:first-child { min-width: 0 !important; }
+
+@media (max-width: 650px) {
+  .village-fx-firefly:nth-child(n+7) { display: none; }
+  .world-map-stage { min-height: 550px; aspect-ratio: auto; }
+  .map-hotspot { max-width: 25%; flex-direction: column; gap: 4px; padding: 5px; }
+  .village-pin-icon { flex-basis: auto; width: 18px; height: 18px; font-size: 12px; }
+  .hotspot-info { text-align: center; }
+  .village-drawer { border-inline-start: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .village-fx * { animation: none; }
+  .village-fx-firefly { display: none; }
+  .village-fx-house, .village-fx-lamp, .village-fx-fog, .village-fx-ripples { opacity: .4; }
+  .village-drawer.entering { animation: none; }
+  .map-hotspot { transition: none; }
+  .map-hotspot .village-pin-icon { transform: none; transition: none; }
+}
+
+/* ==========================================================================
+   ③ MÀN HÌNH TRONG TRẬN TRÀN MÀN HÌNH (FULLSCREEN 100vw x 100vh IN-GAME STAGE)
+   Phân biệt rõ rệt Ban Đêm (Huyền nguyệt) ↔ Ban Ngày (Bình minh nắng ấm)
+   Phong cách Cổ Tích Đen mượt mà (Không dùng Pixel style)
+   ========================================================================== */
+.ingame-stage-wrap {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 800;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #060714 0%, #120F2A 46%, #22163B 78%, #0B0917 100%);
+  transition: background 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ingame-stage-wrap.day-phase {
+  background: linear-gradient(180deg, #2B6CB0 0%, #63B3ED 42%, #F6E05E 76%, #2D3748 100%);
+}
+
+.ingame-backdrop-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Biểu ngữ Pha Ban Đêm / Ban Ngày nổi bật chính giữa đỉnh sân khấu */
+.phase-sky-banner {
+  position: relative;
+  z-index: 6;
+  align-self: center;
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 24px;
+  border-radius: 999px;
+  font-family: var(--stage-font);
+  font-size: 15.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.night-phase .phase-sky-banner {
+  background: linear-gradient(90deg, rgba(18, 14, 38, 0.92), rgba(122, 36, 56, 0.85), rgba(18, 14, 38, 0.92));
+  border: 1px solid var(--border-gold-hover);
+  color: var(--gold);
+}
+
+.day-phase .phase-sky-banner {
+  background: linear-gradient(90deg, rgba(255, 250, 235, 0.94), rgba(254, 235, 190, 0.96), rgba(255, 250, 235, 0.94));
+  border: 1px solid rgba(180, 120, 40, 0.55);
+  color: #4A2511;
+  text-shadow: none;
+}
+
+/* Góc trên bên trái & phải (HUD) */
+.ingame-hud-top {
+  position: relative;
+  z-index: 5;
+  padding: 10px 24px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hud-left-cluster {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(16, 13, 32, 0.84);
+  border: 1px solid var(--border-gold-soft);
+  border-radius: 16px;
+  padding: 12px 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.day-phase .hud-left-cluster,
+.day-phase .hud-right-cluster {
+  background: rgba(25, 22, 42, 0.86);
+  border-color: rgba(243, 211, 139, 0.45);
+}
+
+.hud-hearts {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.hud-slots-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.hud-slot {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 11px;
+  background: rgba(34, 29, 61, 0.9);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-family: var(--body-font);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.hud-slot.active-role {
+  border-color: var(--border-gold-hover);
+  background: linear-gradient(135deg, rgba(122, 36, 56, 0.55), rgba(34, 29, 61, 0.95));
+}
+
+.hud-slot img {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+}
+
+.hud-right-cluster {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background: rgba(16, 13, 32, 0.84);
+  border: 1px solid var(--border-gold-soft);
+  border-radius: 16px;
+  padding: 10px 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.hud-phase-timer {
+  font-family: var(--stage-font);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+}
+
+/* Trung tâm sân khấu: Vòng người chơi rộng thoáng trên toàn màn hình */
+.ingame-arena {
+  position: relative;
+  z-index: 4;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 32px;
+}
+
+.arena-players-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap: 16px;
+  width: min(980px, 100%);
+}
+
+.arena-seat {
+  background: rgba(20, 17, 38, 0.86);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease, background 0.3s ease;
+}
+
+.day-phase .arena-seat {
+  background: rgba(26, 23, 46, 0.88);
+  border-color: rgba(212, 176, 108, 0.32);
+}
+
+.arena-seat:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-gold-hover);
+}
+
+.arena-seat.targeted {
+  border-color: var(--gold);
+  background: linear-gradient(180deg, rgba(122, 36, 56, 0.78), rgba(24, 21, 44, 0.94));
+  box-shadow: 0 0 26px rgba(243, 211, 139, 0.38);
+}
+
+.arena-seat.dead {
+  opacity: 0.52;
+  filter: grayscale(0.75);
+}
+
+.arena-seat-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  border: 1.5px solid var(--border-gold-soft);
+  object-fit: cover;
+}
+
+.arena-seat-name {
+  font-family: var(--card-serif-font);
+  font-size: 16.5px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.arena-seat-badges {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.seat-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+}
+
+/* Đáy màn hình: Hộp thoại Cổ Tích Đen sang trọng (Không dùng Pixel font) */
+.ingame-dialogue-bar {
+  position: relative;
+  z-index: 5;
+  margin: 0 28px 20px;
+  background: linear-gradient(135deg, rgba(20, 17, 38, 0.96), rgba(28, 22, 50, 0.96));
+  border: 1px solid var(--border-gold-hover);
+  box-shadow:
+    inset 0 0 24px rgba(122, 36, 56, 0.25),
+    0 18px 48px rgba(0, 0, 0, 0.85);
+  border-radius: 16px;
+  padding: 16px 22px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialogue-portrait-box {
+  width: 74px;
+  height: 74px;
+  border: 1.5px solid var(--border-gold-soft);
+  border-radius: 14px;
+  background: #1C1832;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.dialogue-portrait-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dialogue-text-area {
+  min-width: 0;
+}
+
+.dialogue-speaker {
+  display: block;
+  font-family: var(--card-serif-font);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  margin-bottom: 5px;
+}
+
+.dialogue-typewriter {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: 15px;
+  line-height: 1.55;
+  color: #F4EEFA;
+  min-height: 46px;
+}
+
+.dialogue-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  min-width: 340px;
+  border-left: 1px solid var(--line);
+  padding-left: 18px;
+}
+
+.dialogue-choice-btn {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 9px 12px;
+  font-family: var(--body-font);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.dialogue-choice-btn:hover,
+.dialogue-choice-btn.primary-choice {
+  color: var(--gold);
+  background: linear-gradient(135deg, rgba(122, 36, 56, 0.6), var(--panel2));
+  border-color: var(--border-gold-hover);
+}
+
+/* ==========================================================================
+   ④ BÁCH KHOA THÂN PHẬN: VÒNG TRÒN THẺ BÀI XOAY 3D (ORBITAL TAROT CAROUSEL)
+   Cảm hứng từ bố cục vòng thẻ bài & đôi bàn tay định mệnh — Style Cổ Tích Đen mượt mà
+   ========================================================================== */
+.codex-wheel-stage {
+  position: relative;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 50% 48%, rgba(122, 36, 56, 0.26) 0%, rgba(42, 27, 71, 0.52) 38%, #0B0918 92%);
+  min-height: 550px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 22px;
+  box-shadow: var(--shadow-card), inset 0 0 70px rgba(0, 0, 0, 0.75);
+}
+
+.codex-hands-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.codex-wheel-top {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.codex-wheel-arena {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: pan-y;
+}
+
+/* Bàn Cân / Gương Linh Hồn ở tâm vòng tròn thẻ bài */
+.codex-wheel-altar {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.altar-counters {
+  display: flex;
+  gap: 20px;
+  font-family: var(--card-serif-font);
+  color: var(--muted);
+  font-size: 13.5px;
+}
+
+.altar-counters div strong {
+  display: block;
+  font-family: var(--stage-font);
+  font-size: 20px;
+  color: var(--gold);
+}
+
+.altar-disc {
+  width: 220px;
+  height: 70px;
+  border-radius: 50%;
+  background:
+    radial-gradient(ellipse at center, rgba(169, 123, 255, 0.25) 0%, rgba(24, 21, 44, 0.92) 70%);
+  border: 1.5px solid var(--border-gold-soft);
+  box-shadow:
+    0 0 32px rgba(122, 36, 56, 0.45),
+    inset 0 0 22px rgba(243, 211, 139, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+}
+
+.altar-disc strong {
+  font-family: var(--stage-font);
+  color: var(--gold);
+  font-size: 15px;
+  letter-spacing: 0.03em;
+}
+
+.altar-disc small {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* Các lá bài Tarot Cổ Tích Đen xoay quanh quỹ đạo vòng tròn */
+.wheel-tarot-card {
+  position: absolute;
+  width: 118px;
+  height: 154px;
+  border-radius: 14px;
+  background: linear-gradient(165deg, #241E42 0%, #151228 100%);
+  border: 1.5px solid var(--line);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.72);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition:
+    left 0.44s cubic-bezier(0.22, 1, 0.36, 1),
+    top 0.44s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.44s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.36s ease,
+    border-color 0.25s ease,
+    box-shadow 0.3s ease;
+}
+
+.wheel-tarot-card::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 10px;
+  border: 1px solid rgba(196, 161, 98, 0.18);
+  pointer-events: none;
+}
+
+.wheel-tarot-card.team-dan {
+  background: linear-gradient(165deg, #163B36 0%, #13182B 100%);
+  border-color: rgba(54, 138, 125, 0.48);
+}
+
+.wheel-tarot-card.team-soi {
+  background: linear-gradient(165deg, #521B2B 0%, #161126 100%);
+  border-color: rgba(158, 48, 74, 0.52);
+}
+
+.wheel-tarot-card.team-phe3 {
+  background: linear-gradient(165deg, #3A235B 0%, #141126 100%);
+  border-color: rgba(124, 82, 184, 0.52);
+}
+
+.wheel-tarot-card.active-front {
+  border-color: var(--gold);
+  box-shadow:
+    0 0 32px rgba(243, 211, 139, 0.42),
+    0 18px 40px rgba(0, 0, 0, 0.88);
+}
+
+.wheel-card-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--gold);
+  z-index: 2;
+}
+
+.wheel-card-art {
+  width: 74px;
+  height: 74px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid var(--border-gold-soft);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+.wheel-card-name {
+  font-family: var(--card-serif-font);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  line-height: 1.15;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* Cụm nút điều khiển xoay vòng bài dưới chân bàn cân */
+.codex-wheel-bottom {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 6px;
+}
+
+.wheel-spin-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.wheel-spin-btn {
+  background: rgba(24, 21, 44, 0.9);
+  border: 1px solid var(--border-gold-soft);
+  color: var(--gold);
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-family: var(--card-serif-font);
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
+}
+
+.wheel-spin-btn:hover {
+  border-color: var(--gold);
+  background: rgba(122, 36, 56, 0.65);
+}
+
+@media (max-width: 900px) {
+  .arena-players-grid {
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
+  }
+  .ingame-dialogue-bar {
+    grid-template-columns: 1fr;
+    margin: 0 12px 12px;
+  }
+  .dialogue-choices {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding-left: 0;
+    padding-top: 10px;
+    min-width: 0;
+  }
+  .codex-hands-backdrop {
+    opacity: 0.35;
+  }
+}
+
+
+/* ==========================================================================
+   GIAO DIỆN LỊCH SỬ ĐẤU CHUẨN MÁY TÍNH (DESKTOP VICTORY & VS BATTLE HISTORY)
+   Cảm hứng từ màn hình tổng kết Victory Silhouette & Danh sách Battle W/L VS
+   ========================================================================== */
+.history-desktop-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Tầng trên cùng trên Máy tính: 2 cột (Trái: Victory Silhouette Banner | Phải: Thống kê & Điều khiển) */
+.history-top-grid {
+  display: grid;
+  grid-template-columns: minmax(380px, 45%) minmax(0, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+/* Cột trái: Khung Nghệ thuật Silhouette & VICTORY Banner */
+.victory-showcase-card {
+  position: relative;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border-gold-hover);
+  background:
+    radial-gradient(circle at 50% 34%, rgba(243, 185, 95, 0.42) 0%, rgba(122, 36, 56, 0.38) 46%, #110E20 92%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 22px;
+  box-shadow: var(--shadow-card), inset 0 0 60px rgba(0, 0, 0, 0.75);
+}
+
+.victory-silhouette-wrap {
+  position: relative;
+  width: 100%;
+  height: 195px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 50% 62%, #F6C87A 0%, #B86B35 38%, #3A1D2E 74%, #120E20 100%);
+  border: 1px solid rgba(243, 211, 139, 0.25);
+}
+
+.victory-silhouette-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Dòng chữ VICTORY phát sáng kèm ngôi sao 4 cánh ở tâm */
+.victory-title-lockup {
+  text-align: center;
+  margin-top: -18px;
+  position: relative;
+  z-index: 3;
+}
+
+.victory-word {
+  margin: 0;
+  font-family: 'Cinzel Decorative', 'Playfair Display', Georgia, serif;
+  font-size: clamp(30px, 3.2vw, 44px);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #FFF8E7;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 18px rgba(243, 211, 139, 0.9),
+    0 0 36px rgba(217, 130, 56, 0.7),
+    0 4px 12px rgba(0, 0, 0, 0.95);
+}
+
+.victory-sub-faction {
+  display: block;
+  font-family: var(--card-serif-font);
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* Cụm Tỷ số Final Score & 2 Huy hiệu Champion hai bên */
+.victory-scoreboard {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  margin: 10px 0;
+  background: rgba(14, 12, 26, 0.75);
+  border: 1px solid var(--border-gold-soft);
+  border-radius: 12px;
+}
+
+.champion-crest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.crest-emblem {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #5E2238 0%, #211838 100%);
+  border: 1.5px solid var(--gold);
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  box-shadow: 0 0 16px rgba(243, 211, 139, 0.3);
+}
+
+.champion-crest strong {
+  font-family: var(--card-serif-font);
+  font-size: 13.5px;
+  color: #F6C87A;
+}
+
+.champion-crest small {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.final-score-center {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.final-score-center span {
+  display: block;
+  font-size: 11.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.final-score-center strong {
+  display: block;
+  font-family: var(--stage-font);
+  font-size: 28px;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+}
+
+/* Thanh cộng điểm & Tích lũy danh vọng (+7/H ↑ | Point Accumulation +80/H ↑) */
+.victory-rewards-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 9px 14px;
+  border-radius: 10px;
+  background: rgba(20, 17, 36, 0.88);
+  border: 1px solid var(--line);
+  font-size: 12.5px;
+}
+
+.reward-gain {
+  color: #6EE7B7;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.reward-up-arrow {
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: rgba(46, 173, 109, 0.25);
+  border: 1px solid #2EAD6D;
+  color: #6EE7B7;
+  font-size: 11px;
+}
+
+/* Cột phải tầng trên: Tổng quan Chiến tích & Bộ lọc trên Máy tính */
+.history-summary-pane {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: var(--shadow-card);
+}
+
+.history-kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.history-kpi-box {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 13px 14px;
+}
+
+.history-kpi-box span {
+  display: block;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.history-kpi-box strong {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--stage-font);
+  font-size: 23px;
+  color: var(--gold);
+}
+
+/* Danh sách các Ván Đấu Đối Kháng (Battle 1, Battle 2, Battle 3... Widescreen Desktop) */
+.battle-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.battle-vs-card {
+  background: linear-gradient(180deg, #1B1732 0%, #131024 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.2s ease, transform 0.16s ease;
+}
+
+.battle-vs-card:hover,
+.battle-vs-card.selected-battle {
+  border-color: var(--border-gold-hover);
+}
+
+/* Thanh tiêu đề mỗi Battle (Battle 1, Battle 2...) */
+.battle-bar-header {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, rgba(34, 29, 61, 0.7), rgba(122, 36, 56, 0.35), rgba(34, 29, 61, 0.7));
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.battle-title-center {
+  font-family: var(--stage-font);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Hàng Đối Kháng Ngang: Phe Thắng (W) ◄── VS ──► Phe Bại (L) */
+.battle-matchup-grid {
+  padding: 16px 18px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 74px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+}
+
+.battle-team-side {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.battle-team-side.loser-side {
+  align-items: flex-end;
+}
+
+/* Thanh thông tin Đội + Cờ W / L */
+.team-captain-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(181, 168, 201, 0.12);
+}
+
+.loser-side .team-captain-strip {
+  flex-direction: row-reverse;
+}
+
+.captain-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loser-side .captain-badge {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.captain-avatar-ring {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  padding: 2px;
+  background: #231D3D;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.loser-side .captain-avatar-ring {
+  border-color: #7D7098;
+}
+
+.captain-avatar-ring img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.captain-lvl {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #120E24;
+  border: 1px solid var(--border-gold-soft);
+  color: var(--gold);
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 0 5px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.captain-meta strong {
+  display: block;
+  font-family: var(--card-serif-font);
+  font-size: 16px;
+  color: var(--text);
+}
+
+.loser-side .captain-meta strong {
+  color: #FF7E8E;
+}
+
+.captain-meta small {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+/* Cờ hiệu W (Thắng) và L (Bại) dạng Ruy-băng chuẩn ảnh mẫu */
+.wl-ribbon {
+  width: 34px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--stage-font);
+  font-size: 17px;
+  font-weight: 800;
+  color: #FFFFFF;
+  clip-path: polygon(0 0, 100% 0, 100% 74%, 50% 100%, 0 74%);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.wl-ribbon.win {
+  background: linear-gradient(180deg, #48BB78 0%, #276749 100%);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.wl-ribbon.lose {
+  background: linear-gradient(180deg, #4A5568 0%, #2D3748 100%);
+  color: #CBD5E0;
+}
+
+/* Dàn thẻ nhân vật vuông (Unit Portrait Cards) của mỗi phe: 5 thẻ thẳng 1 hàng ngang trên máy tính */
+.team-units-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 7px;
+  width: 100%;
+}
+
+.battle-unit-card {
+  width: 100%;
+  min-width: 0;
+  background: linear-gradient(180deg, #272145 0%, #17142B 100%);
+  border: 1.5px solid var(--border-gold-soft);
+  border-radius: 8px;
+  padding: 5px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.16s ease, filter 0.2s ease, border-color 0.2s ease;
+}
+
+.battle-unit-card:hover {
+  transform: translateY(-4px) scale(1.04);
+  border-color: var(--gold);
+  filter: none !important;
+  z-index: 3;
+}
+
+.battle-unit-card.fallen-unit,
+.loser-side .battle-unit-card {
+  filter: grayscale(0.82) brightness(0.78);
+  border-color: #4A4363;
+}
+
+.unit-top-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 9.5px;
+  font-weight: 700;
+  color: #E2D8F0;
+  margin-bottom: 3px;
+}
+
+.unit-faction-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  font-size: 8.5px;
+  background: rgba(14, 12, 29, 0.85);
+  border: 1px solid var(--border-gold-soft);
+}
+
+.unit-portrait-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid rgba(243, 211, 139, 0.25);
+}
+
+.unit-name-label {
+  font-family: var(--card-serif-font);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin-top: 3px;
+}
+
+.unit-player-sub {
+  font-size: 9.5px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.unit-stars {
+  font-size: 9px;
+  color: var(--gold);
+  letter-spacing: 1px;
+  margin-top: 1px;
+}
+
+/* Cột Trung Tâm: Nút Biểu Đồ Hình Thoi (◇ 📊) & Chữ VS Vàng Kim */
+.vs-center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.vs-stats-diamond {
+  width: 38px;
+  height: 38px;
+  transform: rotate(45deg);
+  background: linear-gradient(135deg, #3B2D54, #1C162E);
+  border: 1.5px solid var(--border-gold-hover);
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+}
+
+.vs-stats-diamond span {
+  transform: rotate(-45deg);
+  font-size: 15px;
+  color: var(--gold);
+}
+
+.vs-stats-diamond:hover {
+  background: var(--crimson);
+  border-color: var(--gold);
+}
+
+.vs-gold-letters {
+  font-family: 'Cinzel Decorative', 'Playfair Display', Georgia, serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-shadow:
+    0 0 16px rgba(243, 211, 139, 0.55),
+    0 3px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Ngăn kéo Chi tiết Diễn biến của từng Battle (Mở khi bấm nút ◇ 📊) */
+.battle-detail-drawer {
+  padding: 14px 22px;
+  background: rgba(12, 10, 22, 0.85);
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  font-size: 12.5px;
+}
+
+@media (max-width: 1080px) {
+  .history-top-grid {
+    grid-template-columns: 1fr;
+  }
+  .battle-matchup-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .vs-center-column {
+    flex-direction: row;
+    padding: 6px 0;
+    border-top: 1px dashed var(--line);
+    border-bottom: 1px dashed var(--line);
+  }
+  .battle-team-side.loser-side,
+  .loser-side .team-units-row {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .loser-side .team-captain-strip,
+  .loser-side .captain-badge {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+/* ==========================================================================
+   NÂNG CẤP 1: BANNER VICT✦RY TINH GỌN, CÂN ĐỐI TRÊN MÁY TÍNH (KHÔNG DƯ THÔNG TIN)
+   ========================================================================== */
+.victory-banner-clean {
+  position: relative;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border-gold-hover);
+  background:
+    radial-gradient(circle at 50% 25%, rgba(243, 185, 95, 0.36) 0%, rgba(122, 36, 56, 0.32) 48%, #110E20 95%);
+  overflow: hidden;
+  padding: 18px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow-card), inset 0 0 60px rgba(0, 0, 0, 0.78);
+}
+
+.victory-banner-clean .victory-silhouette-wrap {
+  width: min(760px, 100%);
+  height: 165px;
+  border-radius: 14px;
+}
+
+.victory-star-o {
+  display: inline-block;
+  color: #FFE7A0;
+  font-size: 0.92em;
+  vertical-align: baseline;
+  margin: 0 1px;
+  filter: drop-shadow(0 0 12px rgba(255, 225, 130, 0.95));
+}
+
+.victory-banner-clean .victory-scoreboard {
+  width: min(680px, 100%);
+  margin: 2px 0;
+  padding: 10px 24px;
+}
+
+.victory-bottom-toolbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  border-top: 1px solid rgba(181, 168, 201, 0.14);
+}
+
+.victory-rewards-inline {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+/* ==========================================================================
+   NÂNG CẤP 2: KHUNG CHAT THẢO LUẬN & VOTE BAN NGÀY TRONG TRẬN (IN-GAME DAY CHAT)
+   ========================================================================== */
+body.in-game-active .bot,
+body.in-game-active .chat {
+  display: none !important;
+}
+
+.ingame-arena.day-split-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.38fr) minmax(320px, 0.85fr);
+  gap: 18px;
+  align-items: stretch;
+  width: min(1340px, 100%);
+  margin: 0 auto;
+  padding: 6px 28px;
+  min-height: 0;
+}
+
+.ingame-arena.day-split-layout .arena-players-grid {
+  width: 100%;
+  align-self: center;
+}
+
+/* Hộp Chat Thảo luận & Bỏ phiếu Ban Ngày */
+.day-discussion-panel {
+  background: rgba(16, 14, 32, 0.9);
+  border: 1px solid var(--border-gold-hover);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.6);
+  max-height: calc(100vh - 250px);
+  min-height: 310px;
+}
+
+.day-chat-header {
+  padding: 11px 16px;
+  background: linear-gradient(90deg, rgba(122, 36, 56, 0.65), rgba(34, 29, 61, 0.9));
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.day-chat-header strong {
+  font-family: var(--card-serif-font);
+  font-size: 15.5px;
+  color: var(--gold);
+}
+
+.day-chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.day-chat-msg {
+  background: rgba(34, 29, 61, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 8px 11px;
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+
+.day-chat-msg.me {
+  background: rgba(122, 36, 56, 0.52);
+  border-color: var(--border-gold-soft);
+  align-self: flex-end;
+  max-width: 92%;
+}
+
+.day-chat-msg.vote-system {
+  background: rgba(23, 75, 68, 0.55);
+  border-color: rgba(54, 138, 125, 0.55);
+  color: #C7F9EE;
+  font-weight: 600;
+}
+
+.day-chat-author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  font-weight: 700;
+  color: var(--gold);
+  font-size: 11.5px;
+  margin-bottom: 2px;
+}
+
+.day-quick-phrases {
+  padding: 7px 12px;
+  background: rgba(12, 10, 24, 0.65);
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+}
+
+.day-quick-btn {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.day-quick-btn:hover {
+  color: var(--gold);
+  border-color: var(--border-gold-soft);
+}
+
+.day-chat-form {
+  padding: 9px 12px;
+  background: rgba(20, 17, 38, 0.95);
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 8px;
+}
+
+.day-chat-form input {
+  flex: 1;
+  min-width: 0;
+  background: #100D20;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 7px 11px;
+  font-size: 12.5px;
+}
+
+/* Huy hiệu số phiếu bầu trực tiếp trên thẻ người chơi vào Ban Ngày */
+.vote-tally-pill {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: linear-gradient(135deg, var(--crimson-bright), var(--crimson));
+  border: 1px solid var(--gold);
+  color: #FFF;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1020px) {
+  .ingame-arena.day-split-layout {
+    grid-template-columns: 1fr;
+    overflow-y: auto;
+  }
+  .day-discussion-panel {
+    max-height: 240px;
+  }
+}

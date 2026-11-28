@@ -1,0 +1,108 @@
+
+> wolvesville-sprint04-official-rule-intelligence@0.6.0 test:pg:acceptance
+> npm run build && WV_REQUIRE_POSTGRES=1 node --test tests/postgres.test.mjs tests/postgres-game.test.mjs tests/postgres-official.test.mjs tests/postgres-feedback.test.mjs tests/postgres-demo.test.mjs
+
+
+> wolvesville-sprint04-official-rule-intelligence@0.6.0 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+TAP version 13
+# (node:51902) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: DEMO-PG-001: atomic independent demo accounts, PG 006 migration, rollback and session persistence
+not ok 1 - DEMO-PG-001: atomic independent demo accounts, PG 006 migration, rollback and session persistence
+  ---
+  duration_ms: 1.058202
+  type: 'test'
+  location: '/mnt/data/Wolvesville_Sprint_04_Official_Rule_Intelligence_Full_Source/tests/postgres-demo.test.mjs:11:1'
+  failureType: 'testCodeFailure'
+  error: 'DATABASE_URL required for PostgreSQL acceptance; do not count SKIPPED as PASS'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/Wolvesville_Sprint_04_Official_Rule_Intelligence_Full_Source/tests/postgres-demo.test.mjs:13:26)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# (node:51903) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: 03 PostgreSQL: private feedback accepted/resolved, replay, restart and isolation
+not ok 2 - 03 PostgreSQL: private feedback accepted/resolved, replay, restart and isolation
+  ---
+  duration_ms: 0.992553
+  type: 'test'
+  location: '/mnt/data/Wolvesville_Sprint_04_Official_Rule_Intelligence_Full_Source/tests/postgres-feedback.test.mjs:10:1'
+  failureType: 'testCodeFailure'
+  error: 'DATABASE_URL is required for PostgreSQL acceptance'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/Wolvesville_Sprint_04_Official_Rule_Intelligence_Full_Source/tests/postgres-feedback.test.mjs:13:16)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# (node:51909) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: 02B PostgreSQL real DB: start/commit/atomic failure/role assignments/restart/replay
+not ok 3 - 02B PostgreSQL real DB: start/commit/atomic failure/role assignments/restart/replay
+  ---
+  duration_ms: 1.473898
+  type: 'test'
+  location: '/mnt/data/Wolvesville_Sprint_04_Official_Rule_Intelligence_Full_Source/tests/postgres-game.test.mjs:11:1'
+  failureType: 'testCodeFailure'
+  error: 'PostgreSQL required: provide DATABASE_URL in .env or exported environment'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/Wolvesville_Sprint_04_Official_Rule_Intelligence_Full_Source/tests/postgres-game.test.mjs:12:25)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# (node:51935) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: 02C PostgreSQL isolated: official skill, role privacy, transaction rollback, replay, restart
+not ok 4 - 02C PostgreSQL isolated: official skill, role privacy, transaction rollback, replay, restart
+  ---
+  duration_ms: 1.690984
+  type: 'test'
+  location: '/mnt/data/Wolvesville_Sprint_04_Official_Rule_Intelligence_Full_Source/tests/postgres-official.test.mjs:12:1'
+  failureType: 'testCodeFailure'
+  error: 'DATABASE_URL required in acceptance mode (WV_REQUIRE_POSTGRES=1)'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/Wolvesville_Sprint_04_Official_Rule_Intelligence_Full_Source/tests/postgres-official.test.mjs:13:25)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# (node:51936) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: 02A PostgreSQL: transaction-safe concurrent join + persistence, requires DATABASE_URL
+not ok 5 - 02A PostgreSQL: transaction-safe concurrent join + persistence, requires DATABASE_URL
+  ---
+  duration_ms: 0.856989
+  type: 'test'
+  location: '/mnt/data/Wolvesville_Sprint_04_Official_Rule_Intelligence_Full_Source/tests/postgres.test.mjs:11:1'
+  failureType: 'testCodeFailure'
+  error: 'DATABASE_URL is required for PostgreSQL acceptance test'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/Wolvesville_Sprint_04_Official_Rule_Intelligence_Full_Source/tests/postgres.test.mjs:12:25)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 0
+# fail 5
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 293.325854

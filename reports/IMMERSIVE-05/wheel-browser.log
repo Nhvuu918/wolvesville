@@ -1,0 +1,5 @@
+E2E_STAGE real-normal-assignment
+FATE customization PASS
+FATE animation, audio invocation, privacy PASS; screencast frames=116
+FATE all 16 themes layout, mute, cancellation PASS
+FATE_BROWSER_PASS

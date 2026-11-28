@@ -1,0 +1,45 @@
+{
+  "build": "1.7.23-s15-representative-order-wip",
+  "defects": [
+    {
+      "id": "WV-BR-2026-1125-01",
+      "status": "REVALIDATED_PASS",
+      "evidence": {
+        "suite": "browser_s15_normal_e2e.py",
+        "version": "1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-representative/browser-cert/1.3.3-browser_s15_normal_e2e.log"
+      }
+    },
+    {
+      "id": "WV-BR-2026-1125-02",
+      "status": "RETEST_PASS_AFTER_HELPER_FIX",
+      "rootCauseEvidence": "Helper called chooseTarget without waiting for working=false; production function intentionally returns during working. Wait for idle, select, assert selectedTarget, then submit. Original race not uniquely reproduced, no gameplay assertion removed or deadline changed.",
+      "priorFailure": "reports/BB_STABILITY_BROWSER_DEFECTS.json",
+      "diagnostic": "reports/s15-representative/revival-diagnostic.log",
+      "after": {
+        "suite": "browser_s15_deep_medium_e2e.py",
+        "version": "1.3.3",
+        "status": "PASS",
+        "exitCode": 0,
+        "log": "reports/s15-representative/browser-five/1.3.3-browser_s15_deep_medium_e2e.log"
+      },
+      "assertionsPreserved": true
+    }
+  ],
+  "newFailures": [
+    {
+      "id": "WV-BR-2026-1125-03",
+      "status": "OPEN_FAIL",
+      "evidence": {
+        "suite": "browser_s15_scale_rescue_e2e.py",
+        "version": "1.3.3",
+        "status": "FAIL",
+        "exitCode": 1,
+        "log": "reports/s15-representative/browser-five/1.3.3-browser_s15_scale_rescue_e2e.log"
+      },
+      "note": "Observed hard-deadline failure; root cause not isolated; no retry counted"
+    }
+  ]
+}

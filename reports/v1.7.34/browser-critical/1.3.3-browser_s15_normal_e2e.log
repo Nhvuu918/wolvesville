@@ -1,0 +1,26 @@
+E2E_SCHEDULER_WAIT exclusive 6393
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 898
+E2E_RESOURCE start cpu "usage_usec 678304532\nuser_usec 551767172\nsystem_usec 126537359\nnice_usec 516768\nnr_periods 6152\nnr_throttled 291\nthrottled_usec 9383129\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s15_normal_e2e.py aura-village port 45151 db /tmp/wolvesville-s06-browser-6OD9Qj/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS aura-village
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py aura-village
+E2E_ISOLATION browser_s15_normal_e2e.py aura-knight port 43421 db /tmp/wolvesville-s06-browser-whEIx9/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS aura-knight
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py aura-knight
+E2E_ISOLATION browser_s15_normal_e2e.py role-village port 37451 db /tmp/wolvesville-s06-browser-3r33lT/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS role-village
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py role-village
+E2E_ISOLATION browser_s15_normal_e2e.py role-knight port 44051 db /tmp/wolvesville-s06-browser-zoLJV1/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS role-knight
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py role-knight
+E2E_ISOLATION browser_s15_normal_e2e.py aura-handoff-village port 35423 db /tmp/wolvesville-s06-browser-OBOTt4/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS aura-handoff-village
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py aura-handoff-village
+E2E_ISOLATION browser_s15_normal_e2e.py role-handoff-village port 36133 db /tmp/wolvesville-s06-browser-ypSaLm/test.sqlite
+NORMAL_GAMEPLAY_PLAYER_JOURNEY_PASS role-handoff-village
+S06_BROWSER_CASE_PASS browser_s15_normal_e2e.py role-handoff-village
+S06_BROWSER_PASS browser_s15_normal_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 790232118\nuser_usec 642623700\nsystem_usec 147608418\nnice_usec 629365\nnr_periods 6647\nnr_throttled 298\nthrottled_usec 9561058\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

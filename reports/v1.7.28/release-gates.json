@@ -1,0 +1,943 @@
+{
+  "version": "1.7.28",
+  "sourceFingerprint": "1a1d7bfc38d8e6184fb5ca56a5f69a64f62f4597642d13511f1a50965dcfd874",
+  "activeRuleVersion": "wolvesville-official-v1.3.3",
+  "proposedRuleVersion": "wolvesville-official-v1.3.4",
+  "state": "CANDIDATE",
+  "ownerPolicyApproved": true,
+  "activationAuthorized": false,
+  "readyForApproval": false,
+  "obligations": [
+    {
+      "id": "PACK-01",
+      "policy": "unanimity, full target set, KEEP, eligible-at-lock, no deadline",
+      "scope": [
+        9,
+        25,
+        48,
+        74,
+        76
+      ],
+      "implementation": "backend/src/experimental/owner-bb-v2/pack.ts",
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_pack_e2e.py",
+        "B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL",
+        "B/B owner final: representative RNG is server-bound and waiting survives restart"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": null,
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_BACKEND_REGRESSION.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "backendEvidence": [
+        {
+          "test": "B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL",
+          "status": "PASS"
+        },
+        {
+          "test": "B/B owner final: representative RNG is server-bound and waiting survives restart",
+          "status": "PASS"
+        }
+      ],
+      "browserEvidence": [
+        {
+          "suite": "browser_s15_bb_live_pack_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/s15-privacy-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_live_pack_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_live_pack_e2e.py",
+          "durationMs": 51922
+        }
+      ],
+      "privacyEvidence": "Bounded regression only; not release-certified",
+      "replayEvidence": "reports/s15-privacy-stability/backend-full.log",
+      "historicalStatus": "IMPLEMENTED_BOUNDED_LIVE_QA",
+      "currentBackendPass": [
+        "B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL",
+        "B/B owner final: representative RNG is server-bound and waiting survives restart"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_pack_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.28/browser/1.3.3+qa-bb-browser_s15_bb_live_pack_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_live_pack_e2e.py",
+          "durationMs": 30231
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log"
+      ]
+    },
+    {
+      "id": "PACK-02",
+      "policy": "SAME/RESOLVE, #48 only sole living wolf entitlement",
+      "scope": [
+        25,
+        48,
+        74,
+        77
+      ],
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_retaliation_e2e.py",
+        "B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": null,
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_BACKEND_REGRESSION.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "backendEvidence": [
+        {
+          "test": "B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay",
+          "status": "PASS"
+        }
+      ],
+      "browserEvidence": [
+        {
+          "suite": "browser_s15_bb_live_retaliation_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/s15-privacy-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_live_retaliation_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_live_retaliation_e2e.py",
+          "durationMs": 23863
+        }
+      ],
+      "privacyEvidence": "Bounded regression only; not release-certified",
+      "replayEvidence": "reports/s15-privacy-stability/backend-full.log",
+      "historicalStatus": "IMPLEMENTED_BOUNDED_LIVE_QA",
+      "currentBackendPass": [
+        "B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_retaliation_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log"
+      ]
+    },
+    {
+      "id": "PACK-03",
+      "policy": "BB-REP-NEW-01=B: one server RNG all-player permutation, immutable per-game archive, filter lawful current participants, no initial priority",
+      "implementation": "backend/src/experimental/owner-bb-v2/representative-order.ts",
+      "tests": [
+        "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+        "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+        "B/B owner final: representative RNG is server-bound and waiting survives restart"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "note": "Old QA archives keep old policy; replay checks stored tape. No migration or retroactive change.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": null,
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_BACKEND_REGRESSION.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "backendEvidence": [
+        {
+          "test": "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+          "status": "PASS"
+        },
+        {
+          "test": "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+          "status": "PASS"
+        },
+        {
+          "test": "B/B owner final: representative RNG is server-bound and waiting survives restart",
+          "status": "PASS"
+        }
+      ],
+      "browserEvidence": [],
+      "privacyEvidence": "Bounded regression only; not release-certified",
+      "replayEvidence": "reports/s15-privacy-stability/legacy-qa-archive-compatibility.log",
+      "historicalStatus": "IMPLEMENTED_BOUNDED_LIVE_QA",
+      "currentBackendPass": [
+        "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+        "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+        "B/B owner final: representative RNG is server-bound and waiting survives restart"
+      ],
+      "currentBrowser": [],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log"
+      ]
+    },
+    {
+      "id": "TRAP-01",
+      "policy": "#25 aura, #74 role, #5 exact judgment; two placements, persistent, valid action only",
+      "scope": [
+        5,
+        10,
+        25,
+        74
+      ],
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_trap_e2e.py",
+        "B/B live trap: delayed valid use, private typed results, two placements, consumption and restart",
+        "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": null,
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_BACKEND_REGRESSION.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "backendEvidence": [
+        {
+          "test": "B/B live trap: delayed valid use, private typed results, two placements, consumption and restart",
+          "status": "PASS"
+        },
+        {
+          "test": "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged",
+          "status": "PASS"
+        }
+      ],
+      "browserEvidence": [
+        {
+          "suite": "browser_s15_bb_live_trap_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/s15-privacy-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_live_trap_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_live_trap_e2e.py",
+          "durationMs": 52569
+        }
+      ],
+      "privacyEvidence": "Bounded regression only; not release-certified",
+      "replayEvidence": "reports/s15-privacy-stability/backend-full.log",
+      "historicalStatus": "IMPLEMENTED_BOUNDED_LIVE_QA",
+      "currentBackendPass": [
+        "B/B live trap: delayed valid use, private typed results, two placements, consumption and restart",
+        "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_trap_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log"
+      ]
+    },
+    {
+      "id": "TRAP-02",
+      "policy": "BB-04=B direct death, guard cooldown",
+      "scope": [
+        5,
+        10,
+        25,
+        31,
+        74
+      ],
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_guard_e2e.py",
+        "B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "IMPLEMENTED_STAGED_QA_ONLY",
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_BACKEND_REGRESSION.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "backendEvidence": [
+        {
+          "test": "B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay",
+          "status": "PASS"
+        }
+      ],
+      "browserEvidence": [
+        {
+          "suite": "browser_s15_bb_live_guard_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/s15-privacy-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_live_guard_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_live_guard_e2e.py",
+          "durationMs": 26304
+        }
+      ],
+      "privacyEvidence": "Bounded regression only; not release-certified",
+      "replayEvidence": "reports/s15-privacy-stability/backend-full.log",
+      "historicalStatus": "IMPLEMENTED_STAGED_QA_ONLY",
+      "currentBackendPass": [
+        "B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_guard_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log"
+      ]
+    },
+    {
+      "id": "TRAP-03",
+      "policy": "BB-05=B cross-window #29, PH-01, resource consumption, delayed public death, once-only mark",
+      "scope": [
+        8,
+        10,
+        25,
+        29
+      ],
+      "tests": [
+        "tests/sprint15-bb-live.test.mjs",
+        "browser_s15_bb_live_witch_e2e.py",
+        "browser_s15_bb_cross_window_e2e.py",
+        "B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory",
+        "B/B live Witch: poison-only consumes trap and potion, later rescue is normal",
+        "B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)",
+        "B/B owner final: separate rescue and poison windows persist one nightly trap group",
+        "B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn",
+        "Stability BB: empty split windows retain mark, later poison-only window consumes once"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "IMPLEMENTED_STAGED_QA_ONLY",
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_BACKEND_REGRESSION.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "backendEvidence": [
+        {
+          "test": "B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory",
+          "status": "PASS"
+        },
+        {
+          "test": "B/B live Witch: poison-only consumes trap and potion, later rescue is normal",
+          "status": "PASS"
+        },
+        {
+          "test": "B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)",
+          "status": "PASS"
+        },
+        {
+          "test": "B/B owner final: separate rescue and poison windows persist one nightly trap group",
+          "status": "PASS"
+        },
+        {
+          "test": "B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn",
+          "status": "PASS"
+        },
+        {
+          "test": "Stability BB: empty split windows retain mark, later poison-only window consumes once",
+          "status": "PASS"
+        }
+      ],
+      "browserEvidence": [
+        {
+          "suite": "browser_s15_bb_live_witch_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/s15-privacy-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_live_witch_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_live_witch_e2e.py",
+          "durationMs": 28511
+        },
+        {
+          "suite": "browser_s15_bb_cross_window_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/s15-privacy-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_cross_window_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_cross_window_e2e.py",
+          "durationMs": 33856
+        }
+      ],
+      "privacyEvidence": "Bounded regression only; not release-certified",
+      "replayEvidence": "reports/s15-privacy-stability/backend-full.log",
+      "historicalStatus": "IMPLEMENTED_STAGED_QA_ONLY",
+      "currentBackendPass": [
+        "B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory",
+        "B/B live Witch: poison-only consumes trap and potion, later rescue is normal",
+        "B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)",
+        "B/B owner final: separate rescue and poison windows persist one nightly trap group",
+        "B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn",
+        "Stability BB: empty split windows retain mark, later poison-only window consumes once"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_live_witch_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        },
+        {
+          "suite": "browser_s15_bb_cross_window_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "INCOMPLETE",
+          "exitCode": null,
+          "log": null
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log"
+      ]
+    },
+    {
+      "id": "TRAP-04",
+      "policy": "same-night placement/activation, resource/cooldown and real phase dependencies",
+      "implementation": "live-profile.ts: staged night1 placement and later execution for guard/witch; backend/src/official/revival-capability.ts; backend/src/official/s13-mechanics.ts",
+      "status": "PARTIAL",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "No new Trap code in v1.7.28; QA deck [8,10,25,26] inherited. Trapped revival inversion mapping, cross-window death chains, other mandatory classes remain unresolved.",
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_BACKEND_REGRESSION.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "tests": [],
+      "backendEvidence": [
+        {
+          "status": "NO_EXACT_OBLIGATION_TEST",
+          "path": "reports/s15-privacy-stability/backend-full.log"
+        }
+      ],
+      "browserEvidence": [],
+      "privacyEvidence": "Bounded regression only; not release-certified",
+      "replayEvidence": "PENDING",
+      "historicalStatus": "BLOCKED_IMPLEMENTATION_AND_ACCEPTANCE",
+      "currentBackendPass": [
+        "S17 TRAP-04: placement before same-night inspection uses existing phase priority and consumes once"
+      ],
+      "currentBrowser": [],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log",
+        "tests/sprint17-trap-revival.test.mjs",
+        "tests/browser_s17_trap_revival_e2e.py"
+      ]
+    },
+    {
+      "id": "TRAP-05",
+      "policy": "persistent marks after death/revival, VH73/VH76 and death-chain, PH-01",
+      "implementation": "no supported combined #10/#26 revival deck; verify mark state and mapping under legal execution; backend/src/official/revival-capability.ts; backend/src/official/s13-mechanics.ts",
+      "status": "PARTIAL",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "No new Trap code in v1.7.28; QA deck [8,10,25,26] inherited. Trapped revival inversion mapping, cross-window death chains, other mandatory classes remain unresolved.",
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_BACKEND_REGRESSION.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "tests": [],
+      "backendEvidence": [
+        {
+          "status": "NO_EXACT_OBLIGATION_TEST",
+          "path": "reports/s15-privacy-stability/backend-full.log"
+        }
+      ],
+      "browserEvidence": [],
+      "privacyEvidence": "Bounded regression only; not release-certified",
+      "replayEvidence": "PENDING",
+      "historicalStatus": "BLOCKED_IMPLEMENTATION_AND_ACCEPTANCE",
+      "currentBackendPass": [
+        "S17 TRAP-05: mark persists through death, public medium revival, next-night inspection and restart"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s17_trap_revival_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.28/browser/1.3.3+qa-bb-browser_s17_trap_revival_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s17_trap_revival_e2e.py",
+          "durationMs": 24169
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log",
+        "tests/sprint17-trap-revival.test.mjs",
+        "tests/browser_s17_trap_revival_e2e.py"
+      ]
+    },
+    {
+      "id": "TRAP-06",
+      "policy": "additional source-authorized mappings, BB-PENDING-03=B, including actual eligible cross-window actors",
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "note": "Do not invent inversion for sedative or other unlisted skill. Inventory source-backed mapping before opening domain.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "Do not invent inversion for sedative or other unlisted skill. Inventory source-backed mapping before opening domain.",
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_BACKEND_REGRESSION.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "tests": [],
+      "backendEvidence": [
+        {
+          "status": "NO_EXACT_OBLIGATION_TEST",
+          "path": "reports/s15-privacy-stability/backend-full.log"
+        }
+      ],
+      "browserEvidence": [],
+      "privacyEvidence": "Bounded regression only; not release-certified",
+      "replayEvidence": "PENDING",
+      "historicalStatus": "BLOCKED_IMPLEMENTATION_AND_ACCEPTANCE",
+      "currentBackendPass": [],
+      "currentBrowser": [],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log"
+      ]
+    },
+    {
+      "id": "PACK-04",
+      "policy": "Extra attack grants from source #93 (verified bounded mixed), #17/#21/#86 still unverified; VH74 cap two",
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "note": "Do not grant a second target merely because #48 remains with another living wolf. #93 conversion grant and both targets verified on exact mixed profile; other grants need source-bound runtime and branch acceptance.",
+      "tests": [
+        "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+        "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative",
+        "browser_s15_bb_mixed_e2e.py"
+      ],
+      "exitCriteria": "Verify each applicable source grant with alive/eligible changes, full-set consensus, max two, SAME/RESOLVE, restart, replay and authorized target projection; verify denial without a grant.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "blocker": "Do not grant a second target merely because #48 remains with another living wolf. #93 conversion grant and both targets verified on exact mixed profile; other grants need source-bound runtime and branch acceptance.",
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_BACKEND_REGRESSION.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "backendEvidence": [
+        {
+          "test": "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+          "status": "PASS"
+        },
+        {
+          "test": "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative",
+          "status": "PASS"
+        }
+      ],
+      "browserEvidence": [
+        {
+          "suite": "browser_s15_bb_mixed_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/s15-privacy-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_mixed_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_mixed_e2e.py",
+          "durationMs": 33107
+        }
+      ],
+      "privacyEvidence": "reports/BB_PRIVACY_STABILITY_PRIVACY_ACCEPTANCE.json",
+      "replayEvidence": "reports/s15-privacy-stability/backend-full.log",
+      "historicalStatus": "PARTIAL_LIVE_QA",
+      "currentBackendPass": [
+        "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+        "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_mixed_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.28/browser-atomic/1.3.3+qa-bb-browser_s15_bb_mixed_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_mixed_e2e.py",
+          "durationMs": 33233
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log"
+      ]
+    },
+    {
+      "id": "PACK-05",
+      "policy": "Converted eligible wolf retains original all-player rank. BB-REP-NEW-01=B approved; #93 conversion after #94 dies.",
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "note": "Mixed live [48,74,77,84,93,94] verified if both backend and browser pass. #93 conversion at day resolution, no artificial transition. Same-night mid-window eligibility change and final victory after representative death remain unclosed; fail closed if set changes after lock. Pre-resolution direct target-list, error and receipt leak addressed by public-seat choices and server-only validation. Hidden-ineligible request counts as a response but retains the previous valid choice; no eligibility change. Inference from actual attack/no-attack and third-party redirection remain unverified. General mixed privacy is not release-certified.",
+      "tests": [
+        "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+        "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+        "browser_s15_bb_conversion_e2e.py",
+        "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+        "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative",
+        "browser_s15_bb_mixed_e2e.py"
+      ],
+      "mixedLiveVerified": true,
+      "exitCriteria": "Mixed #93 and initial wolf actual lawful conversion; both rank cases; lawful membership changes while collecting and locked; final winner closure after retaliation; target projection must not expose unauthorized faction; SQLite restart, replay and browser acceptance.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "blocker": "State-level membership test added; lawful mid-window live transition not implemented, browser not accepted.",
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_BACKEND_REGRESSION.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "backendEvidence": [
+        {
+          "test": "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+          "status": "PASS"
+        },
+        {
+          "test": "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+          "status": "PASS"
+        },
+        {
+          "test": "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+          "status": "PASS"
+        },
+        {
+          "test": "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative",
+          "status": "PASS"
+        }
+      ],
+      "browserEvidence": [
+        {
+          "suite": "browser_s15_bb_conversion_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/s15-privacy-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_conversion_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_conversion_e2e.py",
+          "durationMs": 25723
+        },
+        {
+          "suite": "browser_s15_bb_mixed_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/s15-privacy-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_mixed_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_mixed_e2e.py",
+          "durationMs": 33107
+        }
+      ],
+      "privacyEvidence": "reports/BB_PRIVACY_STABILITY_PRIVACY_ACCEPTANCE.json",
+      "replayEvidence": "reports/s15-privacy-stability/backend-full.log",
+      "historicalStatus": "PARTIAL_LIVE_QA",
+      "currentBackendPass": [
+        "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+        "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+        "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+        "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_conversion_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.28/browser-atomic/1.3.3+qa-bb-browser_s15_bb_conversion_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_conversion_e2e.py",
+          "durationMs": 19962
+        },
+        {
+          "suite": "browser_s15_bb_mixed_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.28/browser-atomic/1.3.3+qa-bb-browser_s15_bb_mixed_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_mixed_e2e.py",
+          "durationMs": 33233
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json",
+        "Inherited v1.7.26 membership evidence (not fresh unless matching current tests pass): current pending count, lost entitlement, new member, KEEP and fixed representative"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log"
+      ]
+    },
+    {
+      "id": "RELEASE-01",
+      "policy": "immutable 1.3.2/1.3.3 archive bindings, separate effective rule registry, migration and replay checks",
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "exitCriteria": "All listed in-domain implementation, integration, privacy, replay and critical browser obligations verified on same source; no unsupported transition.",
+      "blocker": "BLOCKED_OFFICIAL_ACTIVATION_PATH_AND_ACCEPTANCE",
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_BACKEND_REGRESSION.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "tests": [],
+      "backendEvidence": [
+        {
+          "status": "NO_EXACT_OBLIGATION_TEST",
+          "path": "reports/s15-privacy-stability/backend-full.log"
+        }
+      ],
+      "browserEvidence": [],
+      "privacyEvidence": "Bounded regression only; not release-certified",
+      "replayEvidence": "reports/s15-privacy-stability/legacy-qa-archive-compatibility.log",
+      "historicalStatus": "BLOCKED_OFFICIAL_ACTIVATION_PATH_AND_ACCEPTANCE",
+      "currentBackendPass": [],
+      "currentBrowser": [],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log"
+      ]
+    },
+    {
+      "id": "RELEASE-02",
+      "policy": "authorization, REST/WS, SQLite restart, current critical browser suite and human QA evidence",
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "exitCriteria": "All mandatory current release browser obligations without unresolved failure, bounded privacy/ACL and persistence evidence, actual owner QA feedback, no implicit production activation.",
+      "ruleProvenance": "WV-RD-BB-2026-01; BB-REP-NEW-01=B; original 1.3.3 source and role contracts as applicable",
+      "blocker": "PENDING_FINAL_ACCEPTANCE",
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_BACKEND_REGRESSION.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "tests": [
+        "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged",
+        "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+        "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events"
+      ],
+      "backendEvidence": [
+        {
+          "test": "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged",
+          "status": "PASS"
+        },
+        {
+          "test": "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+          "status": "PASS"
+        },
+        {
+          "test": "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events",
+          "status": "PASS"
+        }
+      ],
+      "browserEvidence": [],
+      "privacyEvidence": "Bounded regression only; not release-certified",
+      "replayEvidence": "reports/s15-privacy-stability/backend-full.log",
+      "historicalStatus": "PENDING_FINAL_ACCEPTANCE",
+      "currentBackendPass": [
+        "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged",
+        "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+        "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events"
+      ],
+      "currentBrowser": [],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log"
+      ]
+    },
+    {
+      "id": "PACK-PRIVACY-01",
+      "policy": "No secret faction-dependent target list, receipt, error or visible metadata before resolution; server still validates actual entitlement",
+      "scope": [
+        48,
+        74,
+        77,
+        84,
+        93,
+        94
+      ],
+      "implementation": "backend/src/experimental/owner-bb-v2/pack.ts; live-profile.ts; runtime.ts; frontend/integration.js; backend/src/engine/visibility.ts; backend/src/game/coordinator.ts; backend/src/multiplayer/server.ts",
+      "tests": [
+        "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+        "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events",
+        "browser_s15_bb_mixed_e2e.py"
+      ],
+      "status": "PARTIAL_OR_PENDING_ACCEPTANCE",
+      "ruleProvenance": "WV-RD-BB-2026-01 Articles 1,2,7; VH62/VH68; #93/#94; BB-REP-NEW-01=B",
+      "blocker": "Global state revision/timing, revoked-target policy, post-resolution/third-party scope and browser not fully accepted.",
+      "exitCriteria": "Verify direct and outcome-dependent privacy across all in-domain target/redirect cases without changing approved eligibility; all observers, reconnect, replay and authorized events; no secret status metadata.",
+      "backendEvidence": [
+        {
+          "test": "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+          "status": "PASS"
+        },
+        {
+          "test": "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events",
+          "status": "PASS"
+        }
+      ],
+      "browserEvidence": [
+        {
+          "suite": "browser_s15_bb_mixed_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/s15-privacy-stability/browser-bb/1.3.3+qa-bb-browser_s15_bb_mixed_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_mixed_e2e.py",
+          "durationMs": 33107
+        }
+      ],
+      "privacyEvidence": "reports/BB_PRIVACY_STABILITY_PRIVACY_ACCEPTANCE.json",
+      "replayEvidence": "reports/s15-privacy-stability/mixed-archive-compatibility.log",
+      "evidenceFiles": [
+        "reports/BB_PRIVACY_STABILITY_PRIVACY_ACCEPTANCE.json",
+        "reports/BB_PRIVACY_STABILITY_BROWSER_RESULTS.json"
+      ],
+      "historicalStatus": "PARTIAL_LIVE_QA",
+      "currentBackendPass": [
+        "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+        "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events"
+      ],
+      "currentBrowser": [
+        {
+          "suite": "browser_s15_bb_mixed_e2e.py",
+          "version": "1.3.3+qa-bb",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.28/browser-atomic/1.3.3+qa-bb-browser_s15_bb_mixed_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s15_bb_mixed_e2e.py",
+          "durationMs": 33233
+        }
+      ],
+      "historicalEvidenceOnly": [
+        "reports/BB_PRIVACY_STABILITY_RELEASE_SCOPE.json",
+        "Inherited v1.7.26 mixed privacy evidence (not fresh unless matching current tests pass): authorized event ordinals, replay counts, resolution receipts and restart"
+      ],
+      "currentEvidenceFiles": [
+        "reports/v1.7.28/acceptance.json",
+        "reports/v1.7.28/browser-results.json",
+        "reports/v1.7.28/focused.log"
+      ]
+    }
+  ],
+  "additionalGates": [
+    {
+      "id": "SHARED-23",
+      "status": "PARTIAL",
+      "ruleSource": "character.json#23, VH06, VH82, LIFE-01",
+      "code": "backend/src/official/soul-shooter.ts; backend/src/engine/service.ts; backend/src/official/s13-mechanics.ts; backend/src/official/stable-death-proof.ts",
+      "test": "tests/sprint17-soul-lifecycle.test.mjs; tests/browser_s17_soul_e2e.py; tests/browser_s18_soul_second_death_e2e.py",
+      "evidence": "focused.log; browser-results.json",
+      "blocker": "Bounded QA only. Fresh #8 blind attack can reach secretly revived #23, with no-op for final dead. Finite-cost blind attacks, wrong-faction shot/resource/disclosure policy, all other interaction classes and global revision/timing privacy remain open.",
+      "exitCriteria": "All mandatory authorized interaction classes, target policy, first death, secret revival, shots, second death, victory, restart/replay/browser.",
+      "freshBackendPass": [
+        "S17 #23 live session: private revival, two bullets, protection, vote ban, retry, restart, replay",
+        "S17 LIFE-01: two accepted night attacks finalize pending soul without duplicate public death",
+        "S17 VH82: village victory while soul waits, no extra night or ammunition",
+        "S18 LIFE-01: fresh blind knight attempt after secret revival, then identical dead-seat retry without duplicate death"
+      ],
+      "freshBrowser": [
+        {
+          "suite": "browser_s17_soul_e2e.py",
+          "version": "1.3.3",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.28/browser/1.3.3-browser_s17_soul_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s17_soul_e2e.py",
+          "durationMs": 24047
+        },
+        {
+          "suite": "browser_s18_soul_second_death_e2e.py",
+          "version": "1.3.3",
+          "status": "PASS",
+          "exitCode": 0,
+          "log": "reports/v1.7.28/browser/1.3.3-browser_s18_soul_second_death_e2e.log",
+          "command": "node scripts/run-browser-s06.mjs browser_s18_soul_second_death_e2e.py",
+          "durationMs": 23445
+        }
+      ]
+    },
+    {
+      "id": "BACKEND",
+      "status": "PASS",
+      "evidence": "acceptance.json",
+      "exitCriteria": "All 460 historical outcomes unchanged and one new test PASS; PostgreSQL skips separate."
+    },
+    {
+      "id": "BROWSER",
+      "status": "INCOMPLETE_OR_FAIL",
+      "evidence": "browser-results.json",
+      "exitCriteria": "All 110 version obligations pass (109 inherited + 1 new)."
+    },
+    {
+      "id": "HUMAN_QA",
+      "status": "PENDING",
+      "evidence": "HUMAN_QA.md",
+      "exitCriteria": "Actual owner feedback for UI tasks."
+    },
+    {
+      "id": "PG_LIVE",
+      "status": "PENDING",
+      "evidence": "Backend skips",
+      "exitCriteria": "Live DB regression on PostgreSQL for production."
+    }
+  ]
+}

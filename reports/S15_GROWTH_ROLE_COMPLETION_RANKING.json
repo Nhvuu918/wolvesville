@@ -1,0 +1,1251 @@
+{
+  "scope": "All 49 baseline executable roles; score is technical triage, not a new metric or certificate.",
+  "ranking": [
+    {
+      "id": 25,
+      "name": "Tiên Tri",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "#10 trap and other unimplemented distortions"
+      ],
+      "sharedMechanismDependencies": [
+        "IN"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)",
+        "tests/sprint15-gameplay-ux.test.mjs",
+        "tests/sprint15-seer-version.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 2
+    },
+    {
+      "id": 31,
+      "name": "Bảo Vệ",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Proven actual regular bite absorption in [25,31,48,74], self guard, cooldown and distinct target. Piercing attacks, repeated hits against one target, multiple protection layers and other decks remain unverified; not FULL."
+      ],
+      "sharedMechanismDependencies": [
+        "DF"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "risk": "HIGH",
+      "score": 2
+    },
+    {
+      "id": 34,
+      "name": "Sói Mộng Du",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "sharedMechanismDependencies": [
+        "BL"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "risk": "HIGH",
+      "score": 2
+    },
+    {
+      "id": 72,
+      "name": "Sói Pháp Sư",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Other investigation/blocking interactions; pack"
+      ],
+      "sharedMechanismDependencies": [
+        "NO"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Single-target aura-only QA; exact-role interaction and wolf team victory not certified.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-aura-expansion.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 2
+    },
+    {
+      "id": 74,
+      "name": "Tiên Tri Huyền Bí",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "#10 false-role trap not integrated"
+      ],
+      "sharedMechanismDependencies": [
+        "IN"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "risk": "HIGH",
+      "score": 2
+    },
+    {
+      "id": 84,
+      "name": "Phù Thủy Câm",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Other group communication and lock interaction domains"
+      ],
+      "sharedMechanismDependencies": [
+        "BL"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Other configurations, interaction with groups",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 2
+    },
+    {
+      "id": 79,
+      "name": "Sói Hòa Bình",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Director trigger, wolf team actions, broader composition"
+      ],
+      "sharedMechanismDependencies": [
+        "IN",
+        "VT"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "risk": "HIGH",
+      "score": 4
+    },
+    {
+      "id": 80,
+      "name": "Nghệ Sĩ Vĩ Cầm",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Revival and alignment-transition integration not tested"
+      ],
+      "sharedMechanismDependencies": [
+        "IN",
+        "RV"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Death facts only from #8/#32 night attacks in closed decks; revival/transformations and team victory not certified.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 4
+    },
+    {
+      "id": 43,
+      "name": "Sói Bắn Tỉa",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Pack actions and other protection interactions"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "RS"
+      ],
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ],
+      "implementationBlocker": "Only #25 attack target in closed QA decks; faction/team bite and victory not implemented.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 5
+    },
+    {
+      "id": 48,
+      "name": "Sói Thủ Lĩnh",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Multi-wolf and protections outside current composition"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "WC"
+      ],
+      "ruleAuditFlags": [
+        "target domain / target-kind"
+      ],
+      "implementationBlocker": "Multi-wolf action, other protection/attack domains",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-approved.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 5
+    },
+    {
+      "id": 49,
+      "name": "Sói Ảo Ảnh",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Other investigation and blocking interactions; pack"
+      ],
+      "sharedMechanismDependencies": [
+        "NO",
+        "RS"
+      ],
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ],
+      "implementationBlocker": "Aura-only in QA deck; wolf team attack, exact-role interaction and victory not certified.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-aura-expansion.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 5
+    },
+    {
+      "id": 50,
+      "name": "Sói Gây Tê",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "All skill-block and team-action domains"
+      ],
+      "sharedMechanismDependencies": [
+        "BL",
+        "TM"
+      ],
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ],
+      "implementationBlocker": "Collective wolf actions and wider protection/lock interactions",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 5
+    },
+    {
+      "id": 55,
+      "name": "Sói Thạch",
+      "inventoried": true,
+      "branchCount": 2,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Village night/day attacks unimplemented",
+        "Ordinary wolf pack action absent; role name override private"
+      ],
+      "sharedMechanismDependencies": [
+        "DF",
+        "TR"
+      ],
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ],
+      "implementationBlocker": "Single successful hanging protection and ordinary-wolf marker verified; village attacks, overlap, post-death marks and wolf pack action remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-breakthrough.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 5
+    },
+    {
+      "id": 64,
+      "name": "Người Rung Chuông",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "other attack sources, linked death, revival, transformations; self-selection not certified"
+      ],
+      "sharedMechanismDependencies": [
+        "IN",
+        "LK"
+      ],
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ],
+      "implementationBlocker": "Generalized protection, transformation, revival, linked death and mixed factions outside verified composition",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-scaleup.test.mjs",
+        "tests/browser_s15_scale_bell_e2e.py"
+      ],
+      "risk": "HIGH",
+      "score": 5
+    },
+    {
+      "id": 76,
+      "name": "Sói Ác Mộng",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Pack and all block-order domains"
+      ],
+      "sharedMechanismDependencies": [
+        "BL",
+        "RS"
+      ],
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "risk": "HIGH",
+      "score": 5
+    },
+    {
+      "id": 85,
+      "name": "Thầy Thôi Miên",
+      "inventoried": true,
+      "branchCount": 2,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Other death triggers, self selection not admitted",
+        "Other attack families, competing shields/redirects"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "RF"
+      ],
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ],
+      "implementationBlocker": "Nightly hypnosis and redirect of #8 attack tested; other lethal night sources, overlapping protections and team victory remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-deep.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 5
+    },
+    {
+      "id": 36,
+      "name": "Pháp Sư",
+      "inventoried": true,
+      "branchCount": 3,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Both named skills exist; general attack, shield stacking, team victory and arbitrary decks not certified.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 6
+    },
+    {
+      "id": 63,
+      "name": "Người Gắn Cờ",
+      "inventoried": true,
+      "branchCount": 2,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Self-selection not admitted",
+        "Immune recipient, redirect cycles, other attack families"
+      ],
+      "sharedMechanismDependencies": [
+        "DF",
+        "RF",
+        "RS"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Redirect tested after night 2 with successful-use budget and cooldown; immune targets, cycles, other attacks and team victory remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-deep.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 6
+    },
+    {
+      "id": 66,
+      "name": "Người Gác Đêm",
+      "inventoried": true,
+      "branchCount": 2,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "sharedMechanismDependencies": [
+        "DF",
+        "IN",
+        "RS"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Observation only with #67 shield; protection types, death and victory outside restricted QA not certified.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs",
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 6
+    },
+    {
+      "id": 67,
+      "name": "Thợ Rèn",
+      "inventoried": true,
+      "branchCount": 2,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Other defenses and attacks not fully verified",
+        "Unblocked sword and all attack interactions not certified"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Wider interaction and victory certification",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs",
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 6
+    },
+    {
+      "id": 77,
+      "name": "Thợ Săn Quái Thú",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Self trap, pack representative and stacked protections not fully verified"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "DF",
+        "OP"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Trap intercept and counter-kill verified for solo knight; pack bite, frenzy, multiple protections and village victory remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 6
+    },
+    {
+      "id": 87,
+      "name": "Dược Sĩ",
+      "inventoried": true,
+      "branchCount": 2,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Other pack/protection interactions; other rescue rules not generalized.",
+        "Other chat classes and generalized combinations."
+      ],
+      "sharedMechanismDependencies": [
+        "BL",
+        "DF",
+        "RS"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "One-flask rescue of one bite victim (including self) in one-wolf domain verified; other attack/protection combinations and other chat groups remain unsupported.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-final-breakthrough.test.mjs",
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 6
+    },
+    {
+      "id": 9,
+      "name": "Thiên Sứ Tuyết",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "All attack families and stacked defenses"
+      ],
+      "sharedMechanismDependencies": [
+        "DF",
+        "RS",
+        "TM"
+      ],
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "risk": "HIGH",
+      "score": 7
+    },
+    {
+      "id": 28,
+      "name": "Thằng Ngố",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [],
+      "sharedMechanismDependencies": [
+        "VT",
+        "WC"
+      ],
+      "ruleAuditFlags": [
+        "phase / trigger thời gian",
+        "target domain / target-kind",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ],
+      "implementationBlocker": "No remaining role-local mandatory branch in locked v1.3.3 acceptance; arbitrary deck support separate.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-final-breakthrough.test.mjs",
+        "tests/sprint15-breakthrough.test.mjs",
+        "tests/sprint15-deep.test.mjs",
+        "tests/sprint15-aura-expansion.test.mjs",
+        "tests/sprint15-approved.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 7
+    },
+    {
+      "id": 32,
+      "name": "Xạ Thủ",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Full upgrade and rescue interactions remain unverified"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "RS",
+        "TM"
+      ],
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ],
+      "implementationBlocker": "Global attack/protection interactions; cross-deck certification",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 7
+    },
+    {
+      "id": 68,
+      "name": "Sói Trẻ",
+      "inventoried": true,
+      "branchCount": 1,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Hanging and defenses not fully verified"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "LK",
+        "OP"
+      ],
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ],
+      "implementationBlocker": "Other death causes and protection interactions",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 7
+    },
+    {
+      "id": 88,
+      "name": "Thợ Săn",
+      "inventoried": true,
+      "branchCount": 2,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Blocked night in mixed status domain not yet integration-tested",
+        "Other valid protections outside currently admitted games"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "LK",
+        "OP"
+      ],
+      "ruleAuditFlags": [
+        "target domain / target-kind"
+      ],
+      "implementationBlocker": "Night/hanging follow, Hunter killed by revenge and snow shield consumption verified in restricted decks; stale mark duration and other protections unresolved.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-closure.test.mjs",
+        "tests/sprint15-final-breakthrough.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 7
+    },
+    {
+      "id": 93,
+      "name": "Sói Lưu Đày",
+      "inventoried": true,
+      "branchCount": 3,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "General action locks/pack conversion not fully covered",
+        "One-wolf pack now implemented; multiple wolves and post-conversion aura unresolved.",
+        "Multiple wolves consensus, other protections, aura after conversion and inherited skills."
+      ],
+      "sharedMechanismDependencies": [
+        "BL",
+        "TR",
+        "VT"
+      ],
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ],
+      "implementationBlocker": "Night skill lock + day chat and vote restriction; alignment change after partner death verified; one-wolf two-target bite verified; multi-wolf consensus, post-conversion aura and skill retention unresolved.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-final-breakthrough.test.mjs",
+        "tests/sprint15-breakthrough.test.mjs",
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 7
+    },
+    {
+      "id": 8,
+      "name": "Kỵ Sĩ Không Đầu",
+      "inventoried": true,
+      "branchCount": 3,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Wolf team bite and universal defense interactions",
+        "Overlapping immunity; pack bite remains unsupported",
+        "Unrestricted role combinations"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "DF",
+        "VT",
+        "WC"
+      ],
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ],
+      "implementationBlocker": "Hanging immunity verified with living wolf; wolf pack attack, competing defenses and unrestricted victory remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)",
+        "tests/sprint15-breakthrough.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 9
+    },
+    {
+      "id": 29,
+      "name": "Phù Thủy",
+      "inventoried": true,
+      "branchCount": 3,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Multiattack, hibernation and prolonged life",
+        "x2, linked rescue, hibernation, broader attack sources",
+        "Multiple protection types, rescue of preliminary target then poison same target not admitted"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "DF",
+        "RS",
+        "RV"
+      ],
+      "ruleAuditFlags": [
+        "target domain / target-kind"
+      ],
+      "implementationBlocker": "Preliminary-death notice, self/other rescue, both potions in a night and poison with shield verified; x2, linked rescue, multiple attacks, hibernation and team victory remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-deep.test.mjs",
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 9
+    },
+    {
+      "id": 94,
+      "name": "Kẻ Giải Nguyền",
+      "inventoried": true,
+      "branchCount": 2,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Competing redirects and other attack families",
+        "Exact-role and post-conversion aura not certified"
+      ],
+      "sharedMechanismDependencies": [
+        "NO",
+        "RF",
+        "RV"
+      ],
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "phase / trigger thời gian",
+        "target domain / target-kind"
+      ],
+      "implementationBlocker": "Living partner aura concealment and effigy redirect of knight lethal attack verified; competing redirects and attack families remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-breakthrough.test.mjs",
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 9
+    },
+    {
+      "id": 16,
+      "name": "Phù Thủy Cấm Kỵ",
+      "inventoried": true,
+      "branchCount": 2,
+      "missingBranches": 0,
+      "interactionBlockers": [
+        "Self-target and all attack families not fully verified",
+        "Third-party target and combined effects not fully verified"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "BL",
+        "DF",
+        "RS",
+        "TM"
+      ],
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 11
+    },
+    {
+      "id": 52,
+      "name": "Chó Canh Gác",
+      "inventoried": true,
+      "branchCount": 2,
+      "missingBranches": 1,
+      "interactionBlockers": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "sharedMechanismDependencies": [
+        "DF"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Wolf dog, double dog, other attacks",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 12
+    },
+    {
+      "id": 33,
+      "name": "Sói Lừa Gạt",
+      "inventoried": true,
+      "branchCount": 3,
+      "missingBranches": 1,
+      "interactionBlockers": [
+        "Activation and interaction timing not certified",
+        "Broader effects and targets not certified",
+        "Multi-wolf protection and other unimplemented #33 branches"
+      ],
+      "sharedMechanismDependencies": [
+        "NO",
+        "VT"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Post-hanging private response in all-other-villager decks, including Hunter death-follow; mixed-faction eligibility and general village victory unresolved.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)",
+        "tests/sprint15-closure.test.mjs",
+        "tests/sprint15-final-breakthrough.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 14
+    },
+    {
+      "id": 58,
+      "name": "Thám Tử Ác Ma",
+      "inventoried": true,
+      "branchCount": 4,
+      "missingBranches": 1,
+      "interactionBlockers": [
+        "General transformations",
+        "Protection on one of two; competing death reactions",
+        "No general pack attack",
+        "Unrestricted combinations"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "IN"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Same faction, self+other and two other targets of different factions, sole survivor verified; wolf immunity and independent protection of one target remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-deep.test.mjs",
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 14
+    },
+    {
+      "id": 11,
+      "name": "Thợ Rèn Cơ Khí",
+      "inventoried": true,
+      "branchCount": 2,
+      "missingBranches": 1,
+      "interactionBlockers": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "sharedMechanismDependencies": [
+        "BL",
+        "DF",
+        "RS"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 16
+    },
+    {
+      "id": 5,
+      "name": "Thẩm Phán Linh Hồn",
+      "inventoried": true,
+      "branchCount": 2,
+      "missingBranches": 1,
+      "interactionBlockers": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "sharedMechanismDependencies": [
+        "DF",
+        "IN",
+        "RS",
+        "TR"
+      ],
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "risk": "HIGH",
+      "score": 19
+    },
+    {
+      "id": 15,
+      "name": "Thần Tình Yêu Hắc Ám",
+      "inventoried": true,
+      "branchCount": 5,
+      "missingBranches": 1,
+      "interactionBlockers": [
+        "General protections and accepted action after death",
+        "Link precedence, overwrite/restore",
+        "Only hanging in no-protection pair; night death, rescue, immunity",
+        "No general pack attack",
+        "Unrestricted combinations"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "DF",
+        "LK",
+        "WC"
+      ],
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ],
+      "implementationBlocker": "Single attack, secret pair, hanging-linked death and sole survivor verified; wolf immunity, protected or rescued links and overlapping links remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-deep.test.mjs",
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 19
+    },
+    {
+      "id": 37,
+      "name": "Ảo Thuật Gia",
+      "inventoried": true,
+      "branchCount": 4,
+      "missingBranches": 1,
+      "interactionBlockers": [
+        "Exact-role and attacks not enabled; overlapping redirects",
+        "Night attack exchange unimplemented",
+        "Exact-role not certified",
+        "Multiple modifiers/defense and other deck effects"
+      ],
+      "sharedMechanismDependencies": [
+        "IN",
+        "RF",
+        "TM",
+        "VT"
+      ],
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ],
+      "implementationBlocker": "Aura and hanging transposition verified; night attack and exact-role exchange, multiple overlapping redirects and victory remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-breakthrough.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 19
+    },
+    {
+      "id": 17,
+      "name": "Nữ Tu Huyết Thệ",
+      "inventoried": true,
+      "branchCount": 3,
+      "missingBranches": 1,
+      "interactionBlockers": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "BL",
+        "DF",
+        "IN",
+        "RS"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 20
+    },
+    {
+      "id": 20,
+      "name": "Sói Gai Độc",
+      "inventoried": true,
+      "branchCount": 2,
+      "missingBranches": 1,
+      "interactionBlockers": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "BL",
+        "IN",
+        "OP"
+      ],
+      "ruleAuditFlags": [
+        "target domain / target-kind",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "risk": "HIGH",
+      "score": 20
+    },
+    {
+      "id": 24,
+      "name": "Quản Ngục",
+      "inventoried": true,
+      "branchCount": 3,
+      "missingBranches": 2,
+      "interactionBlockers": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "BL",
+        "CH",
+        "DF"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 28
+    },
+    {
+      "id": 23,
+      "name": "Xạ Thủ Linh Hồn",
+      "inventoried": true,
+      "branchCount": 3,
+      "missingBranches": 2,
+      "interactionBlockers": [
+        "Self and broader attacks not fully verified",
+        "Pending-life and revival transition not integrated",
+        "Requires revival state and attack authorization"
+      ],
+      "sharedMechanismDependencies": [
+        "AT",
+        "DF",
+        "RV",
+        "TM",
+        "VT"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Revival, post-death actions, victory population",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 30
+    },
+    {
+      "id": 3,
+      "name": "Sói Tiên Tri",
+      "inventoried": true,
+      "branchCount": 4,
+      "missingBranches": 3,
+      "interactionBlockers": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "sharedMechanismDependencies": [
+        "IN",
+        "NO",
+        "TR"
+      ],
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ],
+      "implementationBlocker": "Only passive aura masking implemented; functional inspection, voluntary transformation, last wolf transformation, team bite and victory remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 37
+    },
+    {
+      "id": 19,
+      "name": "Kẻ Mặc Cả Bóng Tối",
+      "inventoried": true,
+      "branchCount": 10,
+      "missingBranches": 9,
+      "interactionBlockers": [
+        "Not implemented",
+        "Other branches and own-target direction not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented"
+      ],
+      "sharedMechanismDependencies": [
+        "BL",
+        "DF",
+        "IN",
+        "LK",
+        "TR",
+        "VT",
+        "WC"
+      ],
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "phase / trigger thời gian"
+      ],
+      "implementationBlocker": "Anonymous ballot contract with acceptance, final valid ballot and hanging immunity verified; three other contracts, punishment, self-contract, victory and same-recipient-as-ballot-target remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-breakthrough.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 106
+    },
+    {
+      "id": 54,
+      "name": "Người Canh Gác",
+      "inventoried": false,
+      "branchCount": 0,
+      "missingBranches": null,
+      "interactionBlockers": [],
+      "sharedMechanismDependencies": [
+        "AT",
+        "IN",
+        "RS"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Shot and reveal with same-day exclusion implemented; day 2+ QA timing only, positive hanging and broader interactions not certified.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-aura-expansion.test.mjs",
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 1000
+    },
+    {
+      "id": 59,
+      "name": "Ná Thủ",
+      "inventoried": false,
+      "branchCount": 0,
+      "missingBranches": null,
+      "interactionBlockers": [],
+      "sharedMechanismDependencies": [
+        "AT",
+        "BL",
+        "TM"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 1000
+    },
+    {
+      "id": 71,
+      "name": "Sát Nhân Ảnh Thuật",
+      "inventoried": false,
+      "branchCount": 0,
+      "missingBranches": null,
+      "interactionBlockers": [],
+      "sharedMechanismDependencies": [
+        "AT",
+        "NO",
+        "TM"
+      ],
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ],
+      "implementationBlocker": "Persistent aura effect implemented; daytime mass kill, immunity and legitimate removal remain.",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 1000
+    },
+    {
+      "id": 78,
+      "name": "Nhà Thiên Văn Học",
+      "inventoried": false,
+      "branchCount": 0,
+      "missingBranches": null,
+      "interactionBlockers": [],
+      "sharedMechanismDependencies": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "ruleAuditFlags": [],
+      "implementationBlocker": "New moon and combined powers; wider interactions",
+      "frontendStatus": "restricted existing adapter; role-wide UX not certified",
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "risk": "HIGH",
+      "score": 1000
+    }
+  ]
+}

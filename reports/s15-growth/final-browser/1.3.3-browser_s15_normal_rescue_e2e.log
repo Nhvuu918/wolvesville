@@ -1,0 +1,6 @@
+GROWTH_NORMAL_RESCUE_BROWSER_PASS village
+S06_BROWSER_CASE_PASS browser_s15_normal_rescue_e2e.py village
+GROWTH_NORMAL_RESCUE_BROWSER_PASS wolf
+S06_BROWSER_CASE_PASS browser_s15_normal_rescue_e2e.py wolf
+S06_BROWSER_PASS browser_s15_normal_rescue_e2e.py
+S06_BROWSER_ALL_1_PASS

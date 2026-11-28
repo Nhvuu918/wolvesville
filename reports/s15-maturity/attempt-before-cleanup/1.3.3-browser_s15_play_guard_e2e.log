@@ -1,0 +1,5 @@
+SCENARIO_READY s15-play-guard
+SCENARIO_ACTIONS_PASS s15-play-guard
+S15_PLAY_GUARD_BROWSER_PASS
+Error: E2E timeout browser_s15_play_guard_e2e.py: cleanup did not finish; not counted PASS
+    at file:///tmp/wv16/scripts/run-browser-s06.mjs:42:10

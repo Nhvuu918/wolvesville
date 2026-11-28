@@ -1,0 +1,1650 @@
+{
+  "version": "1.7.9-s15-approved-wip",
+  "scope": "Role-local completion from locked official branch matrix; no competitive readiness claim.",
+  "roles": [
+    {
+      "id": 1,
+      "name": "Sói Đạo Tặc",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 2,
+      "name": "Dorothy",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 3,
+      "name": "Sói Tiên Tri",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Only passive aura masking implemented; functional inspection, voluntary transformation, last wolf transformation, team bite and victory remain.",
+      "evidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "adapterIds": [
+        "passive.3.seer-aura"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Người Buôn Bí",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 5,
+      "name": "Thẩm Phán Linh Hồn",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "adapterIds": [
+        "official.5.weigh-soul"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Đạo Diễn Tử Thần",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 7,
+      "name": "Diễn Viên Sát Nhân",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 8,
+      "name": "Kỵ Sĩ Không Đầu",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 3,
+      "executedAtomic": 3,
+      "mandatoryInteractionsRemaining": [
+        "Wolf team bite and universal defense interactions",
+        "Overlapping immunity; pack bite remains unsupported",
+        "Unrestricted role combinations"
+      ],
+      "unexecutedBranches": [],
+      "blocker": "Hanging immunity verified with living wolf; wolf pack attack, competing defenses and unrestricted victory remain.",
+      "evidence": [
+        "S12 durable metric evidence 8,25",
+        "S15 deep two-seat snow protects self, blank vote, knight wins by hanging",
+        "S15 breakthrough #8 hanging immunity with wolf alive, no fallback candidate, later knight victory",
+        "S12 durable metric evidence 8,28",
+        "S15 deep #29 self rescue per NV32, second use rejected, no-rescue deaths close before winner"
+      ],
+      "adapterIds": [
+        "official.8.night-kill",
+        "passive.8.hang-immunity",
+        "passive.8.sole-survivor"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Thiên Sứ Tuyết",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 1,
+      "executedAtomic": 1,
+      "mandatoryInteractionsRemaining": [
+        "All attack families and stacked defenses"
+      ],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "S12 shield survives creator death and absorbs in following night; knight wins after hanging",
+        "S12 shield expires after two nights without attack",
+        "S05-04 #9 snow protection lasts two nights and cannot repeat any of three targets",
+        "S15 deep two-seat snow protects self, blank vote, knight wins by hanging",
+        "S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester",
+        "S15 closure snow shield persists after owner dies and is consumed once",
+        "S15 closure snow protection expires before the third night Hunter follow",
+        "S15 closure night-only snow protection cannot block daytime Hunter follow"
+      ],
+      "adapterIds": [
+        "official.9.snow-protection"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Sói Kỹ Sư",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 11,
+      "name": "Thợ Rèn Cơ Khí",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "adapterIds": [
+        "official.11.maintenance"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Búp Bê Nguyền Rủa",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 13,
+      "name": "Fan Cuồng",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 14,
+      "name": "Ông Kệ Noel",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 15,
+      "name": "Thần Tình Yêu Hắc Ám",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 5,
+      "executedAtomic": 4,
+      "mandatoryInteractionsRemaining": [
+        "General protections and accepted action after death",
+        "Link precedence, overwrite/restore",
+        "Only hanging in no-protection pair; night death, rescue, immunity",
+        "No general pack attack",
+        "Unrestricted combinations"
+      ],
+      "unexecutedBranches": [
+        "WV-A15-IMMUNITY"
+      ],
+      "blocker": "Single attack, secret pair, hanging-linked death and sole survivor verified; wolf immunity, protected or rescued links and overlapping links remain.",
+      "evidence": [
+        "S15 #15 single-target lethal branch commits official sole-survivor winner without binding",
+        "S15 deep #15 secret link once per target, vote death chain closes before sole winner"
+      ],
+      "adapterIds": [
+        "official.15.single-kill",
+        "passive.15.linked-death",
+        "passive.15.wolf-immunity",
+        "passive.15.sole-survivor"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Phù Thủy Cấm Kỵ",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "adapterIds": [
+        "official.16.delayed-poison",
+        "official.16.antidote"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Nữ Tu Huyết Thệ",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "adapterIds": [
+        "official.17.day-judgment"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Sói Biến Hình",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 19,
+      "name": "Kẻ Mặc Cả Bóng Tối",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 10,
+      "executedAtomic": 1,
+      "mandatoryInteractionsRemaining": [
+        "Not implemented",
+        "Other branches and own-target direction not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented"
+      ],
+      "unexecutedBranches": [
+        "WV-A19-SILENCE",
+        "WV-A19-CONCEAL",
+        "WV-A19-MANIPULATE",
+        "WV-A19-PUNISH",
+        "WV-A19-JOIN",
+        "WV-A19-TASK1",
+        "WV-A19-TASK2",
+        "WV-A19-TASK3",
+        "WV-A19-WIN3"
+      ],
+      "blocker": "Anonymous ballot contract with acceptance, final valid ballot and hanging immunity verified; three other contracts, punishment, self-contract, victory and same-recipient-as-ballot-target remain.",
+      "evidence": [
+        "S15 breakthrough #19 anonymous ballot contract uses final valid ballot; #28 survives fulfilled contract then wins by real hanging",
+        "S15 breakthrough #19 declined or breached contract cannot prevent true hanging"
+      ],
+      "adapterIds": [
+        "official.19.silence",
+        "official.19.ballot-offer",
+        "official.19.conceal",
+        "official.19.manipulate",
+        "official.19.punish",
+        "official.19.join",
+        "official.19.task1",
+        "official.19.task2",
+        "official.19.task3",
+        "official.19.win3"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Sói Gai Độc",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "adapterIds": [
+        "OFFICIAL_CHAR_20_REACTIVE_INSPECTION"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Sói Khát Máu",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 22,
+      "name": "Người Giao Dịch",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 23,
+      "name": "Xạ Thủ Linh Hồn",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Revival, post-death actions, victory population",
+      "evidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "adapterIds": [
+        "official.23.shield"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Quản Ngục",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "adapterIds": [
+        "official.24.jail"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Tiên Tri",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 1,
+      "executedAtomic": 1,
+      "mandatoryInteractionsRemaining": [
+        "#10 trap and other unimplemented distortions"
+      ],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "S15 UX: seer aura and mystical seer exact role privately, public composition has no mapping, restart/replay",
+        "S15 aura expansion #49 private distortion, expiry, duplicate and restart",
+        "S15 aura expansion #72 private distortion, expiry, duplicate and restart"
+      ],
+      "adapterIds": [
+        "official.25.inspect-role"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Thầy Đồng",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 27,
+      "name": "Cupid",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 28,
+      "name": "Thằng Ngố",
+      "executed": true,
+      "fullCertified": true,
+      "atomicDenominator": 1,
+      "executedAtomic": 1,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": null,
+      "evidence": [
+        "S11 real multiplayer: zero, tie, blank, changed ballot, retry, hanging, co-winners, restart and replay",
+        "S08-G01 NEW official #8/#28 closed deck commits real night elimination and legitimate knight win, not hanged-jester win",
+        "S15 deep #28 hanging wins with other contenders alive, non-final trigger cannot win",
+        "S15 deep #28 PH-02 cancelled leading ballot cannot win; actual later hanging can win",
+        "S15 breakthrough #55 protects #28 from actual hanging once; later true hanging and wolf parity co-win",
+        "S15 breakthrough #28 linked death is not hanging; only actual hanging earns co-win",
+        "S15 breakthrough #19 anonymous ballot contract uses final valid ballot; #28 survives fulfilled contract then wins by real hanging",
+        "S15 breakthrough #19 declined or breached contract cannot prevent true hanging",
+        "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28",
+        "S15 final #88 hanging follow kills #28 without Jester win; stable knight victory",
+        "S15 final #88 hanging without mark does not eliminate secondary player; subsequent direct Jester win",
+        "S15 final #88 night follow and #28 non-hanging death are closed before victory",
+        "S15 final #88 hanging follow to Knight does not award Jester a false survivor win",
+        "S15 closure death ledger rejects missing, duplicated and reopened death chains before victory",
+        "QD02 wrong alignment consumes revenge without disclosure or retry; Village and Jester co-win",
+        "QD01 direct Jester hanging with live Hunter mark yields Village and Jester co-winners",
+        "QD03 pin expires at next night before no-repin death, replay and retry"
+      ],
+      "adapterIds": [
+        "passive.28.hanged-victory"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Phù Thủy",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 3,
+      "executedAtomic": 3,
+      "mandatoryInteractionsRemaining": [
+        "Multiattack, hibernation and prolonged life",
+        "x2, linked rescue, hibernation, broader attack sources",
+        "Multiple protection types, rescue of preliminary target then poison same target not admitted"
+      ],
+      "unexecutedBranches": [],
+      "blocker": "Preliminary-death notice, self/other rescue, both potions in a night and poison with shield verified; x2, linked rescue, multiple attacks, hibernation and team victory remain.",
+      "evidence": [
+        "S15 deep #29 preliminary rescue + poison in same night, private notice and exact-once resources",
+        "S15 deep #29 self rescue per NV32, second use rejected, no-rescue deaths close before winner",
+        "S15 #29 poison versus #67 shield: VH60 charges even when valid shield absorbs"
+      ],
+      "adapterIds": [
+        "passive.29.preliminary-notice",
+        "official.29.rescue",
+        "official.29.poison"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Sói Trắng",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 31,
+      "name": "Bảo Vệ",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "adapterIds": [
+        "official.31.guard"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Xạ Thủ",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Global attack/protection interactions; cross-deck certification",
+      "evidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "adapterIds": [
+        "official.32.shoot"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Sói Lừa Gạt",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 3,
+      "executedAtomic": 2,
+      "mandatoryInteractionsRemaining": [
+        "Activation and interaction timing not certified",
+        "Broader effects and targets not certified",
+        "Multi-wolf protection and other unimplemented #33 branches"
+      ],
+      "unexecutedBranches": [
+        "WV-A33-ILLUSION"
+      ],
+      "blocker": "Post-hanging private response in all-other-villager deck; mixed-faction eligibility and general village victory unresolved.",
+      "evidence": [
+        "S09-01 certified #33 server-side directive transforms a ballot with private audit but never hangs a player",
+        "S09-02 coercion is once-per-match and all retries preserve idempotency and revision",
+        "S15 final #33 actual hanging opens private post-death response; choice commits secondary before victory",
+        "S15 final #33 decline revenge closes chain without secondary death and no invented winner",
+        "S15 closure revenge kills Hunter and follows pinned villager before closing original chain",
+        "S15 closure Hunter hanging pulls wolf as secondary without opening revenge or duplicating death"
+      ],
+      "adapterIds": [
+        "unimplemented.33.false-aura",
+        "official.33.force-vote",
+        "official.33.hanging-revenge"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Sói Mộng Du",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "adapterIds": [
+        "official.34.night-block"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Sói Gương",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 36,
+      "name": "Pháp Sư",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Both named skills exist; general attack, shield stacking, team victory and arbitrary decks not certified.",
+      "evidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "adapterIds": [
+        "official.36.fireball",
+        "official.36.shield"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Ảo Thuật Gia",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 4,
+      "executedAtomic": 3,
+      "mandatoryInteractionsRemaining": [
+        "Exact-role and attacks not enabled; overlapping redirects",
+        "Night attack exchange unimplemented",
+        "Exact-role not certified",
+        "Multiple modifiers/defense and other deck effects"
+      ],
+      "unexecutedBranches": [
+        "WV-A37-ATTACK"
+      ],
+      "blocker": "Aura and hanging transposition verified; night attack and exact-role exchange, multiple overlapping redirects and victory remain.",
+      "evidence": [
+        "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28"
+      ],
+      "adapterIds": [
+        "official.37.swap",
+        "passive.37.attack-swap",
+        "passive.37.inspection-swap",
+        "passive.37.hanging-swap"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Nhà Sưu Tầm Linh Hồn",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 39,
+      "name": "Kẻ Trộm Chó",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 40,
+      "name": "Hoàng Hậu",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 41,
+      "name": "Cupid Hắc Ám",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 42,
+      "name": "Cặp Đôi Ngoại Tình",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 43,
+      "name": "Sói Bắn Tỉa",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Only #25 attack target in closed QA decks; faction/team bite and victory not implemented.",
+      "evidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "adapterIds": [
+        "official.43.shoot"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Sói Cuồng Yêu",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 45,
+      "name": "Người Cầu Nguyện",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 46,
+      "name": "Hắc Tinh",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 47,
+      "name": "Bạch Sát",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 48,
+      "name": "Sói Thủ Lĩnh",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 1,
+      "executedAtomic": 1,
+      "mandatoryInteractionsRemaining": [
+        "Multi-wolf and protections outside current composition"
+      ],
+      "unexecutedBranches": [],
+      "blocker": "Only sole-wolf composition verified; multi-wolf ordinary action and additional protection domains not admitted.",
+      "evidence": [
+        "tests/sprint15-approved.test.mjs",
+        "tests/browser_s15_approved_leader_e2e.py"
+      ],
+      "adapterIds": [
+        "official.48.pack-bite"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Sói Ảo Ảnh",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Aura-only in QA deck; wolf team attack, exact-role interaction and victory not certified.",
+      "evidence": [
+        "tests/sprint15-aura-expansion.test.mjs"
+      ],
+      "adapterIds": [
+        "official.49.aura-illusion"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Sói Gây Tê",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Collective wolf actions and wider protection/lock interactions",
+      "evidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "adapterIds": [
+        "official.50.numb"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Người Lái Đò",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 52,
+      "name": "Chó Canh Gác",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Wolf dog, double dog, other attacks",
+      "evidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "adapterIds": [
+        "official.52.solo-dog"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Thiên Thần",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 54,
+      "name": "Người Canh Gác",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Shot and reveal with same-day exclusion implemented; day 2+ QA timing only, positive hanging and broader interactions not certified.",
+      "evidence": [
+        "tests/sprint15-aura-expansion.test.mjs",
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "adapterIds": [
+        "official.54.shoot",
+        "official.54.reveal"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Sói Thạch",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 2,
+      "executedAtomic": 2,
+      "mandatoryInteractionsRemaining": [
+        "Village night/day attacks unimplemented",
+        "Ordinary wolf pack action absent; role name override private"
+      ],
+      "unexecutedBranches": [],
+      "blocker": "Single successful hanging protection and ordinary-wolf marker verified; village attacks, overlap, post-death marks and wolf pack action remain.",
+      "evidence": [
+        "S15 breakthrough #55 protects #28 from actual hanging once; later true hanging and wolf parity co-win"
+      ],
+      "adapterIds": [
+        "official.55.stone-protection",
+        "passive.55.ordinary-wolf"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Kỹ Nữ",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 57,
+      "name": "Kẻ Biến Hình",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 58,
+      "name": "Thám Tử Ác Ma",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 4,
+      "executedAtomic": 3,
+      "mandatoryInteractionsRemaining": [
+        "General transformations",
+        "Protection on one of two; competing death reactions",
+        "No general pack attack",
+        "Unrestricted combinations"
+      ],
+      "unexecutedBranches": [
+        "WV-A58-IMMUNITY"
+      ],
+      "blocker": "Same faction, self+other and two other targets of different factions, sole survivor verified; wolf immunity and independent protection of one target remain.",
+      "evidence": [
+        "S15 #58 compares same faction privately, then self plus different faction kills only other",
+        "S15 deep #58 two other factions die, Jester killed at night does not win"
+      ],
+      "adapterIds": [
+        "official.58.compare",
+        "passive.58.wolf-immunity",
+        "passive.58.sole-survivor"
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Ná Thủ",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "adapterIds": [
+        "official.59.stone"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Người Gọi Hồn",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 61,
+      "name": "Thiện Xạ",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 62,
+      "name": "Kẻ Xúi Giục",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 63,
+      "name": "Người Gắn Cờ",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 2,
+      "executedAtomic": 2,
+      "mandatoryInteractionsRemaining": [
+        "Self-selection not admitted",
+        "Immune recipient, redirect cycles, other attack families"
+      ],
+      "unexecutedBranches": [],
+      "blocker": "Redirect tested after night 2 with successful-use budget and cooldown; immune targets, cycles, other attacks and team victory remain.",
+      "evidence": [
+        "S15 deep #63 redirect begins night two, unsuccessful mark free, cooldown and actual recipient"
+      ],
+      "adapterIds": [
+        "official.63.redirect",
+        "passive.63.redirect-trigger"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Người Rung Chuông",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 65,
+      "name": "Sói Độc Tố",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 66,
+      "name": "Người Gác Đêm",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Observation only with #67 shield; protection types, death and victory outside restricted QA not certified.",
+      "evidence": [
+        "tests/sprint13-character-implementation.test.mjs",
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "adapterIds": [
+        "official.66.night-guard",
+        "passive.66.observe-protected"
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Thợ Rèn",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Wider interaction and victory certification",
+      "evidence": [
+        "tests/sprint13-character-implementation.test.mjs",
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "adapterIds": [
+        "official.67.shield",
+        "official.67.sword"
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Sói Trẻ",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Other death causes and protection interactions",
+      "evidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "adapterIds": [
+        "official.68.mark"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Sói Mèo",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 70,
+      "name": "Sói Lừa Đảo",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 71,
+      "name": "Sát Nhân Ảnh Thuật",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Persistent aura effect implemented; daytime mass kill, immunity and legitimate removal remain.",
+      "evidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "adapterIds": [
+        "official.71.disguise"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Sói Pháp Sư",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Single-target aura-only QA; exact-role interaction and wolf team victory not certified.",
+      "evidence": [
+        "tests/sprint15-aura-expansion.test.mjs"
+      ],
+      "adapterIds": [
+        "official.72.aura-curse"
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Sói Lửa",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 74,
+      "name": "Tiên Tri Huyền Bí",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 1,
+      "executedAtomic": 1,
+      "mandatoryInteractionsRemaining": [
+        "#10 false-role trap not integrated"
+      ],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "S15 UX: seer aura and mystical seer exact role privately, public composition has no mapping, restart/replay",
+        "S15 accelerated #3 passive aura concealment does not distort exact-role #74"
+      ],
+      "adapterIds": [
+        "official.74.inspect-role"
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Sói Điên Cuồng",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 76,
+      "name": "Sói Ác Mộng",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "adapterIds": [
+        "official.76.nightmare"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Thợ Săn Quái Thú",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Trap intercept and counter-kill verified for solo knight; pack bite, frenzy, multiple protections and village victory remain.",
+      "evidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "adapterIds": [
+        "official.77.trap"
+      ]
+    },
+    {
+      "id": 78,
+      "name": "Nhà Thiên Văn Học",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "New moon and combined powers; wider interactions",
+      "evidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "adapterIds": [
+        "official.78.meteor"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Sói Hòa Bình",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 1,
+      "executedAtomic": 1,
+      "mandatoryInteractionsRemaining": [
+        "Director trigger, wolf team actions, broader composition"
+      ],
+      "unexecutedBranches": [],
+      "blocker": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "evidence": [
+        "S06-07 #79 cancels ongoing day vote, reveals target only to wolf, phase returns to next night (PH-02)",
+        "S15 deep #28 PH-02 cancelled leading ballot cannot win; actual later hanging can win"
+      ],
+      "adapterIds": [
+        "official.79.cancel-vote-reveal"
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Nghệ Sĩ Vĩ Cầm",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Death facts only from #8/#32 night attacks in closed decks; revival/transformations and team victory not certified.",
+      "evidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "adapterIds": [
+        "official.80.compare"
+      ]
+    },
+    {
+      "id": 81,
+      "name": "Sói Mù",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 82,
+      "name": "Nhà Giả Kim",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 83,
+      "name": "Sói Chiêu Hồn",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 84,
+      "name": "Phù Thủy Câm",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "Other configurations, interaction with groups",
+      "evidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "adapterIds": [
+        "official.84.silence"
+      ]
+    },
+    {
+      "id": 85,
+      "name": "Thầy Thôi Miên",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 2,
+      "executedAtomic": 2,
+      "mandatoryInteractionsRemaining": [
+        "Other death triggers, self selection not admitted",
+        "Other attack families, competing shields/redirects"
+      ],
+      "unexecutedBranches": [],
+      "blocker": "Nightly hypnosis and redirect of #8 attack tested; other lethal night sources, overlapping protections and team victory remain.",
+      "evidence": [
+        "S15 deep #85 redirect actual victim, consecutive target forbidden, durable winner"
+      ],
+      "adapterIds": [
+        "official.85.hypnotize",
+        "passive.85.hypnotized-death"
+      ]
+    },
+    {
+      "id": 86,
+      "name": "Sói Con",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 87,
+      "name": "Dược Sĩ",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 2,
+      "executedAtomic": 2,
+      "mandatoryInteractionsRemaining": [
+        "Other pack/protection interactions; other rescue rules not generalized.",
+        "Other chat classes and generalized combinations."
+      ],
+      "unexecutedBranches": [],
+      "blocker": "One-flask rescue of one bite victim (including self) in one-wolf domain verified; other attack/protection combinations and other chat groups remain unsupported.",
+      "evidence": [
+        "S15 final #87 privately receives both bite victims and rescues only one before wolf parity",
+        "S15 final #87 may use its single rescue on itself while preliminarily bitten",
+        "S15 #87 sedative denies chat and ballot intake, expires next day, blank tally is official"
+      ],
+      "adapterIds": [
+        "official.87.rescue",
+        "official.87.sedative"
+      ]
+    },
+    {
+      "id": 88,
+      "name": "Thợ Săn",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 2,
+      "executedAtomic": 2,
+      "mandatoryInteractionsRemaining": [
+        "Blocked night in mixed status domain not yet integration-tested",
+        "Other valid protections outside currently admitted games"
+      ],
+      "unexecutedBranches": [],
+      "blocker": "Night/hanging follow in restricted decks; stale mark duration and protection interactions unresolved.",
+      "evidence": [
+        "S15 closure primary shield prevents Hunter death and follow; next night mark may be renewed",
+        "S15 final #88 stale mark without renewed choice fails atomically rather than inventing duration",
+        "S15 final #88 hanging follow kills #28 without Jester win; stable knight victory",
+        "S15 final #88 night follow and #28 non-hanging death are closed before victory",
+        "S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester",
+        "S15 closure snow shield persists after owner dies and is consumed once",
+        "S15 closure revenge kills Hunter and follows pinned villager before closing original chain",
+        "S15 closure snow protection expires before the third night Hunter follow",
+        "S15 closure night-only snow protection cannot block daytime Hunter follow"
+      ],
+      "adapterIds": [
+        "official.88.pin"
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Người Khai Mệnh",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 90,
+      "name": "Giáo Chủ",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 91,
+      "name": "Huyết Chủ",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 92,
+      "name": "Huyết Bộc",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 93,
+      "name": "Sói Lưu Đày",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 3,
+      "executedAtomic": 3,
+      "mandatoryInteractionsRemaining": [
+        "General action locks/pack conversion not fully covered",
+        "One-wolf pack now implemented; multiple wolves and post-conversion aura unresolved.",
+        "Multiple wolves consensus, other protections, aura after conversion and inherited skills."
+      ],
+      "unexecutedBranches": [],
+      "blocker": "Night skill lock + day chat and vote restriction; alignment change after partner death verified; one-wolf two-target bite verified; multi-wolf consensus, post-conversion aura and skill retention unresolved.",
+      "evidence": [
+        "S15 accelerated #93 seal and #94 passive concealment, lock expiry and vote/chat enforcement",
+        "S15 breakthrough #94 redirect to actual victim, private alignment transition on subsequent #94 death",
+        "S15 breakthrough #94 self effigy converts #93 before victory, identity effigy never creates duplicate death",
+        "S15 final #93 current faction grants one-wolf two-target pack action after #94 hanging",
+        "S15 final #87 privately receives both bite victims and rescues only one before wolf parity",
+        "S15 final #87 may use its single rescue on itself while preliminarily bitten"
+      ],
+      "adapterIds": [
+        "official.93.seal",
+        "passive.93.alignment",
+        "official.93.pack-bite"
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Kẻ Giải Nguyền",
+      "executed": true,
+      "fullCertified": false,
+      "atomicDenominator": 2,
+      "executedAtomic": 2,
+      "mandatoryInteractionsRemaining": [
+        "Competing redirects and other attack families",
+        "Exact-role and post-conversion aura not certified"
+      ],
+      "unexecutedBranches": [],
+      "blocker": "Living partner aura concealment and effigy redirect of knight lethal attack verified; competing redirects and attack families remain.",
+      "evidence": [
+        "S15 breakthrough #94 redirect to actual victim, private alignment transition on subsequent #94 death",
+        "S15 breakthrough #94 self effigy converts #93 before victory, identity effigy never creates duplicate death",
+        "S15 accelerated #93 seal and #94 passive concealment, lock expiry and vote/chat enforcement"
+      ],
+      "adapterIds": [
+        "official.94.effigy",
+        "passive.94.conceal"
+      ]
+    },
+    {
+      "id": 95,
+      "name": "Người Hái Thuốc",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 96,
+      "name": "Thầy Thuốc",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    },
+    {
+      "id": 97,
+      "name": "Thần Thảo Hồi Sinh",
+      "executed": false,
+      "fullCertified": false,
+      "atomicDenominator": null,
+      "executedAtomic": null,
+      "mandatoryInteractionsRemaining": [],
+      "unexecutedBranches": [],
+      "blocker": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "evidence": [],
+      "adapterIds": []
+    }
+  ]
+}

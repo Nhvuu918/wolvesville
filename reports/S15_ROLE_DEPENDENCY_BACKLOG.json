@@ -1,0 +1,3084 @@
+{
+  "version": "1.7.4-s15-accelerated-wip",
+  "scope": "Technical planning only. Inherited tags are candidate dependencies, not proof of missing rules or guaranteed unlocks.",
+  "scoreFormula": "3*unexecuted + 2*partial - 5*complexity - 3*risk; complexity/risk 1..3 engineering estimates",
+  "rankedMechanisms": [
+    {
+      "tag": "AT",
+      "label": "Attack/protection",
+      "potentialUnexecutedIds": [
+        1,
+        2,
+        4,
+        7,
+        10,
+        13,
+        14,
+        21,
+        22,
+        30,
+        38,
+        39,
+        40,
+        44,
+        46,
+        47,
+        48,
+        53,
+        56,
+        57,
+        61,
+        62,
+        65,
+        75,
+        82,
+        85,
+        86,
+        90,
+        92,
+        96
+      ],
+      "potentialPartialIds": [
+        8,
+        15,
+        16,
+        17,
+        20,
+        23,
+        24,
+        29,
+        32,
+        36,
+        43,
+        54,
+        58,
+        59,
+        67,
+        68,
+        71,
+        77,
+        78,
+        88
+      ],
+      "engineeringComplexity": 3,
+      "regressionRisk": 3,
+      "score": 106,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "RS",
+      "label": "Resources/status",
+      "potentialUnexecutedIds": [
+        1,
+        2,
+        6,
+        7,
+        10,
+        18,
+        22,
+        38,
+        39,
+        44,
+        60,
+        63,
+        65,
+        73,
+        75,
+        83,
+        89,
+        92,
+        95,
+        96
+      ],
+      "potentialPartialIds": [
+        5,
+        9,
+        11,
+        16,
+        17,
+        29,
+        32,
+        36,
+        43,
+        49,
+        54,
+        66,
+        67,
+        76,
+        78,
+        87
+      ],
+      "engineeringComplexity": 2,
+      "regressionRisk": 2,
+      "score": 76,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "DF",
+      "label": "Death/follow-up",
+      "potentialUnexecutedIds": [
+        1,
+        2,
+        4,
+        7,
+        13,
+        14,
+        19,
+        38,
+        44,
+        45,
+        53,
+        55,
+        56,
+        63,
+        65,
+        75,
+        92,
+        95,
+        96,
+        97
+      ],
+      "potentialPartialIds": [
+        5,
+        8,
+        9,
+        11,
+        15,
+        16,
+        17,
+        23,
+        24,
+        29,
+        31,
+        36,
+        52,
+        66,
+        67,
+        77,
+        78,
+        87
+      ],
+      "engineeringComplexity": 3,
+      "regressionRisk": 3,
+      "score": 72,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "TR",
+      "label": "Transformation",
+      "potentialUnexecutedIds": [
+        13,
+        18,
+        19,
+        22,
+        27,
+        41,
+        42,
+        44,
+        45,
+        55,
+        57,
+        60,
+        62,
+        69,
+        70,
+        83,
+        90,
+        92
+      ],
+      "potentialPartialIds": [
+        3,
+        5,
+        93
+      ],
+      "engineeringComplexity": 3,
+      "regressionRisk": 3,
+      "score": 36,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "WC",
+      "label": "Win conditions",
+      "potentialUnexecutedIds": [
+        6,
+        7,
+        12,
+        13,
+        14,
+        19,
+        27,
+        30,
+        39,
+        42,
+        44,
+        46,
+        47,
+        48,
+        62,
+        90,
+        91,
+        92
+      ],
+      "potentialPartialIds": [
+        8,
+        15,
+        28
+      ],
+      "engineeringComplexity": 3,
+      "regressionRisk": 3,
+      "score": 36,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "TM",
+      "label": "Team mechanics",
+      "potentialUnexecutedIds": [
+        4,
+        12,
+        18,
+        21,
+        30,
+        35,
+        37,
+        51,
+        60,
+        61,
+        65,
+        73,
+        82,
+        95,
+        97
+      ],
+      "potentialPartialIds": [
+        9,
+        16,
+        23,
+        32,
+        50,
+        59,
+        71
+      ],
+      "engineeringComplexity": 3,
+      "regressionRisk": 3,
+      "score": 35,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "IN",
+      "label": "Investigation",
+      "potentialUnexecutedIds": [
+        2,
+        19,
+        35,
+        37,
+        38,
+        64,
+        81,
+        89,
+        92
+      ],
+      "potentialPartialIds": [
+        3,
+        5,
+        17,
+        20,
+        25,
+        54,
+        58,
+        66,
+        74,
+        79,
+        80
+      ],
+      "engineeringComplexity": 2,
+      "regressionRisk": 2,
+      "score": 33,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "LK",
+      "label": "Links",
+      "potentialUnexecutedIds": [
+        2,
+        6,
+        12,
+        13,
+        14,
+        19,
+        27,
+        41,
+        42,
+        44,
+        53,
+        62,
+        64,
+        90,
+        91
+      ],
+      "potentialPartialIds": [
+        15,
+        68,
+        88
+      ],
+      "engineeringComplexity": 3,
+      "regressionRisk": 2,
+      "score": 30,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "BL",
+      "label": "Blocking",
+      "potentialUnexecutedIds": [
+        4,
+        10,
+        19,
+        39,
+        46,
+        47,
+        73
+      ],
+      "potentialPartialIds": [
+        11,
+        16,
+        17,
+        20,
+        24,
+        34,
+        50,
+        59,
+        76,
+        84,
+        87,
+        93
+      ],
+      "engineeringComplexity": 2,
+      "regressionRisk": 2,
+      "score": 29,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "RV",
+      "label": "Revival",
+      "potentialUnexecutedIds": [
+        2,
+        12,
+        26,
+        38,
+        45,
+        51,
+        60,
+        70,
+        83,
+        95,
+        97
+      ],
+      "potentialPartialIds": [
+        23,
+        29,
+        80,
+        94
+      ],
+      "engineeringComplexity": 3,
+      "regressionRisk": 2,
+      "score": 20,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "CH",
+      "label": "Chat/permissions",
+      "potentialUnexecutedIds": [
+        6,
+        13,
+        26,
+        27,
+        41,
+        51,
+        60,
+        62,
+        90,
+        96
+      ],
+      "potentialPartialIds": [
+        24
+      ],
+      "engineeringComplexity": 2,
+      "regressionRisk": 2,
+      "score": 16,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "VT",
+      "label": "Voting",
+      "potentialUnexecutedIds": [
+        6,
+        19,
+        37,
+        38,
+        91
+      ],
+      "potentialPartialIds": [
+        8,
+        23,
+        28,
+        33,
+        79,
+        93
+      ],
+      "engineeringComplexity": 2,
+      "regressionRisk": 2,
+      "score": 11,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "NO",
+      "label": "Notification/information",
+      "potentialUnexecutedIds": [
+        10,
+        35,
+        57,
+        70
+      ],
+      "potentialPartialIds": [
+        3,
+        33,
+        49,
+        71,
+        72,
+        94
+      ],
+      "engineeringComplexity": 2,
+      "regressionRisk": 2,
+      "score": 8,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "RN",
+      "label": "Randomness",
+      "potentialUnexecutedIds": [
+        4,
+        12,
+        13,
+        14,
+        40,
+        81,
+        82,
+        92
+      ],
+      "potentialPartialIds": [],
+      "engineeringComplexity": 2,
+      "regressionRisk": 2,
+      "score": 8,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "OP",
+      "label": "Ordering/priority",
+      "potentialUnexecutedIds": [
+        7,
+        46,
+        47,
+        53,
+        75,
+        86
+      ],
+      "potentialPartialIds": [
+        20,
+        68,
+        77,
+        88
+      ],
+      "engineeringComplexity": 3,
+      "regressionRisk": 3,
+      "score": 2,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    },
+    {
+      "tag": "RF",
+      "label": "Redirection/reflection",
+      "potentialUnexecutedIds": [
+        37,
+        63,
+        85
+      ],
+      "potentialPartialIds": [
+        94
+      ],
+      "engineeringComplexity": 3,
+      "regressionRisk": 3,
+      "score": -13,
+      "officialRuleReadiness": "REQUIRES_BRANCH_REVIEW"
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "name": "Sói Đạo Tặc",
+      "executed": false,
+      "source": "data/character.json#1",
+      "sourceDecisions": [
+        "SK-04",
+        "VH72"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH01-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 2,
+      "name": "Dorothy",
+      "executed": false,
+      "source": "data/character.json#2",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "IN",
+        "LK",
+        "RS",
+        "RV"
+      ],
+      "skillAuditIds": [
+        "WV-CH02-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sói Tiên Tri",
+      "executed": true,
+      "source": "data/character.json#3",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "IN",
+        "NO",
+        "TR"
+      ],
+      "skillAuditIds": [
+        "WV-CH03-S01"
+      ],
+      "executedSkillIds": [
+        "passive.3.seer-aura"
+      ],
+      "testEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remaining": "Only passive aura masking implemented; functional inspection, voluntary transformation, last wolf transformation, team bite and victory remain.",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Người Buôn Bí",
+      "executed": false,
+      "source": "data/character.json#4",
+      "sourceDecisions": [
+        "VH83"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "BL",
+        "DF",
+        "RN",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH04-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 5,
+      "name": "Thẩm Phán Linh Hồn",
+      "executed": true,
+      "source": "data/character.json#5",
+      "sourceDecisions": [
+        "VH84"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "DF",
+        "IN",
+        "RS",
+        "TR"
+      ],
+      "skillAuditIds": [
+        "WV-CH05-S01",
+        "WV-CH05-S02"
+      ],
+      "executedSkillIds": [
+        "official.5.weigh-soul"
+      ],
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Đạo Diễn Tử Thần",
+      "executed": false,
+      "source": "data/character.json#6",
+      "sourceDecisions": [
+        "PH-02",
+        "Q13-09",
+        "VH01"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "CH",
+        "LK",
+        "RS",
+        "VT",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH06-S01",
+        "WV-CH06-S02",
+        "WV-CH06-S03",
+        "WV-CH06-S04"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "target domain / target-kind",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "target domain / target-kind",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Diễn Viên Sát Nhân",
+      "executed": false,
+      "source": "data/character.json#7",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "OP",
+        "RS",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH07-S01",
+        "WV-CH07-S02"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Kỵ Sĩ Không Đầu",
+      "executed": true,
+      "source": "data/character.json#8",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "VT",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH08-S01"
+      ],
+      "executedSkillIds": [
+        "official.8.night-kill"
+      ],
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Thiên Sứ Tuyết",
+      "executed": true,
+      "source": "data/character.json#9",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "DF",
+        "RS",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH09-S01"
+      ],
+      "executedSkillIds": [
+        "official.9.snow-protection"
+      ],
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Sói Kỹ Sư",
+      "executed": false,
+      "source": "data/character.json#10",
+      "sourceDecisions": [
+        "Q13-06",
+        "Q13-11",
+        "SK-05"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "BL",
+        "NO",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH10-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Thợ Rèn Cơ Khí",
+      "executed": true,
+      "source": "data/character.json#11",
+      "sourceDecisions": [
+        "Q13-01",
+        "SK-01",
+        "SK-02"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "BL",
+        "DF",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH11-S01",
+        "WV-CH11-S02"
+      ],
+      "executedSkillIds": [
+        "official.11.maintenance"
+      ],
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 12,
+      "name": "Búp Bê Nguyền Rủa",
+      "executed": false,
+      "source": "data/character.json#12",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "LK",
+        "RN",
+        "RV",
+        "TM",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH12-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Fan Cuồng",
+      "executed": false,
+      "source": "data/character.json#13",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "CH",
+        "DF",
+        "LK",
+        "RN",
+        "TR",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH13-S01",
+        "WV-CH13-S02",
+        "WV-CH13-S03",
+        "WV-CH13-S04"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Ông Kệ Noel",
+      "executed": false,
+      "source": "data/character.json#14",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "LK",
+        "RN",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH14-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Thần Tình Yêu Hắc Ám",
+      "executed": true,
+      "source": "data/character.json#15",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "LK",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH15-S01"
+      ],
+      "executedSkillIds": [
+        "official.15.single-kill"
+      ],
+      "testEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remaining": "One-target attack and sole-survivor verified; two-target link, wolf immunity and broader interactions remain.",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Phù Thủy Cấm Kỵ",
+      "executed": true,
+      "source": "data/character.json#16",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "AT",
+        "BL",
+        "DF",
+        "RS",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH16-S01",
+        "WV-CH16-S02"
+      ],
+      "executedSkillIds": [
+        "official.16.delayed-poison",
+        "official.16.antidote"
+      ],
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Nữ Tu Huyết Thệ",
+      "executed": true,
+      "source": "data/character.json#17",
+      "sourceDecisions": [
+        "Q13-01",
+        "VH85"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "AT",
+        "BL",
+        "DF",
+        "IN",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH17-S01",
+        "WV-CH17-S02"
+      ],
+      "executedSkillIds": [
+        "official.17.day-judgment"
+      ],
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 18,
+      "name": "Sói Biến Hình",
+      "executed": false,
+      "source": "data/character.json#18",
+      "sourceDecisions": [
+        "Q13-04",
+        "SK-03",
+        "VH71"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "RS",
+        "TM",
+        "TR"
+      ],
+      "skillAuditIds": [
+        "WV-CH18-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 19,
+      "name": "Kẻ Mặc Cả Bóng Tối",
+      "executed": false,
+      "source": "data/character.json#19",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "BL",
+        "DF",
+        "IN",
+        "LK",
+        "TR",
+        "VT",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH19-S01",
+        "WV-CH19-S02",
+        "WV-CH19-S03",
+        "WV-CH19-S04",
+        "WV-CH19-S05",
+        "WV-CH19-S06",
+        "WV-CH19-S07"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "phase / trigger thời gian",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Sói Gai Độc",
+      "executed": true,
+      "source": "data/character.json#20",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "AT",
+        "BL",
+        "IN",
+        "OP"
+      ],
+      "skillAuditIds": [
+        "WV-CH20-S01"
+      ],
+      "executedSkillIds": [
+        "OFFICIAL_CHAR_20_REACTIVE_INSPECTION"
+      ],
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": [
+        "target domain / target-kind",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Sói Khát Máu",
+      "executed": false,
+      "source": "data/character.json#21",
+      "sourceDecisions": [
+        "LIFE-03",
+        "VH74"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH21-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Người Giao Dịch",
+      "executed": false,
+      "source": "data/character.json#22",
+      "sourceDecisions": [
+        "VH75",
+        "VH80",
+        "VH81"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "RS",
+        "TR"
+      ],
+      "skillAuditIds": [
+        "WV-CH22-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 23,
+      "name": "Xạ Thủ Linh Hồn",
+      "executed": true,
+      "source": "data/character.json#23",
+      "sourceDecisions": [
+        "LIFE-01",
+        "VH82"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "RV",
+        "TM",
+        "VT"
+      ],
+      "skillAuditIds": [
+        "WV-CH23-S01",
+        "WV-CH23-S02",
+        "WV-CH23-S03"
+      ],
+      "executedSkillIds": [
+        "official.23.shield"
+      ],
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remaining": "Revival, post-death actions, victory population",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 24,
+      "name": "Quản Ngục",
+      "executed": true,
+      "source": "data/character.json#24",
+      "sourceDecisions": [
+        "SK-07",
+        "VH79"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "AT",
+        "BL",
+        "CH",
+        "DF"
+      ],
+      "skillAuditIds": [
+        "WV-CH24-S01",
+        "WV-CH24-S02"
+      ],
+      "executedSkillIds": [
+        "official.24.jail"
+      ],
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 25,
+      "name": "Tiên Tri",
+      "executed": true,
+      "source": "data/character.json#25",
+      "sourceDecisions": [
+        "P05",
+        "S15-OWNER-SEER-01"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "IN"
+      ],
+      "skillAuditIds": [
+        "WV-CH25-S01"
+      ],
+      "executedSkillIds": [
+        "official.25.inspect-role"
+      ],
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)",
+        "tests/sprint15-gameplay-ux.test.mjs",
+        "tests/sprint15-seer-version.test.mjs"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 26,
+      "name": "Thầy Đồng",
+      "executed": false,
+      "source": "data/character.json#26",
+      "sourceDecisions": [
+        "VH73",
+        "VH76",
+        "VH77"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "CH",
+        "RV"
+      ],
+      "skillAuditIds": [
+        "WV-CH26-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Cupid",
+      "executed": false,
+      "source": "data/character.json#27",
+      "sourceDecisions": [
+        "Q13-03",
+        "REL-01",
+        "REL-02",
+        "REL-03"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "CH",
+        "LK",
+        "TR",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH27-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 28,
+      "name": "Thằng Ngố",
+      "executed": true,
+      "source": "data/character.json#28",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "VT",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH28-S01"
+      ],
+      "executedSkillIds": [
+        "passive.28.hanged-victory"
+      ],
+      "testEvidence": [
+        "tests/sprint15-aura-expansion.test.mjs"
+      ],
+      "remaining": "Existing passive winner predicate now has additional durable evidence; arbitrary faction-victory precedence and all interactions not certified.",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian",
+        "target domain / target-kind",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Phù Thủy",
+      "executed": true,
+      "source": "data/character.json#29",
+      "sourceDecisions": [
+        "Q13-12",
+        "VH05",
+        "VH60",
+        "W04"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "RS",
+        "RV"
+      ],
+      "skillAuditIds": [
+        "WV-CH29-S01",
+        "WV-CH29-S02"
+      ],
+      "executedSkillIds": [
+        "official.29.poison"
+      ],
+      "testEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remaining": "Witch window and poison (including VH60 shield) implemented; rescue of preliminary deaths and other protection interactions remain.",
+      "unreviewedRuleFlags": [
+        "target domain / target-kind",
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Sói Trắng",
+      "executed": false,
+      "source": "data/character.json#30",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "TM",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH30-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian",
+        "target domain / target-kind",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Bảo Vệ",
+      "executed": true,
+      "source": "data/character.json#31",
+      "sourceDecisions": [
+        "Q13-10"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "DF"
+      ],
+      "skillAuditIds": [
+        "WV-CH31-S01"
+      ],
+      "executedSkillIds": [
+        "official.31.guard"
+      ],
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 32,
+      "name": "Xạ Thủ",
+      "executed": true,
+      "source": "data/character.json#32",
+      "sourceDecisions": [
+        "VH09"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "RS",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH32-S01"
+      ],
+      "executedSkillIds": [
+        "official.32.shoot"
+      ],
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remaining": "Global attack/protection interactions; cross-deck certification",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Sói Lừa Gạt",
+      "executed": true,
+      "source": "data/character.json#33",
+      "sourceDecisions": [
+        "VH08"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "NO",
+        "VT"
+      ],
+      "skillAuditIds": [
+        "WV-CH33-S01",
+        "WV-CH33-S02"
+      ],
+      "executedSkillIds": [
+        "official.33.force-vote"
+      ],
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 34,
+      "name": "Sói Mộng Du",
+      "executed": true,
+      "source": "data/character.json#34",
+      "sourceDecisions": [
+        "VH10"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "BL"
+      ],
+      "skillAuditIds": [
+        "WV-CH34-S01"
+      ],
+      "executedSkillIds": [
+        "official.34.night-block"
+      ],
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 35,
+      "name": "Sói Gương",
+      "executed": false,
+      "source": "data/character.json#35",
+      "sourceDecisions": [
+        "VH11"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "IN",
+        "NO",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH35-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Pháp Sư",
+      "executed": true,
+      "source": "data/character.json#36",
+      "sourceDecisions": [
+        "VH12",
+        "VH13"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH36-S01",
+        "WV-CH36-S02"
+      ],
+      "executedSkillIds": [
+        "official.36.fireball",
+        "official.36.shield"
+      ],
+      "testEvidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "remaining": "Both named skills exist; general attack, shield stacking, team victory and arbitrary decks not certified.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 37,
+      "name": "Ảo Thuật Gia",
+      "executed": false,
+      "source": "data/character.json#37",
+      "sourceDecisions": [
+        "VH14",
+        "VH15",
+        "VH56"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "IN",
+        "RF",
+        "TM",
+        "VT"
+      ],
+      "skillAuditIds": [
+        "WV-CH37-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Nhà Sưu Tầm Linh Hồn",
+      "executed": false,
+      "source": "data/character.json#38",
+      "sourceDecisions": [
+        "VH16"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "IN",
+        "RS",
+        "RV",
+        "VT"
+      ],
+      "skillAuditIds": [
+        "WV-CH38-S01",
+        "WV-CH38-S02",
+        "WV-CH38-S03",
+        "WV-CH38-S04",
+        "WV-CH38-S05",
+        "WV-CH38-S06"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Kẻ Trộm Chó",
+      "executed": false,
+      "source": "data/character.json#39",
+      "sourceDecisions": [
+        "VH17",
+        "VH18"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "BL",
+        "RS",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH39-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 40,
+      "name": "Hoàng Hậu",
+      "executed": false,
+      "source": "data/character.json#40",
+      "sourceDecisions": [
+        "VH19"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "RN"
+      ],
+      "skillAuditIds": [
+        "WV-CH40-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 41,
+      "name": "Cupid Hắc Ám",
+      "executed": false,
+      "source": "data/character.json#41",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "CH",
+        "LK",
+        "TR"
+      ],
+      "skillAuditIds": [
+        "WV-CH41-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Cặp Đôi Ngoại Tình",
+      "executed": false,
+      "source": "data/character.json#42",
+      "sourceDecisions": [
+        "VH20"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "LK",
+        "TR",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH42-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Sói Bắn Tỉa",
+      "executed": true,
+      "source": "data/character.json#43",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH43-S01"
+      ],
+      "executedSkillIds": [
+        "official.43.shoot"
+      ],
+      "testEvidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "remaining": "Only #25 attack target in closed QA decks; faction/team bite and victory not implemented.",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Sói Cuồng Yêu",
+      "executed": false,
+      "source": "data/character.json#44",
+      "sourceDecisions": [
+        "VH21"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "LK",
+        "RS",
+        "TR",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH44-S01",
+        "WV-CH44-S02"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Người Cầu Nguyện",
+      "executed": false,
+      "source": "data/character.json#45",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "DF",
+        "RV",
+        "TR"
+      ],
+      "skillAuditIds": [
+        "WV-CH45-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Hắc Tinh",
+      "executed": false,
+      "source": "data/character.json#46",
+      "sourceDecisions": [
+        "VH23",
+        "VH76"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "BL",
+        "OP",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH46-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Bạch Sát",
+      "executed": false,
+      "source": "data/character.json#47",
+      "sourceDecisions": [
+        "VH24",
+        "VH76"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "BL",
+        "OP",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH47-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Sói Thủ Lĩnh",
+      "executed": false,
+      "source": "data/character.json#48",
+      "sourceDecisions": [
+        "VH74"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH48-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Sói Ảo Ảnh",
+      "executed": true,
+      "source": "data/character.json#49",
+      "sourceDecisions": [
+        "VH25"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "NO",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH49-S01"
+      ],
+      "executedSkillIds": [
+        "official.49.aura-illusion"
+      ],
+      "testEvidence": [
+        "tests/sprint15-aura-expansion.test.mjs"
+      ],
+      "remaining": "Aura-only in QA deck; wolf team attack, exact-role interaction and victory not certified.",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Sói Gây Tê",
+      "executed": true,
+      "source": "data/character.json#50",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "BL",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH50-S01"
+      ],
+      "executedSkillIds": [
+        "official.50.numb"
+      ],
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remaining": "Collective wolf actions and wider protection/lock interactions",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Người Lái Đò",
+      "executed": false,
+      "source": "data/character.json#51",
+      "sourceDecisions": [
+        "Q13-07",
+        "VH26",
+        "VH57"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "CH",
+        "RV",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH51-S01",
+        "WV-CH51-S02"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 52,
+      "name": "Chó Canh Gác",
+      "executed": true,
+      "source": "data/character.json#52",
+      "sourceDecisions": [
+        "Q13-10",
+        "VH27"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "DF"
+      ],
+      "skillAuditIds": [
+        "WV-CH52-S01"
+      ],
+      "executedSkillIds": [
+        "official.52.solo-dog"
+      ],
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remaining": "Wolf dog, double dog, other attacks",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 53,
+      "name": "Thiên Thần",
+      "executed": false,
+      "source": "data/character.json#53",
+      "sourceDecisions": [
+        "VH76"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "LK",
+        "OP"
+      ],
+      "skillAuditIds": [
+        "WV-CH53-S01",
+        "WV-CH53-S02"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Người Canh Gác",
+      "executed": true,
+      "source": "data/character.json#54",
+      "sourceDecisions": [
+        "VH28"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "IN",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH54-S01",
+        "WV-CH54-S02"
+      ],
+      "executedSkillIds": [
+        "official.54.shoot",
+        "official.54.reveal"
+      ],
+      "testEvidence": [
+        "tests/sprint15-aura-expansion.test.mjs",
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "remaining": "Shot and reveal with same-day exclusion implemented; day 2+ QA timing only, positive hanging and broader interactions not certified.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 55,
+      "name": "Sói Thạch",
+      "executed": false,
+      "source": "data/character.json#55",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "DF",
+        "TR"
+      ],
+      "skillAuditIds": [
+        "WV-CH55-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Kỹ Nữ",
+      "executed": false,
+      "source": "data/character.json#56",
+      "sourceDecisions": [
+        "VH29"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "DF"
+      ],
+      "skillAuditIds": [
+        "WV-CH56-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 57,
+      "name": "Kẻ Biến Hình",
+      "executed": false,
+      "source": "data/character.json#57",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "NO",
+        "TR"
+      ],
+      "skillAuditIds": [
+        "WV-CH57-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Thám Tử Ác Ma",
+      "executed": true,
+      "source": "data/character.json#58",
+      "sourceDecisions": [
+        "VH30"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "IN"
+      ],
+      "skillAuditIds": [
+        "WV-CH58-S01"
+      ],
+      "executedSkillIds": [
+        "official.58.compare"
+      ],
+      "testEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remaining": "Same faction, self+other death and sole survivor verified; two other targets of different factions, wolf immunity and wider protection interactions remain.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 59,
+      "name": "Ná Thủ",
+      "executed": true,
+      "source": "data/character.json#59",
+      "sourceDecisions": [
+        "VH31"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "AT",
+        "BL",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH59-S01"
+      ],
+      "executedSkillIds": [
+        "official.59.stone"
+      ],
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 60,
+      "name": "Người Gọi Hồn",
+      "executed": false,
+      "source": "data/character.json#60",
+      "sourceDecisions": [
+        "Q13-04",
+        "VH32"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "CH",
+        "RS",
+        "RV",
+        "TM",
+        "TR"
+      ],
+      "skillAuditIds": [
+        "WV-CH60-S01",
+        "WV-CH60-S02"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Thiện Xạ",
+      "executed": false,
+      "source": "data/character.json#61",
+      "sourceDecisions": [
+        "VH33"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH61-S01",
+        "WV-CH61-S02"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Kẻ Xúi Giục",
+      "executed": false,
+      "source": "data/character.json#62",
+      "sourceDecisions": [
+        "Q13-08",
+        "REL-01",
+        "VH02"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "CH",
+        "LK",
+        "TR",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH62-S01",
+        "WV-CH62-S02"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 63,
+      "name": "Người Gắn Cờ",
+      "executed": false,
+      "source": "data/character.json#63",
+      "sourceDecisions": [
+        "VH56",
+        "VH61"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "DF",
+        "RF",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH63-S01",
+        "WV-CH63-S02"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 64,
+      "name": "Người Rung Chuông",
+      "executed": false,
+      "source": "data/character.json#64",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "IN",
+        "LK"
+      ],
+      "skillAuditIds": [
+        "WV-CH64-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Sói Độc Tố",
+      "executed": false,
+      "source": "data/character.json#65",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "RS",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH65-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Người Gác Đêm",
+      "executed": true,
+      "source": "data/character.json#66",
+      "sourceDecisions": [
+        "VH34"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "DF",
+        "IN",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH66-S01"
+      ],
+      "executedSkillIds": [
+        "official.66.night-guard",
+        "passive.66.observe-protected"
+      ],
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs",
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "remaining": "Observation only with #67 shield; protection types, death and victory outside restricted QA not certified.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 67,
+      "name": "Thợ Rèn",
+      "executed": true,
+      "source": "data/character.json#67",
+      "sourceDecisions": [
+        "Q13-10",
+        "VH35",
+        "VH70"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH67-S01",
+        "WV-CH67-S02"
+      ],
+      "executedSkillIds": [
+        "official.67.shield",
+        "official.67.sword"
+      ],
+      "testEvidence": [
+        "tests/sprint13-character-implementation.test.mjs",
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remaining": "Wider interaction and victory certification",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 68,
+      "name": "Sói Trẻ",
+      "executed": true,
+      "source": "data/character.json#68",
+      "sourceDecisions": [
+        "VH36"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "LK",
+        "OP"
+      ],
+      "skillAuditIds": [
+        "WV-CH68-S01"
+      ],
+      "executedSkillIds": [
+        "official.68.mark"
+      ],
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remaining": "Other death causes and protection interactions",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Sói Mèo",
+      "executed": false,
+      "source": "data/character.json#69",
+      "sourceDecisions": [
+        "VH37"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "TR"
+      ],
+      "skillAuditIds": [
+        "WV-CH69-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Sói Lừa Đảo",
+      "executed": false,
+      "source": "data/character.json#70",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "NO",
+        "RV",
+        "TR"
+      ],
+      "skillAuditIds": [
+        "WV-CH70-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Sát Nhân Ảnh Thuật",
+      "executed": true,
+      "source": "data/character.json#71",
+      "sourceDecisions": [
+        "VH38"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "NO",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH71-S01"
+      ],
+      "executedSkillIds": [
+        "official.71.disguise"
+      ],
+      "testEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remaining": "Persistent aura effect implemented; daytime mass kill, immunity and legitimate removal remain.",
+      "unreviewedRuleFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Sói Pháp Sư",
+      "executed": true,
+      "source": "data/character.json#72",
+      "sourceDecisions": [
+        "VH39"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "NO"
+      ],
+      "skillAuditIds": [
+        "WV-CH72-S01"
+      ],
+      "executedSkillIds": [
+        "official.72.aura-curse"
+      ],
+      "testEvidence": [
+        "tests/sprint15-aura-expansion.test.mjs"
+      ],
+      "remaining": "Single-target aura-only QA; exact-role interaction and wolf team victory not certified.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 73,
+      "name": "Sói Lửa",
+      "executed": false,
+      "source": "data/character.json#73",
+      "sourceDecisions": [
+        "VH40"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "BL",
+        "RS",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH73-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 74,
+      "name": "Tiên Tri Huyền Bí",
+      "executed": true,
+      "source": "data/character.json#74",
+      "sourceDecisions": [
+        "P05",
+        "Q13-06",
+        "SK-05"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "IN"
+      ],
+      "skillAuditIds": [
+        "WV-CH74-S01"
+      ],
+      "executedSkillIds": [
+        "official.74.inspect-role"
+      ],
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 75,
+      "name": "Sói Điên Cuồng",
+      "executed": false,
+      "source": "data/character.json#75",
+      "sourceDecisions": [
+        "Q13-10",
+        "SK-06",
+        "VH42"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "OP",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH75-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Sói Ác Mộng",
+      "executed": true,
+      "source": "data/character.json#76",
+      "sourceDecisions": [
+        "VH41"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "BL",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH76-S01"
+      ],
+      "executedSkillIds": [
+        "official.76.nightmare"
+      ],
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Thợ Săn Quái Thú",
+      "executed": true,
+      "source": "data/character.json#77",
+      "sourceDecisions": [
+        "SK-06",
+        "VH51",
+        "VH54"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "OP"
+      ],
+      "skillAuditIds": [
+        "WV-CH77-S01"
+      ],
+      "executedSkillIds": [
+        "official.77.trap"
+      ],
+      "testEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remaining": "Trap intercept and counter-kill verified for solo knight; pack bite, frenzy, multiple protections and village victory remain.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 78,
+      "name": "Nhà Thiên Văn Học",
+      "executed": true,
+      "source": "data/character.json#78",
+      "sourceDecisions": [
+        "VH43"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH78-S01",
+        "WV-CH78-S02"
+      ],
+      "executedSkillIds": [
+        "official.78.meteor"
+      ],
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remaining": "New moon and combined powers; wider interactions",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 79,
+      "name": "Sói Hòa Bình",
+      "executed": true,
+      "source": "data/character.json#79",
+      "sourceDecisions": [
+        "PH-02",
+        "Q13-09"
+      ],
+      "provisionalAuditGroup": "C_PARTIAL_READY",
+      "candidateDependencies": [
+        "IN",
+        "VT"
+      ],
+      "skillAuditIds": [
+        "WV-CH79-S01"
+      ],
+      "executedSkillIds": [
+        "official.79.cancel-vote-reveal"
+      ],
+      "testEvidence": [
+        "data/rule-intelligence-s10/character_implementation_matrix_97.csv",
+        "tests/*.test.mjs (inherited)"
+      ],
+      "remaining": "Additional mandatory branches and unsupported interaction/death/victory coverage remain.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 80,
+      "name": "Nghệ Sĩ Vĩ Cầm",
+      "executed": true,
+      "source": "data/character.json#80",
+      "sourceDecisions": [
+        "VH49",
+        "VH53"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "IN",
+        "RV"
+      ],
+      "skillAuditIds": [
+        "WV-CH80-S01"
+      ],
+      "executedSkillIds": [
+        "official.80.compare"
+      ],
+      "testEvidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "remaining": "Death facts only from #8/#32 night attacks in closed decks; revival/transformations and team victory not certified.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 81,
+      "name": "Sói Mù",
+      "executed": false,
+      "source": "data/character.json#81",
+      "sourceDecisions": [
+        "Q13-11"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "IN",
+        "RN"
+      ],
+      "skillAuditIds": [
+        "WV-CH81-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 82,
+      "name": "Nhà Giả Kim",
+      "executed": false,
+      "source": "data/character.json#82",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "RN",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH82-S01",
+        "WV-CH82-S02"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 83,
+      "name": "Sói Chiêu Hồn",
+      "executed": false,
+      "source": "data/character.json#83",
+      "sourceDecisions": [
+        "VH44",
+        "VH52"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "RS",
+        "RV",
+        "TR"
+      ],
+      "skillAuditIds": [
+        "WV-CH83-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 84,
+      "name": "Phù Thủy Câm",
+      "executed": true,
+      "source": "data/character.json#84",
+      "sourceDecisions": [
+        "VH57"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "BL"
+      ],
+      "skillAuditIds": [
+        "WV-CH84-S01"
+      ],
+      "executedSkillIds": [
+        "official.84.silence"
+      ],
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remaining": "Other configurations, interaction with groups",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 85,
+      "name": "Thầy Thôi Miên",
+      "executed": false,
+      "source": "data/character.json#85",
+      "sourceDecisions": [
+        "VH45"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "RF"
+      ],
+      "skillAuditIds": [
+        "WV-CH85-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 86,
+      "name": "Sói Con",
+      "executed": false,
+      "source": "data/character.json#86",
+      "sourceDecisions": [
+        "VH74"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "OP"
+      ],
+      "skillAuditIds": [
+        "WV-CH86-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian",
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 87,
+      "name": "Dược Sĩ",
+      "executed": true,
+      "source": "data/character.json#87",
+      "sourceDecisions": [
+        "VH64"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "BL",
+        "DF",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH87-S01",
+        "WV-CH87-S02"
+      ],
+      "executedSkillIds": [
+        "official.87.sedative"
+      ],
+      "testEvidence": [
+        "tests/sprint15-roles.test.mjs"
+      ],
+      "remaining": "Healing requires real wolf team attack and rescue window (VH64); other chat groups/hanging remain unsupported.",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 88,
+      "name": "Thợ Săn",
+      "executed": true,
+      "source": "data/character.json#88",
+      "sourceDecisions": [
+        "VH65"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "LK",
+        "OP"
+      ],
+      "skillAuditIds": [
+        "WV-CH88-S01"
+      ],
+      "executedSkillIds": [
+        "official.88.pin"
+      ],
+      "testEvidence": [
+        "tests/sprint14-batch01.test.mjs"
+      ],
+      "remaining": "Protection/immunity, hanging, prior-night mark",
+      "unreviewedRuleFlags": [
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Người Khai Mệnh",
+      "executed": false,
+      "source": "data/character.json#89",
+      "sourceDecisions": [
+        "VH47",
+        "VH69"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "IN",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH89-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 90,
+      "name": "Giáo Chủ",
+      "executed": false,
+      "source": "data/character.json#90",
+      "sourceDecisions": [
+        "Q13-08",
+        "VH50",
+        "VH55",
+        "VH59",
+        "VH78"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "CH",
+        "LK",
+        "TR",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH90-S01",
+        "WV-CH90-S02"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Huyết Chủ",
+      "executed": false,
+      "source": "data/character.json#91",
+      "sourceDecisions": [
+        "V02"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "LK",
+        "VT",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH91-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 92,
+      "name": "Huyết Bộc",
+      "executed": false,
+      "source": "data/character.json#92",
+      "sourceDecisions": [],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "AT",
+        "DF",
+        "IN",
+        "RN",
+        "RS",
+        "TR",
+        "WC"
+      ],
+      "skillAuditIds": [
+        "WV-CH92-S01",
+        "WV-CH92-S02",
+        "WV-CH92-S03"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Sói Lưu Đày",
+      "executed": true,
+      "source": "data/character.json#93",
+      "sourceDecisions": [
+        "VH57"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "BL",
+        "TR",
+        "VT"
+      ],
+      "skillAuditIds": [
+        "WV-CH93-S01"
+      ],
+      "executedSkillIds": [
+        "official.93.seal"
+      ],
+      "testEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remaining": "Night skill lock + day chat and vote restriction; loss of partner, transformation and two-target wolf bite remain.",
+      "unreviewedRuleFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Kẻ Giải Nguyền",
+      "executed": true,
+      "source": "data/character.json#94",
+      "sourceDecisions": [
+        "VH56"
+      ],
+      "provisionalAuditGroup": "B_RULE_AND_ENGINE_AUDIT_REQUIRED",
+      "candidateDependencies": [
+        "NO",
+        "RF",
+        "RV"
+      ],
+      "skillAuditIds": [
+        "WV-CH94-S01",
+        "WV-CH94-S02"
+      ],
+      "executedSkillIds": [
+        "passive.94.conceal-aura"
+      ],
+      "testEvidence": [
+        "tests/sprint15-accelerated.test.mjs"
+      ],
+      "remaining": "Living partner aura concealment; redirect, cycle and death interactions remain.",
+      "unreviewedRuleFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "phase / trigger thời gian",
+        "target domain / target-kind",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 95,
+      "name": "Người Hái Thuốc",
+      "executed": false,
+      "source": "data/character.json#95",
+      "sourceDecisions": [
+        "Q13-07",
+        "VH66",
+        "VH67"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "DF",
+        "RS",
+        "RV",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH95-S01",
+        "WV-CH95-S02",
+        "WV-CH95-S03"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": []
+    },
+    {
+      "id": 96,
+      "name": "Thầy Thuốc",
+      "executed": false,
+      "source": "data/character.json#96",
+      "sourceDecisions": [
+        "VH46",
+        "VH48",
+        "VH67"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "AT",
+        "CH",
+        "DF",
+        "RS"
+      ],
+      "skillAuditIds": [
+        "WV-CH96-S01",
+        "WV-CH96-S02",
+        "WV-CH96-S03"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "phase / trigger thời gian",
+        "phase / trigger thời gian",
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 97,
+      "name": "Thần Thảo Hồi Sinh",
+      "executed": false,
+      "source": "data/character.json#97",
+      "sourceDecisions": [
+        "Q13-05",
+        "Q13-07",
+        "Q13-12",
+        "VH63"
+      ],
+      "provisionalAuditGroup": "B_ENGINE_DEPENDENCY",
+      "candidateDependencies": [
+        "DF",
+        "RV",
+        "TM"
+      ],
+      "skillAuditIds": [
+        "WV-CH97-S01"
+      ],
+      "executedSkillIds": [],
+      "testEvidence": [],
+      "remaining": "No executed official branch certified. Source skill exists; engine/test integration is missing (not proof of missing rules).",
+      "unreviewedRuleFlags": [
+        "target domain / target-kind"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+CREATE TABLE IF NOT EXISTS account_preferences(user_id UUID PRIMARY KEY REFERENCES wv_accounts(id) ON DELETE CASCADE, settings_json TEXT NOT NULL, revision INTEGER NOT NULL DEFAULT 1, updated_at BIGINT NOT NULL);
+CREATE TABLE IF NOT EXISTS saved_decks(deck_id UUID PRIMARY KEY, owner_id UUID NOT NULL REFERENCES wv_accounts(id) ON DELETE CASCADE, name TEXT NOT NULL, description TEXT NOT NULL, roles_json TEXT NOT NULL, ruleset TEXT NOT NULL, capacity INTEGER NOT NULL CHECK(capacity BETWEEN 1 AND 100), favorite INTEGER NOT NULL DEFAULT 0 CHECK(favorite IN (0,1)), revision INTEGER NOT NULL DEFAULT 1, created_at BIGINT NOT NULL, updated_at BIGINT NOT NULL);
+CREATE INDEX IF NOT EXISTS saved_decks_owner_idx ON saved_decks(owner_id,updated_at);

@@ -1,0 +1,110 @@
+{
+  "recordId": "WV-DC-2026-11-25-A",
+  "approvedOn": "2026-11-25",
+  "policyStatus": "OWNER_APPROVED",
+  "releaseStatus": "PENDING_IMPLEMENTATION_AND_ACCEPTANCE",
+  "baseRuleset": "wolvesville-official-v1.3.3",
+  "proposedRuleset": "wolvesville-official-v1.3.4",
+  "officialActivation": false,
+  "effectiveAt": null,
+  "source": "Project owner confirmation 25/11/2026, DC-SOUL-01/02, DC-TRAP-02, DC-PACK-KEEP, 4/4 A. Conditions in Articles 1–6 retained.",
+  "historicalRegistryUnchanged": true,
+  "decisionCount": 4,
+  "decisions": [
+    {
+      "id": "DC-SOUL-01",
+      "choice": "A",
+      "ownerApproved": true,
+      "rule": "Only specifically designated damage skills may attempt public-dead seats. Valid attempts consume the skill's applicable resource or usage. Truly dead targets do not incur a new death. Secret survivors take normal damage with valid defenses. No target/receipt/error oracle. No blanket expansion.",
+      "provenance": [
+        "data/character.json#8/#23",
+        "data/rules/official_merged_118.json LIFE-01/VH06/VH82/PH-01",
+        "data/rules/skills.json WV-CH23-S01/S02/S03",
+        "reports/v1.7.29/DECISION_CARDS.md"
+      ],
+      "sourceVerification": "PARTIAL_DESIGNATED_SCOPE",
+      "scope": [
+        "existing QA [8,23,25,36], official.8.night-kill only; one nightly use, no finite ammo"
+      ],
+      "notAuthorized": [
+        "all finite-cost blind damage skills including #23 and #36 until explicitly designated",
+        "voting at publicly dead seats",
+        "Normal Gameplay"
+      ],
+      "conflict": "No contradiction for existing #8 QA. Complete designated list not established by owner text or skill registry.",
+      "code": [
+        "backend/src/official/soul-shooter.ts",
+        "backend/src/engine/validate.ts",
+        "backend/src/official/solo-rules.ts",
+        "backend/src/engine/service.ts",
+        "backend/src/official/capabilities.ts"
+      ]
+    },
+    {
+      "id": "DC-SOUL-02",
+      "choice": "A",
+      "ownerApproved": true,
+      "rule": "A valid #23 shot at a village player consumes one bullet and applies normal damage subject to protections, death-chain and victory. Do not expose faction before authorized resolution. No duplicate charge on retry/restart. Other firing rights unchanged.",
+      "provenance": [
+        "data/character.json#23",
+        "data/rules/skills.json WV-CH23-S03",
+        "data/rules/official_merged_118.json VH06/VH82/LIFE-01/PH-01/VH03",
+        "data/rules/WV-RULE-DECISION-2026-11-25-001.json QD-01",
+        "reports/v1.7.29/DECISION_CARDS.md"
+      ],
+      "sourceVerification": "SOURCE_VERIFIED_POLICY",
+      "scope": [
+        "QA [8,23,25,36] with persisted WV-DC-2026-11-25-A policy; public-living non-self target, existing two-bullet/night-only restriction"
+      ],
+      "conflict": "#23 describes goal of eliminating wolves and third factions, not an explicit friendly-fire immunity; owner choice settles mistaken targeting. QD-01 includes dead village winners.",
+      "code": [
+        "backend/src/official/s13-mechanics.ts",
+        "backend/src/experimental/owner-dc-policy.ts",
+        "backend/src/engine/service.ts"
+      ]
+    },
+    {
+      "id": "DC-TRAP-02",
+      "choice": "A",
+      "ownerApproved": true,
+      "rule": "A valid trapped #26 revival fails; original deceased state remains. Spend one revival and one trap at shared NightActionGroup closure. Invalid commands do not trigger; no synthetic damage/death/revival. No duplicate consumption. Independent effects still resolve.",
+      "provenance": [
+        "data/character.json#10/#26",
+        "data/rules/official_merged_118.json VH73/VH76/PH-01/VH08",
+        "data/rules/owner_bb_final_decisions_20261125.json DEC-BT-02/BB-04/BB-05/BB-PENDING-03",
+        "reports/v1.7.29/DECISION_CARDS.md"
+      ],
+      "sourceVerification": "SOURCE_VERIFIED_POLICY",
+      "scope": [
+        "QA [8,10,25,26], persisted WV-DC-2026-11-25-A policy; valid prior or same-night trap with placement priority 50, revival priority 200"
+      ],
+      "conflict": "VH73 supersedes original village-only revival and VH76 excludes 46/47/53. BB-04 concerns protection/rescue, not revival of a deceased player; DC-TRAP-02 establishes specific failure semantics.",
+      "code": [
+        "backend/src/official/revival.ts",
+        "backend/src/engine/service.ts",
+        "backend/src/experimental/owner-bb-v2/night-action-group.ts"
+      ]
+    },
+    {
+      "id": "DC-PACK-KEEP",
+      "choice": "A",
+      "ownerApproved": true,
+      "rule": "Before lock permanently revoke latest now-invalid choice, keep all still-valid choices, require explicit replacement, no fallback or timeout; do not change a legally committed attack. KEEP retains only a still-valid choice. Hide secret reason in authorized projection.",
+      "provenance": [
+        "data/rules/owner_bb_final_decisions_20261125.json DEC-BT-01/BB-01-BLANK/BB-02/BB-03/BB-PENDING-01",
+        "data/rules/owner_bb_rep_new_01_20261125.json",
+        "data/rules/official_merged_118.json VH54/VH74/VH52",
+        "reports/v1.7.29/DECISION_CARDS.md"
+      ],
+      "sourceVerification": "POLICY_CONSISTENT_PRIVACY_DESIGN_PENDING",
+      "scope": [
+        "candidate lockPack state-level logic, persisted revoked selection revisions; NOT activated in live pack QA"
+      ],
+      "conflict": "No conflict with KEEP; a secretly revoked valid submission can alter phase progression vs a still-valid selection. Observable lock/wait oracle is unresolved. No new public reason is authorized.",
+      "code": [
+        "backend/src/experimental/owner-bb-v2/pack.ts",
+        "backend/src/experimental/owner-dc-policy.ts"
+      ]
+    }
+  ]
+}

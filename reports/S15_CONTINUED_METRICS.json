@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "R": 49,
+    "F": 1,
+    "A": 44,
+    "B": 36,
+    "qaC": 2,
+    "playableC": 2,
+    "S_auditedRoles": 30,
+    "S_pass": 50,
+    "S_total": 63,
+    "normalDecks": 2
+  },
+  "fresh": {
+    "R": 49,
+    "F": 1,
+    "A": 44,
+    "B": 36,
+    "qaC": 2,
+    "playableC": 2,
+    "S_auditedRoles": 30,
+    "S_pass": 49,
+    "S_total": 63,
+    "normalDecks": 3,
+    "newNormalDecksWithBrowserAndBackend": 1
+  },
+  "note": "Fresh certification may be lower than historical count when mandatory browser retest incomplete. This is not removal of existing roles/certificates. A/B count unique deck keys, new normal deck already in A/B. No new character IDs, atomic inventory or formal branch certificate."
+}

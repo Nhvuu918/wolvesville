@@ -1,0 +1,79 @@
+"""Real backend, browser and authenticated clients; no fixture state or fake result."""
+import pathlib,sys
+from playwright.sync_api import sync_playwright
+import browser_e2e as be
+
+def run():
+ with sync_playwright() as pw:
+  kw={'headless':True,'args':['--no-sandbox']}
+  if sys.platform.startswith('linux') and pathlib.Path('/usr/bin/chromium').exists():kw['executable_path']='/usr/bin/chromium'
+  browser=pw.chromium.launch(**kw)
+  def scenario(deck,expected,fn):
+   contexts=[];pages=[]
+   try:
+    for i in range(len(expected)):
+     c,p=be.page_setup(browser);contexts.append(c);pages.append(p);be.register(p,'S15'+deck.replace('-','')+str(i))
+    host=pages[0];host.evaluate("openVillagePanel('create','well')")
+    host.locator('#wv-room-name').fill('S15 gameplay');host.locator('#wv-capacity').fill(str(len(expected)));host.locator('.village-create-form button[type=submit]').click()
+    host.wait_for_function('WolvesLive.room?.members?.length===1',timeout=12000);rid=host.evaluate('WolvesLive.room.id')
+    for i,p in enumerate(pages[1:],2):
+     p.evaluate('(id)=>WolvesLive.openRoom(id)',rid);p.wait_for_function(f'WolvesLive.room?.members?.length==={i}',timeout=12000)
+    host.wait_for_function(f'WolvesLive.room?.members?.length==={len(expected)}',timeout=12000)
+    host.evaluate('WolvesLive.roomLock(true)');host.wait_for_function('WolvesLive.room.status==="LOCKED"')
+    host.evaluate("openVillagePanel('live-room','directory')");host.locator('#wv-test-deck').select_option(deck);host.get_by_role('button',name='Bắt đầu lượt chơi thử').click()
+    for p in pages:p.wait_for_function('WolvesLive.game?.phase==="NIGHT_COLLECT" && page==="ingame"',timeout=18000)
+    roles={p.evaluate('WolvesLive.game.players.find(x=>x.playerId===WolvesLive.profile.id).self.currentCharacterId'):p for p in pages};assert sorted(roles)==sorted(expected),roles
+    def action(role,target,skill=None,second=None):
+     p=roles[role];p.wait_for_function('!WolvesLive.working');pid=roles[target].evaluate('WolvesLive.profile.id')
+     if skill and p.locator('#wv-skill-choice').count():p.locator('#wv-skill-choice').select_option(skill)
+     p.evaluate('(id)=>WolvesLive.chooseTarget(11000+WolvesLive.localSeatToId.indexOf(id))',pid)
+     if second is not None:p.locator('#wv-second-target').select_option(roles[second].evaluate('WolvesLive.profile.id'))
+     p.wait_for_function('!WolvesLive.working && !!document.querySelector("#wv-skill-submit:not([disabled])")');before=p.evaluate('WolvesLive.feedback.size');p.locator('#wv-skill-submit').click();p.wait_for_function(f'!WolvesLive.working && WolvesLive.feedback.size>{before}',timeout=15000)
+    def resolve(phase):
+     host.wait_for_function('!WolvesLive.working');host.evaluate('WolvesLive.resolve()')
+     for p in pages:p.wait_for_function(f'WolvesLive.game?.phase==="{phase}"',timeout=18000)
+    print('SCENARIO_READY',deck,flush=True);fn(roles,action,resolve,host);print('SCENARIO_ACTIONS_PASS',deck,flush=True)
+    for p in pages:assert p.evaluate('async()=>(await WolvesLive.request(`/api/games/${WolvesLive.gameId}/replay`)).replay.verified')
+   finally:
+    for p in pages:
+     try:p.evaluate('WolvesLive.disconnect()')
+     except Exception:pass
+    for c in contexts:be.close_context(c)
+  def ballot(roles,host,actor,target):
+   host.wait_for_function('!WolvesLive.working');host.evaluate('WolvesLive.openVote()')
+   for p in roles.values():p.wait_for_function('WolvesLive.game.phase==="DAY_VOTE_COLLECT"')
+   p=roles[actor];tid=roles[target].evaluate('WolvesLive.profile.id');p.wait_for_function('!WolvesLive.working');p.evaluate('(id)=>WolvesLive.chooseTarget(11000+WolvesLive.localSeatToId.indexOf(id))',tid);p.get_by_role('button',name='Gửi / đổi phiếu').click();p.wait_for_function('(id)=>!WolvesLive.working && WolvesLive.game.voting.ownBallot?.targetId===id',arg=tid);host.wait_for_function('!WolvesLive.working');host.evaluate('WolvesLive.closeVote()')
+  def winners(roles,expected):
+   ids=[roles[r].evaluate('WolvesLive.profile.id') for r in expected]
+   for p in roles.values():
+    p.wait_for_function('WolvesLive.game.completed===true');assert sorted(p.evaluate('WolvesLive.game.winnerIds'))==sorted(ids);assert p.locator('.wv-winners').count()==1
+  def case(roles,action,resolve,host):
+   medium=roles[26];victim=roles[74];vid=victim.evaluate('WolvesLive.profile.id')
+   assert not medium.evaluate('WolvesLive.game.capabilities.some(c=>c.skillId==="official.26.revive"&&c.available)')
+   action(8,74,'official.8.night-kill');resolve('DAY_DISCUSS');assert victim.evaluate('WolvesLive.game.players.find(p=>p.self).self.life==="DEAD_FINAL"')
+   host.get_by_role('button',name='Chốt ngày (chế độ QA)').click()
+   for p in roles.values():p.wait_for_function('WolvesLive.game.phase==="NIGHT_COLLECT"&&WolvesLive.game.round===2')
+   assert medium.evaluate('(id)=>WolvesLive.game.capabilities.some(c=>c.skillId==="official.26.revive"&&c.available&&c.eligibleTargetIds.includes(id))',vid)
+   assert roles[8].locator('#wv-medium-chat').count()==0
+   medium.locator('#wv-medium-chat-input').fill('Thông điệp bí mật');medium.locator('#wv-medium-chat-submit').click()
+   victim.locator('.wv-medium-chat-history').get_by_text('Thông điệp bí mật',exact=False).wait_for()
+   assert victim.evaluate('WolvesLive.game.mediumChat.kind==="DEAD" && !WolvesLive.events.filter(e=>e.eventType==="MEDIUM_CHAT_MESSAGE").some(e=>e.actorId||e.targetId)')
+   assert roles[8].locator('#wv-medium-chat').count()==0
+   victim.locator('#wv-medium-chat-input').fill('Trả lời riêng');victim.locator('#wv-medium-chat-submit').click()
+   medium.locator('.wv-medium-chat-history').get_by_text('Trả lời riêng',exact=False).wait_for()
+   assert not roles[8].evaluate('WolvesLive.events.some(e=>e.eventType==="MEDIUM_CHAT_MESSAGE")')
+   victim.evaluate('WolvesLive.disconnect();WolvesLive.connect()');victim.wait_for_function('WolvesLive.connectionState==="online" && WolvesLive.game.mediumChat?.kind==="DEAD"');victim.locator('.wv-medium-chat-history').get_by_text('Thông điệp bí mật',exact=False).wait_for()
+   action(26,74,'official.26.revive');action(8,26,'official.8.night-kill');resolve('DAY_DISCUSS')
+   victim.wait_for_function('WolvesLive.game.players.find(p=>p.self).self.life==="ALIVE"');assert victim.locator('#wv-medium-chat').count()==0
+   for p in roles.values():
+    p.wait_for_function('(id)=>WolvesLive.events.some(e=>e.eventType==="PLAYER_REVIVED"&&e.payload.playerId===id)',arg=vid)
+    assert not p.evaluate('WolvesLive.events.some(e=>e.eventType==="REVIVAL_SCHEDULED")')
+    p.locator('.wv-game-events').get_by_text('đã hồi sinh.',exact=False).wait_for()
+   host.get_by_role('button',name='Chốt ngày (chế độ QA)').click()
+   for p in roles.values():p.wait_for_function('WolvesLive.game.phase==="NIGHT_COLLECT"&&WolvesLive.game.round===3')
+   action(74,8,'official.74.inspect-role');action(8,74,'official.8.night-kill');host.wait_for_function('!WolvesLive.working');host.evaluate('WolvesLive.resolve()');winners(roles,[8]);victim.wait_for_function('WolvesLive.events.some(e=>e.eventType==="ROLE_OBSERVED"&&e.payload.characterId===8)');assert not roles[8].evaluate('WolvesLive.events.some(e=>e.eventType==="ROLE_OBSERVED")')
+  try:
+   scenario('s15-break-medium-mystic',[8,26,74],case)
+   assert not be.LOGS,be.LOGS[:10];print('S15_BREAKTHROUGH_MEDIUM_BROWSER_PASS')
+  finally:browser.close();be.bridge.shutdown()
+if __name__=='__main__':run()

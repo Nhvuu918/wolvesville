@@ -1,0 +1,101 @@
+{
+  "version": "1.7.23-s15-representative-order-wip",
+  "proposedRuleVersion": "wolvesville-official-v1.3.4",
+  "state": "CANDIDATE",
+  "active": false,
+  "ownerPolicyApproved": true,
+  "readyForApproval": false,
+  "gates": [
+    {
+      "gate": "Owner decisions",
+      "status": "PASS",
+      "evidence": "14 approved choices, including B superseding A; no effective date"
+    },
+    {
+      "gate": "Rule consistency",
+      "status": "PARTIAL",
+      "evidence": "Rank policy approved; mixed conversion, revoked targets/zero eligible and additional mappings not all live verified"
+    },
+    {
+      "gate": "Cross-window Engine",
+      "status": "PASS_BOUNDED",
+      "evidence": "Actual #29 distinct rescue and poison windows; not arbitrary cross-phase or revival"
+    },
+    {
+      "gate": "Representative order",
+      "status": "PASS_BOUNDED",
+      "evidence": "reports/BB_REPRESENTATIVE_REPRESENTATIVE_ACCEPTANCE.json"
+    },
+    {
+      "gate": "Consensus wait",
+      "status": "PASS_BOUNDED",
+      "evidence": "Indefinite wait; no auto votes/AFK deadline"
+    },
+    {
+      "gate": "Trap consumption/resource/cooldown",
+      "status": "PASS_BOUNDED",
+      "evidence": "Group ledger, distinct windows, one mark; unsupported mappings fail closed"
+    },
+    {
+      "gate": "Death chain/victory",
+      "status": "PARTIAL",
+      "evidence": "PH-01 and deferred death tested; revival and linked death domains incomplete"
+    },
+    {
+      "gate": "REST/WS/UI",
+      "status": "PASS_BOUNDED",
+      "evidence": "Local QA controls only"
+    },
+    {
+      "gate": "SQLite restart/replay/privacy",
+      "status": "PASS_BOUNDED",
+      "evidence": "Targeted live tests; historical regression tracked separately"
+    },
+    {
+      "gate": "Legacy backend",
+      "status": "PASS",
+      "evidence": "reports/BB_REPRESENTATIVE_BACKEND_REGRESSION.json"
+    },
+    {
+      "gate": "Critical browser",
+      "status": "PASS",
+      "evidence": "reports/BB_REPRESENTATIVE_BROWSER_RESULTS.json"
+    },
+    {
+      "gate": "Previous two browser failures",
+      "status": "PASS_RETEST",
+      "evidence": "reports/BB_REPRESENTATIVE_BROWSER_RESULTS.json"
+    },
+    {
+      "gate": "Human QA",
+      "status": "PENDING",
+      "evidence": "Await actual owner feedback"
+    },
+    {
+      "gate": "Full project browser",
+      "status": "INCOMPLETE_OR_FAIL",
+      "evidence": "reports/BB_REPRESENTATIVE_BROWSER_RESULTS.json"
+    },
+    {
+      "gate": "PostgreSQL live",
+      "status": "PENDING",
+      "evidence": "No real live PG acceptance"
+    },
+    {
+      "gate": "Version release authorization",
+      "status": "PENDING",
+      "evidence": "Owner approved policy, not activation"
+    },
+    {
+      "gate": "Winner Screen Regression",
+      "status": "PASS",
+      "evidence": "reports/BB_REPRESENTATIVE_BROWSER_DEFECTS.json"
+    },
+    {
+      "gate": "Revival browser regression",
+      "status": "PASS_RETEST",
+      "evidence": "reports/BB_REPRESENTATIVE_BROWSER_DEFECTS.json"
+    }
+  ],
+  "releaseScope": "reports/BB_REPRESENTATIVE_RELEASE_SCOPE.json"
+}

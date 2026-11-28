@@ -1,0 +1,36 @@
+
+> wolvesville-sprint07-full-match@0.9.0 test:pg:07
+> npm run build && WV_REQUIRE_POSTGRES=1 node --test tests/postgres-s07.test.mjs
+
+
+> wolvesville-sprint07-full-match@0.9.0 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+TAP version 13
+# (node:75599) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S07 PostgreSQL LIVE isolated schema: certified early match, idempotency, ACL, restart, replay
+not ok 1 - S07 PostgreSQL LIVE isolated schema: certified early match, idempotency, ACL, restart, replay
+  ---
+  duration_ms: 1.060656
+  type: 'test'
+  location: '/mnt/data/Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/tests/postgres-s07.test.mjs:15:1'
+  failureType: 'testCodeFailure'
+  error: 'DATABASE_URL REQUIRED for PostgreSQL acceptance; SQLite must remain independent'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/Wolvesville_Sprint_07_Full_Match_Integration_Full_Source/tests/postgres-s07.test.mjs:18:25)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 143.419404

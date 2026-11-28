@@ -1,0 +1,121 @@
+VOTING_INFO_READY s15-sedative
+Timeout (0:00:52)!
+Thread 0x00007f8b7b7fe6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f8b7bfff6c0 (most recent call first):
+  File "/usr/lib/python3.13/socket.py", line 719 in readinto
+  File "/usr/lib/python3.13/http/client.py", line 292 in _read_status
+  File "/usr/lib/python3.13/http/client.py", line 331 in begin
+  File "/usr/lib/python3.13/http/client.py", line 1430 in getresponse
+  File "/opt/pyvenv/lib/python3.13/site-packages/urllib3/connection.py", line 571 in getresponse
+  File "/opt/pyvenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534 in _make_request
+  File "/opt/pyvenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 788 in urlopen
+  File "/opt/pyvenv/lib/python3.13/site-packages/requests/adapters.py", line 644 in send
+  File "/opt/pyvenv/lib/python3.13/site-packages/requests/sessions.py", line 703 in send
+  File "/opt/pyvenv/lib/python3.13/site-packages/requests/sessions.py", line 589 in request
+  File "/opt/pyvenv/lib/python3.13/site-packages/requests/api.py", line 59 in request
+  File "/mnt/data/s15work/tests/browser_e2e.py", line 64 in fetch_bridge
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59 in run
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 93 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f8b98ef96c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f8b996fa6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f8b99efb6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f8b9a6fc6c0 (most recent call first):
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 99 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 127 in recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 581 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 418 in recv_strict
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 329 in recv_header
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 375 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 485 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 444 in recv_data_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 423 in recv_data
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 395 in recv
+  File "/mnt/data/s15work/tests/browser_e2e.py", line 26 in reader
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f8b9affd6c0 (most recent call first):
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 99 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 127 in recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 581 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 418 in recv_strict
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 329 in recv_header
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 375 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 485 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 444 in recv_data_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 423 in recv_data
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 395 in recv
+  File "/mnt/data/s15work/tests/browser_e2e.py", line 26 in reader
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f8b9b7fe6c0 (most recent call first):
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 99 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_socket.py", line 127 in recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 581 in _recv
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 418 in recv_strict
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 329 in recv_header
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_abnf.py", line 375 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 485 in recv_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 444 in recv_data_frame
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 423 in recv_data
+  File "/opt/pyvenv/lib/python3.13/site-packages/websocket/_core.py", line 395 in recv
+  File "/mnt/data/s15work/tests/browser_e2e.py", line 26 in reader
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f8b9bfff6c0 (most recent call first):
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 90 in _worker
+  File "/usr/lib/python3.13/threading.py", line 994 in run
+  File "/usr/lib/python3.13/threading.py", line 1043 in _bootstrap_inner
+  File "/usr/lib/python3.13/threading.py", line 1014 in _bootstrap
+
+Thread 0x00007f8bb8485780 (most recent call first):
+  File "/usr/lib/python3.13/selectors.py", line 452 in select
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 2004 in _run_once
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 683 in run_forever
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 712 in run_until_complete
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/sync_api/_context_manager.py", line 56 in greenlet_main
+VOTING_INFO_ASSERTIONS_PASS s15-sedative
+VOTING_INFO_CLEANUP_PASS s15-sedative
+S15_BROWSER_PASS
+Task exception was never retrieved
+future: <Task finished name='Task-1145' coro=<Channel.send() done, defined at /opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py:61> exception=TargetClosedError('Channel.send: Target page, context or browser has been closed')>
+Traceback (most recent call last):
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Channel.send: Target page, context or browser has been closed
+S06_BROWSER_CASE_PASS browser_s15_voting_information_e2e.py sedative

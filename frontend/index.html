@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WOLFVILLE — Ma Sói Nhập Vai · Sân Khấu Cổ Tích Đen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Charm:wght@400;700&family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Lora:ital,wght@0,600;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,600&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="integration.css">
+</head>
+<body data-theme="moon">
+
+  <!-- ========================================================================
+       Lớp phủ Chuyển cảnh (Fade to Black 0.4s — Scene Transition)
+       ======================================================================== -->
+  <div class="scene-transition" id="sceneTransition" aria-hidden="true">
+    <div class="scene-transition-crest">☾</div>
+  </div>
+
+  <section class="title-screen" id="titleScreen" aria-label="Wolfville">
+    <div class="landing-hero">
+      <svg class="landing-village" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="landingSky" x2="0" y2="1" gradientUnits="objectBoundingBox">
+            <stop stop-color="#0a1027"/><stop offset=".52" stop-color="#273551"/><stop offset="1" stop-color="#735366"/>
+          </linearGradient>
+          <linearGradient id="landingRoad" x2="0" y2="1">
+            <stop stop-color="#a58281"/><stop offset="1" stop-color="#35263b"/>
+          </linearGradient>
+          <radialGradient id="landingMoonlight">
+            <stop stop-color="#fbdeb4" stop-opacity=".58"/><stop offset=".38" stop-color="#c9a6b6" stop-opacity=".24"/><stop offset="1" stop-color="#b2a6ca" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="landingFog">
+            <stop stop-color="#d7aeb5" stop-opacity=".38"/><stop offset="1" stop-color="#b4b0cf" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="landingLamplight">
+            <stop stop-color="#ffbe72" stop-opacity=".65"/><stop offset="1" stop-color="#f08b4e" stop-opacity="0"/>
+          </radialGradient>
+          <g id="landingPine">
+            <path d="M0 0 25 61 14 57 36 95 19 89 45 125 6 120 5 145-6 145-7 120-45 125-20 89-36 95-14 57-25 61Z" fill="currentColor"/>
+          </g>
+          <g id="landingWin">
+            <path d="M0 19V8a7 7 0 0 1 14 0v11Z" fill="#ffd28b"/>
+            <path d="M7 2v17M0 10h14" stroke="#95563f" stroke-width="1.4"/>
+          </g>
+          <g id="landingHouse">
+            <ellipse cx="54" cy="69" rx="60" ry="62" fill="url(#landingLamplight)" opacity=".35"/>
+            <path d="M11 43 48 9 91 45v67H11Z" fill="currentColor" stroke="#e6a77c" stroke-opacity=".24" stroke-width="2"/>
+            <path d="m73 22 0-25 10 2 0 32M0 47Q25 28 46-10 61 28 105 47L86 43 46 8 16 45Z" fill="#151626"/>
+            <path d="m1 47 15-2L46 8l40 35 18 4M12 82h78M19 47v65m65-67v67" fill="none" stroke="#b28a85" stroke-opacity=".43" stroke-width="2"/>
+            <path d="M44 112V92q10-18 21 0v20Z" fill="#171625"/>
+            <use href="#landingWin" x="43" y="34"/><use href="#landingWin" x="24" y="59"/><use href="#landingWin" x="66" y="58"/>
+          </g>
+          <g id="landingCottage">
+            <ellipse cx="65" cy="66" rx="72" ry="58" fill="url(#landingLamplight)" opacity=".36"/>
+            <path d="M10 46 42 17h63l32 35v63H9Z" fill="currentColor" stroke="#e6a77c" stroke-opacity=".3" stroke-width="2"/>
+            <path d="M0 55Q21 30 34 0l83 2q12 38 39 53l-39-7-15-24H41L18 51Z" fill="#181829"/>
+            <path d="m1 54 17-3 23-27h61l15 24 38 7M14 82h119M36 37v78m72-70v70" stroke="#c09488" stroke-opacity=".44" stroke-width="2" fill="none"/>
+            <path d="M64 115V93q12-17 24 0v22Z" fill="#191627"/>
+            <use href="#landingWin" x="42" y="49"/><use href="#landingWin" x="70" y="47"/><use href="#landingWin" x="113" y="59"/>
+          </g>
+          <g id="landingTower">
+            <path d="M8 165V52h46v113Z" fill="currentColor" stroke="#9c939f" stroke-opacity=".45" stroke-width="2"/>
+            <path d="M0 55 32 0l32 55Z" fill="#1c233a" stroke="#81819c" stroke-opacity=".48" stroke-width="2"/>
+            <path d="M32 0v-15m-5 4h10M7 69h49M7 113h49" fill="none" stroke="#9c939f" stroke-opacity=".55"/>
+            <use href="#landingWin" x="25" y="81"/><use href="#landingWin" x="25" y="124"/>
+          </g>
+        </defs>
+        <rect width="1440" height="900" fill="url(#landingSky)"/>
+        <ellipse cx="704" cy="263" rx="440" ry="285" fill="url(#landingMoonlight)"/>
+        <circle cx="698" cy="193" r="84" fill="#fee0b6"/>
+        <path d="M620 209q53 15 122-7l40-6m-154 35q73 10 134-6m-114-87q48-9 77-1" fill="none" stroke="#ba939f" stroke-opacity=".3" stroke-width="3"/>
+        <g fill="#f9dfc4" opacity=".65">
+          <circle cx="412" cy="142" r="1.8"/><circle cx="530" cy="100" r="1.1"/><circle cx="571" cy="198" r="1.4"/>
+          <circle cx="864" cy="117" r="1.7"/><circle cx="980" cy="170" r="2"/><circle cx="1152" cy="111" r="1.3"/><circle cx="365" cy="222" r="1.4"/>
+        </g>
+        <path d="M0 408 143 308l125 47 116-91 80 15 110 112 146 23 176-50 185-80 76 38 103-17 180 95v500H0Z" fill="#35415a"/>
+        <path d="M0 476Q155 339 334 420T630 438 918 422 1174 386 1440 467V900H0Z" fill="#2b344d"/>
+        <ellipse cx="712" cy="421" rx="720" ry="96" fill="url(#landingFog)"/>
+        <g color="#2c2b43">
+          <use href="#landingPine" transform="translate(295 326) scale(.88)"/>
+          <use href="#landingPine" transform="translate(352 355) scale(.77)"/>
+          <use href="#landingPine" transform="translate(1020 318) scale(.97)"/>
+          <use href="#landingPine" transform="translate(1093 304) scale(1.05)"/>
+          <use href="#landingPine" transform="translate(1170 336) scale(.85)"/>
+        </g>
+        <path d="M550 476q70-94 160-82 89 10 175 80Z" fill="#342d45"/>
+        <g color="#4b4056">
+          <path d="M608 455v-88l59-45 48 23 45-19 62 40v89Z" fill="#40394f" stroke="#9c939f" stroke-opacity=".35" stroke-width="2"/>
+          <use href="#landingTower" transform="translate(603 292) scale(.85)"/>
+          <use href="#landingTower" transform="translate(640 287) scale(.92)"/>
+          <use href="#landingTower" transform="translate(699 227) scale(1.35)"/>
+          <use href="#landingTower" transform="translate(776 296) scale(.89)"/>
+          <use href="#landingWin" x="686" y="371"/><use href="#landingWin" x="770" y="373"/>
+        </g>
+        <ellipse cx="727" cy="473" rx="650" ry="85" fill="url(#landingFog)"/>
+        <path d="M0 548Q240 449 483 512T910 518 1440 535v365H0Z" fill="#3c334a"/>
+        <path d="M705 451q19 33-20 69t25 75q77 50-3 117T506 900h442q-38-104-74-160t-62-118q-10-37-72-69-49-29-25-55 18-22-10-47Z" fill="url(#landingRoad)" opacity=".8"/>
+        <path d="M688 812q110-71 125-147m-91-35q-11-37-35-54m55-20-20-14m57 179-32 13M624 880l-39 16" stroke="#d4a9a0" stroke-opacity=".3" stroke-width="4" fill="none"/>
+          <use href="#landingCottage" transform="translate(5 506) scale(1.35)" color="#292032"/>
+          <use href="#landingHouse" transform="translate(160 471) scale(0.98)" color="#34283e"/>
+          <use href="#landingHouse" transform="translate(278 465) scale(1.13)" color="#392d43"/>
+          <use href="#landingCottage" transform="translate(392 498) scale(0.88)" color="#35293b"/>
+          <use href="#landingHouse" transform="translate(468 466) scale(0.73)" color="#3c3045"/>
+          <use href="#landingHouse" transform="translate(532 487) scale(0.56)" color="#45354a"/>
+          <use href="#landingCottage" transform="translate(594 500) scale(0.46)" color="#4b3950"/>
+          <use href="#landingHouse" transform="translate(803 488) scale(0.58)" color="#48364b"/>
+          <use href="#landingHouse" transform="translate(865 466) scale(0.76)" color="#403146"/>
+          <use href="#landingCottage" transform="translate(961 463) scale(1.04)" color="#372a40"/>
+          <use href="#landingHouse" transform="translate(1064 495) scale(0.92)" color="#34263a"/>
+          <use href="#landingHouse" transform="translate(1165 467) scale(1.17)" color="#2e2438"/>
+          <use href="#landingCottage" transform="translate(1283 485) scale(1.28)" color="#272032"/>
+          <use href="#landingHouse" transform="translate(82 608) scale(1.58)" color="#211b30"/>
+          <use href="#landingHouse" transform="translate(269 576) scale(1.29)" color="#2b2136"/>
+          <use href="#landingCottage" transform="translate(404 607) scale(1.05)" color="#30243a"/>
+          <use href="#landingHouse" transform="translate(963 610) scale(1.07)" color="#30243a"/>
+          <use href="#landingHouse" transform="translate(1080 564) scale(1.47)" color="#282035"/>
+          <use href="#landingCottage" transform="translate(1263 600) scale(1.61)" color="#211a2d"/>
+        <ellipse cx="713" cy="686" rx="700" ry="104" fill="url(#landingFog)" opacity=".5"/>
+        <g fill="#161626">
+          <path d="M0 779q205-79 341-24 63 29 180 145H0ZM1440 763q-248-55-395 32-60 35-103 105h498Z"/>
+          <path d="M0 112q119 18 187 138 37 66 54 151-53-123-117-156-51-20-67-83L0 143Zm17 641Q85 538 33 330L0 266v576Z"/>
+          <path d="M1440 129q-142 30-219 159-30 49-46 113 61-113 143-142 49-21 74-77l48-23Zm0 113q-67 113-51 248 11 120-36 282l87 30Z"/>
+        </g>
+        <g color="#121423">
+          <use href="#landingPine" transform="translate(113 615) scale(1.22)"/>
+          <use href="#landingPine" transform="translate(1298 588) scale(1.5)"/>
+          <use href="#landingPine" transform="translate(1384 555) scale(1.85)"/>
+        </g>
+        <g fill="url(#landingLamplight)">
+          <circle cx="540" cy="708" r="77"/><circle cx="938" cy="694" r="77"/>
+        </g>
+        <g fill="#ffd691" stroke="#503149" stroke-width="3">
+          <path d="M530 705h20l-3 18h-14Zm398-14h20l-3 18h-14Z"/>
+          <path d="M540 724v54m398-68v54M528 706l12-7 12 7m374-14 12-7 12 7" fill="none"/>
+        </g>
+      </svg>
+
+      <canvas class="particle-canvas" id="particleCanvas" aria-hidden="true"></canvas>
+
+      <header class="landing-header">
+        <span class="landing-brand"><span aria-hidden="true">☾</span> WOLFVILLE</span>
+        <nav class="landing-nav" aria-label="Điều hướng trang chào">
+          <button class="landing-nav-control" id="landingLogin" type="button" onclick="openLandingAuth()">Đăng nhập</button>
+          <details class="landing-disclosure" name="landing-nav">
+            <summary class="landing-nav-control">Ngôn ngữ</summary>
+            <div class="landing-popover"><span lang="vi">Tiếng Việt</span><span aria-hidden="true">✓</span></div>
+          </details>
+          <details class="landing-disclosure" name="landing-nav">
+            <summary class="landing-nav-control">Thông báo</summary>
+            <div class="landing-popover"><p>Bạn đang xem Sân Khấu Cổ Tích Đen. Đăng nhập để tham gia các bộ vai đang được hỗ trợ.</p></div>
+          </details>
+          <details class="landing-disclosure" name="landing-nav">
+            <summary class="landing-nav-control">Cộng đồng</summary>
+            <div class="landing-popover landing-community">
+              <span class="muted">Bảng xếp hạng chưa mở</span>
+              <button type="button" onclick="enterGamePage('profile')">Hồ sơ &amp; thành tích</button>
+            </div>
+          </details>
+        </nav>
+      </header>
+
+      <h1 class="landing-action">
+        <button class="landing-cta" id="landingEnter" type="button" onclick="enterNight()">
+          <span aria-hidden="true">✦</span> Chạm để bước vào đêm <span aria-hidden="true">✦</span>
+        </button>
+      </h1>
+      <a class="landing-scroll" href="#landingStory" aria-label="Đọc câu chuyện ngôi làng">⌄</a>
+    </div>
+
+    <section class="landing-story" id="landingStory" aria-labelledby="landingStoryTitle">
+      <div class="landing-story-inner">
+        <div class="landing-story-art" aria-hidden="true">
+          <svg viewBox="0 0 420 490">
+            <defs>
+              <linearGradient id="storyCloak" x2="1" y2="1">
+                <stop stop-color="#c96578"/><stop offset=".46" stop-color="#79334d"/><stop offset="1" stop-color="#361e36"/>
+              </linearGradient>
+              <radialGradient id="storyHalo">
+                <stop stop-color="#e4af91" stop-opacity=".6"/><stop offset="1" stop-color="#e4af91" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <ellipse cx="225" cy="244" rx="171" ry="203" fill="url(#storyHalo)"/>
+            <path d="M54 432V221a156 156 0 0 1 312 0v211Z" fill="#29253f" stroke="#ac7d72" stroke-width="2"/>
+            <path d="M70 428V219a140 140 0 0 1 280 0v209" fill="none" stroke="#dca48b" stroke-opacity=".47"/>
+            <circle cx="217" cy="187" r="89" fill="#cc9a91"/>
+            <path d="M54 395q58-51 92-19 51-61 110-20 63-38 110 19v57H54Z" fill="#373048"/>
+            <path d="M79 424q16-81 3-137m7 47q13-39 40-58m-44 38q-10-26-24-36m282 144q-10-68 12-129m-16 93q-22-31-40-36" stroke="#151625" stroke-width="9" fill="none"/>
+            <ellipse cx="210" cy="422" rx="110" ry="17" fill="#161624" opacity=".85"/>
+            <path d="m174 345-4 58q-18 14-15 21h55l4-62m8-2 9 61h49q0-12-19-18l-6-63" fill="#181725"/>
+            <g class="story-red-breath">
+              <path class="story-red-cape" d="M151 326q-14 40-35 73 77 20 182-5-22-38-27-76l-27-47-70 5Z" fill="url(#storyCloak)" stroke="#d77b85" stroke-opacity=".65" stroke-width="2"/>
+              <g class="story-red-attention">
+                <g class="story-red-head">
+                  <g class="story-red-hood">
+                    <path d="M132 277q-21-19-13-72 18-81 88-96 73 3 96 79 16 52-14 96-45 30-157-7Z" fill="url(#storyCloak)" stroke="#df8790" stroke-width="2"/>
+                    <path d="M144 254q-21-61 58-115 84 24 89 98-17 58-70 61-45 5-77-44Z" fill="#241c2f"/>
+                    <path d="M161 228q31-5 66-58 11 33 47 51-2 52-43 63-51 11-70-56Z" fill="#f0b99f"/>
+                    <path d="M174 254q5-56 50-77-12 35-50 52Zm55-77q50 17 45 66-18-24-45-66Z" fill="#3f293a"/>
+                  </g>
+                  <path class="story-red-eyes" d="M189 239q7-10 16-1m32 1q8-10 16-1" fill="none" stroke="#4d2d3a" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M213 259q8 6 14 0" fill="none" stroke="#4d2d3a" stroke-width="3" stroke-linecap="round"/>
+                </g>
+              </g>
+              <path d="M160 278q27 28 64 27 47-2 66-36-11 50-56 62-39-7-74-53Z" fill="#bc6172"/>
+              <circle cx="228" cy="307" r="7" fill="#f2ca87"/>
+              <path d="M262 329q20-13 35 4" fill="none" stroke="#e9ac8f" stroke-width="9" stroke-linecap="round"/>
+              <g class="story-red-lantern">
+                <g class="story-red-light">
+                  <circle class="story-red-glow" cx="302" cy="366" r="61" fill="url(#storyHalo)"/>
+                </g>
+                <path d="M294 350v-11q8-12 16 0v11" fill="none" stroke="#b78069" stroke-width="3"/>
+                <path d="M287 350h32l-5 32h-21Z" fill="#ffd18b" stroke="#624453" stroke-width="3"/>
+                <path d="M303 351v30" stroke="#9f684f" stroke-width="2"/>
+              </g>
+            </g>
+            <path d="M106 221h12m-6-6v12m217 42h14m-7-7v14m-8-91h7m-3-4v8" stroke="#f8d49b" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="landing-story-copy">
+          <h2 id="landingStoryTitle">Đêm xuống trên ngôi làng bị nguyền rủa</h2>
+          <p>Khi tiếng chuông vang lên giữa màn sương, mỗi cư dân đều mang một thân phận bí mật. Có kẻ săn mồi dưới lớp da người, có người cố giữ ánh sáng đến bình minh, và có kẻ chỉ chờ màn hỗn loạn bắt đầu.</p>
+          <p>Khi rèm đêm khép lại, liệu bạn sẽ sống sót đến bình minh… hay chính bạn là con quái vật đứng sau tất cả?</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ========================================================================
+       CỔNG ĐĂNG NHẬP / ĐĂNG KÝ (AUTH GATE MODAL)
+       ======================================================================== -->
+  <div class="auth-screen" id="authScreen" hidden>
+    <button class="btn-secondary landing-auth-close" type="button" onclick="closeLandingAuth()">Về màn hình chào</button>
+    <div class="auth-shell">
+      <section class="auth-art">
+        <div class="auth-gothic-arch" aria-hidden="true"></div>
+        <div class="auth-brand">
+          <div class="auth-moon-badge" aria-hidden="true">☾</div>
+          <span class="auth-brand-kicker">Cổng Vào Làng Sương Mù</span>
+          <h1>MA SÓI NHẬP VAI</h1>
+          <p class="auth-brand-sub">Sân Khấu Cổ Tích Đen</p>
+        </div>
+        <svg class="auth-forest-svg" viewBox="0 0 380 250" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="silverMoon" cx="50%" cy="38%" r="52%">
+              <stop offset="0%" stop-color="#FFFFFF"/>
+              <stop offset="40%" stop-color="#F3D38B" stop-opacity="0.85"/>
+              <stop offset="100%" stop-color="#2A1B47" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="mistGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2A1B47" stop-opacity="0"/>
+              <stop offset="100%" stop-color="#0E0C1D" stop-opacity="0.92"/>
+            </linearGradient>
+          </defs>
+          <path d="M30 240 V115 Q30 22 190 12 Q350 22 350 115 V240 Z" fill="#120E24" stroke="#6E5B7B" stroke-width="1.2" stroke-opacity="0.4"/>
+          <circle cx="190" cy="95" r="78" fill="url(#silverMoon)"/>
+          <circle cx="190" cy="88" r="32" fill="#F4EEFA"/>
+          <circle cx="202" cy="80" r="27" fill="#120E24"/>
+          <path d="M35 238 Q75 160 58 96 Q88 135 120 115 Q92 158 104 238 Z" fill="#0B0917"/>
+          <path d="M345 238 Q305 160 322 96 Q292 135 260 115 Q288 158 276 238 Z" fill="#0B0917"/>
+          <path d="M168 215 L176 148 L190 124 L204 148 L212 215 Z" fill="#0E0C1D"/>
+          <rect x="186" y="156" width="8" height="14" rx="4" fill="#F3D38B" opacity="0.85"/>
+          <ellipse cx="190" cy="212" rx="145" ry="22" fill="url(#mistGrad)"/>
+          <path d="M32 218 Q125 196 190 212 T348 214 L348 240 L32 240 Z" fill="#0E0C1D"/>
+        </svg>
+        <div class="auth-lore">
+          <p>
+            <strong>“Khi tiếng hộp nhạc vang lên giữa sương đêm,</strong><br>
+            52 lá bài chuẩn cùng 100 thân phận cổ tích đang chờ người lật mở.”
+          </p>
+        </div>
+      </section>
+
+      <section class="auth-form-pane">
+        <div class="auth-tabs" role="tablist">
+          <button type="button" class="active" id="tabLogin" onclick="authMode('login')">Đăng nhập</button>
+          <button type="button" id="tabRegister" onclick="authMode('register')">Đăng ký</button>
+        </div>
+        <div class="auth-header">
+          <h2 id="authTitle">Đăng nhập vào làng</h2>
+          <p id="authDesc">Bước qua cổng sương mù để tiếp tục ván diễn của bạn.</p>
+        </div>
+        <form class="auth-form" id="authForm" onsubmit="submitAuth(event)">
+          <div class="auth-field" id="authNameField" style="display:none">
+            <label for="authName">Tên hiển thị trong làng</label>
+            <input id="authName" autocomplete="nickname" placeholder="Ví dụ: Bá Tước Trăng Bạc">
+          </div>
+          <div class="auth-field">
+            <label for="authUser">Tên đăng nhập</label>
+            <input id="authUser" autocomplete="username" placeholder="Nhập tên đăng nhập" required minlength="3" maxlength="30">
+          </div>
+          <div class="auth-field">
+            <label for="authPass">Mật khẩu</label>
+            <input id="authPass" type="password" autocomplete="current-password" placeholder="Nhập mật khẩu (tối thiểu 6 ký tự)" required minlength="6">
+          </div>
+          <div class="auth-field" id="authConfirmField" style="display:none">
+            <label for="authConfirm">Xác nhận mật khẩu</label>
+            <input id="authConfirm" type="password" autocomplete="new-password" placeholder="Nhập lại mật khẩu">
+          </div>
+          <div class="auth-error" id="authError" role="alert"></div>
+          <button type="submit" class="btn-gold" id="authSubmit" style="width:100%">
+            Đăng nhập vào làng →
+          </button>
+        </form>
+        <div class="auth-quick-actions">
+          <button type="button" class="btn-secondary" style="width:100%" onclick="guestAccess()">
+            ✦ Tiếp tục xem không cần đăng nhập
+          </button>
+          <div class="demo-account-box">
+            <div class="demo-account-meta">
+              <strong>🌙 Trải nghiệm Wolvesville · Luna Moon</strong>
+              <span>Máy chủ tạo danh tính và mã người chơi riêng cho mỗi phiên.</span>
+            </div>
+            <button type="button" id="wv-demo-button" class="btn-gold" onclick="useDemoAccount()">
+              Trải nghiệm tài khoản mẫu
+            </button>
+          </div>
+        </div>
+        <div class="auth-foot">
+          Giao diện vận hành trực tiếp trên trình duyệt (localStorage). Nhấn Esc để đóng.
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       KHUNG ỨNG DỤNG & SÂN KHẤU GAME (APP SHELL)
+       ======================================================================== -->
+  <div class="app" id="appShell">
+    <!-- Sidebar trái -->
+    <aside class="sidebar" id="appSidebar" aria-label="Điều hướng chính">
+      <div class="sidebar-brand" onclick="openTitleScreen()" title="Quay về Màn hình Title (Esc)">
+        <div class="sidebar-moon" aria-hidden="true">☾</div>
+        <div class="sidebar-brand-text">
+          <strong>WOLFVILLE</strong>
+          <small>Sân Khấu Cổ Tích Đen</small>
+        </div>
+      </div>
+
+      <nav class="nav-groups" id="nav"></nav>
+
+      <!-- Bộ chọn nhanh 16 Phong cách (Theme Studio) đặt gọn trong chân Sidebar -->
+      <div class="theme-studio">
+        <label for="themeSelect">🎨 Phong cách</label>
+        <select id="themeSelect" aria-label="Chọn phong cách giao diện" onchange="setWolvesTheme(this.value)">
+          <option value="moon">🌙 Cổ tích đen (Chuẩn)</option>
+          <option value="gothic">🦇 Gothic Đỏ Rượu</option>
+          <option value="classic">🕯️ Cổ điển</option>
+          <option value="basicdark">🌑 Basic tối</option>
+          <option value="basiclight">☁️ Basic sáng</option>
+          <option value="cream">☕ Kem ấm</option>
+          <option value="sage">🌿 Xanh sage</option>
+          <option value="europe">🏰 Trung cổ châu Âu</option>
+          <option value="eastasia">🏯 Trung cổ Đông Á</option>
+          <option value="jade">🍃 Ngọc bích</option>
+          <option value="sakura">🌸 Sakura</option>
+          <option value="loli">🎀 Loli Fantasy</option>
+          <option value="frost">❄️ Băng nguyệt</option>
+          <option value="bloodmoon">🩸 Trăng máu</option>
+          <option value="forest">🌲 Rừng cổ tích</option>
+          <option value="royal">👑 Hoàng gia</option>
+        </select>
+      </div>
+
+      <div
+        id="sidebarResize"
+        class="sidebar-resize"
+        role="separator"
+        aria-label="Kéo để chỉnh độ rộng Sidebar"
+        aria-orientation="vertical"
+        tabindex="0"
+        title="Kéo để chỉnh độ rộng · Nhấn đúp để đặt lại (232px)"
+      ></div>
+    </aside>
+
+    <!-- Khung nội dung chính (Topbar + Viewport) -->
+    <div class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button
+            type="button"
+            class="mobile-menu-btn"
+            onclick="toggleMobileSidebar()"
+            aria-label="Mở menu điều hướng"
+          >☰ Menu</button>
+
+          <button
+            type="button"
+            class="btn-secondary"
+            style="padding:6px 11px;font-size:12px"
+            onclick="openTitleScreen()"
+            title="Quay về Màn hình Khởi động (Phím Esc)"
+          >🎬 Màn hình chào</button>
+
+          <nav class="breadcrumb" id="breadcrumb" aria-label="Vị trí trang"></nav>
+        </div>
+
+        <div class="topbar-right">
+          <button
+            type="button"
+            class="bgm-toggle"
+            id="bgmToggleBtn"
+            onclick="toggleBGM()"
+            aria-pressed="false"
+            title="Bật/Tắt tiếng hộp nhạc & piano nhẹ của sảnh chờ"
+          >
+            <span class="bgm-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span id="bgmLabel">Nhạc sảnh: Tắt</span>
+          </button>
+
+          <div class="account-bar" id="accountStrip"></div>
+        </div>
+      </header>
+
+      <!-- Vùng hiển thị các màn hình: Bản đồ Làng (Sảnh đấu), Sân khấu Trong trận, Bách khoa Thân phận, Tổng quan, Hồ sơ, Cài đặt -->
+      <div id="wv5-alerts" aria-live="polite" hidden></div>
+      <main class="content" id="content" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Hiệu ứng Kéo Rèm Nhung (Stage Curtain Overlay)
+       ======================================================================== -->
+  <div class="curtain-overlay" id="stageCurtainOverlay" hidden>
+    <div class="curtain-panel curtain-left" aria-hidden="true"></div>
+    <div class="curtain-panel curtain-right" aria-hidden="true"></div>
+
+    <div class="stage-play-modal" role="dialog" aria-modal="true" aria-labelledby="stagePlayTitle">
+      <div class="stage-play-header">
+        <h3 id="stagePlayTitle">🎭 Sân Khấu Đêm Định Mệnh</h3>
+        <button type="button" class="btn-secondary" onclick="closeStageShow()">✕ Thu rèm</button>
+      </div>
+      <div class="stage-play-body" id="stagePlayBody"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Trợ lý Cô Bé Quàng Khăn Đỏ (Floating Draggable Assistant)
+       ======================================================================== -->
+  <div class="chat" id="chat" role="dialog" aria-label="Trợ lý Cô Bé Quàng Khăn Đỏ">
+    <div class="chatheader">
+      <strong>🧺 Cô Bé Quàng Khăn Đỏ · Trợ lý Sân khấu</strong>
+      <button type="button" class="btn-secondary" id="closechat" style="padding:4px 9px">✕</button>
+    </div>
+    <div class="messages" id="messages">
+      <div class="bubble">
+        Xin chào lữ khách! Mình là Cô Bé Quàng Khăn Đỏ. Mình hỗ trợ tra cứu thông tin từ danh mục 97 nhân vật chính thức và hướng dẫn giao diện. Đây là trợ lý tra cứu tại trình duyệt, không phải chat phòng chơi.
+      </div>
+    </div>
+    <form class="chatinput" id="chatForm">
+      <input id="question" placeholder="Nhập tên nhân vật (vd: Sói Đạo Tặc, Dorothy)...">
+      <button type="submit" class="btn-gold" style="padding:8px 13px">➤</button>
+    </form>
+  </div>
+
+  <div class="bot" id="bot" aria-label="Mở trợ lý Cô Bé Quàng Khăn Đỏ" title="Kéo để di chuyển · Nhấn để hỏi Cô Bé Quàng Khăn Đỏ">
+    <img class="botavatar" src="assets/redhood.png" draggable="false" alt="Cô Bé Quàng Khăn Đỏ">
+  </div>
+
+  <link rel="stylesheet" href="codex.css">
+  <link rel="stylesheet" href="player-ux.css">
+  <script src="app.js"></script>
+  <script src="codex-data.js"></script>
+  <script src="player-ux.js"></script>
+  <script src="integration.js"></script>
+  <link rel="stylesheet" href="immersive.css">
+  <script src="immersive.js"></script>
+  <link rel="stylesheet" href="fate-wheel.css">
+  <script src="fate-wheel.js"></script>
+  <link rel="stylesheet" href="workspace.css">
+  <script src="workspace.js"></script>
+</body>
+</html>

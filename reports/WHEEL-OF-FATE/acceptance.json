@@ -1,0 +1,53 @@
+{
+  "checkpoint": "IMMERSIVE-03 Wheel of Fate",
+  "baseFingerprint": "23c938f72f5ff76dc9919658194369af00b99ee7d9eee7872eb97fe98d1cab8c",
+  "sourceFingerprint": "f48b954d3798933bb997536c51816c2d59d574a7a3a805779c8bb2657d54b8fe",
+  "baseSha256": "40ebfcbd2e7f004966c3589855edcaf52f3816c05f499fba00cdf1f73e754b57",
+  "basePayloadHashesVerified": 5352,
+  "focusedBackend": {
+    "tests": 21,
+    "pass": 21,
+    "fail": 0,
+    "skipped": 0,
+    "exit": 0,
+    "log": "focused-final.log"
+  },
+  "browser": {
+    "status": "PASS",
+    "exit": 0,
+    "scope": "four-account actual Normal DEV via HTTP/WS bridge",
+    "log": "browser.log",
+    "nativeRefresh": "NOT RUN — direct navigation blocked",
+    "themesLayoutSmoke": 16,
+    "actualScreencastFrames": 114,
+    "videoAudioTrack": false
+  },
+  "fullRegression": "NOT RUN",
+  "historicalFull": 1,
+  "newFull": 0,
+  "freshFull": "NOT RUN",
+  "fullProgramsFrozen": true,
+  "characterRegistry": 97,
+  "historicalDecisions": 118,
+  "legacySpecifications": 207,
+  "normalDecksOfficial": 16,
+  "normalDecksDev": 6,
+  "engineSourceUnchanged": true,
+  "postgresqlLive": "PENDING",
+  "cloudLive": "NOT RUN",
+  "baseChangedPaths": [
+    "HUMAN_QA.md",
+    "README.md",
+    "backend/src/multiplayer/server.ts",
+    "backend/src/social/repository.ts",
+    "docs/immersive-handover/HUMAN_QA.md",
+    "docs/immersive-handover/PRODUCT_ACCEPTANCE.md",
+    "docs/immersive-handover/PROJECT_STATE.md",
+    "docs/immersive-handover/SESSION_HANDOVER.md",
+    "frontend/app.js",
+    "frontend/index.html",
+    "frontend/integration.js",
+    "tests/browser_e2e.py"
+  ],
+  "acceptanceChecklist": "ACCEPTANCE.md"
+}

@@ -1,0 +1,28 @@
+TAP version 13
+# (node:105969) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S09 PostgreSQL LIVE isolated schema: \#33 private coerced vote, replay, restart, ACL, strict migration
+not ok 1 - S09 PostgreSQL LIVE isolated schema: \#33 private coerced vote, replay, restart, ACL, strict migration
+  ---
+  duration_ms: 0.984992
+  type: 'test'
+  location: '/mnt/data/Wolvesville_Sprint_09_Voting_MultiRound_Full_Source/tests/postgres-s09.test.mjs:14:1'
+  failureType: 'testCodeFailure'
+  error: 'DATABASE_URL required for PostgreSQL acceptance; not a SQLite test'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/Wolvesville_Sprint_09_Voting_MultiRound_Full_Source/tests/postgres-s09.test.mjs:15:16)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 212.641009

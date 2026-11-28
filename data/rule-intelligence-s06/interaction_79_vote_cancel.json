@@ -1,0 +1,23 @@
+[
+  {
+    "source": [
+      "character.json#79",
+      "PH-02",
+      "Q13-09"
+    ],
+    "characterIds": [
+      25,
+      74,
+      79
+    ],
+    "interaction": "day voting intent -> #79 cancels without hanging",
+    "status": "IMPLEMENTED_RESTRICTED_TESTED",
+    "tests": [
+      "S06-07",
+      "browser_s06_e2e.py"
+    ],
+    "genericVoteTally": false,
+    "attackDeath": false,
+    "fullMatch": false
+  }
+]

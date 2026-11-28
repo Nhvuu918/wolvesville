@@ -1,0 +1,13 @@
+{
+  "baselineZipEntries": 2052,
+  "baselineSha256": "432d9ae6066c3690671f6650c2c650637adce70c7743330712c557e294116b2e",
+  "inheritedTestsUnchanged": 100,
+  "lawArtifactsCompared": [
+    "data/character.json",
+    "data/rules/WV-RULE-DECISION-2026-11-25-001.json",
+    "data/rules/official_merged_118.json",
+    "data/rules/sprint11_official_voting_decisions.json",
+    "data/rules/tests_207.json"
+  ],
+  "differences": []
+}

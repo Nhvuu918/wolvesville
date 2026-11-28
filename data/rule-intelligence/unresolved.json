@@ -1,0 +1,149 @@
+[
+  {
+    "issue": "ROLE20_SHOOT_TRIGGER_NOT_EXECUTABLE",
+    "status": "MISSING_IMPLEMENTATION",
+    "source": [
+      "data/character.json#20",
+      "data/rules/tests_207.json#T-COV-20"
+    ],
+    "scope": "Gunshot injury trigger, collision with incoming damage and shooting action; none active in allowed deck",
+    "containment": "No shooter roles in restricted pack; no competitive"
+  },
+  {
+    "issue": "GLOBAL_VICTORY_PREDICATES",
+    "status": "BLOCKED_BY_RULE_OR_IMPLEMENTATION",
+    "source": [
+      "VH03",
+      "VH58",
+      "data/character.json"
+    ],
+    "scope": "All packs including winner evaluation; special win groups",
+    "containment": "Game completion prohibited"
+  },
+  {
+    "issue": "F01",
+    "status": "BLOCKED_BY_RULE",
+    "source": [
+      "character.json#51; VH57/VH77/VH79"
+    ],
+    "scope": "#51 Người Lái Đò có chat ẩn danh người chết trong JSON, nhưng VH57 và tài liệu chỉ ghi ngoại lệ VH77/#26, VH79/#24.",
+    "containment": "Không tự tạo DM người lái đò; role chat branch blocked, các nhánh không phụ thuộc có thể làm sau."
+  },
+  {
+    "issue": "F02",
+    "status": "BLOCKED_BY_RULE",
+    "source": [
+      "SK-05;Q13-06"
+    ],
+    "scope": "#10 bẫy role giả cần chọn khác role thật trong bộ vai khóa; khi only 1 unique role, domain trống.",
+    "containment": "Fail closed ROLE_FALSE_RESULT_EMPTY; không random ngoài deck; có thể chặn cấu hình role gây nhánh này nếu không đủ vai."
+  },
+  {
+    "issue": "F03",
+    "status": "BLOCKED_BY_RULE",
+    "source": [
+      "Q13-12;Q13-07;VH63"
+    ],
+    "scope": "Phù Thủy cứu người có hạt #97 trước phát tác: hạt chưa có chính sách giữ/tiêu hao cho lần chết đã cứu.",
+    "containment": "Không tự tiêu hay giữ; block riêng event tiêu hạt trong branch, vẫn giải quyết cứu và sống."
+  },
+  {
+    "issue": "F04",
+    "status": "BLOCKED_BY_RULE",
+    "source": [
+      "Q13-09;PH-02;character.json#6"
+    ],
+    "scope": "Kẻ Vu Khống nhận nhiệm vụ vote đầu tiên nhưng Sói Hòa Bình hủy vote; Q13-09 chỉ quy định Kẻ Chết Thay.",
+    "containment": "Không gộp Kẻ Vu Khống với Kẻ Chết Thay; các ván không có tổ hợp này không bị chặn."
+  },
+  {
+    "issue": "F05",
+    "status": "BLOCKED_BY_RULE",
+    "source": [
+      "character.json#10;Q13-11;P05"
+    ],
+    "scope": "Sói Kỹ Sư đảo ngược tác dụng bảo vệ/phù độc/soi; chưa có phép phủ định hợp lệ cho mọi loại kỹ năng và kỹ năng đa tác dụng.",
+    "containment": "Khai báo mỗi pairing đã xác minh; không dùng hàm negate(generic-effect)."
+  },
+  {
+    "issue": "F06",
+    "status": "BLOCKED_BY_RULE",
+    "source": [
+      "REL-01/02/03;VH04;Q13-03;Q13-08"
+    ],
+    "scope": "Nhiều liên kết thắng/chết xếp chồng khác loại (Cupid, ngoại tình, xúi giục, giáo phái), có quan hệ ưu tiên mới/cũ nhưng bảng full predicate từng loại chưa đủ.",
+    "containment": "Build typed link registry; những entry thiếu predicate không được commit thắng/chết."
+  },
+  {
+    "issue": "F07",
+    "status": "BLOCKED_BY_RULE",
+    "source": [
+      "VH03;VH58;WIN-01;character.json"
+    ],
+    "scope": "Danh sách điều kiện thắng riêng cho các phe Ba nhiều nhân vật chưa được chuẩn hóa thành predicate có trigger và trạng thái.",
+    "containment": "VictoryResolver chỉ chạy predicates đã khai báo; role pack cạnh tranh chưa đủ phải gated."
+  },
+  {
+    "issue": "F13",
+    "status": "CONFLICTING",
+    "source": [
+      "character.json#25; T-MC-04;T-MC-33;T-COV-03;T-COV-35"
+    ],
+    "scope": "Test v1.3 mô tả Tiên Tri #25 chỉ soi hào quang, nhưng character.json và lịch sử xác nhận riêng Wolvesville 21/11 ghi xem vai trò.",
+    "containment": "Giữ xem vai trò theo nguồn chính thức; gắn cờ 4 test + 4 scenario kế thừa, không dùng expected aura-only; P05 vẫn áp đúng loại observation."
+  },
+  {
+    "issue": "F14",
+    "status": "BLOCKED_BY_RULE",
+    "source": [
+      "character.json#93;VH57"
+    ],
+    "scope": "Câm VH57 chặn chat công khai; JSON #93 mô tả cấm chat toàn bộ, chưa rõ là hiệu ứng câm hay khóa toàn kênh đặc thù.",
+    "containment": "Giữ hai loại trạng thái khác nhau; không mở rộng cấm chat tổng quát hoặc thu hẹp #93 mà không có căn cứ."
+  },
+  {
+    "issue": "F15",
+    "status": "BLOCKED_BY_RULE",
+    "source": [
+      "VH08;PH-01;VH03;Q13-07"
+    ],
+    "scope": "Sự kiện phản sát, chết thay, cứu, chờ hồi sinh, khóa và role chuyển trong cùng chuỗi có thể tạo hiệu ứng không giao hoán nếu chưa phân giải đủ priority cạnh cụ thể.",
+    "containment": "Causal dependency DAG + commit atomic; unknown priority -> RULE_UNRESOLVED, không dùng timestamp mạng."
+  },
+  {
+    "issue": "F19",
+    "status": "BLOCKED_BY_RULE",
+    "source": [
+      "ROOM-01;ROOM-02;Q13-04"
+    ],
+    "scope": "Cho phép phòng chỉ một người + bot, đồng thời 97 vai duy nhất: bộ vai phải tương thích số slot, mục tiêu hợp lệ và điều kiện kết thúc.",
+    "containment": "Khóa deck đúng bằng số slot và uniqueness; reject start nếu không đủ vai; không hard-code min 4/6."
+  },
+  {
+    "issue": "F20",
+    "status": "BLOCKED_BY_RULE",
+    "source": [
+      "spec v1.3 §G.5; historical reference incomplete"
+    ],
+    "scope": "Quy tắc phản đòn no-loop trong v1.3 được ghi là xác nhận nhưng không tìm được mã VH/Q13 cụ thể ở sổ 118.",
+    "containment": "Gắn nhãn kiến trúc an toàn chống vòng lặp; không biến phản đòn mới thành sự kiện được phép."
+  },
+  {
+    "issue": "F21",
+    "status": "BLOCKED_BY_SOURCE",
+    "source": [
+      "T-COV-03/T-COV-08/T-COV-16/T-COV-20; Wolvesville Q/A nguồn trộn"
+    ],
+    "scope": "4 test kế thừa dùng alias QA NVxx, trong khi tài liệu Wolvesville Q/A nhắc workbook Ma_Soi không được xác minh là nguồn Wolvesville độc lập.",
+    "containment": "Chỉ dùng test như giả thuyết cần kiểm tra với character.json/VH/Q13; không nâng QA alias thành luật; không đọc file Ma_Soi/LPTV."
+  },
+  {
+    "issue": "F22",
+    "status": "BLOCKED_BY_SOURCE",
+    "source": [
+      "tests_v1_3.json: sources SYS-xx"
+    ],
+    "scope": "19 test v1.3 dẫn mã SYS-xx nhưng chưa xác định ánh xạ 1:1 sang 118 quyết định đã chốt; có nguy cơ đồng bộ sai expected.",
+    "containment": "Đánh dấu ALIAS_UNVERIFIED; chỉ công nhận assertion khi đối chiếu rule ID xác nhận hoặc trích đúng JSON."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "version": "1.7.7-s15-final-breakthrough-wip",
+  "certifiedIds": [],
+  "certificates": [],
+  "blockers": {
+    "28": "#33 mixed-faction reaction and stale hunter mark scope, competing death interactions and general co-winner classes remain.",
+    "87": "Other bite/protection/rescue combinations, team victory not generalized.",
+    "88": "Stale mark duration, protections and general team victory.",
+    "93": "Multi-wolf consensus, post-conversion aura/skill retention."
+  }
+}

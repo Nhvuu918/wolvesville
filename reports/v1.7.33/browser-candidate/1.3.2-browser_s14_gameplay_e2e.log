@@ -1,0 +1,10 @@
+E2E_SCHEDULER_WAIT exclusive 80505
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 914
+E2E_RESOURCE start cpu "usage_usec 17796493327\nuser_usec 14294058224\nsystem_usec 3502435102\nnice_usec 7189250\nnr_periods 91498\nnr_throttled 8173\nthrottled_usec 307429130\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s14_gameplay_e2e.py default port 43259 db /tmp/wolvesville-s06-browser-xCwaem/test.sqlite
+S14_BROWSER_PASS public chat mute, reconnect, mobile viewport, protection, private events, death chain, victory, replay
+S06_BROWSER_PASS browser_s14_gameplay_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 17862610152\nuser_usec 14342957973\nsystem_usec 3519652178\nnice_usec 7292914\nnr_periods 91751\nnr_throttled 8208\nthrottled_usec 308637822\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

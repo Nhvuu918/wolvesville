@@ -1,0 +1,164 @@
+
+> wolvesville-sprint01-engine-kernel@0.1.0 test
+> npm run build && node --test tests/kernel.test.mjs
+
+
+> wolvesville-sprint01-engine-kernel@0.1.0 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+TAP version 13
+# (node:3938) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: source: 97 unique roles unchanged; 118 decision registry, 207 separate legacy specs
+ok 1 - source: 97 unique roles unchanged; 118 decision registry, 207 separate legacy specs
+  ---
+  duration_ms: 3.145011
+  type: 'test'
+  ...
+# Subtest: state machine rejects invalid transitions, advances round only after day
+ok 2 - state machine rejects invalid transitions, advances round only after day
+  ---
+  duration_ms: 8.684866
+  type: 'test'
+  ...
+# Subtest: rejects duplicated/unknown initial character IDs; allows 1 human and rejects >97 unique slots
+ok 3 - rejects duplicated/unknown initial character IDs; allows 1 human and rejects >97 unique slots
+  ---
+  duration_ms: 2.400492
+  type: 'test'
+  ...
+# Subtest: validator rejects phase mismatch, non-member, forbidden target, exhausted resources
+ok 4 - validator rejects phase mismatch, non-member, forbidden target, exhausted resources
+  ---
+  duration_ms: 5.487916
+  type: 'test'
+  ...
+# Subtest: idempotency: same action retry is no-op, conflicting payload is rejected
+ok 5 - idempotency: same action retry is no-op, conflicting payload is rejected
+  ---
+  duration_ms: 3.237781
+  type: 'test'
+  ...
+# Subtest: permission: production registry refuses unregistered role skills and opt-in fixtures
+ok 6 - permission: production registry refuses unregistered role skills and opt-in fixtures
+  ---
+  duration_ms: 5.150238
+  type: 'test'
+  ...
+# Subtest: queued actions do not resolve before phase close and priority beats request order
+ok 7 - queued actions do not resolve before phase close and priority beats request order
+  ---
+  duration_ms: 7.573233
+  type: 'test'
+  ...
+# Subtest: PH-01: submitted action still runs after sender dies, unless locked
+ok 8 - PH-01: submitted action still runs after sender dies, unless locked
+  ---
+  duration_ms: 5.286322
+  type: 'test'
+  ...
+# Subtest: VH10/VH41-like fixture: valid lock cancels accepted action without charging resources
+ok 9 - VH10/VH41-like fixture: valid lock cancels accepted action without charging resources
+  ---
+  duration_ms: 6.198926
+  type: 'test'
+  ...
+# Subtest: atomic rollback on adapter throw: no half state or events or charges committed
+ok 10 - atomic rollback on adapter throw: no half state or events or charges committed
+  ---
+  duration_ms: 4.42719
+  type: 'test'
+  ...
+# Subtest: unknown adapter at resolution leaves accepted action queued and state untouched
+ok 11 - unknown adapter at resolution leaves accepted action queued and state untouched
+  ---
+  duration_ms: 3.535678
+  type: 'test'
+  ...
+# Subtest: RNG: deterministic, conditioned domain, empty domain fail-closed, event tape replay
+ok 12 - RNG: deterministic, conditioned domain, empty domain fail-closed, event tape replay
+  ---
+  duration_ms: 4.878088
+  type: 'test'
+  ...
+# Subtest: RNG empty at effect stage triggers full rollback, no random fallback
+ok 13 - RNG empty at effect stage triggers full rollback, no random fallback
+  ---
+  duration_ms: 9.368945
+  type: 'test'
+  ...
+# Subtest: ACL: player projections omit hidden roles, seed, other resources and internal events
+ok 14 - ACL: player projections omit hidden roles, seed, other resources and internal events
+  ---
+  duration_ms: 4.124986
+  type: 'test'
+  ...
+# Subtest: snapshot + replay survives SQLite restart
+ok 15 - snapshot + replay survives SQLite restart
+  ---
+  duration_ms: 24.223627
+  type: 'test'
+  ...
+# Subtest: replay detects tampered event even when persisted state remains unchanged
+ok 16 - replay detects tampered event even when persisted state remains unchanged
+  ---
+  duration_ms: 21.487085
+  type: 'test'
+  ...
+# Subtest: unimplemented domain effect fails closed without partial state write
+ok 17 - unimplemented domain effect fails closed without partial state write
+  ---
+  duration_ms: 3.141656
+  type: 'test'
+  ...
+# Subtest: admission seals phase and historical ruleVersion mismatch cannot be accepted
+ok 18 - admission seals phase and historical ruleVersion mismatch cannot be accepted
+  ---
+  duration_ms: 3.523711
+  type: 'test'
+  ...
+# Subtest: revalidation: target dead before accepted hit is resolved fails closed and rolls back whole batch
+ok 19 - revalidation: target dead before accepted hit is resolved fails closed and rolls back whole batch
+  ---
+  duration_ms: 3.712155
+  type: 'test'
+  ...
+# Subtest: resource ledger: successful resolved fixture spends one charge and does not double-spend on retry
+ok 20 - resource ledger: successful resolved fixture spends one charge and does not double-spend on retry
+  ---
+  duration_ms: 5.260403
+  type: 'test'
+  ...
+# Subtest: faction/group event cannot leak to a later joiner when historical audience is missing
+ok 21 - faction/group event cannot leak to a later joiner when historical audience is missing
+  ---
+  duration_ms: 1.91477
+  type: 'test'
+  ...
+# Subtest: replay converges to same final state when unrelated commands arrive in opposite request order
+ok 22 - replay converges to same final state when unrelated commands arrive in opposite request order
+  ---
+  duration_ms: 13.037283
+  type: 'test'
+  ...
+# Subtest: new idempotency key cannot reuse same actionId; payload must be a dictionary
+ok 23 - new idempotency key cannot reuse same actionId; payload must be a dictionary
+  ---
+  duration_ms: 4.401903
+  type: 'test'
+  ...
+# Subtest: complete match is blocked until confirmed victory predicates exist
+ok 24 - complete match is blocked until confirmed victory predicates exist
+  ---
+  duration_ms: 7.718127
+  type: 'test'
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 234.125552

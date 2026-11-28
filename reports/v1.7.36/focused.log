@@ -1,0 +1,60 @@
+TAP version 13
+# (node:31951) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S24 group ACL: muted member, frozen audience, hidden ledger positions, restart and replay
+ok 1 - S24 group ACL: muted member, frozen audience, hidden ledger positions, restart and replay
+  ---
+  duration_ms: 99.566734
+  type: 'test'
+  ...
+# Subtest: S24 group ACL HTTP/WS: trusted grant fixture, no public fallback, restricted refresh, SQLite restart and replay
+ok 2 - S24 group ACL HTTP/WS: trusted grant fixture, no public fallback, restricted refresh, SQLite restart and replay
+  ---
+  duration_ms: 1636.703232
+  type: 'test'
+  ...
+# (node:31953) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S25 visual: transition uses authorized committed projection, no secret payload or fabricated winner
+ok 3 - S25 visual: transition uses authorized committed projection, no secret payload or fabricated winner
+  ---
+  duration_ms: 4.150233
+  type: 'test'
+  ...
+# Subtest: S25 graphics: 97 illustrated portraits exist, immutable old paths remain available, no active SVG or remote links
+ok 4 - S25 graphics: 97 illustrated portraits exist, immutable old paths remain available, no active SVG or remote links
+  ---
+  duration_ms: 3.374966
+  type: 'test'
+  ...
+# Subtest: S25 cult grant boundary: Q13-08 and wolf rejection before group mutation
+ok 5 - S25 cult grant boundary: Q13-08 and wolf rejection before group mutation
+  ---
+  duration_ms: 57.531616
+  type: 'test'
+  ...
+# Subtest: S26 cult grant: five living followers, duplicate and pre-mutation capacity boundary
+ok 6 - S26 cult grant: five living followers, duplicate and pre-mutation capacity boundary
+  ---
+  duration_ms: 38.65252
+  type: 'test'
+  ...
+# (node:31958) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S26_NORMAL_MIRROR_EVIDENCE {"id":35,"deck":[25,31,35,74],"side":"village","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true,"completed":true,"voteChain":true}
+# S26_NORMAL_MIRROR_EVIDENCE {"id":35,"deck":[25,31,35,74],"side":"wolf","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true,"completed":true,"voteChain":false}
+# Subtest: S26 normal mirror: private reflection, guard, second scan, both victory routes, restart and replay
+ok 7 - S26 normal mirror: private reflection, guard, second scan, both victory routes, restart and replay
+  ---
+  duration_ms: 5311.102309
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5831.565169

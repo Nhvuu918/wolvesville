@@ -1,0 +1,261 @@
+TAP version 13
+# (node:4730) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: DEMO-001: endpoint disabled by default; no account/session created
+ok 1 - DEMO-001: endpoint disabled by default; no account/session created
+  ---
+  duration_ms: 85.892435
+  type: 'test'
+  ...
+# Subtest: DEMO-002: independent sessions with valid public IDs, no credential in response
+ok 2 - DEMO-002: independent sessions with valid public IDs, no credential in response
+  ---
+  duration_ms: 192.458827
+  type: 'test'
+  ...
+# Subtest: DEMO-003: demo account is server-side, can join lobby, access is isolated
+ok 3 - DEMO-003: demo account is server-side, can join lobby, access is isolated
+  ---
+  duration_ms: 227.733754
+  type: 'test'
+  ...
+# Subtest: DEMO-004: logout revokes token without affecting independent demos
+ok 4 - DEMO-004: logout revokes token without affecting independent demos
+  ---
+  duration_ms: 296.480187
+  type: 'test'
+  ...
+# Subtest: DEMO-005: rate limit creation on same IP; no unbounded new accounts
+ok 5 - DEMO-005: rate limit creation on same IP; no unbounded new accounts
+  ---
+  duration_ms: 440.897454
+  type: 'test'
+  ...
+# Subtest: DEMO-006: wrong origin/invalid media type cannot provision demo
+ok 6 - DEMO-006: wrong origin/invalid media type cannot provision demo
+  ---
+  duration_ms: 32.049365
+  type: 'test'
+  ...
+# Subtest: DEMO-007: normal register/login unchanged and never becomes demo
+ok 7 - DEMO-007: normal register/login unchanged and never becomes demo
+  ---
+  duration_ms: 293.382317
+  type: 'test'
+  ...
+# Subtest: DEMO-008: SQLite restart preserves demo token and marker, expiration cleanup is safe
+ok 8 - DEMO-008: SQLite restart preserves demo token and marker, expiration cleanup is safe
+  ---
+  duration_ms: 517.146764
+  type: 'test'
+  ...
+# Subtest: DEMO-009: WebSocket auth is scoped to each demo session and room membership
+ok 9 - DEMO-009: WebSocket auth is scoped to each demo session and room membership
+  ---
+  duration_ms: 197.539066
+  type: 'test'
+  ...
+# Subtest: DEMO-010: production NODE_ENV prevents demo even if enable flag supplied
+ok 10 - DEMO-010: production NODE_ENV prevents demo even if enable flag supplied
+  ---
+  duration_ms: 39.022829
+  type: 'test'
+  ...
+# Subtest: DEMO-011: original 97-character JSON and approved reference remain available
+ok 11 - DEMO-011: original 97-character JSON and approved reference remain available
+  ---
+  duration_ms: 9.109367
+  type: 'test'
+  ...
+# (node:4731) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: FULL50 candidate: sacrificed follower keeps win entitlement but no live group access
+ok 12 - FULL50 candidate: sacrificed follower keeps win entitlement but no live group access
+  ---
+  duration_ms: 4693.642512
+  type: 'test'
+  ...
+# (node:4732) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: FULL50 candidate: Cupid dead, living pair night chat and pair-only victory
+ok 13 - FULL50 candidate: Cupid dead, living pair night chat and pair-only victory
+  ---
+  duration_ms: 3046.602026
+  type: 'test'
+  ...
+# Subtest: FULL50 M1: linked death puts seeded partner to sleep; both revive next night and publish once
+ok 14 - FULL50 M1: linked death puts seeded partner to sleep; both revive next night and publish once
+  ---
+  duration_ms: 1827.404469
+  type: 'test'
+  ...
+# Subtest: FULL50 M1: sleeping partner dies for real after other partner is hanged; no duplicate public death or wake
+ok 15 - FULL50 M1: sleeping partner dies for real after other partner is hanged; no duplicate public death or wake
+  ---
+  duration_ms: 3773.010915
+  type: 'test'
+  ...
+# Subtest: FULL50 M1: blind Knight attack accepts any public dead seat; cancels sleeper wake without public double death
+ok 16 - FULL50 M1: blind Knight attack accepts any public dead seat; cancels sleeper wake without public double death
+  ---
+  duration_ms: 3909.916969
+  type: 'test'
+  ...
+# Subtest: FULL50 M1: witch saves seeded victim before seed activation, restart and subsequent hibernation
+ok 17 - FULL50 M1: witch saves seeded victim before seed activation, restart and subsequent hibernation
+  ---
+  duration_ms: 2751.080551
+  type: 'test'
+  ...
+# Subtest: S04 KB-01: 118 confirmed decisions with original codes, 145 skill audit branches, and 97 characters
+ok 18 - S04 KB-01: 118 confirmed decisions with original codes, 145 skill audit branches, and 97 characters
+  ---
+  duration_ms: 27.514161
+  type: 'test'
+  ...
+# Subtest: S04 KB-02: original character bytes unchanged and every branch points back to exact official description
+ok 19 - S04 KB-02: original character bytes unchanged and every branch points back to exact official description
+  ---
+  duration_ms: 70.256231
+  type: 'test'
+  ...
+# Subtest: S04 KB-03: all 4656 pairs exist as SCREENING, only three closed-deck pairs have implemented outcomes
+ok 20 - S04 KB-03: all 4656 pairs exist as SCREENING, only three closed-deck pairs have implemented outcomes
+  ---
+  duration_ms: 16.855967
+  type: 'test'
+  ...
+# Subtest: S04 KB-04: 207 legacy specifications are NEVER flagged as executed by this generator
+ok 21 - S04 KB-04: 207 legacy specifications are NEVER flagged as executed by this generator
+  ---
+  duration_ms: 3.599312
+  type: 'test'
+  ...
+# Subtest: S04 KB-05: DERIVED inference never overwritten as CONFIRMED and no global victory assertion
+ok 22 - S04 KB-05: DERIVED inference never overwritten as CONFIRMED and no global victory assertion
+  ---
+  duration_ms: 1.078037
+  type: 'test'
+  ...
+# Subtest: S04 KB-06: source inventory hashes check out for every source available
+ok 23 - S04 KB-06: source inventory hashes check out for every source available
+  ---
+  duration_ms: 7.395891
+  type: 'test'
+  ...
+# (node:4776) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: S27 cult gameplay: recruitment, mute group ACL, preserved role, private chat, restart and living cult victory
+ok 24 - S27 cult gameplay: recruitment, mute group ACL, preserved role, private chat, restart and living cult victory
+  ---
+  duration_ms: 3653.481272
+  type: 'test'
+  ...
+# Subtest: S27 cult gameplay: independent target failure, single attempt, private generic feedback and leader death chain
+ok 25 - S27 cult gameplay: independent target failure, single attempt, private generic feedback and leader death chain
+  ---
+  duration_ms: 4424.754428
+  type: 'test'
+  ...
+# Subtest: S27 cult gameplay: same-night recruitment before sacrifice, final deaths, no membership restoration or fabricated winner
+ok 26 - S27 cult gameplay: same-night recruitment before sacrifice, final deaths, no membership restoration or fabricated winner
+  ---
+  duration_ms: 1289.970399
+  type: 'test'
+  ...
+# (node:4808) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S28_NORMAL_BELL_EVIDENCE {"deck":[25,48,64,74],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: real double bite and one private observation batch before victory
+ok 27 - S28 normal bell: real double bite and one private observation batch before victory
+  ---
+  duration_ms: 1809.129863
+  type: 'test'
+  ...
+# S28_NORMAL_BELL_EVIDENCE {"deck":[15,25,64,74],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: linked simultaneous death, actual vote, spent observation and village victory
+ok 28 - S28 normal bell: linked simultaneous death, actual vote, spent observation and village victory
+  ---
+  duration_ms: 4024.703913
+  type: 'test'
+  ...
+# S28_NORMAL_BELL_EVIDENCE {"deck":[8,25,26,64],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: previously revived target can be paired, repeated final death, privacy and village victory
+ok 29 - S28 normal bell: previously revived target can be paired, repeated final death, privacy and village victory
+  ---
+  duration_ms: 4418.315661
+  type: 'test'
+  ...
+# S28_NORMAL_BELL_EVIDENCE {"deck":[25,48,64,74],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: owner dies in the same batch, no private observation or resource reuse
+ok 30 - S28 normal bell: owner dies in the same batch, no private observation or resource reuse
+  ---
+  duration_ms: 1864.438229
+  type: 'test'
+  ...
+# S28_NORMAL_BELL_EVIDENCE {"deck":[8,25,26,64],"mode":"NORMAL_GAMEPLAY","completed":true,"privacy":true,"replay":true,"restart":true}
+# Subtest: S28 normal bell: replace pair across nights, dead target invalid, first observation only
+ok 31 - S28 normal bell: replace pair across nights, dead target invalid, first observation only
+  ---
+  duration_ms: 3694.142722
+  type: 'test'
+  ...
+# (node:4835) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: RC01 T-COV-64: public pseudo-death neither kills Cupid partner nor spends bell; wake then real linked deaths
+ok 32 - RC01 T-COV-64: public pseudo-death neither kills Cupid partner nor spends bell; wake then real linked deaths
+  ---
+  duration_ms: 5297.011234
+  type: 'test'
+  ...
+# Subtest: RC01 LIFE-02: seed limits, self-target rejection, hanging sleep, second seed and true death
+ok 33 - RC01 LIFE-02: seed limits, self-target rejection, hanging sleep, second seed and true death
+  ---
+  duration_ms: 9957.765124
+  type: 'test'
+  ...
+# Subtest: STARTUP-01 SQLite launches without DATABASE_URL from a real clean database
+ok 34 - STARTUP-01 SQLite launches without DATABASE_URL from a real clean database
+  ---
+  duration_ms: 666.789643
+  type: 'test'
+  ...
+# Subtest: STARTUP-02 PostgreSQL mode refuses missing URL without opening SQLite or disclosing credentials
+ok 35 - STARTUP-02 PostgreSQL mode refuses missing URL without opening SQLite or disclosing credentials
+  ---
+  duration_ms: 659.203871
+  type: 'test'
+  ...
+# Subtest: STARTUP-03 unknown provider and invalid port fail fast
+ok 36 - STARTUP-03 unknown provider and invalid port fail fast
+  ---
+  duration_ms: 880.265186
+  type: 'test'
+  ...
+# Subtest: STARTUP-04 occupied port returns diagnostic without killing the original server
+ok 37 - STARTUP-04 occupied port returns diagnostic without killing the original server
+  ---
+  duration_ms: 1040.025078
+  type: 'test'
+  ...
+# Subtest: STARTUP-05 correct demo env flag, production remains disabled
+ok 38 - STARTUP-05 correct demo env flag, production remains disabled
+  ---
+  duration_ms: 1346.229648
+  type: 'test'
+  ...
+# Subtest: STARTUP-06 local .env is read; sqlite does not require a PostgreSQL URL
+ok 39 - STARTUP-06 local .env is read; sqlite does not require a PostgreSQL URL
+  ---
+  duration_ms: 125.547008
+  type: 'test'
+  ...
+1..39
+# tests 39
+# suites 0
+# pass 39
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 21269.07625

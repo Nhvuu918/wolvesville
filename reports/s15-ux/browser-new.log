@@ -1,0 +1,4 @@
+UX_ACTIONS_PASS
+S15_UX_BROWSER_PASS authoritative role results, composition, wheel, keyboard, clicks, chat, mute, reconnect, mobile, vote change, replay
+S06_BROWSER_PASS browser_s15_gameplay_ux_e2e.py
+S06_BROWSER_ALL_1_PASS

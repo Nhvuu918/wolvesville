@@ -1,0 +1,4 @@
+
+> wolvesville-sprint14-character-expansion@1.6.0-s14-wip build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+

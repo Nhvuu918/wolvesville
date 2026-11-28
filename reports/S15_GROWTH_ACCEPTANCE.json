@@ -1,0 +1,60 @@
+{
+  "version": "1.7.14-s15-verified-growth-wip",
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "competitiveProduction": "NO-GO",
+  "backend": {
+    "tests": 358,
+    "fail": 0,
+    "skipped": 11,
+    "incomplete": 0,
+    "pass": 347
+  },
+  "backendComparableCore": {
+    "tests": 355,
+    "pass": 344,
+    "fail": 0,
+    "skipped": 11
+  },
+  "backendCorrectedSourceInventoryRetest": {
+    "tests": 6,
+    "pass": 6,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "backendGate": "PASS_SPLIT",
+  "backendNote": "Full named regression coverage via split batches; no single clean monolithic run. Initial checksum failure preserved, regenerated index and retested; runtime source unchanged.",
+  "focused": {
+    "tests": 7,
+    "pass": 7,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "role28Retest": {
+    "tests": 16,
+    "pass": 16,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "browser": {
+    "total": 54,
+    "PASS": 13,
+    "FAIL": 0,
+    "INCOMPLETE": 41
+  },
+  "matrix": {
+    "total": 89,
+    "PASS": 13,
+    "FAIL": 0,
+    "INCOMPLETE": 76
+  },
+  "postgreSQLLive": "PENDING",
+  "criticalAcceptance": "PASS",
+  "fullManifest": "INCOMPLETE",
+  "qualityScope": "Actual evidence only. Clean extraction independently logged outside archive. No consensus or revival extension activated."
+}

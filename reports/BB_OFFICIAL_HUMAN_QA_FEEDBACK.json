@@ -1,0 +1,43 @@
+{
+  "build": "1.7.21-s15-official-bb-wip",
+  "ownerQA": "PENDING",
+  "tasks": [
+    {
+      "id": "QA-REL-01",
+      "status": "PENDING"
+    },
+    {
+      "id": "QA-REL-02",
+      "status": "PENDING"
+    },
+    {
+      "id": "QA-REL-03",
+      "status": "PENDING"
+    },
+    {
+      "id": "QA-REL-04",
+      "status": "PENDING"
+    }
+  ],
+  "allowedFeedback": [
+    "PASS",
+    "FAIL",
+    "KHÁC KỲ VỌNG",
+    "CHƯA RÕ",
+    "CẦN CẢI THIỆN UX"
+  ],
+  "bugRecordFields": [
+    "id",
+    "build",
+    "deck",
+    "phase",
+    "steps",
+    "expected",
+    "actual",
+    "evidence",
+    "reproductionStatus",
+    "fixCommit",
+    "retestStatus"
+  ],
+  "bugRecords": []
+}

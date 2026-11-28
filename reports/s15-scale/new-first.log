@@ -1,0 +1,175 @@
+TAP version 13
+# (node:34317) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Scale \#64 pair replacement, no premature disclosure, day hanging and private role result
+not ok 1 - Scale \#64 pair replacement, no premature disclosure, day hanging and private role result
+  ---
+  duration_ms: 579.51264
+  type: 'test'
+  location: '/mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:89:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    {"http":409,"error":{"code":"RULE_UNRESOLVED","message":"S13 action provenance or restricted deck mismatch"}}
+    
+    409 !== 200
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 200
+  actual: 409
+  operator: 'strictEqual'
+  stack: |-
+    ok (file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:61:20)
+    file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:92:144
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async durable (file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:58:26)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: Scale \#64 two simultaneous pack deaths reveal both once before victory
+not ok 2 - Scale \#64 two simultaneous pack deaths reveal both once before victory
+  ---
+  duration_ms: 478.235763
+  type: 'test'
+  location: '/mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:94:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    {"http":409,"error":{"code":"RULE_UNRESOLVED","message":"S13 action provenance or restricted deck mismatch"}}
+    
+    409 !== 200
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 200
+  actual: 409
+  operator: 'strictEqual'
+  stack: |-
+    ok (file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:61:20)
+    file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:95:142
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async durable (file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:58:26)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: Scale \#64 first marked death freezes pair; no second information or selection
+not ok 3 - Scale \#64 first marked death freezes pair; no second information or selection
+  ---
+  duration_ms: 603.510773
+  type: 'test'
+  location: '/mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:97:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    {"http":409,"error":{"code":"RULE_UNRESOLVED","message":"S13 action provenance or restricted deck mismatch"}}
+    
+    409 !== 200
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 200
+  actual: 409
+  operator: 'strictEqual'
+  stack: |-
+    ok (file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:61:20)
+    file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:98:114
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async durable (file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:58:26)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# S15_SCALE_MATCH {"ids":[9,25,48,74],"completed":true,"voteChain":true,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: Scale leader double bite respects Snow Angel, independent victims, then Village co-wins
+ok 4 - Scale leader double bite respects Snow Angel, independent victims, then Village co-wins
+  ---
+  duration_ms: 613.718834
+  type: 'test'
+  ...
+# Subtest: Scale leader protection precedes preliminary death and rescue; no protected victim in private list
+not ok 5 - Scale leader protection precedes preliminary death and rescue; no protected victim in private list
+  ---
+  duration_ms: 778.013265
+  type: 'test'
+  location: '/mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:103:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+    +   '035c36b3-9dec-43aa-8af7-1ac01d244561',
+        'a7ed58b5-67e8-4303-ad6b-786bda67d9b3',
+    -   '035c36b3-9dec-43aa-8af7-1ac01d244561'
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 'a7ed58b5-67e8-4303-ad6b-786bda67d9b3'
+    1: '035c36b3-9dec-43aa-8af7-1ac01d244561'
+  actual:
+    0: '035c36b3-9dec-43aa-8af7-1ac01d244561'
+    1: 'a7ed58b5-67e8-4303-ad6b-786bda67d9b3'
+  operator: 'deepStrictEqual'
+  stack: |-
+    assertDeaths (file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:71:39)
+    file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:106:247
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async durable (file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:58:26)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: Scale QA [8,74] sixteen final ballots and valid terminal or next-round results
+ok 6 - Scale QA [8,74] sixteen final ballots and valid terminal or next-round results
+  ---
+  duration_ms: 5800.803093
+  type: 'test'
+  ...
+# Subtest: Scale QA [8,74] inspection, abstain, retry, vote change, restart and Village victory
+not ok 7 - Scale QA [8,74] inspection, abstain, retry, vote change, restart and Village victory
+  ---
+  duration_ms: 716.741574
+  type: 'test'
+  location: '/mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:115:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    {"http":409,"error":{"code":"REVISION_CONFLICT","message":"A ballot change requires the latest revision"}}
+    
+    409 !== 200
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 200
+  actual: 409
+  operator: 'strictEqual'
+  stack: |-
+    ok (file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:61:20)
+    file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:116:878
+    process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    async durable (file:///mnt/data/s15scale/tests/sprint15-scaleup.test.mjs:58:26)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# S15_SCALE_MATCH {"ids":[8,74],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: Scale QA [8,74] independent optional inspection on fatal night, both orders, exact-role privacy
+ok 8 - Scale QA [8,74] independent optional inspection on fatal night, both orders, exact-role privacy
+  ---
+  duration_ms: 1531.2122
+  type: 'test'
+  ...
+# Subtest: Scale production room cannot start an official QA composition without test mode
+ok 9 - Scale production room cannot start an official QA composition without test mode
+  ---
+  duration_ms: 77.55592
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 4
+# fail 5
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11331.99421

@@ -1,0 +1,47 @@
+[
+  {
+    "path": "reports/FULL50-M1-02/browser-guard/guard-multihit-no-bell.png",
+    "sha256": "dbbdab778e9f9267fcc2d4dfe76deba0746349a7d9846e1bd571cf2964705c68",
+    "scenario": "browser_full50_guard_e2e.py",
+    "mode": "INTEGRATION_TEST / V3 candidate",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "1e9e3b01c5d30571b79cf779f318dda485c69023ff4fd948686b24d4a254ff3c",
+    "suiteStatus": "INCOMPLETE_SCENARIO_STAGE_ONLY"
+  },
+  {
+    "path": "reports/FULL50-M1-02/browser-guard/guard-witch-window.png",
+    "sha256": "3898adfc873ac19a5fe03d40803aaca72ec8b40e2f1fc945649dca58752aa222",
+    "scenario": "browser_full50_guard_e2e.py",
+    "mode": "INTEGRATION_TEST / V3 candidate",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "1e9e3b01c5d30571b79cf779f318dda485c69023ff4fd948686b24d4a254ff3c",
+    "suiteStatus": "INCOMPLETE_SCENARIO_STAGE_ONLY"
+  },
+  {
+    "path": "reports/FULL50-M1-02/browser-guard-retry/guard-expired-seed-preserved.png",
+    "sha256": "de3e0831d20402e3354f3fb902a17e80fa297d778ffe6d1b02ce24be6892484e",
+    "scenario": "browser_full50_guard_e2e.py",
+    "mode": "INTEGRATION_TEST / V3 candidate",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "1e9e3b01c5d30571b79cf779f318dda485c69023ff4fd948686b24d4a254ff3c",
+    "suiteStatus": "PASS"
+  },
+  {
+    "path": "reports/FULL50-M1-02/browser-guard-retry/guard-multihit-no-bell.png",
+    "sha256": "1391e5139c946198b0c4bbf655be8137d2f41b8d1c8098e7bd529e2fc390cd02",
+    "scenario": "browser_full50_guard_e2e.py",
+    "mode": "INTEGRATION_TEST / V3 candidate",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "1e9e3b01c5d30571b79cf779f318dda485c69023ff4fd948686b24d4a254ff3c",
+    "suiteStatus": "PASS"
+  },
+  {
+    "path": "reports/FULL50-M1-02/browser-guard-retry/guard-witch-window.png",
+    "sha256": "434eaf08bd75e3c3d56f53c81c6ea22fb1cee7f427dd34e623025ddac41f49a3",
+    "scenario": "browser_full50_guard_e2e.py",
+    "mode": "INTEGRATION_TEST / V3 candidate",
+    "ruleVersion": "wolvesville-official-v1.3.3",
+    "sourceFingerprint": "1e9e3b01c5d30571b79cf779f318dda485c69023ff4fd948686b24d4a254ff3c",
+    "suiteStatus": "PASS"
+  }
+]

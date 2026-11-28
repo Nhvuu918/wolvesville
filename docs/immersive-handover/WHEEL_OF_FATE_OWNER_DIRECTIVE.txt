@@ -1,0 +1,1337 @@
+# WOLVESVILLE — THE WHEEL OF FATE
+
+## PREMIUM PERSONAL RANDOM DECISION WHEEL
+
+### MYSTICAL COMPASS · REAL SPIN ANIMATION · CUSTOM TARGETS · IMMERSIVE GAMEPLAY UTILITY
+
+**PROJECT OWNER DIRECTIVE**
+
+# I. ĐIỀU CHỈNH YÊU CẦU VỀ VÒNG QUAY RANDOM
+
+Tôi muốn làm rõ toàn bộ yêu cầu về vòng quay Random trong Wolvesville.
+
+Vòng quay mà tôi yêu cầu không phải vòng quay lựa chọn quản trò, cũng không phải vòng quay phân vai trước trận.
+
+Tôi muốn xây dựng một công cụ hỗ trợ người chơi lựa chọn mục tiêu ngẫu nhiên trong quá trình chơi, khi họ đang phân vân không biết nên chọn ai.
+
+Tên chức năng:
+
+**VÒNG QUAY ĐỊNH MỆNH — THE WHEEL OF FATE.**
+
+Đây phải là một tiện ích đặc trưng của Wolvesville, vừa hữu ích trong gameplay, vừa có chất lượng thiết kế và hiệu ứng của một vật phẩm ma thuật cao cấp.
+
+Tôi không muốn một công cụ Random đơn giản chỉ có nút bấm và trả về kết quả ngay lập tức.
+
+Tôi muốn một vòng quay thực sự, có chuyển động, âm thanh, hiệu ứng và khả năng tùy chỉnh.
+
+# II. MỤC ĐÍCH SỬ DỤNG
+
+Trong quá trình chơi Ma Sói, người chơi có thể chưa biết nên:
+
+- Điều tra ai.
+- Bảo vệ ai.
+- Cứu ai.
+- Tấn công ai.
+- Đặt bẫy lên ai.
+- Sử dụng kỹ năng lên ai.
+- Ghép đôi những ai.
+- Hồi sinh ai.
+- Biểu quyết cho ai.
+- Lựa chọn người nào khi có nhiều mục tiêu.
+- Lựa chọn ngẫu nhiên để phục vụ suy luận cá nhân.
+
+Khi đó, người chơi có thể mở Vòng quay định mệnh, điều chỉnh danh sách mục tiêu rồi quay để nhận một gợi ý ngẫu nhiên.
+
+Vòng quay chỉ hỗ trợ người chơi đưa ra quyết định.
+
+Người chơi vẫn có toàn quyền lựa chọn cuối cùng.
+
+Vòng quay không được tự động thực hiện kỹ năng, gửi phiếu biểu quyết hoặc thay đổi trạng thái trận đấu.
+
+# III. VỊ TRÍ TRONG PHÒNG CHƠI
+
+Vòng quay phải xuất hiện tại một vị trí dễ nhìn, dễ truy cập.
+
+Không đặt ở cuối trang.
+
+Không giấu trong menu cài đặt.
+
+Không yêu cầu người chơi rời khỏi phòng chơi.
+
+Không yêu cầu cuộn qua nhiều khu vực mới tìm được.
+
+Ưu tiên tích hợp vào:
+
+- Thanh công cụ Game HUD.
+- Khu vực bên cạnh Action Panel.
+- Thanh tiện ích cạnh sân chơi.
+- Thanh công cụ nhanh trên mobile.
+
+Thiết kế nút mở vòng quay có biểu tượng riêng, phù hợp với chủ đề:
+
+- La bàn.
+- Vòng tròn định mệnh.
+- Xúc xắc.
+- Biểu tượng ma thuật.
+
+Hiển thị tên rõ ràng:
+
+**Vòng quay định mệnh**
+
+Hoặc tên rút gọn:
+
+**Random**
+
+Khi di chuột hoặc nhấn giữ, hiển thị tooltip:
+
+“Quay ngẫu nhiên để hỗ trợ lựa chọn mục tiêu.”
+
+Vòng quay phải có thể truy cập trong suốt trận đấu, không chỉ khi người chơi có kỹ năng.
+
+Khi mở vòng quay, sử dụng:
+
+- Modal trung tâm trên desktop.
+- Drawer hoặc Bottom Sheet trên mobile.
+- Overlay phù hợp nếu có thiết kế tốt hơn.
+
+Không làm thay đổi bố cục chính của phòng chơi một cách đột ngột.
+
+# IV. ĐỊNH HƯỚNG THIẾT KẾ HÌNH ẢNH
+
+Thiết kế theo phong cách:
+
+**PREMIUM DARK FANTASY × MYSTICAL COMPASS × GOTHIC ARTIFACT.**
+
+Tôi muốn vòng quay trông giống một chiếc la bàn ma thuật cổ xưa nằm trong thế giới Wolvesville.
+
+Không thiết kế giống:
+
+- Vòng quay xổ số.
+- Vòng quay trúng thưởng thông thường.
+- Công cụ random miễn phí trên Internet.
+- Vòng quay nhiều màu sắc sặc sỡ.
+- Một biểu đồ tròn được gắn thêm nút Random.
+
+Ưu tiên:
+
+- Vàng cổ điển.
+- Đồng ánh kim.
+- Tím huyền bí.
+- Đen Gothic.
+- Xanh đêm.
+- Họa tiết tinh tế.
+- Viền tròn nhiều lớp.
+- Ánh sáng nhẹ.
+- Biểu tượng trăng, sao hoặc ma thuật.
+- Chi tiết chạm khắc cổ điển.
+
+Có chiều sâu thị giác nhưng không rối mắt.
+
+Không lạm dụng gradient.
+
+Không lạm dụng hiệu ứng phát sáng.
+
+Không sử dụng chữ quá nhỏ.
+
+Không tạo quá nhiều họa tiết gây khó đọc tên người chơi.
+
+Giữ tính nhất quán với toàn bộ Design System của Wolvesville.
+
+# V. CẤU TẠO VÒNG QUAY
+
+Vòng quay được tổ chức thành các lớp.
+
+## 1. Outer Frame — Viền ngoài
+
+Viền ngoài đứng cố định.
+
+Có thể sử dụng:
+
+- Vòng kim loại màu vàng cổ.
+- Họa tiết Gothic.
+- Các dấu chia nhỏ.
+- Chi tiết ma thuật.
+- Biểu tượng trang trí.
+
+Không để viền chiếm quá nhiều diện tích.
+
+## 2. Rotating Disc — Vòng tròn xoay
+
+Đây là phần chứa danh sách mục tiêu.
+
+Toàn bộ vòng tròn này phải thực sự xoay khi người chơi nhấn nút Quay.
+
+Mỗi mục tiêu chiếm một phần bằng nhau trên vòng tròn.
+
+Mỗi phần hiển thị:
+
+- Avatar người chơi.
+- Tên người chơi.
+- Số ghế nếu đủ không gian.
+
+Các phần có màu sắc hài hòa, phân biệt được nhưng không quá tương phản.
+
+Có thể sử dụng các sắc độ khác nhau của cùng một bảng màu.
+
+Khi danh sách thay đổi, tự động tính lại kích thước và vị trí của từng phần.
+
+## 3. Central Hub — Tâm vòng quay
+
+Tâm nằm chính giữa.
+
+Thiết kế nhỏ gọn, tinh tế.
+
+Có thể sử dụng:
+
+- Biểu tượng mặt trăng.
+- Biểu tượng la bàn.
+- Logo Wolvesville.
+- Biểu tượng ma thuật.
+- Nút kích hoạt vòng quay nếu phù hợp.
+
+Không để phần tâm quá lớn che mất danh sách mục tiêu.
+
+## 4. Central Pointer — Kim chỉ trung tâm
+
+**ĐÂY LÀ YÊU CẦU THIẾT KẾ QUAN TRỌNG.**
+
+Kim chỉ phải nhỏ, thanh mảnh, nằm ở chính giữa vòng quay.
+
+Kim được gắn trực tiếp tại tâm, hướng ra phía các phần chứa mục tiêu.
+
+Không sử dụng kim chỉ lớn đặt bên ngoài vòng tròn.
+
+Không đặt một mũi tên lớn ở phía trên vòng quay như các vòng quay may mắn thông thường.
+
+Ưu tiên hình dáng kim la bàn:
+
+- Nhỏ.
+- Thon.
+- Nhọn.
+- Màu vàng cổ.
+- Có điểm nhấn ánh sáng nhẹ.
+- Dễ xác định hướng chỉ.
+
+Kim và tâm đứng cố định.
+
+Vòng tròn chứa người chơi xoay xung quanh tâm.
+
+Sau khi vòng quay dừng, mục tiêu nằm theo hướng kim chỉ chính là kết quả được chọn.
+
+Kích thước kim phải cân đối với tổng thể.
+
+Không để kim che tên hoặc avatar người chơi.
+
+# VI. DANH SÁCH MẶC ĐỊNH
+
+Khi một ván đấu bắt đầu, hệ thống tự động tạo danh sách vòng quay riêng cho từng người chơi.
+
+Danh sách mặc định gồm:
+
+**TẤT CẢ NHỮNG NGƯỜI CHƠI KHÁC TRONG VÁN, NGOẠI TRỪ CHÍNH NGƯỜI ĐANG SỬ DỤNG VÒNG QUAY.**
+
+Ví dụ:
+
+Phòng có 8 người chơi.
+
+Mỗi người có vòng quay mặc định gồm 7 mục tiêu còn lại.
+
+Nếu phòng có 16 người, vòng quay mặc định có 15 mục tiêu.
+
+Danh sách lấy từ Game Session thực tế.
+
+Không hardcode tên người chơi.
+
+Không tạo danh sách giả.
+
+Không yêu cầu nhập thủ công toàn bộ thành viên trước khi sử dụng.
+
+Sử dụng Player ID hoặc Match Participant ID để định danh chính xác.
+
+Không sử dụng tên hiển thị làm khóa duy nhất vì có thể có nhiều người trùng tên.
+
+Danh sách phải phù hợp với thông tin người chơi được phép biết.
+
+Không sử dụng vai trò bí mật, phe bí mật hoặc hidden GameState để tạo danh sách.
+
+# VII. TÙY CHỈNH DANH SÁCH MỤC TIÊU
+
+Người chơi được toàn quyền tùy chỉnh danh sách riêng của mình.
+
+Cung cấp các chức năng:
+
+## 1. Thêm mục tiêu
+
+- Thêm lại người chơi đã bị loại khỏi vòng quay.
+- Tìm kiếm người chơi trong ván.
+- Thêm nhiều người cùng lúc.
+- Thêm mục tùy chỉnh bằng văn bản.
+
+Ví dụ:
+
+- Bỏ qua lượt.
+- Chưa quyết định.
+- Quay lại.
+- Một lựa chọn suy luận cá nhân.
+- Một nội dung do người chơi tự nhập.
+
+Các mục văn bản chỉ phục vụ vòng quay cá nhân.
+
+Không được tạo thêm người chơi giả vào Game Session.
+
+Không được sử dụng mục văn bản như một Player ID hợp lệ.
+
+## 2. Loại mục tiêu
+
+Cho phép:
+
+- Xóa từng người.
+- Bỏ chọn tạm thời.
+- Loại nhiều người.
+- Loại người vừa được quay trúng.
+- Chọn lại những người đã loại.
+
+## 3. Quick Actions
+
+Cung cấp:
+
+- Chọn tất cả.
+- Bỏ chọn tất cả.
+- Khôi phục mặc định.
+- Tìm kiếm.
+- Lọc theo trạng thái công khai.
+- Chỉ hiển thị mục đang được chọn.
+
+## 4. Danh sách tùy chỉnh
+
+Có thể hiển thị dưới dạng:
+
+- Avatar Chips.
+- Checkbox List.
+- Compact Grid.
+- Searchable List.
+
+Không tạo một danh sách dài chiếm hết màn hình.
+
+Người chơi phải thấy ngay số mục tiêu hiện tại.
+
+Ví dụ:
+
+“Đang chọn 8/15 người chơi.”
+
+## 5. Duplicate Handling
+
+Không vô tình tạo nhiều phần cho cùng một người chỉ vì người đó được thêm lại.
+
+Mặc định mỗi mục tiêu chỉ xuất hiện một lần.
+
+Không tạo trọng số ngẫu nhiên khác nhau khi người dùng chưa được thông báo.
+
+# VIII. RANDOM MODES
+
+Cung cấp ít nhất hai chế độ sử dụng.
+
+## MODE A — ALL PLAYERS
+
+Tên giao diện:
+
+**Tất cả người chơi**
+
+Đây là chế độ mặc định.
+
+Bao gồm toàn bộ những người chơi khác trong ván.
+
+Người chơi tự quyết định thêm hoặc loại bỏ ai.
+
+Có thể sử dụng ngay cả khi không có kỹ năng đang chờ thực hiện.
+
+Không tự động loại người đã chết khỏi danh sách mặc định nếu người chơi vẫn muốn sử dụng họ để phục vụ suy luận.
+
+## MODE B — VALID TARGETS
+
+Tên giao diện:
+
+**Mục tiêu hợp lệ**
+
+Danh sách được xây dựng từ Action Capabilities mà backend đã cung cấp hợp lệ cho người chơi.
+
+Ví dụ:
+
+- Mục tiêu được phép điều tra.
+- Mục tiêu được phép bảo vệ.
+- Mục tiêu được phép hồi sinh.
+- Mục tiêu được phép biểu quyết.
+
+Không tự suy diễn mục tiêu hợp lệ từ dữ liệu bí mật.
+
+Không tạo API mới trả về thông tin khiến người chơi có thể dò vai hoặc hiệu ứng bí mật.
+
+Nếu backend không cung cấp danh sách mục tiêu hợp lệ cho hành động hiện tại, hiển thị giới hạn rõ ràng hoặc vô hiệu hóa chế độ này.
+
+## Các bộ lọc bổ sung
+
+Có thể bổ sung:
+
+- Người còn sống theo thông tin công khai.
+- Người đã được công bố chết.
+- Người chơi được đánh dấu thủ công.
+- Danh sách yêu thích trong ván.
+
+Không phân loại người chơi dựa trên phe hoặc vai bí mật.
+
+# IX. REAL SPIN ANIMATION — CHUYỂN ĐỘNG XOAY THẬT
+
+**VÒNG QUAY BẮT BUỘC PHẢI THỰC SỰ XOAY.**
+
+Không được triển khai theo kiểu nhấn nút rồi ngay lập tức hiển thị kết quả.
+
+Không dùng hiệu ứng thay đổi tên liên tục để giả làm vòng quay.
+
+Không chỉ xoay một biểu tượng nhỏ trong khi vòng tròn đứng yên.
+
+Toàn bộ phần chứa người chơi phải chuyển động xoay thực sự quanh tâm.
+
+## 1. Trình tự chuyển động
+
+Khi nhấn nút Quay:
+
+### Giai đoạn 1 — Khởi động
+
+- Phát hiệu ứng kích hoạt.
+- Vòng quay bắt đầu chuyển động chậm.
+- Sau đó tăng tốc tự nhiên.
+
+### Giai đoạn 2 — Quay nhanh
+
+- Xoay nhiều vòng hoàn chỉnh.
+- Tốc độ ổn định trong một khoảng thời gian.
+- Âm thanh tích tắc phù hợp.
+
+### Giai đoạn 3 — Giảm tốc
+
+- Tốc độ giảm dần.
+- Các mục tiêu lần lượt đi qua hướng kim chỉ.
+- Âm thanh tích tắc chậm dần.
+
+### Giai đoạn 4 — Dừng
+
+- Vòng quay dừng chính xác.
+- Kim nhỏ tại tâm chỉ thẳng vào phần mục tiêu được chọn.
+- Không giật hoặc dịch chuyển đột ngột ở khung hình cuối.
+
+### Giai đoạn 5 — Công bố
+
+- Phần trúng được làm nổi bật.
+- Hiệu ứng ánh sáng nhẹ.
+- Hiển thị kết quả.
+- Phát âm thanh công bố.
+- Mở lại các nút tương tác.
+
+## 2. Thời lượng
+
+Thời lượng mặc định đề xuất:
+
+**4–6 giây.**
+
+Có thể bổ sung:
+
+- Quay nhanh: khoảng 2–3 giây.
+- Quay tiêu chuẩn: khoảng 4–6 giây.
+- Quay điện ảnh: khoảng 7–8 giây.
+
+Mặc định ưu tiên cân bằng giữa cảm giác hấp dẫn và thời gian gameplay.
+
+Không bắt người chơi chờ quá lâu trong pha hành động.
+
+## 3. Animation Engineering
+
+Sử dụng phương pháp phù hợp với frontend hiện tại:
+
+- CSS Transform.
+- Web Animations API.
+- requestAnimationFrame.
+- SVG.
+- Canvas.
+- Hoặc giải pháp khác có hiệu năng tốt hơn.
+
+Không bắt buộc thay framework.
+
+Ưu tiên animation chạy mượt và không gây giật layout.
+
+Không tạo quá nhiều DOM updates trong mỗi frame.
+
+Không làm ảnh hưởng chat, WebSocket, timer hoặc các thao tác gameplay khác.
+
+# X. RANDOM ALGORITHM & RESULT ACCURACY
+
+Vòng quay là công cụ cá nhân, không phải cơ chế phân vai hoặc resolver của Game Engine.
+
+Có thể sử dụng nguồn ngẫu nhiên phía client phù hợp, ưu tiên Web Crypto API nếu khả thi.
+
+Mỗi mục tiêu đang được chọn có xác suất bằng nhau.
+
+Ví dụ:
+
+- 2 mục tiêu: mỗi mục tiêu 50%.
+- 4 mục tiêu: mỗi mục tiêu 25%.
+- 8 mục tiêu: mỗi mục tiêu 12,5%.
+
+Không thiên vị vị trí đầu tiên hoặc cuối cùng.
+
+Không sử dụng animation để thay đổi xác suất.
+
+Quy trình kỹ thuật:
+
+1. Chụp lại danh sách mục tiêu tại thời điểm nhấn Quay.
+2. Chọn một mục tiêu ngẫu nhiên từ danh sách đó.
+3. Tính góc quay cuối cùng.
+4. Thêm số vòng quay hoàn chỉnh cần thiết.
+5. Chạy animation tăng tốc và giảm tốc.
+6. Dừng đúng vị trí mục tiêu đã chọn.
+7. Kiểm tra kết quả hình học.
+8. Hiển thị kết quả.
+
+Có thể chọn vị trí dừng ngẫu nhiên trong vùng an toàn của phần trúng để tránh mọi lượt quay đều dừng chính xác giữa một ô.
+
+Không để kim dừng sát đường phân cách gây khó xác định kết quả.
+
+**Tên được công bố phải khớp tuyệt đối với phần mà kim đang chỉ.**
+
+Không được xảy ra tình trạng:
+
+- Kim chỉ người A nhưng hiển thị người B.
+- Quay xong mới nhảy sang vị trí khác.
+- Kết quả thay đổi sau khi animation kết thúc.
+- Tên công bố xuất hiện trước khi vòng quay dừng.
+
+# XI. TRẠNG THÁI TRONG KHI QUAY
+
+Trong thời gian vòng quay đang hoạt động:
+
+- Khóa nút Quay.
+- Khóa thao tác thêm mục tiêu.
+- Khóa thao tác xóa mục tiêu.
+- Khóa thay đổi chế độ.
+- Khóa khôi phục danh sách.
+- Không cho phép kích hoạt nhiều animation cùng lúc.
+
+Hiển thị trạng thái rõ ràng:
+
+“Định mệnh đang xoay…”
+
+Có thể cho phép đóng cửa sổ khi đang quay.
+
+Nếu đóng, phải xử lý animation và âm thanh an toàn, không để tác vụ tiếp tục vô hạn.
+
+Khi mở lại, trạng thái phải nhất quán.
+
+Không sử dụng vòng quay để giữ hoặc gia hạn lượt hành động.
+
+# XII. ÂM THANH & HIỆU ỨNG
+
+Âm thanh là một phần quan trọng của trải nghiệm.
+
+Bổ sung:
+
+## 1. Spin Start
+
+Âm thanh kích hoạt nhẹ mang phong cách ma thuật.
+
+## 2. Tick Sound
+
+Âm thanh tích tắc khi các phần của vòng quay đi qua hướng kim chỉ.
+
+Âm thanh phải đồng bộ với tốc độ xoay.
+
+Khi vòng quay giảm tốc, khoảng cách giữa các tiếng tích tắc tăng dần.
+
+Không phát âm thanh theo một interval cố định không liên quan đến animation.
+
+## 3. Result Sound
+
+Âm thanh công bố ngắn, dễ nhận biết.
+
+Có thể kết hợp hiệu ứng:
+
+- Ánh sáng vàng.
+- Phát sáng quanh mục tiêu.
+- Viền được chọn.
+- Hạt sáng nhẹ.
+- Biểu tượng định mệnh.
+
+Không dùng hiệu ứng pháo hoa hoặc âm thanh quá lớn nếu không phù hợp bản sắc Wolvesville.
+
+## 4. Audio Integration
+
+Tận dụng SFX Engine hiện có.
+
+Không xây dựng hệ thống âm thanh trùng lặp.
+
+Tuân thủ:
+
+- Master Volume.
+- UI Sound.
+- Gameplay SFX.
+- Mute.
+- Notification Sound nếu liên quan.
+
+Có thể bổ sung tùy chọn tắt riêng âm thanh vòng quay.
+
+Không phát âm thanh khi người dùng đã tắt.
+
+Không để âm thanh vòng quay làm ảnh hưởng các thông báo gameplay quan trọng.
+
+# XIII. RESULT PRESENTATION
+
+Khi vòng quay dừng, hiển thị một khu vực kết quả chuyên nghiệp.
+
+Tiêu đề:
+
+**ĐỊNH MỆNH ĐÃ LỰA CHỌN**
+
+Hoặc:
+
+**MỤC TIÊU ĐƯỢC GỢI Ý**
+
+Thông tin:
+
+- Avatar.
+- Tên người chơi.
+- Số ghế.
+- Trạng thái công khai nếu phù hợp.
+
+Nếu kết quả là mục văn bản tùy chỉnh, hiển thị nội dung tương ứng.
+
+Không hiển thị vai bí mật của người được chọn.
+
+Khu vực kết quả phải hài hòa với vòng quay.
+
+Không tạo một popup mới chồng lên popup hiện tại.
+
+# XIV. THAO TÁC SAU KHI QUAY
+
+Cung cấp các nút:
+
+## Chọn mục tiêu này
+
+Nếu kết quả hợp lệ với Action Capabilities hiện tại, điền mục tiêu vào Action Panel.
+
+Không tự gửi hành động.
+
+Không tự xác nhận.
+
+Người chơi vẫn phải nhấn nút xác nhận kỹ năng hoặc phiếu biểu quyết chính thức.
+
+Nếu kỹ năng cần nhiều mục tiêu, sử dụng kết quả như một lựa chọn bổ sung khi phù hợp.
+
+Không tự xóa các mục tiêu khác đã chọn.
+
+## Quay lại
+
+Quay thêm lần nữa với danh sách hiện tại.
+
+Không giới hạn số lần quay.
+
+## Loại và quay lại
+
+Loại mục tiêu vừa trúng khỏi danh sách, sau đó cho phép quay tiếp.
+
+## Đóng
+
+Đóng vòng quay và quay về Game Room.
+
+Không làm mất trạng thái hành động đang thực hiện.
+
+## Kết quả không hợp lệ
+
+Nếu mục tiêu không còn hợp lệ do chuyển pha, thay đổi trạng thái hoặc luật:
+
+- Hiển thị kết quả như một gợi ý cá nhân.
+- Vô hiệu hóa nút đưa vào Action Panel.
+- Không tiết lộ nguyên nhân bí mật.
+- Cho phép quay lại hoặc đóng.
+
+Backend vẫn kiểm tra tính hợp lệ khi người chơi gửi hành động chính thức.
+
+# XV. MULTI-TARGET RANDOM
+
+Có thể bổ sung chế độ quay nhiều mục tiêu.
+
+Ví dụ:
+
+- Chọn 2 người khác nhau.
+- Chọn 3 người khác nhau.
+- Chọn một nhóm ngẫu nhiên.
+
+Hữu ích với các nhân vật cần nhiều mục tiêu như Cupid hoặc Người Rung Chuông.
+
+Không chọn trùng mục tiêu khi chế độ yêu cầu các mục tiêu khác nhau.
+
+Có thể trình diễn:
+
+- Quay lần lượt.
+- Quay và loại mục tiêu đã trúng.
+- Hiển thị danh sách kết quả sau nhiều lượt.
+
+Không tự xác nhận hành động nhiều mục tiêu.
+
+Đây là tính năng tiện ích bổ sung, không được làm thay đổi luật nhân vật.
+
+# XVI. PRIVATE NOTES & RANDOM HISTORY
+
+Có thể bổ sung lịch sử quay cá nhân trong cùng một ván.
+
+Ví dụ:
+
+- Đêm 1: Quay trúng ghế 05.
+- Ngày 1: Quay trúng ghế 07.
+- Đêm 2: Quay trúng ghế 03.
+
+Cho phép:
+
+- Xem lại.
+- Xóa lịch sử.
+- Đánh dấu.
+- Sao chép vào ghi chú cá nhân nếu có chức năng ghi chú.
+
+Lịch sử quay chỉ là dữ liệu tiện ích.
+
+Không đưa vào nhật ký gameplay chính thức.
+
+Không tính là lịch sử sử dụng kỹ năng.
+
+Không đưa vào thống kê nhân vật.
+
+Không sử dụng kết quả quay để suy luận người chơi đã thực hiện hành động nào.
+
+Nếu bổ sung sổ ghi chú suy luận, người chơi tự nhập nội dung và đánh dấu nhận định của mình.
+
+Không tự điền thông tin vai bí mật từ hệ thống.
+
+# XVII. PERSISTENCE — GIỮ DANH SÁCH TRONG CÙNG VÁN
+
+Danh sách tùy chỉnh phải được giữ khi:
+
+- Đóng và mở vòng quay.
+- Chuyển ngày sang đêm.
+- Chuyển đêm sang ngày.
+- Thay đổi theme.
+- Thay đổi kích thước màn hình.
+- Refresh website.
+- Reconnect.
+
+Có thể lưu bằng cơ chế client-side hoặc persistence phù hợp.
+
+Sử dụng khóa kết hợp:
+
+- User ID.
+- Match ID.
+- Wheel Mode.
+
+Không để hai tài khoản dùng chung danh sách trên cùng một trình duyệt.
+
+Không để dữ liệu vòng quay của ván trước xuất hiện trong ván mới.
+
+Khi bắt đầu trận mới, tự khởi tạo danh sách mới từ thành viên thực tế.
+
+Khi đăng xuất, bảo vệ hoặc dọn dữ liệu cục bộ theo chính sách phù hợp.
+
+Không bắt buộc tạo thêm bảng database riêng nếu việc lưu cục bộ đã đáp ứng yêu cầu.
+
+# XVIII. PRIVACY — BẢO MẬT TUYỆT ĐỐI
+
+Vòng quay là công cụ cá nhân.
+
+Người khác không được biết:
+
+- Ai đang mở vòng quay.
+- Ai bị loại khỏi danh sách.
+- Ai được thêm vào danh sách.
+- Người chơi đã quay bao nhiêu lần.
+- Vòng quay đã trúng ai.
+- Người chơi đang phân vân giữa những mục tiêu nào.
+
+Không phát WebSocket event công khai về kết quả quay.
+
+Không gửi thông báo toàn phòng.
+
+Không đưa kết quả quay vào Replay chính thức.
+
+Không cung cấp cho quản trò thông tin riêng của người chơi trái quyền.
+
+Không tạo một kênh mới làm lộ:
+
+- Vai trò bí mật.
+- Phe bí mật.
+- Hiệu ứng bí mật.
+- Người đang ngủ đông.
+- Người đang giả chết.
+- Quyền hành động chưa được phép biết.
+
+Chỉ hành động đã được người chơi xác nhận và backend tiếp nhận hợp lệ mới có giá trị gameplay.
+
+# XIX. RESPONSIVE DESIGN
+
+Vòng quay phải sử dụng tốt trên:
+
+- Desktop.
+- MacBook.
+- Tablet.
+- Mobile.
+
+## Desktop
+
+Có thể tổ chức modal hai vùng:
+
+Bên trái:
+
+- Vòng quay.
+- Nút quay.
+- Kết quả.
+
+Bên phải:
+
+- Danh sách mục tiêu.
+- Tìm kiếm.
+- Bộ lọc.
+- Thêm và xóa.
+- Khôi phục.
+
+## Mobile
+
+Sử dụng bố cục dọc hoặc Bottom Sheet.
+
+Ưu tiên:
+
+- Vòng quay đủ lớn.
+- Kim chỉ trung tâm dễ nhìn.
+- Nút quay dễ bấm.
+- Danh sách mục tiêu có thể thu gọn.
+- Không tràn màn hình.
+- Không che nút đóng.
+- Không che thời gian gameplay quan trọng.
+
+Không thu nhỏ toàn bộ giao diện desktop một cách máy móc.
+
+# XX. LARGE PLAYER COUNT
+
+Vòng quay phải hỗ trợ các sức chứa phòng được hệ thống cho phép.
+
+Với số lượng mục tiêu lớn:
+
+- Tự tính góc của từng phần.
+- Điều chỉnh cỡ chữ.
+- Rút gọn tên bằng ellipsis.
+- Ưu tiên avatar hoặc số ghế.
+- Có tooltip hoặc khu vực xem tên đầy đủ.
+- Có danh sách tương ứng bên ngoài vòng quay.
+- Có thể phóng to nếu phù hợp.
+
+Không để tên và avatar chồng lên nhau.
+
+Không làm mất mục tiêu vì số lượng người chơi lớn.
+
+Không hardcode vòng quay 8 phần.
+
+# XXI. EDGE CASES
+
+Xử lý đầy đủ các trường hợp:
+
+## Không có mục tiêu
+
+- Hiển thị trạng thái trống.
+- Vô hiệu hóa nút Quay.
+- Hướng dẫn thêm hoặc khôi phục danh sách.
+
+## Chỉ có một mục tiêu
+
+- Vẫn có thể thực hiện animation ngắn.
+- Công bố đúng mục tiêu duy nhất.
+- Không tạo kết quả giả.
+
+## Hai mục tiêu
+
+- Hai phần có kích thước bằng nhau.
+- Kim chỉ chính xác.
+
+## Nhiều người trùng tên
+
+- Phân biệt bằng avatar, số ghế và Player ID.
+
+## Tên quá dài
+
+- Rút gọn hợp lý.
+- Hiển thị đầy đủ ở khu vực kết quả.
+
+## Người chơi mất kết nối
+
+- Không tự loại khỏi danh sách nếu họ vẫn là thành viên ván.
+- Chỉ hiển thị trạng thái công khai phù hợp.
+
+## Người chơi bị loại
+
+- Giữ trong chế độ Tất cả người chơi nếu vẫn thuộc thành phần trận.
+- Lọc theo quyền hợp lệ trong chế độ Mục tiêu hợp lệ.
+
+## Chuyển pha trong lúc quay
+
+- Không dừng hoặc gia hạn pha.
+- Kiểm tra lại Action Capabilities khi quay xong.
+- Không cho xác nhận hành động đã hết hạn.
+
+## Kết thúc trận trong lúc quay
+
+- Dọn animation và âm thanh.
+- Không gửi action.
+- Không để vòng quay cản trở Endgame.
+
+## Refresh trong lúc quay
+
+- Không tạo hành động gameplay.
+- Khôi phục danh sách tùy chỉnh.
+- Xử lý trạng thái quay nhất quán, không giả vờ một hành động đã được xác nhận.
+
+# XXII. ACCESSIBILITY
+
+Hỗ trợ:
+
+- Keyboard navigation.
+- Accessible labels.
+- Focus state.
+- Escape để đóng modal khi phù hợp.
+- Screen reader thông báo kết quả.
+- Độ tương phản rõ ràng.
+- Reduced Motion.
+
+Reduced Motion là ngoại lệ cho thời lượng animation đầy đủ.
+
+Khi người chơi bật chế độ này, có thể giảm số vòng và thời gian quay.
+
+Không ép người nhạy cảm với chuyển động phải xem animation dài.
+
+Không sử dụng màu sắc làm dấu hiệu duy nhất để xác định kết quả.
+
+# XXIII. THEME INTEGRATION
+
+Vòng quay phải tương thích với toàn bộ theme hiện có của Wolvesville.
+
+Bảo toàn:
+
+- Dark Fantasy.
+- Basic Dark.
+- Basic Light.
+- Cream.
+- Sage.
+- Các theme kế thừa khác.
+
+Không hardcode toàn bộ màu sắc chỉ phù hợp với theme tối.
+
+Sử dụng Design Tokens hoặc Theme Variables phù hợp với kiến trúc frontend hiện tại.
+
+Giữ bản sắc Mystic Compass trên các theme khác nhau.
+
+Kiểm tra:
+
+- Màu nền.
+- Viền.
+- Kim chỉ.
+- Chữ.
+- Avatar.
+- Trạng thái lựa chọn.
+- Kết quả.
+- Hover.
+- Focus.
+- Disabled.
+
+# XXIV. GRAPHICS ASSET INTEGRATION
+
+Tận dụng tài nguyên đồ họa Wolvesville hiện có.
+
+Giữ toàn bộ artwork nhân vật.
+
+Sử dụng avatar người chơi từ hệ thống hồ sơ khi được phép.
+
+Không sử dụng artwork vai bí mật làm avatar trong vòng quay.
+
+Có thể bổ sung các họa tiết trang trí mới phù hợp với bản sắc dự án.
+
+Ưu tiên:
+
+- SVG trang trí.
+- Họa tiết la bàn.
+- Vòng rune.
+- Trăng và sao.
+- Chi tiết kim loại cổ.
+- Hiệu ứng ánh sáng nhẹ.
+
+Không thay thế tài nguyên của đội đồ họa một cách tùy tiện.
+
+Không sử dụng tài nguyên bên ngoài chưa rõ quyền sử dụng.
+
+# XXV. BACKEND & GAME ENGINE INTEGRATION
+
+Đây là một tiện ích UI/UX, không phải một cơ chế game mới.
+
+Không tạo thêm FULL Contract cho vòng quay.
+
+Không phát triển thêm Character Resolver chỉ vì chức năng Random.
+
+Không thay đổi F, R, A, B, C hoặc Atomic Coverage.
+
+Vòng quay chỉ cần sử dụng dữ liệu hợp lệ từ:
+
+- Current User.
+- Current Match.
+- Match Participants.
+- Public Player Projection.
+- Action Capabilities.
+- Theme Settings.
+- Audio Settings.
+
+Khi người chơi chọn sử dụng kết quả, chuyển lựa chọn tới Action Panel hiện có.
+
+Không tạo cơ chế gửi skill riêng.
+
+Không bỏ qua validation hiện tại.
+
+Không thay đổi luật thắng.
+
+Không thay đổi tài nguyên nhân vật.
+
+Không thay đổi điều kiện hợp lệ của kỹ năng.
+
+Không thay đổi Game Engine State chỉ vì người chơi quay.
+
+# XXVI. CLOUD DEPLOYMENT COMPATIBILITY
+
+Vòng quay phải hoạt động trong cả:
+
+- Local development.
+- Local Demo.
+- Normal Gameplay.
+- Cloud Staging.
+- Public Playtest.
+
+Không phụ thuộc:
+
+- Localhost.
+- Port cố định.
+- Đường dẫn trên máy Mac.
+- Database QA.
+- Browser transport bridge.
+- Candidate-specific configuration không cần thiết.
+
+Tương thích kiến trúc triển khai GitHub, Railway, PostgreSQL và backend hiện hành.
+
+Nếu dữ liệu vòng quay lưu cục bộ, bảo đảm phân tách tài khoản và Match ID.
+
+Không truyền dữ liệu riêng không cần thiết tới cloud server.
+
+# XXVII. PERFORMANCE
+
+Vòng quay phải mượt.
+
+Kiểm tra:
+
+- Frame rate.
+- Animation stability.
+- Memory usage.
+- Event listeners.
+- Audio synchronization.
+- Input responsiveness.
+- Modal open/close.
+- Danh sách dài.
+- Theme changes.
+- Mobile performance.
+
+Không làm browser lag khi quay.
+
+Không làm chậm Game Room.
+
+Không tạo memory leak sau nhiều lần quay.
+
+Không tích lũy timer, audio instance hoặc animation listener.
+
+Không làm chậm WebSocket hoặc cập nhật trạng thái gameplay.
+
+Ưu tiên cập nhật transform thay vì tính lại toàn bộ layout trong mỗi frame.
+
+# XXVIII. ACCEPTANCE TESTS
+
+Bắt buộc kiểm thử trực tiếp trên website đang chạy.
+
+## A. Default List
+
+1. Phòng 4 người tạo đúng 3 mục tiêu cho mỗi người.
+2. Phòng 8 người tạo đúng 7 mục tiêu.
+3. Bản thân không có trong danh sách mặc định.
+4. Hai tài khoản có danh sách riêng.
+5. Danh sách lấy từ thành viên thực tế.
+
+## B. Customization
+
+6. Loại mục tiêu.
+7. Thêm lại mục tiêu.
+8. Thêm mục văn bản.
+9. Chọn tất cả.
+10. Bỏ chọn tất cả.
+11. Khôi phục mặc định.
+12. Tìm kiếm.
+13. Không tạo mục trùng ngoài ý muốn.
+14. Thay đổi số phần vòng quay đúng danh sách.
+
+## C. Real Animation
+
+15. Vòng tròn thực sự xoay.
+16. Kim nhỏ ở tâm đứng cố định.
+17. Vòng quay tăng tốc.
+18. Vòng quay xoay nhiều vòng.
+19. Vòng quay giảm tốc.
+20. Vòng quay dừng tự nhiên.
+21. Kết quả công bố sau khi dừng.
+22. Kim chỉ đúng mục tiêu.
+23. Không nhảy góc đột ngột khi kết thúc.
+24. Không tạo nhiều animation chồng nhau.
+
+## D. Sound
+
+25. Âm thanh bắt đầu quay.
+26. Tiếng tích tắc đồng bộ tốc độ.
+27. Âm thanh công bố kết quả.
+28. Mute hoạt động.
+29. Điều chỉnh âm lượng hoạt động.
+30. Không phát âm thanh ngoài ý muốn sau khi đóng.
+
+## E. Gameplay Integration
+
+31. Mở vòng quay trong ban đêm.
+32. Mở vòng quay trong ban ngày.
+33. Mở vòng quay trong pha biểu quyết.
+34. Chuyển mục tiêu hợp lệ vào Action Panel.
+35. Không tự sử dụng kỹ năng.
+36. Không tự biểu quyết.
+37. Không tiêu hao tài nguyên khi quay.
+38. Không làm dừng timer.
+39. Không gửi action sau khi hết pha.
+40. Xử lý mục tiêu không hợp lệ.
+
+## F. Privacy
+
+41. Người chơi khác không nhận kết quả quay.
+42. Quản trò không nhận dữ liệu riêng trái quyền.
+43. Không rò rỉ hidden state.
+44. Không ghi kết quả quay thành gameplay event.
+45. Không ảnh hưởng thống kê hoặc Replay chính thức.
+
+## G. Persistence
+
+46. Đóng và mở lại giữ danh sách.
+47. Chuyển pha giữ danh sách.
+48. Refresh giữ danh sách.
+49. Reconnect giữ danh sách.
+50. Ván mới tạo danh sách mới.
+51. Hai tài khoản không dùng nhầm dữ liệu của nhau.
+
+## H. Visual & Responsive
+
+52. Desktop.
+53. MacBook.
+54. Tablet.
+55. Mobile.
+56. Theme tối.
+57. Theme sáng.
+58. Phòng đông người.
+59. Tên dài.
+60. Reduced Motion.
+
+## I. Online Compatibility
+
+61. Không hardcode localhost.
+62. Hoạt động với Game Session trực tuyến.
+63. Không phụ thuộc Candidate QA.
+64. Không tạo hành động trái quyền khi mất kết nối.
+
+Các trường hợp trên là checklist chức năng, không phải hệ thống chỉ số phát triển nhân vật mới.
+
+Không cần tạo thêm metric phức tạp.
+
+# XXIX. REAL WEBSITE EVIDENCE
+
+Sau khi triển khai, tôi muốn xem vòng quay thực tế trên website.
+
+Cung cấp ảnh chụp:
+
+1. Nút mở vòng quay trong Game Room.
+2. Modal vòng quay.
+3. Danh sách mặc định.
+4. Danh sách đã tùy chỉnh.
+5. Kim nhỏ tại tâm.
+6. Kết quả sau khi quay.
+7. Thao tác đưa mục tiêu vào Action Panel.
+8. Vòng quay trên mobile.
+9. Vòng quay trên theme sáng.
+10. Vòng quay trong phòng đông người.
+
+## VIDEO EVIDENCE — BẮT BUỘC CHỨNG MINH CHUYỂN ĐỘNG
+
+Ưu tiên cung cấp video MP4 hoặc WebM quay trực tiếp từ website đang chạy.
+
+Nếu môi trường không hỗ trợ video, có thể cung cấp GIF ghi từ các khung hình của trình duyệt thực tế.
+
+Video cần chứng minh:
+
+- Mở vòng quay.
+- Thêm hoặc loại mục tiêu.
+- Nhấn Quay.
+- Vòng tròn thực sự chuyển động.
+- Kim tại tâm đứng cố định.
+- Tăng tốc.
+- Xoay nhiều vòng.
+- Giảm tốc.
+- Dừng chính xác.
+- Highlight mục tiêu.
+- Công bố kết quả.
+- Quay lại.
+- Chuyển mục tiêu vào Action Panel.
+
+Ảnh chụp tĩnh không đủ để chứng minh animation hoạt động.
+
+Không tạo video bằng AI để thay thế website thực tế.
+
+Không sử dụng mockup thay cho bằng chứng triển khai.
+
+Nếu không có khả năng ghi video hoặc GIF thực tế, báo cáo rõ giới hạn và cung cấp bằng chứng animation runtime phù hợp, không giả mạo media.
+
+# XXX. CORRECTION OF PREVIOUS DIRECTIVES
+
+Chỉ thị này thay thế toàn bộ yêu cầu riêng lẻ trước đây về thiết kế Vòng quay định mệnh.
+
+Hủy yêu cầu xây dựng vòng quay lựa chọn quản trò mới.
+
+Không xóa cơ chế chọn quản trò đã có theo luật.
+
+Không thay đổi quy trình phân vai hiện hành.
+
+Không nhầm lẫn ba chức năng:
+
+- Personal Random Decision Wheel.
+- Character Role Reveal.
+- Character Encyclopedia Wheel.
+
+Vòng quay tra cứu nhân vật vẫn được giữ và cải thiện độ mượt theo yêu cầu IMMERSIVE.
+
+Vòng quay định mệnh là công cụ hỗ trợ quyết định riêng trong phòng chơi.
+
+# XXXI. PROJECT CONTINUITY
+
+Toàn bộ yêu cầu phát triển đã xác nhận trước đó vẫn có hiệu lực:
+
+- IMMERSIVE-03.
+- Game Room Redesign.
+- Visual Upgrade.
+- Player Career.
+- Friends.
+- Newsfeed.
+- Achievements.
+- Match History.
+- Replay.
+- Live Voting.
+- Personal Journal.
+- Host Notifications.
+- AI Rule Assistant.
+- Backend Integration.
+- PostgreSQL.
+- Cloud Deployment.
+- GitHub CI/CD.
+- Railway Deployment.
+- Responsive Design.
+- Security.
+- Performance.
+
+Không bỏ qua các chức năng này vì bổ sung vòng quay.
+
+FULL-5 và FULL-50 tiếp tục được đóng băng.
+
+Tiếp tục từ source mới nhất thực tế đang phát triển.
+
+Không quay lại phiên bản cũ.
+
+Không yêu cầu tôi tự ghép patch.
+
+Bàn giao vòng quay như một phần tích hợp hoàn chỉnh trong Full Source mới nhất.
+
+# XXXII. CREATIVE AUTHORITY
+
+Tôi cho phép bạn tự sáng tạo thêm để vòng quay trở nên đẹp hơn.
+
+Không cần hỏi tôi về:
+
+- Họa tiết.
+- Kiểu viền.
+- Kiểu chữ.
+- Cách phối màu.
+- Bố cục danh sách.
+- Hiệu ứng phát sáng.
+- Cách trình diễn kết quả.
+- Kỹ thuật animation.
+- Cách tổ chức component.
+
+Tuy nhiên, phải giữ đúng những yêu cầu cốt lõi:
+
+1. Vòng quay cá nhân trong phòng chơi.
+2. Mặc định gồm tất cả người chơi khác, trừ bản thân.
+3. Cho phép thêm, xóa và tùy chỉnh.
+4. Vòng tròn phải xoay thực sự.
+5. Kim chỉ nhỏ nằm chính giữa.
+6. Kim đứng cố định, vòng tròn xoay.
+7. Kết quả khớp tuyệt đối với hướng kim.
+8. Có âm thanh và hiệu ứng.
+9. Không tự động sử dụng kỹ năng.
+10. Không làm lộ thông tin bí mật.
+11. Thiết kế chuyên nghiệp, hấp dẫn và mượt mà.
+
+Tôi không muốn một công cụ chỉ hoạt động đúng về mặt kỹ thuật nhưng nhìn sơ sài.
+
+Tôi muốn một vật phẩm có bản sắc riêng, khiến người chơi cảm thấy thích thú mỗi khi sử dụng.
+
+# FINAL PROJECT OWNER COMMAND
+
+**BUILD THE WHEEL OF FATE.**
+
+**MAKE IT A PREMIUM MYSTICAL COMPASS.**
+
+**SMALL CENTRAL POINTER.**
+
+**FIXED CENTER.**
+
+**REAL ROTATING DISC.**
+
+**SMOOTH ACCELERATION.**
+
+**MULTIPLE COMPLETE ROTATIONS.**
+
+**NATURAL DECELERATION.**
+
+**PRECISE LANDING.**
+
+**IMMERSIVE SOUND.**
+
+**CUSTOMIZABLE PLAYER LIST.**
+
+**PRIVATE PERSONAL EXPERIENCE.**
+
+**SEAMLESS GAME ROOM INTEGRATION.**
+
+**NO INSTANT RANDOM RESULT.**
+
+**NO OVERSIZED EXTERNAL POINTER.**
+
+**NO AUTOMATIC GAME ACTIONS.**
+
+**NO SECRET INFORMATION LEAKAGE.**
+
+**DELIVER A BEAUTIFUL, POLISHED AND FULLY WORKING PRODUCT.**
+
+**SHOW ME THE REAL SPINNING WHEEL IN ACTION.**
+
+**BEGIN IMPLEMENTATION NOW.**

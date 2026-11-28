@@ -1,0 +1,14 @@
+{
+  "profile": "owner-bb-candidate-v1",
+  "baseRuleset": "wolvesville-official-v1.3.3",
+  "status": "APPROVED_CORE_UNPUBLISHED",
+  "officialActivation": false,
+  "source": "Owner Decision B / B, current conversation; supersedes proposed choices in BREAKTHROUGH_OWNER_DECISIONS.md without changing the historical record",
+  "decisions": [
+    {"id":"DEC-BT-01","choice":"B","classification":"APPROVED_CORE_CHOICE","text":"Bầy Sói phải đồng thuận tuyệt đối về mục tiêu cắn.","references":["VH54","VH74","P04","VH52"],"pending":["MISSING_OR_BLANK","NO_CONSENSUS_PHASE_POLICY","PARTIAL_TWO_TARGETS","MEMBERSHIP_CHANGE","REPRESENTATIVE_REPLACEMENT","TWO_ATTACK_ATTRIBUTION"]},
+    {"id":"DEC-BT-02","choice":"B","classification":"APPROVED_CORE_CHOICE","text":"Bẫy Sói Kỹ Sư tồn tại đến lần sử dụng kỹ năng hợp lệ tiếp theo của người bị bẫy.","references":["Character #10","NV10","SK-05","Q13-06","Q13-11","VH08","VH84","VH10","VH41","PH-01"],"pending":["INVERTED_GUARD_DAMAGE_ORDER","INVERTED_RESCUE_DEATH_PROVENANCE","UNSUPPORTED_INVERSION_OR_MULTI_EFFECT"]}
+  ],
+  "derivedDetails":["Rejected, blocked, cancelled and skipped actions do not execute a skill and do not consume a mark.","A valid executed #5 judgment remains true and consumes the mark under the literal approved core choice; candidate only.","The mark remains keyed to the same player through death and revival if no valid execution occurred; candidate only."],
+  "engineeringDetails":["Canonical unordered target sets","Separate missing and blank receipts","Last valid private selection retained; no automatic target on blank","Immutable roster and seed binding","SQLite candidate journal and replay verification","Trusted entitlement provider and read-only QA archive gateway"],
+  "releaseGate":"Resolve pending gameplay choices, integrate transactional official runtime, assign new ruleset and run full compatibility and browser acceptance before activation."
+}

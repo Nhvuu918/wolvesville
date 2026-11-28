@@ -1,0 +1,80 @@
+TAP version 13
+# (node:11305) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Universal module admission is order-independent and rejects unknown/duplicate/conflicting roles
+ok 1 - Universal module admission is order-independent and rejects unknown/duplicate/conflicting roles
+  ---
+  duration_ms: 2.418004
+  type: 'test'
+  ...
+# Subtest: Universal real API: guard and Bell without Cupid or Witch; no fabricated mandatory action; restart and true death
+ok 2 - Universal real API: guard and Bell without Cupid or Witch; no fabricated mandatory action; restart and true death
+  ---
+  duration_ms: 1438.35049
+  type: 'test'
+  ...
+# Subtest: Universal real API: seed, Witch and exact inspection without Cupid or Bell; rescue then hibernation and wake
+ok 3 - Universal real API: seed, Witch and exact inspection without Cupid or Bell; rescue then hibernation and wake
+  ---
+  duration_ms: 1413.690934
+  type: 'test'
+  ...
+# (node:11306) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# LIFE_DEV_NORMAL_EVIDENCE {"roles":[8,25,31],"mode":"NORMAL_GAMEPLAY","scope":"LIFE-MODULES-1-GUARD-OBSERVATION","privacy":true,"replay":true,"restart":true,"rollback":true}
+# Subtest: Universal DEV normal: 8,25,31 guard, observer, real vote, restart and ACL
+ok 4 - Universal DEV normal: 8,25,31 guard, observer, real vote, restart and ACL
+  ---
+  duration_ms: 1177.682638
+  type: 'test'
+  ...
+# LIFE_DEV_NORMAL_EVIDENCE {"roles":[8,31,74],"mode":"NORMAL_GAMEPLAY","scope":"LIFE-MODULES-1-GUARD-OBSERVATION","privacy":true,"replay":true,"restart":true,"rollback":true}
+# Subtest: Universal DEV normal: 8,31,74 guard, observer, real vote, restart and ACL
+ok 5 - Universal DEV normal: 8,31,74 guard, observer, real vote, restart and ACL
+  ---
+  duration_ms: 1098.089656
+  type: 'test'
+  ...
+# LIFE_DEV_NORMAL_EVIDENCE {"roles":[8,25,31,74],"mode":"NORMAL_GAMEPLAY","scope":"LIFE-MODULES-1-GUARD-OBSERVATION","privacy":true,"replay":true,"restart":true,"rollback":true}
+# Subtest: Universal DEV normal: 8,25,31,74 guard, observer, real vote, restart and ACL
+ok 6 - Universal DEV normal: 8,25,31,74 guard, observer, real vote, restart and ACL
+  ---
+  duration_ms: 1163.788731
+  type: 'test'
+  ...
+# LIFE_DEV_NORMAL_EVIDENCE {"roles":[8,25,31,64],"mode":"NORMAL_GAMEPLAY","scope":"LIFE-MODULES-1-GUARD-OBSERVATION","privacy":true,"replay":true,"restart":true,"rollback":true}
+# Subtest: Universal DEV normal: 8,25,31,64 guard, observer, real vote, restart and ACL
+ok 7 - Universal DEV normal: 8,25,31,64 guard, observer, real vote, restart and ACL
+  ---
+  duration_ms: 1130.004723
+  type: 'test'
+  ...
+# LIFE_DEV_NORMAL_EVIDENCE {"roles":[8,31,64,74],"mode":"NORMAL_GAMEPLAY","scope":"LIFE-MODULES-1-GUARD-OBSERVATION","privacy":true,"replay":true,"restart":true,"rollback":true}
+# Subtest: Universal DEV normal: 8,31,64,74 guard, observer, real vote, restart and ACL
+ok 8 - Universal DEV normal: 8,31,64,74 guard, observer, real vote, restart and ACL
+  ---
+  duration_ms: 1313.722335
+  type: 'test'
+  ...
+# LIFE_DEV_NORMAL_EVIDENCE {"roles":[8,25,31,64,74],"mode":"NORMAL_GAMEPLAY","scope":"LIFE-MODULES-1-GUARD-OBSERVATION","privacy":true,"replay":true,"restart":true,"rollback":true}
+# Subtest: Universal DEV normal: 8,25,31,64,74 guard, observer, real vote, restart and ACL
+ok 9 - Universal DEV normal: 8,25,31,64,74 guard, observer, real vote, restart and ACL
+  ---
+  duration_ms: 1511.826169
+  type: 'test'
+  ...
+# Subtest: Universal DEV admission defaults off, disabled in production, rejects unsupported roles
+ok 10 - Universal DEV admission defaults off, disabled in production, rejects unsupported roles
+  ---
+  duration_ms: 0.366404
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 7586.689197

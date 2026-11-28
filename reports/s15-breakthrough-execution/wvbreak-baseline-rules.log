@@ -1,0 +1,9 @@
+
+> wolvesville-sprint15-role-completeness@1.7.15-s15-deep-engine-wip rules:build
+> node scripts/build-rule-knowledge.mjs && node scripts/build-rule-knowledge-s05.mjs && node scripts/build-rule-knowledge-s06.mjs && node scripts/build-s10-execution-matrix.mjs && node scripts/build-s10-mechanism-graph.mjs
+
+Knowledge Base: 97 characters, 118 confirmed decisions, 145 audit branches, 207 legacy SPEC_ONLY, 4656 pair screening, 2 explicitly derived, 22 inherited audit findings
+Sprint05 official expansion overlay: {"version":"0.7.0","baseRuleVersion":"wolvesville-official-v1.3.1","sourceHash":"7a9fc87f979198004260115f512cac9b171322a98b264e59dae9fa3b4d29a9c3","confirmedDecisions":118,"auditSkillBranches":145,"legacySpecs":207,"characters":97,"activeAdapters":5,"passiveAdapters":1,"charactersWithAtLeastOneExecutedBranch":6,"charactersWithAllBranchesCompetitiveReady":0,"supportedDecks":[[25,74],[20,25,74],[9,25,31,34,74]],"executedPairCases":12,"pairScreening":4656,"fullCompetitive":false}
+Sprint06 official execution overlay: {"version":"0.8.0","rulesVersion":"wolvesville-official-v1.3.1","characterHash":"7a9fc87f979198004260115f512cac9b171322a98b264e59dae9fa3b4d29a9c3","officialCharacters":97,"decisions":118,"legacyTestSpecifications":207,"auditedSkillBranches":145,"charactersWithExecutedBranches":7,"activeSkillAdapters":6,"passiveReactions":1,"fullyCompetitiveReadyCharacters":0,"fullyAdjudicatedVotingModes":0,"verifiedAutoEndgamePredicates":0,"votingIntentsRestricted":true,"peaceWolfCancelValidated":true,"victoryFacts":["WV_CHAR_28_HANGED_WIN","WV_CHAR_8_SOLE_SURVIVOR"],"supportedDecks":[[25,74],[20,25,74],[9,25,31,34,74],[25,74,79]],"postgresVerifiedHere":false,"fullCompetitive":false}
+S10 MATRIX 97 roles; 11 partially executed roles; A=2 B=0
+S10 DEPENDENCY GRAPH 145 source-audited branches and 11 technical layers

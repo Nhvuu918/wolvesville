@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "release": "1.2.0-s10",
+  "sourceHash": "7a9fc87f979198004260115f512cac9b171322a98b264e59dae9fa3b4d29a9c3",
+  "officialCharacters": 97,
+  "decisions": 118,
+  "legacySpecifications": 207,
+  "auditedBranches": 145,
+  "executedCharacterIds": [
+    5,
+    8,
+    9,
+    20,
+    25,
+    31,
+    33,
+    34,
+    74,
+    76,
+    79
+  ],
+  "executedCharacters": 11,
+  "newlyExecutedCharacterIds": [
+    5,
+    76
+  ],
+  "newImplementedBranches": 2,
+  "completeSkillCharacters": 0,
+  "competitiveReadyCharacters": 0,
+  "restrictedDecks": [
+    [
+      8,
+      25
+    ],
+    [
+      8,
+      28
+    ],
+    [
+      25,
+      74
+    ],
+    [
+      20,
+      25,
+      74
+    ],
+    [
+      9,
+      25,
+      31,
+      34,
+      74
+    ],
+    [
+      25,
+      74,
+      79
+    ],
+    [
+      25,
+      33,
+      74
+    ],
+    [
+      5,
+      20,
+      25
+    ],
+    [
+      5,
+      25,
+      74
+    ],
+    [
+      25,
+      74,
+      76
+    ],
+    [
+      5,
+      25,
+      76
+    ]
+  ],
+  "certifiedCompletedDecks": [
+    [
+      8,
+      25
+    ],
+    [
+      8,
+      28
+    ]
+  ],
+  "metricA": 2,
+  "metricB": 0,
+  "minimumTestedInteractionPairs": 15,
+  "officialCompletedMultiRoundMatchConfigurations": 0,
+  "voteResolution": "PARTIAL_BLOCKED_BY_V02_V03",
+  "elimination": "PARTIAL_NIGHT_ONLY",
+  "victory": "PARTIAL_VERIFIED_KNIGHT_ONLY",
+  "postgresql": "PENDING_LIVE",
+  "fullCompetitive": "NO_GO"
+}

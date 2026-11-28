@@ -1,0 +1,24 @@
+{
+  "rulesVersion": "wolvesville-official-v1.3.1",
+  "genericWinResolver": false,
+  "autoCompleteGame": false,
+  "verifiedPredicateFacts": [
+    {
+      "predicateId": "WV_CHAR_28_HANGED_WIN",
+      "rules": [
+        "character.json#28",
+        "VH03"
+      ],
+      "technicalState": "PARTIAL_PURE_PREDICATE",
+      "test": "tests/official-victory-facts.test.mjs",
+      "needsVerifiedHangingEvent": true,
+      "needsEndOfChain": true
+    }
+  ],
+  "auxiliaryFactionCountFacts": [
+    "Q13-05",
+    "VH06",
+    "VH82"
+  ],
+  "fullVictoryPredicatesImplemented": 0
+}

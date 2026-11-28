@@ -1,0 +1,180 @@
+{
+  "qaCertificates": [
+    {
+      "deck": [
+        8,
+        25
+      ],
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "scope": "Both possible night commands independently optional; all 16 terminal ballot combinations; two winning sides; authorized UI/reconnect/replay; no other skill or protection can occur within this composition.",
+      "requiredTests": [
+        "QD01 [8,25] Village victory after valid hanging; no vote, tie, retry, change, phase, privacy, replay",
+        "QD01 [8,25] knight night victory with seer action before death; both choices private",
+        "QD01 [8,25] Knight wins by hanging, Village cannot win with contender alive",
+        "QD01 [8,25] all 16 final ballot combinations including self, abstention and explicit blank",
+        "QD01 [8,25] night kill without inspection, terminal phase rejects actions"
+      ],
+      "browserEvidence": [
+        "village",
+        "knight"
+      ],
+      "certified": true,
+      "classification": "QA_BRANCH_COMPLETE",
+      "revalidatedOn": "1.7.12-s15-continuation-wip",
+      "missingTests": []
+    },
+    {
+      "deck": [
+        8,
+        74
+      ],
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "scope": "QA ONLY: all 16 final ballot combinations, both night action branches, invalid target, retry, exact-role privacy and browser victory/reconnect",
+      "requiredTests": [
+        "Scale QA [8,74] sixteen final ballots and valid terminal or next-round results",
+        "Scale QA [8,74] inspection, abstain, retry, vote change, restart and Village victory",
+        "Scale QA [8,74] independent optional inspection on fatal night, both orders, exact-role privacy"
+      ],
+      "browserEvidence": [
+        "browser_s15_scale_mystic_e2e"
+      ],
+      "certified": true,
+      "classification": "QA_BRANCH_COMPLETE",
+      "revalidatedOn": "1.7.12-s15-continuation-wip",
+      "missingTests": []
+    }
+  ],
+  "playableCertificates": [
+    {
+      "classification": "PLAYABLE_BRANCH_COMPLETE",
+      "deck": [
+        8,
+        25
+      ],
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "rules": [
+        "ROOM-01",
+        "ROOM-02",
+        "ROOM-03",
+        "QD-01",
+        "V02",
+        "V03"
+      ],
+      "requiredTests": [
+        "Normal [8,25] all 16 final ballot combinations in real rooms, V02/V03, both winning sides",
+        "Normal [8,25] four optional night branches plus reversed submission, phase and target rejection"
+      ],
+      "sharedAcceptanceTests": [
+        "Normal gameplay real authenticated session: readiness, QA isolation, private aura, chat, vote, restart, reconnect and Village victory",
+        "Normal gameplay exact-role seer, night kill, dead player actions denied and persisted Knight victory",
+        "Normal ROOM-03 authenticated handoff after host disconnect, no reassignment, phase authorization, restart and audit",
+        "Normal migration 007/008 preserves an actual archived 1.3.2 QA game and replay byte-for-byte"
+      ],
+      "evidence": [
+        {
+          "deck": [
+            8,
+            25
+          ],
+          "ballotCombinations": 16,
+          "mode": "NORMAL_GAMEPLAY",
+          "replay": true
+        },
+        {
+          "deck": [
+            8,
+            25
+          ],
+          "nightScenarios": 5,
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true
+        }
+      ],
+      "browserSuite": "browser_s15_normal_e2e.py",
+      "browserCases": [
+        "aura-village",
+        "aura-knight",
+        "aura-handoff-village"
+      ],
+      "scope": "Two real humans, approved distinct composition, explicit manual phase closure and eligible human handoff. No bots or arbitrary compositions. Platform all-offline automated timing not certified.",
+      "certified": true,
+      "revalidatedOn": "1.7.12-s15-continuation-wip",
+      "missingTests": []
+    },
+    {
+      "classification": "PLAYABLE_BRANCH_COMPLETE",
+      "deck": [
+        8,
+        74
+      ],
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "mode": "NORMAL_GAMEPLAY",
+      "rules": [
+        "ROOM-01",
+        "ROOM-02",
+        "ROOM-03",
+        "QD-01",
+        "V02",
+        "V03"
+      ],
+      "requiredTests": [
+        "Normal [8,74] all 16 final ballot combinations in real rooms, V02/V03, both winning sides",
+        "Normal [8,74] four optional night branches plus reversed submission, phase and target rejection"
+      ],
+      "sharedAcceptanceTests": [
+        "Normal gameplay real authenticated session: readiness, QA isolation, private aura, chat, vote, restart, reconnect and Village victory",
+        "Normal gameplay exact-role seer, night kill, dead player actions denied and persisted Knight victory",
+        "Normal ROOM-03 authenticated handoff after host disconnect, no reassignment, phase authorization, restart and audit",
+        "Normal migration 007/008 preserves an actual archived 1.3.2 QA game and replay byte-for-byte"
+      ],
+      "evidence": [
+        {
+          "deck": [
+            8,
+            74
+          ],
+          "ballotCombinations": 16,
+          "mode": "NORMAL_GAMEPLAY",
+          "replay": true
+        },
+        {
+          "deck": [
+            8,
+            74
+          ],
+          "nightScenarios": 5,
+          "mode": "NORMAL_GAMEPLAY",
+          "privacy": true,
+          "replay": true
+        }
+      ],
+      "browserSuite": "browser_s15_normal_e2e.py",
+      "browserCases": [
+        "role-village",
+        "role-knight",
+        "aura-handoff-village"
+      ],
+      "scope": "Two real humans, approved distinct composition, explicit manual phase closure and eligible human handoff. No bots or arbitrary compositions. Platform all-offline automated timing not certified.",
+      "certified": true,
+      "revalidatedOn": "1.7.12-s15-continuation-wip",
+      "missingTests": []
+    }
+  ],
+  "newNormalComposition": {
+    "deck": [
+      8,
+      25,
+      74
+    ],
+    "mode": "NORMAL_GAMEPLAY",
+    "browserPass": true,
+    "backendJourneyPass": true,
+    "kernelBallots": 157,
+    "kernelNightScenarios": 54,
+    "branchCompleteCertified": false,
+    "reason": "Full combinatorial real-room and 3-human coordinator handoff acceptance not completed; do not count kernel scenarios as real room E2E."
+  },
+  "historicalCertificates": "reports/S15_PLAY_BRANCH_COMPLETE_MATRIX.json"
+}

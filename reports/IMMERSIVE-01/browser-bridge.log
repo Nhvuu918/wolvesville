@@ -1,0 +1,4 @@
+Transport: repository HTTP/WS bridge
+PASS browser: account, profile persistence, request realtime, accept, feed, like/comment, source lookup, refresh, mobile width
+E2E_CONTEXT_CLOSED 0 0.056
+E2E_CONTEXT_CLOSED 1 0.123

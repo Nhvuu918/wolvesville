@@ -1,0 +1,156 @@
+[
+  {
+    "file": "before-normal-bell-private.png",
+    "source": "reports/IMMERSIVE-01/normal-browser/normal-bell-private.png",
+    "scope": "BEFORE — IMMERSIVE-01 (historical)",
+    "fingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a",
+    "sha256": "a3915fe70425f6c5c4355eb64f42c8e292f28f401596d4ba7daaf65fa1a881bf"
+  },
+  {
+    "file": "before-normal-config.png",
+    "source": "reports/IMMERSIVE-01/normal-browser/normal-config.png",
+    "scope": "BEFORE — IMMERSIVE-01 (historical)",
+    "fingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a",
+    "sha256": "9951c3103dfffceb3bd4d5bf7d3c2e58f0c45d90152a63995214017bb3b8e45a"
+  },
+  {
+    "file": "before-normal-endgame.png",
+    "source": "reports/IMMERSIVE-01/normal-browser/normal-endgame.png",
+    "scope": "BEFORE — IMMERSIVE-01 (historical)",
+    "fingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a",
+    "sha256": "f50def8c59062e8df9396aed75b482276859b5eb51fbf15725d317ae57a1d3c8"
+  },
+  {
+    "file": "before-normal-guard-action.png",
+    "source": "reports/IMMERSIVE-01/normal-browser/normal-guard-action.png",
+    "scope": "BEFORE — IMMERSIVE-01 (historical)",
+    "fingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a",
+    "sha256": "4973acad51e9847727763fed2165f1116b530b674b2604b45b54c086f44a981a"
+  },
+  {
+    "file": "before-normal-guard-no-bell.png",
+    "source": "reports/IMMERSIVE-01/normal-browser/normal-guard-no-bell.png",
+    "scope": "BEFORE — IMMERSIVE-01 (historical)",
+    "fingerprint": "3a227d7eb63c0f91390db719df9d24158d4923c2b73665aa7bea86073ffb5a4a",
+    "sha256": "c3a4791e6855b622ba602d9cb9b1de390b2c5d6e4177a552b10198a8d73c8312"
+  },
+  {
+    "file": "after-career-mobile.png",
+    "source": "reports/IMMERSIVE-02/browser/career-mobile.png",
+    "scope": "AFTER — IMMERSIVE-02 (actual DEV Normal browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "31169269b978b7c248cf5fab4105a5a019205befcedbec21e392a4b813e6ebcc"
+  },
+  {
+    "file": "after-career.png",
+    "source": "reports/IMMERSIVE-02/browser/career.png",
+    "scope": "AFTER — IMMERSIVE-02 (actual DEV Normal browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "a05dd977465da7fec87baa91923f9fb7377ce5435ef08c0061fa59cb9ae58454"
+  },
+  {
+    "file": "after-game-mobile.png",
+    "source": "reports/IMMERSIVE-02/browser/game-mobile.png",
+    "scope": "AFTER — IMMERSIVE-02 (actual DEV Normal browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "865447b7f21a627e3814a58682ec796932cf2f10fe656e9560a07cff66ca9528"
+  },
+  {
+    "file": "after-journal.png",
+    "source": "reports/IMMERSIVE-02/browser/journal.png",
+    "scope": "AFTER — IMMERSIVE-02 (actual DEV Normal browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "6354ce43afaaff0658bf5b8efd38398022b9ce8aa2c100380931c3e66f97d036"
+  },
+  {
+    "file": "after-normal-bell-private.png",
+    "source": "reports/IMMERSIVE-02/browser/normal-bell-private.png",
+    "scope": "AFTER — IMMERSIVE-02 (actual DEV Normal browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "3dacf886593222c6f779767959b8011348887efd5991e72592a21f2b9e22bef1"
+  },
+  {
+    "file": "after-normal-config.png",
+    "source": "reports/IMMERSIVE-02/browser/normal-config.png",
+    "scope": "AFTER — IMMERSIVE-02 (actual DEV Normal browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "6cb068368c621c9b4a6f3fac2c58e7c1de510bda5fac7546d30fcd8fba637ed8"
+  },
+  {
+    "file": "after-normal-day.png",
+    "source": "reports/IMMERSIVE-02/browser/normal-day.png",
+    "scope": "AFTER — IMMERSIVE-02 (actual DEV Normal browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "8e0316ef8a984d84c971dc19d326bd8cdb6d656d30f71522380500a35d7c546b"
+  },
+  {
+    "file": "after-normal-endgame.png",
+    "source": "reports/IMMERSIVE-02/browser/normal-endgame.png",
+    "scope": "AFTER — IMMERSIVE-02 (actual DEV Normal browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "cd89c2640be220425d459bf8397793d741e2c3520e23ba8dc293558b4d62a7b0"
+  },
+  {
+    "file": "after-normal-guard-action.png",
+    "source": "reports/IMMERSIVE-02/browser/normal-guard-action.png",
+    "scope": "AFTER — IMMERSIVE-02 (actual DEV Normal browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "d2c46b32496eb0a160206a4d48fa5bcd850470bdec9ecd4954246ba3a735a4cc"
+  },
+  {
+    "file": "after-normal-guard-no-bell.png",
+    "source": "reports/IMMERSIVE-02/browser/normal-guard-no-bell.png",
+    "scope": "AFTER — IMMERSIVE-02 (actual DEV Normal browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "4418ca3ad4ff8452353ff3fcbea9f95cf84f6cfe595f6747beb11c6361b4bdaf"
+  },
+  {
+    "file": "after-voting.png",
+    "source": "reports/IMMERSIVE-02/browser/voting.png",
+    "scope": "AFTER — IMMERSIVE-02 (actual DEV Normal browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "da6ddb2881a0285805240a468549ffb1a9c8bb56f609c443c6551f46f7560526"
+  },
+  {
+    "file": "after-social-feed.png",
+    "source": "reports/IMMERSIVE-02/social-browser/feed.png",
+    "scope": "AFTER — IMMERSIVE-02 (social browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "0012d8926e9ace973fd2af469dc001cd3dfd324eab3e7b3604abe327cd02d59e"
+  },
+  {
+    "file": "after-social-friends.png",
+    "source": "reports/IMMERSIVE-02/social-browser/friends.png",
+    "scope": "AFTER — IMMERSIVE-02 (social browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "d764c49e0c70131533a06e58a6d8341a7ea7a700f6da26d777603dd3d6b0f8ba"
+  },
+  {
+    "file": "after-social-mobile-profile.png",
+    "source": "reports/IMMERSIVE-02/social-browser/mobile-profile.png",
+    "scope": "AFTER — IMMERSIVE-02 (social browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "8a924cf8c4f90ebe3cd65c844343de21e8baa75df0f1df71cf197718a4ea4ca0"
+  },
+  {
+    "file": "after-social-notifications.png",
+    "source": "reports/IMMERSIVE-02/social-browser/notifications.png",
+    "scope": "AFTER — IMMERSIVE-02 (social browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "626388bff3c0735d8b6ec7b74d8c1fa90a8886154d3dcbd9013df95909759821"
+  },
+  {
+    "file": "after-social-profile.png",
+    "source": "reports/IMMERSIVE-02/social-browser/profile.png",
+    "scope": "AFTER — IMMERSIVE-02 (social browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "799fac3a3fba7c277d6a679769c863bd32d26f7a3d69a8afef3f06233a4efd12"
+  },
+  {
+    "file": "after-social-rule-lookup.png",
+    "source": "reports/IMMERSIVE-02/social-browser/rule-lookup.png",
+    "scope": "AFTER — IMMERSIVE-02 (social browser)",
+    "fingerprint": "79d494ee52642633fe5cf48e22f1e84421eb9bcc85fc6a21cb47d8b45267c454",
+    "sha256": "95f1234257d725cb29e5e948bbbdb14f5800e45949b15249d84f85223defd0d4"
+  }
+]

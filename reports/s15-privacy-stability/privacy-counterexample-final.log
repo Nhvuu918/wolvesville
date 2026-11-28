@@ -1,0 +1,37 @@
+(node:77768) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{
+  "worldA": {
+    "targets": [
+      "seat-1",
+      "seat-2",
+      "seat-3",
+      "seat-4",
+      "seat-5"
+    ],
+    "receipt": {
+      "duplicate": false,
+      "packRevision": 1,
+      "refresh": [
+        "seat-0"
+      ]
+    }
+  },
+  "worldB": {
+    "targets": [
+      "seat-1",
+      "seat-2",
+      "seat-3",
+      "seat-4",
+      "seat-5"
+    ],
+    "receipt": {
+      "duplicate": false,
+      "packRevision": 1,
+      "refresh": [
+        "seat-0"
+      ]
+    }
+  }
+}
+PRIVACY_COUNTEREXAMPLE DIRECT_SURFACES_EQUAL

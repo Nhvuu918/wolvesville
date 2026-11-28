@@ -1,0 +1,2056 @@
+{
+  "scope": "All 97 original roles grouped for reuse; no claim of generated executable adapters.",
+  "roles": [
+    {
+      "id": 1,
+      "name": "Sói Đạo Tặc",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "source": "data/character.json#1",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 2,
+      "name": "Dorothy",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "IN",
+        "LK",
+        "RS",
+        "RV"
+      ],
+      "source": "data/character.json#2",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sói Tiên Tri",
+      "mechanismTags": [
+        "IN",
+        "NO",
+        "TR"
+      ],
+      "source": "data/character.json#3",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A03-FUNCTION-INSPECTION",
+        "WV-A03-VOLUNTARY-CONVERSION",
+        "WV-A03-LAST-WOLF",
+        "WV-A03-AURA-CONCEAL"
+      ],
+      "remaining": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Người Buôn Bí",
+      "mechanismTags": [
+        "AT",
+        "BL",
+        "DF",
+        "RN",
+        "TM"
+      ],
+      "source": "data/character.json#4",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 5,
+      "name": "Thẩm Phán Linh Hồn",
+      "mechanismTags": [
+        "DF",
+        "IN",
+        "RS",
+        "TR"
+      ],
+      "source": "data/character.json#5",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A05-WEIGH-SOUL",
+        "WV-A05-JUSTICE"
+      ],
+      "remaining": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Đạo Diễn Tử Thần",
+      "mechanismTags": [
+        "CH",
+        "LK",
+        "RS",
+        "VT",
+        "WC"
+      ],
+      "source": "data/character.json#6",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "target domain / target-kind",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "target domain / target-kind",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Diễn Viên Sát Nhân",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "OP",
+        "RS",
+        "WC"
+      ],
+      "source": "data/character.json#7",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Kỵ Sĩ Không Đầu",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "VT",
+        "WC"
+      ],
+      "source": "data/character.json#8",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A08-ATTACK",
+        "WV-A08-HANG-IMMUNITY",
+        "WV-A08-VICTORY"
+      ],
+      "remaining": [
+        "Wolf team bite and universal defense interactions",
+        "Overlapping immunity; pack bite remains unsupported",
+        "Unrestricted role combinations"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Thiên Sứ Tuyết",
+      "mechanismTags": [
+        "DF",
+        "RS",
+        "TM"
+      ],
+      "source": "data/character.json#9",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A09-SHIELD"
+      ],
+      "remaining": [
+        "All attack families and stacked defenses"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Sói Kỹ Sư",
+      "mechanismTags": [
+        "AT",
+        "BL",
+        "NO",
+        "RS"
+      ],
+      "source": "data/character.json#10",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A10-TRAP-AURA",
+        "WV-A10-TRAP-ROLE",
+        "WV-A10-TRAP-PROTECTION",
+        "WV-A10-TRAP-POISON",
+        "WV-A10-TRAP-RESCUE"
+      ],
+      "remaining": [
+        "Complete match resource limit, cross-night lifetime, other targets; #25 unknown-aura reversal not in current deck.",
+        "Complete match resource limit, cross-night lifetime, other targets; #25 unknown-aura reversal not in current deck.",
+        "Adapter missing; order/attack/protection and death chain not yet verified.",
+        "Adapter missing; order/attack/protection and death chain not yet verified.",
+        "Adapter missing; order/attack/protection and death chain not yet verified."
+      ],
+      "newEffectMapping": "engineer",
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Thợ Rèn Cơ Khí",
+      "mechanismTags": [
+        "BL",
+        "DF",
+        "RS"
+      ],
+      "source": "data/character.json#11",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A11-UPGRADE",
+        "WV-A11-MAINTENANCE"
+      ],
+      "remaining": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 12,
+      "name": "Búp Bê Nguyền Rủa",
+      "mechanismTags": [
+        "LK",
+        "RN",
+        "RV",
+        "TM",
+        "WC"
+      ],
+      "source": "data/character.json#12",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Fan Cuồng",
+      "mechanismTags": [
+        "AT",
+        "CH",
+        "DF",
+        "LK",
+        "RN",
+        "TR",
+        "WC"
+      ],
+      "source": "data/character.json#13",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Ông Kệ Noel",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "LK",
+        "RN",
+        "WC"
+      ],
+      "source": "data/character.json#14",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Thần Tình Yêu Hắc Ám",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "LK",
+        "WC"
+      ],
+      "source": "data/character.json#15",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A15-SINGLE",
+        "WV-A15-PAIR",
+        "WV-A15-FOLLOW",
+        "WV-A15-IMMUNITY",
+        "WV-A15-VICTORY"
+      ],
+      "remaining": [
+        "General protections and accepted action after death",
+        "Link precedence, overwrite/restore",
+        "Only hanging in no-protection pair; night death, rescue, immunity",
+        "No general pack attack",
+        "Unrestricted combinations"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Phù Thủy Cấm Kỵ",
+      "mechanismTags": [
+        "AT",
+        "BL",
+        "DF",
+        "RS",
+        "TM"
+      ],
+      "source": "data/character.json#16",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A16-ANTIDOTE",
+        "WV-A16-POISON"
+      ],
+      "remaining": [
+        "Self-target and all attack families not fully verified",
+        "Third-party target and combined effects not fully verified"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Nữ Tu Huyết Thệ",
+      "mechanismTags": [
+        "AT",
+        "BL",
+        "DF",
+        "IN",
+        "RS"
+      ],
+      "source": "data/character.json#17",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A17-BLESSING",
+        "WV-A17-JUDGMENT-HOSTILE",
+        "WV-A17-JUDGMENT-VILLAGE"
+      ],
+      "remaining": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 18,
+      "name": "Sói Biến Hình",
+      "mechanismTags": [
+        "RS",
+        "TM",
+        "TR"
+      ],
+      "source": "data/character.json#18",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 19,
+      "name": "Kẻ Mặc Cả Bóng Tối",
+      "mechanismTags": [
+        "BL",
+        "DF",
+        "IN",
+        "LK",
+        "TR",
+        "VT",
+        "WC"
+      ],
+      "source": "data/character.json#19",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A19-SILENCE",
+        "WV-A19-BALLOT",
+        "WV-A19-CONCEAL",
+        "WV-A19-MANIPULATE",
+        "WV-A19-PUNISH",
+        "WV-A19-JOIN",
+        "WV-A19-TASK1",
+        "WV-A19-TASK2",
+        "WV-A19-TASK3",
+        "WV-A19-WIN3"
+      ],
+      "remaining": [
+        "Not implemented",
+        "Other branches and own-target direction not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented",
+        "Not implemented"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "phase / trigger thời gian",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Sói Gai Độc",
+      "mechanismTags": [
+        "AT",
+        "BL",
+        "IN",
+        "OP"
+      ],
+      "source": "data/character.json#20",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A20-INSPECT-INJURY",
+        "WV-A20-SHOT-INJURY"
+      ],
+      "remaining": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "target domain / target-kind",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Sói Khát Máu",
+      "mechanismTags": [
+        "AT",
+        "TM"
+      ],
+      "source": "data/character.json#21",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Người Giao Dịch",
+      "mechanismTags": [
+        "AT",
+        "RS",
+        "TR"
+      ],
+      "source": "data/character.json#22",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 23,
+      "name": "Xạ Thủ Linh Hồn",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "RV",
+        "TM",
+        "VT"
+      ],
+      "source": "data/character.json#23",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A23-SHIELD",
+        "WV-A23-REVIVAL",
+        "WV-A23-REVIVED-SHOOT"
+      ],
+      "remaining": [
+        "Self and broader attacks not fully verified",
+        "Pending-life and revival transition not integrated",
+        "Requires revival state and attack authorization"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 24,
+      "name": "Quản Ngục",
+      "mechanismTags": [
+        "AT",
+        "BL",
+        "CH",
+        "DF"
+      ],
+      "source": "data/character.json#24",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A24-JAIL",
+        "WV-A24-ANONYMOUS-CHAT",
+        "WV-A24-EXECUTION"
+      ],
+      "remaining": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 25,
+      "name": "Tiên Tri",
+      "mechanismTags": [
+        "IN"
+      ],
+      "source": "data/character.json#25",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A25-AURA"
+      ],
+      "remaining": [
+        "#10 trap and other unimplemented distortions"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 26,
+      "name": "Thầy Đồng",
+      "mechanismTags": [
+        "CH",
+        "RV"
+      ],
+      "source": "data/character.json#26",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A26-REVIVE",
+        "WV-A26-ANONYMOUS-CHAT"
+      ],
+      "remaining": [
+        "Test domain only [8,25,26]; no anonymous chat; other factions and three excluded roles not verified end-to-end.",
+        "Private asymmetric channel not implemented."
+      ],
+      "newEffectMapping": "revival",
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Cupid",
+      "mechanismTags": [
+        "CH",
+        "LK",
+        "TR",
+        "WC"
+      ],
+      "source": "data/character.json#27",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 28,
+      "name": "Thằng Ngố",
+      "mechanismTags": [
+        "VT",
+        "WC"
+      ],
+      "source": "data/character.json#28",
+      "executable": true,
+      "full": true,
+      "branches": [
+        "WV-A28-HANG-WIN"
+      ],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian",
+        "target domain / target-kind",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Phù Thủy",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "RS",
+        "RV"
+      ],
+      "source": "data/character.json#29",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A29-NOTICE",
+        "WV-A29-RESCUE",
+        "WV-A29-POISON"
+      ],
+      "remaining": [
+        "Multiattack, hibernation and prolonged life",
+        "x2, linked rescue, hibernation, broader attack sources",
+        "Multiple protection types, rescue of preliminary target then poison same target not admitted"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "target domain / target-kind",
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Sói Trắng",
+      "mechanismTags": [
+        "AT",
+        "TM",
+        "WC"
+      ],
+      "source": "data/character.json#30",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian",
+        "target domain / target-kind",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Bảo Vệ",
+      "mechanismTags": [
+        "DF"
+      ],
+      "source": "data/character.json#31",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A31-GUARD"
+      ],
+      "remaining": [
+        "Proven actual regular bite absorption in [25,31,48,74], self guard, cooldown and distinct target. Piercing attacks, repeated hits against one target, multiple protection layers and other decks remain unverified; not FULL."
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 32,
+      "name": "Xạ Thủ",
+      "mechanismTags": [
+        "AT",
+        "RS",
+        "TM"
+      ],
+      "source": "data/character.json#32",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A32-SHOOT"
+      ],
+      "remaining": [
+        "Full upgrade and rescue interactions remain unverified"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Sói Lừa Gạt",
+      "mechanismTags": [
+        "NO",
+        "VT"
+      ],
+      "source": "data/character.json#33",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A33-ILLUSION",
+        "WV-A33-COERCION",
+        "WV-A33-REVENGE"
+      ],
+      "remaining": [
+        "Activation and interaction timing not certified",
+        "Broader effects and targets not certified",
+        "Multi-wolf protection and other unimplemented #33 branches"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 34,
+      "name": "Sói Mộng Du",
+      "mechanismTags": [
+        "BL"
+      ],
+      "source": "data/character.json#34",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A34-NIGHT-LOCK"
+      ],
+      "remaining": [
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 35,
+      "name": "Sói Gương",
+      "mechanismTags": [
+        "IN",
+        "NO",
+        "TM"
+      ],
+      "source": "data/character.json#35",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Pháp Sư",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "source": "data/character.json#36",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A36-FIREBALL",
+        "WV-A36-SHIELD",
+        "WV-A36-SHIELD-REVEAL"
+      ],
+      "remaining": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 37,
+      "name": "Ảo Thuật Gia",
+      "mechanismTags": [
+        "IN",
+        "RF",
+        "TM",
+        "VT"
+      ],
+      "source": "data/character.json#37",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A37-SWAP",
+        "WV-A37-ATTACK",
+        "WV-A37-INSPECT",
+        "WV-A37-HANG"
+      ],
+      "remaining": [
+        "Exact-role and attacks not enabled; overlapping redirects",
+        "Night attack exchange unimplemented",
+        "Exact-role not certified",
+        "Multiple modifiers/defense and other deck effects"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Nhà Sưu Tầm Linh Hồn",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "IN",
+        "RS",
+        "RV",
+        "VT"
+      ],
+      "source": "data/character.json#38",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Kẻ Trộm Chó",
+      "mechanismTags": [
+        "AT",
+        "BL",
+        "RS",
+        "WC"
+      ],
+      "source": "data/character.json#39",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A39-CAPTURE",
+        "WV-A39-MISS",
+        "WV-A39-THIRD-MISS",
+        "WV-A39-MAJORITY-WIN",
+        "WV-A39-THIRD-PARTY-COWIN"
+      ],
+      "remaining": [
+        "Single wolf/village QA scope only; protection, other third-party faction and co-win outside this deck",
+        "Single wolf/village QA scope only; protection, other third-party faction and co-win outside this deck",
+        "Single wolf/village QA scope only; protection, other third-party faction and co-win outside this deck",
+        "Single wolf/village QA scope only; protection, other third-party faction and co-win outside this deck",
+        "Single wolf/village QA scope only; protection, other third-party faction and co-win outside this deck"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 40,
+      "name": "Hoàng Hậu",
+      "mechanismTags": [
+        "AT",
+        "RN"
+      ],
+      "source": "data/character.json#40",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 41,
+      "name": "Cupid Hắc Ám",
+      "mechanismTags": [
+        "CH",
+        "LK",
+        "TR"
+      ],
+      "source": "data/character.json#41",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Cặp Đôi Ngoại Tình",
+      "mechanismTags": [
+        "LK",
+        "TR",
+        "WC"
+      ],
+      "source": "data/character.json#42",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Sói Bắn Tỉa",
+      "mechanismTags": [
+        "AT",
+        "RS"
+      ],
+      "source": "data/character.json#43",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A43-SNIPER"
+      ],
+      "remaining": [
+        "Pack actions and other protection interactions"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Sói Cuồng Yêu",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "LK",
+        "RS",
+        "TR",
+        "WC"
+      ],
+      "source": "data/character.json#44",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Người Cầu Nguyện",
+      "mechanismTags": [
+        "DF",
+        "RV",
+        "TR"
+      ],
+      "source": "data/character.json#45",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Hắc Tinh",
+      "mechanismTags": [
+        "AT",
+        "BL",
+        "OP",
+        "WC"
+      ],
+      "source": "data/character.json#46",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Bạch Sát",
+      "mechanismTags": [
+        "AT",
+        "BL",
+        "OP",
+        "WC"
+      ],
+      "source": "data/character.json#47",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Sói Thủ Lĩnh",
+      "mechanismTags": [
+        "AT",
+        "WC"
+      ],
+      "source": "data/character.json#48",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A48-LAST-WOLF-DOUBLE-BITE"
+      ],
+      "remaining": [
+        "Multi-wolf and protections outside current composition"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Sói Ảo Ảnh",
+      "mechanismTags": [
+        "NO",
+        "RS"
+      ],
+      "source": "data/character.json#49",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A49-ILLUSION"
+      ],
+      "remaining": [
+        "Other investigation and blocking interactions; pack"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Sói Gây Tê",
+      "mechanismTags": [
+        "BL",
+        "TM"
+      ],
+      "source": "data/character.json#50",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A50-NUMB"
+      ],
+      "remaining": [
+        "All skill-block and team-action domains"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Người Lái Đò",
+      "mechanismTags": [
+        "CH",
+        "RV",
+        "TM"
+      ],
+      "source": "data/character.json#51",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 52,
+      "name": "Chó Canh Gác",
+      "mechanismTags": [
+        "DF"
+      ],
+      "source": "data/character.json#52",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A52-SOLO-DOG",
+        "WV-A52-WOLF-DOG"
+      ],
+      "remaining": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 53,
+      "name": "Thiên Thần",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "LK",
+        "OP"
+      ],
+      "source": "data/character.json#53",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Người Canh Gác",
+      "mechanismTags": [
+        "AT",
+        "IN",
+        "RS"
+      ],
+      "source": "data/character.json#54",
+      "executable": true,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 55,
+      "name": "Sói Thạch",
+      "mechanismTags": [
+        "DF",
+        "TR"
+      ],
+      "source": "data/character.json#55",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A55-PROTECT",
+        "WV-A55-SPENT"
+      ],
+      "remaining": [
+        "Village night/day attacks unimplemented",
+        "Ordinary wolf pack action absent; role name override private"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Kỹ Nữ",
+      "mechanismTags": [
+        "AT",
+        "DF"
+      ],
+      "source": "data/character.json#56",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 57,
+      "name": "Kẻ Biến Hình",
+      "mechanismTags": [
+        "AT",
+        "NO",
+        "TR"
+      ],
+      "source": "data/character.json#57",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Thám Tử Ác Ma",
+      "mechanismTags": [
+        "AT",
+        "IN"
+      ],
+      "source": "data/character.json#58",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A58-SAME",
+        "WV-A58-DIFFERENT",
+        "WV-A58-IMMUNITY",
+        "WV-A58-VICTORY"
+      ],
+      "remaining": [
+        "General transformations",
+        "Protection on one of two; competing death reactions",
+        "No general pack attack",
+        "Unrestricted combinations"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 59,
+      "name": "Ná Thủ",
+      "mechanismTags": [
+        "AT",
+        "BL",
+        "TM"
+      ],
+      "source": "data/character.json#59",
+      "executable": true,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 60,
+      "name": "Người Gọi Hồn",
+      "mechanismTags": [
+        "CH",
+        "RS",
+        "RV",
+        "TM",
+        "TR"
+      ],
+      "source": "data/character.json#60",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Thiện Xạ",
+      "mechanismTags": [
+        "AT",
+        "TM"
+      ],
+      "source": "data/character.json#61",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Kẻ Xúi Giục",
+      "mechanismTags": [
+        "AT",
+        "CH",
+        "LK",
+        "TR",
+        "WC"
+      ],
+      "source": "data/character.json#62",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 63,
+      "name": "Người Gắn Cờ",
+      "mechanismTags": [
+        "DF",
+        "RF",
+        "RS"
+      ],
+      "source": "data/character.json#63",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A63-MARK",
+        "WV-A63-TRANSFER"
+      ],
+      "remaining": [
+        "Self-selection not admitted",
+        "Immune recipient, redirect cycles, other attack families"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 64,
+      "name": "Người Rung Chuông",
+      "mechanismTags": [
+        "IN",
+        "LK"
+      ],
+      "source": "data/character.json#64",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A64-PAIR-DEATH-OBSERVATION"
+      ],
+      "remaining": [
+        "other attack sources, linked death, revival, transformations; self-selection not certified"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Sói Độc Tố",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "RS",
+        "TM"
+      ],
+      "source": "data/character.json#65",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Người Gác Đêm",
+      "mechanismTags": [
+        "DF",
+        "IN",
+        "RS"
+      ],
+      "source": "data/character.json#66",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A66-GUARD",
+        "WV-A66-WATCH"
+      ],
+      "remaining": [
+        "Only listed test/domain is eligible; other source interactions not certified.",
+        "Only listed test/domain is eligible; other source interactions not certified."
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 67,
+      "name": "Thợ Rèn",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "source": "data/character.json#67",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A67-SHIELD",
+        "WV-A67-SWORD"
+      ],
+      "remaining": [
+        "Other defenses and attacks not fully verified",
+        "Unblocked sword and all attack interactions not certified"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 68,
+      "name": "Sói Trẻ",
+      "mechanismTags": [
+        "AT",
+        "LK",
+        "OP"
+      ],
+      "source": "data/character.json#68",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A68-MARK-FOLLOW"
+      ],
+      "remaining": [
+        "Hanging and defenses not fully verified"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Sói Mèo",
+      "mechanismTags": [
+        "TR"
+      ],
+      "source": "data/character.json#69",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Sói Lừa Đảo",
+      "mechanismTags": [
+        "NO",
+        "RV",
+        "TR"
+      ],
+      "source": "data/character.json#70",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Sát Nhân Ảnh Thuật",
+      "mechanismTags": [
+        "AT",
+        "NO",
+        "TM"
+      ],
+      "source": "data/character.json#71",
+      "executable": true,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Sói Pháp Sư",
+      "mechanismTags": [
+        "NO"
+      ],
+      "source": "data/character.json#72",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A72-CURSE"
+      ],
+      "remaining": [
+        "Other investigation/blocking interactions; pack"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 73,
+      "name": "Sói Lửa",
+      "mechanismTags": [
+        "BL",
+        "RS",
+        "TM"
+      ],
+      "source": "data/character.json#73",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 74,
+      "name": "Tiên Tri Huyền Bí",
+      "mechanismTags": [
+        "IN"
+      ],
+      "source": "data/character.json#74",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A74-EXACT"
+      ],
+      "remaining": [
+        "#10 false-role trap not integrated"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 75,
+      "name": "Sói Điên Cuồng",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "OP",
+        "RS"
+      ],
+      "source": "data/character.json#75",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Sói Ác Mộng",
+      "mechanismTags": [
+        "BL",
+        "RS"
+      ],
+      "source": "data/character.json#76",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A76-NIGHTMARE"
+      ],
+      "remaining": [
+        "Pack and all block-order domains"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Thợ Săn Quái Thú",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "OP"
+      ],
+      "source": "data/character.json#77",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A77-TRAP"
+      ],
+      "remaining": [
+        "Self trap, pack representative and stacked protections not fully verified"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 78,
+      "name": "Nhà Thiên Văn Học",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "RS"
+      ],
+      "source": "data/character.json#78",
+      "executable": true,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 79,
+      "name": "Sói Hòa Bình",
+      "mechanismTags": [
+        "IN",
+        "VT"
+      ],
+      "source": "data/character.json#79",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A79-CANCEL"
+      ],
+      "remaining": [
+        "Director trigger, wolf team actions, broader composition"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 80,
+      "name": "Nghệ Sĩ Vĩ Cầm",
+      "mechanismTags": [
+        "IN",
+        "RV"
+      ],
+      "source": "data/character.json#80",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A80-VIOLIN"
+      ],
+      "remaining": [
+        "Revival and alignment-transition integration not tested"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 81,
+      "name": "Sói Mù",
+      "mechanismTags": [
+        "IN",
+        "RN"
+      ],
+      "source": "data/character.json#81",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 82,
+      "name": "Nhà Giả Kim",
+      "mechanismTags": [
+        "AT",
+        "RN",
+        "TM"
+      ],
+      "source": "data/character.json#82",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 83,
+      "name": "Sói Chiêu Hồn",
+      "mechanismTags": [
+        "RS",
+        "RV",
+        "TR"
+      ],
+      "source": "data/character.json#83",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 84,
+      "name": "Phù Thủy Câm",
+      "mechanismTags": [
+        "BL"
+      ],
+      "source": "data/character.json#84",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A84-SILENCE"
+      ],
+      "remaining": [
+        "Other group communication and lock interaction domains"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 85,
+      "name": "Thầy Thôi Miên",
+      "mechanismTags": [
+        "AT",
+        "RF"
+      ],
+      "source": "data/character.json#85",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A85-MARK",
+        "WV-A85-TRANSFER"
+      ],
+      "remaining": [
+        "Other death triggers, self selection not admitted",
+        "Other attack families, competing shields/redirects"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 86,
+      "name": "Sói Con",
+      "mechanismTags": [
+        "AT",
+        "OP"
+      ],
+      "source": "data/character.json#86",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian",
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 87,
+      "name": "Dược Sĩ",
+      "mechanismTags": [
+        "BL",
+        "DF",
+        "RS"
+      ],
+      "source": "data/character.json#87",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A87-RESCUE",
+        "WV-A87-SEDATIVE"
+      ],
+      "remaining": [
+        "Other pack/protection interactions; other rescue rules not generalized.",
+        "Other chat classes and generalized combinations."
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 88,
+      "name": "Thợ Săn",
+      "mechanismTags": [
+        "AT",
+        "LK",
+        "OP"
+      ],
+      "source": "data/character.json#88",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A88-MARK",
+        "WV-A88-DEATH-FOLLOW"
+      ],
+      "remaining": [
+        "Blocked night in mixed status domain not yet integration-tested",
+        "Other valid protections outside currently admitted games"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "target domain / target-kind"
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Người Khai Mệnh",
+      "mechanismTags": [
+        "IN",
+        "RS"
+      ],
+      "source": "data/character.json#89",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 90,
+      "name": "Giáo Chủ",
+      "mechanismTags": [
+        "AT",
+        "CH",
+        "LK",
+        "TR",
+        "WC"
+      ],
+      "source": "data/character.json#90",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Huyết Chủ",
+      "mechanismTags": [
+        "LK",
+        "VT",
+        "WC"
+      ],
+      "source": "data/character.json#91",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 92,
+      "name": "Huyết Bộc",
+      "mechanismTags": [
+        "AT",
+        "DF",
+        "IN",
+        "RN",
+        "RS",
+        "TR",
+        "WC"
+      ],
+      "source": "data/character.json#92",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng",
+        "ưu tiên / ngoại lệ chưa có mã VH riêng"
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Sói Lưu Đày",
+      "mechanismTags": [
+        "BL",
+        "TR",
+        "VT"
+      ],
+      "source": "data/character.json#93",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A93-SEAL",
+        "WV-A93-ALIGN",
+        "WV-A93-DOUBLE-BITE"
+      ],
+      "remaining": [
+        "General action locks/pack conversion not fully covered",
+        "One-wolf pack now implemented; multiple wolves and post-conversion aura unresolved.",
+        "Multiple wolves consensus, other protections, aura after conversion and inherited skills."
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Kẻ Giải Nguyền",
+      "mechanismTags": [
+        "NO",
+        "RF",
+        "RV"
+      ],
+      "source": "data/character.json#94",
+      "executable": true,
+      "full": false,
+      "branches": [
+        "WV-A94-EFFIGY",
+        "WV-A94-AURA"
+      ],
+      "remaining": [
+        "Competing redirects and other attack families",
+        "Exact-role and post-conversion aura not certified"
+      ],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ",
+        "phase / trigger thời gian",
+        "target domain / target-kind",
+        "điều kiện thắng riêng của vai hoặc nhóm chưa thể khai triển đầy đủ"
+      ]
+    },
+    {
+      "id": 95,
+      "name": "Người Hái Thuốc",
+      "mechanismTags": [
+        "DF",
+        "RS",
+        "RV",
+        "TM"
+      ],
+      "source": "data/character.json#95",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": []
+    },
+    {
+      "id": 96,
+      "name": "Thầy Thuốc",
+      "mechanismTags": [
+        "AT",
+        "CH",
+        "DF",
+        "RS"
+      ],
+      "source": "data/character.json#96",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "phase / trigger thời gian",
+        "phase / trigger thời gian",
+        "phase / trigger thời gian"
+      ]
+    },
+    {
+      "id": 97,
+      "name": "Thần Thảo Hồi Sinh",
+      "mechanismTags": [
+        "DF",
+        "RV",
+        "TM"
+      ],
+      "source": "data/character.json#97",
+      "executable": false,
+      "full": false,
+      "branches": [],
+      "remaining": [],
+      "newEffectMapping": null,
+      "ruleAuditFlags": [
+        "target domain / target-kind"
+      ]
+    }
+  ]
+}

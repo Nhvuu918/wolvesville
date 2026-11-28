@@ -1,0 +1,79 @@
+{
+  "version": "1.7.24-s15-gameplay-closure-wip",
+  "sourceFingerprint": "611eda16bbcf0f48530cc6174c03912206578aefd857f236fe255bf4bd066d52",
+  "gates": [
+    {
+      "gate": "Monolithic Backend",
+      "baseline": "PASS",
+      "result": "PASS",
+      "evidence": "reports/BB_GAMEPLAY_CLOSURE_BACKEND_REGRESSION.json"
+    },
+    {
+      "gate": "Browser FAIL",
+      "baseline": 1,
+      "result": 2,
+      "evidence": "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+    },
+    {
+      "gate": "Browser INCOMPLETE",
+      "baseline": 32,
+      "result": 37,
+      "evidence": "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+    },
+    {
+      "gate": "FULL Revalidation",
+      "baseline": "1/1",
+      "result": "1/1",
+      "evidence": "reports/BB_GAMEPLAY_CLOSURE_FULL_ROLE_CERTIFICATES.json"
+    },
+    {
+      "gate": "QA C Revalidation",
+      "baseline": "2/2",
+      "result": "2/2",
+      "evidence": "reports/BB_GAMEPLAY_CLOSURE_BRANCH_COMPLETE_MATRIX.json"
+    },
+    {
+      "gate": "Playable C Revalidation",
+      "baseline": "6/6",
+      "result": "5/6",
+      "evidence": "reports/BB_GAMEPLAY_CLOSURE_BRANCH_COMPLETE_MATRIX.json"
+    },
+    {
+      "gate": "Atomic Revalidation",
+      "baseline": "79/79",
+      "result": "79/79",
+      "evidence": "reports/BB_GAMEPLAY_CLOSURE_ATOMIC_COVERAGE.json"
+    },
+    {
+      "gate": "B/B Live Browser",
+      "baseline": "7/7",
+      "result": "8/8",
+      "evidence": "reports/BB_GAMEPLAY_CLOSURE_BROWSER_RESULTS.json"
+    },
+    {
+      "gate": "Official v1.3.4",
+      "baseline": "CANDIDATE",
+      "result": "CANDIDATE",
+      "evidence": "reports/BB_GAMEPLAY_CLOSURE_RELEASE_SCOPE.json"
+    },
+    {
+      "gate": "Human QA",
+      "baseline": "PENDING",
+      "result": "PENDING",
+      "evidence": "reports/BB_GAMEPLAY_CLOSURE_HUMAN_QA_PACK.md"
+    }
+  ],
+  "accumulatedCertificates": {
+    "FULL": 1,
+    "QA_C": 2,
+    "Playable_C": 6
+  },
+  "currentRevalidated": {
+    "F": 1,
+    "qaC": 2,
+    "playableC": 5,
+    "S_pass": 79
+  },
+  "newCertificates": [],
+  "competitiveProduction": "NO_GO"
+}

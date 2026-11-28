@@ -1,0 +1,41 @@
+"""Supplemental real screenshots; not a browser certificate. Uses same admission and backend."""
+import fcntl,os,pathlib,tempfile,subprocess,socket,time,sys,json,hashlib,requests
+from playwright.sync_api import sync_playwright
+ROOT=pathlib.Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'tests'))
+R=ROOT/'reports/v1.7.35';OUT=R/'screenshots-supplemental';OUT.mkdir(exist_ok=True)
+with open('/tmp/wolvesville-browser-admission-'+str(os.getuid())+'.lock','a+') as lease:
+ fcntl.flock(lease,fcntl.LOCK_EX)
+ with tempfile.TemporaryDirectory(prefix='wv35-supplemental-') as td:
+  sock=socket.socket();sock.bind(('127.0.0.1',0));port=sock.getsockname()[1];sock.close()
+  base=f'http://127.0.0.1:{port}';env={**os.environ,'DB_PROVIDER':'sqlite','HOST':'127.0.0.1','PORT':str(port),'WV_LOBBY_DB':td+'/test.sqlite','WV_OFFICIAL_RULE_TEST_MODE':'0','WV_INTEGRATION_TEST_MODE':'0','WV_OWNER_BB_LIVE_QA':'0','WV_OWNER_DC_QA':'0','WV_E2E_SERVER':base,'WV_E2E_DIRECT':'0'};env.pop('WV_ARCHIVED_RULE_REGRESSION',None);os.environ.update(env)
+  with open(R/'supplemental-server.log','w') as log:
+   server=subprocess.Popen(['node','scripts/serve-03.mjs'],cwd=ROOT,env=env,stdout=log,stderr=subprocess.STDOUT)
+   try:
+    for _ in range(100):
+     try:
+      h=requests.get(base+'/health',timeout=1).json();assert h['normalGameplay'] and not h['officialRuleTestMode'];break
+     except requests.RequestException:time.sleep(.1)
+    else:raise RuntimeError('Server not healthy')
+    import browser_e2e as be
+    rows=[];fp=json.loads((R/'browser-visual/matrix.json').read_text())['sourceFingerprint']
+    def snap(p,name,viewer):
+     p.wait_for_function('!document.getElementById("sceneTransition")?.classList.contains("active")');p.evaluate('async()=>{await document.fonts.ready;await Promise.all([...document.images].filter(i=>i.getBoundingClientRect().width>0&&i.loading!=="lazy").map(i=>i.decode().catch(()=>{})))}');f=OUT/(name+'.png');p.screenshot(path=str(f),animations='disabled');rows.append(dict(file=f.name,viewport=p.viewport_size,sourceFingerprint=fp,ruleset='wolvesville-official-v1.3.3',viewer=viewer,mode='NORMAL_GAMEPLAY' if name in ('role-wheel-private','elimination-committed') else 'OUT_OF_GAME',sha256=hashlib.sha256(f.read_bytes()).hexdigest(),result='CAPTURED'));(OUT/'manifest.json').write_text(json.dumps(rows,indent=2,ensure_ascii=False));print('SUPPLEMENTAL',name,flush=True)
+    with sync_playwright() as pw:
+     browser=pw.chromium.launch(headless=True,executable_path='/usr/bin/chromium',args=['--no-sandbox']);contexts=[]
+     try:
+      for name in ('An','Binh'):
+       c,p=be.page_setup(browser);contexts.append(c);p.emulate_media(reduced_motion='reduce');p.set_viewport_size({'width':1366,'height':768});be.register(p,name);p.wait_for_function('WolvesLive.connectionState==="online"')
+      host,guest=[c.pages[0] for c in contexts];host.evaluate("go('profile')");host.wait_for_function('page==="profile"');snap(host,'profile','own disposable account');host.evaluate("go('roles')");host.wait_for_function('page==="roles"&&ROLES.length===97');host.evaluate("setCodexViewMode('grid');chooseRole(74)");host.locator('#detail').scroll_into_view_if_needed();snap(host,'codex-detail','authenticated');host.evaluate("go('rooms');openVillagePanel('create','well')");host.locator('#wv-room-name').fill('Làng Huyền Bí');host.locator('#wv-capacity').fill('2');host.get_by_role('button',name='Tạo phòng',exact=True).click();host.wait_for_function('WolvesLive.room?.members.length===1');rid=host.evaluate('WolvesLive.room.id');guest.evaluate("openVillagePanel('directory','directory')");guest.wait_for_function('WolvesLive.rooms.some(r=>r.name==="Làng Huyền Bí")');snap(guest,'room-directory','authenticated guest');guest.evaluate('(id)=>WolvesLive.openRoom(id)',rid);guest.wait_for_function('WolvesLive.room?.members.length===2');host.wait_for_function('WolvesLive.room?.members.length===2');host.get_by_role('button',name='Khóa danh sách').click();guest.wait_for_function('WolvesLive.room.status==="LOCKED"');host.locator('#wv-normal-deck').select_option('knight');host.wait_for_function('WolvesLive.room.normalDeck==="knight"&&!WolvesLive.working');guest.wait_for_function('WolvesLive.room.normalDeck==="knight"');guest.locator('#wv-ready').click();host.wait_for_function('WolvesLive.room.members.some(m=>m.id!==WolvesLive.profile.id&&m.ready)');host.locator('#wv-ready').click();host.wait_for_function('WolvesLive.room.members.every(m=>m.ready)&&!WolvesLive.working');host.locator('#wv-normal-start').click();host.wait_for_function('page==="ingame"&&WolvesLive.game?.mode==="NORMAL_GAMEPLAY"');host.locator('#wv-role-wheel').scroll_into_view_if_needed();snap(host,'role-wheel-private','self role only')
+      # Keyboard activation uses the genuine DOM and server-authorized seat mapping; no action is submitted.
+      host.locator('#wv-seat-0').focus();host.keyboard.press('Space');assert host.evaluate('WolvesLive.selectedTarget===WolvesLive.localSeatToId[0]')
+      checks=[]
+      for theme in host.evaluate('THEME_OPTIONS.map(x=>x[0])'):
+       host.evaluate('(t)=>setWolvesTheme(t)',theme)
+       # Sample opaque panel/control text contrast; deliberately excludes gradients/transparency.
+       info=host.evaluate('''()=>{const rgb=v=>{const m=v.match(/rgba?\(([^)]+)\)/);if(!m)return null;const a=m[1].split(/[, ]+/).map(Number);return a.length===3||a[3]===1?a.slice(0,3):null};const luminance=a=>a.map(v=>v/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0);return {theme:document.body.dataset.theme,samples:['.wv-match-side','.arena-seat','.hud-left-cluster','.ingame-dialogue-bar','.btn-secondary','.wv-public-chat'].map(sel=>{const e=document.querySelector(sel);if(!e)return {selector:sel,available:false};const s=getComputedStyle(e),fg=rgb(s.color),bg=rgb(s.backgroundColor);let contrast=null;if(fg&&bg&&s.backgroundImage==='none'){const a=luminance(fg),b=luminance(bg);contrast=Math.round((Math.max(a,b)+.05)/(Math.min(a,b)+.05)*100)/100}return {selector:sel,available:true,foreground:s.color,background:s.backgroundColor,backgroundImage:s.backgroundImage,contrast}})}}''')
+       assert info['theme']==theme;checks.append(info)
+      (R/'supplemental-theme-contrast.json').write_text(json.dumps({'scope':'Computed opaque foreground/background samples in live night HUD; not full WCAG certification; keyboard seat focus/Space selection PASS','themes':checks},indent=2))
+      host.evaluate("setWolvesTheme('moon')")
+      roles={p.evaluate('WolvesLive.game.players.find(x=>x.playerId===WolvesLive.profile.id).self.currentCharacterId'):p for p in (host,guest)};seer=roles[25];knight=roles[8];tid=knight.evaluate('WolvesLive.profile.id');seer.wait_for_function('!WolvesLive.working');seer.evaluate('(id)=>WolvesLive.chooseTarget(11000+WolvesLive.localSeatToId.indexOf(id))',tid);seer.locator('#wv-skill-submit').click();seer.wait_for_function('!WolvesLive.working&&WolvesLive.feedback.size>0');host.get_by_role('button',name='Kết thúc lượt đêm',exact=True).click();seer.wait_for_function('WolvesLive.game.phase==="DAY_DISCUSS"');host.get_by_role('button',name='Mở lượt ghi nhận phiếu').click();seer.wait_for_function('WolvesLive.game.phase==="DAY_VOTE_COLLECT"&&!WolvesLive.working');seer.evaluate('(id)=>WolvesLive.chooseTarget(11000+WolvesLive.localSeatToId.indexOf(id))',tid);seer.get_by_role('button',name='Gửi / đổi phiếu').click();seer.wait_for_function('(id)=>!WolvesLive.working&&WolvesLive.game.voting.ownBallot?.targetId===id',arg=tid);host.wait_for_function('!WolvesLive.working');host.get_by_role('button',name='Khóa phiếu và xét kết quả').click();seer.wait_for_function('WolvesLive.game.completed===true');assert seer.evaluate('(id)=>WolvesLive.game.players.some(x=>x.playerId===id&&x.publicReportedDead)',tid);seer.set_viewport_size({'width':1920,'height':1080});seer.evaluate('document.querySelector(".ingame-stage-wrap").scrollTop=0');snap(seer,'elimination-committed','self #25, authorized public elimination');assert not be.LOGS,be.LOGS;print('SUPPLEMENTAL_CAPTURE_PASS',flush=True)
+     finally:be.close_contexts(contexts);browser.close();be.bridge.shutdown()
+   finally:server.terminate();server.wait(timeout=5)

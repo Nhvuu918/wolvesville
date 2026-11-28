@@ -1,0 +1,2 @@
+Error: E2E timeout browser_s15_normal_rescue_e2e.py: cleanup did not finish; not counted PASS
+    at file:///tmp/wv14/scripts/run-browser-s06.mjs:42:10

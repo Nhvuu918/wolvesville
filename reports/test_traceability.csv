@@ -1,0 +1,25 @@
+Test ID,Test Name,Mechanism,Rule / Source,Status
+KERN-001,"source: 97 unique roles unchanged; 118 decision registry, 207 separate legacy specs",SOURCE,G0 | official character SHA/118 rules/207 specs,PASS 2026-11-24
+KERN-002,"state machine rejects invalid transitions, advances round only after day",STATE,VH33 | G1 phase machine,PASS 2026-11-24
+KERN-003,rejects duplicated/unknown initial character IDs; allows 1 human and rejects >97 unique slots,ROLE,ROOM-01/02 | Q13-04,PASS 2026-11-24
+KERN-004,"validator rejects phase mismatch, non-member, forbidden target, exhausted resources",VALIDATION,G1 | Q13-01/02,PASS 2026-11-24
+KERN-005,"idempotency: same action retry is no-op, conflicting payload is rejected",IDEMPOTENCY,G1 | idempotency,PASS 2026-11-24
+KERN-006,permission: production registry refuses unregistered role skills and opt-in fixtures,AUTH,G1 | RULE_UNRESOLVED,PASS 2026-11-24
+KERN-007,queued actions do not resolve before phase close and priority beats request order,QUEUE,VH08 | technical fixture priority,PASS 2026-11-24
+KERN-008,"PH-01: submitted action still runs after sender dies, unless locked",PH01,PH-01 | accepted command after actor death,PASS 2026-11-24
+KERN-009,VH10/VH41-like fixture: valid lock cancels accepted action without charging resources,BLOCK,VH10/VH41 | mechanism fixture only,PASS 2026-11-24
+KERN-010,atomic rollback on adapter throw: no half state or events or charges committed,TX,G1 | atomic rollback,PASS 2026-11-24
+KERN-011,unknown adapter at resolution leaves accepted action queued and state untouched,RULE,G1 | resolver lookup,PASS 2026-11-24
+KERN-012,"RNG: deterministic, conditioned domain, empty domain fail-closed, event tape replay",RNG,Q13-06/11 | deterministic domain,PASS 2026-11-24
+KERN-013,"RNG empty at effect stage triggers full rollback, no random fallback",RNG,F02 | empty domain fail-closed,PASS 2026-11-24
+KERN-014,"ACL: player projections omit hidden roles, seed, other resources and internal events",ACL,VH62/PRIV-01 | projection,PASS 2026-11-24
+KERN-015,snapshot + replay survives SQLite restart,REPLAY,G1 | persistence restart/snapshots,PASS 2026-11-24
+KERN-016,replay detects tampered event even when persisted state remains unchanged,REPLAY,G1 | hash-chain tamper detection,PASS 2026-11-24
+KERN-017,unimplemented domain effect fails closed without partial state write,RULE,F05 | unsupported effect rollback,PASS 2026-11-24
+KERN-018,admission seals phase and historical ruleVersion mismatch cannot be accepted,PHASE,G1 | closed phase,PASS 2026-11-24
+KERN-019,revalidation: target dead before accepted hit is resolved fails closed and rolls back whole batch,REVALIDATION,PH-01 | target status changes,PASS 2026-11-24
+KERN-020,resource ledger: successful resolved fixture spends one charge and does not double-spend on retry,RESOURCE,Q13-01 | resource debit,PASS 2026-11-24
+KERN-021,faction/group event cannot leak to a later joiner when historical audience is missing,ACL,PRIV-01 | historical audience,PASS 2026-11-24
+KERN-022,replay converges to same final state when unrelated commands arrive in opposite request order,DETERMINISM,VH08 | stable ordering,PASS 2026-11-24
+KERN-023,new idempotency key cannot reuse same actionId; payload must be a dictionary,IDEMPOTENCY,G1 | action ID uniqueness,PASS 2026-11-24
+KERN-024,complete match is blocked until confirmed victory predicates exist,VICTORY,VH03/F07 | blocked completion,PASS 2026-11-24

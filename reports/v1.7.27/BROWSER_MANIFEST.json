@@ -1,0 +1,623 @@
+{
+  "manifest": [
+    {
+      "suite": "browser_s12_attack_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s11_voting_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s11_seer_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s10_gameplay_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s09_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s08_gameplay_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s07_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s06_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s05_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_lobby_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_codex_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_demo_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_ux_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s13_skills_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s14_gameplay_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s14_transport_regression.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_protection_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_voting_information_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_gameplay_ux_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_aura_expansion_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_guard_shot_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_accelerated_witch_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_accelerated_exile_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_accelerated_combat_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_deep_rescue_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_deep_redirect_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_deep_pair_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_deep_jester_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_break_stone_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_break_exile_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "Blocked state after Knight kills #94; no proven QD conflict",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_break_contract_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "Independent #19 remains alive; QD-01 does not automatically change Jester win",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_break_swap_e2e.py",
+      "classification": "LEGACY_ONLY_EXPECTATION",
+      "reason": "asserts #28 only winner and #25 not winner, differs from QD-01",
+      "requiredVersions": [
+        "1.3.2"
+      ]
+    },
+    {
+      "suite": "browser_s15_final_hunter_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_final_revenge_e2e.py",
+      "classification": "LEGACY_ONLY_EXPECTATION",
+      "reason": "asserts historical BLOCKED_BY_RULE after revenge",
+      "requiredVersions": [
+        "1.3.2"
+      ]
+    },
+    {
+      "suite": "browser_s15_final_pack_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_closure_snow_e2e.py",
+      "classification": "CURRENT_COMPATIBILITY_CANDIDATE",
+      "reason": "No proven incompatibility yet; actual run determines evidence",
+      "requiredVersions": [
+        "1.3.2",
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_closure_revenge_e2e.py",
+      "classification": "LEGACY_ONLY_EXPECTATION",
+      "reason": "asserts historical BLOCKED_BY_RULE after revenge",
+      "requiredVersions": [
+        "1.3.2"
+      ]
+    },
+    {
+      "suite": "browser_s15_approved_village_e2e.py",
+      "classification": "CURRENT_RULE",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_approved_revenge_e2e.py",
+      "classification": "CURRENT_RULE",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_approved_leader_e2e.py",
+      "classification": "CURRENT_RULE",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_approved_knight_e2e.py",
+      "classification": "CURRENT_RULE",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_approved_pin_e2e.py",
+      "classification": "CURRENT_RULE",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_approved_team_e2e.py",
+      "classification": "CURRENT_RULE",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_scale_bell_e2e.py",
+      "classification": "CURRENT_RULE",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_scale_rescue_e2e.py",
+      "classification": "CURRENT_RULE",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_scale_mystic_e2e.py",
+      "classification": "CURRENT_RULE",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_normal_e2e.py",
+      "classification": "NORMAL_CURRENT_NO_QA",
+      "reason": "Normal room lifecycle under current rule, both QA flags disabled",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_play_guard_e2e.py",
+      "classification": "CURRENT_RULE",
+      "reason": "Guard pack domain newly tested under 1.3.3",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_continued_three_e2e.py",
+      "classification": "CURRENT_NORMAL_GAMEPLAY",
+      "reason": "Three humans; current rule, both flags off",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_normal_guard_e2e.py",
+      "classification": "CURRENT_NORMAL_GAMEPLAY",
+      "reason": "Real four-person room, both flags disabled, guard and single leader pack",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_normal_rescue_e2e.py",
+      "classification": "CURRENT_NORMAL_GAMEPLAY",
+      "reason": "Five independent normal accounts with authorized rescue closure",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_normal_guard_rescue_e2e.py",
+      "classification": "CURRENT_NORMAL_GAMEPLAY",
+      "reason": "Five accounts, guard and rescue",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_growth_dog_thief_e2e.py",
+      "classification": "CURRENT_QA",
+      "reason": "Character 39 real UI, restricted deck",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_deep_normal_knight_snow_aura_e2e.py",
+      "classification": "CURRENT_ONLY",
+      "reason": "New current-rule QA/normal deck contract; old rules do not authorize new deck",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_deep_normal_knight_snow_dual_e2e.py",
+      "classification": "CURRENT_ONLY",
+      "reason": "New current-rule QA/normal deck contract; old rules do not authorize new deck",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_deep_normal_knight_snow_e2e.py",
+      "classification": "CURRENT_ONLY",
+      "reason": "New current-rule QA/normal deck contract; old rules do not authorize new deck",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_deep_normal_knight_snow_role_e2e.py",
+      "classification": "CURRENT_ONLY",
+      "reason": "New current-rule QA/normal deck contract; old rules do not authorize new deck",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_deep_normal_leader_e2e.py",
+      "classification": "CURRENT_ONLY",
+      "reason": "New current-rule QA/normal deck contract; old rules do not authorize new deck",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_deep_normal_leader_snow_e2e.py",
+      "classification": "CURRENT_ONLY",
+      "reason": "New current-rule QA/normal deck contract; old rules do not authorize new deck",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_deep_engineer_e2e.py",
+      "classification": "CURRENT_ONLY",
+      "reason": "Q13-06 first-night inspection domain under approved v1.3.3",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_deep_medium_e2e.py",
+      "classification": "CURRENT_ONLY",
+      "reason": "VH73/VH76 revival in approved QA domain; not historical",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_breakthrough_medium_e2e.py",
+      "classification": "CURRENT_ONLY",
+      "reason": "New bounded revival capability; approved rules only",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s15_bb_live_trap_e2e.py",
+      "classification": "EXPLICIT_NONCOMPETITIVE_BB_PROFILE",
+      "reason": "New live Game Session QA profile, not published official ruleset",
+      "requiredVersions": [
+        "1.3.3+qa-bb"
+      ]
+    },
+    {
+      "suite": "browser_s15_bb_live_pack_e2e.py",
+      "classification": "EXPLICIT_NONCOMPETITIVE_BB_PROFILE",
+      "reason": "New live Game Session QA profile, not published official ruleset",
+      "requiredVersions": [
+        "1.3.3+qa-bb"
+      ]
+    },
+    {
+      "suite": "browser_s15_bb_live_guard_e2e.py",
+      "classification": "EXPLICIT_NONCOMPETITIVE_BB_PROFILE",
+      "reason": "Staged guard inversion in live QA profile",
+      "requiredVersions": [
+        "1.3.3+qa-bb"
+      ]
+    },
+    {
+      "suite": "browser_s15_bb_live_witch_e2e.py",
+      "classification": "B_B_LIVE_QA",
+      "reason": "#29 same-window group inversion, DEC-BT-02/BB-04/BB-05; separate QA only",
+      "requiredVersions": [
+        "1.3.3+qa-bb"
+      ]
+    },
+    {
+      "suite": "browser_s15_bb_live_retaliation_e2e.py",
+      "classification": "B_B_LIVE_QA",
+      "reason": "#48 sole wolf with two legal bites + #77 retaliation under VH51/VH54 and RESOLVE",
+      "requiredVersions": [
+        "1.3.3+qa-bb"
+      ]
+    },
+    {
+      "suite": "browser_s15_bb_cross_window_e2e.py",
+      "classification": "LIVE_QA_OWNER_FINAL",
+      "reason": "WV-RD-BB-2026-01 Art 5, separate rescue and poison windows, live QA only",
+      "requiredVersions": [
+        "1.3.3+qa-bb"
+      ]
+    },
+    {
+      "suite": "browser_s15_bb_conversion_e2e.py",
+      "requiredVersions": [
+        "1.3.3+qa-bb"
+      ]
+    },
+    {
+      "suite": "browser_s15_bb_mixed_e2e.py",
+      "classification": "LIVE_QA_OWNER_BB",
+      "reason": "Actual converted mixed pack; no official activation",
+      "requiredVersions": [
+        "1.3.3+qa-bb"
+      ]
+    },
+    {
+      "suite": "browser_s15_mage_target_e2e.py",
+      "classification": "CURRENT_QA",
+      "reason": "Fireball target other than seer, independent shield",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s17_soul_e2e.py",
+      "classification": "CURRENT_QA_ACCEPTANCE",
+      "reason": "S17 new live gameplay scope; no certification implied",
+      "requiredVersions": [
+        "1.3.3"
+      ]
+    },
+    {
+      "suite": "browser_s17_trap_revival_e2e.py",
+      "classification": "CURRENT_QA_ACCEPTANCE",
+      "reason": "S17 new live gameplay scope; no certification implied",
+      "requiredVersions": [
+        "1.3.3+qa-bb"
+      ]
+    }
+  ],
+  "versionTransition": "1.7.14 -> 1.7.15; all prior obligations retained",
+  "note": "All 51 inherited suites and 86 obligations retained; three current-only suites added.",
+  "version": "1.7.23-s15-representative-order-wip"
+}

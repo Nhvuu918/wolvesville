@@ -1,0 +1,11 @@
+import {SqliteMultiplayerStore} from '../dist/backend/src/multiplayer/sqlite-store.js';
+import {PostgresMultiplayerStore} from '../dist/backend/src/multiplayer/pg-store.js';
+import {createMultiplayerServer} from '../dist/backend/src/multiplayer/server.js';
+const isPg=process.env.DB_PROVIDER==='postgres';
+const store=isPg ? await PostgresMultiplayerStore.connect(process.env.DATABASE_URL??'') : new SqliteMultiplayerStore(process.env.WV_LOBBY_DB??'./local/02a_lobby.sqlite');
+const port=Number(process.env.PORT??3210);
+const origins=(process.env.ALLOWED_ORIGINS??'').split(',').filter(Boolean);
+const service=createMultiplayerServer(store,{allowedOrigins:origins});
+const actual=await service.start(port,process.env.HOST??'127.0.0.1');
+console.log(`Wolvesville Sprint 02A http://127.0.0.1:${actual} (${isPg?'PostgreSQL':'SQLite'}; no official role adapters)`);
+for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>{void service.close().then(()=>process.exit(0));});

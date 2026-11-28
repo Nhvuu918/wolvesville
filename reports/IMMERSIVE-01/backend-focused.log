@@ -1,0 +1,288 @@
+TAP version 13
+# (node:2502) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: DEMO-001: endpoint disabled by default; no account/session created
+ok 1 - DEMO-001: endpoint disabled by default; no account/session created
+  ---
+  duration_ms: 585.620779
+  type: 'test'
+  ...
+# Subtest: DEMO-002: independent sessions with valid public IDs, no credential in response
+ok 2 - DEMO-002: independent sessions with valid public IDs, no credential in response
+  ---
+  duration_ms: 294.541138
+  type: 'test'
+  ...
+# Subtest: DEMO-003: demo account is server-side, can join lobby, access is isolated
+ok 3 - DEMO-003: demo account is server-side, can join lobby, access is isolated
+  ---
+  duration_ms: 218.076514
+  type: 'test'
+  ...
+# Subtest: DEMO-004: logout revokes token without affecting independent demos
+ok 4 - DEMO-004: logout revokes token without affecting independent demos
+  ---
+  duration_ms: 187.603876
+  type: 'test'
+  ...
+# Subtest: DEMO-005: rate limit creation on same IP; no unbounded new accounts
+ok 5 - DEMO-005: rate limit creation on same IP; no unbounded new accounts
+  ---
+  duration_ms: 547.460877
+  type: 'test'
+  ...
+# Subtest: DEMO-006: wrong origin/invalid media type cannot provision demo
+ok 6 - DEMO-006: wrong origin/invalid media type cannot provision demo
+  ---
+  duration_ms: 57.376093
+  type: 'test'
+  ...
+# Subtest: DEMO-007: normal register/login unchanged and never becomes demo
+ok 7 - DEMO-007: normal register/login unchanged and never becomes demo
+  ---
+  duration_ms: 568.016546
+  type: 'test'
+  ...
+# Subtest: DEMO-008: SQLite restart preserves demo token and marker, expiration cleanup is safe
+ok 8 - DEMO-008: SQLite restart preserves demo token and marker, expiration cleanup is safe
+  ---
+  duration_ms: 959.275286
+  type: 'test'
+  ...
+# Subtest: DEMO-009: WebSocket auth is scoped to each demo session and room membership
+ok 9 - DEMO-009: WebSocket auth is scoped to each demo session and room membership
+  ---
+  duration_ms: 276.840326
+  type: 'test'
+  ...
+# Subtest: DEMO-010: production NODE_ENV prevents demo even if enable flag supplied
+ok 10 - DEMO-010: production NODE_ENV prevents demo even if enable flag supplied
+  ---
+  duration_ms: 26.181573
+  type: 'test'
+  ...
+# Subtest: DEMO-011: original 97-character JSON and approved reference remain available
+ok 11 - DEMO-011: original 97-character JSON and approved reference remain available
+  ---
+  duration_ms: 1.301035
+  type: 'test'
+  ...
+# (node:2503) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Immersive: profile, requests, private feed, likes, comments, block and restart
+ok 12 - Immersive: profile, requests, private feed, likes, comments, block and restart
+  ---
+  duration_ms: 1781.966667
+  type: 'test'
+  ...
+# Subtest: Immersive: rule lookup uses public sources, no session state or provider claims
+ok 13 - Immersive: rule lookup uses public sources, no session state or provider claims
+  ---
+  duration_ms: 471.817178
+  type: 'test'
+  ...
+# Subtest: Immersive: validated media, persistence and empty history
+ok 14 - Immersive: validated media, persistence and empty history
+  ---
+  duration_ms: 1324.90871
+  type: 'test'
+  ...
+# (node:2504) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: 02A: registration/login hash, normalization, public IDs, authorization and logout
+ok 15 - 02A: registration/login hash, normalization, public IDs, authorization and logout
+  ---
+  duration_ms: 763.397453
+  type: 'test'
+  ...
+# Subtest: 02A: room create/join/idempotent join/leave/host transfer/discovery
+ok 16 - 02A: room create/join/idempotent join/leave/host transfer/discovery
+  ---
+  duration_ms: 617.208294
+  type: 'test'
+  ...
+# Subtest: 02A: concurrent join at capacity cannot overbook
+ok 17 - 02A: concurrent join at capacity cannot overbook
+  ---
+  duration_ms: 475.318481
+  type: 'test'
+  ...
+# Subtest: 02A: lock/unlock only host; locked room prevents join
+ok 18 - 02A: lock/unlock only host; locked room prevents join
+  ---
+  duration_ms: 419.161541
+  type: 'test'
+  ...
+# Subtest: 02A: two authenticated WebSocket clients receive room updates; outsider cannot subscribe
+ok 19 - 02A: two authenticated WebSocket clients receive room updates; outsider cannot subscribe
+  ---
+  duration_ms: 656.987357
+  type: 'test'
+  ...
+# Subtest: 02A: WebSocket reconnect restores snapshot without exposing other users secrets
+ok 20 - 02A: WebSocket reconnect restores snapshot without exposing other users secrets
+  ---
+  duration_ms: 537.294212
+  type: 'test'
+  ...
+# Subtest: 02A: SQLite store keeps accounts and room data after reopening
+ok 21 - 02A: SQLite store keeps accounts and room data after reopening
+  ---
+  duration_ms: 548.908146
+  type: 'test'
+  ...
+# Subtest: 02A: room limits 1–100 do not imply a competitive game has begun
+ok 22 - 02A: room limits 1–100 do not imply a competitive game has begun
+  ---
+  duration_ms: 437.266206
+  type: 'test'
+  ...
+# Subtest: 02A: profile update keeps public ID and broadcasts to subscribed room
+ok 23 - 02A: profile update keeps public ID and broadcasts to subscribed room
+  ---
+  duration_ms: 304.124941
+  type: 'test'
+  ...
+# Subtest: 02A: logout closes authenticated WebSocket, stale token cannot reconnect
+ok 24 - 02A: logout closes authenticated WebSocket, stale token cannot reconnect
+  ---
+  duration_ms: 257.66526
+  type: 'test'
+  ...
+# Subtest: 02A: ordered WebSocket frames auth then subscribe cannot race
+ok 25 - 02A: ordered WebSocket frames auth then subscribe cannot race
+  ---
+  duration_ms: 215.697093
+  type: 'test'
+  ...
+# (node:2540) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: UX: server error codes map to Vietnamese without exposing backend code or arbitrary messages
+ok 26 - UX: server error codes map to Vietnamese without exposing backend code or arbitrary messages
+  ---
+  duration_ms: 4.085566
+  type: 'test'
+  ...
+# Subtest: UX: game and room statuses use player language; unknown states do not print engine enums
+ok 27 - UX: game and room statuses use player language; unknown states do not print engine enums
+  ---
+  duration_ms: 0.316217
+  type: 'test'
+  ...
+# Subtest: UX: approved Codex is intact while navigation uses only Bách khoa terminology
+ok 28 - UX: approved Codex is intact while navigation uses only Bách khoa terminology
+  ---
+  duration_ms: 0.380864
+  type: 'test'
+  ...
+# Subtest: UX: lobby map and directory use same backend room list, not prototype default rooms
+ok 29 - UX: lobby map and directory use same backend room list, not prototype default rooms
+  ---
+  duration_ms: 0.643125
+  type: 'test'
+  ...
+# Subtest: UX: unavailable mock ranking, history and overview are hidden in authenticated main navigation
+ok 30 - UX: unavailable mock ranking, history and overview are hidden in authenticated main navigation
+  ---
+  duration_ms: 1.081983
+  type: 'test'
+  ...
+# Subtest: UX: settings do not present local prototype JSON export/import as server account backup
+ok 31 - UX: settings do not present local prototype JSON export/import as server account backup
+  ---
+  duration_ms: 0.423364
+  type: 'test'
+  ...
+# Subtest: UX: private results are projected from server, and technical action IDs stay in markup attributes only
+ok 32 - UX: private results are projected from server, and technical action IDs stay in markup attributes only
+  ---
+  duration_ms: 0.856636
+  type: 'test'
+  ...
+# Subtest: UX: reconnect rehydrates server state and frontend discards stale revisions
+ok 33 - UX: reconnect rehydrates server state and frontend discards stale revisions
+  ---
+  duration_ms: 0.239091
+  type: 'test'
+  ...
+# Subtest: UX: action acceptance is not a resolved result; game text remains instant
+ok 34 - UX: action acceptance is not a resolved result; game text remains instant
+  ---
+  duration_ms: 0.979335
+  type: 'test'
+  ...
+# Subtest: UX: static backend serves new assets same-origin without exposing arbitrary source
+ok 35 - UX: static backend serves new assets same-origin without exposing arbitrary source
+  ---
+  duration_ms: 155.46109
+  type: 'test'
+  ...
+# Subtest: UX: test:03:codex uses separate explicit test paths, not concatenated filenames
+ok 36 - UX: test:03:codex uses separate explicit test paths, not concatenated filenames
+  ---
+  duration_ms: 0.846948
+  type: 'test'
+  ...
+# Subtest: S04 RUNTIME-01: rule lookups carry source and defensive copies do not mutate register
+ok 37 - S04 RUNTIME-01: rule lookups carry source and defensive copies do not mutate register
+  ---
+  duration_ms: 74.944536
+  type: 'test'
+  ...
+# Subtest: S04 RUNTIME-02: closed deck only allows registered active skills and \#20 passive without elevating competitive
+ok 38 - S04 RUNTIME-02: closed deck only allows registered active skills and \#20 passive without elevating competitive
+  ---
+  duration_ms: 80.625678
+  type: 'test'
+  ...
+# Subtest: S04 RUNTIME-03: pair evidence is separate from resolved outcome, no implicit skills
+ok 39 - S04 RUNTIME-03: pair evidence is separate from resolved outcome, no implicit skills
+  ---
+  duration_ms: 25.073301
+  type: 'test'
+  ...
+# Subtest: S04 KB-01: 118 confirmed decisions with original codes, 145 skill audit branches, and 97 characters
+ok 40 - S04 KB-01: 118 confirmed decisions with original codes, 145 skill audit branches, and 97 characters
+  ---
+  duration_ms: 16.031612
+  type: 'test'
+  ...
+# Subtest: S04 KB-02: original character bytes unchanged and every branch points back to exact official description
+ok 41 - S04 KB-02: original character bytes unchanged and every branch points back to exact official description
+  ---
+  duration_ms: 22.012671
+  type: 'test'
+  ...
+# Subtest: S04 KB-03: all 4656 pairs exist as SCREENING, only three closed-deck pairs have implemented outcomes
+ok 42 - S04 KB-03: all 4656 pairs exist as SCREENING, only three closed-deck pairs have implemented outcomes
+  ---
+  duration_ms: 21.758226
+  type: 'test'
+  ...
+# Subtest: S04 KB-04: 207 legacy specifications are NEVER flagged as executed by this generator
+ok 43 - S04 KB-04: 207 legacy specifications are NEVER flagged as executed by this generator
+  ---
+  duration_ms: 4.311419
+  type: 'test'
+  ...
+# Subtest: S04 KB-05: DERIVED inference never overwritten as CONFIRMED and no global victory assertion
+ok 44 - S04 KB-05: DERIVED inference never overwritten as CONFIRMED and no global victory assertion
+  ---
+  duration_ms: 1.279211
+  type: 'test'
+  ...
+# Subtest: S04 KB-06: source inventory hashes check out for every source available
+ok 45 - S04 KB-06: source inventory hashes check out for every source available
+  ---
+  duration_ms: 7.13865
+  type: 'test'
+  ...
+1..45
+# tests 45
+# suites 0
+# pass 45
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5717.526099

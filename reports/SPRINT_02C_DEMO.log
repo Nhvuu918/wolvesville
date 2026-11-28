@@ -1,0 +1,14 @@
+
+> wolvesville-sprint02c-official-rule-adapters@0.3.0 demo:02c
+> npm run build && node scripts/demo-02c.mjs
+
+
+> wolvesville-sprint02c-official-rule-adapters@0.3.0 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+(node:10903) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+REAL OFFICIAL SKILL: official.25.inspect-role => roleId 74 (Alice-only)
+MULTIPLAYER: 2 authenticated WebSocket clients, authorized result PASS
+ENGINE: resolved 1 phase DAY_DISCUSS replay PASS events 15
+SAFE MODE: OFFICIAL_ROLE_INSPECTION_V1 competitive DISABLED; no winner was declared

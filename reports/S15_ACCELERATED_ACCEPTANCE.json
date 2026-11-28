@@ -1,0 +1,552 @@
+{
+  "version": "1.7.4-s15-accelerated-wip",
+  "baseline": {
+    "version": "1.7.3-s15-expansion-wip",
+    "zipFiles": 1221,
+    "crc": "PASS",
+    "backend": {
+      "pass": 243,
+      "fail": 0,
+      "skipped": 11,
+      "exit": 0
+    }
+  },
+  "sourceIntegrity": "PASS",
+  "build": "PASS",
+  "rulesBuild": "PASS",
+  "backendCleanCandidate": {
+    "tests": 267,
+    "pass": 256,
+    "fail": 0,
+    "skipped": 11,
+    "exit": 0,
+    "log": "reports/s15-accelerated/clean-full.log"
+  },
+  "metricsCleanCandidate": {
+    "tests": 55,
+    "pass": 55,
+    "exit": 0,
+    "log": "reports/s15-accelerated/clean-metrics.log"
+  },
+  "newIntegration": {
+    "pass": 13,
+    "fail": 0
+  },
+  "metrics": {
+    "R": 42,
+    "F": 0,
+    "S_identified": 18,
+    "S_scenarios": 21,
+    "S_ratio": null,
+    "A": 17,
+    "B": 13,
+    "C": 0
+  },
+  "cleanCandidateToFinalPayloadDifferences": [
+    "scripts/run-browser-s06.mjs",
+    "tests/browser_s11_voting_e2e.py",
+    "tests/browser_s14_gameplay_e2e.py"
+  ],
+  "payloadFiles": 334,
+  "browserManifest": 25,
+  "browserLatestStrictCounts": {
+    "PASS": 25,
+    "FAIL": 0,
+    "UNCLEAN": 0,
+    "INCOMPLETE": 0,
+    "NOT_RUN": 0
+  },
+  "browserEarlierSameGameplayAdditionalPass": 0,
+  "browserSuites": [
+    {
+      "suite": "browser_s12_attack_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "final",
+          "exitCode": 1,
+          "status": "FAIL",
+          "log": "reports/s15-accelerated/final-browser_s12_attack_e2e.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s12_attack_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s11_voting_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "final",
+          "exitCode": null,
+          "status": "INCOMPLETE",
+          "log": "reports/s15-accelerated/final-browser_s11_voting_e2e.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "strict",
+          "exitCode": 1,
+          "status": "FAIL",
+          "log": "reports/s15-accelerated/strict-browser_s11_voting_e2e.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "retry",
+          "exitCode": 1,
+          "status": "FAIL",
+          "log": "reports/s15-accelerated/retry-browser_s11_voting_e2e.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "retry2",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/retry2-browser_s11_voting_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s11_seer_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": true,
+      "attempts": [
+        {
+          "run": "final",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/final-browser_s11_seer_e2e.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s11_seer_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s10_gameplay_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s10_gameplay_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s09_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s09_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s08_gameplay_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s08_gameplay_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s07_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s07_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s06_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s06_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s05_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s05_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_lobby_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_lobby_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_codex_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_codex_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_demo_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_demo_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_ux_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_ux_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s13_skills_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s13_skills_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s14_gameplay_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 1,
+          "status": "FAIL",
+          "log": "reports/s15-accelerated/strict-browser_s14_gameplay_e2e.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "retry2",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/retry2-browser_s14_gameplay_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s14_transport_regression.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": true,
+      "attempts": [
+        {
+          "run": "final",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/final-browser_s14_transport_regression.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s14_transport_regression.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s15_protection_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s15_protection_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s15_voting_information_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "final",
+          "exitCode": 1,
+          "status": "FAIL",
+          "log": "reports/s15-accelerated/final-browser_s15_voting_information_e2e.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "clean",
+          "exitCode": 1,
+          "status": "FAIL",
+          "log": "reports/s15-accelerated/clean-browser_s15_voting_information_e2e.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "async",
+          "exitCode": null,
+          "status": "INCOMPLETE",
+          "log": "reports/s15-accelerated/async-browser_s15_voting_information_e2e.py.log",
+          "cleanupWarning": true
+        },
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s15_voting_information_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s15_gameplay_ux_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "final",
+          "exitCode": 1,
+          "status": "FAIL",
+          "log": "reports/s15-accelerated/final-browser_s15_gameplay_ux_e2e.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s15_gameplay_ux_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s15_aura_expansion_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s15_aura_expansion_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s15_guard_shot_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": false,
+      "attempts": [
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s15_guard_shot_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s15_accelerated_witch_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": true,
+      "attempts": [
+        {
+          "run": "final",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/final-browser_s15_accelerated_witch_e2e.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "clean",
+          "exitCode": null,
+          "status": "INCOMPLETE",
+          "log": "reports/s15-accelerated/clean-browser_s15_accelerated_witch_e2e.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s15_accelerated_witch_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s15_accelerated_exile_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": true,
+      "attempts": [
+        {
+          "run": "final",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/final-browser_s15_accelerated_exile_e2e.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s15_accelerated_exile_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    },
+    {
+      "suite": "browser_s15_accelerated_combat_e2e.py",
+      "finalRunnerStatus": "PASS",
+      "exitCode": 0,
+      "priorSameGameplayPass": true,
+      "attempts": [
+        {
+          "run": "final",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/final-browser_s15_accelerated_combat_e2e.py.log",
+          "cleanupWarning": false
+        },
+        {
+          "run": "strict",
+          "exitCode": 0,
+          "status": "PASS",
+          "log": "reports/s15-accelerated/strict-browser_s15_accelerated_combat_e2e.py.log",
+          "cleanupWarning": false
+        }
+      ]
+    }
+  ],
+  "browserAcceptance": "PASS_INDIVIDUAL_SUITES_QA_BRIDGE",
+  "postgres": "PENDING_ENVIRONMENT",
+  "release": "WIP",
+  "competitive": "NO_GO",
+  "zipCRC": "Verified externally at delivery",
+  "notes": [
+    "All backend/TS tests/application/data files identical to clean-tested candidate; final browser runner warning gate and S11 selector checked separately.",
+    "Timeout diagnostics retained. Aggregate Voting & Information split into three isolated cases with unchanged assertions and per-case deadline. Async HTTP bridge experiment rejected, inherited bridge restored.",
+    "No global S denominator, no FULL role or complete deck certificate."
+  ]
+}

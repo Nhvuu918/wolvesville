@@ -1,0 +1,27 @@
+E2E_SCHEDULER_WAIT exclusive 60533
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 1131
+E2E_RESOURCE start cpu "usage_usec 13205424155\nuser_usec 10571781793\nsystem_usec 2633642361\nnice_usec 4932306\nnr_periods 69470\nnr_throttled 6165\nthrottled_usec 230878267\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s17_trap_revival_e2e.py default port 34773 db /tmp/wolvesville-s06-browser-eiXGD2/test.sqlite
+SCENARIO_READY bb-live-revival
+E2E_STAGE action 10 official.10.trap 25
+E2E_STAGE action 8 official.8.night-kill 25
+E2E_STAGE resolve DAY_DISCUSS
+E2E_STAGE resolve NIGHT_COLLECT
+E2E_STAGE action 26 official.26.revive 25
+E2E_STAGE resolve DAY_DISCUSS
+E2E_STAGE resolve NIGHT_COLLECT
+E2E_STAGE action 25 official.25.inspect-role 10
+E2E_STAGE resolve DAY_DISCUSS
+SCENARIO_ACTIONS_PASS bb-live-revival
+E2E_STAGE cleanup
+E2E_CONTEXT_CLOSED 0 0.053
+E2E_CONTEXT_CLOSED 1 0.052
+E2E_CONTEXT_CLOSED 2 0.045
+E2E_CONTEXT_CLOSED 3 0.041
+E2E_STAGE cleanup-complete
+S17_TRAP_REVIVAL_BROWSER_PASS
+S06_BROWSER_PASS browser_s17_trap_revival_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 13264406508\nuser_usec 10616220565\nsystem_usec 2648185943\nnice_usec 4969750\nnr_periods 69695\nnr_throttled 6197\nthrottled_usec 232227795\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

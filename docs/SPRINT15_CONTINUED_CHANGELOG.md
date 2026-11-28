@@ -1,0 +1,22 @@
+# Sprint 15 continued — 1.7.12-s15-continuation-wip
+
+## Source provenance
+- Uploaded archive: Wolvesville_Sprint_15_Real_Playability_And_Engine_Maturity_Full_Source(1).zip; SHA-256 `098c434fa51dcd75a17f8c838cba46c60732a1cd1460237db991b6a50413b6f2`; CRC clean; 2508 entries; 397 recorded payload hashes verified. The earlier baseline hash inside the handover report refers to 1.7.10, not this upload.
+- Source integrity verified 97 characters, 118 historical decisions, 207 legacy specs, 105 unchanged approved frontend assets and two existing technical adaptations. No original file removed. Official rules remain 1.3.3. Engine, adapters, historical decisions and character file unchanged.
+
+## Implemented
+- ENGINEERING INTERPRETATION: server-authoritative playable deck registry, published composition keys and IDs in health metadata (public composition, not private assignments). UI derives eligible compositions from that registry, instead of maintaining a hardcoded duplicate; names, not IDs, are shown. No rule change. Both original keys retained. `sameDeck` compares sorted arrays once and retains exact multiset validation.
+- VERIFIED RULE / LOGICALLY DERIVED RULE: [8,25,74] already supported as an official closed QA deck, with #8's independent lethal night action, #25 aura-only, #74 exact role, V02/V03, QD01 and closed death ledger. No new skill or gameplay law. Enable this exact composition via normal registry and existing coordinator/store authorization; no forced assignments. Unknown decks remain rejected. This is a normal playable composition, NOT a new formal Branch Complete certificate. The original two certificates are preserved as historical evidence.
+- PLAYER UX: clear start prerequisites (lock, composition, ready, online); status for every participant; accessible live reason; equal revision presence sync in normal lobby. Server remains authoritative, and rejects missing readiness, mode violations or unauthorized actions.
+- Browser runner: waits for child process close on deadline before proceeding to backend shutdown; no timeout increase and no suppressed exception. New isolated matrix runner reports one row per version obligation, uses fresh output directory, and preserves historical reports. 49 inherited suites / 84 obligations unchanged; adds 1 suite / 1 obligation.
+
+## Test evidence
+- `tests/sprint15-continued-branches.test.mjs` exercises actual kernel via `withKernel`, not mocks or seeded resolved state. 157 first/remaining ballot combinations (125 three-person + 32 two-survivor), 54 night command combinations (27 in each of two orderings); committed role events, replay, two-winner village including dead teammate, second night kill. These are kernel scenarios, not 211 additional completed decks and not 211 browser cases.
+- `tests/sprint15-normal.test.mjs` adds actual 3-user authenticated room creation, configuration, readiness, real WebSocket subscriptions, private investigation, attack, chat, vote, both victory routes, SQLite restart, reconnect/replay, outsider/wrong skill/dead vote rejection and duplicate commands.
+- `tests/browser_s15_continued_three_e2e.py` adds two actual three-context journeys including mobile viewport, registration, ready, start, private role data, skill targeting, chat, voting, victory, reconnect, replay. Both QA flags off. Browser bridge runs actual backend, not native macOS acceptance.
+- New composition already counted in historical A/B, so no duplicate increment. Existing roles already counted in R. No new role certificate or atomic branch inventory claim. Current full regression/matrix results in continuation acceptance JSON. Current certificates not reissued without all mandatory fresh evidence. Historical certificates retained byte-for-byte.
+
+## Deferred, not silently approved
+- No multi-wolf consensus law approved or implemented. Existing single-wolf support preserved. No change to VH54 or VH74/P04; plurality proposal remains proposed. Revival and unsupported interaction classes not opened in normal.
+- No new four/five player deck admitted: existing QA completion alone is insufficient. No new F or R because no role semantics changed. No expansion of global S inventory. 3-player branch-complete requires full real-room combinatorial and handoff coverage at the same certification standard, not merely kernel coverage and two E2E paths.
+- Full browser/version acceptance, current certificate revalidation and PostgreSQL live remain open unless continuation report provides fresh PASS evidence. WIP, competitive NO-GO.

@@ -1,0 +1,86 @@
+{
+  "qaCertificates": [
+    {
+      "deck": [
+        8,
+        25
+      ],
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "scope": "Both possible night commands independently optional; all 16 terminal ballot combinations; two winning sides; authorized UI/reconnect/replay; no other skill or protection can occur within this composition.",
+      "requiredTests": [
+        "QD01 [8,25] Village victory after valid hanging; no vote, tie, retry, change, phase, privacy, replay",
+        "QD01 [8,25] knight night victory with seer action before death; both choices private",
+        "QD01 [8,25] Knight wins by hanging, Village cannot win with contender alive",
+        "QD01 [8,25] all 16 final ballot combinations including self, abstention and explicit blank",
+        "QD01 [8,25] night kill without inspection, terminal phase rejects actions"
+      ],
+      "browserEvidence": [
+        "village",
+        "knight"
+      ],
+      "certified": true,
+      "classification": "QA_BRANCH_COMPLETE"
+    },
+    {
+      "deck": [
+        8,
+        74
+      ],
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "scope": "QA ONLY: all 16 final ballot combinations, both night action branches, invalid target, retry, exact-role privacy and browser victory/reconnect",
+      "requiredTests": [
+        "Scale QA [8,74] sixteen final ballots and valid terminal or next-round results",
+        "Scale QA [8,74] inspection, abstain, retry, vote change, restart and Village victory",
+        "Scale QA [8,74] independent optional inspection on fatal night, both orders, exact-role privacy"
+      ],
+      "browserEvidence": [
+        "browser_s15_scale_mystic_e2e"
+      ],
+      "certified": true,
+      "classification": "QA_BRANCH_COMPLETE"
+    }
+  ],
+  "playableCertificates": [],
+  "candidates": [
+    {
+      "deck": [
+        8,
+        25
+      ],
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "scope": "Both possible night commands independently optional; all 16 terminal ballot combinations; two winning sides; authorized UI/reconnect/replay; no other skill or protection can occur within this composition.",
+      "requiredTests": [
+        "QD01 [8,25] Village victory after valid hanging; no vote, tie, retry, change, phase, privacy, replay",
+        "QD01 [8,25] knight night victory with seer action before death; both choices private",
+        "QD01 [8,25] Knight wins by hanging, Village cannot win with contender alive",
+        "QD01 [8,25] all 16 final ballot combinations including self, abstention and explicit blank",
+        "QD01 [8,25] night kill without inspection, terminal phase rejects actions"
+      ],
+      "browserEvidence": [
+        "village",
+        "knight"
+      ],
+      "certified": true,
+      "classification": "QA_BRANCH_COMPLETE"
+    },
+    {
+      "deck": [
+        8,
+        74
+      ],
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "scope": "QA ONLY: all 16 final ballot combinations, both night action branches, invalid target, retry, exact-role privacy and browser victory/reconnect",
+      "requiredTests": [
+        "Scale QA [8,74] sixteen final ballots and valid terminal or next-round results",
+        "Scale QA [8,74] inspection, abstain, retry, vote change, restart and Village victory",
+        "Scale QA [8,74] independent optional inspection on fatal night, both orders, exact-role privacy"
+      ],
+      "browserEvidence": [
+        "browser_s15_scale_mystic_e2e"
+      ],
+      "certified": true,
+      "classification": "QA_BRANCH_COMPLETE"
+    }
+  ],
+  "correction": "Historical C counts QA, not playable; no official normal-room start in baseline."
+}

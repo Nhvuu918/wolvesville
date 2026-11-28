@@ -1,0 +1,17 @@
+E2E_SCHEDULER_WAIT exclusive 71574
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 745
+E2E_RESOURCE start cpu "usage_usec 15810126316\nuser_usec 12668719206\nsystem_usec 3141407110\nnice_usec 6192685\nnr_periods 81301\nnr_throttled 7329\nthrottled_usec 275640177\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s15_continued_three_e2e.py village port 42191 db /tmp/wolvesville-s06-browser-wKvOLN/test.sqlite
+CONTINUED_THREE_BROWSER_PASS village
+S06_BROWSER_CASE_PASS browser_s15_continued_three_e2e.py village
+E2E_ISOLATION browser_s15_continued_three_e2e.py knight port 45913 db /tmp/wolvesville-s06-browser-t1BUYn/test.sqlite
+CONTINUED_THREE_BROWSER_PASS knight
+S06_BROWSER_CASE_PASS browser_s15_continued_three_e2e.py knight
+E2E_ISOLATION browser_s15_continued_three_e2e.py handoff port 40071 db /tmp/wolvesville-s06-browser-rYcpbb/test.sqlite
+CONTINUED_THREE_BROWSER_PASS handoff
+S06_BROWSER_CASE_PASS browser_s15_continued_three_e2e.py handoff
+S06_BROWSER_PASS browser_s15_continued_three_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 15937188600\nuser_usec 12766875859\nsystem_usec 3170312740\nnice_usec 6333561\nnr_periods 81792\nnr_throttled 7381\nthrottled_usec 277127499\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

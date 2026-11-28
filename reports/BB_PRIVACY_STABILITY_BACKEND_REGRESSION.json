@@ -1,0 +1,1886 @@
+{
+  "version": "1.7.25-s15-privacy-stability-wip",
+  "sourceFingerprint": "2aaa5dfa1e0067c6bb82beff4c06c18375ed6dd37380b1b5f30c99ec8ff9cec5",
+  "mode": "MONOLITHIC",
+  "exitCode": 0,
+  "summary": {
+    "tests": 453,
+    "pass": 442,
+    "fail": 0,
+    "skipped": 11,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "complete": true,
+  "baselineObligations": 450,
+  "missingBaselineObligations": [],
+  "changedBaselineStatus": [],
+  "newTests": [
+    "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+    "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events",
+    "Privacy stability #36: shield consumes one fireball, second night fireball, resource and restart"
+  ],
+  "results": [
+    {
+      "test": "02A PostgreSQL: transaction-safe concurrent join + persistence, requires DATABASE_URL",
+      "status": "SKIP"
+    },
+    {
+      "test": "02A: SQLite store keeps accounts and room data after reopening",
+      "status": "PASS"
+    },
+    {
+      "test": "02A: WebSocket reconnect restores snapshot without exposing other users secrets",
+      "status": "PASS"
+    },
+    {
+      "test": "02A: concurrent join at capacity cannot overbook",
+      "status": "PASS"
+    },
+    {
+      "test": "02A: lock/unlock only host; locked room prevents join",
+      "status": "PASS"
+    },
+    {
+      "test": "02A: logout closes authenticated WebSocket, stale token cannot reconnect",
+      "status": "PASS"
+    },
+    {
+      "test": "02A: ordered WebSocket frames auth then subscribe cannot race",
+      "status": "PASS"
+    },
+    {
+      "test": "02A: profile update keeps public ID and broadcasts to subscribed room",
+      "status": "PASS"
+    },
+    {
+      "test": "02A: registration/login hash, normalization, public IDs, authorization and logout",
+      "status": "PASS"
+    },
+    {
+      "test": "02A: room create/join/idempotent join/leave/host transfer/discovery",
+      "status": "PASS"
+    },
+    {
+      "test": "02A: room limits 1–100 do not imply a competitive game has begun",
+      "status": "PASS"
+    },
+    {
+      "test": "02A: two authenticated WebSocket clients receive room updates; outsider cannot subscribe",
+      "status": "PASS"
+    },
+    {
+      "test": "02B PostgreSQL real DB: start/commit/atomic failure/role assignments/restart/replay",
+      "status": "SKIP"
+    },
+    {
+      "test": "02B: 2 realtime clients get individual game snapshots, game updates and private skill is hidden",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: action stale revision rejected, duplicate with stale revision is idempotent; changed payload conflicts",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: default mode rejects game start safely, never enables fixtures",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: fixture throw rolls back phase, action, event and revision atomically",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: game WebSocket reconnect restores updated private snapshot and cannot read another role",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: initial and committed Engine events are projected into relational game_events, not lost",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: locked room creates unique official roles, with two private projections and durable replay",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: one-human room may start test game without a hard minimum; no competitive start",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: outsider/non-host cannot resolve; nonmember game WebSocket subscription is rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: restart retains session, roles, logged events and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: server stores non-public role draws and unique initial assignments, not WS payload",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: server validation prevents outsider access and forged client actor, role, seed",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: start key reused with different role selection is conflict",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: start rejects invalid role lists, unlocked rooms and start/join races",
+      "status": "PASS"
+    },
+    {
+      "test": "02B: two concurrent accepted actions are persisted and replay remains valid",
+      "status": "PASS"
+    },
+    {
+      "test": "02C PostgreSQL isolated: official skill, role privacy, transaction rollback, replay, restart",
+      "status": "SKIP"
+    },
+    {
+      "test": "02C SQLite 005 additive migration upgrades old 002+004 database without losing old rows",
+      "status": "PASS"
+    },
+    {
+      "test": "02C official pack rejects fixture, unsupported character set, outsider and production start",
+      "status": "PASS"
+    },
+    {
+      "test": "02C official pack: server assigns 25 and 74; each skill reveals only its approved aura or exact role to actor",
+      "status": "PASS"
+    },
+    {
+      "test": "02C official pack: sqlite restart and replay preserve private skill outcome, idempotency",
+      "status": "PASS"
+    },
+    {
+      "test": "02C restricted pack refuses unverified role selection and does not silently run fixture aliases",
+      "status": "PASS"
+    },
+    {
+      "test": "02C skills: wrong character, self-target, duplicate, second use, day phase are server enforced",
+      "status": "PASS"
+    },
+    {
+      "test": "02C websocket: 2 authenticated clients receive individual official results; no cross-reader leakage",
+      "status": "PASS"
+    },
+    {
+      "test": "03 PostgreSQL: private feedback accepted/resolved, replay, restart and isolation",
+      "status": "SKIP"
+    },
+    {
+      "test": "03 canceled actions do not show result even if a stale authorized event exists",
+      "status": "PASS"
+    },
+    {
+      "test": "03 feedback not emitted as public room event; errors never fabricate results",
+      "status": "PASS"
+    },
+    {
+      "test": "03 feedback projector never leaks information while status is ACCEPTED",
+      "status": "PASS"
+    },
+    {
+      "test": "03 feedback projector uses explicit event allowlist and strips unapproved payload fields",
+      "status": "PASS"
+    },
+    {
+      "test": "03 projector excludes actions not owned by the viewer and accepts explicit future result types",
+      "status": "PASS"
+    },
+    {
+      "test": "03 static approved frontend served with JS and CSS; cannot traverse into private sources",
+      "status": "PASS"
+    },
+    {
+      "test": "03 unified feedback: accepted is pending, only authorized resolved sees role, reconnect identical",
+      "status": "PASS"
+    },
+    {
+      "test": "03 unknown result/event types are never exposed by default",
+      "status": "PASS"
+    },
+    {
+      "test": "ACL: player projections omit hidden roles, seed, other resources and internal events",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B live Witch: poison-only consumes trap and potion, later rescue is normal",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B live trap: delayed valid use, private typed results, two placements, consumption and restart",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B owner final: ranked eligible members are filtered without reshuffle",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B owner final: representative RNG is server-bound and waiting survives restart",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B owner final: separate rescue and poison windows persist one nightly trap group",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn",
+      "status": "PASS"
+    },
+    {
+      "test": "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged",
+      "status": "PASS"
+    },
+    {
+      "test": "BB-REP-NEW-01 B: finite selector preserves rank when a new legal member joins, no initial wolf priority",
+      "status": "PASS"
+    },
+    {
+      "test": "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory",
+      "status": "PASS"
+    },
+    {
+      "test": "BB01 pack: all choose same target, fixed representative and candidate-only attack attribution",
+      "status": "PASS"
+    },
+    {
+      "test": "BB02 pack: dissent is not consensus; no implied phase policy",
+      "status": "PASS"
+    },
+    {
+      "test": "BB03 pack: empty vs missing recorded distinctly, both pending and no attack",
+      "status": "PASS"
+    },
+    {
+      "test": "BB04 pack: changed vote, invalid retry, stale revision, target cap, own-only projection",
+      "status": "PASS"
+    },
+    {
+      "test": "BB05 pack: death, role block, faction change and revival membership rechecked; revocation fails closed",
+      "status": "PASS"
+    },
+    {
+      "test": "BB06 pack: equal unordered pairs, partial disagreement, no guessing two-attack attribution",
+      "status": "PASS"
+    },
+    {
+      "test": "BB07 pack: private journal, independent clients, restart, replay, retry and transaction rollback",
+      "status": "PASS"
+    },
+    {
+      "test": "BB08 trap: no valid skill through multiple nights, invalid and blocked attempts do not consume; one successful aura inversion only",
+      "status": "PASS"
+    },
+    {
+      "test": "BB09 trap: two lifetime placements, no repeat target, no double placement, same action retry",
+      "status": "PASS"
+    },
+    {
+      "test": "BB10 trap: exact-role inversion RNG bound to locked composition and private result, never changes real role",
+      "status": "PASS"
+    },
+    {
+      "test": "BB11 trap: VH84 remains true; immunity consumes next valid use but never changes verdict",
+      "status": "PASS"
+    },
+    {
+      "test": "BB12 trap: actual skill block cannot pass executed validation; death/revival keeps mark until a legal use",
+      "status": "PASS"
+    },
+    {
+      "test": "BB13 trap: witch poison is suppressed; guard and rescue inversion withheld until damage semantics confirmed",
+      "status": "PASS"
+    },
+    {
+      "test": "BB14 trap: unsupported multi-effect cannot silently consume; cross-rule and phase requests rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "BB15 trap: SQLite journal replay across rounds, candidate RNG and privacy, tamper detection",
+      "status": "PASS"
+    },
+    {
+      "test": "BB16 feature flag: candidate journal defaults closed; ruleset remains unchanged",
+      "status": "PASS"
+    },
+    {
+      "test": "BB17 candidate binding: reject modified seed, roster, archived version; blank does not erase latest valid selection",
+      "status": "PASS"
+    },
+    {
+      "test": "BB18 candidate pack attack preview: reuses official single-layer protection on a clone; unknown interaction fails closed",
+      "status": "PASS"
+    },
+    {
+      "test": "BB19 candidate lock validation reuses official nightmare status and does not treat accepted-but-locked as execution",
+      "status": "PASS"
+    },
+    {
+      "test": "BB20 authenticated candidate pack bridge: real independent accounts, persisted QA Game Session, reconnect/restart, no official archive mutation",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 01 wait for all responses, no random target, KEEP previous valid selection",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 02 all respond but first blank or divergent sets, no bite even common target",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 03 canonical set agreement and same representative for two bites; retry and privacy",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 04 membership at lock: revoked wolf ignored, new wolf must respond, fixed order cannot change",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 05 two attacks: first counter kills representative, second still executes, no duplicate deaths",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 06 pack protection shared consumption; unsupported stack fails closed",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 07 group BB05=B all executed inspections inverted once; blocked action not trigger; RNG/private",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 08 BB04=B guard inverse bypasses shield, no protection consumption, direct death once",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 09 inverse rescue finalizes preliminary death exactly once, ignores other shield; poison suppressed",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 10 unknown effect or death reaction aborts whole group with waiting mark, no partial mutation",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 11 journal commits candidate pack atomically, persists waiting then lock, restart and replay, v1 isolation",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 12 journal trap commit and group replay, private RNG, failed group has no effect",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 13 authenticated candidate pack resolution: real independent accounts, persisted QA Game Session, reconnect/restart, no official archive mutation",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 14 no execution keeps mark through multiple nights, second placement and duplicate target constraints",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 15 old candidate journal remains replayable beside new profile; disabled by default",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 16 direct inversion does not bypass unsupported death chains or create partial journal commit",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 real accepted engineer queue: trap on 25, typed result, atomic journal, old archive unchanged",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 real accepted engineer queue: trap on 5, typed result, atomic journal, old archive unchanged",
+      "status": "PASS"
+    },
+    {
+      "test": "BBv2 real accepted engineer queue: trap on 74, typed result, atomic journal, old archive unchanged",
+      "status": "PASS"
+    },
+    {
+      "test": "BUG-02B-001/005: DATABASE_URL absent/placeholder is rejected without printing credentials",
+      "status": "PASS"
+    },
+    {
+      "test": "BUG-02B-002: PostgreSQL URL variable does not shadow standard URL constructor",
+      "status": "PASS"
+    },
+    {
+      "test": "BUG-02B-003: failed resolution compares replay checkpoint after ACCEPTED (not stale hardcoded 15/17)",
+      "status": "PASS"
+    },
+    {
+      "test": "Breakthrough VH77 medium private chat: authorization, anonymous projections, retry, SQLite restart, phase close and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Breakthrough bounded revival capability accepts interchangeable read-only observers and rejects unsafe compositions",
+      "status": "PASS"
+    },
+    {
+      "test": "Breakthrough medium #26 with #74: closed death, revival, repeated elimination, PH-01 false",
+      "status": "PASS"
+    },
+    {
+      "test": "Breakthrough medium #26 with #74: closed death, revival, repeated elimination, PH-01 true",
+      "status": "PASS"
+    },
+    {
+      "test": "Breakthrough protection action contracts share actor history, preserve cooldown and do not disclose target role or shield",
+      "status": "PASS"
+    },
+    {
+      "test": "Breakthrough snow pair: 16 final ballots in each of unshielded and protected states; all final outcomes",
+      "status": "PASS"
+    },
+    {
+      "test": "Breakthrough snow pair: retry, outsider rejection, active-layer restart and coordinator handoff preserve protection and winner",
+      "status": "PASS"
+    },
+    {
+      "test": "Breakthrough snow pair: self/other protection, skipped action, reverse order, two-night lifetime, consumption, exhaustion and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Codex: Vietnamese accent-insensitive name search, correct team filtering and predictable sorting",
+      "status": "PASS"
+    },
+    {
+      "test": "Codex: Wheel keeps no more than 12 cards, Grid is responsive, reduced-motion is supported",
+      "status": "PASS"
+    },
+    {
+      "test": "Codex: approved visual baseline is preserved as archived references, with presentation additive stylesheet",
+      "status": "PASS"
+    },
+    {
+      "test": "Codex: every counter derives from filtered and loaded data",
+      "status": "PASS"
+    },
+    {
+      "test": "Codex: official character.json is byte-identical and contains 97 unique character IDs",
+      "status": "PASS"
+    },
+    {
+      "test": "Codex: production player detail uses actual ability text and no JSON/raw/debug tags, no ID beside name",
+      "status": "PASS"
+    },
+    {
+      "test": "Codex: rejects incomplete, duplicated, malformed and unauthorized team data instead of showing a false 97",
+      "status": "PASS"
+    },
+    {
+      "test": "Codex: static source and presentation extras are served by same-origin backend, with no arbitrary source access",
+      "status": "PASS"
+    },
+    {
+      "test": "Codex: view model uses official name, faction, aura and description without generated rules",
+      "status": "PASS"
+    },
+    {
+      "test": "DEMO-001: endpoint disabled by default; no account/session created",
+      "status": "PASS"
+    },
+    {
+      "test": "DEMO-002: independent sessions with valid public IDs, no credential in response",
+      "status": "PASS"
+    },
+    {
+      "test": "DEMO-003: demo account is server-side, can join lobby, access is isolated",
+      "status": "PASS"
+    },
+    {
+      "test": "DEMO-004: logout revokes token without affecting independent demos",
+      "status": "PASS"
+    },
+    {
+      "test": "DEMO-005: rate limit creation on same IP; no unbounded new accounts",
+      "status": "PASS"
+    },
+    {
+      "test": "DEMO-006: wrong origin/invalid media type cannot provision demo",
+      "status": "PASS"
+    },
+    {
+      "test": "DEMO-007: normal register/login unchanged and never becomes demo",
+      "status": "PASS"
+    },
+    {
+      "test": "DEMO-008: SQLite restart preserves demo token and marker, expiration cleanup is safe",
+      "status": "PASS"
+    },
+    {
+      "test": "DEMO-009: WebSocket auth is scoped to each demo session and room membership",
+      "status": "PASS"
+    },
+    {
+      "test": "DEMO-010: production NODE_ENV prevents demo even if enable flag supplied",
+      "status": "PASS"
+    },
+    {
+      "test": "DEMO-011: original 97-character JSON and approved reference remain available",
+      "status": "PASS"
+    },
+    {
+      "test": "DEMO-PG-001: atomic independent demo accounts, PG 006 migration, rollback and session persistence",
+      "status": "SKIP"
+    },
+    {
+      "test": "Deep engineer #10: first-night trap on 25, typed inspection, private RNG and durable replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Deep engineer #10: first-night trap on 5, typed inspection, private RNG and durable replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Deep engineer #10: first-night trap on 74, typed inspection, private RNG and durable replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Deep medium #26: closed death, revival, repeated elimination, PH-01 false",
+      "status": "PASS"
+    },
+    {
+      "test": "Deep medium #26: closed death, revival, repeated elimination, PH-01 true",
+      "status": "PASS"
+    },
+    {
+      "test": "Deep normal s15-deep-knight-snow-aura: both factions, real protection, chat, private observations, SQLite restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Deep normal s15-deep-knight-snow-dual: both factions, real protection, chat, private observations, SQLite restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Deep normal s15-deep-knight-snow-role: both factions, real protection, chat, private observations, SQLite restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Deep normal s15-deep-knight-snow: both factions, real protection, chat, private observations, SQLite restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Deep normal s15-deep-leader-snow: both factions, real protection, chat, private observations, SQLite restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Deep normal s15-deep-leader: both factions, real protection, chat, private observations, SQLite restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Experimental pack intake: phase lock filters revoked actors and targets; no consensus or replacement representative inferred",
+      "status": "PASS"
+    },
+    {
+      "test": "Experimental pack intake: target cap, duplicate targets and wrong round/rules rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "Experimental pack intake: three authenticated actors, revision and retry conflict, actor-private projections",
+      "status": "PASS"
+    },
+    {
+      "test": "Five-player guard/pharmacist actual pending rescue: coordinator handoff, stale revision, retry, privacy, restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Five-player guard/pharmacist finite adjudicator: every legal ballot assignment by reachable living mask and active sedative",
+      "status": "PASS"
+    },
+    {
+      "test": "Five-player guard/pharmacist finite kernel: all living masks, both removal paths, fresh/spent rescue, 0/1/2 attacks and every legal rescue target",
+      "status": "PASS"
+    },
+    {
+      "test": "Five-player guard/pharmacist finite kernel: every cooldown target, invalid target/resource and voting commit classes",
+      "status": "PASS"
+    },
+    {
+      "test": "Five-player guard/pharmacist reduced history: dead prior guard target, invalid actions and once-only resources",
+      "status": "PASS"
+    },
+    {
+      "test": "Five-player snow/pharmacist actual pending rescue: coordinator handoff, stale revision, retry, privacy, restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Five-player snow/pharmacist finite adjudicator: every legal ballot assignment by reachable living mask and active sedative",
+      "status": "PASS"
+    },
+    {
+      "test": "Five-player snow/pharmacist finite kernel: all living masks, both removal paths, fresh/spent rescue, 0/1/2 attacks and every legal rescue target",
+      "status": "PASS"
+    },
+    {
+      "test": "Five-player snow/pharmacist finite kernel: voting commit classes",
+      "status": "PASS"
+    },
+    {
+      "test": "Five-player snow/pharmacist persistent protection: distinct history, double layers, expiry, death of protector and resources",
+      "status": "PASS"
+    },
+    {
+      "test": "Growth #39 nightmare cancels queued capture without consuming a miss",
+      "status": "PASS"
+    },
+    {
+      "test": "Growth #39 real QA capture: wolf death, fixed initial majority, private role data, restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Growth #39 real QA miss, exact one-night loss, restart, third miss death, wolf victory",
+      "status": "PASS"
+    },
+    {
+      "test": "Growth [8,25,74] actual Normal Gameplay 157 ballot combinations and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Growth [8,25,74] real normal all 27 night choices, per-skill rejection and exact retry",
+      "status": "PASS"
+    },
+    {
+      "test": "Growth [8,25,74] three-client ballot retry/change and coordinator handoff survives restart",
+      "status": "PASS"
+    },
+    {
+      "test": "Growth [8,25,74] two-survivor equivalence after night or hanging, all remaining night choices and orders",
+      "status": "PASS"
+    },
+    {
+      "test": "Growth dual-seer: all six submission permutations for every legal complete night choice",
+      "status": "PASS"
+    },
+    {
+      "test": "Growth normal five-human guard and pharmacist: protected and rescued bite, both victory routes, restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Growth normal five-human snow and pharmacist: protected and rescued bite, both victory routes, restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "LOBBY-01: a room retains its map slot through reorder and status updates",
+      "status": "PASS"
+    },
+    {
+      "test": "LOBBY-02: deleting a room releases its slot without repositioning other rooms",
+      "status": "PASS"
+    },
+    {
+      "test": "LOBBY-03: map capacity is bounded, directory remains the complete room list",
+      "status": "PASS"
+    },
+    {
+      "test": "LOBBY-04: marker is a button for preview only, with room-bound identity",
+      "status": "PASS"
+    },
+    {
+      "test": "LOBBY-05: only explicit join calls membership mutation",
+      "status": "PASS"
+    },
+    {
+      "test": "LOBBY-06: no decorative descendant intercepts button hitbox and focus is visible",
+      "status": "PASS"
+    },
+    {
+      "test": "Normal ROOM-03 authenticated handoff after host disconnect, no reassignment, phase authorization, restart and audit",
+      "status": "PASS"
+    },
+    {
+      "test": "Normal [8,25] all 16 final ballot combinations in real rooms, V02/V03, both winning sides",
+      "status": "PASS"
+    },
+    {
+      "test": "Normal [8,25] four optional night branches plus reversed submission, phase and target rejection",
+      "status": "PASS"
+    },
+    {
+      "test": "Normal [8,74] all 16 final ballot combinations in real rooms, V02/V03, both winning sides",
+      "status": "PASS"
+    },
+    {
+      "test": "Normal [8,74] four optional night branches plus reversed submission, phase and target rejection",
+      "status": "PASS"
+    },
+    {
+      "test": "Normal four-human guard and leader: real blocked bite, both victory routes, restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Normal gameplay exact-role seer, night kill, dead player actions denied and persisted Knight victory",
+      "status": "PASS"
+    },
+    {
+      "test": "Normal gameplay real authenticated session: readiness, QA isolation, private aura, chat, vote, restart, reconnect and Village victory",
+      "status": "PASS"
+    },
+    {
+      "test": "Normal migration 007/008 preserves an actual archived 1.3.2 QA game and replay byte-for-byte",
+      "status": "PASS"
+    },
+    {
+      "test": "Normal three-human dual-seer journey: role privacy, both victory routes, restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Official guard reduced roster: 72 real-room night choices after first death by night or hanging",
+      "status": "PASS"
+    },
+    {
+      "test": "Official guard voting: exhaustive 1671 ballot assignments on the actual adjudicator",
+      "status": "PASS"
+    },
+    {
+      "test": "Owner BB independent guard acceptance: all 35 initial-night guard and bite combinations, alternating submission order and private observations",
+      "status": "PASS"
+    },
+    {
+      "test": "Owner BB independent guard acceptance: cooldown skip, self shield, guard death, vote ties, blank/change/retry, handoff and restart",
+      "status": "PASS"
+    },
+    {
+      "test": "PH-01: submitted action still runs after sender dies, unless locked",
+      "status": "PASS"
+    },
+    {
+      "test": "Play #31 regular wolf bite actually blocked, cooldown, different recipient, Village victory and durable privacy",
+      "status": "PASS"
+    },
+    {
+      "test": "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt",
+      "status": "PASS"
+    },
+    {
+      "test": "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events",
+      "status": "PASS"
+    },
+    {
+      "test": "Privacy stability #36: shield consumes one fireball, second night fireball, resource and restart",
+      "status": "PASS"
+    },
+    {
+      "test": "QD01 #48 sole wolf blocks Village victory until true hanging",
+      "status": "PASS"
+    },
+    {
+      "test": "QD01 #48 two victims via shared pack, retry, target limits, authorized projection and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "QD01 [8,25] Knight wins by hanging, Village cannot win with contender alive",
+      "status": "PASS"
+    },
+    {
+      "test": "QD01 [8,25] Village victory after valid hanging; no vote, tie, retry, change, phase, privacy, replay",
+      "status": "PASS"
+    },
+    {
+      "test": "QD01 [8,25] all 16 final ballot combinations including self, abstention and explicit blank",
+      "status": "PASS"
+    },
+    {
+      "test": "QD01 [8,25] knight night victory with seer action before death; both choices private",
+      "status": "PASS"
+    },
+    {
+      "test": "QD01 [8,25] night kill without inspection, terminal phase rejects actions",
+      "status": "PASS"
+    },
+    {
+      "test": "QD01 current alignment and pending-life counterexamples on a real session snapshot",
+      "status": "PASS"
+    },
+    {
+      "test": "QD01 dead Village teammate wins by current faction; opposite direction [8,9,25]",
+      "status": "PASS"
+    },
+    {
+      "test": "QD01 direct Jester hanging with live Hunter mark yields Village and Jester co-winners",
+      "status": "PASS"
+    },
+    {
+      "test": "QD01 historical active game stays 1.3.2 after restart; old winner behavior and replay unchanged",
+      "status": "PASS"
+    },
+    {
+      "test": "QD01 revenge skip after true hanging closes chain and Village wins",
+      "status": "PASS"
+    },
+    {
+      "test": "QD02 valid revenge after hanging, Hunter follow completes before dead Village teammates win",
+      "status": "PASS"
+    },
+    {
+      "test": "QD02 wrong alignment consumes revenge without disclosure or retry; Village and Jester co-win",
+      "status": "PASS"
+    },
+    {
+      "test": "QD03 pin expires at next night before no-repin death, replay and retry",
+      "status": "PASS"
+    },
+    {
+      "test": "QD03 pin reselect same target or change target, daytime follow still valid",
+      "status": "PASS"
+    },
+    {
+      "test": "RNG empty at effect stage triggers full rollback, no random fallback",
+      "status": "PASS"
+    },
+    {
+      "test": "RNG: deterministic, conditioned domain, empty domain fail-closed, event tape replay",
+      "status": "PASS"
+    },
+    {
+      "test": "S04 KB-01: 118 confirmed decisions with original codes, 145 skill audit branches, and 97 characters",
+      "status": "PASS"
+    },
+    {
+      "test": "S04 KB-02: original character bytes unchanged and every branch points back to exact official description",
+      "status": "PASS"
+    },
+    {
+      "test": "S04 KB-03: all 4656 pairs exist as SCREENING, only three closed-deck pairs have implemented outcomes",
+      "status": "PASS"
+    },
+    {
+      "test": "S04 KB-04: 207 legacy specifications are NEVER flagged as executed by this generator",
+      "status": "PASS"
+    },
+    {
+      "test": "S04 KB-05: DERIVED inference never overwritten as CONFIRMED and no global victory assertion",
+      "status": "PASS"
+    },
+    {
+      "test": "S04 KB-06: source inventory hashes check out for every source available",
+      "status": "PASS"
+    },
+    {
+      "test": "S04 OFF20 inspected by both official seers: aura/role results private and next-night injury for each investigator",
+      "status": "PASS"
+    },
+    {
+      "test": "S04 OFF20 pack is feature gated, cannot start with arbitrary fourth character",
+      "status": "PASS"
+    },
+    {
+      "test": "S04 OFF20 passive does not grant an unconfirmed active skill and remains closed to unknown roles",
+      "status": "PASS"
+    },
+    {
+      "test": "S04 OFF20 persists an injury through SQLite restart and duplicate action cannot double-apply it",
+      "status": "PASS"
+    },
+    {
+      "test": "S04 RUNTIME-01: rule lookups carry source and defensive copies do not mutate register",
+      "status": "PASS"
+    },
+    {
+      "test": "S04 RUNTIME-02: closed deck only allows registered active skills and #20 passive without elevating competitive",
+      "status": "PASS"
+    },
+    {
+      "test": "S04 RUNTIME-03: pair evidence is separate from resolved outcome, no implicit skills",
+      "status": "PASS"
+    },
+    {
+      "test": "S05 KB-01 additive knowledge overlay: 97 roles, 118 rules/145 branches unchanged and six executed role branches",
+      "status": "PASS"
+    },
+    {
+      "test": "S05 KB-02 4656 pairs remain screening except 12 narrow executable cases",
+      "status": "PASS"
+    },
+    {
+      "test": "S05 KB-03 victory facts are separate from auto-finalized winner",
+      "status": "PASS"
+    },
+    {
+      "test": "S05 PostgreSQL REAL: support/block pack, private capability, rollback-safe replay, restart",
+      "status": "SKIP"
+    },
+    {
+      "test": "S05-01 #34 blocks accepted #9 action but not #25 Tiên Tri or #31 Bảo Vệ (VH10/VH24)",
+      "status": "PASS"
+    },
+    {
+      "test": "S05-02 #34 targeting #25/#31 does not lock protected named roles; #74 can be locked",
+      "status": "PASS"
+    },
+    {
+      "test": "S05-03 #31 guard cannot select same target in consecutive nights but can after a gap",
+      "status": "PASS"
+    },
+    {
+      "test": "S05-04 #9 snow protection lasts two nights and cannot repeat any of three targets",
+      "status": "PASS"
+    },
+    {
+      "test": "S05-05 no secret leakage, no fixtures in official pack, idempotency preserves one protection layer",
+      "status": "PASS"
+    },
+    {
+      "test": "S05-06 SQLite restart preserves layer provenance, action status and deterministic replay",
+      "status": "PASS"
+    },
+    {
+      "test": "S05-V01 verified #28 hanging predicate is candidate only until VH03 end-of-chain",
+      "status": "PASS"
+    },
+    {
+      "test": "S05-V02 no faction auto-win; #97 hibernating and pending villager revival count for faction",
+      "status": "PASS"
+    },
+    {
+      "test": "S06 PostgreSQL LIVE isolated schema: vote, #79 PH-02, atomicity, replay, restart, ACL",
+      "status": "SKIP"
+    },
+    {
+      "test": "S06-01 night→dawn→vote intake→close is committed; no invented elimination/endgame",
+      "status": "PASS"
+    },
+    {
+      "test": "S06-02 authorized audience sees own ballot only, outsider denied, no server seed",
+      "status": "PASS"
+    },
+    {
+      "test": "S06-03 duplicate vote exactly once, changes fail closed, stale revision not accepted",
+      "status": "PASS"
+    },
+    {
+      "test": "S06-04 vote intake denies phase errors, self-forged actor ignored, voting closes once",
+      "status": "PASS"
+    },
+    {
+      "test": "S06-05 vote state survives SQLite restart, event chain and ACL remain intact",
+      "status": "PASS"
+    },
+    {
+      "test": "S06-06 #8 sole survivor fact is partial; #8 hanging immunity while wolves counted alive",
+      "status": "PASS"
+    },
+    {
+      "test": "S06-07 #79 cancels ongoing day vote, reveals target only to wolf, phase returns to next night (PH-02)",
+      "status": "PASS"
+    },
+    {
+      "test": "S06-08 no PH-02 skill: attempting generic vote resolution rolls back phase and event ledger",
+      "status": "PASS"
+    },
+    {
+      "test": "S06-09 vote submissions from two independent authenticated clients are serialized without dropping a ballot",
+      "status": "PASS"
+    },
+    {
+      "test": "S07 PostgreSQL LIVE isolated schema: certified early match, idempotency, ACL, restart, replay",
+      "status": "SKIP"
+    },
+    {
+      "test": "S07-01 certified #8 night kill commits legitimate #8 sole-survivor match end, replay and ACL",
+      "status": "PASS"
+    },
+    {
+      "test": "S07-02 knight restricted pack does not fabricate winner if no committed elimination",
+      "status": "PASS"
+    },
+    {
+      "test": "S07-03 raw vote audit never elects a hanging target and is never projected to clients",
+      "status": "PASS"
+    },
+    {
+      "test": "S07-04 SQLite restart persists certified endgame, action, and player-facing result",
+      "status": "PASS"
+    },
+    {
+      "test": "S07-05 simultaneous accepted knight kill and seer inspection: two actions resolve once, private inspection and simultaneous endgame",
+      "status": "PASS"
+    },
+    {
+      "test": "S07-06 rejected forged roles and unauthorized character actions cannot mutate state",
+      "status": "PASS"
+    },
+    {
+      "test": "S08 PostgreSQL LIVE isolated schema: certified early match, idempotency, ACL, restart, replay",
+      "status": "SKIP"
+    },
+    {
+      "test": "S08-A01 Metric A requires real backend, committed winner, Event Log, ACL and replay/restart",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-A02 Metric B cannot count early-night end, raw ballots, cancelled voting or unresolved votes",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-A03 certified matrix only counts actually verified match configurations, not 97 Codex or unit tests",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-A04 invalid duplicate configuration and mislabeled metrics are rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-A05 graphics states include authorization, trigger, transition, loading/error/reconnect, reduced motion and assets",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-A06 graphics contract corrects stale S06 placeholders without changing original event catalogue",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-G01 NEW official #8/#28 closed deck commits real night elimination and legitimate knight win, not hanged-jester win",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-G02 elimination + victory decisions survive SQLite restart with private role and event ACL",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-G03 PH-02 cannot be stranded by closing voting while an accepted day skill is queued",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-G04 vote-close with unique raw leader stays unresolved; no winner, no public tally or elimination",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-G05 source-grounded vote adjudicator never promotes raw votes to an official hanging target",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-G06 death chain and match winner cannot be certified without exact deck and valid source-specific audit",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-G07 concurrency: one voter cannot submit two independent ballots, no double events or uncommitted winner",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-G08 cancelled day flows to round two, skill #79 never becomes available again, no fabricated elimination",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-G09 metric A grows only through two real verified configurations (not recycled test counters)",
+      "status": "PASS"
+    },
+    {
+      "test": "S08-G10 metric B remains zero until actual verified vote->elimination->victory check (no early-night substitution)",
+      "status": "PASS"
+    },
+    {
+      "test": "S09 PostgreSQL LIVE isolated schema: #33 private coerced vote, replay, restart, ACL, strict migration",
+      "status": "SKIP"
+    },
+    {
+      "test": "S09-01 certified #33 server-side directive transforms a ballot with private audit but never hangs a player",
+      "status": "PASS"
+    },
+    {
+      "test": "S09-02 coercion is once-per-match and all retries preserve idempotency and revision",
+      "status": "PASS"
+    },
+    {
+      "test": "S09-03 never fabricate an effective ballot if controller or target has not voted",
+      "status": "PASS"
+    },
+    {
+      "test": "S09-04 replay and frozen ACL remain valid after SQLite restart",
+      "status": "PASS"
+    },
+    {
+      "test": "S09-05 private audit never authorizes hanging, including tied votes and transformed unique leader",
+      "status": "PASS"
+    },
+    {
+      "test": "S09-06 character.json#23 forbids voting AFTER death, never while alive; denied vote is atomic",
+      "status": "PASS"
+    },
+    {
+      "test": "S09-07 inherited QA-only day advance cannot fabricate vote, hanging or victory",
+      "status": "PASS"
+    },
+    {
+      "test": "S10 PostgreSQL LIVE source-backed nightmare+judgment, ACL, rollback, restart, replay",
+      "status": "SKIP"
+    },
+    {
+      "test": "S10-01 #5 source VH84 returns private unmodified verdict; #20 injures investigator in following night",
+      "status": "PASS"
+    },
+    {
+      "test": "S10-02 #5 two match-wide uses, deterministic replay and SQLite restart; cannot infer hanging",
+      "status": "PASS"
+    },
+    {
+      "test": "S10-03 #76 current-night nightmare cancels queued skills, privately informs victim, consumes only two match uses",
+      "status": "PASS"
+    },
+    {
+      "test": "S10-P01 production/competitive/nonisolated policies always fail closed",
+      "status": "PASS"
+    },
+    {
+      "test": "S10-P02 hypothetical plurality, tie, empty, single ballot never authorize elimination",
+      "status": "PASS"
+    },
+    {
+      "test": "S10-P03 V02 variant B terminal invalidation differs from A; quorum and forced controller are explicit",
+      "status": "PASS"
+    },
+    {
+      "test": "S10-P04 no restoration on missing controller, no duplicate/invalid/dead voting, lock required",
+      "status": "PASS"
+    },
+    {
+      "test": "S10-P05 muted voting remains a policy decision and never becomes official",
+      "status": "PASS"
+    },
+    {
+      "test": "S10-coverage 145 source-audited branches grouped without rule promotion and technical dependencies are acyclic",
+      "status": "PASS"
+    },
+    {
+      "test": "S10-coverage 97-row versioned matrix matches registered restricted adapters and unmodified official sources",
+      "status": "PASS"
+    },
+    {
+      "test": "S11 V02 terminal invalidation survives certified coercion; missing controller and overlapping controls fail closed",
+      "status": "PASS"
+    },
+    {
+      "test": "S11 muted voter eligibility and dead target fail-closed (pure policy unit, not gameplay proof)",
+      "status": "PASS"
+    },
+    {
+      "test": "S11 real multiplayer: zero, tie, blank, changed ballot, retry, hanging, co-winners, restart and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "S11 second certified configuration: real seer skill, concurrent vote revision, hanging and knight victory",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 [8,25,28] night attack then hanging: simultaneous winners",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 [8,9,25,28] multi-round night deaths and hanging, closed chains and private events",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 [8,9,25] knight hanging blocks missing faction predicate, no artificial winner, retry rollback",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 [8,9,28] knight hanging continues with a living independent contender, Jester hanging completes",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 durable metric evidence 8,25",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 durable metric evidence 8,25,28",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 durable metric evidence 8,28",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 durable metric evidence 8,9,25",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 durable metric evidence 8,9,25,28",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 durable metric evidence 8,9,28",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 pending chain / pending actions cannot be classified as continuation (unit, no gameplay metric)",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 real HTTP: shield absorbs once, retry, next attack kills, restart replay",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 shield expires after two nights without attack",
+      "status": "PASS"
+    },
+    {
+      "test": "S12 shield survives creator death and absorbs in following night; knight wins after hanging",
+      "status": "PASS"
+    },
+    {
+      "test": "S13-01 #11 maintenance protects #25 from #76 nightmare in a real game session",
+      "status": "PASS"
+    },
+    {
+      "test": "S13-02 #16 antidote absorbs real #8 night attack; poison triggers next-night skill lock",
+      "status": "PASS"
+    },
+    {
+      "test": "S13-03 #24 jail blocks inspection and absorbs a night attack; rule-private events",
+      "status": "PASS"
+    },
+    {
+      "test": "S13-04 #66 guard blocks lethal attack, persists and expires, uses 3 charges max",
+      "status": "PASS"
+    },
+    {
+      "test": "S13-05 #67 shield blocks real attack; exactly two shields per game",
+      "status": "PASS"
+    },
+    {
+      "test": "S13-06 #59 day injury prevents next-night action and cannot silently kill on repeat",
+      "status": "PASS"
+    },
+    {
+      "test": "S13-07 #17 public judgment reveals only the certified wolf and permanently disables the skill",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #16 two poison targets consume one use, faction-specific next-night effect",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #17 judgment on villager causes persistent public-chat mute but no vote denial",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #23 one shield absorbs #36 fireball, then expires; persistence and private events",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #32 authoritative attack, retry, privacy and restart",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #32 day shot permitted, night shot in same round denied after shielded shot",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #36 authoritative attack, retry, privacy and restart",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #50 public chat mute, WS/HTTP ACL, restart, expiry",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #52 solo dog consumes protection and expires",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #59 second stone kills and reveals Ná Thủ only after second hit",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #67 authoritative attack, retry, privacy and restart",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #67 shield and sword both accepted in same night, valid shield blocks sword",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #68 death-follow chain commits before certified knight victory",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #68 no preselected target means no secondary death (VH36)",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #78 authoritative attack, retry, privacy and restart",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #84 public chat mute, WS/HTTP ACL, restart, expiry",
+      "status": "PASS"
+    },
+    {
+      "test": "S14 #88 death-follow chain commits before certified knight victory",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #15 single-target lethal branch commits official sole-survivor winner without binding",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #29 poison versus #67 shield: VH60 charges even when valid shield absorbs",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #36 fire and unused shield may both be spent in one night, no false reveal",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #36 fireball targets non-seer knight in bounded official QA, independent shield and resource",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #36 shield absorbs knight attack, role feedback private, once per match",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #43 two rounds two bullets, blocked then day shot, retry privacy restart",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #54 shot before voting, same-day exclusion, next-day reveal, retry and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #54 true role reveal only after first completed vote; once, public minimal payload, replay",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #58 compares same faction privately, then self plus different faction kills only other",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #66 sees only other protection recipients, not source or own protection",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #71 persistent disguise on living target changes aura only, next night still active",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #77 VH51 trap absorbs one lethal attack and counter kills knight without public cause",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #80 Không Tiếc Thương, previous-night death only, private relation, restart",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #80 Tiếc Thương, previous-night death only, private relation, restart",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 #87 sedative denies chat and ballot intake, expires next day, blank tally is official",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 UX: chat for ordinary approved seer/knight room, day-only, idempotency, outsiders and persistence",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 UX: seer aura and mystical seer exact role privately, public composition has no mapping, restart/replay",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 accelerated #29 poison consumes one use; death closure, private actor and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 accelerated #3 passive aura concealment does not distort exact-role #74",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 accelerated #93 seal and #94 passive concealment, lock expiry and vote/chat enforcement",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 accelerated match 8,25,28,74",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 accelerated match 8,74",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 accelerated match 8,9,25,74",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 accelerated match 8,9,28,74",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 accelerated match 8,9,74",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 aura expansion #49 private distortion, expiry, duplicate and restart",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 aura expansion #72 private distortion, expiry, duplicate and restart",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 breakthrough #19 anonymous ballot contract uses final valid ballot; #28 survives fulfilled contract then wins by real hanging",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 breakthrough #19 declined or breached contract cannot prevent true hanging",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 breakthrough #28 linked death is not hanging; only actual hanging earns co-win",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 breakthrough #37 swaps aura and actual hanging victim, never grants victory on selected-but-not-killed #28",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 breakthrough #55 cannot prevent solo night kill; untriggered mark expires for hanging and remains usable",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 breakthrough #55 protects #28 from actual hanging once; later true hanging and wolf parity co-win",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 breakthrough #8 hanging immunity with wolf alive, no fallback candidate, later knight victory",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 breakthrough #94 redirect to actual victim, private alignment transition on subsequent #94 death",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 breakthrough #94 self effigy converts #93 before victory, identity effigy never creates duplicate death",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 certified complete match 8,25,74",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 certified complete match 8,28,74",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 closure Hunter hanging pulls wolf as secondary without opening revenge or duplicating death",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 closure death ledger rejects missing, duplicated and reopened death chains before victory",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 closure night-only snow protection cannot block daytime Hunter follow",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 closure primary shield prevents Hunter death and follow; next night mark may be renewed",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 closure revenge kills Hunter and follows pinned villager before closing original chain",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 closure snow protection expires before the third night Hunter follow",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 closure snow shield persists after owner dies and is consumed once",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 deep #15 secret link once per target, vote death chain closes before sole winner",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 deep #28 PH-02 cancelled leading ballot cannot win; actual later hanging can win",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 deep #28 hanging wins with other contenders alive, non-final trigger cannot win",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 deep #29 preliminary rescue + poison in same night, private notice and exact-once resources",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 deep #29 self rescue per NV32, second use rejected, no-rescue deaths close before winner",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 deep #58 two other factions die, Jester killed at night does not win",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 deep #63 redirect begins night two, unsuccessful mark free, cooldown and actual recipient",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 deep #85 redirect actual victim, consecutive target forbidden, durable winner",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 deep C boundary: knight hanging without a verified village predicate must not invent a winner",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 deep five-seat mixed inspection, protection, knight and Jester co-win by vote",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 deep two-seat snow protects self, blank vote, knight wins by hanging",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 final #28 direct hanging remains winning despite a live Hunter mark",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 final #33 actual hanging opens private post-death response; choice commits secondary before victory",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 final #33 decline revenge closes chain without secondary death and no invented winner",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 final #87 may use its single rescue on itself while preliminarily bitten",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 final #87 privately receives both bite victims and rescues only one before wolf parity",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 final #88 already dead marked target is not eliminated twice",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 final #88 hanging follow kills #28 without Jester win; stable knight victory",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 final #88 hanging follow to Knight does not award Jester a false survivor win",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 final #88 hanging without mark does not eliminate secondary player; subsequent direct Jester win",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 final #88 night follow and #28 non-hanging death are closed before victory",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 final #88 stale mark without renewed choice fails atomically rather than inventing duration",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 final #93 current faction grants one-wolf two-target pack action after #94 hanging",
+      "status": "PASS"
+    },
+    {
+      "test": "S15 owner correction: historical v1.3.1 sessions retain exact role and valid replay; new sessions use aura",
+      "status": "PASS"
+    },
+    {
+      "test": "STARTUP-01 SQLite launches without DATABASE_URL from a real clean database",
+      "status": "PASS"
+    },
+    {
+      "test": "STARTUP-02 PostgreSQL mode refuses missing URL without opening SQLite or disclosing credentials",
+      "status": "PASS"
+    },
+    {
+      "test": "STARTUP-03 unknown provider and invalid port fail fast",
+      "status": "PASS"
+    },
+    {
+      "test": "STARTUP-04 occupied port returns diagnostic without killing the original server",
+      "status": "PASS"
+    },
+    {
+      "test": "STARTUP-05 correct demo env flag, production remains disabled",
+      "status": "PASS"
+    },
+    {
+      "test": "STARTUP-06 local .env is read; sqlite does not require a PostgreSQL URL",
+      "status": "PASS"
+    },
+    {
+      "test": "Scale #64 first marked death freezes pair; no second information or selection",
+      "status": "PASS"
+    },
+    {
+      "test": "Scale #64 pair replacement, no premature disclosure, day hanging and private role result",
+      "status": "PASS"
+    },
+    {
+      "test": "Scale #64 two simultaneous pack deaths reveal both once before victory",
+      "status": "PASS"
+    },
+    {
+      "test": "Scale QA [8,74] independent optional inspection on fatal night, both orders, exact-role privacy",
+      "status": "PASS"
+    },
+    {
+      "test": "Scale QA [8,74] inspection, abstain, retry, vote change, restart and Village victory",
+      "status": "PASS"
+    },
+    {
+      "test": "Scale QA [8,74] sixteen final ballots and valid terminal or next-round results",
+      "status": "PASS"
+    },
+    {
+      "test": "Scale leader double bite respects Snow Angel, independent victims, then Village co-wins",
+      "status": "PASS"
+    },
+    {
+      "test": "Scale leader protection precedes preliminary death and rescue; no protected victim in private list",
+      "status": "PASS"
+    },
+    {
+      "test": "Scale production room cannot start an official QA composition without test mode",
+      "status": "PASS"
+    },
+    {
+      "test": "Sprint03 approved stage typography has no per-character animation or clipping",
+      "status": "PASS"
+    },
+    {
+      "test": "Sprint03 skill feedback renders a completed server-issued message in one DOM update",
+      "status": "PASS"
+    },
+    {
+      "test": "Sprint03 stage dialogue renders all text synchronously without typewriter loops",
+      "status": "PASS"
+    },
+    {
+      "test": "Stability BB: empty split windows retain mark, later poison-only window consumes once",
+      "status": "PASS"
+    },
+    {
+      "test": "Stability five-player #31/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Stability five-player #9/#87: self rescue, two resources, mute/vote expiry, dead healer continuation and replay",
+      "status": "PASS"
+    },
+    {
+      "test": "Three-player current-rule kernel: all 125 first ballot combinations and 32 two-survivor combinations",
+      "status": "PASS"
+    },
+    {
+      "test": "Three-player current-rule kernel: all 27 night choices in both submission orders and remaining night kill",
+      "status": "PASS"
+    },
+    {
+      "test": "UX: action acceptance is not a resolved result; game text remains instant",
+      "status": "PASS"
+    },
+    {
+      "test": "UX: approved Codex is intact while navigation uses only Bách khoa terminology",
+      "status": "PASS"
+    },
+    {
+      "test": "UX: game and room statuses use player language; unknown states do not print engine enums",
+      "status": "PASS"
+    },
+    {
+      "test": "UX: lobby map and directory use same backend room list, not prototype default rooms",
+      "status": "PASS"
+    },
+    {
+      "test": "UX: private results are projected from server, and technical action IDs stay in markup attributes only",
+      "status": "PASS"
+    },
+    {
+      "test": "UX: reconnect rehydrates server state and frontend discards stale revisions",
+      "status": "PASS"
+    },
+    {
+      "test": "UX: server error codes map to Vietnamese without exposing backend code or arbitrary messages",
+      "status": "PASS"
+    },
+    {
+      "test": "UX: settings do not present local prototype JSON export/import as server account backup",
+      "status": "PASS"
+    },
+    {
+      "test": "UX: static backend serves new assets same-origin without exposing arbitrary source",
+      "status": "PASS"
+    },
+    {
+      "test": "UX: test:03:codex uses separate explicit test paths, not concatenated filenames",
+      "status": "PASS"
+    },
+    {
+      "test": "UX: unavailable mock ranking, history and overview are hidden in authenticated main navigation",
+      "status": "PASS"
+    },
+    {
+      "test": "VH10/VH41-like fixture: valid lock cancels accepted action without charging resources",
+      "status": "PASS"
+    },
+    {
+      "test": "admission seals phase and historical ruleVersion mismatch cannot be accepted",
+      "status": "PASS"
+    },
+    {
+      "test": "atomic rollback on adapter throw: no half state or events or charges committed",
+      "status": "PASS"
+    },
+    {
+      "test": "complete match is blocked until confirmed victory predicates exist",
+      "status": "PASS"
+    },
+    {
+      "test": "faction/group event cannot leak to a later joiner when historical audience is missing",
+      "status": "PASS"
+    },
+    {
+      "test": "idempotency: same action retry is no-op, conflicting payload is rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "new idempotency key cannot reuse same actionId; payload must be a dictionary",
+      "status": "PASS"
+    },
+    {
+      "test": "permission: production registry refuses unregistered role skills and opt-in fixtures",
+      "status": "PASS"
+    },
+    {
+      "test": "queued actions do not resolve before phase close and priority beats request order",
+      "status": "PASS"
+    },
+    {
+      "test": "rejects duplicated/unknown initial character IDs; allows 1 human and rejects >97 unique slots",
+      "status": "PASS"
+    },
+    {
+      "test": "replay converges to same final state when unrelated commands arrive in opposite request order",
+      "status": "PASS"
+    },
+    {
+      "test": "replay detects tampered event even when persisted state remains unchanged",
+      "status": "PASS"
+    },
+    {
+      "test": "resource ledger: successful resolved fixture spends one charge and does not double-spend on retry",
+      "status": "PASS"
+    },
+    {
+      "test": "revalidation: target dead before accepted hit is resolved fails closed and rolls back whole batch",
+      "status": "PASS"
+    },
+    {
+      "test": "snapshot + replay survives SQLite restart",
+      "status": "PASS"
+    },
+    {
+      "test": "source: 97 unique roles unchanged; 118 decision registry, 207 separate legacy specs",
+      "status": "PASS"
+    },
+    {
+      "test": "state machine rejects invalid transitions, advances round only after day",
+      "status": "PASS"
+    },
+    {
+      "test": "unimplemented domain effect fails closed without partial state write",
+      "status": "PASS"
+    },
+    {
+      "test": "unknown adapter at resolution leaves accepted action queued and state untouched",
+      "status": "PASS"
+    },
+    {
+      "test": "validator rejects phase mismatch, non-member, forbidden target, exhausted resources",
+      "status": "PASS"
+    }
+  ],
+  "liveRetest": {
+    "B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL": "PASS",
+    "B/B live trap: delayed valid use, private typed results, two placements, consumption and restart": "PASS",
+    "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged": "PASS",
+    "B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay": "PASS",
+    "B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory": "PASS",
+    "B/B live Witch: poison-only consumes trap and potion, later rescue is normal": "PASS",
+    "B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)": "PASS",
+    "B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay": "PASS",
+    "B/B owner final: separate rescue and poison windows persist one nightly trap group": "PASS",
+    "B/B owner final: representative RNG is server-bound and waiting survives restart": "PASS",
+    "B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn": "PASS",
+    "B/B owner final: ranked eligible members are filtered without reshuffle": "PASS",
+    "Stability BB: empty split windows retain mark, later poison-only window consumes once": "PASS",
+    "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory": "PASS",
+    "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory": "PASS",
+    "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative": "PASS",
+    "Privacy mixed pack: indistinguishable secret-faction worlds and blind receipt": "PASS",
+    "Privacy mixed pack: real REST/WS receipts, no faction oracle, KEEP, restart and authorized events": "PASS"
+  },
+  "candidateRetest": {
+    "BBv2 13 authenticated candidate pack resolution: real independent accounts, persisted QA Game Session, reconnect/restart, no official archive mutation": "PASS",
+    "BBv2 real accepted engineer queue: trap on 25, typed result, atomic journal, old archive unchanged": "PASS",
+    "BBv2 real accepted engineer queue: trap on 74, typed result, atomic journal, old archive unchanged": "PASS",
+    "BBv2 real accepted engineer queue: trap on 5, typed result, atomic journal, old archive unchanged": "PASS",
+    "BBv2 01 wait for all responses, no random target, KEEP previous valid selection": "PASS",
+    "BBv2 02 all respond but first blank or divergent sets, no bite even common target": "PASS",
+    "BBv2 03 canonical set agreement and same representative for two bites; retry and privacy": "PASS",
+    "BBv2 04 membership at lock: revoked wolf ignored, new wolf must respond, fixed order cannot change": "PASS",
+    "BBv2 05 two attacks: first counter kills representative, second still executes, no duplicate deaths": "PASS",
+    "BBv2 06 pack protection shared consumption; unsupported stack fails closed": "PASS",
+    "BBv2 07 group BB05=B all executed inspections inverted once; blocked action not trigger; RNG/private": "PASS",
+    "BBv2 08 BB04=B guard inverse bypasses shield, no protection consumption, direct death once": "PASS",
+    "BBv2 09 inverse rescue finalizes preliminary death exactly once, ignores other shield; poison suppressed": "PASS",
+    "BBv2 10 unknown effect or death reaction aborts whole group with waiting mark, no partial mutation": "PASS",
+    "BBv2 11 journal commits candidate pack atomically, persists waiting then lock, restart and replay, v1 isolation": "PASS",
+    "BBv2 12 journal trap commit and group replay, private RNG, failed group has no effect": "PASS",
+    "BBv2 14 no execution keeps mark through multiple nights, second placement and duplicate target constraints": "PASS",
+    "BBv2 15 old candidate journal remains replayable beside new profile; disabled by default": "PASS",
+    "BBv2 16 direct inversion does not bypass unsupported death chains or create partial journal commit": "PASS"
+  },
+  "logs": [
+    "reports/s15-privacy-stability/backend-full.log"
+  ],
+  "focusedDiagnostics": [
+    "privacy-first.log",
+    "shared-first.log",
+    "revival-ledger.log"
+  ]
+}

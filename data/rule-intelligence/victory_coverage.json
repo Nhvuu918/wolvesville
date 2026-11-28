@@ -1,0 +1,26 @@
+{
+  "ruleset": "wolvesville-official-v1.3.1",
+  "verifiedSourceRuleIds": [
+    "VH03",
+    "VH06",
+    "VH26",
+    "VH58",
+    "VH71",
+    "VH82",
+    "SK-03",
+    "REL-02",
+    "Q13-08"
+  ],
+  "genericVictoryResolverImplemented": false,
+  "restrictedPackMayComplete": false,
+  "competitive": false,
+  "sourceDecisionCount": 9,
+  "notEquivalentToExecutableVictoryPredicates": true,
+  "requirements": [
+    "Complete event-chain closure (VH03)",
+    "Individual/group faction-specific predicates",
+    "Life-state accounting (VH06,VH58,Q13-05)",
+    "Co-win and independent factions",
+    "Regression tests of simultaneous win and unresolved branch fail-close"
+  ]
+}

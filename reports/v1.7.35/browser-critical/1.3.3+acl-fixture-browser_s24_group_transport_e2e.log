@@ -1,0 +1,10 @@
+E2E_SCHEDULER_WAIT exclusive 24629
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 574
+E2E_RESOURCE start cpu "usage_usec 3053598996\nuser_usec 2535971719\nsystem_usec 517627276\nnice_usec 2003602\nnr_periods 28775\nnr_throttled 1055\nthrottled_usec 32501279\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s24_group_transport_e2e.py default port 41789 db /tmp/wolvesville-s06-browser-78mJdN/test.sqlite
+S24_GROUP_TRANSPORT_FIXTURE_BROWSER_PASS
+S06_BROWSER_PASS browser_s24_group_transport_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 3088941289\nuser_usec 2564135394\nsystem_usec 524805894\nnice_usec 2054898\nnr_periods 28918\nnr_throttled 1069\nthrottled_usec 33139462\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

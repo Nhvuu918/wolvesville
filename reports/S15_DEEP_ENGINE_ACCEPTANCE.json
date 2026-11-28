@@ -1,0 +1,38 @@
+{
+  "version": "1.7.15-s15-deep-engine-wip",
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "competitiveProduction": "NO_GO",
+  "sourceIntegrity": "PASS",
+  "backendGate": "PASS_MONOLITHIC",
+  "backend": {
+    "tests": 369,
+    "pass": 358,
+    "fail": 0,
+    "skipped": 11,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "browser": {
+    "total": 62,
+    "PASS": 14,
+    "FAIL": 0,
+    "INCOMPLETE": 48
+  },
+  "matrix": {
+    "total": 97,
+    "PASS": 18,
+    "FAIL": 0,
+    "INCOMPLETE": 79
+  },
+  "newCurrentRoleProof": {
+    "10": true,
+    "26": true
+  },
+  "newNormalDecksWithBoth": 6,
+  "fullCurrentRevalidated": true,
+  "qaCurrentRevalidated": 0,
+  "playableCurrentRevalidated": 0,
+  "postgreSQLLive": "PENDING",
+  "multiWolfConsensus": "PROPOSED_ONLY_UNCHANGED",
+  "qualityScope": "WIP. Full manifest not accepted unless all obligations pass. No new FULL/Branch Complete certificate."
+}

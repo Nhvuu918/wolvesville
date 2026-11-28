@@ -1,0 +1,74 @@
+{
+  "sourceDocument": "docs/SPRINT15_BREAKTHROUGH_RULE_DERIVATIONS.md",
+  "records": [
+    {
+      "ruleSources": "#8, VH06, S11-V03",
+      "verifiedPremises": "Cannot hang until all wolves killed; vote authorization is not death",
+      "derivedBehaviorAndEngineering": "After V03 selection, check living wolf count before death",
+      "conflictChecksAndLimits": "With living #55, no death or winner; after #55 dies, knight may win by attack. Competing immunity remains fail-closed.",
+      "ruleVersion": "1.7.6-s15-breakthrough-wip",
+      "evidenceFile": "tests/sprint15-breakthrough.test.mjs",
+      "status": "RESTRICTED_IMPLEMENTED_NOT_FULL"
+    },
+    {
+      "ruleSources": "#55, S11-V03",
+      "verifiedPremises": "Choose a player at night; one village killing/hanging protection; successful rescue loses special ability",
+      "derivedBehaviorAndEngineering": "Protect authorized hanging during next day, consume only on success; private ordinary-wolf label and durable spent marker, immutable role ID",
+      "conflictChecksAndLimits": "Tests for #28 protection, later true hanging, expiry and knight solo attack not blocked. Village attack protection and ordinary wolf pack action remain missing.",
+      "ruleVersion": "1.7.6-s15-breakthrough-wip",
+      "evidenceFile": "tests/sprint15-breakthrough.test.mjs",
+      "status": "RESTRICTED_IMPLEMENTED_NOT_FULL"
+    },
+    {
+      "ruleSources": "#19, NV21, S11-V02/V03",
+      "verifiedPremises": "Anonymous one-per-type ballot contract; recipient responds immediately; following-day vote as instructed gives immunity",
+      "derivedBehaviorAndEngineering": "Offer and response resolve immediately in a transaction; check final valid ballot after adjudication; settlement records success/failure without changing vote counts",
+      "conflictChecksAndLimits": "Accepted/declined/breached, changed vote, retry, unauthorized response and anonymous event checks. Other contracts, same recipient and ballot target (two-target encoding), punishment, self-contract and 3-contract win not certified.",
+      "ruleVersion": "1.7.6-s15-breakthrough-wip",
+      "evidenceFile": "tests/sprint15-breakthrough.test.mjs",
+      "status": "RESTRICTED_IMPLEMENTED_NOT_FULL"
+    },
+    {
+      "ruleSources": "#37, VH14, VH15",
+      "verifiedPremises": "Pair exchange lasts from current night until end of following day; inspection sees counterpart; hanging substitutes counterpart",
+      "derivedBehaviorAndEngineering": "Apply one transposition to aura source and actual hanging target; original audit untouched; actual death determines win",
+      "conflictChecksAndLimits": "Tests both directions with #25/#28, role secrecy and expiration. Exact-role swap and attack exchange not implemented; overlapping redirects fail closed.",
+      "ruleVersion": "1.7.6-s15-breakthrough-wip",
+      "evidenceFile": "tests/sprint15-breakthrough.test.mjs",
+      "status": "RESTRICTED_IMPLEMENTED_NOT_FULL"
+    },
+    {
+      "ruleSources": "#28, #15, NV31, VH03, VH65",
+      "verifiedPremises": "Actual hanging required for Jester; linked death is a separate cause; concurrent winners preserved",
+      "derivedBehaviorAndEngineering": "Reuse secret pair in [15,25,28] and evaluate winners after both committed deaths",
+      "conflictChecksAndLimits": "Test #28 death as linked secondary vs direct hanging; no false winner. #88 hanging follow and #33 revenge closure still need integration.",
+      "ruleVersion": "1.7.6-s15-breakthrough-wip",
+      "evidenceFile": "tests/sprint15-breakthrough.test.mjs",
+      "status": "RESTRICTED_IMPLEMENTED_NOT_FULL"
+    },
+    {
+      "ruleSources": "#94, #93",
+      "verifiedPremises": "Effigy receives entire night lethal damage aimed at exile; partner death breaks seal and exile joins wolves",
+      "derivedBehaviorAndEngineering": "Resolve one target mapping; identity mapping is not recursive; mutate currentFaction, preserve initialFaction and ID, private transition event",
+      "conflictChecksAndLimits": "Tests distinct, identity, self recipient and partner death. Multiple protection/redirect classes not certified; double-bite/pack action unresolved; no inferred post-conversion aura.",
+      "ruleVersion": "1.7.6-s15-breakthrough-wip",
+      "evidenceFile": "tests/sprint15-breakthrough.test.mjs",
+      "status": "RESTRICTED_IMPLEMENTED_NOT_FULL"
+    },
+    {
+      "ruleSources": "WIN-03, VH03, VH58",
+      "verifiedPremises": "Wolf parity with no competing faction; stable chain required",
+      "derivedBehaviorAndEngineering": "Shared parity evaluator in admitted decks; does not infer dead wolf membership or village victory",
+      "conflictChecksAndLimits": "#55/#28 co-win after actual death. Other surviving sole-villager path from deep counterexample still blocked.",
+      "ruleVersion": "1.7.6-s15-breakthrough-wip",
+      "evidenceFile": "tests/sprint15-breakthrough.test.mjs",
+      "status": "RESTRICTED_IMPLEMENTED_NOT_FULL"
+    }
+  ],
+  "unresolved": [
+    "general village victory",
+    "generalized simultaneous redirect/protection order",
+    "wolf pack action and double bite after alignment transition",
+    "mandatory post-hanging chain"
+  ]
+}

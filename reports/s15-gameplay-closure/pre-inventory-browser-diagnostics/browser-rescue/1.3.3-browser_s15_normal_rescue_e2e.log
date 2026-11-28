@@ -1,0 +1,28 @@
+E2E_STAGE village setup
+E2E_STAGE village night
+E2E_STAGE village rescue
+E2E_STAGE village day-vote
+GROWTH_NORMAL_RESCUE_BROWSER_PASS village
+E2E_STAGE village cleanup
+E2E_CONTEXT_CLOSED 0 0.121
+E2E_CONTEXT_CLOSED 1 0.188
+E2E_CONTEXT_CLOSED 2 0.111
+E2E_CONTEXT_CLOSED 3 0.088
+E2E_CONTEXT_CLOSED 4 0.083
+E2E_STAGE village cleanup-complete
+S06_BROWSER_CASE_PASS browser_s15_normal_rescue_e2e.py village
+E2E_STAGE wolf setup
+E2E_STAGE wolf night
+E2E_STAGE wolf rescue
+E2E_STAGE wolf day-vote
+GROWTH_NORMAL_RESCUE_BROWSER_PASS wolf
+E2E_STAGE wolf cleanup
+E2E_CONTEXT_CLOSED 0 0.133
+E2E_CONTEXT_CLOSED 1 0.227
+E2E_CONTEXT_CLOSED 2 0.14
+E2E_CONTEXT_CLOSED 3 0.183
+E2E_CONTEXT_CLOSED 4 0.145
+E2E_STAGE wolf cleanup-complete
+S06_BROWSER_CASE_PASS browser_s15_normal_rescue_e2e.py wolf
+S06_BROWSER_PASS browser_s15_normal_rescue_e2e.py
+S06_BROWSER_ALL_1_PASS

@@ -1,0 +1,90 @@
+{
+  "version": "1.7.24-s15-gameplay-closure-wip",
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "sourceFingerprint": "611eda16bbcf0f48530cc6174c03912206578aefd857f236fe255bf4bd066d52",
+  "backendGate": "PASS",
+  "backend": {
+    "tests": 450,
+    "pass": 439,
+    "fail": 0,
+    "skipped": 11,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "browser": {
+    "total": 72,
+    "PASS": 33,
+    "FAIL": 2,
+    "INCOMPLETE": 37
+  },
+  "matrix": {
+    "total": 107,
+    "PASS": 39,
+    "FAIL": 2,
+    "INCOMPLETE": 66
+  },
+  "revivalRegression": "RETEST_PASS_AFTER_HELPER_FIX",
+  "liveBackend": {
+    "B/B live pack: wait, KEEP, disagreement, consensus, protection, victory, SQLite replay and ACL": "PASS",
+    "B/B live trap: delayed valid use, private typed results, two placements, consumption and restart": "PASS",
+    "B/B profiles are opt-in, not normal mode, and old official trap semantics unchanged": "PASS",
+    "B/B live inverted guard: delayed trap, direct death, cooldown, one consumption and closed replay": "PASS",
+    "B/B live Witch: two-pot group inversion after empty nights, one mark, two resources, restart and Victory": "PASS",
+    "B/B live Witch: poison-only consumes trap and potion, later rescue is normal": "PASS",
+    "B/B live Witch: inverted self-rescue does not cancel already accepted poison (PH-01)": "PASS",
+    "B/B live sole leader: valid two-bite entitlement, retaliation first, second committed, Village co-winners and replay": "PASS",
+    "B/B owner final: separate rescue and poison windows persist one nightly trap group": "PASS",
+    "B/B owner final: representative RNG is server-bound and waiting survives restart": "PASS",
+    "B/B owner final: split self-rescue does not discard accepted poison, no public death before dawn": "PASS",
+    "B/B owner final: ranked eligible members are filtered without reshuffle": "PASS",
+    "Stability BB: empty split windows retain mark, later poison-only window consumes once": "PASS",
+    "BB-REP-NEW-01 B: live #93 conversion uses original all-player order, entitlement, restart and victory": "PASS",
+    "B/B mixed pack: lawful #93 conversion, shared entitlement, KEEP, retry, restart and wolf victory": "PASS",
+    "B/B mixed pack: converted #93 and #48 lock two bites, retaliation keeps same representative": "PASS"
+  },
+  "selectorTest": "PASS",
+  "liveBrowser": {
+    "pack": "PASS",
+    "trap": "PASS",
+    "guard": "PASS",
+    "witch": "PASS",
+    "retaliation": "PASS",
+    "cross_window": "PASS",
+    "conversion": "PASS",
+    "mixed": "PASS"
+  },
+  "freshCertificates": {
+    "F": 1,
+    "qaC": 2,
+    "playableC": 5,
+    "S_pass": 79
+  },
+  "newFull": [],
+  "newPlayable": [],
+  "mixedLiveVerified": true,
+  "mageBackend": true,
+  "mageBrowser": true,
+  "officialActivation": false,
+  "ownerQA": "PENDING",
+  "postgreSQLLive": "PENDING",
+  "competitiveProduction": "NO_GO",
+  "legacySourceChecksumChanged": [
+    "README.md",
+    "backend/src/engine/service.ts",
+    "backend/src/experimental/owner-bb-v2/live-profile.ts",
+    "backend/src/experimental/owner-bb-v2/runtime.ts",
+    "backend/src/game/coordinator.ts",
+    "backend/src/official/final-pack.ts",
+    "backend/src/official/inspection-rules.ts",
+    "backend/src/official/s13-mechanics.ts",
+    "data/rule-intelligence/source_inventory.json",
+    "frontend/integration.js",
+    "package.json",
+    "scripts/s15-bb-official-browser-matrix.mjs",
+    "tests/browser_s15_scale_rescue_e2e.py",
+    "tests/sprint15-bb-live.test.mjs",
+    "tests/sprint15-normal.test.mjs",
+    "tests/sprint15-roles.test.mjs"
+  ],
+  "legacyReportsUnchanged": 2547
+}

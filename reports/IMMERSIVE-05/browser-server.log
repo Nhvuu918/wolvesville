@@ -1,0 +1,3 @@
+(node:19005) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Wolvesville Sprint07 http://127.0.0.1:3410 | SQLite | officialTest=false | competitive=DISABLED

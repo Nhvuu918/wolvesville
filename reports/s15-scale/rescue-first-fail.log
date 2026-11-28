@@ -1,0 +1,5 @@
+SCENARIO_READY s15-scale-leader-rescue
+SCENARIO_ACTIONS_PASS s15-scale-leader-rescue
+S15_SCALE_RESCUE_BROWSER_PASS
+Error: E2E timeout browser_s15_scale_rescue_e2e.py: cleanup did not finish; not counted PASS
+    at file:///mnt/data/s15scale/scripts/run-browser-s06.mjs:41:10

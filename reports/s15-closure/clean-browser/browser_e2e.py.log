@@ -1,0 +1,10 @@
+PASS Browser: two independent accounts authenticate via backend
+PASS Browser: Room created and joined by two independently authenticated contexts
+PASS Browser: server game session, private role projections, official 97-role catalog and WebSocket notification
+PASS Browser: accepted skill has pending notification, no premature or cross-client result
+PASS Browser: resolved private result only to actor; both clients sync phase
+PASS Browser: fresh document restores authorized game and private result from server
+PASS Browser: reconnect preserves one durable result and complete immediate text
+PAGE ERRORS []
+S06_BROWSER_PASS browser_e2e.py
+S06_BROWSER_ALL_1_PASS

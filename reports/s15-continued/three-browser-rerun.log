@@ -1,0 +1,6 @@
+CONTINUED_THREE_BROWSER_PASS village
+S06_BROWSER_CASE_PASS browser_s15_continued_three_e2e.py village
+CONTINUED_THREE_BROWSER_PASS knight
+S06_BROWSER_CASE_PASS browser_s15_continued_three_e2e.py knight
+S06_BROWSER_PASS browser_s15_continued_three_e2e.py
+S06_BROWSER_ALL_1_PASS

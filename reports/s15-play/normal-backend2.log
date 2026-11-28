@@ -1,0 +1,54 @@
+TAP version 13
+# (node:58031) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# NORMAL_PLAY_EVIDENCE {"deck":[8,25],"mode":"NORMAL_GAMEPLAY","ruleVersion":"wolvesville-official-v1.3.3","victory":"VILLAGE","restart":true,"replay":true,"privacy":true}
+# Subtest: Normal gameplay real authenticated session: readiness, QA isolation, private aura, chat, vote, restart, reconnect and Village victory
+ok 1 - Normal gameplay real authenticated session: readiness, QA isolation, private aura, chat, vote, restart, reconnect and Village victory
+  ---
+  duration_ms: 849.277902
+  type: 'test'
+  ...
+# NORMAL_PLAY_EVIDENCE {"deck":[8,74],"mode":"NORMAL_GAMEPLAY","ruleVersion":"wolvesville-official-v1.3.3","victory":"KNIGHT","restart":true,"replay":true,"privacy":true}
+# Subtest: Normal gameplay exact-role seer, night kill, dead player actions denied and persisted Knight victory
+ok 2 - Normal gameplay exact-role seer, night kill, dead player actions denied and persisted Knight victory
+  ---
+  duration_ms: 383.428802
+  type: 'test'
+  ...
+# NORMAL_BRANCH_EVIDENCE {"deck":[8,25],"ballotCombinations":16,"mode":"NORMAL_GAMEPLAY","replay":true}
+# Subtest: Normal [8,25] all 16 final ballot combinations in real rooms, V02/V03, both winning sides
+ok 3 - Normal [8,25] all 16 final ballot combinations in real rooms, V02/V03, both winning sides
+  ---
+  duration_ms: 4813.127139
+  type: 'test'
+  ...
+# NORMAL_BRANCH_EVIDENCE {"deck":[8,25],"nightScenarios":5,"mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true}
+# Subtest: Normal [8,25] four optional night branches plus reversed submission, phase and target rejection
+ok 4 - Normal [8,25] four optional night branches plus reversed submission, phase and target rejection
+  ---
+  duration_ms: 1165.983657
+  type: 'test'
+  ...
+# NORMAL_BRANCH_EVIDENCE {"deck":[8,74],"ballotCombinations":16,"mode":"NORMAL_GAMEPLAY","replay":true}
+# Subtest: Normal [8,74] all 16 final ballot combinations in real rooms, V02/V03, both winning sides
+ok 5 - Normal [8,74] all 16 final ballot combinations in real rooms, V02/V03, both winning sides
+  ---
+  duration_ms: 4908.28209
+  type: 'test'
+  ...
+# NORMAL_BRANCH_EVIDENCE {"deck":[8,74],"nightScenarios":5,"mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true}
+# Subtest: Normal [8,74] four optional night branches plus reversed submission, phase and target rejection
+ok 6 - Normal [8,74] four optional night branches plus reversed submission, phase and target rejection
+  ---
+  duration_ms: 1222.503907
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 13494.654141

@@ -1,0 +1,33 @@
+E2E_SCHEDULER_WAIT exclusive 15241
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 754
+E2E_RESOURCE start cpu "usage_usec 1918504450\nuser_usec 1600799771\nsystem_usec 317704678\nnice_usec 1053995\nnr_periods 24230\nnr_throttled 599\nthrottled_usec 17306344\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s25_themes_e2e.py default port 43325 db /tmp/wolvesville-s06-browser-Etl164/test.sqlite
+ACTUAL_SCREENSHOT title {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT login {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT register {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT wheel {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT grid {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT character-detail {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT moon {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT gothic {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT classic {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT basicdark {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT basiclight {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT cream {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT sage {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT europe {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT eastasia {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT jade {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT sakura {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT loli {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT frost {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT bloodmoon {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT forest {'width': 1366, 'height': 768} 0 []
+ACTUAL_SCREENSHOT royal {'width': 1366, 'height': 768} 0 []
+S25_THEME_PREVIEWS_PASS
+E2E_CONTEXT_CLOSED 0 0.031
+S06_BROWSER_PASS browser_s25_themes_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 1931016630\nuser_usec 1611020144\nsystem_usec 319996485\nnice_usec 1057677\nnr_periods 24312\nnr_throttled 600\nthrottled_usec 17389683\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

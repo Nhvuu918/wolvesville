@@ -1,0 +1,20 @@
+E2E_SCHEDULER_WAIT exclusive 46013
+E2E_SCHEDULER_ACQUIRED exclusive waitMs 772
+E2E_RESOURCE start cpu "usage_usec 10225421904\nuser_usec 8194223005\nsystem_usec 2031198899\nnice_usec 2905701\nnr_periods 52558\nnr_throttled 4799\nthrottled_usec 177986733\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE start memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"
+E2E_ISOLATION browser_s15_bb_mixed_e2e.py default port 33933 db /tmp/wolvesville-s06-browser-5Rg9Cc/test.sqlite
+SCENARIO_READY bb-live-mixed
+E2E_STAGE pre-conversion
+E2E_STAGE mixed-consensus
+SCENARIO_ACTIONS_PASS bb-live-mixed
+E2E_CONTEXT_CLOSED 0 0.047
+E2E_CONTEXT_CLOSED 1 0.047
+E2E_CONTEXT_CLOSED 2 0.042
+E2E_CONTEXT_CLOSED 3 0.05
+E2E_CONTEXT_CLOSED 4 0.043
+E2E_CONTEXT_CLOSED 5 0.061
+BB_MIXED_PACK_BROWSER_PASS
+S06_BROWSER_PASS browser_s15_bb_mixed_e2e.py
+S06_BROWSER_ALL_1_PASS
+E2E_RESOURCE end cpu "usage_usec 10325661035\nuser_usec 8270995251\nsystem_usec 2054665783\nnice_usec 2996395\nnr_periods 52916\nnr_throttled 4877\nthrottled_usec 181751134\nnr_bursts 0\nburst_usec 0"
+E2E_RESOURCE end memory "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0"

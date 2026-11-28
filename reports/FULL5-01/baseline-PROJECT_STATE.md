@@ -1,0 +1,15 @@
+# FULL50-UNIVERSAL-01 — development checkpoint, FULL-50 NOT MET
+
+Source fingerprint `d77300af6c8ac3b1e092e17e3288cf94291ea11959833ab1c5aeea3dd92bbf38`. M1-02 CRC and 5048 payload hashes verified. Historical F 1/97 → 1/97; fresh FULL 1 → 1; no new FULL. Official Normal decks 16 unchanged. Six internal-development Normal configurations use the real readiness/random assignment/action/commit path, QA disabled. 97 roles, 118 historical decisions, 207 legacy specs, 25 legacy Owner choices, 48 responses and 2 clarifications preserved.
+
+## Implementation
+- `backend/src/official/lifecycle-composition.ts`: capability registry for #8/#25/#27/#29/#31/#64/#74/#97, admission decoupled from resolution; 88 structural subsets, not 88 runtime passes. Only one supported independent attacker (#8). #27 + #74 blocked until transformed-role projection is supported. Legacy exact-roster V1–V3 behavior retained.
+- `life02.ts` selects rescue and guard windows by capability for new compositions. Service/coordinator persist explicit composition/scope; normal path derives profile on server. Archive preserves existing internal matches when admission disabled. Authorized visibility exposes scope only. Frontend has generic QA composition input and internal Normal label. No new hardcoded exact roster resolver.
+- Six internal Normal configurations [[8, 25, 31], [8, 31, 74], [8, 25, 31, 74], [8, 25, 31, 64], [8, 31, 64, 74], [8, 25, 31, 64, 74]]; all API verified, one Chromium scenario verified. Enable only locally with `WV_LIFE_MODULES_DEV_NORMAL=1 npm run dev:demo`. Default off, production and archived regression disabled. Rollback by clearing flag; persisted games remain readable/replayable. Official promotion not performed. Scope excludes Cupid, Witch, seed and unsupported interactions. No QA forced roles in Normal scenarios.
+- Two additional candidate compositions verified through real API: [8,25,31,64], [8,29,74,97]. Actual 10 focused tests PASS; 88 subset validation not runtime coverage. New module manifest is an engineering decision, not Owner rule amendment.
+
+## Evidence
+- Monolithic PASS, exit 0, counts {'tests': 516, 'pass': 505, 'fail': 0, 'skipped': 11, 'cancelled': 0}. #28 exact required tests 17/17, browser 2/2, fresh certificate PASS. Browser suite PASS markers: browser_full50_universal_normal_e2e.py, browser_s15_approved_pin_e2e.py, browser_s15_approved_revenge_e2e.py. Only completed suites count. Build/source verification PASS. Screenshots from actual Chromium, development Normal, not official production.
+
+## Remaining
+No new FULL certificate. #64 trap/lock/transform, Q13-07 prolong, full protection domain, #26/#47 clarified runtime, #23/#36 blind attacks, #27/#74 transformed-role projection, AFK/default actions and remaining interaction classes not fully verified. The new module path is a bounded Lifecycle composition engine, not a universal engine for all 97. Complete role-local contracts without requiring dependencies themselves to be FULL unless mandated. No full browser inventory, PostgreSQL Live, Mac native or Human QA. No fresh dependency install from internet. Competitive NO-GO. No background work.

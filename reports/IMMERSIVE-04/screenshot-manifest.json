@@ -1,0 +1,142 @@
+[
+  {
+    "file": "browser-career-mobile.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "8a5ad854a80c429dda470a765431ef7ed4e523d830b7030115383f4b1be79b70",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "browser-career.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "2fc59de7596f3ee945ddc27adf17f9286628511ccb9693453fdc698927a1f859",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "browser-game-mobile.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "96b16897e1cd8e69e56d206611742e9c1b4b6781a5749d53339f6fb78412f4ff",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "browser-journal.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "67f210368936fbee1059555b13bfc9d017057c0834e708c51305d40b820b49ca",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "browser-moderator-ready.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "919d549489b83954d7de38b60677b10baa5ab6871f9e601884260c03fb63c2f0",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "browser-normal-bell-private.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "c9f097b16afc5dcf710984477c6fc11715339e0cb2951c6205b995b89bec4b9e",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "browser-normal-config.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "ccfc76fc3d653abc20671daa423134547fde907824cc8e8931c7c2ecc40e98d7",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "browser-normal-day.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "7c6611e8858966860990cd97512428e42427c194e370676c85ef4d878a2c3016",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "browser-normal-endgame.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "26a47989cd5a3b540d3f32d35bddcc139f2ac5f44bb5fa215b07592cd57ac760",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "browser-normal-guard-action.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "919d549489b83954d7de38b60677b10baa5ab6871f9e601884260c03fb63c2f0",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "browser-normal-guard-no-bell.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "89305ab73ffac7fd4d56dfb11836d26158271571b410ca441b5d2d619437215e",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "browser-player-waiting.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "2e9e6d935e287155af570a20cea69f33644921165ae2f54dde63f00591b0cddd",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "browser-replay.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "fcbb4c80623b26abf3c1005225a5e5a29f3524b3bf19f3a78ec2c4b72156febf",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "browser-voting.png",
+    "scope": "Normal DEV — 4 accounts",
+    "sha256": "c4bfff6f4fd651186348a17cbe55a1c1be8bf7a966c51525b0d20b9ec6aab5f2",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "career-browser-badge-gallery.png",
+    "scope": "Normal official — 2 accounts",
+    "sha256": "89a1ff91f73c9400b1882ef077e071642234dd477d774b42a0d403a88732c4dd",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "career-browser-career-mobile.png",
+    "scope": "Normal official — 2 accounts",
+    "sha256": "d46b42f724908664808455d8ca804c79c36d759dc89aaae939ba8cd7c42bc488",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "career-browser-career-overview.png",
+    "scope": "Normal official — 2 accounts",
+    "sha256": "53a636854937165fdeb8c1995af6f6ca64e9fd32f3fbdb5c9d793f4ed843fb0b",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "career-browser-endgame-loser.png",
+    "scope": "Normal official — 2 accounts",
+    "sha256": "e1dc11176fb3037e961803e7c2838c0a5fe1607ec9deb352c56200f178fc3608",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "career-browser-endgame-reward.png",
+    "scope": "Normal official — 2 accounts",
+    "sha256": "72d4baf44b888b191f8c7bcad1e0fa2cea94d00dbc5036958a03a88d42b24ba8",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  },
+  {
+    "file": "career-browser-xp-history.png",
+    "scope": "Normal official — 2 accounts",
+    "sha256": "651b0c76d012703d864a5c0b8d141339d57a698fb6d7baecb536eec361921ad2",
+    "sourceFingerprint": "00682453002f61eba5f12878cdbe766eaaaf4144ecd302b3ddfa576a788dda8b",
+    "capture": "Chromium, real HTTP/WS transport bridge"
+  }
+]

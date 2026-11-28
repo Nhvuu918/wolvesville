@@ -1,0 +1,68 @@
+TAP version 13
+# (node:19464) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# GROWTH_NIGHT_PERMUTATIONS 48
+# Subtest: Growth dual-seer: all six submission permutations for every legal complete night choice
+ok 1 - Growth dual-seer: all six submission permutations for every legal complete night choice
+  ---
+  duration_ms: 4809.290511
+  type: 'test'
+  ...
+# (node:19465) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# GROWTH_ROLE_EVIDENCE {"id":39,"skill":"official.39.capture","branch":"wolf-capture","restart":true,"replay":true,"privacy":true}
+# GROWTH_MATCH_EVIDENCE {"ids":[25,39,76],"completed":true,"voteChain":false,"restartReplay":true,"privacy":true,"multiClient":true}
+# Subtest: Growth \#39 real QA capture: wolf death, fixed initial majority, private role data, restart and replay
+ok 2 - Growth \#39 real QA capture: wolf death, fixed initial majority, private role data, restart and replay
+  ---
+  duration_ms: 1450.035105
+  type: 'test'
+  ...
+# GROWTH_ROLE_EVIDENCE {"id":39,"skill":"official.39.capture","branch":"miss-cooldown-third-death","restart":true,"replay":true,"privacy":true}
+# Subtest: Growth \#39 real QA miss, exact one-night loss, restart, third miss death, wolf victory
+ok 3 - Growth \#39 real QA miss, exact one-night loss, restart, third miss death, wolf victory
+  ---
+  duration_ms: 1807.851476
+  type: 'test'
+  ...
+# GROWTH_ROLE_EVIDENCE {"id":39,"skill":"official.39.capture","branch":"locked-capture","restart":true,"replay":true,"privacy":true}
+# Subtest: Growth \#39 nightmare cancels queued capture without consuming a miss
+ok 4 - Growth \#39 nightmare cancels queued capture without consuming a miss
+  ---
+  duration_ms: 1002.961521
+  type: 'test'
+  ...
+# (node:19466) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# GROWTH_NORMAL_RESCUE_EVIDENCE {"deck":[9,25,48,74,87],"side":"village","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# GROWTH_NORMAL_RESCUE_EVIDENCE {"deck":[9,25,48,74,87],"side":"wolf","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# Subtest: Growth normal five-human snow and pharmacist: protected and rescued bite, both victory routes, restart and replay
+ok 5 - Growth normal five-human snow and pharmacist: protected and rescued bite, both victory routes, restart and replay
+  ---
+  duration_ms: 7507.459468
+  type: 'test'
+  ...
+# GROWTH_NORMAL_GUARD_RESCUE_EVIDENCE {"deck":[25,31,48,74,87],"side":"village","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# GROWTH_NORMAL_GUARD_RESCUE_EVIDENCE {"deck":[25,31,48,74,87],"side":"wolf","mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"restart":true}
+# Subtest: Growth normal five-human guard and pharmacist: protected and rescued bite, both victory routes, restart and replay
+ok 6 - Growth normal five-human guard and pharmacist: protected and rescued bite, both victory routes, restart and replay
+  ---
+  duration_ms: 5993.638615
+  type: 'test'
+  ...
+# GROWTH_NORMAL_BALLOTS {"deck":[8,25,74],"ballotCombinations":157,"mode":"NORMAL_GAMEPLAY","privacy":true,"replay":true,"multiClient":true}
+# Subtest: Growth [8,25,74] actual Normal Gameplay 157 ballot combinations and replay
+ok 7 - Growth [8,25,74] actual Normal Gameplay 157 ballot combinations and replay
+  ---
+  duration_ms: 108177.138843
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 121988.918525

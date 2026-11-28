@@ -1,0 +1,119 @@
+TAP version 13
+# (node:14600) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# S14_EVIDENCE {"id":32,"skill":"official.32.shoot","restart":true,"replay":true}
+# Subtest: S14 \#32 authoritative attack, retry, privacy and restart
+ok 1 - S14 \#32 authoritative attack, retry, privacy and restart
+  ---
+  duration_ms: 575.111
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":36,"skill":"official.36.fireball","restart":true,"replay":true}
+# Subtest: S14 \#36 authoritative attack, retry, privacy and restart
+ok 2 - S14 \#36 authoritative attack, retry, privacy and restart
+  ---
+  duration_ms: 463.863215
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":67,"skill":"official.67.sword","restart":true,"replay":true}
+# Subtest: S14 \#67 authoritative attack, retry, privacy and restart
+ok 3 - S14 \#67 authoritative attack, retry, privacy and restart
+  ---
+  duration_ms: 506.662886
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":78,"skill":"official.78.meteor","restart":true,"replay":true}
+# Subtest: S14 \#78 authoritative attack, retry, privacy and restart
+ok 4 - S14 \#78 authoritative attack, retry, privacy and restart
+  ---
+  duration_ms: 406.246761
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":52,"skill":"official.52.solo-dog","restart":true,"replay":true}
+# Subtest: S14 \#52 solo dog consumes protection and expires
+ok 5 - S14 \#52 solo dog consumes protection and expires
+  ---
+  duration_ms: 673.819494
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":23,"skill":"official.23.shield","restart":true,"replay":true}
+# Subtest: S14 \#23 one shield absorbs \#36 fireball, then expires; persistence and private events
+ok 6 - S14 \#23 one shield absorbs \#36 fireball, then expires; persistence and private events
+  ---
+  duration_ms: 802.976489
+  type: 'test'
+  ...
+# Subtest: S14 \#16 two poison targets consume one use, faction-specific next-night effect
+ok 7 - S14 \#16 two poison targets consume one use, faction-specific next-night effect
+  ---
+  duration_ms: 519.998516
+  type: 'test'
+  ...
+# Subtest: S14 \#32 day shot permitted, night shot in same round denied after shielded shot
+ok 8 - S14 \#32 day shot permitted, night shot in same round denied after shielded shot
+  ---
+  duration_ms: 575.23702
+  type: 'test'
+  ...
+# Subtest: S14 \#67 shield and sword both accepted in same night, valid shield blocks sword
+ok 9 - S14 \#67 shield and sword both accepted in same night, valid shield blocks sword
+  ---
+  duration_ms: 372.759894
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":84,"skill":"official.84.silence","restart":true,"replay":true}
+# Subtest: S14 \#84 public chat mute, WS/HTTP ACL, restart, expiry
+ok 10 - S14 \#84 public chat mute, WS/HTTP ACL, restart, expiry
+  ---
+  duration_ms: 834.946807
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":50,"skill":"official.50.numb","restart":true,"replay":true}
+# Subtest: S14 \#50 public chat mute, WS/HTTP ACL, restart, expiry
+ok 11 - S14 \#50 public chat mute, WS/HTTP ACL, restart, expiry
+  ---
+  duration_ms: 749.496061
+  type: 'test'
+  ...
+# Subtest: S14 \#17 judgment on villager causes persistent public-chat mute but no vote denial
+ok 12 - S14 \#17 judgment on villager causes persistent public-chat mute but no vote denial
+  ---
+  duration_ms: 522.660756
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":68,"skill":"official.68.mark","restart":true,"replay":true,"completedDeck":[8,25,68]}
+# Subtest: S14 \#68 death-follow chain commits before certified knight victory
+ok 13 - S14 \#68 death-follow chain commits before certified knight victory
+  ---
+  duration_ms: 587.395069
+  type: 'test'
+  ...
+# S14_EVIDENCE {"id":88,"skill":"official.88.pin","restart":true,"replay":true,"completedDeck":[8,25,88]}
+# Subtest: S14 \#88 death-follow chain commits before certified knight victory
+ok 14 - S14 \#88 death-follow chain commits before certified knight victory
+  ---
+  duration_ms: 957.69467
+  type: 'test'
+  ...
+# Subtest: S14 \#68 no preselected target means no secondary death (VH36)
+ok 15 - S14 \#68 no preselected target means no secondary death (VH36)
+  ---
+  duration_ms: 719.247545
+  type: 'test'
+  ...
+# Subtest: S14 \#59 second stone kills and reveals Ná Thủ only after second hit
+ok 16 - S14 \#59 second stone kills and reveals Ná Thủ only after second hit
+  ---
+  duration_ms: 613.182692
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 10202.194663
+S14_METRICS {"version":"1.6.0-s14-wip","scope":"Restricted QA sessions only; competitive NO-GO","metricR":{"baseline":18,"executableCharacters":27,"totalCharacters":97,"newCharacters":[23,32,36,50,52,68,78,84,88],"ids":[5,8,9,11,16,17,20,23,24,25,31,32,33,34,36,50,52,59,66,67,68,74,76,78,79,84,88]},"metricF":{"fullyImplemented":0,"certified":false},"metricS":{"inheritedTechnicalMinimum":19,"newVerifiedAdapterIds":["official.32.shoot","official.36.fireball","official.67.sword","official.78.meteor","official.52.solo-dog","official.23.shield","official.84.silence","official.50.numb","official.68.mark","official.88.pin"],"exactRatio":null,"certified":false,"reason":"Composite audit rows are not atomic official branches; no denominator claimed"},"metricA":8,"completedDecks":["8,25","8,28","8,9,25","8,9,28","8,25,28","8,9,25,28","8,25,68","8,25,88"],"metricB":6,"metricC":0,"evidence":[{"id":32,"skill":"official.32.shoot","restart":true,"replay":true},{"id":36,"skill":"official.36.fireball","restart":true,"replay":true},{"id":67,"skill":"official.67.sword","restart":true,"replay":true},{"id":78,"skill":"official.78.meteor","restart":true,"replay":true},{"id":52,"skill":"official.52.solo-dog","restart":true,"replay":true},{"id":23,"skill":"official.23.shield","restart":true,"replay":true},{"id":84,"skill":"official.84.silence","restart":true,"replay":true},{"id":50,"skill":"official.50.numb","restart":true,"replay":true},{"id":68,"skill":"official.68.mark","restart":true,"replay":true,"completedDeck":[8,25,68]},{"id":88,"skill":"official.88.pin","restart":true,"replay":true,"completedDeck":[8,25,88]}],"qa":{"newTestsExit":0,"newTestCount":16}}

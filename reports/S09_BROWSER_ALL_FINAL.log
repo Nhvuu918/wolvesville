@@ -1,0 +1,78 @@
+
+> wolvesville-sprint09-voting-multiround@1.1.0-s09 test:browser:09:all
+> npm run build && node scripts/run-browser-s06.mjs browser_s09_e2e.py browser_s08_gameplay_e2e.py browser_s07_e2e.py browser_s06_e2e.py browser_s05_e2e.py browser_lobby_e2e.py browser_codex_e2e.py browser_demo_e2e.py browser_e2e.py browser_ux_e2e.py
+
+
+> wolvesville-sprint09-voting-multiround@1.1.0-s09 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+S09_BROWSER_PASS: approved three-player closed deck, server assigned roles and ACL
+S09_BROWSER_PASS: wolf UI submitted official coercion; no early public result
+S09_BROWSER_PASS: 3 real ballots, server locks votes, ACL and reconnect; no fabricated hanging/winner
+S06_BROWSER_PASS browser_s09_e2e.py
+S08_GAMEPLAY_BROWSER_PASS: two official roles server-assigned, private projections, real skill capability
+S08_GAMEPLAY_BROWSER_PASS: action accepted but not shown as resolved or winner
+S08_GAMEPLAY_BROWSER_PASS: certified elimination and winner after commit; UI, WS, reconnect, winner ACL
+S06_BROWSER_PASS browser_s08_gameplay_e2e.py
+S07_BROWSER_PASS: two official roles server-assigned, private projections, real skill capability
+S07_BROWSER_PASS: action accepted but not shown as resolved or winner
+S07_BROWSER_PASS: certified elimination and winner after commit; UI, WS, reconnect, winner ACL
+S06_BROWSER_PASS browser_s07_e2e.py
+S06_BROWSER_PASS: UI room host selected official 3-seat peace-wolf deck; private role projections
+S06_BROWSER_PASS: night resolution -> dawn -> vote intake, two realtime clients
+S06_BROWSER_PASS: server accepted private ballot and official #79 skill; no early disclosure
+S06_BROWSER_PASS: PH-02 cancels vote, returns to next night; replay, privacy, reconnect, Codex intact
+S06_BROWSER_PASS browser_s06_e2e.py
+PASS Browser S05: 5 unique real identities, room membership synchronized
+PASS Browser S05: exactly five locked roles assigned, private role projection
+PASS Browser S05: official skills submitted in two contexts, resolved/possibly cancelled with actor-specific feedback
+PASS Browser S05: replay/reconnect, Codex 97 preserved, no internal support events leaked
+S06_BROWSER_PASS browser_s05_e2e.py
+PASS Lobby pointer: center/label/icon/padding each opens correct room details in ONE click without joining
+PASS Lobby keyboard: Enter and Space activate the semantic room marker
+PASS Lobby repeated click: double-activation never changes room membership
+PASS Lobby locked room: visible but Join disabled; unlock refresh restores action
+PASS Lobby join: explicit Join mutates backend membership and both WebSocket clients synchronize
+PASS Lobby mobile tap: one tap opens FULL room, Join disabled, no horizontal overflow
+PASS Lobby stable marker identity after refresh; no page JavaScript errors
+S06_BROWSER_PASS browser_lobby_e2e.py
+PASS Browser: Demo login, Codex wheel, dynamic 97-role count and 12 visible orbit cards
+PASS Browser: Wheel keyboard navigation changes selection exactly once
+PASS Browser: Grid displays 97 unique official cards without technical ID labels
+PASS Browser: Diacritic insensitive search, no-result state, clear filters
+PASS Browser: Official team filters, role detail has no JSON, debug, ID or fabricated examples
+PASS Browser: Selection persists across Wheel/Grid switches
+PASS Browser: Responsive grid is 4/3/2 columns across desktop/tablet/mobile
+PASS Browser: Broken portrait displays presentation fallback without changing character data
+PASS Browser: Reduced motion disables hover transitions
+PASS Browser: Session reconnect, Lobby navigation and logout unaffected
+PASS Browser: No page errors, Codex 97 E2E complete
+S06_BROWSER_PASS browser_codex_e2e.py
+PASS Browser: two real Demo CTA clicks create distinct backend accounts and Lobby sessions
+PASS Browser: two independent demo sessions create/join same room through real backend
+PASS Browser: authenticated WebSocket connectivity and server-authorized room membership
+PASS Browser: fresh document reconnects an existing Demo session without shared credentials
+PASS Browser: logout removes only the current demo session
+PASS Browser: demo WebSocket reconnect
+S06_BROWSER_PASS browser_demo_e2e.py
+PASS Browser: two independent accounts authenticate via backend
+PASS Browser: Room created and joined by two independently authenticated contexts
+PASS Browser: server game session, private role projections, official 97-role catalog and WebSocket notification
+PASS Browser: accepted skill has pending notification, no premature or cross-client result
+PASS Browser: resolved private result only to actor; both clients sync phase
+PASS Browser: fresh document restores authorized game and private result from server
+PASS Browser: reconnect preserves one durable result and complete immediate text
+PAGE ERRORS []
+S06_BROWSER_PASS browser_e2e.py
+PASS Browser UX: independently authenticated real sessions have simple navigation, no unsupported mock links
+PASS Browser UX: approved 97-character Wheel/Grid unchanged, player-facing labels simplified
+PASS Browser UX: settings show actual local preferences without prototype data reset/import
+PASS Browser UX: real lobby across 1920/1366/768 widths, no horizontal overflow
+PASS Browser UX: world-map lobby uses backend room count, not three prototype rooms
+PASS Browser UX: two clients join server room, room states translated, host permissions intact
+PASS Browser UX: disconnect banner and reconnect state reconciliation
+Browser UX mobile viewport metrics: {'scroll': 390, 'client': 390}
+PASS Browser UX: logout expires only own session, preserves other client
+PASS Browser UX: no page JavaScript errors
+S06_BROWSER_PASS browser_ux_e2e.py
+S06_BROWSER_ALL_10_PASS

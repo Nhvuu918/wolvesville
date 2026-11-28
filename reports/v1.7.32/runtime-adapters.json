@@ -1,0 +1,1230 @@
+{
+  "scope": "Registration inventory from official withKernel path, not proof of full execution; passive rules are tracked separately",
+  "adapters": [
+    {
+      "characterId": 25,
+      "skillId": "official.25.inspect-role",
+      "ruleId": "OFFICIAL_CHAR_25_ROLE_INSPECTION",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 100,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": false,
+      "source": "backend/src/official/inspection-rules.ts"
+    },
+    {
+      "characterId": 74,
+      "skillId": "official.74.inspect-role",
+      "ruleId": "OFFICIAL_CHAR_74_ROLE_INSPECTION",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 100,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": false,
+      "source": "backend/src/official/inspection-rules.ts"
+    },
+    {
+      "characterId": 34,
+      "skillId": "official.34.night-block",
+      "ruleId": "OFFICIAL_CHAR_34_NIGHT_WALK",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 10,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": false,
+      "source": "backend/src/official/support-rules.ts"
+    },
+    {
+      "characterId": 31,
+      "skillId": "official.31.guard",
+      "ruleId": "OFFICIAL_CHAR_31_GUARD",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 30,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/support-rules.ts"
+    },
+    {
+      "characterId": 9,
+      "skillId": "official.9.snow-protection",
+      "ruleId": "OFFICIAL_CHAR_9_SNOW_PROTECTION",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 30,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/support-rules.ts"
+    },
+    {
+      "characterId": 79,
+      "skillId": "official.79.cancel-vote-reveal",
+      "ruleId": "OFFICIAL_CHAR_79_PEACE_WOLF",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 5,
+      "phases": [
+        "DAY_VOTE_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/peace-rules.ts"
+    },
+    {
+      "characterId": 8,
+      "skillId": "official.8.night-kill",
+      "ruleId": "OFFICIAL_CHAR_8_NIGHT_KILL",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/solo-rules.ts"
+    },
+    {
+      "characterId": 33,
+      "skillId": "official.33.force-vote",
+      "ruleId": "OFFICIAL_CHAR_33_VOTE_COERCION",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 4,
+      "phases": [
+        "DAY_VOTE_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/vote-control-rules.ts"
+    },
+    {
+      "characterId": 5,
+      "skillId": "official.5.weigh-soul",
+      "ruleId": "OFFICIAL_CHAR_5_WEIGH_SOUL",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 95,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/judgment-rules.ts"
+    },
+    {
+      "characterId": 76,
+      "skillId": "official.76.nightmare",
+      "ruleId": "OFFICIAL_CHAR_76_NIGHTMARE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 9,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/nightmare-rules.ts"
+    },
+    {
+      "characterId": 39,
+      "skillId": "official.39.capture",
+      "ruleId": "S15_GROWTH_CHAR_39_CAPTURE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 64,
+      "skillId": "official.64.pair",
+      "ruleId": "S15_SCALE_CHAR_64_BELL",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 20,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 2,
+        "max": 2,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 93,
+      "skillId": "official.93.pack-bite",
+      "ruleId": "S15_FINAL_WOLF_PACK_BITE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 2,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 48,
+      "skillId": "official.48.pack-bite",
+      "ruleId": "S15_APPROVED_CHAR_48_PACK_BITE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 2,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 87,
+      "skillId": "official.87.rescue",
+      "ruleId": "S15_FINAL_CHAR_87_RESCUE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 10,
+      "phases": [
+        "WITCH_WINDOW"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": false
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 33,
+      "skillId": "official.33.hanging-revenge",
+      "ruleId": "S15_FINAL_CHAR_33_REVENGE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 1,
+      "phases": [
+        "DAY_RESOLVE"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 33,
+      "skillId": "official.33.hanging-revenge-skip",
+      "ruleId": "S15_FINAL_CHAR_33_REVENGE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 1,
+      "phases": [
+        "DAY_RESOLVE"
+      ],
+      "target": {
+        "min": 0,
+        "max": 0,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 37,
+      "skillId": "official.37.swap",
+      "ruleId": "S15_BREAK_CHAR_37_SWAP",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 2,
+        "max": 2,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 19,
+      "skillId": "official.19.ballot-offer",
+      "ruleId": "S15_BREAK_CHAR_19_BALLOT_CONTRACT",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 2,
+        "max": 2,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": null,
+      "skillId": "official.19.ballot-accept",
+      "ruleId": "S15_BREAK_CHAR_19_BALLOT_CONTRACT",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 0,
+        "max": 0,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": null,
+      "skillId": "official.19.ballot-decline",
+      "ruleId": "S15_BREAK_CHAR_19_BALLOT_CONTRACT",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 0,
+        "max": 0,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 55,
+      "skillId": "official.55.stone-protection",
+      "ruleId": "S15_BREAK_CHAR_55_PROTECTION",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 94,
+      "skillId": "official.94.effigy",
+      "ruleId": "S15_BREAK_CHAR_94_EFFIGY",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 63,
+      "skillId": "official.63.redirect",
+      "ruleId": "S15_DEEP_CHAR_63_REDIRECT",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 2,
+        "max": 2,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 85,
+      "skillId": "official.85.hypnotize",
+      "ruleId": "S15_DEEP_CHAR_85_REDIRECT",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 29,
+      "skillId": "official.29.rescue",
+      "ruleId": "S15_DEEP_CHAR_29_RESCUE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 10,
+      "phases": [
+        "WITCH_WINDOW"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": false
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 71,
+      "skillId": "official.71.disguise",
+      "ruleId": "S15_CHAR_71_DISGUISE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 15,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 77,
+      "skillId": "official.77.trap",
+      "ruleId": "S15_CHAR_77_TRAP",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 58,
+      "skillId": "official.58.compare",
+      "ruleId": "S15_CHAR_58_COMPARE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 2,
+        "max": 2,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 93,
+      "skillId": "official.93.seal",
+      "ruleId": "S15_CHAR_93_SEAL",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 8,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 72,
+      "skillId": "official.72.aura-curse",
+      "ruleId": "S15_CHAR_72_AURA_MODIFIER",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 15,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 49,
+      "skillId": "official.49.aura-illusion",
+      "ruleId": "S15_CHAR_49_AURA_MODIFIER",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 15,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 0,
+        "max": 0,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 11,
+      "skillId": "official.11.maintenance",
+      "ruleId": "S13_CHAR_11_MAINTENANCE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 6,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 17,
+      "skillId": "official.17.day-judgment",
+      "ruleId": "S13_CHAR_17_DAY_JUDGMENT",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 10,
+      "phases": [
+        "DAY_DISCUSS"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 16,
+      "skillId": "official.16.delayed-poison",
+      "ruleId": "S13_CHAR_16_DELAYED_POISON",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 15,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 2,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 16,
+      "skillId": "official.16.antidote",
+      "ruleId": "S13_CHAR_16_ANTIDOTE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 24,
+      "skillId": "official.24.jail",
+      "ruleId": "S13_CHAR_24_JAIL",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 7,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 59,
+      "skillId": "official.59.stone",
+      "ruleId": "S13_CHAR_59_FIRST_STONE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 20,
+      "phases": [
+        "DAY_DISCUSS"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 66,
+      "skillId": "official.66.night-guard",
+      "ruleId": "S13_CHAR_66_GUARD",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 67,
+      "skillId": "official.67.shield",
+      "ruleId": "S13_CHAR_67_SHIELD",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 54,
+      "skillId": "official.54.shoot",
+      "ruleId": "S15_CHAR_54_SHOOT",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "DAY_DISCUSS"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 23,
+      "skillId": "official.23.shoot",
+      "ruleId": "S14_CHAR_23_DIRECT_ATTACK",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": {
+        "name": "soulBullets",
+        "amount": 1
+      },
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 15,
+      "skillId": "official.15.single-kill",
+      "ruleId": "S14_CHAR_15_DIRECT_ATTACK",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 2,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 29,
+      "skillId": "official.29.poison",
+      "ruleId": "S14_CHAR_29_DIRECT_ATTACK",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "WITCH_WINDOW"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 32,
+      "skillId": "official.32.shoot",
+      "ruleId": "S14_CHAR_32_DIRECT_ATTACK",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "NIGHT_COLLECT",
+        "DAY_DISCUSS"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 43,
+      "skillId": "official.43.shoot",
+      "ruleId": "S14_CHAR_43_DIRECT_ATTACK",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "NIGHT_COLLECT",
+        "DAY_DISCUSS"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 36,
+      "skillId": "official.36.fireball",
+      "ruleId": "S14_CHAR_36_DIRECT_ATTACK",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 67,
+      "skillId": "official.67.sword",
+      "ruleId": "S14_CHAR_67_DIRECT_ATTACK",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 78,
+      "skillId": "official.78.meteor",
+      "ruleId": "S14_CHAR_78_DIRECT_ATTACK",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 150,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 84,
+      "skillId": "official.84.silence",
+      "ruleId": "S14_CHAR_84_PUBLIC_MUTE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 8,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 50,
+      "skillId": "official.50.numb",
+      "ruleId": "S14_CHAR_50_PUBLIC_MUTE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 8,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 68,
+      "skillId": "official.68.mark",
+      "ruleId": "S14_CHAR_68_DEATH_MARK",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 5,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 88,
+      "skillId": "official.88.pin",
+      "ruleId": "S14_CHAR_88_DEATH_MARK",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 5,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 80,
+      "skillId": "official.80.compare",
+      "ruleId": "S15_CHAR_80_COMPARE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 100,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 2,
+        "max": 2,
+        "allowSelf": false,
+        "aliveOnly": false
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 54,
+      "skillId": "official.54.reveal",
+      "ruleId": "S15_CHAR_54_PUBLIC_REVEAL",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 10,
+      "phases": [
+        "DAY_VOTE_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 87,
+      "skillId": "official.87.sedative",
+      "ruleId": "S15_CHAR_87_SEDATIVE",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 8,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 36,
+      "skillId": "official.36.shield",
+      "ruleId": "S15_CHAR_36_SHIELD",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 23,
+      "skillId": "official.23.shield",
+      "ruleId": "S14_CHAR_23_SHIELD",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": true,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 52,
+      "skillId": "official.52.solo-dog",
+      "ruleId": "S14_CHAR_52_SOLO_DOG",
+      "ruleVersion": "wolvesville-official-v1.3.2",
+      "priority": 25,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/s13-mechanics.ts"
+    },
+    {
+      "characterId": 10,
+      "skillId": "official.10.trap",
+      "ruleId": "S15_DEEP_CHAR_10_INSPECTION_TRAP",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "priority": 50,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": true
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/engineer-trap.ts"
+    },
+    {
+      "characterId": 26,
+      "skillId": "official.26.revive",
+      "ruleId": "S15_DEEP_CHAR_26_REVIVE",
+      "ruleVersion": "wolvesville-official-v1.3.3",
+      "priority": 200,
+      "phases": [
+        "NIGHT_COLLECT"
+      ],
+      "target": {
+        "min": 1,
+        "max": 1,
+        "allowSelf": false,
+        "aliveOnly": false
+      },
+      "cost": null,
+      "maxUsesPerPhase": 1,
+      "hasSubmissionGuard": true,
+      "source": "backend/src/official/revival.ts"
+    }
+  ]
+}

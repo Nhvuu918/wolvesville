@@ -1,0 +1,39 @@
+{
+  "version": "s07-0.9.0",
+  "status": "IMPLEMENTED_RESTRICTED_TEST",
+  "ruleConfidence": "CONFIRMED_SOURCE_GROUNDED_CLOSED_WORLD",
+  "initialCharacterIds": [
+    8,
+    25
+  ],
+  "skills": [
+    {
+      "characterId": 8,
+      "id": "official.8.night-kill",
+      "effect": "DEATH_TRANSITION",
+      "source": [
+        "character.json#8",
+        "VH03"
+      ]
+    },
+    {
+      "characterId": 25,
+      "id": "official.25.inspect-role",
+      "effect": "INFORMATION_RESULT",
+      "source": [
+        "character.json#25"
+      ]
+    }
+  ],
+  "victory": {
+    "characterId": 8,
+    "predicate": "SOLE_LIVING_PARTICIPANT",
+    "onlyAfter": "NIGHT_FINALIZE_AND_RESOLVED_ACTIONS",
+    "source": [
+      "character.json#8",
+      "VH03"
+    ]
+  },
+  "genericVoteResolution": "RULE_UNRESOLVED",
+  "competitiveEnabled": false
+}

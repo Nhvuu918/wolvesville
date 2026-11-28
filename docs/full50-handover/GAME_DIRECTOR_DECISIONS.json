@@ -1,0 +1,181 @@
+[
+  {
+    "id": "GD-LIFE-GUARD-01",
+    "authorityLevel": 2,
+    "kind": "LOGICAL_INFERENCE",
+    "rule": "Within the seven-role LIFE-02 candidate, a valid #31 guard persists for the night and witch window, prevents eligible direct lethal attacks and night Cupid death-follow before seed activation, and does not prevent day hanging. Guard prevention is internal, not a new public notification.",
+    "sources": [
+      "character.json#31",
+      "VH65",
+      "WV-GUARD-MULTIHIT-01",
+      "WV-LIFE02-LINK-01",
+      "F03"
+    ],
+    "reason": "Resolve protection before seed, avoid false stable deaths and preserve round boundaries; no new attack immunity or global scope inferred.",
+    "roles": [
+      8,
+      25,
+      27,
+      29,
+      31,
+      64,
+      97
+    ],
+    "scope": "INTEGRATION_TEST / WV-FULL50-LIFE02-V3 / roster 8,25,27,29,31,64,97",
+    "tests": [
+      "tests/full50-cupid-candidate.test.mjs (two M1-02 tests)",
+      "tests/browser_full50_guard_e2e.py"
+    ],
+    "implementation": [
+      "backend/src/official/life02.ts",
+      "backend/src/official/support-rules.ts",
+      "frontend/integration.js"
+    ],
+    "rollback": "Do not admit new roster: disable WV_FULL50_QA or WV_RC01_LIFE02_QA; preserve existing persisted policy and histories. Revert only new guard roster/handler in source if necessary.",
+    "active": false,
+    "certificate": null
+  },
+  {
+    "id": "GD-LIFE-COMPOSITION-01",
+    "authorityLevel": 2,
+    "kind": "ENGINEERING_DESIGN",
+    "rule": "Admission derives from role capabilities; internal development Guard/Investigation/Observation scope only, no new core gameplay rules. Exclude unsupported #27+#74 projection. Legacy profiles unchanged.",
+    "sources": [
+      "Owner autonomous development directive",
+      "WV-GUARD-MULTIHIT-01",
+      "WV-BELL-TRAP-01",
+      "WV-BELL-LOCK-01",
+      "DC-INSPECTION-ORDER-01"
+    ],
+    "reason": "Separate admission from resolution, reduce deck coupling, fail closed on unsupported interaction.",
+    "roles": [
+      8,
+      25,
+      27,
+      29,
+      31,
+      64,
+      74,
+      97
+    ],
+    "scope": "LIFE-MODULES-1; internal NORMAL_GAMEPLAY LIFE-MODULES-1-GUARD-OBSERVATION",
+    "tests": [
+      "tests/full50-universal-composition.test.mjs",
+      "tests/full50-universal-normal.test.mjs",
+      "tests/browser_full50_universal_normal_e2e.py"
+    ],
+    "implementation": [
+      "backend/src/official/lifecycle-composition.ts",
+      "backend/src/official/life02.ts",
+      "backend/src/game/normal-decks.ts",
+      "backend/src/game/coordinator.ts",
+      "backend/src/engine/service.ts",
+      "backend/src/game/archive.ts",
+      "frontend/integration.js"
+    ],
+    "rollback": "Unset WV_LIFE_MODULES_DEV_NORMAL; new admission disabled; persisted matches remain readable and replayable.",
+    "active": "INTERNAL_DEVELOPMENT_CONDITIONAL",
+    "certificate": null
+  },
+  {
+    "id": "GD-DEFENSE-STACK-01",
+    "authorityLevel": 3,
+    "kind": "DESIGN_DECISION",
+    "rule": "In composed LIFE-02, reusable valid night guard prevents an eligible lethal attempt first; only otherwise consume one valid snow layer. Snow survives its provider death and is valid for two nights; neither layer prevents day hanging. No general piercing/theft exception inferred.",
+    "sources": [
+      "character.json#9",
+      "#31",
+      "VH08",
+      "VH65",
+      "WV-GUARD-MULTIHIT-01=B"
+    ],
+    "reason": "Avoid unnecessary consumption of finite shield when renewable protection already blocks the same attempt, while preserving the individual duration and consumption rules.",
+    "roles": [
+      9,
+      31,
+      8,
+      27,
+      29,
+      64,
+      97
+    ],
+    "scope": "LIFE-MODULES-1 candidate compositions; no new Normal admission",
+    "tests": [
+      "tests/full50-universal-composition.test.mjs: FULL5 #31/#9 layered protection",
+      "tests/full50-universal-composition.test.mjs: FULL5 #9 shield survives provider death"
+    ],
+    "implementation": [
+      "backend/src/official/protection-consumption.ts",
+      "backend/src/official/life02.ts",
+      "backend/src/official/lifecycle-composition.ts"
+    ],
+    "rollback": "Disable admission of #9 in new compositions, preserve persisted games and archive; do not reinterpret old V1–V3 matches.",
+    "active": false,
+    "certificate": null
+  },
+  {
+    "id": "GD-FERRY-01",
+    "authorityLevel": 3,
+    "kind": "DESIGN_DECISION",
+    "rule": "Ferry selection reserves up to remaining two distinct lifetime passenger slots; actual lethal deferral consumes one. Unused marks expire at day close, unused passengers may be selected again. Prolonged persons retain public discussion/vote, count alive until day closure; settle expiry after hanging and before victory; process real death/seed at expiry.",
+    "sources": [
+      "character.json#51",
+      "Q13-07",
+      "Q13-12",
+      "VH26",
+      "VH03"
+    ],
+    "reason": "Preserve rescue precedence and finite successful passenger quota without wasting a charge on a rescued or unattacked target.",
+    "roles": [
+      51,
+      64,
+      97,
+      29,
+      27,
+      31
+    ],
+    "scope": "LIFE-MODULES-1 candidate only",
+    "tests": [
+      "tests/full5-prolongation.test.mjs"
+    ],
+    "implementation": [
+      "backend/src/official/life02.ts",
+      "backend/src/official/stable-death-proof.ts",
+      "backend/src/engine/service.ts"
+    ],
+    "rollback": "Disable new candidate admission; no rule change to historical non-composed games.",
+    "active": false,
+    "certificate": null
+  },
+  {
+    "id": "GD-FERRY-CHAT-01",
+    "authorityLevel": 3,
+    "kind": "DESIGN_DECISION",
+    "rule": "For #51 night-only anonymous 1:1 chat, accept every publicly reported dead address. Truly dead users may read/reply under the anonymous role label. A hibernating or otherwise not dead-final user gets no channel and no message; sender receives identical echo and no delivery status. Append private events transactionally without changing public gameplay revision; retain historical #26 behavior.",
+    "sources": [
+      "F01=A",
+      "Q13-05",
+      "VH77",
+      "VH57"
+    ],
+    "reason": "Prevent target-list, delivery-result and gameplay revision oracles about hidden hibernation; preserve ability to address publicly dead players.",
+    "roles": [
+      51,
+      97,
+      26
+    ],
+    "scope": "LIFE-MODULES-1 candidate #51 only",
+    "tests": [
+      "tests/full5-prolongation.test.mjs: FULL5 F01",
+      "tests/sprint15-breakthrough-medium.test.mjs"
+    ],
+    "implementation": [
+      "backend/src/official/medium-chat.ts",
+      "backend/src/engine/service.ts",
+      "frontend/integration.js"
+    ],
+    "rollback": "Disable new candidate admission; keep historical #26 routing and existing ledger.",
+    "active": false,
+    "certificate": null
+  }
+]

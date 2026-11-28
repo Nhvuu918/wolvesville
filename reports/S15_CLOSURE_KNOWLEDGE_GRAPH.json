@@ -1,0 +1,81 @@
+{
+  "version": "1.7.8-s15-closure-wip",
+  "scope": "New interactions only; inherited global graph unchanged",
+  "edges": [
+    {
+      "characterIds": [
+        9,
+        88,
+        28,
+        8
+      ],
+      "rules": [
+        "character.json#9",
+        "character.json#88",
+        "VH65",
+        "Ma_Soi_Quy_Tac_Da_Chot_Va_De_Xuat.xlsx / 04 Char nguon / row 89 (NV91)"
+      ],
+      "mechanic": "absorbHunterDomainAttack/resolveFinalHunterFollow",
+      "source": "backend/src/official/hanging-follow.ts",
+      "tests": [
+        "S15 closure snow shield absorbs Hunter secondary at night once; actual hanging still wins Jester",
+        "S15 closure primary shield prevents Hunter death and follow; next night mark may be renewed",
+        "S15 closure snow shield persists after owner dies and is consumed once",
+        "S15 closure snow protection expires before the third night Hunter follow",
+        "S15 closure night-only snow protection cannot block daytime Hunter follow"
+      ],
+      "ui": "browser_s15_closure_snow_e2e.py",
+      "metrics": [
+        "S",
+        "A",
+        "B"
+      ]
+    },
+    {
+      "characterIds": [
+        33,
+        88
+      ],
+      "rules": [
+        "character.json#33",
+        "character.json#88",
+        "VH03",
+        "VH65"
+      ],
+      "mechanic": "settleRevenge + resolveFinalHunterFollow",
+      "source": "backend/src/engine/service.ts",
+      "tests": [
+        "S15 closure revenge kills Hunter and follows pinned villager before closing original chain",
+        "S15 closure Hunter hanging pulls wolf as secondary without opening revenge or duplicating death"
+      ],
+      "ui": "browser_s15_closure_revenge_e2e.py",
+      "metrics": [
+        "S"
+      ]
+    },
+    {
+      "characterIds": [
+        8,
+        15,
+        28,
+        58
+      ],
+      "rules": [
+        "VH03",
+        "VH06",
+        "VH82",
+        "character.json#8",
+        "character.json#15",
+        "character.json#58"
+      ],
+      "mechanic": "hasClosedDeathLedger + evaluateExplicitSoleSurvivorFacts",
+      "source": "backend/src/official/stable-death-proof.ts",
+      "tests": [
+        "S15 closure death ledger rejects missing, duplicated and reopened death chains before victory"
+      ],
+      "metrics": [
+        "F/C safety gate"
+      ]
+    }
+  ]
+}

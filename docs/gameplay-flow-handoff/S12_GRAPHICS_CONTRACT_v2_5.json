@@ -1,0 +1,125 @@
+{
+  "contractVersion": "2.5",
+  "extends": "2.4",
+  "breakingChanges": false,
+  "events": [
+    {
+      "event": "VOTE_INTENT_RECORDED",
+      "payload": "own ballot ID/target; round in S11",
+      "audience": "PLAYER_PRIVATE",
+      "hook": "vote-ack",
+      "status": "IMPLEMENTED_AND_TESTED"
+    },
+    {
+      "event": "VOTE_LOCKED",
+      "payload": "round",
+      "audience": "ROOM_PUBLIC",
+      "hook": "vote-lock",
+      "status": "IMPLEMENTED_AND_TESTED"
+    },
+    {
+      "event": "OFFICIAL_VOTE_RESULT",
+      "payload": "round, outcome",
+      "audience": "ROOM_PUBLIC",
+      "hook": "vote-result",
+      "status": "IMPLEMENTED_AND_TESTED"
+    },
+    {
+      "event": "PLAYER_ELIMINATED",
+      "payload": "playerId only",
+      "audience": "ROOM_PUBLIC",
+      "hook": "elimination-reveal",
+      "status": "IMPLEMENTED_AND_TESTED"
+    },
+    {
+      "event": "MATCH_COMPLETED",
+      "payload": "winnerIds",
+      "audience": "ROOM_PUBLIC",
+      "hook": "match-result",
+      "status": "IMPLEMENTED_AND_TESTED"
+    },
+    {
+      "event": "PHASE_CHANGED",
+      "payload": "phase, round",
+      "audience": "ROOM_PUBLIC",
+      "hook": "phase-transition",
+      "status": "IMPLEMENTED_AND_TESTED"
+    },
+    {
+      "event": "VICTORY_PENDING_RULE",
+      "payload": "round",
+      "audience": "ROOM_PUBLIC",
+      "hook": "pending-result",
+      "status": "PARTIAL"
+    },
+    {
+      "event": "HANGING_AUTHORIZED",
+      "payload": "internal only",
+      "audience": "SERVER_INTERNAL",
+      "hook": null,
+      "status": "ENGINE_ONLY"
+    },
+    {
+      "event": "VICTORY_EVALUATED",
+      "payload": "internal only",
+      "audience": "SERVER_INTERNAL",
+      "hook": null,
+      "status": "ENGINE_ONLY"
+    },
+    {
+      "event": "OFFICIAL_ATTACK_BLOCKED",
+      "trigger": "Certified #8 attack absorbed by #9 layer",
+      "payload": "internal only",
+      "audience": "SERVER_INTERNAL",
+      "hook": null,
+      "status": "BACKEND_IMPLEMENTED",
+      "reconnect": "Do not expose; use authorized snapshot",
+      "replay": "Internal audit only",
+      "reducedMotion": "None"
+    },
+    {
+      "event": "POST_ELIMINATION_CHAIN_CLOSED",
+      "trigger": "Admitted death chain closed",
+      "payload": "internal only",
+      "audience": "SERVER_INTERNAL",
+      "hook": null,
+      "status": "BACKEND_IMPLEMENTED",
+      "reconnect": "Do not expose; use authorized snapshot",
+      "replay": "Internal audit only",
+      "reducedMotion": "None"
+    },
+    {
+      "event": "RESOLUTION_GATE",
+      "trigger": "Resolution disposition committed",
+      "payload": "internal only",
+      "audience": "SERVER_INTERNAL",
+      "hook": null,
+      "status": "BACKEND_IMPLEMENTED",
+      "reconnect": "Do not expose; use authorized snapshot",
+      "replay": "Internal audit only",
+      "reducedMotion": "None"
+    }
+  ],
+  "reconnect": "Use newest authorized snapshot and own ballot; deduplicate eventId; no re-running animations",
+  "replay": "Use authorized event sequence only",
+  "reducedMotion": "Instant text; optional animation must not gate phase",
+  "clientCanCommitElimination": false,
+  "clientCanCommitVictory": false,
+  "compatibility": "All v2.4 events unchanged. New internal events must not be forwarded. Snapshot resolutionStatus is additive; old clients may ignore it.",
+  "snapshotFields": {
+    "resolutionStatus": {
+      "audience": "ROOM_PARTICIPANTS",
+      "payload": [
+        "CONTINUE",
+        "PENDING_EFFECT",
+        "BLOCKED_BY_RULE",
+        "GAME_COMPLETED"
+      ],
+      "hook": "pending-result",
+      "status": "FRONTEND_CONNECTED",
+      "fallback": "Instant Vietnamese status text",
+      "reconnect": "Render newest snapshot",
+      "replay": "Use authorized event sequence, never infer private causes"
+    }
+  }
+}

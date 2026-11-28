@@ -1,0 +1,48 @@
+{
+  "version": "1.7.18-s15-owner-bb-finalization-wip",
+  "ruleVersion": "wolvesville-official-v1.3.3",
+  "sourceFingerprint": "582cf9453a18abc6233440f90834fb3402e38fb6cc28b09e2bf9f920da05f8f1",
+  "officialActivation": false,
+  "decisionRecord": "data/rules/owner_bb_candidate_v2_decisions.json",
+  "backendGate": "PASS_MONOLITHIC",
+  "backend": {
+    "tests": 418,
+    "pass": 407,
+    "fail": 0,
+    "skipped": 11,
+    "cancelled": 0,
+    "todo": 0
+  },
+  "candidateTests": 19,
+  "candidateScope": "V2 isolated journal commits on candidate state copied from actual QA Game Session and accepted inspection queue; no official archive writes, no public candidate endpoint, no official metrics.",
+  "guardFresh": true,
+  "browser": {
+    "total": 63,
+    "PASS": 10,
+    "FAIL": 0,
+    "INCOMPLETE": 53
+  },
+  "matrix": {
+    "total": 98,
+    "PASS": 10,
+    "FAIL": 0,
+    "INCOMPLETE": 88
+  },
+  "freshCertificates": {
+    "F": 1,
+    "qaC": 2,
+    "playableC": 4,
+    "S_pass": 74
+  },
+  "fullManifestAccepted": false,
+  "postgreSQLLive": "PENDING",
+  "competitiveProduction": "NO_GO",
+  "legacySourceChecksumChanged": [
+    "README.md",
+    "package.json"
+  ],
+  "legacyReportsUnchanged": 2078,
+  "ownerQA": "PENDING",
+  "newFull": [],
+  "newPlayable": []
+}

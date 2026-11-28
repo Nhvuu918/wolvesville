@@ -1,0 +1,52 @@
+
+> wolvesville-sprint04-official-rule-intelligence@0.6.0 test:browser:04
+> npm run build && node scripts/run-browser-s04.mjs
+
+
+> wolvesville-sprint04-official-rule-intelligence@0.6.0 build
+> tsc -p tsconfig.json && node scripts/copy-schema.mjs
+
+PASS Lobby pointer: center/label/icon/padding each opens correct room details in ONE click without joining
+PASS Lobby keyboard: Enter and Space activate the semantic room marker
+PASS Lobby repeated click: double-activation never changes room membership
+PASS Lobby locked room: visible but Join disabled; unlock refresh restores action
+PASS Lobby join: explicit Join mutates backend membership and both WebSocket clients synchronize
+PASS Lobby mobile tap: one tap opens FULL room, Join disabled, no horizontal overflow
+PASS Lobby stable marker identity after refresh; no page JavaScript errors
+S04_BROWSER_SUITE_PASS browser_lobby_e2e.py
+PASS Browser: Demo login, Codex wheel, dynamic 97-role count and 12 visible orbit cards
+PASS Browser: Wheel keyboard navigation changes selection exactly once
+PASS Browser: Grid displays 97 unique official cards without technical ID labels
+PASS Browser: Diacritic insensitive search, no-result state, clear filters
+PASS Browser: Official team filters, role detail has no JSON, debug, ID or fabricated examples
+PASS Browser: Selection persists across Wheel/Grid switches
+PASS Browser: Responsive grid is 4/3/2 columns across desktop/tablet/mobile
+PASS Browser: Broken portrait displays presentation fallback without changing character data
+PASS Browser: Reduced motion disables hover transitions
+PASS Browser: Session reconnect, Lobby navigation and logout unaffected
+PASS Browser: No page errors, Codex 97 E2E complete
+S04_BROWSER_SUITE_PASS browser_codex_e2e.py
+PASS Browser: two real Demo CTA clicks create distinct backend accounts and Lobby sessions
+PASS Browser: two independent demo sessions create/join same room through real backend
+PASS Browser: authenticated WebSocket connectivity and server-authorized room membership
+PASS Browser: fresh document reconnects an existing Demo session without shared credentials
+PASS Browser: logout removes only the current demo session
+PASS Browser: demo WebSocket reconnect
+Task exception was never retrieved
+future: <Task finished name='Task-230' coro=<Channel.send() done, defined at /opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py:61> exception=TargetClosedError('Channel.send: Target page, context or browser has been closed')>
+Traceback (most recent call last):
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Channel.send: Target page, context or browser has been closed
+S04_BROWSER_SUITE_PASS browser_demo_e2e.py
+PASS Browser: two independent accounts authenticate via backend
+PASS Browser: Room created and joined by two independently authenticated contexts
+PASS Browser: server game session, private role projections, official 97-role catalog and WebSocket notification
+PASS Browser: accepted skill has pending notification, no premature or cross-client result
+PASS Browser: resolved private result only to actor; both clients sync phase

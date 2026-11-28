@@ -1,0 +1,4749 @@
+[
+  {
+    "characterId": 1,
+    "name": "Sói Đạo Tặc",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-SC-07",
+      "TC-11",
+      "TC-35"
+    ],
+    "mechanismTags": [
+      "AT",
+      "DF",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#1",
+      "SK-04",
+      "VH72"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH01-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 2,
+    "name": "Dorothy",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-02"
+    ],
+    "mechanismTags": [
+      "IN",
+      "AT",
+      "DF",
+      "RV",
+      "RS",
+      "LK"
+    ],
+    "sourceRefs": [
+      "data/character.json#2"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH02-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 3,
+    "name": "Sói Tiên Tri",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-03"
+    ],
+    "mechanismTags": [
+      "IN",
+      "TR",
+      "NO"
+    ],
+    "sourceRefs": [
+      "data/character.json#3"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH03-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 4,
+    "name": "Người Buôn Bí",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-55",
+      "T-MC-23",
+      "T131-B15"
+    ],
+    "mechanismTags": [
+      "RN",
+      "DF",
+      "AT",
+      "BL",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#4",
+      "VH83"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH04-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 5,
+    "name": "Thẩm Phán Linh Hồn",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-49",
+      "T-MC-05",
+      "T-SC-02",
+      "T131-B08"
+    ],
+    "mechanismTags": [
+      "IN",
+      "TR",
+      "DF",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#5",
+      "VH84"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH05-S01",
+      "WV-CH05-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 6,
+    "name": "Đạo Diễn Tử Thần",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "PROP-16",
+      "PROP-20",
+      "T-COV-28",
+      "T-COV-38",
+      "T-MC-21",
+      "T-MC-22",
+      "T-MC-27",
+      "T-MC-30",
+      "T-MC-36",
+      "T-SC-12",
+      "T-SC-15",
+      "T-SC-16",
+      "T131-09-01",
+      "T131-09-02",
+      "T131-09-03",
+      "T131-B11",
+      "TC-03"
+    ],
+    "mechanismTags": [
+      "VT",
+      "CH",
+      "LK",
+      "RS",
+      "WC"
+    ],
+    "sourceRefs": [
+      "data/character.json#6",
+      "PH-02",
+      "Q13-09",
+      "VH01"
+    ],
+    "auditSkillBranchCount": 4,
+    "auditSkillBranchIds": [
+      "WV-CH06-S01",
+      "WV-CH06-S02",
+      "WV-CH06-S03",
+      "WV-CH06-S04"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 7,
+    "name": "Diễn Viên Sát Nhân",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-38",
+      "T-MC-30",
+      "T-MC-36"
+    ],
+    "mechanismTags": [
+      "DF",
+      "AT",
+      "OP",
+      "RS",
+      "WC"
+    ],
+    "sourceRefs": [
+      "data/character.json#7"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH07-S01",
+      "WV-CH07-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 8,
+    "name": "Kỵ Sĩ Không Đầu",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-08",
+      "T-COV-56"
+    ],
+    "mechanismTags": [
+      "AT",
+      "DF",
+      "WC",
+      "VT"
+    ],
+    "sourceRefs": [
+      "data/character.json#8"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH08-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 9,
+    "name": "Thiên Sứ Tuyết",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-09"
+    ],
+    "mechanismTags": [
+      "DF",
+      "TM",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#9"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH09-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "IMPLEMENTED_RESTRICTED_PARTIAL",
+    "currentSkillIds": [
+      "official.9.snow-protection"
+    ],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [
+      "tests/official-support.test.mjs"
+    ],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": true
+  },
+  {
+    "characterId": 10,
+    "name": "Sói Kỹ Sư",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "PROP-08",
+      "T-COV-61",
+      "T-COV-81",
+      "T-MC-04",
+      "T-MC-05",
+      "T-MC-06",
+      "T-MC-37",
+      "T-SC-01",
+      "T-SC-02",
+      "T131-06-01",
+      "T131-06-02",
+      "T131-06-03",
+      "T131-11-01",
+      "T131-11-02",
+      "T131-11-03",
+      "T131-B08",
+      "T131-B14",
+      "TC-12",
+      "TC-13"
+    ],
+    "mechanismTags": [
+      "BL",
+      "NO",
+      "AT",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#10",
+      "Q13-06",
+      "Q13-11",
+      "SK-05"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH10-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 11,
+    "name": "Thợ Rèn Cơ Khí",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "PROP-14",
+      "T-COV-34",
+      "T-COV-76",
+      "T-MC-01",
+      "T-MC-04",
+      "T-MC-29",
+      "T-MC-37",
+      "T-SC-05",
+      "T131-01-01",
+      "T131-01-02",
+      "T131-01-03",
+      "T131-B01",
+      "T131-B02",
+      "TC-07",
+      "TC-08",
+      "TC-09",
+      "TC-33"
+    ],
+    "mechanismTags": [
+      "DF",
+      "BL",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#11",
+      "Q13-01",
+      "SK-01",
+      "SK-02"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH11-S01",
+      "WV-CH11-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 12,
+    "name": "Búp Bê Nguyền Rủa",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-12"
+    ],
+    "mechanismTags": [
+      "LK",
+      "RN",
+      "WC",
+      "TM",
+      "RV"
+    ],
+    "sourceRefs": [
+      "data/character.json#12"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH12-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 13,
+    "name": "Fan Cuồng",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-MC-24",
+      "T-MC-25"
+    ],
+    "mechanismTags": [
+      "DF",
+      "AT",
+      "LK",
+      "RN",
+      "TR",
+      "WC",
+      "CH"
+    ],
+    "sourceRefs": [
+      "data/character.json#13"
+    ],
+    "auditSkillBranchCount": 4,
+    "auditSkillBranchIds": [
+      "WV-CH13-S01",
+      "WV-CH13-S02",
+      "WV-CH13-S03",
+      "WV-CH13-S04"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 14,
+    "name": "Ông Kệ Noel",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-MC-24"
+    ],
+    "mechanismTags": [
+      "AT",
+      "RN",
+      "LK",
+      "DF",
+      "WC"
+    ],
+    "sourceRefs": [
+      "data/character.json#14"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH14-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 15,
+    "name": "Thần Tình Yêu Hắc Ám",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-MC-25",
+      "T-MC-39"
+    ],
+    "mechanismTags": [
+      "AT",
+      "LK",
+      "DF",
+      "WC"
+    ],
+    "sourceRefs": [
+      "data/character.json#15"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH15-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 16,
+    "name": "Phù Thủy Cấm Kỵ",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-16"
+    ],
+    "mechanismTags": [
+      "BL",
+      "DF",
+      "AT",
+      "RS",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#16"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH16-S01",
+      "WV-CH16-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 17,
+    "name": "Nữ Tu Huyết Thệ",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "PROP-14",
+      "PROP-20",
+      "T-MC-29",
+      "T-MC-37",
+      "T-SC-05",
+      "T131-01-01",
+      "T131-01-02",
+      "T131-01-03",
+      "T131-B01",
+      "T131-B02"
+    ],
+    "mechanismTags": [
+      "RS",
+      "DF",
+      "AT",
+      "BL",
+      "IN"
+    ],
+    "sourceRefs": [
+      "data/character.json#17",
+      "Q13-01",
+      "VH85"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH17-S01",
+      "WV-CH17-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 18,
+    "name": "Sói Biến Hình",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "PROP-18",
+      "T-MC-26",
+      "T-SC-06",
+      "T131-04-01",
+      "T131-04-02",
+      "T131-04-03",
+      "T131-B06",
+      "TC-10"
+    ],
+    "mechanismTags": [
+      "TR",
+      "TM",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#18",
+      "Q13-04",
+      "SK-03",
+      "VH71"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH18-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 19,
+    "name": "Kẻ Mặc Cả Bóng Tối",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-SC-13"
+    ],
+    "mechanismTags": [
+      "LK",
+      "BL",
+      "VT",
+      "TR",
+      "IN",
+      "WC",
+      "DF"
+    ],
+    "sourceRefs": [
+      "data/character.json#19"
+    ],
+    "auditSkillBranchCount": 7,
+    "auditSkillBranchIds": [
+      "WV-CH19-S01",
+      "WV-CH19-S02",
+      "WV-CH19-S03",
+      "WV-CH19-S04",
+      "WV-CH19-S05",
+      "WV-CH19-S06",
+      "WV-CH19-S07"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 20,
+    "name": "Sói Gai Độc",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-20"
+    ],
+    "mechanismTags": [
+      "BL",
+      "IN",
+      "AT",
+      "OP"
+    ],
+    "sourceRefs": [
+      "data/character.json#20"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH20-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [
+      "OFFICIAL_CHAR_20_REACTIVE_INSPECTION"
+    ],
+    "implementedTestFiles": [
+      "tests/official-rules.test.mjs",
+      "tests/official-reactive.test.mjs"
+    ],
+    "technicalStatus": "IMPLEMENTED_RESTRICTED_PASSIVE_ONLY",
+    "restrictedPackEnabled": true,
+    "restrictedPackRuleScope": "ONLY when investigated by #25 or #74; shoot trigger unimplemented",
+    "testGameEligible": true,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "Gunshot injury branch not executable; only inspection trigger enabled. No verified victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "IMPLEMENTED_RESTRICTED_PARTIAL",
+    "currentSkillIds": [],
+    "currentPassiveIds": [
+      "OFFICIAL_CHAR_20_REACTIVE_INSPECTION"
+    ],
+    "currentImplementationTests": [
+      "tests/official-reactive.test.mjs"
+    ],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": true
+  },
+  {
+    "characterId": 21,
+    "name": "Sói Khát Máu",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "PROP-15",
+      "T-COV-78",
+      "T-COV-93",
+      "T-MC-07",
+      "T-SC-10",
+      "T131-B02",
+      "TC-19",
+      "TC-34"
+    ],
+    "mechanismTags": [
+      "AT",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#21",
+      "LIFE-03",
+      "VH74"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH21-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 22,
+    "name": "Người Giao Dịch",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-22"
+    ],
+    "mechanismTags": [
+      "TR",
+      "RS",
+      "AT"
+    ],
+    "sourceRefs": [
+      "data/character.json#22",
+      "VH75",
+      "VH80",
+      "VH81"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH22-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 23,
+    "name": "Xạ Thủ Linh Hồn",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-MC-13",
+      "T-MC-14",
+      "T-MC-40",
+      "T-SC-08",
+      "TC-17"
+    ],
+    "mechanismTags": [
+      "DF",
+      "RV",
+      "AT",
+      "VT",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#23",
+      "LIFE-01",
+      "VH82"
+    ],
+    "auditSkillBranchCount": 3,
+    "auditSkillBranchIds": [
+      "WV-CH23-S01",
+      "WV-CH23-S02",
+      "WV-CH23-S03"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 24,
+    "name": "Quản Ngục",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "PROP-05",
+      "T-MC-03",
+      "T-SC-04",
+      "T131-B03",
+      "TC-15",
+      "TC-16"
+    ],
+    "mechanismTags": [
+      "BL",
+      "CH",
+      "DF",
+      "AT"
+    ],
+    "sourceRefs": [
+      "data/character.json#24",
+      "SK-07",
+      "VH79"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH24-S01",
+      "WV-CH24-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 25,
+    "name": "Tiên Tri",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-03",
+      "T-COV-34",
+      "T-COV-35",
+      "T-COV-61",
+      "T-COV-76",
+      "T-COV-93",
+      "T-MC-04",
+      "T-MC-06",
+      "T-MC-33",
+      "T-SC-18"
+    ],
+    "mechanismTags": [
+      "IN"
+    ],
+    "sourceRefs": [
+      "data/character.json#25",
+      "P05"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH25-S01"
+    ],
+    "officialActiveAdapterIds": [
+      "official.25.inspect-role"
+    ],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [
+      "tests/official-rules.test.mjs",
+      "tests/official-reactive.test.mjs"
+    ],
+    "technicalStatus": "IMPLEMENTED_RESTRICTED_ACTION",
+    "restrictedPackEnabled": true,
+    "restrictedPackRuleScope": "Only exact #25/#74 or #20/#25/#74 deck; no interference source except #20",
+    "testGameEligible": true,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No complete victory evaluator and broad distortion interaction pack.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "IMPLEMENTED_RESTRICTED_PARTIAL",
+    "currentSkillIds": [
+      "official.25.inspect-role"
+    ],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [
+      "tests/official-rules.test.mjs"
+    ],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": true
+  },
+  {
+    "characterId": 26,
+    "name": "Thầy Đồng",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-MC-16",
+      "T-MC-34"
+    ],
+    "mechanismTags": [
+      "RV",
+      "CH"
+    ],
+    "sourceRefs": [
+      "data/character.json#26",
+      "VH73",
+      "VH76",
+      "VH77"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH26-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 27,
+    "name": "Cupid",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-42",
+      "T-COV-64",
+      "T-MC-10",
+      "T-MC-11",
+      "T-MC-12",
+      "T-MC-17",
+      "T-MC-25",
+      "T-MC-28",
+      "T-MC-39",
+      "T-SC-09",
+      "T-SC-20",
+      "T131-03-01",
+      "T131-03-02",
+      "T131-03-03",
+      "T131-B05",
+      "TC-20",
+      "TC-21",
+      "TC-22",
+      "TC-23",
+      "TC-24"
+    ],
+    "mechanismTags": [
+      "LK",
+      "WC",
+      "CH",
+      "TR"
+    ],
+    "sourceRefs": [
+      "data/character.json#27",
+      "Q13-03",
+      "REL-01",
+      "REL-02",
+      "REL-03"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH27-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 28,
+    "name": "Thằng Ngố",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-08",
+      "T-COV-28"
+    ],
+    "mechanismTags": [
+      "WC",
+      "VT"
+    ],
+    "sourceRefs": [
+      "data/character.json#28"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH28-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 29,
+    "name": "Phù Thủy",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-36",
+      "T-COV-43",
+      "T-COV-55",
+      "T-COV-82",
+      "T-COV-85",
+      "T-MC-19",
+      "T-MC-37",
+      "T-MC-39",
+      "T131-12-01",
+      "T131-12-02",
+      "T131-12-03",
+      "T131-B01",
+      "T131-B07",
+      "T131-B09",
+      "T131-B15"
+    ],
+    "mechanismTags": [
+      "DF",
+      "AT",
+      "RV",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#29",
+      "Q13-12",
+      "VH05",
+      "VH60",
+      "W04"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH29-S01",
+      "WV-CH29-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 30,
+    "name": "Sói Trắng",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-30"
+    ],
+    "mechanismTags": [
+      "AT",
+      "WC",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#30"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH30-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 31,
+    "name": "Bảo Vệ",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-09",
+      "T-COV-36",
+      "T-COV-52",
+      "T-COV-58",
+      "T-SC-14",
+      "T131-10-01",
+      "T131-10-02",
+      "T131-10-03",
+      "T131-B12",
+      "T131-B13"
+    ],
+    "mechanismTags": [
+      "DF"
+    ],
+    "sourceRefs": [
+      "data/character.json#31",
+      "Q13-10"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH31-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "IMPLEMENTED_RESTRICTED_PARTIAL",
+    "currentSkillIds": [
+      "official.31.guard"
+    ],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [
+      "tests/official-support.test.mjs"
+    ],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": true
+  },
+  {
+    "characterId": 32,
+    "name": "Xạ Thủ",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-08",
+      "T-COV-43",
+      "T-COV-55",
+      "T-MC-22",
+      "T-MC-29"
+    ],
+    "mechanismTags": [
+      "AT",
+      "RS",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#32",
+      "VH09"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH32-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 33,
+    "name": "Sói Lừa Gạt",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "PROP-01",
+      "PROP-08",
+      "PROP-19",
+      "T-COV-16",
+      "T-MC-08",
+      "T-MC-09",
+      "T-MC-18",
+      "T-MC-21",
+      "T-MC-36",
+      "T-SC-11",
+      "T-SC-15"
+    ],
+    "mechanismTags": [
+      "VT",
+      "NO"
+    ],
+    "sourceRefs": [
+      "data/character.json#33",
+      "VH08"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH33-S01",
+      "WV-CH33-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 34,
+    "name": "Sói Mộng Du",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-34"
+    ],
+    "mechanismTags": [
+      "BL"
+    ],
+    "sourceRefs": [
+      "data/character.json#34",
+      "VH10"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH34-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "IMPLEMENTED_RESTRICTED_PARTIAL",
+    "currentSkillIds": [
+      "official.34.night-block"
+    ],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [
+      "tests/official-support.test.mjs"
+    ],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": true
+  },
+  {
+    "characterId": 35,
+    "name": "Sói Gương",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-35"
+    ],
+    "mechanismTags": [
+      "NO",
+      "IN",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#35",
+      "VH11"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH35-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 36,
+    "name": "Pháp Sư",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-36"
+    ],
+    "mechanismTags": [
+      "AT",
+      "DF",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#36",
+      "VH12",
+      "VH13"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH36-S01",
+      "WV-CH36-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 37,
+    "name": "Ảo Thuật Gia",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "PROP-09",
+      "T-MC-08",
+      "T-MC-09",
+      "T-MC-38",
+      "T-SC-11"
+    ],
+    "mechanismTags": [
+      "RF",
+      "IN",
+      "VT",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#37",
+      "VH14",
+      "VH15",
+      "VH56"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH37-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 38,
+    "name": "Nhà Sưu Tầm Linh Hồn",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-38"
+    ],
+    "mechanismTags": [
+      "RV",
+      "IN",
+      "AT",
+      "DF",
+      "VT",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#38",
+      "VH16"
+    ],
+    "auditSkillBranchCount": 6,
+    "auditSkillBranchIds": [
+      "WV-CH38-S01",
+      "WV-CH38-S02",
+      "WV-CH38-S03",
+      "WV-CH38-S04",
+      "WV-CH38-S05",
+      "WV-CH38-S06"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 39,
+    "name": "Kẻ Trộm Chó",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-39"
+    ],
+    "mechanismTags": [
+      "AT",
+      "RS",
+      "WC",
+      "BL"
+    ],
+    "sourceRefs": [
+      "data/character.json#39",
+      "VH17",
+      "VH18"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH39-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 40,
+    "name": "Hoàng Hậu",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-40"
+    ],
+    "mechanismTags": [
+      "RN",
+      "AT"
+    ],
+    "sourceRefs": [
+      "data/character.json#40",
+      "VH19"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH40-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 41,
+    "name": "Cupid Hắc Ám",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-42"
+    ],
+    "mechanismTags": [
+      "LK",
+      "TR",
+      "CH"
+    ],
+    "sourceRefs": [
+      "data/character.json#41"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH41-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 42,
+    "name": "Cặp Đôi Ngoại Tình",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-42"
+    ],
+    "mechanismTags": [
+      "LK",
+      "TR",
+      "WC"
+    ],
+    "sourceRefs": [
+      "data/character.json#42",
+      "VH20"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH42-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 43,
+    "name": "Sói Bắn Tỉa",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-43"
+    ],
+    "mechanismTags": [
+      "AT",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#43"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH43-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 44,
+    "name": "Sói Cuồng Yêu",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-MC-39"
+    ],
+    "mechanismTags": [
+      "LK",
+      "DF",
+      "AT",
+      "TR",
+      "WC",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#44",
+      "VH21"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH44-S01",
+      "WV-CH44-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 45,
+    "name": "Người Cầu Nguyện",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-45"
+    ],
+    "mechanismTags": [
+      "TR",
+      "RV",
+      "DF"
+    ],
+    "sourceRefs": [
+      "data/character.json#45"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH45-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 46,
+    "name": "Hắc Tinh",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-30",
+      "T-COV-73",
+      "T-MC-15",
+      "T-MC-16",
+      "T-SC-17"
+    ],
+    "mechanismTags": [
+      "BL",
+      "AT",
+      "WC",
+      "OP"
+    ],
+    "sourceRefs": [
+      "data/character.json#46",
+      "VH23",
+      "VH76"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH46-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 47,
+    "name": "Bạch Sát",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-MC-15",
+      "T-MC-16",
+      "T-SC-18"
+    ],
+    "mechanismTags": [
+      "BL",
+      "AT",
+      "WC",
+      "OP"
+    ],
+    "sourceRefs": [
+      "data/character.json#47",
+      "VH24",
+      "VH76"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH47-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 48,
+    "name": "Sói Thủ Lĩnh",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "PROP-15",
+      "T-COV-78",
+      "T-COV-93",
+      "T-MC-07",
+      "T-SC-10",
+      "T131-B02"
+    ],
+    "mechanismTags": [
+      "AT",
+      "WC"
+    ],
+    "sourceRefs": [
+      "data/character.json#48",
+      "VH74"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH48-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 49,
+    "name": "Sói Ảo Ảnh",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-49"
+    ],
+    "mechanismTags": [
+      "NO",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#49",
+      "VH25"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH49-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 50,
+    "name": "Sói Gây Tê",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-50"
+    ],
+    "mechanismTags": [
+      "BL",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#50"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH50-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 51,
+    "name": "Người Lái Đò",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "CONFLICTING",
+    "previousSprint02cReadiness": "CONFLICT",
+    "legacyTestSpecIds": [
+      "T-COV-40",
+      "T-COV-50",
+      "T-MC-20",
+      "T-MC-21",
+      "T-MC-31",
+      "T-MC-38",
+      "T-MC-40",
+      "T-SC-13",
+      "T131-07-01",
+      "T131-07-02",
+      "T131-07-03",
+      "T131-B09"
+    ],
+    "mechanismTags": [
+      "RV",
+      "CH",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#51",
+      "Q13-07",
+      "VH26",
+      "VH57"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH51-S01",
+      "WV-CH51-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 52,
+    "name": "Chó Canh Gác",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-52",
+      "T-COV-66",
+      "T131-10-01",
+      "T131-10-02",
+      "T131-10-03",
+      "T131-B12",
+      "T131-B13"
+    ],
+    "mechanismTags": [
+      "DF"
+    ],
+    "sourceRefs": [
+      "data/character.json#52",
+      "Q13-10",
+      "VH27"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH52-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 53,
+    "name": "Thiên Thần",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-45",
+      "T-MC-16"
+    ],
+    "mechanismTags": [
+      "DF",
+      "AT",
+      "LK",
+      "OP"
+    ],
+    "sourceRefs": [
+      "data/character.json#53",
+      "VH76"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH53-S01",
+      "WV-CH53-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 54,
+    "name": "Người Canh Gác",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-54"
+    ],
+    "mechanismTags": [
+      "AT",
+      "IN",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#54",
+      "VH28"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH54-S01",
+      "WV-CH54-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 55,
+    "name": "Sói Thạch",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-55"
+    ],
+    "mechanismTags": [
+      "DF",
+      "TR"
+    ],
+    "sourceRefs": [
+      "data/character.json#55"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH55-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 56,
+    "name": "Kỹ Nữ",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-56"
+    ],
+    "mechanismTags": [
+      "DF",
+      "AT"
+    ],
+    "sourceRefs": [
+      "data/character.json#56",
+      "VH29"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH56-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 57,
+    "name": "Kẻ Biến Hình",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [],
+    "mechanismTags": [
+      "AT",
+      "TR",
+      "NO"
+    ],
+    "sourceRefs": [
+      "data/character.json#57"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH57-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 58,
+    "name": "Thám Tử Ác Ma",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-58"
+    ],
+    "mechanismTags": [
+      "AT",
+      "IN"
+    ],
+    "sourceRefs": [
+      "data/character.json#58",
+      "VH30"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH58-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 59,
+    "name": "Ná Thủ",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-40",
+      "T-MC-22"
+    ],
+    "mechanismTags": [
+      "BL",
+      "AT",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#59",
+      "VH31"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH59-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 60,
+    "name": "Người Gọi Hồn",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-MC-26",
+      "T131-04-01",
+      "T131-04-02",
+      "T131-04-03",
+      "T131-B06"
+    ],
+    "mechanismTags": [
+      "TR",
+      "RS",
+      "RV",
+      "CH",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#60",
+      "Q13-04",
+      "VH32"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH60-S01",
+      "WV-CH60-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 61,
+    "name": "Thiện Xạ",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-61",
+      "T-SC-10"
+    ],
+    "mechanismTags": [
+      "AT",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#61",
+      "VH33"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH61-S01",
+      "WV-CH61-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 62,
+    "name": "Kẻ Xúi Giục",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-MC-10",
+      "T-MC-11",
+      "T-MC-17",
+      "T-MC-25",
+      "T-MC-28",
+      "T-MC-39",
+      "T-SC-20",
+      "T131-08-01",
+      "T131-08-02",
+      "T131-08-03",
+      "T131-B05",
+      "T131-B10",
+      "TC-20",
+      "TC-21"
+    ],
+    "mechanismTags": [
+      "LK",
+      "TR",
+      "CH",
+      "WC",
+      "AT"
+    ],
+    "sourceRefs": [
+      "data/character.json#62",
+      "Q13-08",
+      "REL-01",
+      "VH02"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH62-S01",
+      "WV-CH62-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 63,
+    "name": "Người Gắn Cờ",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "PROP-09",
+      "T-MC-08",
+      "T-MC-09",
+      "T-SC-11"
+    ],
+    "mechanismTags": [
+      "DF",
+      "RF",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#63",
+      "VH56",
+      "VH61"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH63-S01",
+      "WV-CH63-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 64,
+    "name": "Người Rung Chuông",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-64"
+    ],
+    "mechanismTags": [
+      "IN",
+      "LK"
+    ],
+    "sourceRefs": [
+      "data/character.json#64"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH64-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 65,
+    "name": "Sói Độc Tố",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-SC-14"
+    ],
+    "mechanismTags": [
+      "AT",
+      "DF",
+      "TM",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#65"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH65-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 66,
+    "name": "Người Gác Đêm",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-66"
+    ],
+    "mechanismTags": [
+      "DF",
+      "IN",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#66",
+      "VH34"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH66-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 67,
+    "name": "Thợ Rèn",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-67",
+      "T131-10-01",
+      "T131-10-02",
+      "T131-10-03",
+      "T131-B12",
+      "T131-B13"
+    ],
+    "mechanismTags": [
+      "DF",
+      "AT",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#67",
+      "Q13-10",
+      "VH35",
+      "VH70"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH67-S01",
+      "WV-CH67-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 68,
+    "name": "Sói Trẻ",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-MC-32"
+    ],
+    "mechanismTags": [
+      "AT",
+      "LK",
+      "OP"
+    ],
+    "sourceRefs": [
+      "data/character.json#68",
+      "VH36"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH68-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 69,
+    "name": "Sói Mèo",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-16",
+      "T-COV-58"
+    ],
+    "mechanismTags": [
+      "TR"
+    ],
+    "sourceRefs": [
+      "data/character.json#69",
+      "VH37"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH69-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 70,
+    "name": "Sói Lừa Đảo",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-54",
+      "T-SC-19"
+    ],
+    "mechanismTags": [
+      "NO",
+      "TR",
+      "RV"
+    ],
+    "sourceRefs": [
+      "data/character.json#70"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH70-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 71,
+    "name": "Sát Nhân Ảnh Thuật",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-35",
+      "T-MC-06",
+      "T-MC-33"
+    ],
+    "mechanismTags": [
+      "NO",
+      "AT",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#71",
+      "VH38"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH71-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 72,
+    "name": "Sói Pháp Sư",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-MC-05"
+    ],
+    "mechanismTags": [
+      "NO"
+    ],
+    "sourceRefs": [
+      "data/character.json#72",
+      "VH39"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH72-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 73,
+    "name": "Sói Lửa",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-73"
+    ],
+    "mechanismTags": [
+      "BL",
+      "RS",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#73",
+      "VH40"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH73-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 74,
+    "name": "Tiên Tri Huyền Bí",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "PROP-08",
+      "T-COV-03",
+      "T-COV-35",
+      "T-COV-54",
+      "T-COV-81",
+      "T-MC-06",
+      "T-SC-01",
+      "T-SC-19",
+      "T131-06-01",
+      "T131-06-02",
+      "T131-06-03",
+      "T131-B08",
+      "T131-B14",
+      "TC-12",
+      "TC-13"
+    ],
+    "mechanismTags": [
+      "IN"
+    ],
+    "sourceRefs": [
+      "data/character.json#74",
+      "P05",
+      "Q13-06",
+      "SK-05"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH74-S01"
+    ],
+    "officialActiveAdapterIds": [
+      "official.74.inspect-role"
+    ],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [
+      "tests/official-rules.test.mjs",
+      "tests/official-reactive.test.mjs"
+    ],
+    "technicalStatus": "IMPLEMENTED_RESTRICTED_ACTION",
+    "restrictedPackEnabled": true,
+    "restrictedPackRuleScope": "Only exact #25/#74 or #20/#25/#74 deck; no interference source except #20",
+    "testGameEligible": true,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No complete victory evaluator and broad distortion interaction pack.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "IMPLEMENTED_RESTRICTED_PARTIAL",
+    "currentSkillIds": [
+      "official.74.inspect-role"
+    ],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [
+      "tests/official-rules.test.mjs"
+    ],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": true
+  },
+  {
+    "characterId": 75,
+    "name": "Sói Điên Cuồng",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-09",
+      "T-COV-52",
+      "T-COV-66",
+      "T-COV-85",
+      "T-MC-01",
+      "T-MC-02",
+      "T-SC-03",
+      "T-SC-12",
+      "T131-10-01",
+      "T131-10-02",
+      "T131-10-03",
+      "T131-B12",
+      "T131-B13",
+      "TC-14"
+    ],
+    "mechanismTags": [
+      "AT",
+      "DF",
+      "OP",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#75",
+      "Q13-10",
+      "SK-06",
+      "VH42"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH75-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 76,
+    "name": "Sói Ác Mộng",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-76"
+    ],
+    "mechanismTags": [
+      "BL",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#76",
+      "VH41"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH76-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 77,
+    "name": "Thợ Săn Quái Thú",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "PROP-10",
+      "T-MC-02",
+      "T-SC-03",
+      "T131-B12",
+      "TC-14"
+    ],
+    "mechanismTags": [
+      "DF",
+      "AT",
+      "OP"
+    ],
+    "sourceRefs": [
+      "data/character.json#77",
+      "SK-06",
+      "VH51",
+      "VH54"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH77-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 78,
+    "name": "Nhà Thiên Văn Học",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-78"
+    ],
+    "mechanismTags": [
+      "DF",
+      "AT",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#78",
+      "VH43"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH78-S01",
+      "WV-CH78-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 79,
+    "name": "Sói Hòa Bình",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "PROP-16",
+      "T-COV-28",
+      "T-MC-21",
+      "T-MC-22",
+      "T-MC-36",
+      "T-SC-12",
+      "T-SC-16",
+      "T131-09-01",
+      "T131-09-02",
+      "T131-09-03",
+      "T131-B11",
+      "TC-03"
+    ],
+    "mechanismTags": [
+      "VT",
+      "IN"
+    ],
+    "sourceRefs": [
+      "data/character.json#79",
+      "PH-02",
+      "Q13-09"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH79-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 80,
+    "name": "Nghệ Sĩ Vĩ Cầm",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-MC-14",
+      "T-MC-34",
+      "T-MC-40"
+    ],
+    "mechanismTags": [
+      "IN",
+      "RV"
+    ],
+    "sourceRefs": [
+      "data/character.json#80",
+      "VH49",
+      "VH53"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH80-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 81,
+    "name": "Sói Mù",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-81",
+      "T131-11-01",
+      "T131-11-02",
+      "T131-11-03",
+      "T131-B08",
+      "T131-B14"
+    ],
+    "mechanismTags": [
+      "IN",
+      "RN"
+    ],
+    "sourceRefs": [
+      "data/character.json#81",
+      "Q13-11"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH81-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 82,
+    "name": "Nhà Giả Kim",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-82"
+    ],
+    "mechanismTags": [
+      "AT",
+      "RN",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#82"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH82-S01",
+      "WV-CH82-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 83,
+    "name": "Sói Chiêu Hồn",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-MC-15",
+      "T-SC-17"
+    ],
+    "mechanismTags": [
+      "RV",
+      "TR",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#83",
+      "VH44",
+      "VH52"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH83-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 84,
+    "name": "Phù Thủy Câm",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-40",
+      "T-COV-50",
+      "T-MC-20",
+      "T-MC-21",
+      "T-SC-13"
+    ],
+    "mechanismTags": [
+      "BL"
+    ],
+    "sourceRefs": [
+      "data/character.json#84",
+      "VH57"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH84-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 85,
+    "name": "Thầy Thôi Miên",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-85"
+    ],
+    "mechanismTags": [
+      "RF",
+      "AT"
+    ],
+    "sourceRefs": [
+      "data/character.json#85",
+      "VH45"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH85-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 86,
+    "name": "Sói Con",
+    "faction": "soi",
+    "aura": "Ác",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "PROP-15",
+      "T-COV-73",
+      "T-COV-78",
+      "T-COV-93",
+      "T-MC-07",
+      "T-SC-10",
+      "T131-B02"
+    ],
+    "mechanismTags": [
+      "AT",
+      "OP"
+    ],
+    "sourceRefs": [
+      "data/character.json#86",
+      "VH74"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH86-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 87,
+    "name": "Dược Sĩ",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-MC-20"
+    ],
+    "mechanismTags": [
+      "BL",
+      "DF",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#87",
+      "VH64"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH87-S01",
+      "WV-CH87-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 88,
+    "name": "Thợ Săn",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-MC-13",
+      "T-MC-32",
+      "T-SC-08"
+    ],
+    "mechanismTags": [
+      "AT",
+      "LK",
+      "OP"
+    ],
+    "sourceRefs": [
+      "data/character.json#88",
+      "VH65"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH88-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 89,
+    "name": "Người Khai Mệnh",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-89"
+    ],
+    "mechanismTags": [
+      "IN",
+      "RS"
+    ],
+    "sourceRefs": [
+      "data/character.json#89",
+      "VH47",
+      "VH69"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH89-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 90,
+    "name": "Giáo Chủ",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-MC-17",
+      "T-MC-18",
+      "T-MC-35",
+      "T-SC-20",
+      "T131-08-01",
+      "T131-08-02",
+      "T131-08-03",
+      "T131-B10"
+    ],
+    "mechanismTags": [
+      "TR",
+      "LK",
+      "AT",
+      "WC",
+      "CH"
+    ],
+    "sourceRefs": [
+      "data/character.json#90",
+      "Q13-08",
+      "VH50",
+      "VH55",
+      "VH59",
+      "VH78"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH90-S01",
+      "WV-CH90-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 91,
+    "name": "Huyết Chủ",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-MC-20",
+      "T-MC-21",
+      "T-MC-27",
+      "T-MC-35",
+      "T-MC-36"
+    ],
+    "mechanismTags": [
+      "VT",
+      "WC",
+      "LK"
+    ],
+    "sourceRefs": [
+      "data/character.json#91",
+      "V02"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH91-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 92,
+    "name": "Huyết Bộc",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-MC-27",
+      "T-MC-33"
+    ],
+    "mechanismTags": [
+      "DF",
+      "IN",
+      "AT",
+      "TR",
+      "WC",
+      "RS",
+      "RN"
+    ],
+    "sourceRefs": [
+      "data/character.json#92"
+    ],
+    "auditSkillBranchCount": 3,
+    "auditSkillBranchIds": [
+      "WV-CH92-S01",
+      "WV-CH92-S02",
+      "WV-CH92-S03"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 93,
+    "name": "Sói Lưu Đày",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "T-COV-40",
+      "T-COV-50",
+      "T-COV-93",
+      "T-MC-20",
+      "T-MC-21",
+      "T-SC-13"
+    ],
+    "mechanismTags": [
+      "BL",
+      "VT",
+      "TR"
+    ],
+    "sourceRefs": [
+      "data/character.json#93",
+      "VH57"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH93-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 94,
+    "name": "Kẻ Giải Nguyền",
+    "faction": "phe3",
+    "aura": "Không xác định",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "BLOCKED_BY_RULE",
+    "previousSprint02cReadiness": "BLOCKED",
+    "legacyTestSpecIds": [
+      "PROP-09",
+      "T-COV-93",
+      "T-MC-08",
+      "T-MC-09",
+      "T-SC-11"
+    ],
+    "mechanismTags": [
+      "RF",
+      "NO",
+      "RV"
+    ],
+    "sourceRefs": [
+      "data/character.json#94",
+      "VH56"
+    ],
+    "auditSkillBranchCount": 2,
+    "auditSkillBranchIds": [
+      "WV-CH94-S01",
+      "WV-CH94-S02"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 95,
+    "name": "Người Hái Thuốc",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-45",
+      "T-MC-18",
+      "T-MC-19",
+      "T-MC-31",
+      "T-MC-35",
+      "T131-07-01",
+      "T131-07-02",
+      "T131-07-03",
+      "T131-B09"
+    ],
+    "mechanismTags": [
+      "RS",
+      "DF",
+      "RV",
+      "TM"
+    ],
+    "sourceRefs": [
+      "data/character.json#95",
+      "Q13-07",
+      "VH66",
+      "VH67"
+    ],
+    "auditSkillBranchCount": 3,
+    "auditSkillBranchIds": [
+      "WV-CH95-S01",
+      "WV-CH95-S02",
+      "WV-CH95-S03"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 96,
+    "name": "Thầy Thuốc",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-MC-18",
+      "T-MC-19",
+      "T-MC-35"
+    ],
+    "mechanismTags": [
+      "RS",
+      "DF",
+      "AT",
+      "CH"
+    ],
+    "sourceRefs": [
+      "data/character.json#96",
+      "VH46",
+      "VH48",
+      "VH67"
+    ],
+    "auditSkillBranchCount": 3,
+    "auditSkillBranchIds": [
+      "WV-CH96-S01",
+      "WV-CH96-S02",
+      "WV-CH96-S03"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  },
+  {
+    "characterId": 97,
+    "name": "Thần Thảo Hồi Sinh",
+    "faction": "dan",
+    "aura": "Thiện",
+    "codexData": "SOURCE_PRESENT",
+    "sourceDescriptionPresent": true,
+    "previousAuditReadiness": "IMPLEMENTABLE_WITH_CONSTRAINTS",
+    "previousSprint02cReadiness": "PARTIAL",
+    "legacyTestSpecIds": [
+      "T-COV-12",
+      "T-COV-64",
+      "T-COV-82",
+      "T-MC-12",
+      "T-MC-23",
+      "T-MC-32",
+      "T-SC-09",
+      "T131-05-01",
+      "T131-05-02",
+      "T131-05-03",
+      "T131-07-01",
+      "T131-07-02",
+      "T131-07-03",
+      "T131-12-01",
+      "T131-12-02",
+      "T131-12-03",
+      "T131-B07",
+      "T131-B09",
+      "T131-B15",
+      "T131-B16"
+    ],
+    "mechanismTags": [
+      "RV",
+      "TM",
+      "DF"
+    ],
+    "sourceRefs": [
+      "data/character.json#97",
+      "Q13-05",
+      "Q13-07",
+      "Q13-12",
+      "VH63"
+    ],
+    "auditSkillBranchCount": 1,
+    "auditSkillBranchIds": [
+      "WV-CH97-S01"
+    ],
+    "officialActiveAdapterIds": [],
+    "officialPassiveRuleIds": [],
+    "implementedTestFiles": [],
+    "technicalStatus": "NOT_IMPLEMENTED",
+    "restrictedPackEnabled": false,
+    "restrictedPackRuleScope": "NOT_ENABLED",
+    "testGameEligible": false,
+    "competitiveEligible": false,
+    "fullRoleReady": false,
+    "unresolvedReason": "No enabled exhaustive official adapter or victory evaluator.",
+    "inheritedAuditSourceExists": true,
+    "currentSprint": "05",
+    "currentImplementationStatus": "NOT_IMPLEMENTED",
+    "currentSkillIds": [],
+    "currentPassiveIds": [],
+    "currentImplementationTests": [],
+    "allSkillBranchesVerifiedAndImplemented": false,
+    "officialTestPackEligible": false
+  }
+]

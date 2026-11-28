@@ -1,0 +1,122 @@
+{
+  "checkpoint": "FULL5-02",
+  "sourceFingerprint": "6ac302d005a47c067350a47139d21ac0391addcfcea6ff354bda8ffa490181c2",
+  "baseFingerprint": "f71c79111997a3287531c7cbf960f84ca256900020b93eeb86c3a967476f88ec",
+  "baseZipSha256": "797b6de362a744d709137c9f9a4a4f17784844343bc934c23fcc47688567bb8a",
+  "targetFull": 5,
+  "historicalF": 1,
+  "newFull": 0,
+  "freshFull": 1,
+  "characterRegistry": 97,
+  "historicalDecisions": 118,
+  "legacySpecifications": 207,
+  "legacyOwnerChoices": 25,
+  "ownerResponses": 48,
+  "clarifications": 2,
+  "knownPendingOwnerClarifications": 0,
+  "normalDecksHistorical": 16,
+  "developmentNormalConfigurations": [
+    [
+      8,
+      25,
+      31
+    ],
+    [
+      8,
+      31,
+      74
+    ],
+    [
+      8,
+      25,
+      31,
+      74
+    ],
+    [
+      8,
+      25,
+      31,
+      64
+    ],
+    [
+      8,
+      31,
+      64,
+      74
+    ],
+    [
+      8,
+      25,
+      31,
+      64,
+      74
+    ]
+  ],
+  "developmentNormalApiVerified": 6,
+  "moduleRoleIds": [
+    8,
+    9,
+    25,
+    27,
+    29,
+    31,
+    51,
+    64,
+    74,
+    97
+  ],
+  "admissibleCompositionSubsets": 502,
+  "compositionSubsetsNote": "All 1024 subsets checked for admission only; not runtime coverage. #51 is candidate only. Six existing dev normal configurations unchanged.",
+  "focusedBackend": {
+    "pass": 8,
+    "fail": 0,
+    "scope": "5 new tests, 3 legacy medium regressions",
+    "logs": [
+      "reports/FULL5-02/chat-focused.log"
+    ]
+  },
+  "newScenarioTestsInMonolithic": [
+    "FULL5 Q13-07: prolonged life keeps rights and seed; day close triggers hibernation, later wake and real Bell observation",
+    "FULL5 Q13-12: Witch rescue wins over ferry and seed; no charge until actual extension",
+    "FULL5 VH26: expiry plus hanging closes ledger before victory; prolonged villager counted until day end",
+    "FULL5 F01: Ferryman anonymous night channel, reported-dead address without sleeper delivery, retry and replay",
+    "FULL5 #64: delayed observation uses current transformed Cupid role, not original character id"
+  ],
+  "monolithic": {
+    "command": "WV_ARCHIVED_RULE_REGRESSION=1 node --test --test-concurrency=4 tests/*.test.mjs",
+    "exitCode": 0,
+    "status": "PASS",
+    "counts": {
+      "tests": 525,
+      "pass": 514,
+      "fail": 0,
+      "skipped": 11,
+      "cancelled": 0
+    },
+    "log": "reports/FULL5-02/backend-full.log",
+    "scopeNote": "Runtime/JS test sources stable during run; Python browser-only locator correction before final fingerprint."
+  },
+  "freshBrowserPass": [
+    "browser_full5_prolongation_e2e.py",
+    "browser_s15_approved_revenge_e2e.py",
+    "browser_s15_approved_pin_e2e.py",
+    "browser_full50_universal_normal_e2e.py"
+  ],
+  "freshBrowserPassCount": 4,
+  "activeRuleset": "wolvesville-official-v1.3.3",
+  "candidateRuleset": "wolvesville-official-v1.3.4",
+  "competitive": "NO-GO",
+  "activation": "EXISTING_CONDITIONAL_INTERNAL_DEVELOPMENT_ONLY",
+  "limitations": [
+    "No new FULL. New Q13-07, Q13-12, VH26, F01 and converted-Cupid Bell evidence is candidate only.",
+    "No new Normal admission. 16 official plus existing 6 development configurations.",
+    "Remaining #64 trap/lock, other transforms and global obligations; #25/#74 mirror/disguise; #31/#9 piercing/theft/trap.",
+    "PostgreSQL Live, full browser inventory, Mac native and Human QA not executed.",
+    "Build uses installed Node types and TypeScript, not fresh dependency installation from network."
+  ],
+  "browserExitCodes": {
+    "browser-prolong": 0,
+    "browser-jester": 0,
+    "browser-normal": 0
+  }
+}

@@ -1,0 +1,4 @@
+ALTER TABLE wv_rooms ADD COLUMN IF NOT EXISTS normal_deck TEXT;
+ALTER TABLE wv_members ADD COLUMN IF NOT EXISTS ready BOOLEAN NOT NULL DEFAULT FALSE;
+ALTER TABLE wv_game_sessions DROP CONSTRAINT IF EXISTS wv_game_sessions_mode_check;
+ALTER TABLE wv_game_sessions ADD CONSTRAINT wv_game_sessions_mode_check CHECK(mode IN ('INTEGRATION_TEST','NORMAL_GAMEPLAY'));

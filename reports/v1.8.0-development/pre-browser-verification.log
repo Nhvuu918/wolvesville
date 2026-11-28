@@ -1,0 +1,47 @@
+{
+  "fingerprint": "322b7d281d239cad18ae45946df7806dcfdee683521e03990970b769391a4642",
+  "backendComplete": true,
+  "backendCounts": {
+    "PASS": 485,
+    "FAIL": 0,
+    "SKIP": 11
+  },
+  "fresh": {
+    "F": 0,
+    "qaC": 0,
+    "playableC": 0,
+    "atomicPass": 72
+  },
+  "browser": {
+    "total": 87,
+    "PASS": 0,
+    "FAIL": 0,
+    "INCOMPLETE": 87
+  },
+  "ruleVersion": {
+    "total": 122,
+    "PASS": 0,
+    "FAIL": 0,
+    "INCOMPLETE": 122
+  },
+  "metrics": {
+    "R": 53,
+    "F": 1,
+    "A": 50,
+    "B": 38,
+    "qaC": 2,
+    "playableC": 7,
+    "S_auditedRoles": 48,
+    "S_pass": 79,
+    "S_total": 108,
+    "normalDecks": 13
+  },
+  "transitions": {
+    "existingIncompleteToPass": 0,
+    "existingFailToPass": 0,
+    "existingPassRevalidated": 0,
+    "existingPassNotRevalidated": 27,
+    "newPass": 0,
+    "newIncomplete": 2
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "version":"1.7.17-s15-owner-bb-wip",
+  "baseRuleset":"wolvesville-official-v1.3.3",
+  "sourceContract":"reports/BREAKTHROUGH_COMPLETION_CONTRACTS.json",
+  "officialFullCertificatesAdded":[],
+  "candidateContracts":[
+    {"characterId":10,"scope":"Unpublished DEC-BT-02=B candidate, not official FULL or atomic PASS","obligations":[
+      {"id":"BB-TRAP-WAITING","status":"PASS","evidence":["BB08","BB09","BB12","BB15"],"sources":["DEC-BT-02","character.json#10","VH10","VH41","PH-01"]},
+      {"id":"BB-TRAP-AURA","status":"PASS","evidence":["BB08","BB15"],"sources":["NV10","INV-01"]},
+      {"id":"BB-TRAP-ROLE","status":"PASS","evidence":["BB10","BB15"],"sources":["SK-05","Q13-06"]},
+      {"id":"BB-TRAP-JUDGMENT","status":"PASS","evidence":["BB11"],"sources":["VH84"]},
+      {"id":"BB-TRAP-POISON","status":"PASS","scope":"effect transformation only, not commit","evidence":["BB13"]},
+      {"id":"BB-TRAP-GUARD","status":"RULE_DECISION_REQUIRED","evidence":["BB13"],"pending":"BB-04"},
+      {"id":"BB-TRAP-RESCUE","status":"RULE_DECISION_REQUIRED","evidence":["BB13"],"pending":"BB-04"},
+      {"id":"BB-TRAP-MULTI","status":"RULE_DECISION_REQUIRED","evidence":["BB14"],"pending":"BB-05"},
+      {"id":"BB-TRAP-LIVE","status":"NOT_IMPLEMENTED","condition":"Live phase, resource, protection, death-chain and event commit atomically"},
+      {"id":"BB-TRAP-BROWSER","status":"NOT_IMPLEMENTED","condition":"Candidate action and result via authorized web UI"}
+    ]},
+    {"id":"MULTI_WOLF","scope":"unpublished consensus profile","obligations":[
+      {"id":"BB-PACK-CORE","status":"PASS","evidence":["BB01","BB02","BB03","BB04","BB05","BB06","BB07","BB17","BB18","BB20"]},
+      {"id":"BB-PACK-POLICY","status":"RULE_DECISION_REQUIRED","pending":["BB-01","BB-02","BB-03"]},
+      {"id":"BB-PACK-OFFICIAL-TRANSACTION","status":"NOT_IMPLEMENTED","condition":"Atomic match commit, current authoritative entitlement, real phase lock and emitted attack"},
+      {"id":"BB-PACK-WS-BROWSER","status":"NOT_IMPLEMENTED","condition":"Websocket routes, multi-client UI and candidate browser acceptance"}
+    ]}
+  ],
+  "officialDeckSupplement":{"deck":[25,31,48,74],"newCertificate":false,"evidence":"tests/sprint15-owner-bb-guard-acceptance.test.mjs","runtime":"PASS 35 initial night cases plus continuation","missing":["complete reduced-roster vote/skill interaction coverage with explicit target/retry rejection evidence","full finite certificate evidence review and mandatory browser obligations"]}
+}

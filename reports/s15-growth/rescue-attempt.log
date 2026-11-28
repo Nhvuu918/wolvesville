@@ -1,0 +1,46 @@
+Traceback (most recent call last):
+  File "/tmp/wv14/tests/browser_s15_normal_rescue_e2e.py", line 57, in <module>
+    if __name__=='__main__':run(sys.argv[1])
+                            ~~~^^^^^^^^^^^^^
+  File "/tmp/wv14/tests/browser_s15_normal_rescue_e2e.py", line 14, in run
+    c,p=be.page_setup(browser);contexts.append(c);pages.append(p);be.register(p,'RescueRoom'+str(i));p.wait_for_function('WolvesLive.normalMode && WolvesLive.connectionState==="online"')
+        ~~~~~~~~~~~~~^^^^^^^^^
+  File "/tmp/wv14/tests/browser_e2e.py", line 123, in page_setup
+    pg.goto(BASE,wait_until='domcontentloaded',timeout=20000)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 9050, in goto
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.goto(
+        ^^^^^^^^^^^^^^^^^^^^
+            url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/opt/pyvenv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:45939/
+Call log:
+  - navigating to "http://127.0.0.1:45939/", waiting until "domcontentloaded"
+
+Error: E2E failed browser_s15_normal_rescue_e2e.py, exit=1, signal=null
+    at file:///tmp/wv14/scripts/run-browser-s06.mjs:44:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
